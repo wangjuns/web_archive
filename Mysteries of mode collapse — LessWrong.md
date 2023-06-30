@@ -1,3 +1,5 @@
+[Mysteries of mode collapse](https://www.lesswrong.com/posts/t9svvNPNmFf5Qa3TA/mysteries-of-mode-collapse)
+
 # Mysteries of mode collapse — LessWrong
 Crossposted from the [AI Alignment Forum](https://alignmentforum.org/posts/t9svvNPNmFf5Qa3TA/mysteries-of-mode-collapse). May contain more technical jargon than usual.
 
