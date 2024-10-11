@@ -10,14 +10,14 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         fetch-depth: 2
 
     - name: Get changed files
       id: changed-files
       run: |
-        echo "::set-output name=files::$(git diff --name-only HEAD^ HEAD | grep '\.md$' | xargs)"
+        echo "files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$' | xargs)" >> $GITHUB_OUTPUT
 
     - name: Install dependencies
       run: |
