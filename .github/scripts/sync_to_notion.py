@@ -5,7 +5,8 @@ from pathlib import Path
 
 NOTION_TOKEN = os.environ["NOTION_TOKEN"]
 NOTION_DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
-CHANGED_FILES = os.environ["CHANGED_FILES"].split()
+CHANGED_FILES = os.environ.get("CHANGED_FILES", "").split()
+
 
 headers = {
     "Authorization": f"Bearer {NOTION_TOKEN}",
@@ -56,12 +57,21 @@ def create_or_update_notion_page(title, content):
 
 
 def main():
+    if not CHANGED_FILES:
+        print("No changed files detected. Exiting.")
+        return
+
     for file_path in CHANGED_FILES:
         if file_path.endswith(".md"):
-            title = Path(file_path).stem
-            content = read_markdown_file(file_path)
-            response = create_or_update_notion_page(title, content)
-            print(f"Synced {file_path} to Notion. Response: {response}")
+            try:
+                file_path = bytes(file_path, "unicode_escape").decode("utf-8")
+                print(f"sync {file_path}")
+                title = Path(file_path).stem
+                content = read_markdown_file(file_path)
+                response = create_or_update_notion_page(title, content)
+                print(f"Synced {file_path} to Notion. Response: {response}")
+            except Exception as e:
+                print(f"Error processing {file_path}: {str(e)}")
 
 
 if __name__ == "__main__":
