@@ -17,7 +17,7 @@ jobs:
     - name: Get changed files
       id: changed-files
       run: |
-        echo "files=$(git diff --name-only 25ddfea6cb7089838266cc3a1ca2606a7444f1df 27a33665022cbb6940147784c51b45e63a45ed42 | cat | grep '\.md')" >> $GITHUB_OUTPUT
+        echo "files=$(git diff --name-only HEAD^ HEAD | cat | grep '\.md')" >> $GITHUB_OUTPUT
 
     - name: Install dependencies
       run: |
