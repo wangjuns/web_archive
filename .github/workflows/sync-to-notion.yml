@@ -1,0 +1,32 @@
+name: Sync Changed Markdown to Notion
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.md'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+
+    - name: Get changed files
+      id: changed-files
+      run: |
+        echo "::set-output name=files::$(git diff --name-only HEAD^ HEAD | grep '\.md$' | xargs)"
+
+    - name: Install dependencies
+      run: |
+        pip install requests
+
+    - name: Sync to Notion
+      env:
+        NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        CHANGED_FILES: ${{ steps.changed-files.outputs.files }}
+      run: |
+        python .github/scripts/sync_to_notion.py
