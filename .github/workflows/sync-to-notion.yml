@@ -17,11 +17,12 @@ jobs:
     - name: Get changed files
       id: changed-files
       run: |
-        echo "files=$(git diff --name-only HEAD^ HEAD | cat | grep '\.md')" >> $GITHUB_OUTPUT
+        git config --global core.quotepath false
+        echo "files=$(git diff --name-only HEAD^ HEAD | grep '\.md')" >> $GITHUB_OUTPUT
 
     - name: Install dependencies
       run: |
-        pip install requests
+        pip install markdown beautifulsoup4 requests
 
     - name: Sync to Notion
       env:
