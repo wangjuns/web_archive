@@ -1,0 +1,35 @@
+name: Build and Deploy with Hugo
+
+on:
+  push:
+    paths:
+      - "**/*.md"
+      - "config.toml"
+      - "config.yaml"
+      - "config.json"
+  pull_request: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout 仓库代码
+      uses: actions/checkout@v2
+
+    - name: 安装 Hugo
+      # 使用 peaceiris/actions-hugo Action 安装 Hugo，支持 extended 版本（如果需要 Sass/SCSS 支持）
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.119.0'   # 指定 Hugo 版本，根据需要调整
+        extended: true
+
+    - name: 生成静态网站
+      run: hugo --minify
+      # 默认 Hugo 会在仓库根目录下生成 public 文件夹存放生成的静态网站
+
+    - name: 部署到 GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public 
