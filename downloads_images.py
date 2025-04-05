@@ -188,7 +188,26 @@ def save_processed_file(index_file, file_path, file_info):
     """保存处理过的文件信息到索引"""
     try:
         processed_files = load_processed_files(index_file)
-        processed_files[file_path] = file_info
+
+        # 简化索引文件，只保存必要信息，不保存local_images列表
+        simplified_info = {
+            "mtime": file_info.get("mtime", 0),
+            "size": file_info.get("size", 0),
+            "processed_at": file_info.get("processed_at", time.time()),
+            "images_count": file_info.get("images_count", 0),
+        }
+
+        # 如果有其他必要信息，也保存
+        if "downloaded" in file_info:
+            simplified_info["downloaded"] = file_info["downloaded"]
+        if "failed" in file_info:
+            simplified_info["failed"] = file_info["failed"]
+        if "updated" in file_info:
+            simplified_info["updated"] = file_info["updated"]
+        if "indexed_only" in file_info:
+            simplified_info["indexed_only"] = file_info["indexed_only"]
+
+        processed_files[file_path] = simplified_info
 
         with open(index_file, "w", encoding="utf-8") as f:
             json.dump(processed_files, f, ensure_ascii=False, indent=2)
@@ -252,7 +271,7 @@ def process_file(
                     "size": file_stat.st_size,
                     "processed_at": time.time(),
                     "images_count": len(local_images),
-                    "local_images": local_images,
+                    "local_images": local_images,  # 这个信息在save_processed_file中会被忽略
                 }
                 save_processed_file(index_file, md_file, file_info)
 
@@ -368,7 +387,7 @@ def process_file(
                 "downloaded": downloaded,
                 "failed": failed,
                 "updated": file_updated,
-                "local_images": local_images,
+                "local_images": local_images,  # 这个信息在save_processed_file中会被忽略
             }
             save_processed_file(index_file, md_file, file_info)
 
@@ -489,7 +508,7 @@ def main():
                         "size": file_stat.st_size,
                         "processed_at": time.time(),
                         "images_count": len(local_images),
-                        "local_images": local_images,
+                        "local_images": local_images,  # 这个信息在save_processed_file中会被忽略
                         "indexed_only": True,
                     }
                     save_processed_file(index_file, md_file, file_info)
