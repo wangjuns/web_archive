@@ -60,7 +60,7 @@ Similar to PaliGemma, attention in Gemma 3 works differently for text and image 
 
 One can see in the figure below that the image tokens `<img>` are provided with bi-directional attention (the entire square is lit up) while the text tokens have causal attention. It also shows how attention works with the sliding window algorithm.
 
-| [![](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/gemma3/attention-ascii.png)
+| [![](assets/b/7/b7fa086cbe892af03dd56c3ad368adf8.png)
 ](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/gemma3/attention-ascii.png) |
 | --- |
 | Attention Visualization (with and without sliding) (Source: [Transformers PR](https://github.com/huggingface/transformers/pull/36630)) |
@@ -78,14 +78,14 @@ For the curious mind, here is the [technical report on Gemma 3](https://goo.gle/
 
 The LMSys Elo score is a number that ranks language models based on how well they perform in head-to-head competitions, judged by human preferences. On LMSys Chatbot Arena, Gemma 3 27B IT reports an Elo score of **1339**, and ranks among the top 10 best models, including leading closed ones. The Elo is comparable to o1-preview and is above other _non-thinking_ open models. This score is achieved with Gemma 3 working on text-only inputs, like the other LLMs in the table.
 
-| [![](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/gemma3/chatbot-arena.png)
+| [![](assets/9/5/957aec268540a54d155ad0ced9abe745.png)
 ](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/gemma3/chatbot-arena.png) |
 | --- |
 | Evaluation of Gemma 3 27B IT model in the Chatbot Arena (March 8, 2025) |
 
 Gemma 3 has been evaluated across benchmarks like MMLU-Pro (27B: 67.5), LiveCodeBench (27B: 29.7), and Bird-SQL (27B: 54.4), showing competitive performance compared to closed Gemini models. Tests like GPQA Diamond (27B: 42.4) and MATH (27B: 69.0) highlight its reasoning and math skills, while FACTS Grounding (27B: 74.9) and MMMU (27B: 64.9) demonstrate strong factual accuracy and multimodal abilities. However, it lags in SimpleQA (27B: 10.0) for basic facts. When compared to Gemini 1.5 models, Gemma 3 is often close—and sometimes better—proving its value as an accessible, high-performing option.
 
-| [![](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/gemma3/pefr-it.png)
+| [![](assets/a/1/a128b76bfccf9637b1e023622832a2eb.png)
 ](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/gemma3/pefr-it.png) |
 | --- |
 | Performance of IT models |
@@ -132,7 +132,7 @@ print(output[0]["generated_text"][-1]["content"])
 
 ```
 
-| Image | [![](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/p-blog/candy.JPG)
+| Image | [![](assets/2/3/23d25615febb04a64c97acb18940d57a.jpg)
 ](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/p-blog/candy.JPG) |
 | --- | --- |
 | Prompt | What animal is on the candy? |
@@ -203,7 +203,7 @@ print(decoded)
 
 ```
 
-| Image | [![](https://huggingface.co/spaces/big-vision/paligemma-hf/resolve/main/examples/password.jpg)
+| Image | [![](assets/1/5/1593e387d1c9e8b07440a9fcdb1348e6.jpg)
 ](https://huggingface.co/spaces/big-vision/paligemma-hf/resolve/main/examples/password.jpg) |
 | --- | --- |
 | Prompt | What is the password? |
@@ -277,7 +277,7 @@ python -m mlx_vlm.generate --model mlx-community/gemma-3-4b-it-4bit --max-tokens
 
 ```
 
-| Image | [![](https://farm8.staticflickr.com/7212/6896667434_2605d9e181_z.jpg)
+| Image | [![](assets/c/1/c150ceabcd1768f80f8907b6d3d0ab38.jpg)
 ](https://farm8.staticflickr.com/7212/6896667434_2605d9e181_z.jpg) |
 | --- | --- |
 | Prompt | What is the code on the vehicle? |

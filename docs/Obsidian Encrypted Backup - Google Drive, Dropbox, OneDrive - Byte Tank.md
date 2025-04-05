@@ -56,28 +56,28 @@ Now that we have the script ready, it makes our life easier if it is run automat
 
 **1.** Go to Obsidian -> Settings. Then select the “Community Plugins” option.
 
- ![](https://lopespm.com/files/obsidian_backup/p0.png) 
+ ![](assets/5/f/5f239cdf671e22d6cbdd444854139448.png) 
 
 **1.1.** On the “Community Plugins” option, click “Browse”. There, search for “Shell”. The one you want to install is [Shell Commands by Jarkko Linnanvirta](https://lopespm.com/notes/2024/09/11/(https://obsidian.md/plugins?search=obsidian-shellcommands))
 
- ![](https://lopespm.com/files/obsidian_backup/p2.png) 
+ ![](assets/2/5/25c0ec17dece1b19e3ea60b75afde87a.png) 
 
- ![](https://lopespm.com/files/obsidian_backup/p3.png) 
+ ![](assets/2/d/2d07d8a7205be3a6009494a72931e964.png) 
 
 **2.** Now that the plugin is installed, go again to Obsidian -> Settings. You should see in the bottom left, under the “Community plugins” pane, an option named “Shell commands”. Click it.
 
- ![](https://lopespm.com/files/obsidian_backup/p4.png) 
+ ![](assets/4/4/44cb9f96edb69d6ed4572177f5ccd82f.png) 
 
 **3.1.** On the “Shell commands” plugin, select the “Shell commands” tab, and inside it, click “New shell command”, and the created row, click its respective cog icon. This will show you a new modal with several tabs.
 
 **3.2.** On this command modal, select the “Environments” tab and insert on the “Default shell command” something like this: `zsh /Users/yourunixname/backups/my_backup_script.sh`. This assumes that your script is located at `/Users/yourunixname/backups/my_backup_script.sh`
 
- ![](https://lopespm.com/files/obsidian_backup/p5.png) 
+ ![](assets/5/3/539a26821d1fd6d1676b0d34c69dc658.png) 
 
 **3.3.** Still on this command modal, select the “Events” tab. There you can choose when should the script execution be done. For example, search for “Obsidian quits”, and enable it (there is a toggle in the right)
 
- ![](https://lopespm.com/files/obsidian_backup/p6.png) 
+ ![](assets/1/6/1636016fc3c47cd3cb67886c4d2e706b.png) 
 
- ![](https://lopespm.com/files/obsidian_backup/p7.png) 
+ ![](assets/4/a/4aa9aab2f688c1a0971a613cea4ee2da.png) 
 
 All done! After performing these steps, your backup script will run whenever you chose to, and the encrypted backup will be created and placed in the location that you chose on [Step 1.](https://lopespm.com/notes/2024/09/11/obsidian-backup.html#step-1-custom-script-that-encrypts-and-backs-up-all-notes) above 🎉

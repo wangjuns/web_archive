@@ -85,7 +85,7 @@ For example at 80% utilization rate and a PUE of 1.25, the theoretical datacente
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F92ae3573-7fc5-4ed1-a1f4-359e0f41187b_1126x943.png)
+![](assets/2/a/2a2c9560fe56e38d2627300adb7b0eab.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F92ae3573-7fc5-4ed1-a1f4-359e0f41187b_1126x943.png)
@@ -122,7 +122,7 @@ Using a line-by-line unit shipment forecasts by accelerator chip based on our [A
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd411a4d-2b02-4f43-a20b-888a04a64de2_1553x987.png)
+![](assets/6/8/68609e5993c892e9c3d18fef3f550d85.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd411a4d-2b02-4f43-a20b-888a04a64de2_1553x987.png)
@@ -137,7 +137,7 @@ Nowhere will the impact be felt more than in the United States, where our satell
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2f8168e8-e7ca-4006-bab6-e93b55151e83_1698x514.png)
+![](assets/c/3/c392a483d8b02daf3fa44f6c9ed716bc.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2f8168e8-e7ca-4006-bab6-e93b55151e83_1698x514.png)
@@ -158,7 +158,7 @@ This reality is not lost on the top global hyperscalers – who are rapidly ramp
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe94eed35-8a5b-44c1-a02e-6aeae001a145_1886x1078.png)
+![](assets/a/1/a1e665a18d48214a0d8f738f4ce89016.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe94eed35-8a5b-44c1-a02e-6aeae001a145_1886x1078.png)
@@ -188,7 +188,7 @@ For inference, we have detailed the economics of AI Cloud hosting in our posts o
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcb6ee4a0-5d69-466b-965f-fc42ebd93924_1912x1365.png)
+![](assets/d/7/d79de89a16d0580faaa3f23bb58bac48.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcb6ee4a0-5d69-466b-965f-fc42ebd93924_1912x1365.png)
@@ -213,7 +213,7 @@ Countries that can step up to the plate and tick off those boxes are contenders 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fec2a9c-7a44-4eaa-83c3-55049d3174c6_2446x1464.png)
+![](assets/4/9/49a2c3ef948ec1b476021fdad6afb8ee.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fec2a9c-7a44-4eaa-83c3-55049d3174c6_2446x1464.png)
@@ -268,7 +268,7 @@ Meanwhile, AI startup Omniva, which has just barely exited from stealth mode, pu
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9d2bade3-4a05-402f-9ee6-c45e4a3403cb_970x1060.png)
+![](assets/c/a/ca74dd68ba4e6f180bf46988abfaa881.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9d2bade3-4a05-402f-9ee6-c45e4a3403cb_970x1060.png)

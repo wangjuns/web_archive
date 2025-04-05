@@ -5,7 +5,7 @@ Comparing two large-language models: Approach and example
 
 [
 
-![](https://miro.medium.com/v2/resize:fill:55:55/1*6RKr7VP2OJiF-5oWTtkZvQ.jpeg)
+![](assets/9/4/949194ee6ba19ba84f4d6a8957be6bff.jpeg)
 
 
 
@@ -18,7 +18,7 @@ Comparing two large-language models: Approach and example
 
 ](https://pranay-dave9.medium.com/?source=post_page-----2f1cf92af21a--------------------------------)[
 
-![](https://miro.medium.com/v2/resize:fill:30:30/1*CJe3891yB1A1mzMdqemkdg.jpeg)
+![](assets/7/e/7e18f60ecab52ef1c3a5fbacacdeaa45.jpeg)
 
 
 
@@ -33,7 +33,7 @@ Comparing two large-language models: Approach and example
 
 ](https://towardsdatascience.com/?source=post_page-----2f1cf92af21a--------------------------------)
 
-![](https://miro.medium.com/v2/resize:fit:875/1*7J_eUxDlScAizmAq9I2lzg.png)
+![](assets/f/b/fb06423e2d0dae77506d97da7f651479.png)
 
 Image created by DALLE and PPT by author ([https://labs.openai.com/s/qQgpAQbLi0srYlZHOHQjGKWh](https://labs.openai.com/s/qQgpAQbLi0srYlZHOHQjGKWh))  
 图片由DALLE和PPT由作者创建（https://labs.openai.com/s/qQgpAQbLi0srYlZHOHQjGKWh）
@@ -53,7 +53,7 @@ However, we can make a comparison based on the quality of a common natural langu
 Shown below is the comparison approach which I will take.  
 下面显示的是我将采取的比较方法。
 
-![](https://miro.medium.com/v2/resize:fit:875/1*N2ijdQyRU_gTH20C6wd4Uw.png)
+![](assets/2/7/2776ef7f683807a9cf1f30461399993d.png)
 
 Comparison approach (image by author)  
 比较方法（图片来自作者）
@@ -64,7 +64,7 @@ I made a toss of a coin, and GPT won the toss! So let us start with GPT first. I
 Here is an example of the review text.  
 下面是评论文本的示例。
 
-![](https://miro.medium.com/v2/resize:fit:875/1*JCaQY2hLB2OWdoaSPc8LdQ.png)
+![](assets/e/c/ecaad8686d92109d7069cbe9558adfa1.png)
 
 Example of a customer review (image by author)  
 买家评论示例（图片来源：作者）
@@ -72,7 +72,7 @@ Example of a customer review (image by author)
 In order to get the embeddings of the text using GPT, we need to make an API call to OpenAI. The result is embedding or vector of size of 1540 for each text. Here is a sample data which includes the embeddings.  
 为了使用 GPT 获取文本的嵌入，我们需要对 OpenAI 进行 API 调用。结果是每个文本的嵌入或大小为 1540 的向量。下面是包含嵌入的示例数据。
 
-![](https://miro.medium.com/v2/resize:fit:875/1*A53SMyFXXo8U1RA28Oow2A.png)
+![](assets/f/9/f90d7377ad4b12837a754645318e191a.png)
 
 Embeddings obtained from model (image by author)  
 从模型获得的嵌入（图片来自作者）
@@ -80,7 +80,7 @@ Embeddings obtained from model (image by author)
 The next step is clustering and visualization. One can use KMeans to cluster the embedding vector and use TSNE to reduce the 1540 dimensions to 2 dimensions. Shown below are the results after clustering and dimensionality reduction.  
 下一步是聚类和可视化。可以使用 KMean 对嵌入向量进行聚类，并使用 TSNE 将 1540 维减少到 2 维。下面显示了聚类和降维后的结果。
 
-![](https://miro.medium.com/v2/resize:fit:875/1*rDSZLp5iNiUlsC7jk-ZJag.png)
+![](assets/4/b/4b6d95800215fbc00c490025a9786681.png)
 
 GPT embedding clustering (image by author)  
 GPT 嵌入聚类分析（图片来自作者）
@@ -94,7 +94,7 @@ Overall, GPT embeddings give good results as indicated by the quality of cluster
 Can BERT perform better? Let us find out. There are multiple versions of the BERT model such as bert-base-case, bert-base-uncased, etc.. Essentially they have different embedding vector sizes. Here is the result based on Bert base which has an embedding size of 768.  
 伯特能表现得更好吗？让我们来了解一下。BERT模型有多个版本，例如bert-base-case，bert-base-uncased等。本质上，它们具有不同的嵌入向量大小。这是基于 Bert 基础的结果，其嵌入大小为 768。
 
-![](https://miro.medium.com/v2/resize:fit:875/1*CseIvla7VjevNo9eIegv3Q.png)
+![](assets/a/5/a55d09a353cffc261a5070f3c678a02e.png)
 
 BERT embedding (768) clustering (image by author)  
 BERT嵌入（768）聚类（图片来自作者）
@@ -105,7 +105,7 @@ The green cluster corresponds to dog food. However one can observe that the clus
 Fortunately, BERT also offers a higher embedding size of 1024. Here are the results.  
 幸运的是，BERT还提供了更高的嵌入大小1024。以下是结果。
 
-![](https://miro.medium.com/v2/resize:fit:875/1*OIdjnmdyvdURoXlQCv9k-w.png)
+![](assets/a/7/a7a87f444c53b84cd279cce5c1d92f44.png)
 
 BERT embedding (1024) clustering (image by author)  
 BERT嵌入（1024）聚类（图片来自作者）
@@ -116,7 +116,7 @@ Here the orange cluster corresponds to dog food. The cluster is relatively compa
 Clearly, GPT does a better job and provides higher-quality embeddings compared to BERT. However, I would not like to give all credit to GPT as there are other aspects to the comparison. Here is a summary table  
 显然，与 BERT 相比，GPT 做得更好，并且提供了更高质量的嵌入。但是，我不想将所有功劳都归功于 GPT，因为比较还有其他方面。下面是一个汇总表
 
-![](https://miro.medium.com/v2/resize:fit:875/1*zztPDPCrDUKVhs2GRISN-g.png)
+![](assets/e/8/e8fe3767596964360ba3ba9064b64536.png)
 
 GPT wins over BERT for the embedding quality provided by the higher embedding size. However, GPT required a paid API, while BERT is free. In addition, the BERT model is open-source, and not black-box so you can make further analysis to understand it better. The GPT models from OpenAI are black-box.  
 GPT 赢得了 BERT 的更高嵌入大小提供的嵌入质量。但是，GPT 需要一个付费的 API，而 BERT 是免费的。此外，BERT模型是开源的，而不是黑盒，因此您可以进行进一步的分析以更好地理解它。OpenAI的GPT模型是黑盒。

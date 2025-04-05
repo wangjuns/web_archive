@@ -1,7 +1,7 @@
 # 人工智能70年：科幻和现实的交融 - BBC 英伦网
 2019年6月11日
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/1189C/production/_107163817_hi026069234.jpg)
+![](assets/7/a/7a3d1fb0d2e38c495e9662c102903703.jpg)
 
 图像来源, MEHAU KULYK/SCIENCE PHOTO LIBRARY
 
@@ -19,7 +19,7 @@ AI研发史上经历过两次“寒冬”，2018年人们又开始谈论第三�
 
 人工智能正在如何改变我们的生活？它将把我们带向何方？人类和机器的关系如何界定？看懂现在，展望未来，或许可以从回顾历史开始。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/B642/production/_107185664_medeia_and_talus.gif)
+![](assets/5/d/5d15724cf3cbac16f7cfdb140fa411aa.gif)
 
 图像来源, AFP
 
@@ -40,7 +40,7 @@ AI研发史上经历过两次“寒冬”，2018年人们又开始谈论第三�
 
 作为现代科技学科的AI历史很短，但不乏跌宕坎坷。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/11CF2/production/_107164927_hi046691406.jpg)
+![](assets/3/1/316e2f9b73ef2425b11cdb18aabeffed.jpg)
 
 图像来源, ktsimage/Getty Images
 
@@ -55,7 +55,7 @@ AI研发史上经历过两次“寒冬”，2018年人们又开始谈论第三�
 
 AI的另一块基石是加拿大神经心理学家赫布（Donald Hebb）1949年提出“赫布规则”，简单说就是两个细胞如果总是同时被激活，那么它们之间就有某种关联，关联度与同时激活概率成正比关系。这个规则今天用在机器自动学习算法中。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/416C/production/_107184761_hi052927345.jpg)
+![](assets/3/4/345111e2af6ddae2deb2cdf89595dd98.jpg)
 
 图像加注文字, 英国数学和密码奇才图灵曾设想是否可能让机器模仿人脑的学习过程
 
@@ -74,7 +74,7 @@ AI的另一块基石是加拿大神经心理学家赫布（Donald Hebb）1949年
 
 研讨会被普遍 视为人工智能作为一门学科的创立，所以这一年算AI元年。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/3D96/production/_107166751_tv000205402.jpg)
+![](assets/b/7/b7a51682f3e6dfd929be253efc9e0614.jpg)
 
 图像来源, PETER MENZEL/SCIENCE PHOTO LIBRARY
 
@@ -86,7 +86,7 @@ AI元年后，喜讯不断。1957年，GPS（通用问题解决器）设想问�
 
 也是在这一年，塞缪尔首创了机器学习这个概念。他1956年写的跳棋程序具有自学能力，是世界第一个。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/1A5C/production/_107184760_hi009804631.jpg)
+![](assets/1/3/13cb083bdf35c58428bdd1eafeb222a3.jpg)
 
 图像加注文字, BBC科幻电视剧《神秘博士》里的盗梦故事
 
@@ -103,7 +103,7 @@ AI元年后，喜讯不断。1957年，GPS（通用问题解决器）设想问�
 
 半个多世纪后的今天，机器人索菲亚仍需依靠事先输入的内容才能与人交流，但能说能笑能哭，而且是美女形象。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/1A02/production/_107185660_eliza.gif)
+![](assets/e/5/e59074dd9822c4c71e06c6603424d6cd.gif)
 
 图像加注文字, 《窈窕淑女》中的伊莉莎出身贫穷，但在希金斯教授的调教下成了谈吐优雅的“窈窕淑女”。
 
@@ -122,7 +122,7 @@ AI元年后，喜讯不断。1957年，GPS（通用问题解决器）设想问�
 
 1968年，科幻大片《2001太空漫游》上映，导演库布里克对人类心灵深处那个古老的渴望做了太空时代的演绎。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/100E6/production/_107166756_tv000098093.jpg)
+![](assets/9/1/91d22a6a4098701151ad6c0076d0e206.jpg)
 
 图像来源, EMI
 
@@ -156,7 +156,7 @@ AI元年后，喜讯不断。1957年，GPS（通用问题解决器）设想问�
 
 这本身是一个哲学命题，缸中靠营养液存活、通过电脑接收各种刺激而产生感知的大脑，实际上就是虚拟现实。这个假想为人工智能提供了启示，也引发了对人工智能的哲学思考，也催生了许多科幻作品，比如《盗梦空间》、《源代码》和《阿凡达》。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/4638/production/_107167971_03.alterhiroshiishiguro.jpg)
+![](assets/2/8/28c868c33234417998fb70c5ce74f8fb.jpg)
 
 图像来源, Tristan Fewings/Getty Images
 
@@ -213,7 +213,7 @@ ImageNet挑战是每年一度的全行业比武，比谁家的电脑视觉算法
 
 因为，索菲亚虽然具备不少先进的技术，包括仿生材料做的皮肤和逼真的面部表情，与人互动时的共情反应，但她只会说事先输入和设置的话，不具备人们以为她拥有的应用语言智能和思想意识。很快，索菲亚销声匿迹。
 
-![](https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/10988/production/_107167976_hi002405702.jpg)
+![](assets/7/b/7b1220b482df245525c85a6d60498306.jpg)
 
 图像来源, Science Photo Library
 

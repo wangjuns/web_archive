@@ -21,7 +21,7 @@ Transformers are translating text and speech in near real-time, opening meetings
 
 They’re helping researchers understand the chains of genes in DNA and amino acids in proteins in ways that can speed drug design.
 
- [![](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-apps-672x459.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-apps.jpg) 
+ [![](assets/8/b/8b07a76060f8aeda9398729fc1d5c4dd.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-apps.jpg) 
 
 Transformers, sometimes called foundation models, are already being used with many data sources for a host of applications.
 
@@ -36,7 +36,7 @@ Any application using sequential text, image or video data is a candidate for tr
 
 That enables these models to ride a virtuous cycle in transformer AI. Created with large datasets, transformers make accurate predictions that drive their wider use, generating more data that can be used to create even better models.
 
- [![](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-timeline-672x143.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-timeline.jpg) 
+ [![](assets/8/1/81b7f6d457f520622ac10a5b671dabdd.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-timeline.jpg) 
 
 Stanford researchers say transformers mark the next stage of AI’s development, what some call the era of transformer AI.
 
@@ -65,7 +65,7 @@ Like most neural networks, transformer models are basically large encoder/decode
 
 Small but strategic additions to these blocks (shown in the diagram below) make transformers uniquely powerful.
 
- [![](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-model-example-aidan-gomez-672x400.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-model-example-aidan-gomez.jpg) 
+ [![](assets/1/0/105258d1af0b171b2e8f40e7095b4908.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-model-example-aidan-gomez.jpg) 
 
 A look under the hood from a presentation by Aidan Gomez, one of eight co-authors of the 2017 paper that defined transformers.
 
@@ -156,7 +156,7 @@ Along the way, researchers found larger transformers performed better.
 
 For example, researchers from [the Rostlab](https://www.rostlab.org/) at the Technical University of Munich, which helped pioneer work at the intersection of AI and biology, used [natural-language processing to understand proteins](https://blogs.nvidia.com/blog/2020/07/16/ai-reads-proteins-covid/). In 18 months, they graduated from using RNNs with 90 million parameters to transformer models with 567 million parameters.
 
- [![](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-for-proteins-400x305.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-for-proteins.jpg) 
+ [![](assets/8/7/876d8c46775e965a7fa6f4a6551a102b.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-for-proteins.jpg) 
 
 Rostlab researchers show language models trained without labeled samples picking up the signal of a protein sequence.
 
@@ -173,7 +173,7 @@ MT-NLG had its public debut as the brain for TJ, the Toy Jensen avatar that gave
 
 “When we saw TJ answer questions — the power of our work demonstrated by our CEO — that was exciting,” said Mostofa Patwary, who led the NVIDIA team that trained the model.
 
- [![](https://blogs.nvidia.com/wp-content/uploads/2022/03/TJ-Mar-2022-338x400.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/TJ-Mar-2022.jpg) 
+ [![](assets/4/5/45181e7f973665d3b7ec3524d81bb97f.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/TJ-Mar-2022.jpg) 
 
 “Megatron helps me answer all those tough questions Jensen throws at me,” TJ said at GTC 2022.
 
@@ -196,7 +196,7 @@ With those and other advances, “transformer model training can be reduced from
 
 Last year, Google researchers described the [Switch Transformer](https://arxiv.org/pdf/2101.03961.pdf), one of the first trillion-parameter models. It uses AI sparsity, a complex mixture-of experts (MoE) architecture and other advances to drive performance gains in language processing and up to 7x increases in pre-training speed.
 
- [![](https://blogs.nvidia.com/wp-content/uploads/2022/03/Switch-Transformer-672x351.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Switch-Transformer.jpg) 
+ [![](assets/4/b/4b22fe97906299119872e62d7372f5c4.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Switch-Transformer.jpg) 
 
 The encoder for the Switch Transformer, the first model to have up to a trillion parameters.
 
@@ -211,7 +211,7 @@ Now some researchers aim to develop simpler transformers with fewer parameters t
 
 Retrieval-based models learn by submitting queries to a database. “It’s cool because you can be choosy about what you put in that knowledge base,” he said.
 
- [![](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-size-timeline-GTC-594x500.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-size-timeline-GTC.jpg) 
+ [![](assets/f/d/fdd245306e675a0891757b49a201db95.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-size-timeline-GTC.jpg) 
 
 In the race for higher performance, transformer models have grown larger.
 
@@ -241,7 +241,7 @@ Vaswani imagines a future where self-learning, attention-powered transformers ap
 
 “We are in a time where simple methods like neural networks are giving us an explosion of new capabilities.”
 
- [![](https://blogs.nvidia.com/wp-content/uploads/2022/03/H100-Transformer-perf-1280-672x283.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/H100-Transformer-perf-1280.jpg) 
+ [![](assets/3/a/3a01387c6573efa410a53d5cfc4bc97b.jpg)](https://blogs.nvidia.com/wp-content/uploads/2022/03/H100-Transformer-perf-1280.jpg) 
 
 Transformer training and inference will get significantly accelerated with the NVIDIA H100 GPU.
 

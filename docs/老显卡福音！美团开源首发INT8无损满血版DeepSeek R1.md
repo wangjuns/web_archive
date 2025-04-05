@@ -23,7 +23,7 @@ INT8: 友好的“平替”
 
 为了继续保持高吞吐性能，美团技术团队**选择了和FP8精度等位宽的INT8精度。**同时，INT8精度被广泛硬件原生支持，基于INT8精度可以极大拓展DeepSeek模型的硬件部署范围。以硬件友好的INT8精度为中心，美团技术团队开始探索FP8“平替”的落地方案。
 
-![Image 1](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtBaKYKk4UzwhFibLaZ5w7jIicW19hYW0NSS9mZwRBiaXibpQD3KANMrh5AVOUj6yHgZejnhWTQ7SkvvyA/640?wx_fmt=png&from=appmsg)
+![Image 1](assets/3/e/3ed0ad677e3d978d102ef4e3d3932cd9.png)
 
 量化技术的探索
 -------
@@ -45,7 +45,7 @@ INT8量化模型精度
 
 分别应用上述的两种量化方法，对开源的DeepSeek R1模型进行了INT8量化处理，并在GSM8K和MMLU两个数据集上对量化后的模型进行了精度评估。评估结果如下表所示，相比基线的BF16和FP8模型，两种INT8量化模型的精度基本无损。
 
-![Image 2](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtBaKYKk4UzwhFibLaZ5w7jIicQtPrAYWueC4WUp59rhOu3WormFut3KnEHc9CQNzT8gYHAQnoNfsn4w/640?wx_fmt=png&from=appmsg)
+![Image 2](assets/2/b/2b080db35c8db0cb94e1d6bd50cfc437.png)
 
 注：表中的精度结果是多次测试的均值。
 
@@ -56,7 +56,7 @@ INT8量化模型推理吞吐
 
 在A100 GPU上对两种INT8模型和BF16模型进行推理吞吐评估。得益于更低的显存要求，INT8量化模型仅需要16张A100 GPU即可推理，但是BF16模型需要32张A100 GPU。为了比较的公平性，统一在32张A100 GPU上进行吞吐测试。结果如下表所示，**分块量化的INT8推理相比BF16可以提升33%的吞吐；通道量化的INT8推理可以进一步达到50%的吞吐提升。**
 
-![Image 3](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtBaKYKk4UzwhFibLaZ5w7jIic9IlsvuuMcZABZYoIAibcxdD9sH5XIU98icuEibpVEg8utuDtnSicAJPRgQ/640?wx_fmt=png&from=appmsg)
+![Image 3](assets/a/0/a0ce7ab4717678324bc5abc590892dff.png)
 
 INT8量化模型部署
 ----------
@@ -95,9 +95,9 @@ curl -X POST 'http://HEAD_IP:5000/v1/chat/completions' \
 
 > write a script for 100 bouncing balls within a sphere, make sure to handle collision detection properly. make the sphere slowly rotate. make sure balls stays within the sphere. implement it in p5.js
 
-![Image 4](https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtBaKYKk4UzwhFibLaZ5w7jIicZiaCWHBY310IzO7GgkP02DaLCiaicWgpAn6JaibglsicNThnpb717nVZE4g/640?wx_fmt=gif&from=appmsg)
+![Image 4](assets/6/f/6fbd898e65f98a59e0e169b87364682c.gif)
 
-![Image 5](https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtBaKYKk4UzwhFibLaZ5w7jIicIWuVW6rNLiaib5arTRqia6nWGib5g8VkOngSpWzR5C5lsFfWjGic3Q37R1g/640?wx_fmt=gif&from=appmsg)
+![Image 5](assets/2/a/2a85ca1f190145e35ede57927fd62ce7.gif)
 
 总结与展望
 -----
@@ -126,7 +126,7 @@ curl -X POST 'http://HEAD_IP:5000/v1/chat/completions' \
 
 我们会（尽量）及时回复你
 
-![Image 6](https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtC5nGy7YMGhQ0ZJeyibWyL0KVCtiaLEPMyd4Bszuo0bFIOxZOvdmqdxnOosYXyu5aI7MXpyUrUWfz6g/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
+![Image 6](assets/6/5/654e5c7ed7f41165fd726d50bf1b39bb.gif)
 
 **一键关注 👇 点亮星标**
 

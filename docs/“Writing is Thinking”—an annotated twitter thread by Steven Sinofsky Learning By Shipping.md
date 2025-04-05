@@ -1,5 +1,5 @@
 # “Writing is Thinking”—an annotated twitter thread | by Steven Sinofsky | Learning By Shipping
-![](https://miro.medium.com/v2/resize:fit:700/1*xOZtxhtGCViLvWOS0t1fng.png)
+![](assets/c/0/c02b4d50a90ed45468a205bc6e95231a.png)
 
 Source: clipart
 
@@ -8,7 +8,7 @@ Source: clipart
 
 [
 
-![](https://miro.medium.com/v2/resize:fill:88:88/1*jFMiC0pDv-T4GW-nViKOuw.jpeg)
+![](assets/f/6/f6f4d5537f07d047133553fecc3752ef.jpeg)
 
 
 
@@ -21,7 +21,7 @@ Source: clipart
 
 ](https://medium.com/@stevesi?source=post_page-----2a75fe07fade--------------------------------)[
 
-![](https://miro.medium.com/v2/resize:fill:48:48/1*Noh94jiJRNqKa7GB082xyg.png)
+![](assets/8/d/8dfae87d84ec1b21211340e43f8d59d3.png)
 
 
 
@@ -36,13 +36,13 @@ Source: clipart
 
 ](https://medium.learningbyshipping.com/?source=post_page-----2a75fe07fade--------------------------------)
 
-![](https://miro.medium.com/v2/resize:fit:700/1*JyneJaf0FSnS9SR3XSg5dw.png)
+![](assets/f/4/f4080d4f465c5668a1ccbf2309a4ddf6.png)
 
 The first I heard the expression “writing is thinking” was from Peter Pathe, who not-so-coincidentally was the VP of the Word team in the major growth era. I learned a lot from him (“the best competitive feature I have against WordPerfect is Excel”).
 
 It is really incredible the amount of pushback I see from companies, startups to big, about writing. In particular around the notion that writing is the antithesis of agile. Writing ossifies and cements decision or plans that should change, it is said. My view is that agility comes from planning. Without plans, activities are just _brownian_ motion. And you can’t have plans, especially shared plans, without writing.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*dDinCEYti-nGjXq-ducydg.png)
+![](assets/7/1/71fc985278dc9a3ebdb722a4d0713966.png)
 
 I love this excerpt from this year’s [Amazon letter](https://www.sec.gov/Archives/edgar/data/1018724/000119312518121161/d456916dex991.htm) on both levels. First, I still can’t do a handstand well after 15 years. Second, using this to illustrate the value of writing is great.
 
@@ -54,11 +54,11 @@ For example, it is likely that people are treating 6 page memos as “goals” u
 
 The second way processes become corrupt is how they are “gamed”. Several noted in follow up tweets that memos are no longer 6 readable pages. Fonts have shrunk to 10pt or less. Margins are .25". And no one would waste space on bullets, charts, or images. That gaming of a system, or the constraints that force positive creativity, is also always a side effect. Look at twitter—_restricting char cnt casued ppl 2 write diffrntly_.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*9rnePkA1V3OWKfU8ve9rKg.png)
+![](assets/c/d/cd8b48a36ab658e3cb8f028ba488204a.png)
 
 I love PowerPoint, more than I would love to do a handstand. The challenge I outlined here is that most “decks” are created hours before an important meeting and look like this. Most business decks outlining a strategy are woefully inadequate for evaluating a strategy based on depth of alternatives considered, side effects, costs, and above all rationale. Decks focus on the take-aways and tactics, and importantly are designed to sell.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*KFy5289vpkswplM4f4XrEg.png)
+![](assets/2/6/26223be4aa47cedbbb1a59f39532b29b.png)
 
 The biggest challenge with decks to communicate strategy is the ability for people, managers or individuals, to make up their own ground truth about what a bullet, lone graphic, or slide title implies. If you ever want to see this play out, watch something like a big org change roll out where the “tool” provided by exec management is deck with some moderate slide notes. The game of telephone would show how poor a transfer of information decks can be. Or another test is to consider the new employee just weeks later — how can they get up to speed looking at bullet points?
 
@@ -68,7 +68,7 @@ If you sit down to write out a plan to a difficult situation, you might think yo
 
 Plus writing something for an audience is a way of making you consult representatives of that audience before publishing. What will marketing think? Will sales people be able to sell? Whether you consider those perspectives before or not does not change that they will react. This isn’t “buy-in” or “heads-up” but actually consulting the real stakeholders of a decision.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*NLWvxbhb3LuSV8gLhtBG6A.png)
+![](assets/f/d/fdb667aef4acbeee1c7c16a3fb0c8f82.png)
 
 From the minute execution begins on a product (or decision or GTM or…) the divergence from the plan begins. If the plan is a deck or a speech, divergence is instant and rapid. With a detailed plan because people making all the “micr-decisions” day in and day out have the context for the plan—the framework, rationale, logic behind the decision—the organization is far more likely to make consistent tradeoffs.
 
@@ -76,7 +76,7 @@ Founders might spend too much time externally writing about venture, funding, be
 
 This is a much more effective tool than a slide listing 5 priorities in numerical order for a project only because the first decision to test the plan is almost always one that arises due to choices that question such a terse view of the world.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*Vii5-3m9W0H65uhC7MPiHA.png)
+![](assets/2/f/2fb9565b8ef035c8566b71c95f856841.png)
 
 By far the biggest pushback over writing is that it takes time. Even for the best writers it is difficult to do well. There is a tradeoff no doubt. People tweeted Amazon six pagers that took months to write, which seems crazy to me (is the goal the memo or the work to be done?)
 
@@ -86,17 +86,17 @@ The most importantly memos I wrote at Microsoft were 15–20 pages. I had a few 
 
 That means I had to really take responsibility and spend the time to do this well. But I agree with the ROI and that’s why I am writing this.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*_jNTWrH6Hv4roHeywTScsw.png)
+![](assets/a/d/ad7e9cae5cf9a2c5873df1763907e47f.png)
 
 I believe that the fastest execution happens with a plan. I do not believe you can iterate your way to a robust execution at any scale beyond 3 or 4 people for 6–12 months. Beyond that level of scale, not only will individual efforts diverge from what was originally thought, the further out in time you go the less likely there will be a robust path to get there without a plan, even for a small group.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*Lv-mti6Cowp__GjDozZp_Q.png)
+![](assets/9/8/987f2d4b2d9cf3941d5939fc98db78e6.png)
 
 Writing (reading) really helps people if they are remote, if there is not a shared native language, or both. Writing can be difficult for some, for sure. That is why it is important to focus on the function, not the form. Don’t be afraid to help people (especially as a manager) through the process on the “basics” of writing.
 
 My biggest pet peeve of “decks” is how there are people who will bang out a deck and use that skill to “own a meeting” or “own a strategy”. To me that is like the person that tries to take over a meeting by commanding a whiteboard. A deck is not a plan and should not be treated by one, even if the story it tells seems to work.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*RB2iQX9ZtE9T-knLKLuFtA.png)
+![](assets/9/c/9c2161f0aef86a9c3be35ccb1db671f2.png)
 
 Are you creating a writing culture? Said in a way that I think makes more sense, is writing a core value of the company (team)? I hope so because I think it really matters and can help.
 
@@ -110,7 +110,7 @@ So get started.
 
 —Steven
 
-![](https://miro.medium.com/v2/resize:fit:700/1*K0n92-QpHLXYgEiujxCvww.png)
+![](assets/5/c/5c495046b76afb98e4774871c077b939.png)
 
 Below is the original thread from twitter:
 ------------------------------------------
@@ -119,11 +119,11 @@ Below is the original thread from twitter:
 
 Writing is super hard. It takes more time to write than it does to talk. It also takes more time to write a page of text than a single slide. Let’s look at one example, the paragraph on handstands from Jeff Bezos’ annual letter.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*qLKlsIDryNPperOO5cnsbg.png)
+![](assets/3/e/3ed14889adbd63483d629919289f9236.png)
 
 I made a slide in about 5 minutes that simulates what it would be like if I had this story in my head before a meeting (Note: I continue to live developing a perfect handstand). This is typically what you’d see in a team meeting on this topic.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*tTien0rWjtvXPRMK-STKIQ.png)
+![](assets/5/a/5ac9661aa8bd984dd1311c619264b4a8.png)
 
 We can see how much is lost. Think of this as a team trying to join in this lesson. Think about trying to share this lesson multiple times (management is repetition). Think about a new team member or partner who only has this slide. (Internet please do not fix my slide!)
 

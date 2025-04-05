@@ -44,7 +44,7 @@ Nvidia’s FLOPS have increased multiple orders of magnitude by leveraging Moore
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a422e2d-f2d2-404e-aad4-dec31f47ce77_1187x862.png)
+![](assets/e/e/eeed36907bebfd754aca1ebe0f57d3d1.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a422e2d-f2d2-404e-aad4-dec31f47ce77_1187x862.png)
@@ -53,7 +53,7 @@ If we go back to 2018, when the BERT model was state of the art, and the Nvidia 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c718323-fd9c-4c6d-8ea3-815dea887386_1513x487.png)
+![](assets/c/c/cc91141076d05a70539806d68b28a617.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c718323-fd9c-4c6d-8ea3-815dea887386_1513x487.png)
@@ -66,7 +66,7 @@ As models continue to soar in size, large language models take 100s gigabytes, i
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa62c2392-d588-4fdf-8872-e51ba3335250_704x513.jpeg)
+![](assets/3/5/35519928c645118c1492a7cd71a43445.jpeg)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa62c2392-d588-4fdf-8872-e51ba3335250_704x513.jpeg)
@@ -95,7 +95,7 @@ DRAM followed the path of Moore’s Law for many decades. When Gordon Moore coin
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3f3c7f05-649b-4f02-91be-61c84a30888f_1697x883.png)
+![](assets/6/f/6f74f9746a988ad8936bceb30f908926.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3f3c7f05-649b-4f02-91be-61c84a30888f_1697x883.png)
@@ -122,7 +122,7 @@ As such, one of the principal optimization methods for a model executed in Eager
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40995db9-3a8d-4917-8943-c313807d92b9_3420x1952.png)
+![](assets/f/7/f7d1d34732c969beaec52a7c0d4e98a7.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F40995db9-3a8d-4917-8943-c313807d92b9_3420x1952.png)
@@ -135,7 +135,7 @@ The increase in operators made both creating the model within PyTorch easier and
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F437175e3-1af1-451e-941e-5715858cff16_690x862.png)
+![](assets/f/7/f7fa375d0c594377d969bb3b696debe0.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F437175e3-1af1-451e-941e-5715858cff16_690x862.png)
@@ -170,7 +170,7 @@ PyTorch 2.0 还在分布式训练方面带来了进展，提供了更好的 API 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F05aab965-a207-4d01-b680-6c0fb7bdcc8a_936x656.png)
+![](assets/6/6/6686eb2c70676be87765e9f77fb1d19e.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F05aab965-a207-4d01-b680-6c0fb7bdcc8a_936x656.png)
@@ -187,7 +187,7 @@ TorchDynamo already works for [over 99% of the 7,000 PyTorch models tested](http
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d458fdc-ae3c-406c-9ca2-16f011b7081a_1058x736.png)
+![](assets/8/8/88c5c3c7f9e9ff3b9db3ddbf19758572.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d458fdc-ae3c-406c-9ca2-16f011b7081a_1058x736.png)
@@ -203,7 +203,7 @@ Google’s TensorFlow/Jax and other graph mode execution pipelines generally req
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc42cb6d-5aaa-471b-b65f-fae82146fbd2_1920x966.png)
+![](assets/8/1/810f45b136a7aa716741f5984aa85e38.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc42cb6d-5aaa-471b-b65f-fae82146fbd2_1920x966.png)

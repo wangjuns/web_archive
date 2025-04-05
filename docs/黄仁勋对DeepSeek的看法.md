@@ -3,7 +3,7 @@ Title: 黄仁勋对DeepSeek的看法
 URL Source: https://mp.weixin.qq.com/s/zqFMiA_DOuTi4WXbpeur0Q
 
 Markdown Content:
-![Image 1](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dlSOw0Zeq8bxDDb9at7uFb5MI56wyliabMPeGVJDphicsoGTAVFYnsicCjx9D4ediabGpxjbtVUgfpDg/640?wx_fmt=jpeg&from=appmsg)
+![Image 1](assets/8/0/80200107fd0de44476acbb972a542ec9.jpg)
 
 👆如果您希望可以时常见面，欢迎标星🌟收藏哦~
 
@@ -103,7 +103,7 @@ _**END**_
 
 \*免责声明：本文由作者原创。文章内容系作者个人观点，半导体行业观察转载仅为了传达一种不同的观点，不代表半导体行业观察对该观点赞同或支持，如果有任何异议，欢迎联系半导体行业观察。
 
-![Image 2](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuDk7BHibzliciaibdYCIhf1mqRA2MmBiaTWaD5ibeicNlAFlNsibkd1f2pmeDOg/640?wx_fmt=jpeg&from=appmsg)
+![Image 2](assets/f/9/f9b22b054cf8c1bc250b202b99a06430.jpg)
 
 **今天是《半导体行业观察》为您分享的第4045期内容，欢迎关注。**
 
@@ -125,11 +125,11 @@ _**END**_
 
 ★[外媒：美国将提议禁止中国制造的汽车软件和硬件](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247756729&idx=8&sn=7763455e2146a96c6c5945c7092c9c90&scene=21#wechat_redirect)
 
-![Image 3](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUu1TXpDFVTuWPIxHJktS4KxvLHbBdANu82pWXFucbIVric6M3Cn7WuJQA/640?wx_fmt=gif&from=appmsg)
+![Image 3](assets/6/8/682469e1e936e675e715f26638ea8f10.gif)
 
-![Image 4](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuCG4MLz2oyuIZMqcgS0cC9tfaiavhootjOTmg6loyqbjb1EHlNxsKgtw/640?wx_fmt=gif&from=appmsg)
+![Image 4](assets/c/9/c9f4484fc890aff7352be7f2f5ad9421.gif)
 
-![Image 5](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuoAoO1fpqEjmy1OPQpiagH2XnYgibDaXTwibchog92XXY3z0AUt5m6klGw/640?wx_fmt=jpeg&from=appmsg)
+![Image 5](assets/1/d/1db335363f34d98cab1828120da63488.jpg)
 
 『半导体第一垂直媒体』
 
@@ -137,6 +137,6 @@ _**END**_
 
 公众号ID：icbank
 
-喜欢我们的内容就点**“在看”**分享给小伙伴哦![Image 6](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuhbJFmFI0FmXdAOGSJU6V1ibAveWWFVjtJf5mH7n0ib7BUhbC0naFWyoQ/640?wx_fmt=gif&from=appmsg)
+喜欢我们的内容就点**“在看”**分享给小伙伴哦![Image 6](assets/2/c/2c2a90b567fc1216087228973999c945.gif)
 
-![Image 7](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuPwZbdic1dGW2ibmrg50pT5BGZUMw0jE1StKR4D8guBwSalq28F6ZcQcw/640?wx_fmt=png&from=appmsg)
+![Image 7](assets/8/f/8f15175a5ee9b61ff4388df436a8048a.png)

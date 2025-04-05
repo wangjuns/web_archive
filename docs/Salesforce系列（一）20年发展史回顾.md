@@ -197,7 +197,7 @@ AI电商
 
 __
 
-登录/注册 ![Image 186: 新人礼包](https://diting-hetu.iyiou.com/pNW4GKV1cVSKBMo4b0I2.png)
+登录/注册 ![Image 186: 新人礼包](assets/d/c/dc4f6d8fbece0ae57e7a41d5f0e18544.png)
 
 
 
@@ -240,7 +240,7 @@ __
 
 作者：朱涛
 
-*   [![Image 188: 头像](https://imgcache.iyiou.com/Avatar/2020-01-03/5e0eb5ecabeb7.jpg)](https://www.iyiou.com/author/5871325)
+*   [![Image 188: 头像](assets/d/e/dee2d066a5c7c6711df89b549861f269.jpg)](https://www.iyiou.com/author/5871325)
     
     [朱涛](https://www.iyiou.com/author/5871325)+关注
     
@@ -251,7 +251,7 @@ __2019-09-20 18:30
 
 __ 成立于1999年3月的Salesforce到今年成立满二十周年，在过去的20年间这家首先提出了“No Software”（去软件化）和SaaS（软件即服务）理念的公司走出了一条惊人的增长曲线。
 
-[[SaaS巨头的经验及启示——Salesforce公司案例分析](https://www.iyiou.com/research/20191125662) Salesforce在过去的20年间一直深耕企业级服务SaaS市场，是SaaS CRM领域的绝对领先者。中国的企业服务SaaS领域发展远落后于美国，很多人都在谈论中国企服SaaS行业的“10倍论”。亿欧智库希望通过对Salesforce这家行业领先者和主导者的系统梳理，回顾SaaS业这20年的发展，同时为中国的企业级SaaS市场提供一点参考和借鉴。 [阅读完整报告 \>](https://www.iyiou.com/research/20191125662) [![Image 189: SaaS巨头的经验及启示——Salesforce公司案例分析](https://diting-hetu.iyiou.com/15746798773855.jpg)](https://www.iyiou.com/research/20191125662) 报告](https://www.iyiou.com/research/20191125662)
+[[SaaS巨头的经验及启示——Salesforce公司案例分析](https://www.iyiou.com/research/20191125662) Salesforce在过去的20年间一直深耕企业级服务SaaS市场，是SaaS CRM领域的绝对领先者。中国的企业服务SaaS领域发展远落后于美国，很多人都在谈论中国企服SaaS行业的“10倍论”。亿欧智库希望通过对Salesforce这家行业领先者和主导者的系统梳理，回顾SaaS业这20年的发展，同时为中国的企业级SaaS市场提供一点参考和借鉴。 [阅读完整报告 \>](https://www.iyiou.com/research/20191125662) [![Image 189: SaaS巨头的经验及启示——Salesforce公司案例分析](assets/5/d/5dcab5c1f5a3790b3833f2d0072bd04a.jpg)](https://www.iyiou.com/research/20191125662) 报告](https://www.iyiou.com/research/20191125662)
 
 系列链接：[《Salesforce系列（二）从财务角度看商业模式》](https://www.iyiou.com/p/114145.html)
 
@@ -281,7 +281,7 @@ Salesforce靠着先进的理念和毛坯产品跌跌撞撞地发展了几年，�
 
 这里必须要普及一下Salesforce最开始做的SaaS CRM业务和SaaS业务的关系。CRM的全称是Customer Relationship Management，即客户关系管理。其出发点是方便企业内的销售专员和销售主管开展销售业务，做好对客户拜访的记录，销售指标的评估，客户服务的跟进等销售任务。SaaS业务的范围则要宽的多，在企业服务中，财税管理软件、人力资源管理软件、进销存管理软件、客户管理软件、办公自动化软件、企业内即时交流软件都可以进行SaaS化。Salesforce在最开始做的CRM业务仅占所有企业级SaaS 应用的一部分。
 
-![Image 190: Salesforce系列（一）20年发展史回顾](https://imgcache.iyiou.com/Editor/image/20190926/1569497726139725.png)
+![Image 190: Salesforce系列（一）20年发展史回顾](assets/5/f/5f62a15d549834b83685d6beb620efce.png)
 
 站在2004年上市之后的角度看Salesforce，确实可以体会到贝尼奥夫的焦虑，吹了5年牛，也做了5年产品，但CRM行业的推进难度和行业天花板是可以看到的，Salesforce很难用这点产品挑战到软件业巨头的现有地位，而后起的SaaS开发者也越来越多了。
 
@@ -339,7 +339,7 @@ Salesforce采用的是订阅付费模式，用户的续费率至关重要。如�
 
 （4）商业云（commerce cloud）：提供商业变现的渠道。企业在线上进行直接的销售，提供交易撮合、订单管理等商业服务，提升消费体验。
 
-![Image 191: Salesforce系列（一）20年发展史回顾](https://imgcache.iyiou.com/Editor/image/20190926/1569499067108293.png)
+![Image 191: Salesforce系列（一）20年发展史回顾](assets/3/7/37c32388abdb869388752a8e7d39ae73.png)
 
 同时，Salesforce还深耕特定场景化服务，针对各行业销售的特点和难点，提供了汽车、通讯、金融、医疗保健、高科技、生命科学、制造业、传媒、公共服务、零售这些垂直行业的专业销售、客服、营销方案。
 
@@ -383,29 +383,29 @@ Salesforce采用的是订阅付费模式，用户的续费率至关重要。如�
 
 本文经授权发布，版权归原作者所有；内容为作者独立观点，不代表亿欧立场。如需转载请联系原作者。
 
-[![Image 193: WIM2024](https://diting-hetu.iyiou.com/EJMQOV7m3xZ64QffS8my.png)](https://www.iyiou.com/special/500044 "查看WIM2024") 会议
+[![Image 193: WIM2024](assets/7/e/7e905d39f45420d7ddcf17ed880e523c.png)](https://www.iyiou.com/special/500044 "查看WIM2024") 会议
 
 [行业观察](https://www.iyiou.com/t/guancha)[企业案例](https://www.iyiou.com/t/qiyeanli)[深度报道](https://www.iyiou.com/t/shendubaodao)[营销云](https://www.iyiou.com/t/yingxiaoyun)[销售云](https://www.iyiou.com/t/xiaoshouyun)[Salesfoce](https://www.iyiou.com/t/Salesfoce)[云计算存储](https://www.iyiou.com/t/yunjisuancunchu)
 
 *   相关推荐
 
-[![Image 194: photoLink](https://diting-hetu.iyiou.com/16499943516337.jpg?imageView2/1/w/900/h/600/format/jpg)](https://www.iyiou.com/analysis/202412021084291)
+[![Image 194: photoLink](assets/5/a/5a25afc349d82f72dd482514db1947dc.jpg)](https://www.iyiou.com/analysis/202412021084291)
 
 [财富大逃杀：打在新中产身上更疼](https://www.iyiou.com/analysis/202412021084291)
 
-[![Image 195: photoLink](https://diting-hetu.iyiou.com/15670897186548.jpg?imageView2/1/w/900/h/600/format/jpg)](https://www.iyiou.com/news/202412021084285)
+[![Image 195: photoLink](assets/2/a/2abf592e1e92f385c2eb3156c51a39c2.jpg)](https://www.iyiou.com/news/202412021084285)
 
 [中国智造出口新贵：具身机器人](https://www.iyiou.com/news/202412021084285)
 
-[![Image 196: photoLink](https://diting-hetu.iyiou.com/kOkM7vWk72wc5YQ1U7Zi.png?imageView2/1/w/900/h/600/format/png)](https://www.iyiou.com/news/202412021084286)
+[![Image 196: photoLink](assets/6/5/65ee0911e1450e0f8b98bb696bc4822e.png)](https://www.iyiou.com/news/202412021084286)
 
 [2024中国汽车经销商高峰论坛丨合肥、西安、郑州、温州、石家庄站隆重举办](https://www.iyiou.com/news/202412021084286)
 
-[![Image 197: photoLink](https://diting-hetu.iyiou.com/15756148561298.jpg?imageView2/1/w/900/h/600/format/jpg)](https://www.iyiou.com/news/202412021084258)
+[![Image 197: photoLink](assets/4/8/48c6ad21bb51929baa68ecf54c3502ca.jpg)](https://www.iyiou.com/news/202412021084258)
 
 [你无限卷低价 侵蚀的是别人工资](https://www.iyiou.com/news/202412021084258)
 
-[![Image 198: 作者头像](https://imgcache.iyiou.com/Avatar/2020-01-03/5e0eb5ecabeb7.jpg)](https://www.iyiou.com/author/5871325)
+[![Image 198: 作者头像](assets/d/e/dee2d066a5c7c6711df89b549861f269.jpg)](https://www.iyiou.com/author/5871325)
 
 [朱涛](https://www.iyiou.com/author/5871325)前亿欧作者
 
@@ -423,11 +423,11 @@ TA的最新内容
 
 *   提及企业
 
-[![Image 199: 企业logo](https://diting-hetu.iyiou.com/logo_off_11475.jpg) 甲骨文中国 无需融资 企业级软件开发商](https://www.iyiou.com/company/jiaguwenzhongguo)
+[![Image 199: 企业logo](assets/a/9/a9f84442c7cd9bb2dfb10db3fd3cc9bf.jpg) 甲骨文中国 无需融资 企业级软件开发商](https://www.iyiou.com/company/jiaguwenzhongguo)
 
-[![Image 200: 企业logo](https://diting-hetu.iyiou.com/logo_off_817.jpg) Salesforce 已上市 美国客户关系管理软件提供商](https://www.iyiou.com/company/salesforce)
+[![Image 200: 企业logo](assets/2/7/27f451d9f834925b51cd5c530913a56b.jpg) Salesforce 已上市 美国客户关系管理软件提供商](https://www.iyiou.com/company/salesforce)
 
-[![Image 201: 企业logo](https://diting-hetu.iyiou.com/04479e4c310e751046c2a0c3ace44e2a.png) SAP 已上市 德国ERP解决方案提供商](https://www.iyiou.com/company/sap)
+[![Image 201: 企业logo](assets/b/8/b80f3e4c11098b069a725520ef47fb6b.png) SAP 已上市 德国ERP解决方案提供商](https://www.iyiou.com/company/sap)
 
 *   热门文章
 
@@ -521,7 +521,7 @@ __关于
 
 微信公众号
 
-*   ![Image 213: 扫码关注](https://diting-hetu.iyiou.com/weixin_gzh.png) 扫码关注
+*   ![Image 213: 扫码关注](assets/3/1/310ec8fb1204d756526212e88b67f11b.png) 扫码关注
 
 *   [版权声明](https://www.iyiou.com/copyright)
 *   [用户协议](https://www.iyiou.com/agreement)
@@ -537,11 +537,11 @@ Copyright ©2024 iyiou.com. All Rights Reserved | 北京亿欧网盟科技有限
 
 0/200
 
-![Image 215: 新人礼包pc](https://diting-hetu.iyiou.com/pQof8IEyJBXcx36HCnlP.png)
+![Image 215: 新人礼包pc](assets/c/f/cfb3d0d46cb8f9ce2d312ca0a9e786a3.png)
 
-![Image 216: 新人礼包图片预加载h5](https://diting-hetu.iyiou.com/AlimkHIT0RzHGycpSv3i.png) ![Image 217: 新人礼包图片预加载pc](https://diting-hetu.iyiou.com/PCPkJ0mZdQVanK7wo6Jj.jpeg)
+![Image 216: 新人礼包图片预加载h5](assets/c/e/ce67d66c7721b3e09532a06f4c0e0023.png) ![Image 217: 新人礼包图片预加载pc](assets/7/6/76ada1c3c1b8834d692230bc7bfef46a.jpeg)
 
- [![Image 218](https://icon.cnzz.com/img/pic1.gif)](https://www.cnzz.com/stat/website.php?web_id=1279392180 "站长统计")
+ [![Image 218](assets/4/3/434b3f425e0082600d3c3ee53b27bf32.gif)](https://www.cnzz.com/stat/website.php?web_id=1279392180 "站长统计")
 
 word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word
 

@@ -49,7 +49,7 @@ Tools like `torch.compile` are a great way to optimize your code to get better p
 
 (And if you're curious about the compilers work, [this post](https://bernsteinbear.com/blog/compiling-ml-models/) by [@tekknolagi](https://twitter.com/tekknolagi) explores compiling models written in [micrograd](https://github.com/karpathy/micrograd/) to C for a 1000-7500x speed increase!)
 
- [![](https://vgel.me/permalink.svg)](#Batching) Batching
+ [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Batching) Batching
 ---------------------------------------------------------
 
 In the unoptimized version of `generate`, we pass the model a single sequence at once, and at each step ask it to append a token:
@@ -136,7 +136,7 @@ Because batching sequences in this way allows the model weights to be used for m
 *   20 tokens x 5 sequences = ~220ms (linear scaling would be ~350ms)
 *   20 tokens x 10 sequences = ~400ms (linear scaling would be ~700ms)
 
-###  [![](https://vgel.me/permalink.svg)](#Continuous_Batching) Continuous Batching
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Continuous_Batching) Continuous Batching
 
 Notice how in the example above, "Mark is quick. He moves quickly." finished before the other sequences, but because the batch as a whole wasn't done, we were forced to continue generating tokens for it ("Random"). This isn't a problem for correctness—we can simply clip the generated sequence to the `[end]` token—but it is unfortunate, since GPU resources are being used to generate tokens we will just throw away.
 
@@ -176,7 +176,7 @@ llm(
 
 =
 
- [![](https://vgel.me/permalink.svg)](#Shrinking_model_weights) Shrinking model weights
+ [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Shrinking_model_weights) Shrinking model weights
 ---------------------------------------------------------------------------------------
 
 Floating point numbers come in different sizes, and that matters for performance. Most of the time for regular software (e.g., Javascript numbers and Python floats), we use 64 bit (double precision) IEEE 754 floating point. Most ML, however, has traditionally used 32 bit (single precision) IEEE 754:
@@ -187,7 +187,7 @@ Floating point numbers come in different sizes, and that matters for performance
 
 Models train and infer fine with fp32, and this saves 4 bytes (50%) per parameter, which is huge—a 7B parameter model would take up 56Gb in fp64, and only 28 Gb in fp32. Remember that large amounts of time during training and inference are spent moving data from RAM to cache and registers—the less data there is to move, the better. So while fp32 is better than fp64, can we do _even better_?
 
-###  [![](https://vgel.me/permalink.svg)](#16_bit_floats) 16 bit floats
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#16_bit_floats) 16 bit floats
 
 fp16, or half precision, is the obvious next step—another 50% savings! You have two main options here: fp16, and bfloat16 (short for brain float, since it was developed by Google Brain), which has better range but worse hardware support.
 
@@ -208,7 +208,7 @@ It's easiest to see the distinction with a diagram showing the size of each fiel
 
 When reducing the fields of a fp32, fp16 and bfloat16 made different tradeoffs: fp16 tried to balance between range and precision by shrinking both the exponent and fraction fields, whereas bfloat16 preserved the range of fp32 by keeping an 8-bit exponent, while sacrificing precision by shrinking the fraction field smaller than fp16. [The loss of range can sometimes be a problem for training in fp16](https://x.com/sytelus/status/1713462678226968973), but for inference either works, and fp16 is probably a better choice if your GPU doesn't support bfloat16.
 
-###  [![](https://vgel.me/permalink.svg)](#Even_smaller!) Even smaller!
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Even_smaller!) Even smaller!
 
 Can we go even smaller? Of course!
 
@@ -224,7 +224,7 @@ However, it's also possible to finetune or train models with datatypes smaller t
 
 Note that, as of 2023, GPUs don't natively support datatypes smaller than fp16, except int8 (8 bit integer). You can train and infer with int8 to some extent, but most quantization requires converting the weights from the quantized format to another type (like fp16) for calculation, and then back when they're no longer needed, which incurs some performance cost. This can pay for itself based on how much memory your GPU has and how fast that memory is, but it's worth being aware of—quantization isn't free.
 
- [![](https://vgel.me/permalink.svg)](#KV_caching) KV caching
+ [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#KV_caching) KV caching
 -------------------------------------------------------------
 
 To explain this one, I'm going to borrow some diagrams from [my last post](https://vgel.me/posts/handmade-transformer) about how Transformers work. If this section feels too quick, please read that post for a (much) more in depth explanation! This explanation is also based on GPT-2, since it's the model I covered in that post. Other architectures work slightly differently—I'll explain the relevant differences, but most don't make too much of a difference for understanding KV caching.
@@ -364,7 +364,7 @@ Compare that to if we only pass the single token _without_ passing `past_key_val
 
 KV caching helps with the algorithmic side of LLM slowness—since we're now only passing in a single token on each step, we don't have to redo _everything_ for each new token. However, it doesn't completely banish the problem, since the KV cache still grows in size each step, slowing down the attention calculation. The size of the KV cache can also pose its own, new problem—for example, with a 1,000 token KV cache, even with the smallest GPT-2 there are 18,432,000 values being cached. If each is an fp32, that's almost 74MB of cache, for a single generation, for a comparatively tiny model! With modern large models, especially running on a server that needs to handle many simultaneous clients, the KV cache can quickly become unmanageable, so a few techniques have popped up to make it better.
 
-###  [![](https://vgel.me/permalink.svg)](#Multi-Query_Attention) Multi-Query Attention
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Multi-Query_Attention) Multi-Query Attention
 
 Multi-Query attention is a change to the model architecture that shrinks the size of the KV cache by assigning multiple heads to Q, and only a single head to K and V. It needs to be trained into the model from the beginning—it's not just an inference-time optimization—but it's worth being aware of if you're trying to choose a model, because models with MQA can support more tokens in the KV cache than models trained with normal attention. To understand that, first we need to understand multi-head attention, so let's digress into that for a second.
 
@@ -578,14 +578,14 @@ So what is [Multi-Query Attention](https://arxiv.org/abs/1911.02150)? Instead of
 
 You might think this would be a serious problem for the model, but it actually has only a small effect on perplexity. This table from the MQA paper shows slightly worse results than the Multi-Head Attention baseline, but better than alternatives involving shrinking all the dimensions of MHA.
 
-[![](https://vgel.me/posts/faster-inference/multi_query_table3.png)
+[![](assets/0/3/03755e41ac37cb5496da79a99e933a77.png)
 ](https://vgel.me/posts/faster-inference/multi_query_table3.png)
 
 The benefit is, because K and V are so much smaller than in MHA, the KV cache is proportionally smaller as well. Both LLAMA-2 and Falcon use MQA, for this reason.
 
 Mistral 7B uses a variant called [Grouped-Query Attention](https://arxiv.org/abs/2305.13245v2) which is a hybrid between MQA and MHA. If MHA is `Q_heads=K_heads=V_heads=N` and MQA is `Q_heads=N; K_heads=V_heads=1`, then GQA is `Q_heads=N; K_heads=V_heads=G` where `1 < G < N`. GQA claims less effect on perplexity and better training stability than MQA.
 
-###  [![](https://vgel.me/permalink.svg)](#PagedAttention) PagedAttention
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#PagedAttention) PagedAttention
 
 The other issue with a large KV cache is that it often needs to be stored as in _contiguous_ tensors, regardless of whether all of the cache is currently in use. That leads to multiple problems:
 
@@ -648,24 +648,24 @@ At startup, PagedAttention allocates a _block table_ for the request, analogous 
 
 Instead of associating requests with a large tensor of KV cache items, each request only has a comparatively small list of block indices, analogous to virtual addresses in OS paging. Those indices point at blocks stored in the global block table. Just like OS pages, they can be out of order, placed wherever they can fit:
 
-[![](https://vgel.me/posts/faster-inference/pagedattention.png)
+[![](assets/1/b/1b124f2e895e75350be8c616ea106f28.png)
 ](https://vgel.me/posts/faster-inference/pagedattention.png)
 
 During the attention computation, the PagedAttention kernel walks the request's list of block indices, and goes and fetches those blocks from the global block table to compute attention as normal in the correct order.
 
 Importantly, because the blocks have been decoupled from individual requests, they can be shared, just like the shared memory example in OS paging. If two requests use the same long prefix (such as k-shot examples for multiple parallel translation tasks, the newest Twitter prompt hack, the chain so far for self-consistency Chain of Thought, etc.), the KV cache blocks for that prefix can be shared by multiple requests, simply by placing the index of that block in the appropriate part of each request's list of block indices.
 
-[![](https://vgel.me/posts/faster-inference/shared-prefix-pagedattention.drawio.png)
+[![](assets/d/5/d551f670d55defaed90b0bd431a0f4e6.png)
 ](https://vgel.me/posts/faster-inference/shared-prefix-pagedattention.drawio.png)
 
- [![](https://vgel.me/permalink.svg)](#Speculative_Decoding) Speculative Decoding
+ [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Speculative_Decoding) Speculative Decoding
 ---------------------------------------------------------------------------------
 
 To understand speculative decoding, you need to remember three things.
 
 First, running a small number of tokens through a model takes about the same amount of time as running a single token, thanks to memory access overhead:
 
-[![](https://vgel.me/posts/faster-inference/timing_graph.png)
+[![](assets/e/9/e926027ae0e6ff294e7bfa7e96579b91.png)
 ](https://vgel.me/posts/faster-inference/timing_graph.png)
 
 Second, LLMs generate a prediction for _every_ token in the context:
@@ -754,7 +754,7 @@ At first the models are in agreement, but fairly quickly they diverge as the dra
 
 This shows that speculative decoding performance can be very context dependent! If the draft model is well-correlated with the oracle model and the text is easy to predict, you'll get lots of drafted tokens and fast inference. But if the models aren't correlated, speculative decoding can actually make inference _slower_, because you're wasting time generating draft tokens that will just be rejected.
 
-###  [![](https://vgel.me/permalink.svg)](#Threshold_decoding?) Threshold decoding?
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Threshold_decoding?) Threshold decoding?
 
 An approach I came up with to mitigate the issues with using a fixed number of draft tokens is _threshold decoding_.
 
@@ -837,7 +837,7 @@ Note how, for example, n_draft=16 on the "Index: A B C" prompt has a strong star
 
 Index: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z  The following table lists the number of times each of the following words appear in the text of the book.  Word Number
 
-###  [![](https://vgel.me/permalink.svg)](#Staged_speculative_decoding) Staged speculative decoding
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Staged_speculative_decoding) Staged speculative decoding
 
 [Staged speculative decoding](https://arxiv.org/abs/2308.04623) adds two improvements to vanilla speculative decoding:
 
@@ -847,7 +847,7 @@ The first is to restructure the draft batch as a tree, instead of a single gener
 
 The second improvement is to speculatively decode the draft model as well—it's usually a Transformer after all. This could be a yet-smaller Transformer (they recommend 15-20x smaller than the oracle model), or even a simple N-gram model.
 
-###  [![](https://vgel.me/permalink.svg)](#Guided_generation) Guided generation
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Guided_generation) Guided generation
 
 Grammar-guided generation lets you constrain a model's output to follow some grammar, giving you output that guaranteed to match some grammar—such as JSON. At first, this seems unrelated to speed—reliability is nice, but speed too? That can't be possible! But it is—let's dig into how it works to see why.
 
@@ -886,39 +886,39 @@ Between the JSON grammar and the schema, we already know the first 7 tokens are 
 
 The complete response was 41 tokens, but only 11 of them had to come from the model, the others were automatically inserted and only needed to be processed as prompt tokens, which are much faster. This is a nice speedup, _and_ more reliable to boot—a win-win. If you need to generate structured data with LLMs, especially OSS LLMs that can use custom samplers, you should definitely be using a library like Outlines.
 
-###  [![](https://vgel.me/permalink.svg)](#Lookahead_decoding) Lookahead decoding
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Lookahead_decoding) Lookahead decoding
 
 [Lookahead decoding](https://lmsys.org/blog/2023-11-21-lookahead-decoding/) is a new approach to speculative decoding that doesn't require a draft model. Instead, the model itself is used in two branches: a lookahead branch, which predicts and extends candidate N-grams (short sequences of N tokens), and a verification branch, which verifies the candidates. The lookahead branch is similar to the draft model in regular speculative decoding, and the verification branch has the same role as the oracle model.
 
 But unlike regular speculative decoding, this is all done not just in a single model, but in a single model _call_ using a specially-crafted attention mask:
 
-[![](https://vgel.me/posts/faster-inference/lookahead.png)
+[![](assets/1/6/162358cabb3f3fa4bfc1eea88184b44c.png)
 ](https://vgel.me/posts/faster-inference/lookahead.png)
 
 I won't go too in depth because the [lmsys blog post](https://lmsys.org/blog/2023-11-21-lookahead-decoding/) announcing lookahead decoding already has some nice animations (even if the explanation is somewhat dense).
 
-###  [![](https://vgel.me/permalink.svg)](#Prompt_lookup_decoding) Prompt lookup decoding
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Prompt_lookup_decoding) Prompt lookup decoding
 
 [Prompt lookup decoding](https://twitter.com/apoorv_umang/status/1728831397153104255) is another technique, where the draft model is replaced by simple string matching over the context. They claim it works well for tasks like code editing or RAG where the output necessarily contains lots of verbatim copying from the input. I assume it'd also work well in staged speculative decoding, to speculatively decode a draft model.
 
- [![](https://vgel.me/permalink.svg)](#Training_time_optimizations) Training time optimizations
+ [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Training_time_optimizations) Training time optimizations
 -----------------------------------------------------------------------------------------------
 
 There are a few optimizations that I'm going to speed through since they're not very relevant if you don't have the resources to pretrain a model with them from the start.
 
-###  [![](https://vgel.me/permalink.svg)](#Sparse_attention) Sparse attention
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Sparse_attention) Sparse attention
 
 Attention is algorithmically slow because it's quadratic: as the sequence grows in length, each of the N tokens needs to attend to each of the N tokens. Sparse attention attempts to remedy this by calculating less attention. For example, Mistral 7B uses sliding window attention, where tokens in some layers can only attend to nearby tokens. [Longformer](https://arxiv.org/abs/2004.05150) also explored some interesting sparse attention patterns, like giving all tokens access to specific positions, dilating the sliding window, using different size windows on different layers, and other tricks. (Longformer predates Mistral, but as far as I can tell Mistral didn't use all the tricks Longformer did—I'm not sure why.)
 
 Sometimes this kind of attention can be finetuned in or bolted on without tuning after the fact, but for the best performance it needs to be trained into the model from the start, like Mistral did.
 
-###  [![](https://vgel.me/permalink.svg)](#Non-Transformer_architectures) Non-Transformer architectures
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Non-Transformer_architectures) Non-Transformer architectures
 
 Recently there's been a renewed surge of interest in non-Transformer LLMs. If you're new to the field you may not be familiar with RNNs/LSTMs, but they were the dominant sequence modeling architecture before Attention is All You Need was published and Transformers took off. Unlike Transformers where the whole context is available to the model at once, RNNs do a linear scan over the sequence, building up a hidden state that models what has come before. (There are also reversed and bidirectional RNNs, it's a whole thing.)
 
 They were outmatched by Transformers due to difficulty scaling them and problems like forgetting, but some recent papers have tried to bring them back, or invent new sub-quadratic architectures that can finally dethrone Transformers. These include [RWKV](https://arxiv.org/abs/2305.13048) (new type of RNN), [Mamba](https://arxiv.org/abs/2312.00752) (state-space model), [Hyena](https://arxiv.org/abs/2302.10866) (convolutional), and [Recurrent Memory Transformers](https://proceedings.neurips.cc/paper_files/paper/2022/file/47e288629a6996a17ce50b90a056a0e1-Paper-Conference.pdf) (use a Transformer for segments, then special memory tokens for global context). So far the biggest and best models are still Transformers, but that might not be true in the future!
 
- [![](https://vgel.me/permalink.svg)](#Conclusion) Conclusion
+ [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Conclusion) Conclusion
 -------------------------------------------------------------
 
 Thanks for reading!
@@ -933,7 +933,7 @@ Hopefully you found the post useful and/or entertaining. If you enjoyed it, you 
 
 If you have thoughts about this post, please feel free to [get in touch](https://vgel.me/contact)! I love hearing from people who read my posts.
 
-###  [![](https://vgel.me/permalink.svg)](#Thanks) Thanks
+###  [![](assets/6/e/6eb24cb20263b5d9891ff7d77b1d998a.svg)](#Thanks) Thanks
 
 As always, thanks to everyone who contributed to and reviewed this post:
 

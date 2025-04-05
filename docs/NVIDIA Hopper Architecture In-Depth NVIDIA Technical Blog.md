@@ -8,13 +8,13 @@ Introducing the NVIDIA H100 Tensor Core GPU[](#introducing_the_nvidia_h100_tenso
 
 The NVIDIA H100 Tensor Core GPU is our ninth-generation data center GPU designed to deliver an order-of-magnitude performance leap for large-scale AI and HPC over the prior-generation NVIDIA A100 Tensor Core GPU. H100 carries over the major design focus of A100 to improve strong scaling for AI and HPC workloads, with substantial improvements in architectural efficiency.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/SXM5-White-4-NEW-FINAL-625x291.jpg)
+![](assets/e/b/ebdcc2a6493a0412bc2d4a4aaeaae31a.jpg)
 
 _Figure 1. NVIDIA H100 GPU on new SXM5 Module_
 
 For today’s mainstream AI and HPC models, H100 with InfiniBand interconnect delivers up to 30x the performance of A100. The new NVLink Switch System interconnect targets some of the largest and most challenging computing workloads that require model parallelism across multiple GPU-accelerated nodes to fit. These workloads receive yet another generational performance leap, in some cases tripling performance yet again over H100 with InfiniBand.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Perf-Main-FINAL-625x264.jpg)
+![](assets/1/7/17aa72a24c85e53b88a5190ecf2ac614.jpg)
 
 __Figure 2. H100 enables next-generation AI and HPC breakthroughs__
 
@@ -105,7 +105,7 @@ Using the TSMC 4N fabrication process enables H100 to increase GPU core frequenc
 
 Figure 3 shows a full GH100 GPU with 144 SMs. The H100 SXM5 GPU has 132 SMs, and the PCIe version has 114 SMs. The H100 GPUs are primarily built for executing data center and edge compute workloads for AI, HPC, and data analytics, but not graphics processing. Only two TPCs in both the SXM5 and PCIe H100 GPUs are graphics-capable (that is, they can run vertex, geometry, and pixel shaders).
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Full-H100-GPU-with-144-SMs-625x279.png)
+![](assets/a/e/ae2c7735808c2861b0eafdb082c0575b.png)
 
 _Figure 3._ _GH100 Full GPU with 144 SMs_
 
@@ -135,7 +135,7 @@ __Table 1. NVIDIA H100 Tensor Core GPU preliminary performance specs__
 1.  Preliminary performance estimates for H100 based on current expectations and subject to change in the shipping products
 2.  Effective TFLOPS / TOPS using the Sparsity feature
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/H100-Streaming-Multiprocessor-SM-625x869.png)
+![](assets/d/e/dec4c3b492edfbcf3c7e531a8a8e6b47.png)
 
 _Figure 4. GH100 streaming multiprocessor_
 
@@ -160,7 +160,7 @@ Tensor Cores were first introduced in the NVIDIA V100 GPU, and further enhanced 
 
 The new fourth-generation Tensor Core architecture in H100 delivers double the raw dense and sparse matrix math throughput per SM, clock-for-clock, compared to A100, and even more when considering the higher GPU Boost clock of H100 over A100. The FP8, FP16, BF16, TF32, FP64, and INT8 MMA data types are supported. The new Tensor Cores also have more efficient data management, saving up to 30% operand delivery power.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/A100-FP16-vs-H100-FP16-625x346.png)
+![](assets/d/4/d4f8120d8739b763d514766f310bc938.png)
 
 _Figure 5. H100 FP16 Tensor Core has 3x throughput compared to A100 FP16 Tensor Core_
 
@@ -175,15 +175,15 @@ E4M3 supports computations requiring less dynamic range with more precision, whi
 
 The new transformer engine described later in this post uses both FP8 and FP16 precisions to reduce memory usage and increase performance, while still maintaining accuracy for large language and other models.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/New-Hopper-FP8-Precisions-625x340.jpg)
+![](assets/0/f/0f35a2ff84d917ce8f7691d70e9067fb.jpg)
 
 _Figure 6. New NVIDIA Hopper FP8 precisions: 2x throughput and half the footprint of H100 FP16 or BF16_
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/A100-FP16-vs-H100-FP8-625x374.png)
+![](assets/9/3/939990badada75aeea15744f7f144fae.png)
 
 _Figure 7. H100 FP8 Tensor Core has 6x throughput compared to A100 FP16 Tensor Core_
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/TF32-FP64-INT8-Combo-625x351.png)
+![](assets/9/4/94ea86f9c9c855de1b6026938e82ba68.png)
 
 _Figure 8. H100 TF32, FP64, and INT8 Tensor Cores all have 6x throughput versus A100_
 
@@ -215,7 +215,7 @@ DP is commonly used in a broad range of optimization, data processing, and genom
 
 H100 introduces DPX instructions to accelerate the performance of DP algorithms by up to 7x compared to NVIDIA Ampere GPUs. These new instructions provide support for advanced fused operands for the inner loop of many DP algorithms. This leads to dramatically faster times-to-solution in disease diagnosis, logistics routing optimizations, and even graph analytics.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/DPX-Instructions-Accelerate-Dynamic-Programming-and-Support-Many-Algorithms-625x239.jpg)
+![](assets/e/7/e7b4ccd65dab2c606d186476a1e2ffdd.jpg)
 
 _Figure 9. DPX instructions accelerate dynamic programming_
 
@@ -230,7 +230,7 @@ Overall, H100 provides approximately 6x compute performance improvement over A10
 
 In total, these improvements give H100 approximately 6x the peak compute throughput of A100, a major leap for the world’s most compute-hungry workloads.​
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/H100-Compute-Improvement-Summary-625x300.jpg)
+![](assets/9/f/9f91631b17e304c4ec92802503d02538.jpg)
 
 _Figure 10. H100 compute improvement summary​_
 
@@ -255,7 +255,7 @@ A GPC is a group of SMs in the hardware hierarchy that are always physically clo
 
 In CUDA, thread blocks in a grid can optionally be grouped at kernel launch into clusters as shown in Figure 11, and cluster capabilities can be leveraged from the CUDA [cooperative\_groups](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#cooperative-groups) API.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Thread-Block-Clusters-and-Grids-with-Clusters-625x185.jpg)
+![](assets/b/3/b3ed75999e08ef81841eb81fa280c2db.jpg)
 
 __Figure 11. Thread block clusters and grids with clusters__
 
@@ -267,7 +267,7 @@ With clusters, it is possible for all the threads to directly access other SM’
 
 DSMEM enables more efficient data exchange between SMs, where data no longer must be written to and read from global memory to pass the data. The dedicated SM-to-SM network for clusters ensures fast, low latency access to remote DSMEM. Compared to using global memory, DSMEM accelerates data exchange between thread blocks by about 7x.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Thread-Block-to-Thread-Block-data-exchange-A100-vs-H100-with-Clusters-625x135.jpg)
+![](assets/0/2/0281bf8dcd32bff9633e61d19377a8e3.jpg)
 
 _Figure 12. Thread-block-to-thread-block data exchange (A100 vs. H100 with clusters)_
 
@@ -275,7 +275,7 @@ At the CUDA level, all the DSMEM segments from all thread blocks in the cluster 
 
 Figure 13 shows the performance advantage of using clusters on different algorithms. Clusters improve the performance by enabling you to directly control a larger portion of the GPU than just a single SM. Clusters enable cooperative execution with a larger number of threads, with access to a larger pool of shared memory than is possible with just a single thread block.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Cluster-versus-non-Cluster-Performance-Comparisons-625x482.jpg)
+![](assets/9/a/9a89b813640f8aee308545cd530da3c4.jpg)
 
 __Figure 13. Cluster vs. non-cluster performance comparisons__
 
@@ -287,7 +287,7 @@ Each new generation of NVIDIA GPUs includes numerous architectural enhancements 
 
 The NVIDIA Hopper Architecture provides new features that improve asynchronous execution and enable further overlap of memory copies with computation and other independent work, while also minimizing synchronization points. We describe the new async memory copy unit called the Tensor Memory Accelerator (TMA) and a new asynchronous transaction barrier.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Asynchronous-Execution-Concurrency-and-Enhancements-in-Hopper-625x257.jpg)
+![](assets/b/3/b37a1d6b0485ff8cf0b95645b930452a.jpg)
 
 _Figure 14. Asynchronous execution concurrency and enhancements in NVIDIA Hopper_
 
@@ -299,7 +299,7 @@ To help feed the powerful new H100 Tensor Cores, data fetch efficiency is improv
 
 TMA operations are launched using a copy descriptor that specifies data transfers using tensor dimensions and block coordinates instead of per-element addressing (Figure 15). Large blocks of data up to the shared memory capacity can be specified and loaded from global memory into shared memory or stored from shared memory back to global memory. TMA significantly reduces addressing overhead and improves efficiency with support for different tensor layouts (1D-5D tensors), different memory access modes, reductions, and other features.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/TMA-Address-Generation-via-Copy-Descriptor-625x238.jpg)
+![](assets/7/0/70fc12c9ee9e0fb3f5c065414842e27e.jpg)
 
 _Figure 15. TMA address generation through a copy descriptor_
 
@@ -309,7 +309,7 @@ A key advantage of TMA is that it frees the threads to execute other independent
 
 On NVIDIA Hopper, TMA takes care of everything. A single thread creates a copy descriptor before launching the TMA, and from then on address generation and data movement are handled in hardware. TMA provides a much simpler programming model because it takes over the task of computing stride, offset, and boundary calculations when copying segments of a tensor.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Asynchronous-Memory-Copy-with-TMA-on-H100-vs-LDGSTS-Instruction-on-A100-625x277.jpg)
+![](assets/7/e/7ed727770ca30321c1b4979082626fea.jpg)
 
 __Figure 16. Asynchronous memory copy with TMA on H100 vs. LDGSTS on A100__
 
@@ -330,7 +330,7 @@ NVIDIA Hopper includes a new command for writing shared memory that passes both 
 
 Asynchronous transaction barriers are a powerful new primitive for async mem copies or data exchanges. As mentioned earlier, clusters can do thread block-to-thread block communication for a data exchange with implied synchronization, and that cluster capability is built on top of asynchronous transaction barriers.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Asynchronous-Barrier-in-Ampere-vs-Asynchronous-Transaction-Barrier-in-Hopper-625x214.jpg)
+![](assets/6/5/65ea1ac421822de28b32972a4127bd60.jpg)
 
 _Figure 17. Asynchronous barrier in A100 vs. asynchronous transaction barrier in H100_
 
@@ -349,7 +349,7 @@ As HPC, AI, and data analytics datasets continue to grow in size, and computing 
 
 The H100 SXM5 GPU raises the bar considerably by supporting 80 GB (five stacks) of fast HBM3 memory, delivering over 3 TB/sec of memory bandwidth, effectively a 2x increase over the memory bandwidth of A100 that was launched just two years ago. The PCIe H100 provides 80 GB of fast HBM2e with over 2 TB/sec of memory bandwidth.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Worlds-First-HBM3-GPU-Memory-Architecture-2x-Delivered-Bandwidth-625x458.png)
+![](assets/3/4/341893f0f991cbd20e92f33335fa3744.png)
 
 __Figure 18. World’s first HBM3 GPU memory architecture, 2x delivered bandwidth__
 
@@ -444,13 +444,13 @@ Transformer models are the backbone of language models used widely today from BE
 
 Their size continues to increase exponentially, now reaching trillions of parameters and causing their training times to stretch into months, which is impractical for business needs due to the large compute requirements . For example, Megatron Turing NLG (MT-NLG) requires 2048 NVIDIA A100 GPUs running for 8 weeks to train. Overall, transformer models have been growing much faster than most other AI models at the rate of 275x every 2 years for the past 5 years (Figure 19).
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Transformers-Model-Sizes-Increasing-Exponentially-with-Many-Different-Use-Cases-625x260.jpg)
+![](assets/1/b/1bbc8b3c5880c41a1842528f6d1dfc90.jpg)
 
 __Figure 19. Transformer model sizes increasing exponentially with many different use cases__
 
 H100 includes a new  transformer engine that uses software and custom NVIDIA Hopper Tensor Core technology to dramatically accelerate the AI calculations for transformers.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/Transformer-Engine-Conceptual-Operation-625x523.png)
+![](assets/4/a/4a49f8de1a6466974c4dae621fa0385c.png)
 
 _Figure 20. Transformer engine conceptual operation_
 
@@ -494,7 +494,7 @@ NVLink Switch System supports up to 256 GPUs. The connected nodes can deliver 57
 
 Figure 21 shows a comparison of 32-node, 256 GPU DGX SuperPODs based on A100 versus H100. The H100-based SuperPOD optionally uses the new NVLink Switches to interconnect DGX nodes. The performance numbers are for reference purposes only. NVLink Switch System technology is not currently available with H100 systems, but systems and availability will be announced.
 
-![](https://developer-blogs.nvidia.com/wp-content/uploads/2022/03/DGX-A100-vs-DGX-H100-256-node-NVIDIA-SuperPOD-Architecture-Comparison-625x330.jpg)
+![](assets/4/e/4e101f9822536c93def1d900830e0021.jpg)
 
 _Figure 21. DGX A100 vs. DGX H100 32 nodes, 256 GPUs NVIDIA SuperPOD architecture comparison_
 

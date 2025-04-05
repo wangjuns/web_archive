@@ -3,7 +3,7 @@ Title: GPU，走上了“邪路”？
 URL Source: https://mp.weixin.qq.com/s/51YpOxbG7sM--FmzJIkCog
 
 Markdown Content:
-![Image 1](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dlSOw0Zeq8bxDDb9at7uFb5MI56wyliabMPeGVJDphicsoGTAVFYnsicCjx9D4ediabGpxjbtVUgfpDg/640?wx_fmt=jpeg&from=appmsg)
+![Image 1](assets/8/0/80200107fd0de44476acbb972a542ec9.jpg)
 
 👆如果您希望可以时常见面，欢迎标星🌟收藏哦~
 
@@ -29,7 +29,7 @@ Markdown Content:
 
 这种转变在最新的 GPU 架构中尤为明显，其中性能格式之间的差距随着每一代的出现而不断扩大。最近的 ORNL 研究清楚地说明了这种不断扩大的性能差距。他们对 Nvidia 和 AMD GPU 架构的分析表明，FP16 矩阵运算性能快速提升，而 FP64 性能则以较为温和的速度增长。这些数据清楚地说明了这一点：计算行业对人工智能的关注正在造成低精度和高精度计算能力之间的差距越来越大。结果就是计算生态系统正在分裂。
 
-![Image 2](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2eK0zIbLD3OzhswVgyLtrYJru77TdefG6bmguqUM94eL3Zjs3aywW0jEJnvAzMb2nFrSicYnHabtAQ/640?wx_fmt=png&from=appmsg)
+![Image 2](assets/2/4/247fac2b4098892703ce2ca8997b9e9b.png)
 
 这种转变的后果无疑对科学计算产生了影响。正如 Dodd 所强调的，科学计算的精度直接影响人类生命、环境保护和技术进步。性能和精度之间的权衡不仅仅是技术考虑，它们代表了我们对科学模拟的可靠性和可信度的基本选择。当我们在精度上妥协时，我们冒的风险不仅仅是计算准确性，我们还会冒科学发现本身的完整性的风险。
 
@@ -69,13 +69,13 @@ AMD 设备也更便宜。我们猜测 GB200 套件中使用的单个 Blackwell B
 
 有些东西在正态图上很容易看到，而其他东西则需要对数图才能更好地看到增量。所以我们两者都做了。让我们来看看：
 
-![Image 3](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2eK0zIbLD3OzhswVgyLtrYJrkZtOFn1a2zXVQJ1l8Up05Lb8Sjzz3HwnZibfH9WmiaIRyduRj8BGD0g/640?wx_fmt=png&from=appmsg)
+![Image 3](assets/8/3/83897d0659a1c85bffb8d56635981b38.png)
 
 在图表底部，你几乎看不到英特尔和 AMD CPU 的性能，但你可以看到 Nvidia 如何降低其 GPU 的张量 FP64 性能，以及 AMD GPU 如何超越它。（无论你的眼镜有多好，你都看不到 X 轴上的月度数据，这没关系。图表从 2012 年 1 月持续到 2025 年 5 月。）
 
 如果我们切换到日志视图，就会出现一些有趣的东西：
 
-![Image 4](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2eK0zIbLD3OzhswVgyLtrYJPeLYN5MxovKmnmA27qticU1aibQ5RI1QXzgsxADf3tGjhvybDTwJhmAw/640?wx_fmt=png&from=appmsg)
+![Image 4](assets/3/e/3e5fbde27380a25fbea5127cd8b8ce86.png)
 
 AMD GPU 直到 MI250X 才有张量单元。在此之前，Intel Xeon 和 AMD Epyc CPU 在矢量 FP64 吞吐量上的速度都只比 GPU 慢三倍左右。2020 年末，Nvidia 和 AMD 真正提高了其 GPU 矢量，而 Nvidia 增加了张量核心，CPU 和 GPU 在 FP64 性能方面的差距真正拉大了。
 
@@ -85,7 +85,7 @@ AMD GPU 直到 MI250X 才有张量单元。在此之前，Intel Xeon 和 AMD Epy
 
 性能是一回事，但成本很高。那么这些设备在 FP64 计算方面的性价比如何呢？让我们来看看：
 
-![Image 5](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2eK0zIbLD3OzhswVgyLtrYJeAQicNSMhWjibBcmFibBXcOHXibXokiboiasib2S3kaFB8dNJE4bT0ibVtrkJQ/640?wx_fmt=png&from=appmsg)
+![Image 5](assets/b/4/b4f43a6cbb9d81d729ced8d7adf187e2.png)
 
 有趣的是，英特尔的性价比提升非常快，这无疑是由于 GPU 计算的影响，它提供了更好的性价比。英特尔曲线比 Nvidia 曲线陡峭得多，部分原因是 Nvidia 选择了架构来降低 FP64 性能提升，而 AMD 和英特尔则在不断提升 FP64 性能。英特尔还大幅降低了“Granite Rapids”Xeon 6 处理器的价格，使其更接近 AMD Turin Zen 5 核心处理器，但 AMD 在 CPU 方面的性价比仍然比英特尔略高，适用于 FP64 矢量计算。
 
@@ -93,7 +93,7 @@ AMD GPU 直到 MI250X 才有张量单元。在此之前，Intel Xeon 和 AMD Epy
 
 转到对数刻度可以更容易地显示 Nvidia 和 AMD 在 FP64 计算 GPU 上的竞争地位：
 
-![Image 6](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2eK0zIbLD3OzhswVgyLtrYJEgWo0ibfCiaNucPfsPaNtfIPxAjnIZI2NibEzZ9v6G1icYwAMYTPJYCNYw/640?wx_fmt=png&from=appmsg)
+![Image 6](assets/3/a/3add283a66bc0de08907c585a33fcde0.png)
 
 假设我们的定价正确，AMD 显然是 GPU 的价值领导者。
 
@@ -121,7 +121,7 @@ _**END**_
 
 \*免责声明：本文由作者原创。文章内容系作者个人观点，半导体行业观察转载仅为了传达一种不同的观点，不代表半导体行业观察对该观点赞同或支持，如果有任何异议，欢迎联系半导体行业观察。
 
-![Image 7](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuDk7BHibzliciaibdYCIhf1mqRA2MmBiaTWaD5ibeicNlAFlNsibkd1f2pmeDOg/640?wx_fmt=jpeg&from=appmsg)
+![Image 7](assets/f/9/f9b22b054cf8c1bc250b202b99a06430.jpg)
 
 **今天是《半导体行业观察》为您分享的第4042期内容，欢迎关注。**
 
@@ -143,11 +143,11 @@ _**END**_
 
 ★[外媒：美国将提议禁止中国制造的汽车软件和硬件](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247756729&idx=8&sn=7763455e2146a96c6c5945c7092c9c90&scene=21#wechat_redirect)
 
-![Image 8](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUu1TXpDFVTuWPIxHJktS4KxvLHbBdANu82pWXFucbIVric6M3Cn7WuJQA/640?wx_fmt=gif&from=appmsg)
+![Image 8](assets/6/8/682469e1e936e675e715f26638ea8f10.gif)
 
-![Image 9](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuCG4MLz2oyuIZMqcgS0cC9tfaiavhootjOTmg6loyqbjb1EHlNxsKgtw/640?wx_fmt=gif&from=appmsg)
+![Image 9](assets/c/9/c9f4484fc890aff7352be7f2f5ad9421.gif)
 
-![Image 10](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuoAoO1fpqEjmy1OPQpiagH2XnYgibDaXTwibchog92XXY3z0AUt5m6klGw/640?wx_fmt=jpeg&from=appmsg)
+![Image 10](assets/1/d/1db335363f34d98cab1828120da63488.jpg)
 
 『半导体第一垂直媒体』
 
@@ -155,6 +155,6 @@ _**END**_
 
 公众号ID：icbank
 
-喜欢我们的内容就点**“在看”**分享给小伙伴哦![Image 11](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuhbJFmFI0FmXdAOGSJU6V1ibAveWWFVjtJf5mH7n0ib7BUhbC0naFWyoQ/640?wx_fmt=gif&from=appmsg)
+喜欢我们的内容就点**“在看”**分享给小伙伴哦![Image 11](assets/2/c/2c2a90b567fc1216087228973999c945.gif)
 
-![Image 12](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuPwZbdic1dGW2ibmrg50pT5BGZUMw0jE1StKR4D8guBwSalq28F6ZcQcw/640?wx_fmt=png&from=appmsg)
+![Image 12](assets/8/f/8f15175a5ee9b61ff4388df436a8048a.png)

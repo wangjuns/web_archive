@@ -3,7 +3,7 @@ Title: 达摩院前传：那些帮淘宝赚过大钱的AI科学家们
 URL Source: https://mp.weixin.qq.com/s/qwNaQJKXCPuyh3fuZPceJw
 
 Markdown Content:
-![Image 1: Image](https://mmbiz.qpic.cn/mmbiz_jpg/YjhmbbkdV6vDToZHZRKcNd0JStw97jez9ianKzA1vSf8t1oAr8Fvp8UibIh8viaXCemibagZmjhwORhUrhzzE8952g/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 1: Image](assets/a/2/a2fcc029f0cbfb774fe4a985fb3b7c0f.webp)
 
 **沈加翔、周靖人、徐盈辉、金榕、华先胜、司罗等淘宝搜索体系的顶级技术大牛，在将淘宝推向顶峰后，又汇聚在达摩院，筑就了阿里AI技术的最高峰。**
 
@@ -109,7 +109,7 @@ Markdown Content:
 
 这年双十一，个性化推荐算法开始大放光芒，催生了一个又一个令人瞠目的数字。个性化推荐的第一战场“双11主会场”更是自双11开展多年以来首次达到了个位数的跳失率，其引导人数和人均引导页面数都是前一年的2～3倍。
 
-![Image 2: Image](https://mmbiz.qpic.cn/mmbiz_png/YjhmbbkdV6t3UrsDiccMgXQS0UWZZEgNTlxTopvLW7WvozMxryJgNMNE33FqBmXGqxKAPw7Mc7035udKPB32yhg/640?wx_fmt=png&from=appmsg)
+![Image 2: Image](assets/c/b/cb2dd5b3d038c85346677785326e9256.png)
 
 “天坑一号”个性化主会场示意图
 
@@ -179,7 +179,7 @@ Markdown Content:
 
 **祝铭明要做以图搜图，得到了淘宝搜索事业部工程负责人沈加翔和算法负责人吴雪军的共同支持，三方各抽调一名技术骨干，组成了拍立淘的初始团队。**后来团队又招来了潘攀（花名：启磐）担任项目负责人，兼顾算法、工程、产品的统筹。潘攀毕业于美国伊利诺伊大学芝加哥分校博士，此前在美国三菱波士顿研究院、北京富士通研发中心从事视觉领域的研发工作。
 
-![Image 3: Image](https://mmbiz.qpic.cn/mmbiz_png/YjhmbbkdV6t3UrsDiccMgXQS0UWZZEgNTPCy6PQ9rZSDiagGWAWU2hOGjpgDRSstY6qcz8HjeeweNXCeSOEibDxTQ/640?wx_fmt=png&from=appmsg)
+![Image 3: Image](assets/8/0/8005e1bf244ea093b89480001863c20d.png)
 
 潘攀
 
@@ -269,7 +269,7 @@ iDST的其他技术大牛们也分别遇到了这样或那样的问题，于是�
 
 淘宝实时个性化的另一个重要推动者是蒋晓伟。蒋晓伟毕业于中科大少年班，本科学的物理，是潘建伟院士的师弟。蒋晓伟曾经在内部略带调侃地说过这样一句话，“计算机是怎么run的对我来说太简单了，我想知道这个世界是怎么run的”。其少年天才的实力和性格由此可见一斑。
 
-![Image 4: Image](https://mmbiz.qpic.cn/mmbiz_png/YjhmbbkdV6t3UrsDiccMgXQS0UWZZEgNTAb0ZyJKPkicAEfUx33pq1BwNZPWhDeawcvzDL0XHdDShOpDN73KIPLA/640?wx_fmt=png&from=appmsg)
+![Image 4: Image](assets/1/6/163e2ab97c8c0eaec06547c7b630271c.png)
 
 蒋晓伟
 
@@ -321,20 +321,20 @@ iDST的其他技术大牛们也分别遇到了这样或那样的问题，于是�
 
 不过随着这套体系臻于成熟，和新一波技术浪潮的到来，其技术红利也在逐渐消退。去年，阿里提出“用户为先、AI驱动”两大战略，开始将AI作为下一座技术金矿。在这波技术浪潮中，阿里能否再次创造当年搜广推般的辉煌，这或许将是阿里下一个十年中最大的看点。
 
-关于阿里AI发展的故事，雷峰网将继续推出阿里AI驱动·20年系列文章，《中台是谁的中台，达摩院是谁的达摩院》《后达摩院时代，阿里集团的AI驱动战略》，感兴趣的读者请联系作者沟通交流（微信 **LW\_PLUS**）。**_![Image 5: Image](https://mmbiz.qpic.cn/mmbiz_png/YjhmbbkdV6tcvWsicXUPWq0YznsMsYUvUPfxZIg0OUkicandLZJQ1IVUqvkEXUH8vIcVwHAjGd9HEIsYH80QM5PA/640?wx_fmt=other&wxfrom=5&wx_lazy=1&wx_co=1&tp=webp)_**
+关于阿里AI发展的故事，雷峰网将继续推出阿里AI驱动·20年系列文章，《中台是谁的中台，达摩院是谁的达摩院》《后达摩院时代，阿里集团的AI驱动战略》，感兴趣的读者请联系作者沟通交流（微信 **LW\_PLUS**）。**_![Image 5: Image](assets/7/8/78551f2af02789932d704d4698f5de86.webp)_**
 
 //
 
 **近期热门文章**
 
-[![Image 6: Image](https://mmbiz.qpic.cn/mmbiz_jpg/YjhmbbkdV6sxfuicGAulsEK3tJofdhTJ9j2hySHDBFouCGs5aJYUwQduSAt92Hl75KdiajYLWSf6JLnXP7Tx6oSA/640?wx_fmt=jpeg) 阿里广告的黄金时代：无线推荐大浪潮](https://mp.weixin.qq.com/s?__biz=MTM2ODM0ODYyMQ==&mid=2651681813&idx=1&sn=b1b829604b2bde31df31101637ce15ea&chksm=624974b7553efda11d24f228c7a60c7445b3d7e78099a90d304b5e9e90516329cd2435ae5fd5&scene=21#wechat_redirect)
+[![Image 6: Image](assets/e/6/e6db92fef7c98105fbe6cc1bffbdb0a3.jpg)
 
   
 
-[![Image 7: Image](https://mmbiz.qpic.cn/mmbiz_jpg/YjhmbbkdV6s1bNd4XNpcLGmmm55xsh3RkdBpV8UAnvhR8KiaSUvaEb6eIhiaiak1d0MmzjsUxuUia8Vb7iayTbL6e6w/640?wx_fmt=jpeg) 达摩院「数学天团」，四年求一解](https://mp.weixin.qq.com/s?__biz=MTM2ODM0ODYyMQ==&mid=2651665491&idx=1&sn=c0e00a26ea6c47e5fd8915073a367311&chksm=624934f1553ebde7c1f3ee4608b21ddb75abd60a6b1cc60e8eec2240fc73c1112a20b6e214ce&scene=21#wechat_redirect)
+[![Image 7: Image](assets/a/1/a1a63a7f92e4099a05feb3e19c175fae.jpg)
 
   
 
-[![Image 8: Image](https://mmbiz.qpic.cn/mmbiz_jpg/YjhmbbkdV6vYeibNciarzQx7uicvichFYnNqqN9bnGq7Y6Xb2znklAJErNau3ibU2WlxQLiauxDXzicflibQRy4zbLtefw/640?wx_fmt=jpeg) 达摩院迎战「癌王」](https://mp.weixin.qq.com/s?__biz=MTM2ODM0ODYyMQ==&mid=2651655058&idx=1&sn=44efd96d5a2848b2dca620833c51e2cb&chksm=62490b30553e82265622f7f3c6e5dc776db6fa564eb72e2ae190dc631aa00287622b4dd615be&scene=21#wechat_redirect)
+[![Image 8: Image](assets/3/6/36c688d147b1718a89ca906d329aa5d1.jpg)
 
-![Image 9: Image](https://mmbiz.qpic.cn/mmbiz_gif/YjhmbbkdV6uyI75suAOnNPiamqF0icibb3YOqvQkZDyWYYdSHQibVfwVaiaE4wMTzbwZfd33ELl2Kde1n18xpFYVLAA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=webp)
+![Image 9: Image](assets/b/a/ba449ec60749dc8fb67a2bf10c538d4d.gif)

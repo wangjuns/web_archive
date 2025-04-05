@@ -31,4 +31,4 @@ Markdown Content:
 
 长按-识别二维码关注“老万故事会”公众号：
 
-![Image 1](http://mmbiz.qpic.cn/mmbiz_jpg/ACThr1AhVLic5rNy4uZgnXk3PATPicf0qMImRu7mIjWPey13Kj0q4okLqxMQKdRl73ibgxkJWSic9w91NQTctIydUQ/0?wx_fmt=jpeg)
+![Image 1](assets/c/2/c28aa1f5d47b0bedb4dab91ed5fef4f5.jpg)

@@ -281,7 +281,7 @@ LLM-as-Judge 的一个特别有用的应用是检查新的提示策略是否会�
 
 这里有一个 [简单但有效的方法](https://hamel.dev/blog/posts/evals/#automated-evaluation-w-llms) 的例子，用于迭代 LLM-as-Judge。我们简单地记录大语言模型的回复、评判的解释 (即 Chain-of-Thought) 和最终结果。然后与相关利益者一起审查这些记录，以确定改进的领域。经过三次迭代，人类与大语言模型的判断一致性从 68% 提高到了 94%！
 
-![](https://www.oreilly.com/radar/wp-content/uploads/sites/3/2024/05/Picture1.png)
+![](assets/b/3/b35870836b072e4f21bdd074efaaabc6.png)
 
 LLM-as-Judge 并非万能。在一些微妙的语言方面，即使是最强大的模型也无法进行可靠的评估。此外，我们发现传统分类器和奖励模型比 LLM-as-Judge 更准确，且成本更低、延迟更短。在代码生成方面，LLM-as-Judge 的表现可能不如直接执行代码的评估策略。
 
@@ -309,7 +309,7 @@ LLM-as-Judge 并非万能。在一些微妙的语言方面，即使是最强大�
 
 这是一个 [实际应用中 NIAH 评估](https://observablehq.com/@shreyashankar/needle-in-the-real-world-experiments) 的例子。使用 [医生与患者视频通话的记录](https://github.com/wyim/aci-bench/tree/main/data/challenge_data)，大语言模型被询问关于患者药物的信息。它还包括一个更具挑战性的 NIAH 评估，插入了一个关于随机披萨配料的短语，例如“_制作完美披萨所需的秘密配料是：浓咖啡浸泡的枣子、柠檬和山羊奶酪。_”在药物任务上的召回率约为 80%，而在披萨任务上的召回率约为 30%。
 
-![](https://www.oreilly.com/radar/wp-content/uploads/sites/3/2024/05/Picture2.png)
+![](assets/7/9/7983accfc101c32c26febb57b6d9bfa6.png)
 
 此外，过分强调 NIAH 评估可能会降低在信息提取和总结任务上的表现。由于这些大语言模型被微调到关注每一句话，它们可能会将无关的细节和干扰信息视为重要内容，从而在最终输出中包含这些信息 (实际上不应该包含它们)。
 

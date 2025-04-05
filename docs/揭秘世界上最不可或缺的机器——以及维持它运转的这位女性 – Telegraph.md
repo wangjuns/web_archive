@@ -3,7 +3,7 @@
 
    
 
-![](https://images.wsj.net/im-20812527/?width=1280&height=1280)
+![](assets/0/3/037159a746d834a95a4a6aeccbde5b05.jpg)
 
 阿斯麦的工程师布里安娜·霍尔在一家芯片工厂准备上班。
 

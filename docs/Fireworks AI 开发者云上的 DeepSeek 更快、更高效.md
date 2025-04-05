@@ -93,7 +93,7 @@ Experience the power, speed, and efficiency of the enhanced DeepSeek offerings o
 
 [](https://x.com/FireworksAI_HQ)[](https://www.instagram.com/the.fireworks.ai/)[](https://www.youtube.com/channel/UCHCffBTGYa1Ut72h03ldtGA)[](https://www.linkedin.com/company/fireworks-ai/posts/?feedView=all)[](https://discord.gg/fireworks-ai)
 
-![Image 3: SOC 2 Type 2](https://fireworks.ai/images/compliance/Vanta_Compliance_SOC%202.svg)![Image 4: HIPAA Compliant](https://fireworks.ai/images/compliance/Vanta_Compliance_HIPAA.svg)
+![Image 3: SOC 2 Type 2](assets/5/4/541ecff0ec045b2ce011f138b33d08ee.svg)![Image 4: HIPAA Compliant](assets/3/d/3de802490d96092dff75a70fb4075d68.svg)
 
 © 2024 Fireworks AI, Inc. All rights reserved.
 

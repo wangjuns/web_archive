@@ -34,7 +34,7 @@ Frye 举了个例子，比如先手动把 arxiv 上的 paper 摘要贴给模型�
 
 他提到要处理 300 多个 PDF，速度很慢。但利用像 [Modal](https://link.zhihu.com/?target=https%3A//modal.com/) 这样的云服务，可以同时启动上百个 container 来同步执行，速度一下子就快了很多。
 
-![](https://pic1.zhimg.com/v2-50b584a8e9d3a762a00e4bfc7229018c_b.jpg)
+![](assets/d/4/d4ea841e5f6a20a9e1213c63d97f3d7e.jpg)
 
 一键并发载入 pdf
 
@@ -57,7 +57,7 @@ LLM Foundations
 
 另外也提到了一篇来自 Anthropic 的文章 [In-context Learning and Induction Heads](https://link.zhihu.com/?target=https%3A//transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html)，深入探索了大语言模型 in-context learning 能力的来源。从对 in-context learning 能力的定义，特定的评估方法，再到对各种规格的模型训练过程的细致观察与各种干预实验都非常有意思，很值得一读。
 
-![](https://pic4.zhimg.com/v2-db6659696afa0f777621094f5776409b_b.jpg)
+![](assets/8/6/869f93baaaaf557b4925cb3e3dcf4ed5.jpg)
 
 Induction Heads
 
@@ -77,7 +77,7 @@ Encoder + decoder 架构。把各种 NLP 任务都统一成 text to text 的转�
 
 Decoder only 的架构引领了现在的潮流，但在当初的影响力并不大。他们使用的 Byte Pair Encoding 值得关注，在使用词典和 UTF-8 字节码之间找到一个平衡。
 
-![](https://pic4.zhimg.com/v2-0a4e240dfb4badd095f71230df3ea257_b.jpg)
+![](assets/a/6/a6c34716de06c7a0f9cccb5db62cebab.jpg)
 
 Byte Pair Encoding
 
@@ -85,7 +85,7 @@ Byte Pair Encoding
 
 体现出了强大的 few-shot 和 zero-shot learning 能力，引领了 prompt engineering 风潮。另外有意思的是他们准备了 500B token 的训练数据，但实际只训练了 300B 就停止了。也就是**所有训练数据模型只看了一次**，跟他们分享中提到的“无损压缩”的思路一致。
 
-![](https://pic3.zhimg.com/v2-21f3c9652a72bfb449e399a85f096b5e_b.jpg)
+![](assets/9/8/989d59839491d26cc9a76d5765c588e2.jpg)
 
 GPT-3 的训练数据
 
@@ -101,7 +101,7 @@ Chinchilla-optimal 模型，开源发布但不允许商用。最近的 RedPajama
 
 时下流行的 LLM 大多数也都在 pre-train 阶段之后做了 instruction fine tuning 以及 RLHF。作者也介绍了一下很多开源模型采用的 GPT 生成 instruction following 数据的方案，以及 23 年 4 月发布的 [Open Assistant 数据集](https://link.zhihu.com/?target=https%3A//huggingface.co/datasets/OpenAssistant/oasst1)。对于 RLHF，个人也额外推荐两个最近看过的资料，一个是 [John Schulman 分享的通过 RL 来实现 Truthfulness](https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3DhhiLw5Q_UFg)，个人感觉还是比较能体现 RL 相对于 SFT 的优势的。另一个是 [Anthropic 的 Constitutional AI](https://link.zhihu.com/?target=https%3A//www.anthropic.com/index/claudes-constitution)，展现了或许可以不借助人工反馈也能实现价值观对齐。
 
-![](https://pic4.zhimg.com/v2-bf874c83554cefe704100f1ed352ab1f_b.jpg)
+![](assets/2/1/2147c297693003ed02a5ad85ecf8cdc3.jpg)
 
 Constitutional AI
 
@@ -128,13 +128,13 @@ Learn to Spell: Prompt Engineering
 
 还有一个比较有意思的思考原则是，当前很多模型在做 instruction tuning 时所采用的数据都是人工打标的，所以你可以想象着**在给一个新上手的打标人员描述你所需要完成的任务**，就能得到一个效果不错的 prompt。
 
-![](https://pic4.zhimg.com/v2-d2874e2654419f76e48e8bbcc6ae1ba3_b.jpg)
+![](assets/f/0/f03801a64a84a7b32ac54b6adb241bbc.jpg)
 
 可以把模型当作一个新手标记员
 
 而在时下火热的 LLM agent 方向上，prompt 就像是能够创建一个有生命的机器人。最常见的例子是网上很多 prompt 的例子都有种让 LLM 做“角色扮演”的感觉。作者对于这种角色扮演所产出的效果质量给出了一个很好的总结：
 
-![](https://pic1.zhimg.com/v2-2f5150a38f150889b20796bba4d7b250_b.jpg)
+![](assets/e/6/e691a87a34bab398f10775ead2c2c294.jpg)
 
 LLM 角色扮演的效果
 
@@ -157,13 +157,13 @@ Frye 表示，few-shot learning 很多时候可能并不是一个好主意。举
 *   [Self-criticism](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2303.17491)，让模型不断自我审视与修正回答。
 *   [Self-consistency](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2203.11171)，通过略微不同的 prompt 以及稍高一点的 temperature 设定，让模型多生成几个回答，最后投票来选择最终的回答。通过这种方式也能大大提升准确率。
 
-![](https://pic2.zhimg.com/v2-c253d1ac93bbbb6b5e4964b650f0424d_b.jpg)
+![](assets/5/7/57ebfb38b0b070bef5fcaf476a464a67.jpg)
 
 Self-consistency
 
 这些模式还可以组合起来使用，以达到更好的效果。最后作者也总结了一下这些方法在速度和开销上的一些 trade-off 考量。
 
-![](https://pic4.zhimg.com/v2-443f02c1af178c69bfa9aada09f96463_b.jpg)
+![](assets/2/8/28674c8baefe9d525b2def8a5d6fb3a2.jpg)
 
 Prompt 模式 trade-off
 
@@ -192,13 +192,13 @@ Augment Language Models
 
 Embedding 的技术原理大家应该都挺熟悉了。在具体选择 embedding 模型时，可以参考 [mteb 的 leaderboard](https://link.zhihu.com/?target=https%3A//huggingface.co/spaces/mteb/leaderboard)。其中 [sentence-transformers](https://link.zhihu.com/?target=https%3A//www.sbert.net/) 是一个非常不错的 baseline，使用也很方便。大多数情况下大家应该都是直接使用 OpenAI 的`text-embedding-ada-002`，效果好，便宜，直接一个 API 调用搞定。另外榜单上的第一名 [Instructor](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2212.09741) 也值得关注，其思想有点像经过 instruction tuning 的 embedding 模型。
 
-![](https://pic1.zhimg.com/v2-a3d1ae37921e61676d985e88b9404610_b.jpg)
+![](assets/e/b/eb71c094630cd16b3a116ea4c80f829f.jpg)
 
 Instructor 模型
 
 有了 embedding 模型之后，在做问答时的方式就是把 query 转换成向量，然后在文档向量库中做相似度搜索。在文档数量不超过百万量级时，其实**简单的 numpy 计算相似度来做搜索就足够用了**，不会跟那些近似搜索算法有多少体感上的差距。如果考虑到 LLM 本身调用的时间开销，这点差距可能就更不值一提了。
 
-![](https://pic3.zhimg.com/v2-7e78bec238963110fa75789261c3b1ce_b.jpg)
+![](assets/b/1/b120f6fe527e0f69a51ebd251257ffc8.jpg)
 
 numpy vs. hnsw
 
@@ -217,7 +217,7 @@ numpy vs. hnsw
 
 为了解决这些问题，你可能需要考虑上个向量数据库，作者也给出了一个很贴心的对比图：
 
-![](https://pic1.zhimg.com/v2-17a612baaabe07dc112edda885523ec8_b.jpg)
+![](assets/4/a/4a6c53257bdccfa9e103f73d1945df45.jpg)
 
 向量数据库对比
 
@@ -239,7 +239,7 @@ numpy vs. hnsw
 
 最后作者也展示了下目前最为广泛应用的 QA 场景中具体是如何结合 retrieval 的，也提到了通过不断 refine 的模式来突破 context size 限制，覆盖更多文档内容的方法。
 
-![](https://pic3.zhimg.com/v2-23a0c185b37ee4de6638a38fa1b6bf92_b.jpg)
+![](assets/1/c/1c423b67cea30c3036505f7cf2ff72e3.jpg)
 
 Retrieval 应用与问答场景
 
@@ -262,7 +262,7 @@ Retrieval 应用与问答场景
 
 这两种方式主要的权衡在于**可靠性或者是流程的确定程度**。Chain 的运作流程是人工定义好的，流程不会出错，且对 LLM 来说生成具体的工具指令也会准确率更高。而 plugin 的优势在于极大的流程灵活度，可以用统一入口满足用户各类诉求。虽然可靠性会下降不少，但也可以考虑引入人工交互来弥补。
 
-![](https://pic4.zhimg.com/v2-f93bab761db292049d1a80d9a6d07537_b.jpg)
+![](assets/e/7/e7b511b109d573671e239ce48f6792ad.jpg)
 
 两种应用工具的模式
 
@@ -286,7 +286,7 @@ UX for Language User Interface
 
 具体到 AI 产品上，我们可以将 AI 能力以及决策错误的后果作为两个维度来进行分析：
 
-![](https://pic2.zhimg.com/v2-9afa76a60cc4400f4477d90081dd993d_b.jpg)
+![](assets/0/b/0b5e28bb6753c3a4607a24a42b56ee82.jpg)
 
 不同情况下 AI 与用户的协作关系
 
@@ -310,7 +310,7 @@ UX for Language User Interface
 
 大家也可以用这个框架来审视一下自己的应用。尤其是第四点**如何鼓励用户给出反馈**，还是挺需要好好思考一下的。除了前面提到的 Midjourney 外，像 ChatGPT 里 regenerate response 和后面带的问题这种形式也很好，用户体验很流畅，同时又能拿到信号非常强烈的反馈。
 
-![](https://pic3.zhimg.com/v2-be4c407d82d4f5a40e3321f5e66fc16a_b.jpg)
+![](assets/2/a/2ae2d37793d5f8a78bae80758efcf02b.jpg)
 
 ChatGPT UI 中的设计亮点
 
@@ -322,7 +322,7 @@ ChatGPT UI 中的设计亮点
 
 在训练了代码生成模型后，他们一开始在很多可能的产品方向进行了分析与探索，包括：
 
-![](https://pic1.zhimg.com/v2-7299eec84c9ad9e9537f285e8d652ed8_b.jpg)
+![](assets/c/0/c098836cbe0ab35779a4f351ce2272c8.jpg)
 
 尝试各种 idea
 
@@ -338,7 +338,7 @@ Bing Chat 相对来说在用户体验方面的考量就没有那么全面，更�
 *   没有注意到**潜在的反馈循环**。跟 ChatGPT 相比，Bing Chat 是“联网”的，所以每当它产生一些奇怪回复后，用户会贴到网上，然后搜索引擎又会很快索引这些信息，反过来不断增强出现这些奇怪回复的可能性。
 *   **用户界面的“引导”与产品实际提供的能力不符**。很多做 AI 应用的同学可能都觉得为了让产品更酷炫，应该尽可能让交互界面像真人。比如生成一个真人头像，利用 D-ID，ElevenLabs 等技术让它能够像真人一样用非常流畅自然的语音回答。但是这会让用户的期望值拉得非常高，如果你的模型不能够达到真人交互的水平，那么用户的失望感就会非常强烈。
 
-![](https://pic2.zhimg.com/v2-6496750b2087ad4c908aeb5cc2e37aad_b.jpg)
+![](assets/0/a/0ae587da87a57d3a0f94f69b54b639a5.jpg)
 
 LUI 应该强调自己是个机器人
 
@@ -357,7 +357,7 @@ LLMOps
 *   Claude 也是个不错的选择，无论是模型效果还是训练的完善程度上，再加上现在支持了超大的 context size，赶忙去申请了 wait-list。
 *   如果需要做 fine tune，也可以考虑 Cohere 的 command 系列。
 
-![](https://pic4.zhimg.com/v2-d64a8dd05af98f6fc3c6004bf01c2617_b.jpg)
+![](assets/4/1/4118a0a2cb0618b826821bbdb9c592ef.jpg)
 
 私有模型对比一览
 
@@ -368,7 +368,7 @@ LLMOps
 *   如果用于研究用途，LLaMA 系列是目前比较主流的。如果对于 2020 年的 GPT-3 复现与实验感兴趣，可以用 OPT。
 *   其它基本不太用考虑，包括表上的 Bloom 和 GLM。不过这个表的更新迭代速度应该会很快。
 
-![](https://pic1.zhimg.com/v2-03fd35ca0cbffe47d6c40cdd80e24bc8_b.jpg)
+![](assets/e/3/e3f158f49d253f82fd0a645fc680c9b3.jpg)
 
 开源模型对比一览
 
@@ -397,7 +397,7 @@ LLM 的能力非常强大，能处理各种任务，这对其评估造成了很�
 *   如果有用户填写的反馈信息，可以询问 LLM：用户的反馈是否已经包含在回答中了？
 *   其它情况，可以通过外部工具来检查是否是个合法的格式，或者让 LLM 给回答做个打分。
 
-![](https://pic4.zhimg.com/v2-11b8eebad9d57c9b1fd218373c01266f_b.jpg)
+![](assets/9/d/9d01f48f6c5de8c53aa2441b150cdfc6.jpg)
 
 LLM 模型评估
 
@@ -437,7 +437,7 @@ LLM 模型评估
 
 大家如果有成功应用 fine tune 模式的例子，也欢迎交流分享。
 
-![](https://pic4.zhimg.com/v2-138f578cc5f3b7286456bd2cc7366257_b.jpg)
+![](assets/0/0/00c1417b63e2f68776322f2ac9442cac.jpg)
 
 LLM 应用迭代优化流程
 
@@ -460,7 +460,7 @@ What's Next
 
 总体来说最有可能成为瓶颈的是数据。比如 [Will we run out of data?](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2211.04325) 这篇文章认为我们在 2026 年之前就会碰到高质量数据增长跟不上算力提升的速度。而如果从 Chinchilla 论文中的 [scaling law 公式](https://link.zhihu.com/?target=https%3A//www.lesswrong.com/posts/6Fpvch8RR29qLEWNH/chinchilla-s-wild-implications) 来推算，在特定数据量下即使是**无限的参数量**都没法打败拥有更多数据量训练出来的有限参数量的模型。
 
-![](https://pic3.zhimg.com/v2-71ed6b62ee977ad4aca5f644b698af96_b.jpg)
+![](assets/f/4/f48dc1a725350cb56acd2da6d45f53a3.jpg)
 
 通过 scaling law 推算无限参数/数据情况下的模型性能
 
@@ -478,7 +478,7 @@ What's Next
 
 作者认为可以把 GPT-4 理解为一种新的 CPU，它的 context 相当于内存。我们现在的 prompt 还处在一个很原始的应用这种新型计算机的阶段（接近机器码？），还远没有出现更高阶的智能计算编程语言与框架。
 
-![](https://pic3.zhimg.com/v2-a652ac90357c3218cfb807a36cf7533e_b.jpg)
+![](assets/a/2/a264b16f203aa195a1ec4c9ed5aa5f4c.jpg)
 
 GPT 是认知计算机的 CPU
 
@@ -490,6 +490,6 @@ GPT 是认知计算机的 CPU
 
 最后一页 PPT 也是非常幽默，作为整个系列讲座的结尾送给大家。
 
-![](https://pic3.zhimg.com/v2-8ef97853d02ea3050cc568d11f6aea8e_b.jpg)
+![](assets/6/4/6415cf059b298e3b8f596a5079193151.jpg)
 
 想起 Dr. Strangelove

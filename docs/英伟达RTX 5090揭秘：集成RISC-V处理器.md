@@ -3,7 +3,7 @@ Title: 英伟达RTX 5090揭秘：集成RISC-V处理器
 URL Source: https://mp.weixin.qq.com/s/ng9yG2ydJ7RTF8Q4HF42iw
 
 Markdown Content:
-![Image 1](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dlSOw0Zeq8bxDDb9at7uFb5MI56wyliabMPeGVJDphicsoGTAVFYnsicCjx9D4ediabGpxjbtVUgfpDg/640?wx_fmt=jpeg&from=appmsg)
+![Image 1](assets/8/0/80200107fd0de44476acbb972a542ec9.jpg)
 
 👆如果您希望可以时常见面，欢迎标星🌟收藏哦~
 
@@ -19,7 +19,7 @@ RTX 5090 的核心是 GB202 GPU，基于 Nvidia 的新 Blackwell 架构。完整
 
 与 4090 相比，5090 拥有下一代 CUDA、Tensor Core 和光线追踪核心。它的 CUDA 核心数量也比 RTX 4090 多出近 33%，Tensor Core、RT 核心和 RT 性能也有类似的升级。5090 还拥有 575 瓦的 GPU，而 4090 的 GPU 为 450 瓦，同时使用相同的 TSMC 4nm 4N 工艺节点和升级的 PCIe Gen 5 接口。Nvidia 已将 Tensor Core 升级到 FP4 功能，据称其 FP8 吞吐量是 4090 内 Ada Tensor Core 的两倍。RT 核心在射线三角相交测试和大量其他光线追踪和路径追踪功能中的性能也得到了巨大提升。
 
-![Image 2](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7XsgBoR53icjfbeiaX0pWHfnECZdgeToB7gxsibPr4qHBMK5rHkuqrTyZQ/640?wx_fmt=png&from=appmsg)
+![Image 2](assets/b/1/b177561cddb4aa7a4646a1c2c5a4b81e.png)
 
 RTX 5090 GPU 的一个新特性是 AI 管理处理器 (AMP)，这是一个完全可编程的上下文调度程序。它旨在减少 GPU 将任务调度到不同核心的开销；它就像是 GPU 上同时运行的所有不同工作负载的交通警察。这是一个专用的 RISC-V 处理器，位于 GPU 管道的前端，与 CPU 驱动的方法相比，它可以实现低得多的决策延迟。AMP 还兼容 Windows 10 中引入的 Microsoft 硬件加速 GPU 调度，因此它不会给开发人员带来任何新的挑战，并且在同时在 GPU 上执行多个任务时应该可以提高 CPU 利用率和延迟。总而言之，这意味着在同时执行图形和 AI 工作负载时可以获得更好的体验，随着 DLSS 等功能变得如此重要，这种情况在 Nvidia GPU 上越来越常见。
 
@@ -27,23 +27,23 @@ RTX 5090 GPU 的一个新特性是 AI 管理处理器 (AMP)，这是一个完全
 
 GB202 GPU 的显示管道支持 DisplayPort 2.1b，利用 UHBR 20 可实现高达 80 Gbps 的带宽。这意味着以 60 赫兹运行高达 16K，以 120 赫兹运行 8K，以高达 240 赫兹运行 4K。
 
-![Image 3](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7DE2enAHRrZ89SF8PxC6aDicDsFjHbETwwRibcibmHLu4mbSqDB2kLREicg/640?wx_fmt=png&from=appmsg)
+![Image 3](assets/0/e/0ea1b0d8bfa1d953c6918bec49e1b319.png)
 
 **DLSS 4 多帧生成**
 
 RTX 50 系列最重要的功能是 DLSS 4 的多帧生成。此功能可有效地将一个渲染像素转换为最多 16 个总像素。虽然 40 系列提供帧生成，但上限为 1 倍，这可以提高图形性能，但远不及 4 倍的水平。下表列出了不同系列 Nvidia 显卡的 DLSS 功能；该公司表示，未来可能会在 RTX 30 系列上提供帧生成功能，但目前还不确定。
 
-![Image 4](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7OxqNb1uvuF8FLJkq7T3kLfXBn7ibSiagPXFlzJYZCLPADSZreBJa7Hng/640?wx_fmt=png&from=appmsg)
+![Image 4](assets/7/d/7d74d31f489028abe078dba51e8fc4b7.png)
 
 DLSS 多帧生成与新的变换器模型协同提升了性能，它使用变换器模型在升级的同时提高图像质量。这是 Nvidia 五年来首次改变其用于 DLSS 的模型类型，此前它使用的是卷积神经网络模型。DLSS 的基本功能之一是以较低的分辨率渲染游戏以实现更高的帧速率，然后将其升级到可玩的分辨率，这会影响图像质量。通过使用变换器模型，Nvidia 提高了升级质量，可以说让 DLSS 感觉无损，即使事实并非如此。Nvidia 还将变换器模型用于其射线重建功能，从而带来类似的图像质量改进。
 
-![Image 5](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7coruay1vuEJ0gmyjYPaqgS4AsfNEONZyrM6iaEcYA6aVx8r7pQ5UTLw/640?wx_fmt=png&from=appmsg)
+![Image 5](assets/1/0/10f431c507a46652c18e5fae8ea55eb4.png)
 
 **测试平台和方法**
 
 为了测试 RTX 5090，我使用 AMD Ryzen 9800X3D 处理器和 ASUS X870E Hero 游戏主板（由 AMD 寄给我）搭建了一个新的测试台，并由 360mm ASUS ROG RYUO III CPU 冷却器冷却。它还搭配了 Patriot Memory 寄给我的 64GB Patriot Viper DDR5 6000 MT/s RAM、2TB Crucial Memory T705 Gen 5 SSD 和 Corsair 7000X 机箱以及 Corsair 寄给我的 1 千瓦 Corsair RM1000x 电源。显示器是 Alienware AW3225QF，我去年评测过；这款显示器能够进行 4K 240 赫兹游戏，而这正是 RTX 5090 的亮点所在。所有这些组件都用于使 RTX 5090 相对于 4090 获得最佳的基准测试数字。
 
-![Image 6](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7kcwVoyNXnuOhtM7Gz4MOpKJWEM5KpDcgniaxuFvZlAUunYG5NgSqlXw/640?wx_fmt=png&from=appmsg)
+![Image 6](assets/a/c/ac659b8cc4b0a7b7b75298af520883cd.png)
 
 由于 AMD 在这一世代的高端市场上并不一定与 Nvidia 竞争，因此将 5090 与 4090 进行比较似乎要容易得多；这种方法也考虑到了我搭建系统和测试新卡的时间，大约三天。由于需要将自己限制在几个基准测试中，我选择了 Blender、3Dmark 和三款相关游戏，这些游戏可以展示 DLSS 4 和帧生成功能的实际效果。这三款游戏分别是《漫威对手》、《星球大战：法外狂徒》和《赛博朋克 2077》。Nvidia 表示，当 1 月 30 日开始零售时，将有 75 款游戏支持 DLSS 4。赛博朋克 2077用于解决这一代版本的“但它能运行Crysis吗？”测试。Nvidia 和赛博朋克的制造商 CD Projekt RED 投入了大量的时间和金钱来让这款游戏看起来非常出色。
 
@@ -51,13 +51,13 @@ DLSS 多帧生成与新的变换器模型协同提升了性能，它使用变换
 
 首先是 Blender，它已成为 3D 艺术家最喜爱的创作工具之一。最新版本 4.3 可在 Blender Benchmark 中找到，我用它来比较 5090 和 4090。它由三个不同的测试组成，比较两款显卡的原始 3D 渲染能力。
 
-![Image 7](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7WTbcf5fJxb5UfQosEiacWWdpmpqH5P91vLgyxd2mL7nmTYKdkM3lHPA/640?wx_fmt=png&from=appmsg)
+![Image 7](assets/8/f/8fbd70804983372c33d3b95f51674929.png)
 
 如上图所示，RTX 5090 在所有三项测试中都取得了明显的胜利；与 RTX 4090 相比，它在 Monster 中提升了 33%，在 Junkshop 中提升了 45%，在 Classroom 中提升了 31%。这是一个可观的提升，任何 3D 创作者都会喜欢，尤其是如果他们使用的是更老的显卡的话。
 
 接下来，3Dmark 是一个综合基准测试，包含两个 DX12 测试，不利用 GPU 的 AI 功能，主要侧重于光栅化。Steel Nomad 是一个 4K 基准测试，具有 DX12 和 HDR，使用先进的渲染技术，而 Speed Way 使用较低的分辨率 (1440P) 和光线追踪，提供一点光线追踪和光栅化，尽管仍然没有像 DLSS 那样的功能。3Dmark 仍然是行业标准基准测试，也是测试理论性能的好方法。
 
-![Image 8](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7fxrgr79ot1zhI64NAQzOlj8Ssq86QaRAgeLLq0fMibp1ZelbibeOeUfg/640?wx_fmt=png&from=appmsg)
+![Image 8](assets/e/5/e5aff809da1655b8c00692f1a1ddc554.png)
 
 正如这些基准测试所示，RTX 5090 的性能再次远高于 4090。具体来说，RTX 5090 在 Speed Way 中快 42%，在 Steel Nomad 中快 50%，如果考虑到增加的 CUDA 和 RT 核心，这是有道理的。话虽如此，我可能会认为这些是不使用 DLSS 的游戏中的最佳情况；在没有 AI 的现实世界中，许多游戏的表现可能会低于这些数字。
 
@@ -65,17 +65,17 @@ DLSS 多帧生成与新的变换器模型协同提升了性能，它使用变换
 
 测试的所有三款游戏都是 Nvidia 在其 DLSS 4 抢先体验列表中确定的游戏。我之所以选择这三款游戏，是因为它们也代表了游戏的多样性，并且是了解 Nvidia 在 AI 方面取得多大进步的绝佳方式。同样，Nvidia 表示，75 款游戏将在零售时支持 DLSS 4，但 700 款游戏已经在某种程度上支持 DLSS，并且随着 Nvidia App 中的 DLSS 覆盖，我们可以看到更多游戏支持 DLSS 4。Nvidia 拥有让行业采用 DLSS 的市场份额，并且随着Marvel Rivals等热门游戏在发布时采用并支持 DLSS 4，我们可以期待它从一开始就产生重大影响。
 
-![Image 9](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7vJQ25M5Adwgz4icJcLTYAndzu4oTID0EViaxcJ4jpuwYxzqBrCzkSXdQ/640?wx_fmt=png&from=appmsg)
+![Image 9](assets/5/4/5427be956e3ffe2e2dff1bc303f23dc9.png)
 
 对于《漫威宿敌》，我使用两张显卡开启了帧生成功能，这会自动开启低延迟和 DLSS。游戏还设置为以 4K 分辨率运行，同时使用 Nvidia FrameView 来跟踪帧速率。对于那些不熟悉的人来说，1% 低帧率是在玩游戏时 1% 的时间内遇到的最低帧速率；这是最坏情况（不是最坏情况），可以为简单的平均帧速率提供更多背景信息。
 
 当我进行这项测试时，RTX 4090 的 1% 最低帧率为 84 FPS，仍然非常可玩，平均帧率为 160，而 PC 延迟为 31 毫秒。然而，RTX 5090 的 1% 最低帧率为 115 FPS，平均帧率为 258 FPS，这完全超出了我的预期，这实际上超出了我 240 赫兹显示器的刷新率——对于如此具有竞争力的游戏来说，这非常棒。PC 延迟也降低了 30%，降至 21 毫秒，这对于像Marvel Rivals这样的竞争性游戏来说，可能会产生很大的不同。
 
-![Image 10](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7vOoNt3m9pbkXOeSsFfbCUXhWfP7G1tKlf2j4nbSCgaFaLIIjlOpMQg/640?wx_fmt=png&from=appmsg)
+![Image 10](assets/b/8/b89acfdaf5aa706cd0d2570c7f127015.png)
 
 对于《星球大战：法外狂徒》，Nvidia 为我提供了一个抢先体验版本，用于测试 DLSS 4。然而，在此之前，我在 RTX 5090 上以 4K 分辨率玩了这款游戏，完全启用了光线追踪，但没有启用帧生成；在这种配置下，平均帧速率只有 40 到 50 FPS。打开 DLSS 和 4 倍帧生成后，我的帧速率平均提高到了 180，这让游戏玩起来完全不同，但看起来仍然同样令人惊叹。RTX 4090 也有帧生成功能，平均为 96 FPS，但这基本上是 RTX 5090 性能的一半。
 
-![Image 11](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7UppsQJr7AztGjMZUhwTfuXoyU47400a6zO9HAYl4h4H0JP3LX4P0tg/640?wx_fmt=png&from=appmsg)
+![Image 11](assets/e/c/ecd2be672cec77ef95114867bdb85c79.png)
 
 最后，我为Cyberpunk 2077开启了两款显卡的几乎所有功能，包括光线追踪、帧生成和光线重建。我在 4K 分辨率下运行Cyberpunk游戏内基准测试时执行了此操作，该基准测试显示了低、中和高 FPS。在这三种情况下，RTX 5090 的性能都是 RTX 4090 的两倍多，这再次表明最新的 AI 使 RTX 5090 的速度提高了多少。
 
@@ -83,7 +83,7 @@ DLSS 多帧生成与新的变换器模型协同提升了性能，它使用变换
 
 RTX 5090 是一款耗电猛兽。据纸面数据，它的 GPU 功率为 575 瓦，而 RTX 4090 的 GPU 功率为 450 瓦。Nvidia 建议为 5090 使用 1 千瓦的电源，这对许多人来说是一个升级。在我测试期间，GPU 监控应用程序 GPU-Z 报告称，GPU 的热设计功率达到 555 瓦，峰值板功率达到 523 瓦；这些数字可能不是 100% 准确，但它们确实表明该卡已几乎发挥出其全部潜力。
 
-![Image 12](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2c2scrnevddXp9802V3SWw7icwZjFeMpTTldAqykrBC1j5TXFNg4hKYaOHRv4K1iaiczx9PBaibKeibEZA/640?wx_fmt=png&from=appmsg)
+![Image 12](assets/1/d/1d16d41a82a6010075c39be4b488bc4b.png)
 
 从散热方面来看，这张卡非常出色，尤其是考虑到 RTX 4090 是一张三插槽卡，上面有一个巨大的冷却器。RTX 5090 要小得多，PCB 更小，可以实现直通。根据我的 Flir 热像仪，在我测试的峰值时，这张卡的温度达到了 77 摄氏度，外部温度从未超过 62.1 摄氏度。这张卡在我的机箱中任何时候都没有发出很大的声音，而且说实话，它似乎比我预期的更好地处理了热负荷，考虑到它是一种双插槽卡设计，冷却器比 4090 更小——同时 TDP 也高出 100 多瓦。
 
@@ -109,7 +109,7 @@ _**END**_
 
 \*免责声明：本文由作者原创。文章内容系作者个人观点，半导体行业观察转载仅为了传达一种不同的观点，不代表半导体行业观察对该观点赞同或支持，如果有任何异议，欢迎联系半导体行业观察。
 
-![Image 13](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuDk7BHibzliciaibdYCIhf1mqRA2MmBiaTWaD5ibeicNlAFlNsibkd1f2pmeDOg/640?wx_fmt=jpeg&from=appmsg)
+![Image 13](assets/f/9/f9b22b054cf8c1bc250b202b99a06430.jpg)
 
 **今天是《半导体行业观察》为您分享的第4029期内容，欢迎关注。**
 
@@ -131,11 +131,11 @@ _**END**_
 
 ★[外媒：美国将提议禁止中国制造的汽车软件和硬件](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247756729&idx=8&sn=7763455e2146a96c6c5945c7092c9c90&scene=21#wechat_redirect)
 
-![Image 14](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUu1TXpDFVTuWPIxHJktS4KxvLHbBdANu82pWXFucbIVric6M3Cn7WuJQA/640?wx_fmt=gif&from=appmsg)
+![Image 14](assets/6/8/682469e1e936e675e715f26638ea8f10.gif)
 
-![Image 15](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuCG4MLz2oyuIZMqcgS0cC9tfaiavhootjOTmg6loyqbjb1EHlNxsKgtw/640?wx_fmt=gif&from=appmsg)
+![Image 15](assets/c/9/c9f4484fc890aff7352be7f2f5ad9421.gif)
 
-![Image 16](https://mmbiz.qpic.cn/mmbiz_jpg/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuoAoO1fpqEjmy1OPQpiagH2XnYgibDaXTwibchog92XXY3z0AUt5m6klGw/640?wx_fmt=jpeg&from=appmsg)
+![Image 16](assets/1/d/1db335363f34d98cab1828120da63488.jpg)
 
 『半导体第一垂直媒体』
 
@@ -143,6 +143,6 @@ _**END**_
 
 公众号ID：icbank
 
-喜欢我们的内容就点**“在看”**分享给小伙伴哦![Image 17](https://mmbiz.qpic.cn/mmbiz_gif/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuhbJFmFI0FmXdAOGSJU6V1ibAveWWFVjtJf5mH7n0ib7BUhbC0naFWyoQ/640?wx_fmt=gif&from=appmsg)
+喜欢我们的内容就点**“在看”**分享给小伙伴哦![Image 17](assets/2/c/2c2a90b567fc1216087228973999c945.gif)
 
-![Image 18](https://mmbiz.qpic.cn/mmbiz_png/CB90MLwUv2dVQxuwN8gBNHd4YoTAibOUuPwZbdic1dGW2ibmrg50pT5BGZUMw0jE1StKR4D8guBwSalq28F6ZcQcw/640?wx_fmt=png&from=appmsg)
+![Image 18](assets/8/f/8f15175a5ee9b61ff4388df436a8048a.png)

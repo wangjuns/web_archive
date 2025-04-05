@@ -3,7 +3,7 @@ Title: 出狱后 CZ 首次发言：谈狱中生活，不会回归币安，对美
 URL Source: https://mp.weixin.qq.com/s/h8XNuLSICS-WcYOKXXG7Jg
 
 Markdown Content:
-![Image 1: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/3Ytua39TTyMSdgiamH4DnPia9THweKJ8wyI6GxK118B83ricTY6avlweXceuN1as25UPW2rWXjbpx9ia4ELdqUWDnQ/640?wx_fmt=webp&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)本文转载自： 吴说Real
+![Image 1: Image](assets/e/a/eae13b27db5999e58cd062a302a29529.webp)本文转载自： 吴说Real
 
 本文为 10 月 31 日币安创始人赵长鹏美国出狱后的首次公开发言。他回到迪拜，在币安区块周上进行了对话。
 
@@ -107,6 +107,6 @@ CZ：短期内不会，我不想再涉及发行新代币等事情。所以我们
 
 当然，长期来看，我希望逐步将 Web3 的经济模式融入平台中。这是一个从孩子学会说话开始，陪伴他们直到就业的平台。甚至在他们 70 或 80 岁时，仍可以继续学习。到那时，当他们找到工作时，我们可以提议（而不是强制）他们考虑在未来的一到三年里，将收入的一定比例捐回平台。即使只有少部分人愿意这么做，我认为我们也可以长期建立一个可持续的平台。不过这是一个很长远的计划，可能需要十年左右。但没关系，我有的是时间。
 
-![Image 2: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/3Ytua39TTyN1LqE6P5BypMoNZgPbJgWlab9UTyf0iaTiawz18tiaDTQEWPVGZ5a4XHYhMMKc2JjFVbZckHklfJaVg/640?wx_fmt=other&from=appmsg&wxfrom=5&wx_lazy=1&wx_co=1&tp=webp)
+![Image 2: Image](assets/9/c/9cb10293b2377dd8610d9d13f6e0d4b7.webp)
 
-![Image 3: Image](https://mmbiz.qpic.cn/mmbiz_png/3Ytua39TTyP9qsibNpS6pk6RLhQJg60Jrt1QZ84QonumZ8HicBk7DrzzzJJgzfM1YnT0cthJ8d92jVoJcb6BFianw/640?wx_fmt=other&wxfrom=5&wx_lazy=1&wx_co=1&tp=webp)
+![Image 3: Image](assets/a/f/afe196942483658701f3003a85f69e6b.webp)

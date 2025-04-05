@@ -211,7 +211,7 @@ PicGo 本体并不包括 S3 图床，但可以通过「[GitHub - wayjam/picgo-pl
 
 图中 Basic info 部分「Visitor」下显示的以 `xxx.webp.li` 格式即为我们的代理地址。
 
-例如我们之前通过 PicGo 上传到 R2 的文件 [yu-r2-test.pseudoyu.com/new\_mbp\_setup.jpg](https://sspai.com/link?target=https%3A%2F%2Fyu-r2-test.pseudoyu.com%2Fnew_mbp_setup.jpg) 则可以用 [dc84642.webp.li/new\_mbp\_setup.jpg](https://sspai.com/link?target=https%3A%2F%2Fdc84642.webp.li%2Fnew_mbp_setup.jpg) 这一链接进行访问。
+例如我们之前通过 PicGo 上传到 R2 的文件 [yu-r2-test.pseudoyu.com/new\_mbp\_setup.jpg](assets/b/c/bc72907ea58059a860359c4cc72ed858.jpg) 则可以用 [dc84642.webp.li/new\_mbp\_setup.jpg](assets/0/3/031660b73b712dddcab471586f04d6b6.jpg) 这一链接进行访问。
 
 如果不喜欢默认的代理地址，则可以右下角 Chat 或是邮箱联系开发者进行自定义域名修改，之后或许也会有更自动化的配置流程。
 

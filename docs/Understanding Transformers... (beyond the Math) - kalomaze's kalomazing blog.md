@@ -88,7 +88,7 @@ I used some character renders from a game - like there's a Captain Falcon one th
 
 I wanted to assess: can in-context learning, without the model being trained on things like this, produce a process similar to what was seen in the examples? Remember, these examples I'm making of ASCII art from real images - I'm constructing them programmatically so that I have data points where it starts randomly, and then the canvas gets bigger each time, but the canvas also becomes clearer each time. The context implies that whatever comes next follows this abstract meta-pattern where you start from noise, and then you iterate forwards and explore what will eventually become the whole image from that process - noise into a full canvas.
 
-![Image 1: Basic example of the ASCII art diffusion process](https://files.catbox.moe/cd8fn5.png)
+![Image 1: Basic example of the ASCII art diffusion process](assets/1/3/136c8ef0c949fd5b3fee0ca86219b3bf.png)
 
 Those programmatic examples - remember, the models are not trained on these examples whatsoever. I'm just working with Claude API. Claude 3.5 Sonnet is available at the time of this recording, but Claude Opus 3.5 is not out yet.
 
@@ -98,7 +98,7 @@ There's an abstract difference between telling a model to do something in the as
 
 What happens with in-context learning for these programmatically constructed diffusion examples? I noticed some really interesting things happening for Claude 3.5 Sonnet especially. It'll start the same way - it'll start with the diffusion process and eventually iterate and expand that canvas into a consistent shape.
 
-![Image 2: Final example of Claude 3.5 Sonnet's successful render](https://files.catbox.moe/qkztdh.jpg)
+![Image 2: Final example of Claude 3.5 Sonnet's successful render](assets/5/2/52aa9a13529529ae386f2e07084fdf26.jpg)
 
 This is a very interesting and difficult problem to do by in-context learning because:
 
@@ -116,11 +116,11 @@ But the other models failed in different ways:
 
 *   Claude 3.0 Sonnet (the first Sonnet) latched onto the fact that the canvas is supposed to get bigger each time. While making the canvas larger, it had trouble controlling the level of noise. There was some vague structural resemblance and similarity in the symbols, but by the end, you don't have any coherent image or shape that looks like it could have belonged to those examples. So it's like a partial success, partial failure.
 
-![Image 3: Claude 3.0 Sonnet failure example](https://files.catbox.moe/z312rg.jpeg)
+![Image 3: Claude 3.0 Sonnet failure example](assets/b/4/b46c699882adc2a76cd7d2f4469354bf.jpeg)
 
 *   Claude 3.0 Haiku (the smallest model) does this thing where, if I remember correctly, it does correctly for the first couple steps, and then it gets stuck. It just keeps copying the former step that it did before. It hasn't latched onto the meta-patterns in the context window of getting larger or controlling the noise. It gets really caught up in just copying the prior step that it did, and it can't make the canvas larger beyond a certain point - it has trouble maintaining an expanded version of that state.
 
-![Image 4: Claude 3.0 Haiku failure example](https://files.catbox.moe/hxjnic.jpeg)
+![Image 4: Claude 3.0 Haiku failure example](assets/0/5/057c99e09af7639a87e3edb3249bdf2e.jpeg)
 
 So to summarize:
 
@@ -129,7 +129,7 @@ So to summarize:
 
 Claude 3.0 Opus was the only other model that was able to create something that looked like an image by the end of the process.
 
-![Image 5: Example of Opus imitating the process demonstrated in the examples](https://files.catbox.moe/o59w1g.jpeg)
+![Image 5: Example of Opus imitating the process demonstrated in the examples](assets/c/f/cff327e1bcfb40b9cc95926f44d373a9.jpeg)
 
 I think an experiment like this proves that Transformers are obviously abstracting beyond the literal symbols they've been provided. They're doing more than memorization - they're actually learning generalizable states and distributions.
 

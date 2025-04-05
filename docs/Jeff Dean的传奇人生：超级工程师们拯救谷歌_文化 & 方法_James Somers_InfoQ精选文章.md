@@ -63,7 +63,7 @@ Sanjay 不由自主将目光投向 Jeff。几个月以来，谷歌一直在经�
 最棒的搭档，最好的结对编程榜样
 ---------------
 
-![](https://static.geekbang.org/infoq/5c0a9f807c6ee.png)
+![](assets/9/a/9a3b3762fa98aebd56954dd0c7a60ea5.png)
 
 这两位谷歌公司的顶尖程序员，彼此如同同一个大脑的两个半球。
 
@@ -99,7 +99,7 @@ Sanjay 一直没有结婚，但他经常跟 Jeff 本人、他的妻子 Heidi 和
 
 Jeff 表示，“你需要找到一个能够与你的思维方式兼容的人，这样两个人在一起才能形成互补的力量。”
 
-![](https://static.geekbang.org/infoq/5c0a9f362a731.png)
+![](assets/2/7/27a664d6b7fdc46ad32f3d30ccc8be67.png)
 
 他们离开餐桌，在 Big Table 餐厅的谷歌员工当中穿梭，只为找到好吃的冰淇淋。在这两个人当中，Jeff 更有表达自己的愿望，因此他在走路时分享了自己的冰淇淋心得。“我负责接冰淇淋，我觉得一推一提的办法能让冰淇淋牢牢站在蛋筒上。”Sanjay 对此深以为然，他开心地把巧克力加香草味的混合冰淇淋压进 Jeff 手中的甜筒。
 
@@ -192,7 +192,7 @@ Jeff 与 Sanjay 在办公室的角落里编写出了 MapReduce。办公室窗外
 
 当时，成本愈发低廉的硬件与网络服务、互连设备正快速普及并带来巨量数据，但只有极少数企业拥有能够处理这些信息的软件。在经历了艰难的小型搜索引擎 Nutch 的扩展挑战之后，Mike Cafarella 与 Doug Cutting 两位工程师清楚认识到了 MapReduce 的重要性，并决定从零开始为其创建一套免费克隆版本。他们最终将自己的项目命名为 Hadoop，这个名字源自 Cutting 儿子最喜爱的一只毛绒小象。
 
-![](https://static.geekbang.org/infoq/5c0aa39ca7160.png)
+![](assets/5/a/5adbcb59d49fcf56f74be68dc1425ad3.png)
 
 Hadoop 快速发展成熟，目前已经被半数全球财富五十强企业所采用。事实上，Hadoop 几乎成为大数据的代名词。众所周知，Facebook 公司就利用其所谓“Hadoop MapReduce”存储及处理用户元数据——包括用户的点击、点赞、广告查看等行为的信息。Facebook 一度拥有世界上规模最大的 Hadoop 集群。此外，Hadoop MapReduce 还有力支撑起了 LinkedIn 与 Netflix 的业务体系。前美国国家安全局技术主管 Randy Garrett 就曾经向国安局局长 Keith Alexander 上将演示过这项技术。Hadoop 执行分析任务的速度可以达到原有系统的 18000 倍，这使其成功催生出一种全新的情报收集方法——亦有部分观察家将其称为“collect it all”方法。
 
@@ -246,5 +246,5 @@ https：[//www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google
 
 12 月 20-21，[AICon全球人工智能与机器学习技术大会](http://aicon2018.geekbang.org/schedule?utm_source=website&utm_medium=infoq&utm_campaign=wenzhang)将于北京盛大开幕，学习来自 Google、微软、BAT、360、京东、美团等 40+AI 落地案例年终总结，与国内外一线技术大咖面对面交流，不见不散。
 
-[![](https://static001.infoq.cn/resource/image/56/78/56e1eff02d4d697dcb68b0122cb08678.jpg)
+[![](assets/e/e/eed13c322f1bdb1dc0c9ffe2ef219a68.jpg)
 ](http://aicon2018.geekbang.org/schedule?utm_source=website&utm_medium=infoq&utm_campaign=aibanner)

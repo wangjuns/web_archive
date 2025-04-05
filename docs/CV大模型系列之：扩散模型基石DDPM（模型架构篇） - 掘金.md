@@ -40,13 +40,13 @@
 
 假设你想做一个以文生图的模型，你的目的是给一段文字，再随便给一张图（比如一张噪声），这个模型能帮你产出**符合文字描述**的**逼真**图片，例如：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bd4c415d3a644e6d8ebbf0a86c692aad~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/9/8/988948646848e1b833c5412ffa750bef.webp)
 
 文字描述就像是一个指引(guidance)，帮助模型去产生更符合语义信息的图片。但是，毕竟语义学习是复杂的。**我们能不能先退一步，先让模型拥有产生逼真图片的能力**？
 
 比如说，你给模型喂一堆cyperpunk风格的图片，让模型学会cyperpunk风格的分布信息，然后喂给模型一个随机噪音，就能让模型产生一张逼真的cyperpunk照片。或者给模型喂一堆人脸图片，让模型产生一张逼真的人脸。同样，我们也能选择给训练好的模型喂带点信息的图片，比如一张夹杂噪音的人脸，让模型帮我们去噪。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8abac1e27c394a6fa3470df1ade8c566~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/4/3/43e971ded3fa1869847940e713238847.webp)
 
 具备了产出逼真图片的能力，模型才可能在下一步中去学习语义信息(guidance)，进一步产生符合人类意图的图片。**而DDPM的本质作用，就是学习训练数据的分布，产出尽可能符合训练数据分布的真实图片**。所以，它也成为后续文生图类扩散模型框架的基石。
 
@@ -68,7 +68,7 @@
 
 Diffusion Process的命名受到热力学中分子扩散的启发：分子从高浓度区域扩散至低浓度区域，直至整个系统处于平衡。加噪过程也是同理，每次往图片上增加一些噪声，直至图片变为一个纯噪声为止。整个过程如下：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/169120be0ee0440eb87d429437c3d93c~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/2/a/2aca3ca93a822845292d459320dbef70.webp)
 
 如图所示，我们进行了1000步的加噪，每一步我们都往图片上加入一个高斯分布的噪声，直到图片变为一个纯高斯分布的噪声。
 
@@ -121,7 +121,7 @@ Denoise Process的过程与Diffusion Process刚好相反：给定xtx_t，让模�
 
 讲完符号表示，我们来具体看去噪模型做了什么事。如下图所示，从第T个timestep开始，模型的输入为xtx_{t}与当前timestep tt **。**  模型中蕴含一个噪声预测器（UNet），它会根据当前的输入预测出噪声，然后，将当前图片减去预测出来的噪声，就可以得到去噪后的图片。重复这个过程，直到还原出原始图片x0x_{0}为止 **：** 
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1abcb0fdbccc4f9c936f4aa0e3c947c2~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/4/5/4538ef74868c209679c24d9c8e69598f.webp)
 
 你可能想问：
 
@@ -137,7 +137,7 @@ Denoise Process的过程与Diffusion Process刚好相反：给定xtx_t，让模�
 3.1 DDPM Training
 -----------------
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c95f8c29a66a415cad117eb943826d05~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/e/8/e824798c3b67b35eaeeedeb032f4cb46.webp)
 
 上图给出了DDPM论文中对训练步骤的概述，我们来详细解读它。
 
@@ -172,7 +172,7 @@ loss=ϵ−ϵθ(αˉtx0+1−αˉtϵ,t)loss = \\epsilon - \\epsilon_{\\theta}(
 3.2 DDPM的Sampling
 -----------------
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7ac5b11319044c9995a3efd4d8858ba8~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/3/c/3cd62371600bd65bcee21033152894f6.webp)
 
 当DDPM训练好之后，我们要怎么用它，怎么评估它的效果呢？
 
@@ -182,7 +182,7 @@ loss=ϵ−ϵθ(αˉtx0+1−αˉtϵ,t)loss = \\epsilon - \\epsilon_{\\theta}(
 
 通过上述方式产生的x0x_0，我们可以计算它和真实图片分布之间的相似度（FID score：Frechet Inception Distance score）来评估图片的逼真性。在DDPM论文中，还做了一些有趣的实验，例如通过“**插值（interpolation）** "方法，先对两张任意的真实图片做Diffusion过程，然后分别给它们的diffusion结果附不同的权重(λ\\lambda)，将两者diffusion结果加权相加后，再做Denoise流程，就可以得到一张很有意思的"混合人脸":
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/42cf0618d9ca4bd19b76ec03cb91f47f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/4/7/47dc9f0f229d77f562f0cc9412b1c94c.webp)
 
 到目前为止，我们已经把整个DDPM的核心运作方法讲完了。接下来，我们来看DDPM用于预测噪声的核心模型：**UNet，到底长成什么样**。我在学习DDPM的过程中，在网上几乎找不到关于DDPM UNet的详细模型解说，或者一张清晰的架构图，这给我在源码阅读过程中增加了难度。所以在读完源码并进行实操训练后，我干脆自己画一张出来，也借此帮助自己更好理解DDPM。
 
@@ -193,11 +193,11 @@ UNet模型最早提出时，是用于解决医疗影响诊断问题的。总体�
 
 **在Encoder部分中，UNet模型会逐步压缩图片的大小；在Decoder部分中，则会逐步还原图片的大小**。同时在Encoder和Deocder间，还会使用“**残差连接**”，确保Decoder部分在推理和还原图片信息时，不会丢失掉之前步骤的信息。整体过程示意图如下，因为压缩再放大的过程形似"U"字，因此被称为UNet：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d63d1bd80b2143d5901b14ec4a2b875f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/1/a/1a82da1bd756849e11572fbcdf61a959.webp)
 
 那么DDPM中的UNet，到底长什么样子呢？我们假设输入为一张`32*32*3`大小的图片，来看一下DDPM UNet运作的完整流程：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5848be68f19d441686367698fb797326~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/5/5/5503335a0112d2f5c984ecc02bd9f0f9.webp)
 
 如图，左半边为UNet的Encoder部分，右半边为UNet的Deocder部分，最下面为MiddleBlock。我们以从上往下数第二行来分析UNet的运作流程。
 
@@ -208,7 +208,7 @@ UNet模型最早提出时，是用于解决医疗影响诊断问题的。总体�
 4.1 DownBlock和UpBlock
 ---------------------
 
-![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/05b24ba1f483449bb7bff823dd85c96f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/8/7/87edcaa693c0e88e0c5aaee50cef5025.webp)
 
 **如果你曾在学习DDPM的过程中，困惑time_embedding要如何与图片相加，Attention要在哪里做，那么这张图可以帮助你解答这些困惑**。TimeEmbedding层采用和Transformer一致的三角函数位置编码，将常数转变为向量。Attention层则是沿着channel维度将图片拆分为token，做完attention后再重新组装成图片（注意Attention层不是必须的，是可选的，可以根据需要选择要不要上attention）。
 
@@ -219,7 +219,7 @@ UNet模型最早提出时，是用于解决医疗影响诊断问题的。总体�
 4.2 DownSample和UpSample
 -----------------------
 
-![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6eb4e7feacc540059487d202c1e83333~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/e/6/e6ebdf3c1ae9f598c624ecf476569f7b.webp)
 
 这个模块很简单，就是**压缩(Conv)** 和**放大(ConvT)** 图片的过程。对ConvT原理不熟悉的朋友们，可以参考[这篇](https://link.juejin.cn/?target=https%3A%2F%2Fblog.csdn.net%2Fsinat_29957455%2Farticle%2Fdetails%2F85558870https%3A%2F%2Fblog.csdn.net%2Fsinat_29957455%2Farticle%2Fdetails%2F85558870 "https://blog.csdn.net/sinat_29957455/article/details/85558870https://blog.csdn.net/sinat_29957455/article/details/85558870")文章。
 
@@ -228,7 +228,7 @@ UNet模型最早提出时，是用于解决医疗影响诊断问题的。总体�
 
 和DownBlock与UpBlock的过程相似，不再赘述。
 
-![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3722001502b949cea259f3c8ec710d54~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/3/0/3028ba9cddbc87d0e194fde18260d8ea.webp)
 
 到这一步，我们就把DDPM的模型核心给讲完啦。在第三篇源码解读中，我们会结合这些架构图，来一起阅读DDPM training和sampling代码。
 
@@ -236,7 +236,7 @@ UNet模型最早提出时，是用于解决医疗影响诊断问题的。总体�
 
 当我们拥有了能够产生逼真图片的模型后，我们现在能进一步用文字信息去引导它产生符合我们意图的模型了。通常来说，文生图模型遵循以下公式（图片来自李宏毅老师课堂PPT）：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9466b6c8e07d45babecb5313dbfcc7a6~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/3/8/38b9f4efc917993b90d2780dbaa25761.webp)
 
 *   **Text Encoder:** 一个能对输入文字做语义解析的Encoder，一般是一个预训练好的模型。在实际应用中，CLIP模型由于在训练过程中采用了图像和文字的对比学习，使得学得的文字特征对图像更加具有鲁棒性，因此它的text encoder常被直接用来做文生图模型的text encoder（比如DALLE2）
     
@@ -248,21 +248,21 @@ UNet模型最早提出时，是用于解决医疗影响诊断问题的。总体�
 5.1 DALLE2
 ----------
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a9df8a0052b64a4581463678d3ae7a02~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/b/e/be6a5a6f08bbae880f505a4ae72833d7.webp)
 
 DALLE2就套用了这个公式。它曾尝试用Autoregressive和Diffusion分别来做Generation Model，但实验发现Diffusion的效果更好。所以最后它的2和3都是一个Diffusion Model。
 
 5.2 Stable Diffusion概述
 ----------------------
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/086d8810dc02482cae95e439febb0519~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/3/5/3575fb8eb7885f0b3fd6ee61d54f1fe0.webp)
 
 大名鼎鼎Stable Diffsuion也能按这个公式进行拆解。
 
 5.3 Imagen
 ----------
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/00900e43855e44d698d4a3163ad44479~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)
+![](assets/4/2/428b5a4a558d55c34ed4f16691e2b5e6.webp)
 
 Google的Imagen，小图生大图，遵循的也是这个公式
 

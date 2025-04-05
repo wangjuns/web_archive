@@ -22,7 +22,7 @@ Markdown Content:
 *   Zero Redundancy Data Parallelism （ZeRO）
 
 下图给出了这些并行方法的示意图，非常直观好懂。  
-![Image 1: Parallelism](https://raw.githubusercontent.com/marsggbo/PicBed/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/2022_11_6_1667745050063.png)
+![Image 1: Parallelism](assets/d/6/d605b8d6caa2958966c8b691c08e3985.png)
 
 不过在介绍各种并行训练方法之前，我们首先对一些概念做一个声明，方便后面理解
 
@@ -53,7 +53,7 @@ Pipeline Parallelism (PP)
 
 pipeline parallelism是比较常见的模型并行算法，它是模型做层间划分，即inter-layer parallelism。以下图为例，如果模型原本有6层，你想在2个GPU之间运行pipeline，那么每个GPU只要按照先后顺序存3层模型即可。
 
-![Image 2: Pipeline](https://raw.githubusercontent.com/marsggbo/PicBed/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/2022_11_8_1667919652976.png)
+![Image 2: Pipeline](assets/9/f/9f6269310c23bced567b8bf0bafc0972.png)
 
 已经有很多Pipeline相关的研究工作了，例如PipeDream，GPipe，和Chimera。它们的主要目的都是降低bubble time。这里不做过多介绍。
 
@@ -62,16 +62,16 @@ Tensor Parallelism (TP)
 
 前面介绍的Pipeline Parallelism是对模型层间做划分，叫inter-layer parallelism。那么另一种方式则是对模型层内做划分，即intra-layer Parallelism，也叫Tensor Parallelism。
 
-![Image 3: Tensor Parallelism](https://raw.githubusercontent.com/marsggbo/PicBed/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/2022_11_8_1667916622897.png)
+![Image 3: Tensor Parallelism](assets/0/8/085543c7c4010eb8b4b77bd59866a366.png)
 
 ### 1D Tensor Parallelism
 
 Megatron-LM [\[1\]](https://www.cnblogs.com/marsggbo/p/16871789.html#fn1) 是最早提出1D Tensor并行的工作。该工作主要是为了优化transformer训练效率，把线性层按照行或者列维度对权重进行划分。如图4所示，原本线性层为\\(Y=W\_1W\_2X\\) ，这里将\\(W\_1\\)按列进行划分，将\\(W\_2\\)按行进行划分。这样，每个GPU只需要存一半的权重即可，最后通过All-reduce操作来同步Y的结果。当GPU数量为\\(N\\)时，每个GPU只需要存\\(\\frac{1}{N}\\)的权重即可，只不过每层输出需要用All-reduce来补全结果之后才能继续下一层的计算。
 
-![Image 4: Megatron-LM](https://raw.githubusercontent.com/marsggbo/PicBed/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/2022_11_6_1667745075029.png)  
+![Image 4: Megatron-LM](assets/6/4/64bfc906e8b528f80335959b186d7a3c.png)  
 对于土豪公司，可以使用NVLink来连接GPU（如图5a），从而提供高带宽来降低通信开销。但是土豪终归是少数的，大部分公司和个人是没法承担这昂贵的硬件费用，因此比较常见的GPU连接方式是图5b，即节点内花点钱实现NVLink连接，节点之间通过PCIe连接。
 
-![Image 5: GPU Connection](https://raw.githubusercontent.com/marsggbo/PicBed/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/2022_11_8_1667916009933.png)
+![Image 5: GPU Connection](assets/8/a/8a5dd5a886263ac5fe5f16f2a8cdb7b9.png)
 
 1D Tensor并行对通信速度要求较高，不过1D在每层的输入和输出都有冗余的内存开销。以图4为例，我们可以看到虽然模型权重被划分了，但是每个GPU都有重复的输入\\(X\\),另外All-reduce之后每个GPU也会有重复的输出\\(Y\\)，所以后续一些工作尝试从这里做进一步改进,包括2D, 2.5D,和3D tensor并行。
 
@@ -95,7 +95,7 @@ Megatron-LM [\[1\]](https://www.cnblogs.com/marsggbo/p/16871789.html#fn1) 是最
 
 2D/2.5D/3D Tensor 并行算法因为在一开始就对输入进行了划分， 所以中间层不需要做通信，只需要在最后做一次通信即可。在扩展到大量设备（如GPU）时，通信开销可以降到很小。这3个改进的Tensor并行算法可以很好地和Pipeline并行方法兼容。
 
-![Image 6: 1D vs 2D/2.5D/2D Tensor Parallelism](https://raw.githubusercontent.com/marsggbo/PicBed/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/2022_11_8_1667918840118.png)
+![Image 6: 1D vs 2D/2.5D/2D Tensor Parallelism](assets/5/f/5f0163ea1bdab1af371144887d5e951f.png)
 
 Sequential Parallelism
 ----------------------
@@ -108,7 +108,7 @@ Tensor parallelism主要是为了解决由 model data （模型权重，梯度�
 
 Sequential Parallelism （SP） [\[7\]](https://www.cnblogs.com/marsggbo/p/16871789.html#fn7) 就为了解决non-model data导致的性能瓶颈而提出的。下图给出了SP在Transform并行训练上的应用，具体的原理可以查看原论文。
 
-![Image 7: Sequential Parallelism](https://raw.githubusercontent.com/marsggbo/PicBed/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/2022_11_8_1667920799653.png)
+![Image 7: Sequential Parallelism](assets/a/b/aba8da562d2f9ca66010a11da72ec0e7.png)
 
 Zero Redundancy Data Parallelism (ZeRO)
 ---------------------------------------
@@ -129,7 +129,7 @@ ZeRO针对模型状态的三部分都做了对应的内存改进方法：
 *   ZeRO3：划分优化器状态和梯度和模型参数(parameters, p)，即\\(P\_{os+g+p}\\)
 
 下图给出了三种方法带来的内存开销收益  
-![Image 8: ZeRO](https://raw.githubusercontent.com/marsggbo/PicBed/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/2022_11_8_1667922336592.png)
+![Image 8: ZeRO](assets/6/7/67552f57e4ec575b30e4c73caee2f403.png)
 
 不管采用三种方法的哪一种，ZeRO简单理解就是给定\\(N\\)个设备，然后把一堆data等分到这些设备上，每个设备只存\\(1/N\\)的数据量，并且每次也只负责更新这\\(1/N\\)的数据。
 

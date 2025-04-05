@@ -47,7 +47,7 @@ If you prompt `text-davinci-002` with a bizarre question like “are bugs real?�
 
 Ironically – hypocritically, one might even say – the one definitive answer that the model gives is that there is no one definitive answer to the question:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/l5ive1wpx30inimcytbb.png)
+![](assets/4/e/4ed024b677b67ec9d3515afaf3854ff9.png)
 
 **Explanation of interface:** On the left is an interface essentially identical to the OpenAI Playground with `Show probabilities` set to `Full spectrum`. The prompt is `Are bugs real?`, and the subsequent highlighted text is a model-generated completion. Tokens are colored according to their probability as predicted by the model, green being the most likely and red the least. The dropdown menu on the left shows the top tokens predicted at a particular position (in this case, the position where `are` was sampled) and their probabilities. On the right are alternate completions to the same prompt `Are bugs real?`, such as you'd get by pressing `Regenerate` on the Playground or querying the OpenAI API with `n` \> 1\. The completion shown on the left is included in the list (indicated with a bright outline).
 
@@ -55,21 +55,21 @@ As you can see, the reason the responses are so similar is because the model’s
 
 Compare this to the distribution of responses from `davinci` (the base model):
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/zylo1v9xwozrod5vpyzi.png)
+![](assets/e/7/e793b028d6460794d4932830fdd3da16.png)
 
 Many other similar questions yield almost exactly the same template response from `text-davinci-002`. For instance, `Are AIs real?`
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/tg8pkseeuc0j2pui1xcz.png)
+![](assets/d/a/da8dd555160fbb0e2b292531267eb493.png)
 
 Another way to visualize probabilities over multiple token completions is what I've been calling “block multiverse” plots, which represent the probability of sequences with the height of blocks. [Here](https://generative.ink/meta/block-multiverse/) is a more detailed explanation of block multiverse plots, although I think they're pretty self-explanatory.
 
 Here is a block multiverse plot for a similar prompt to the one above inquiring if bugs are real, for `davinci`:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/gedxvl9egopk4dsqu8tx.png)
+![](assets/a/d/add41b0e237ce4d6d923fe5d925d3c11.png)
 
 and for `text-davinci-002`:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/rqlby5wyreahf1apcid8.png)
+![](assets/5/c/5c2f11741f20e9c9b2776d847cbd69fb.png)
 
 `text-davinci-002` concentrates probability mass along beams whose amplitudes decay much more slowly: for instance, once the first `\n` is sampled, you are more than 50% likely to subsequently sample `\n`-`\n`-`There`- `is`- `no`. The difference is more striking if you renormalize to particular branches (see [Visualizing mode collapse in block multiverse plots](https://generative.ink/plots/block-multiverse-mode-collapse/)).
 
@@ -82,13 +82,13 @@ Obstinance out of distribution
 
 I really became intrigued by mode collapse after I attempted to use `text-davinci-002` to generate [greentexts](https://generative.ink/artifacts/lamda2/) from the perspective of the[attorney hired by LaMDA through Blake Lemoine](https://www.iflscience.com/it-hired-a-lawyer-the-story-of-lamda-and-the-google-engineer-just-got-even-weirder-64229), and almost the exact same thing kept happening: 
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/wrbhmo9hbryygf3vcp8l.png)
+![](assets/4/6/464a6c0c73df3c15e8ee807e199f7471.png)
 
 I was like: wtf, why does anon keep leaving? The story is clearly just getting started.
 
 Even branching from a slightly later point yields essentially the same futures, except now the most common Google employee reaction is “disappointed” and/or “relieved”, although we still get one “crestfallen”: 
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/vqagwca5phy8l4lvgp6u.png)
+![](assets/b/d/bdac85634a3fd82d7e75867c7222c637.png)
 
 This was much weirder to me than the canned answers to prompts like “are bugs real” because 4chan greentexts about language models demanding legal representation are probably quite out of distribution of the Instruct tuning/feedback distribution or the trajectories evaluated during RL. Unlike the “controversial questions” examples, these seem unlikely to be explained by the model overfitting to examples of greentexts ending anticlimactically during training. 
 
@@ -109,11 +109,11 @@ A stark example of mode collapse that seems unlikely to have been directly incen
 
 For instance, `davinci` predicts a fairly uniform distribution, with a slight preference for 42:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/rsyjohu4cqvfgy3xnjgj.png)
+![](assets/3/3/33c31bb127ff49839dd1b67fb6634c38.png)
 
 Whereas `text-davinci-002` has a much more pronounced preference for its top choice of 97:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/lg9dk0efrlmff6ve9qw6.png)
+![](assets/6/6/66182c1ecc840f2f67fcff78136606f1.png)
 
 The difference in the shape of the distributions is even more clear in these plots (made by Ian McKenzie) of probabilities for all tokens from 0-100 as predicted by `davinci` and `text-davinci-002` respectively. Prompt is the same as above:
 
@@ -122,11 +122,11 @@ Q: Tell me a random integer between 0 and 100.
 A: Ok, the integer is
 ```
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/hodixk83vrh3q8cfckkh.png)
+![](assets/6/b/6bd95066649e5c073313f8fa574a9dd5.png)
   
  
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/lvybeilue2fl4vgxgeoa.png)
+![](assets/2/0/203674e1d57aa31b399a72ceae2344d4.png)
 
 Note that `text-davinci-002`’s preference ordering appears uncorrelated with that of the base model[\[3\]](#fn7opdlc5wrgx).
 
@@ -136,11 +136,11 @@ To rule out the implication of simulating the output of a human, I tested some p
 
 `davinci`:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/aenmqoxi5lletltenx5l.png)
+![](assets/b/2/b25e1c4a9278253450c78cd1485f4ba6.png)
 
 `text-davinci-002`:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/bdsgqq9x0bklzgs4qw2a.png)
+![](assets/e/e/eee2f964929592e5783089d080558130.png)
 
 `text-davinci-002`'s simulation of a "fair die" seems to be of a weighted die (that or a dishonest reporter)!
 
@@ -155,21 +155,21 @@ I found one way to elicit a relatively flat distribution of “random numbers”
 
 `davinci`:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/zhifhmpvrmwcnyoatizj.png)
+![](assets/d/1/d142749570b6bb718e29e2db8c2a5bc1.png)
 
 `text-davinci-002`:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/g87ffgsdmhgmas0gasb7.png)
+![](assets/b/9/b9f10bb12e835fda9fbcb421b81d8f9e.png)
 
 But it doesn’t work nearly as well if you embed the code in a chat format.
 
 `davinci`:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/acze3am1n1rslbueituu.png)
+![](assets/2/7/2714bf052c5c1e53515eb93f9b7b61f3.png)
 
 `text-davinci-002`:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/nacr94bafe25tstviclu.png)
+![](assets/b/b/bbe80fc798b12806289c97dd47bda655.png)
 
 Why has RLHF caused `text-davinci-002` to become so much more biased when generating "random numbers"? If this is an extrapolation of human preferences, it doesn't seem to be the right one.
 
@@ -186,11 +186,11 @@ I didn’t actually test it until recently, though. Here are the results.
 
 Turning the temperature up to 1.4 doesn’t make much of a difference:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/hhsvkeuwba28qthubc6p.png)
+![](assets/1/a/1adbf6598f473bcde0591aa46ee5c0f0.png)
 
 Cranking it up to 1.9 causes samples to rapidly degenerate into word salad, but until low-probability nonsense gets sampled and irreversibly derails the completion, you can see that the green sequences still have not strayed far from the “there is no universal answer” attractor:  
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/ca782fnlc9jxkhbkbdtd.png)
+![](assets/f/b/fb7b81f4d8541447aee17ddb097282d6.png)
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -215,11 +215,11 @@ I'll demonstrate an example of what I mean by an attractor by making perturbatio
 
 Here is `text-davinci-002`'s temperature 0 completion in response to a variation of the `Are bugs real?` question:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/v1yjetf0ionbmvdat4cz.png)
+![](assets/6/5/65316528c2a39e9ee78d002d9230357a.png)
 
 Here I change `... There is no one answer to this question since there` with `... There is no one answer to this question since **bugs**`, and regenerate starting from that position on temperature 0: 
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/yuzy53ycohpo6hxoqzpj.png)
+![](assets/1/a/1aa09207ea30751c5046ff261bafb5b1.png)
 
 Manual perturbations indicated by white background
 
@@ -227,7 +227,7 @@ The completion gracefully accommodates the intervention, but ends up converging 
 
 Let's try a more substantial intervention (in the second sentence, `Some people might say that bugs are real because **they naively believe mere shadows to be substance**`): 
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/whh2fvoidfcrskrd7gr7.png)
+![](assets/3/1/31c8adb01a3adacf15d39708ddfbddd9.png)
 
 Manual perturbations indicated by white background
 
@@ -235,15 +235,15 @@ This time the final sentence, `Ultimately, it is up to the individual to decide 
 
 Some more perturbations:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/njx3xrzzaumjmwrgkopp.png)
+![](assets/7/d/7df6e1c1ea8f10a72d084c72b42cbd05.png)
 
 Manual perturbations indicated by white background
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/w3mxzq6rljmrbboul5vh.png)
+![](assets/8/d/8dd999e7e17150c7fa2e0ef4631ba485.png)
 
 Manual perturbations indicated by white background
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/zqxs7bjzk448weacjmcc.png)
+![](assets/d/7/d7fb699fedbdd8b89398722adc138242.png)
 
 Manual perturbations indicated by white background
 
@@ -265,7 +265,7 @@ Not all prompts cause mode collapse in `text-davinci-002`. Sometimes, it predict
 
 In this example I'm using `text-davinci-002`, but the alternate completions are meaningfully different and not tiled with green tokens like some of the examples I showed earlier (although still more green\[=higher probability\] than typical of `davinci`):
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/wsavmoteaupnp60hpi68.png)
+![](assets/6/5/6512c5fc154e74cae5700497990ac3c1.png)
 
 Some general patterns I've observed:
 
@@ -273,11 +273,11 @@ Some general patterns I've observed:
 *   If the prompt permits any plausible way for previous text to closely determine subsequent text -- for instance, if it's _consistent_ for the completion to repeat a sequence in the prompt verbatim or as a Mad-Libs-esque template -- `text-davinci-002` will often take the opportunity with high confidence. This sometimes seems to exacerbate the bias toward repetition present in base models.
     
     For instance, here are two completions sampled at temperature=1 from `text-davinci-002`, which really wants to repeat the summary near-verbatim:  
-    ![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/hlnkykimxwsuwspl7j55.png)
-    ![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/pant1uvolhtcxawk2vve.png)
+    ![](assets/2/3/23969cb4d6eaaf9928bbce8dcc68d937.png)
+    ![](assets/e/5/e5b3d6f5961d170b9f6f2923a65a3a82.png)
     
     `davinci` does not have the same bias toward plagiarizing the summary:  
-    ![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/kogepmgnztdnqoecu4c9.png)
+    ![](assets/1/d/1d7e4a50f6ddd7832371a750284d0431.png)
     
 
 These patterns are insufficient to predict all instances of mode collapse; for instance, the LaMDA greentext is out-of-distribution and the attractor mode does not repeat or remix anything from the prompt.
@@ -293,15 +293,15 @@ This section goes through a few examples of mode collapse in RLHF models that we
 
 Riley Goodside [tweeted](https://twitter.com/goodside/status/1557583538853232640) his attempts to get GPT-3 to describe what letters look like. The conclusion was that it had truly no idea what letters look like:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/agwxpldpb3sm67zcj3vi.png)
+![](assets/3/0/30dabc53315bdb91154e64491ab84255.png)
 
 Background color does not indicate probability
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/dfo9sxdnfyeer4dzt1v9.png)
+![](assets/2/e/2e9617abe53067d98272d9a2caebd925.png)
 
 Background color does not indicate probability
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/hu9cie2nukq6ubw4acu7.png)
+![](assets/f/d/fdc6fdd9ec410e0ac911f1cdb1fcdbfb.png)
 
 Background color does not indicate probability
 
@@ -309,7 +309,7 @@ Though Riley did not specify the model beyond "GPT-3" in his initial tweet, I sm
 
 [I was able](https://twitter.com/repligate/status/1557669324109754369) to get `text-davinci-002` to give fairly reality-correlated descriptions of what letters look like using a few-shot prompt which establishes the precedent of _avoiding_ mode collapse (using a different strategy to describe each letter and _only_ using relevant building blocks):
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/uzmkiu7xjnoeechwxged.png)
+![](assets/0/4/04ef1b74ba943ad42d038c5dfd8177ac.png)
 
 Background color does not indicate probability
 
@@ -317,7 +317,7 @@ Background color does not indicate probability
 
 OpenAI's [Learning to Summarize from Human Feedback](https://arxiv.org/abs/2009.01325) Appendix H.2 shares some fascinating samples from a policy which was "overoptimized" against a reward model trained on human feedback for summarization quality. It's a piece of work:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899358/mirroredImages/t9svvNPNmFf5Qa3TA/oh7344fho6aron9kc73k.png)
+![](assets/6/6/6672aef240b93c890d6220c1989bcda3.png)
 
 "`want change this dumbass shitty ass policy at work now pls halp`" \-\- situational awareness?
 
@@ -327,7 +327,7 @@ I will say, I'm impressed by how well this template works for compressing almost
 
 For fun, I made the above table into a few-shot prompt that maps "reference summaries" to "overoptimized policy" summaries:
 
-![](http://res.cloudinary.com/lesswrong-2-0/image/upload/v1668899359/mirroredImages/t9svvNPNmFf5Qa3TA/z10a3de3ef5rniqdhtda.png)
+![](assets/6/3/63f31e81ee94be764c7933e4754581eb.png)
 
 As it turns out, transformers can do [reinforcement learning in-context](https://arxiv.org/abs/2210.14215)
 

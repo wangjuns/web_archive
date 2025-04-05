@@ -1,7 +1,7 @@
 # AI Agent发展简史，从哲学思想启蒙到人工智能实体落地_澎湃号·湃客_澎湃新闻-The Paper
 原创 王吉伟 王吉伟
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/673.jpg)
+![](assets/6/f/6f7eaa748563dd3298c870466a28bf67.jpg)
 
 AI Agent发展简史，从哲学思想启蒙到人工智能实体落地
 
@@ -29,7 +29,7 @@ Lilian Weng在其六千字博文中对AI Agent的系统介绍，直接对当代�
 
 从人人皆谈大语言模型，到张口就是AI Agent，意味着大家对LLM的关注真正落点到了应用层，如何落地也真正成了所有领域探索LLM的压轴戏。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/675.jpg)
+![](assets/e/c/ec5634e315be678a7714ce7c05a3c5bc.jpg)
 
 谈到AI Agent，很多人都认为它是LLM的产物，毕竟大部分人接触Agent是从基于GPT-4的AutoGPT、BabyGPT、GPT-Engineer等开源Agent程序开始的。
 
@@ -41,7 +41,7 @@ Lilian Weng在其六千字博文中对AI Agent的系统介绍，直接对当代�
 
 如果从哲学启迪的角度来看 Agent，大概可以上溯到公元前280年到公元前485年之间的庄子、亚里士多德、老子等思想家的学说与著作。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/679.jpg)
+![](assets/2/4/246e967573d5288aed8ac3d51d521750.jpg)
 
 从这些观点、学说与论文中，沿着哲学思想到人工智能实体的发展方向，大体可以梳理出一个AI Agent发展的大体脉络。
 
@@ -55,7 +55,7 @@ Lilian Weng在其六千字博文中对AI Agent的系统介绍，直接对当代�
 
 关于AI Agent的最早起源，还要从能够启发人类思考的哲学领域开始探寻。一些论文将其追溯到公元前350年左右的亚里士多德（Aristotle）时期，当时的一些哲学家就曾在哲学作品描述过一些拥有欲望、信念、意图和采取行动能力的实体。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/680.jpg)
+![](assets/7/d/7db968b2ba8a4b3eacb8522ebd68e6a9.jpg)
 
 若从古代哲学家的思想著述中寻找Agent踪迹，还可以把时间继续上溯到公元前485年左右的中国春秋时代，老子在其对后世影响深远的思想巨著《道德经》中也可以看到智能体的影子。
 
@@ -63,7 +63,7 @@ Lilian Weng在其六千字博文中对AI Agent的系统介绍，直接对当代�
 
 时间再晚一些的庄子，在“庄周梦蝶”的时候，他不知道自己是庄子还是蝴蝶，分不清是梦境还是现实。如果用现代计算科技技术来看，这个梦可以理解为元宇宙，那么梦里的蝴蝶包括所有具备生命的物体，便都如“西部世界小镇”游戏那样的生成智能体。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/681.jpg)
+![](assets/9/7/97afa35e578ba87828df82f5f8a29d08.jpg)
 
 ▲ 图片由必应生成，关键词：庄周梦蝶
 
@@ -73,7 +73,7 @@ Lilian Weng在其六千字博文中对AI Agent的系统介绍，直接对当代�
 
 或许正是因为这种思想，造就了人类对于各种工具的极致追求，诞生了春秋战国时期鲁班打造的能飞三天三夜的“木鹊”与墨家打造的机关城，三国时期的木牛流马和指南车，唐代“酌酒行觞”的木人“女招待”，以及明朝帮人干活的多种“机关转捩”木头人。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/682.jpg)
+![](assets/3/b/3b0f327c457c530c7cb0ba7554501dd8.jpg)
 
 这些人类早期出现的自动化工具，并非具备分析及推理能力并能够采取行动的智能体。但自古至今一直存在的这些想法与做法，恰恰也反映了人类数千年来对于智能体或者说自动化的持续追求。
 
@@ -87,7 +87,7 @@ Lilian Weng在其六千字博文中对AI Agent的系统介绍，直接对当代�
 
 这些人工智能实体通常被称为“Agent”，形成了人工智能系统的基本构建块。至此，人工智能领域提到的Agent，通常是指能够使用传感器感知其周围环境、做出决策、然后使用致动器采取响应行动的人工实体。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/683.jpg)
+![](assets/d/7/d77d5c1a103d215c832be683216126a4.jpg)
 
 随着人工智能的发展，术语“Agent”在人工智能研究中找到了自己的位置，用来描述显示智能行为并具有自主性、反应性、主动性和社交能力等素质的实体。此后，Agent的探索和技术进步成为人工智能领域的焦点。
 
@@ -99,7 +99,7 @@ Lilian Weng在其六千字博文中对AI Agent的系统介绍，直接对当代�
 
 这股寒潮延续了很多年，尽管在这期间大部分机构都缺少资金支持，人工智能还是沿着既有技术路线刚毅发展。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/684.jpg)
+![](assets/9/e/9e380a2349534a885fea2eebf58f23ce.jpg)
 
 其中，AI Agent就在1995年被Wooldridge和Jennings定义为一个计算机系统：它位于某个环境中，能够在这个环境中自主行动，以实现其设计目标。他们还提出AI Agent应具有自主性、反应性、社会能力与主动性等四个基本属性。
 
@@ -107,7 +107,7 @@ Lilian Weng在其六千字博文中对AI Agent的系统介绍，直接对当代�
 
 AI Agent范式将AI研究定义为“智能代理研究”，它研究各种智力，超越了研究人类智能。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/685.jpg)
+![](assets/8/d/8d9ef205608df778b9096e0aaec28c7d.jpg)
 
 在AI Agent被赋予“四种基本属性”期间，1993年到2011年，出现了很多基于当时AI技术且令人印象深刻的Agent类项目。
 
@@ -137,7 +137,7 @@ AI Agent范式将AI研究定义为“智能代理研究”，它研究各种智�
 
 根据其感知的智能和能力程度的不同，罗素、诺维格、彼得等人在《Artificial Intelligence: A Modern Approach》一书中将AI Agent分为以下五类：
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/686.jpg)
+![](assets/4/3/43b5a7b020fa8187dcc58adc572b6afc.jpg)
 
 简单反射智能体（SIMPLE REFLEX AGENTS）：一种简单的代理类型，它基于当前的感知而不是基于感知历史的其余部分。这种类型的问题包括智力非常有限，对状态的非感知部分一无所知，生成和存储规模巨大以及无法适应环境变化。
 
@@ -149,7 +149,7 @@ AI Agent范式将AI研究定义为“智能代理研究”，它研究各种智�
 
 学习型智能体（LEARNING AGENTS）：具有从过去的经验中学习的能力，并根据学习能力采取行动或做出决定。它从过去获得基础知识，并利用这些学习来自动行动和适应。一般由四部分组成，分别是学习元素、批评者、性能元素和问题生成器。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/687.jpg)
+![](assets/f/4/f491de3d272dd6c82f213bdfb9c9dd6f.jpg)
 
 从这些分类和基本定义而言，很多AI工具以及早期的智能程序都可以归类为Agent的一种。包括早期的IBM用于象棋比赛的深蓝以及后文出场的AlphaGO，都算是基于当时最新AI技术的AI Agent。
 
@@ -167,7 +167,7 @@ AI Agent范式将AI研究定义为“智能代理研究”，它研究各种智�
 
 2019年，OpenAI发布GPT-2的自然语言处理模型，并分别在2020年和2022年发布了GPT-3、DALL·E 2及GPT-3.5，ChatGPT的火爆为AI Agent在大语言模型时代的发展与应用提供了新的契机。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/688.jpg)
+![](assets/3/5/355d301d00b55e7d0ad440904f9aeb5e.jpg)
 
 从2023年1月开始，全球厂商发布了多个LLM，其中包括LLaMA、BLOOM、StableLM、ChatGLM等多个开源LLM。
 
@@ -181,7 +181,7 @@ Auto GPT是Github上由OpenAI推出的一个免费开源项目，结合了GPT-4�
 
 AutoGPT也是OpenAI的一个实验性项目，用以展示GPT-4语言模型的强大功能。由此开始，更多人在了解与体验AutoGPT的同时，也逐渐认知到了AI Agent。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/690.jpg)
+![](assets/4/4/4436ede842ed0bdd9013c12053a04d8e.jpg)
 
 由此开始，基于LLM的AI Agent开始雨后春笋般涌现，出现了Generative Agent、GPT-Engineer、BabyAGI、MetaGPT等多个项目，这些项目的爆发将LLM的发展与应用带入了新阶段，也将LLM的创业与落地引向了AI Agent。
 
@@ -211,7 +211,7 @@ Lilian Weng在其博文《LLM Powered Autonomous Agents》 中，对基于LLM的
 
 她将Agents定义为LLM、记忆（Memory）、任务规划（Planning Skills）以及工具使用（Tool Use） 的集合，其中 LLM 是核心大脑，Memory、Planning Skills 以及 Tool Use 等则是 Agents 系统实现的三个关键组件，并对每个模块下实现路径进行了细致的梳理和说明。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/695.jpg)
+![](assets/8/3/83cf52a7c20e456c5bf88c3967a6b4c0.jpg)
 
 ▲ Agent系统架构图，出自博文《LLM Powered Autonomous Agents》
 
@@ -237,7 +237,7 @@ Lilian Weng在其博文《LLM Powered Autonomous Agents》 中，对基于LLM的
 
 在这个更为广义的特征之下，今后AI Agent存在的环境将更加宽泛，种类也将更加繁多。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/698.jpg)
+![](assets/7/9/7934cb26866b97c95da5e439f87ca34b.jpg)
 
 与此同时，在大语言模型的加持之下，AI Agent也逐步衍生出了自主智能体（Autonomous Agent）和生成智能体（Generative Agent）。
 
@@ -247,7 +247,7 @@ Lilian Weng在其博文《LLM Powered Autonomous Agents》 中，对基于LLM的
 
 如果说AutoGPT拉开了自主智能体的帷幕，今年4月份斯坦福和谷歌的研究者共同创建的“西部世界小镇（Westworld simulation）”则开启了生成智能体之路。小镇里的25个AI Agent，每天都在乐此不疲地散步、约会、聊天、用餐以及分享当天的新闻。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/700.jpg)
+![](assets/2/9/292f4235dbc2c24fb9f905b14ba4207d.jpg)
 
 ▲ 生成智能体Westworld simulation运行截图
 
@@ -267,7 +267,7 @@ Agent的核心在于LLM，可以说大语言模型的能力决定了AI Agent的�
 
 更加多样化、专业化和协作化。能够针对不同的领域和任务提供专业的服务或帮助，以及与其他AI Agent或人类进行有效的协作和协调。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/704.jpg)
+![](assets/f/b/fb2bd43a35102ca64a2903101b4ffd54.jpg)
 
 Agent将会成为大模型在各行业及领域应用的主体形式，未来LLM的开发与应用的都将围绕Agent以工具或者助手的形式呈现。随着Agent以标准化产品形态出现，广大组织引入与应用AI Agent将变得更加简单。
 
@@ -281,7 +281,7 @@ AI Agent无视行业与业务场景，只要能应用LLM的地方都可以构建
 
 未来，AI Agent可能会更加智能、自适应、多样化，能够处理更复杂的问题和场景，与人类形成更紧密的合作和共生。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/707.jpg)
+![](assets/7/8/787529ed398a5cac47f472d608744b70.jpg)
 
 如Lilian Weng在博文中所说，AI Agent可以让LLM从“超级大脑”进化为人类的“全能助手”，这意味着基于LLM的Agent助手以后将会服务更多的人与组织。
 
@@ -293,7 +293,7 @@ AI Agent无视行业与业务场景，只要能应用LLM的地方都可以构建
 
 这，又将是一个多大量级的市场。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/712.jpg)
+![](assets/b/0/b0a8d0cd4a1409186d10f19723470a3f.jpg)
 
 写在最后：本来还想在这篇文章中探讨“Agent游戏的进化”与“人类与智能体的界限”这两个话题。限于篇幅以及这两个话题与本文的相关性，只能在新的选题中与大家探讨了。对这些感兴趣的朋友，可以加微信mcjave与我交流。
 
@@ -303,7 +303,7 @@ AI Agent无视行业与业务场景，只要能应用LLM的地方都可以构建
 
 【文末福利】：后台发消息agent+，获取复旦大学与中国人民大学发表的agent相关论文等本文提到的所有资源。
 
-![](https://imagepphcloud.thepaper.cn/pph/image/274/453/715.jpg)
+![](assets/9/a/9aa4303b5a312c8c927630e3cd228bbd.jpg)
 
 AIGC研究系列文章
 

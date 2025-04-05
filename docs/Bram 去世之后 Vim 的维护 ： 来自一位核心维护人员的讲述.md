@@ -6,14 +6,14 @@ Bram 去世之后 Vim 的维护 ： 来自一位核心维护人员的讲述
 
   
 
-![Image 1: cover_image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/YriaiaJPb26VNnjd1J11LwsLmYcxicuLrZaXwWia5NnwYq4P1K6e141AFINYQ1h5UgmZtqibQsdqYCfxbE8ZgTrdic2A/0?wx_fmt=jpeg)
+![Image 1: cover_image](assets/a/f/af97924131b48ef0d99347064b6c8cba.jpg)
 
 Bram 去世之后 Vim 的维护 ： 来自一位核心维护人员的讲述
 =================================
 
 [InfoQ](javascript:void(0);)
 
-![Image 2: profile_qrcode](https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=MjM5MDE0Mjc4MA==&mid=2651237538&idx=4&sn=fbf0e3edd40d6b417161cbd79b02f15f&send_time=)
+![Image 2: profile_qrcode](assets/0/f/0f9df1ece4425305027829f4c37b5010.bmp)
 
 InfoQ
 
@@ -25,7 +25,7 @@ InfoQ
 
 _2025年03月04日 07:57_
 
-![Image 3: Image](https://mmbiz.qpic.cn/mmbiz_gif/YriaiaJPb26VPQqHC66RJFpttVIMWG83T3lWHahUD4bvhxlKSayjeV2ibvC5ydqklP9QHDPD3qHJM07TV3IfHstjA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
+![Image 3: Image](assets/2/c/2c0852c37a19ccc1593c841445693284.gif)
 
 作者 | David Cassel
 
@@ -53,7 +53,7 @@ _**本文最初发布于 THENEWSTACK 博客。**_
 
 自 2006 年以来，平台顾问 Christian Brabandt 就一直活跃在 Vim 社区，贡献了 Bug 报告、修复和一些新特性。他参与了 Vim 的正则表达式处理和加密支持等工作，还帮助创建每日 Appimage 并“迁移了主页”。2023 年 8 月，“我突然成了 Vim 的主要维护者之一”。
 
-![Image 4: 图片](https://mmbiz.qpic.cn/sz_mmbiz_png/YriaiaJPb26VNnjd1J11LwsLmYcxicuLrZajVkusaLBPvZojIVBffCa4snyfzibomDClG24lwQMeD8Qocowwia7T5fg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 4: 图片](assets/0/b/0ba64a797400fac204ffbe41b698c315.png)
 
 Moolenaar 去世的消息“让我们所有人都非常震惊”，尽管在此之前几周，Vim 的邮件列表已经“非常安静”，“人们已经开始怀疑 Bram 出了什么事？他在哪里？”
 
@@ -140,7 +140,7 @@ https://thenewstack.io/vim-after-bram-a-core-maintainer-on-how-theyve-kept-it-go
 
 [“前端已死”是危言耸听吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651237123&idx=2&sn=c62df762c5ed094e5299e19ce3dde70d&scene=21#wechat_redirect)
 
-![Image 5: 图片](https://mmbiz.qpic.cn/mmbiz_gif/YriaiaJPb26VNBX66P2F9dF2yuYfbcibGMuaBYgvK62MGPE9HhgU2vptFAUZdaO2cGKCsP4h1DnibIGywKSkFv9b6g/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=webp)
+![Image 5: 图片](assets/1/e/1e2d8fa1353054ecc99d9f7607647ddc.gif)
 
 预览时标签不可点
 
@@ -150,7 +150,7 @@ Close
 
 Name cleared
 
-![Image 6: 赞赏二维码](https://mp.weixin.qq.com/s/L3FBq5uy4Ey3esBdw68hmg)**微信扫一扫赞赏作者**
+![Image 6: 赞赏二维码](assets/1/6/16a1e92b982403d142a965d1c1f44d2b.jpg)**微信扫一扫赞赏作者**
 
 Like the Author[Other Amount](javascript:;)
 
@@ -228,13 +228,13 @@ Submit更多
 
 [表情](javascript:;)
 
-![Image 7](https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MjM5MDE0Mjc4MA==&mid=2651237538&idx=4&sn=fbf0e3edd40d6b417161cbd79b02f15f&send_time=)Scan to Follow
+![Image 7](assets/3/e/3e5c7767e8b216a7382ac28cdff27a90.bmp)Scan to Follow
 
 继续滑动看下一个
 
 轻触阅读原文
 
-![Image 8](http://mmbiz.qpic.cn/mmbiz_png/YriaiaJPb26VMv5BMj3RgeS49fdQiamY1LTuiaF2MvyD8ohjJKWWoBQgzSp5CJCF1VP7YFIcib87XPiakGGkuHvTkicRg/0?wx_fmt=png)
+![Image 8](assets/f/b/fb0ff3bfecd776d2f6fb08781978183b.png)
 
 InfoQ
 
@@ -250,7 +250,7 @@ InfoQ
 
  
 
-![Image 9](https://mp.weixin.qq.com/s/L3FBq5uy4Ey3esBdw68hmg) Scan with Weixin to  
+![Image 9](assets/1/6/16a1e92b982403d142a965d1c1f44d2b.jpg) Scan with Weixin to  
 use this Mini Program
 
 [Cancel](javascript:void(0);) [Allow](javascript:void(0);)

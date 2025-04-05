@@ -3,19 +3,19 @@ Title: 【曾鸣演讲全文】我们正迎来AGI的雅虎时刻
 URL Source: https://mp.weixin.qq.com/s/0VTyOPwZaXVpCsj0IeyDVw
 
 Markdown Content:
-![Image 1: Image](https://mmbiz.qpic.cn/mmbiz_gif/Ex6gnPLu0ib3b19gzChtnSNrTcPMb6GA6fVQNk7NapuurWpcGWYq8lySaLt5lLXJhhXuJpiaRbiciaVQy1EuAawQow/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
+![Image 1: Image](assets/0/e/0ecf7e2b382753190810436182ba144f.gif)
 
 昨天下午，曾鸣教授以“原生应用的爆发和演进”为主题，与大家分享了颠覆性技术驱动商业变革背后的思考过程及框架，以下是文字整理稿。
 
 全文10000字，阅读时间较长，或者你也可以点击右上角“…”选择“听全文”的方式，让AI为你朗读全文。
 
-![Image 2: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrEPP9eTlS7ZuJ2wXT2HAu8WIZnF5KOwgicl46CIV6d3DbzYs9SPicnEse0KagB8NSsnueEuYPNMBnLQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)  
+![Image 2: Image](assets/9/3/931d22d8a53e9572743f2a500ec10a5f.webp)  
 
 **0****1**
 
 ****AGI商业化的初始问题****
 
-![Image 3: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pibqx0Z5LrF4ueM1iaC4npWnDIKjjicAxicbNSqNGuu69scXUelQEuYWWqg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 3: Image](assets/a/a/aaee4b8995cde7f747bf51ebc3b993e2.webp)
 
 今天分享的是过去一年我对几个问题的思考：
 
@@ -30,17 +30,17 @@ Markdown Content:
 
 过去两年发生最重要的事情就是ChatGPT，从2022年11月份到今天，彻底开启大众对于这一轮AGI（通用人工智能）的认知，这是历史上最快达到一个亿用户的服务，用了不到两个月的时间，而且引起全球24小时不休不眠的讨论——人类社会是不是正在用最快的速度进入人工智能阶段？
 
-![Image 4: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0p0Wsw3HpHFDibqIklXIicXMX6roDt02LKl2JWbX6kWyF6ddjAQInxUWyg/640?wx_fmt=png&from=appmsg)
+![Image 4: Image](assets/6/e/6eaf36b447f73a000b07b07ffa401ba5.png)
 
 但ChatGPT在经历不到一年高速增长以后，就进入很长时间的横盘，大家可以看到上图，差不多从2023年的5月份开始，月用户数一直下降，到2024年初，其开放免费注册等一系列动作，有一个极具上涨，但很快又下滑下来。
 
 所以这个现象带来一个非常有意思的困惑，为什么一个看起来这么有吸引力的产品，并没有出现我们期待的指数级增长，到底怎么判断ChatGPT，它到底是一个怎么样性质的产品？
 
-![Image 5: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0plNric5PxjJdVWqHQVqKNK0gXxuSG99JBrianB25DrIDmPib7PzFCIDzicw/640?wx_fmt=png&from=appmsg)
+![Image 5: Image](assets/5/2/52871b41a5430e1fb3c9fa6c0ba20cef.png)
 
 另外跟ChatGPT同时出现的几个2C应用——Character.AI、Perplexity和POE发展得也不好。Character.AI基本上卖掉了，主要核心团队又回到了谷歌，用户数在千万级横盘了很久；Perplexity的用户数增长碰到很大的挑战。同时在国内类似的2C应用也没有真正起飞，虽然这半年豆包起步更快，让人看到了一点更有意思的未来，但至少到目前为止，这也不算是指数级增长的2C大应用。
 
-![Image 6: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pjNE7Rqcl1XcZtRtpv6dhscWoEic89ibOss8eSY7PPm2PdQsEyXcMupxA/640?wx_fmt=png&from=appmsg)
+![Image 6: Image](assets/4/4/446b0d919ca94eeec07e78f0c78a399b.png)
 
 回到刚才的初始问题，要回答清楚这几个问题，要先解释原生应用的定义。
 
@@ -48,7 +48,7 @@ Markdown Content:
 
 讲了这个概念以后，我也给出初步结论——我们正在迎来AGI时代的第一个原生应用，或者说，我们正在迎来AGI的雅虎时刻。
 
-![Image 7: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pdjQcl5yre2F2P2ybV8UabqX0W1tTB0ZPLnBqxgLxhQ8ECfcIZmPgyQ/640?wx_fmt=png&from=appmsg)
+![Image 7: Image](assets/9/1/918e9bb46efda8107cfc5c5f79aaeaab.png)
 
 为什么是雅虎时刻？第一，我给ChatGPT的定义，它是一个垂直整合的超级应用，就像历史上PC互联网早期的美国在线（AOL），和iPhone手机之前的黑莓手机；第二，这是一个对未来技术发展的趋势判断，一方面大语言模型还在高速发展，同时产业化的进程也开始产生非常大的作用，大模型的使用成本（Token的成本）正在急剧的下降。
 
@@ -62,7 +62,7 @@ Markdown Content:
 
 **个人电脑的发展史**
 
-![Image 8: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0poBLSFQmuibw0EdwSp8anLaUCbCKzGhiaNdHibmeq0tLHq3q44l0t4PXog/640?wx_fmt=png&from=appmsg)
+![Image 8: Image](assets/5/d/5d4b3b7f3c011042380f093799b75321.png)
 
 这场四十年革命的起点，是1977年的苹果电脑。但是真正GUI图形界面，个人电脑的交互界面，是Macintosh在1984年真正推出的，上图这几家公司各自火了5到6年，定义了PC时代一个接一个的王者。
 
@@ -72,7 +72,7 @@ Markdown Content:
 
 **最早的互联网服务：拨号上网（ISP）**
 
-![Image 9: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pgvMAQZj3grTicAEWm3Oib77cq3Ccn3RJCMiaImjsibNHoSg6289DeHAEVA/640?wx_fmt=png&from=appmsg)
+![Image 9: Image](assets/4/5/457521f669589cd1d0d38873e7b5bde7.png)
 
 美国在线（AOL），在2000年互联网泡沫破裂的时候，是全球估值最高的一家互联网公司。但这其实是第一浪里出现的巨无霸公司。这一浪里第一家公司是Compuserve，1969年成立，做计算算力，提供分时主机计算服务，到1989年转型成为第一家提供互联网上网服务的公司，最简单的服务就是论坛（Forum），后面叫BBS，也叫Chatroom。
 
@@ -80,19 +80,19 @@ Markdown Content:
 
 **AOL(美国在线)的辉煌**
 
-![Image 10: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pwzZv5HCUvFyPdhGD1vs2bnjP5kthSaMcAqaJhBFbqmXibnMm2MvibicSg/640?wx_fmt=png&from=appmsg)
+![Image 10: Image](assets/9/e/9e80c375774a6e28cfb1b3d925a8256f.png)
 
 简单讲一下AOL（美国在线），作为那个时代的辉煌，1992年就IPO了，在当时的标准用户增长非常快——1993年50万用户，1995年200万用户，1996年到了500万用户。当时是最强的品牌，那时候大家都知道，上线就是AOL。当时拨号上网，通过“猫”拨号就是他们做的事情。2000年1月是它的高峰，将近3000万的用户，1600多亿的估值。
 
 **互联网服务的第二阶段：从封闭到开放**
 
-![Image 11: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0piapU0bWc3gPRLxichVUW1pJ9S6a0Q8iamJCYH88RyicxpSeMUvo1glTGwA/640?wx_fmt=png&from=appmsg)
+![Image 11: Image](assets/2/c/2c432d47e3603816392afa2df959e57e.png)
 
 但真正进入互联网时代，前面三家其实都相对封闭，没有开放互联网服务，直到1993年出现Netscape浏览器，能够读任何网页，确立了网页的标准，让生产网页的门槛急剧下降，也让用户能够触达网页的壁垒急剧下降。所以Netscape出现，是第一个互联网技术领先的成功案例。但它还是延续了软件思维，收每个软件拷贝的费用，按软件公司的模式上市。
 
 **雅虎的辉煌**
 
-![Image 12: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pqRWpVDTFHeYWhPia7lAiaDcMcyCRkIamv7ttpu0OPmxfdNxz2MMicEVicw/640?wx_fmt=png&from=appmsg)
+![Image 12: Image](assets/a/6/a6cfb04af70e6f105c59c45d8a681039.png)
 
 1994年，海量内容开始涌现，出现了纯互联网公司。第一家就是雅虎，这个故事大家很熟悉了，杨致远和David Filo在读博士的时候无聊，两个人开始比赛，比谁编的网站更新更多更酷，编着编着就编成互联网第一个目录，然后变成一个导航网站，由于内容不断涌现，当时出现了最早的搜索，有些技术专家认为搜索应该是未来，不应该是编辑。因为前期内容并没有那么多，搜索技术又差，早期雅虎完全压住所谓的搜索派。1996年互联网开始出现各种各样的服务：新闻、股票、邮件、社交，进入了门户时代。
 
@@ -108,13 +108,13 @@ Markdown Content:
 
 **搜索的激烈竞争**
 
-![Image 13: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pKNgGzvQb9gUicZHndIDmRCPjD9En5jLau7TtMgayib64aCTS6SicJ7xKA/640?wx_fmt=png&from=appmsg)
+![Image 13: Image](assets/e/7/e7a29936d9d8797b6cdbf7d701a874ba.png)
 
 在雅虎一骑绝尘，从最早的Directory到门户，再到全媒体矩阵的过程中间，搜索也在平行时空进行着激烈的竞争，1994年开始，有了基于最原始爬虫的搜索技术，1995年的Excite、 Lycos、 AltaVista已经是现代搜索的早期，AItaVista到2000年的时候，仅次于雅虎，是少数几个大的流量入口，有17%的互联网用户，Google那时候才7%。
 
 **谷歌：互联网原生应用2.0**
 
-![Image 14: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0peObU4YKjFwdLOz4uic5InZIX95IUjiaIwquLwWicTGg8eJ5LhFg8Pj7nQ/640?wx_fmt=png&from=appmsg)
+![Image 14: Image](assets/7/6/763f2492159cae70b814f042381c12f5.png)
 
 Google是1996年在斯坦福的校友网上线，也就是说PageRank算法的雏形1996年就上线了，虽然他们到1998年才决定创业，可以看到1994年到1998年，搜索是一个相当热门的领域。只是门户是一个主线是明线，搜索是一个暗线，在雅虎如日中天的时候，搜索外包给了Google，因为不觉得它重要。
 
@@ -132,7 +132,7 @@ Google是互联网原生应用2.0，刚才定义里面的几点在它身上都�
 
 **P****C互联网的发展与爆发**
 
-![Image 15: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pRuHwmcFLibn1s2AvzJnlkAqC7mUlSvPcxSMmgXVapicUMJy1ia2WnNbPQ/640?wx_fmt=png&from=appmsg)
+![Image 15: Image](assets/9/6/96b72cb34dcbac58c7e80c67d469d575.png)
 
 我们快速回顾一下，刚才讲到原生服务演进的几个要求。
 
@@ -142,7 +142,7 @@ Google是互联网原生应用2.0，刚才定义里面的几点在它身上都�
 
 雅虎就是一个比较纯粹的互联网原生服务，基于一个开放的互联网网络，第一次出现UGC的概念，用户自己创造海量内容，它只是做了编辑跟导航的动作，但带来了越来越精准、越来越丰富的信息跟服务，开启了互联网时代，然后有Banner广告创新。由于互联网技术的进一步发展，内容进一步爆发，有Google集大成的技术创新，用户体验和商业模式的创新，带来了原生服务2.0，这大概是互联网15年的发展历程。
 
-![Image 16: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pgewMsC8VGHeRFPvB77uY7sRwNaicMwf6HQibyaKeGOSD8am2Rn64MKDg/640?wx_fmt=png&from=appmsg)
+![Image 16: Image](assets/7/f/7f39b6187d1e01d3c314c93d3dce2fb7.png)
 
 当Google原生服务2.0爆发以后，就自然出现了脸书、YouTube、推特等同一时代的原生服务，占据了几个主要的应用领域。
 
@@ -150,7 +150,7 @@ Google是互联网原生应用2.0，刚才定义里面的几点在它身上都�
 
 **T****he PDAs（个人数字助理）**
 
-![Image 17: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0ppPGvaInXN61EiadX2eNUrPsngR0dAAnmibltUBdSIBxicPOSU2r7N8zPA/640?wx_fmt=png&from=appmsg)
+![Image 17: Image](assets/3/f/3fa82750a65359e1be9c40040f66d98d.png)
 
 上述是第一个完整的案例，再看第二个案例，大家自然而然想到移动互联网。
 
@@ -162,13 +162,13 @@ Google是互联网原生应用2.0，刚才定义里面的几点在它身上都�
 
 **IPhone的出现**
 
-![Image 18: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pBgD5jLyf6icnqubYSu4LeyhTcaOiaD1IgpqMe090rYsRooiaMFr56rRBw/640?wx_fmt=png&from=appmsg)
+![Image 18: Image](assets/4/d/4db771352ebeaca8b5cb4aca5d8def39.png)
 
 Smartphone这个概念，是爱立信1997年正式提出的。而第一个真正做智能手机的，其实是PC厂家，PC厂家把PC移动化相当于智能手机的前身。当时IBM做了第一台智能手机，1994年样机出来以后，几乎有了后面智能手机所有的功能，但技术太早，产品太贵，太不好用，卖了几万台就停掉，没有再继续开发下去。
 
 当时手机巨头诺基亚也做了这个，手机翻盖以后弹出一个全键盘，是一款很火的智能手机，而真正那个时代的王者是黑莓，这也是一家在不到十年时间达到1000亿美金市值的公司，它实际上击穿了一个小众市场，就是财富500强公司的管理人员，实现了一个核心功能，即邮件可以随时在线，让它轰动一时事件就是911爆发，当时只有黑莓的手机传出第一个完整的信息，即使在2010年iPhone4都已经发布，黑莓在美国还有43%的市场，而iPhone那一年只有10%多一些的市场。
 
-![Image 19: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pqrFB12ZvdCjbmu1yuMFXibFSTu9K3S7e4pCKTrREZVenrDQhwPZY1pw/640?wx_fmt=png&from=appmsg)
+![Image 19: Image](assets/b/3/b3686b6f374dd94aeb44095d278086d2.png)
 
 2007年，新款iPhone发布，触摸屏加原生的操作系统，让用户体验有了一个质的飞跃，让互联网上网体验在触摸屏上变得非常丝滑，这才有了所谓原生用户体验的提升。
 
@@ -176,11 +176,11 @@ Smartphone这个概念，是爱立信1997年正式提出的。而第一个真正
 
 **移动互联网应用大爆发**
 
-![Image 20: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0p2eaw3H5tvarRMtm7gSnLpnFvcXujcKKWFAOQ4zlbjEia9JrvunQR7Jw/640?wx_fmt=png&from=appmsg)
+![Image 20: Image](assets/e/e/eecc7ce2a1ece94400634dd63e125f11.png)
 
 2010年是一个标志性的时间点。一方面，iPhone本身的渗透率开始大幅度提升，产品达到新的性能高度，另外一方面，屏幕的分辨率大幅度提升，原来很多优势开始发挥出来。比如屏幕分辨率低的时候，拍照没有很大的意义，第三iPhone4的摄像头相机达到500万像素，其实已经跟大部分单反的数字相机很接近了，这个时候所谓图文的图就变成一个非常核心的应用，所以2010年是硬件跟生态底层基础设施成熟的一个标志性年份。
 
-![Image 21: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0psp4nibtUJ7ohiaicl4ttLPFVw4hRO9mvHVONAxpic6UGovSvuzSHjhDM6A/640?wx_fmt=png&from=appmsg)
+![Image 21: Image](assets/7/8/783c73a58290d600471d387e0f0c307a.png)
 
 然后超级应用开始井喷，指数级的增长。比如像Uber肯定是一个原生的应用，没有手机不能随时定位，不能当场做算法的匹配，Uber完全就不可能存在；微信最早的一个功能大家感觉不那么震撼，到群聊功能后就很有原生的感觉，等到朋友圈出来，这个功能就是刚才讲的原生全新的超出预期的体验；再到后面，头条跟推荐结合起来，快手出现，开始推动视频发展，到2016年视频跟推荐算法的结合，开始出现抖音跟TikTok。大家可以看到，移动互联网的超级应用是怎么随着基础设施开始产生原生应用的一系列大爆发。
 
@@ -197,7 +197,7 @@ Smartphone这个概念，是爱立信1997年正式提出的。而第一个真正
 
 **三次浪潮**
 
-![Image 22: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pHCNiaS3ldIQOxElPSGLdOiaZl3bZpUhQ1KicwnA2chL6rRJOxL5eW6Q1w/640?wx_fmt=png&from=appmsg)
+![Image 22: Image](assets/c/8/c891671cb199ba2a91a0185fa2c92b28.png)
 
 刚才讲的都是我能梳理出来的历史发展，但是基于这些历史发展看到了一些很有意思的规律，颠覆性技术创新往往经历三次浪潮。
 
@@ -209,15 +209,15 @@ Smartphone这个概念，是爱立信1997年正式提出的。而第一个真正
 
 这是颠覆性技术创新的三次浪潮。
 
-![Image 23: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pkDRJ1POibmTIib70bcd74bgJEsoW3HWVtXDKeByvDob9dalQZXwXIVuw/640?wx_fmt=png&from=appmsg)
+![Image 23: Image](assets/a/2/a29ff37bddbd8f14dfc1fadf7b33bc69.png)
 
 这三次浪潮背后，我们讲的原生应用的概念，实际上对应了两个鸿沟：《跨越鸿沟》那本书只讲了第二个鸿沟，这次梳理发现，第一个鸿沟其实也是一个很大的鸿沟。从黑莓到苹果，从AOL到雅虎，其实都是很难跨过去的鸿沟，因为早期产品就是给技术人员和发烧友用的，他们对于客户价值的需求是完全不一样的。
 
-![Image 24: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pBoZZcaQceI65LJZCgLxhG8qtA5lmsp0js2KjvlDpOzxrdJhmkj9lGw/640?wx_fmt=png&from=appmsg)
+![Image 24: Image](assets/5/d/5d7b58707cd97fe488033964d348da86.png)
 
 《跨越鸿沟》那张图也可以用上面这幅图来表现，来源于颠覆性创新，讲技术怎么从边缘去突破客户价值。
 
-![Image 25: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0ptONiaicAhiaJHxN0935HzDTWWZEggI0WcM8Z1sMAKC30aQ1mlEiawNlnWQ/640?wx_fmt=png&from=appmsg)
+![Image 25: Image](assets/5/0/50a544e0ea91a4adfa8b753525cee701.png)
 
 实际上，技术创新也经历了三个阶段。阶段一，就是发烧友的阶段，他们对产品的需求性能要求不高，就是尝鲜，觉得技术应该要突破做成某个事情，能做成就很嗨，所以对产品或者事情本身没有那么高的期望值。
 
@@ -235,7 +235,7 @@ Smartphone这个概念，是爱立信1997年正式提出的。而第一个真正
 
 我们通过过去发生的这几个市场，以及PC时代、PC互联网时代、智能手机时代跟移动应用时代，这四个历史阶段的发展，大致验证了这两个理论框架。这就是我想讲的最核心内容，整个思考过程、两个分析框架和一些初步的结论。
 
-**![Image 26: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pOYJ3XQ3lzTd5E2YsfD6hicNkD2IjryeNJzsxKF07iaUSJcsYvYgm6InQ/640?wx_fmt=png&from=appmsg)**
+**![Image 26: Image](assets/9/1/9175a4a01029af9aa0300f4e6d4dd16e.png)**
 
 ****我们来看这个中间的过程，三浪叠加，一浪高过一浪。****
 
@@ -249,7 +249,7 @@ Google2004年才IPO，1998年的，想以100万美元卖给雅虎或者AItaVista
 
 新的就孕育在旧的之中，回到最早讲战略的时候，经常提到——看不见，看不起，看不懂，学不会，挡不住，基本上是这样一个过程。第二浪压过来，第三浪再盖过去。
 
-![Image 27: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pO64xMkFP0Hh5osyZoLpqzicce2YTvbTDzB6dLWfsTibvNoULd6Yq8mLg/640?wx_fmt=png&from=appmsg)
+![Image 27: Image](assets/b/0/b0dd2fe32b907c0b30178bbd7a1b74bc.png)
 
 特别有意思的是，每一浪里，又有三个基本上按这个顺序出来的三家很牛的公司。第一家公司基本上是技术人员创业，因为技术太难了，搞定技术make it work，让技术终于能干点再蠢也能干成的事情，最早拨号上网终于能拨上去了，恨不得把家里电话线给拔了，做出来就是一个工具，这时候只有技术，别的不用说。
 
@@ -257,17 +257,17 @@ Google2004年才IPO，1998年的，想以100万美元卖给雅虎或者AItaVista
 
 第三阶段，这时候已经有海量内容，用户真正要的是体验——体验的丰富度、体验的原创，成本是不是够低，能不能够支撑得住海量用户的持续增长。  
 
-![Image 28: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrEyD8HoQticpiaSWMeY0zO1bCaWc1jyHKrIhUqK04SriceQgcF1y5Umq5Gat3V06WEz8cqnJjwAgfs1A/640?wx_fmt=png&from=appmsg)
+![Image 28: Image](assets/a/3/a39008a60c57e970df1802eb60dbf650.png)
 
 把今天讲的公司全部放在上图，好多浪叠加，描绘了过去40年技术的进步。
 
 今天讲的所有内容，都是我在思考怎么看未来。我经常讲新时代的战略就是看十年、想三年，干一年。我其实就是在告诉大家怎么看十年，这是我自己看十年思考的推演，重要的不是这个结论，而是这样的思考和推理框架，希望帮助大家以后重新审视自己的业务。
 
-![Image 29: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pVdqBGLS2DNV5ibt2iaEpGBLXjGrmr7c0CwXWFiarFzJy4wekyejrQiawIw/640?wx_fmt=png&from=appmsg)
+![Image 29: Image](assets/a/7/a75eb3bdcbfaedabae1f58dd09daaebc.png)
 
 从产业演化的大浪来说，只有突破大众市场以后，技术创新者才有机会获得真正长期的巨大商业价值，也就是说要跨越那个鸿沟，真正打穿大众市场，才是原生应用，才有机会获得至少雅虎那样的辉煌。
 
-![Image 30: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0peQDoFbDqP9mRnxnVRDxhbrOYDYz8mFpZtW5ZSJfjicBebrPribv0yhmg/640?wx_fmt=png&from=appmsg)
+![Image 30: Image](assets/e/b/ebbe28b5abeb73d5d17943f645e56a78.png)
 
 创业者的视角看，有两个问题是特别关键的问题，一是我们处在产业发展的第几浪，第一浪的打法跟第二浪打法不一样，第二浪跟第三浪不一样，如果在第一浪尾部又想打第二浪，怎么跨越鸿沟？你的目标是做第三浪的王者，但是今天产业还在第一浪，该怎么办？是给别人打工还是自己创业积累经验，还是要先等到第二浪出来再琢磨第三浪的事情？在这中间其实是一个非常重要的长周期判断，决定了你今天该取一个什么样的定位。
 
@@ -279,13 +279,13 @@ Google2004年才IPO，1998年的，想以100万美元卖给雅虎或者AItaVista
 
 ****AGI的前奏****
 
-![Image 31: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pC8vxsxaiadEPUUyh55ZOO3YD6tcRhY33xh1kC3ibSM6H59t7YYmdFz7A/640?wx_fmt=png&from=appmsg)
+![Image 31: Image](assets/9/3/933e0287a5f1ee1a02bc358ec30db4d2.png)
 
 回到AGI，我今天讲的所有AGI都有特定含义，都是ChatGPT引导大家谈论的AGI这一轮。在这个意义上，2012年Alex Net第一次用GPU完成了视觉图形识别的一次突破，这在AI历史上是一个标志性的事件。实际上也引起第一轮AI创业，这些都算是AGI的前奏。
 
 ****AGI的第一浪：AIGC****
 
-![Image 32: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pw3Z0hE63tcD9CibW0tTEGUbxicgnvgicTuVgywS2s2loXGwH8ZoAbVCOw/640?wx_fmt=png&from=appmsg)
+![Image 32: Image](assets/6/2/624bdfa6f7092d9481813b07b0380c32.png)
 
 AGI的第一浪，其实是以ChatGPT爆火带出来的AIGC（生成式AI），大家也能看到一浪的味道。2014年在Computer vision最火的时候，2015年这帮最有愿景的人已经站出来说我们要做更加通用的AGI，但未来的AGI是什么？他们其实并不知道，所以各种方向都试了一遍，像AlphaGo一样，也做过游戏，但是到2017年Transformer那篇文章发表以后，open AI所有的精力开始聚焦在Transformer的方向上，开始做大语言模型。
 
@@ -293,7 +293,7 @@ AGI的第一浪，其实是以ChatGPT爆火带出来的AIGC（生成式AI），�
 
 ****AGI商业化的初步判断****
 
-![Image 33: Image](https://mmbiz.qpic.cn/mmbiz_png/TdQnHxSbMrHdxRicpRUpA5vqxs2icjhib0pmmZDlxdnnulK0tz0PNx8ibFDwrUgTDSIfKjyxHaLLbicMia4DwgbvuDHQ/640?wx_fmt=png&from=appmsg)
+![Image 33: Image](assets/7/8/78e46780a2fded154dd1a5cfc5354ee4.png)
 
 如果确认这是第一浪，结合上述对各个公司的讨论，大家再来看一开始给到的初步结论，为什么说这是AGI的雅虎时刻？
 

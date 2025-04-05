@@ -7,7 +7,7 @@ Published Time: 2025-02-18T15:15:12+00:00
 Markdown Content:
 Ten years ago, researchers proved that adding full memory can theoretically aid computation. They’re just now beginning to understand the implications.
 
-![Image 1: A disk with a section highlighted](https://www.quantamagazine.org/wp-content/uploads/2025/02/Catalytic-Computing_crMark-Belan-Lede.jpg)
+![Image 1: A disk with a section highlighted](assets/c/a/ca4ea30ad5cb7187afece308abea6c8c.jpg)
 
 Mark Belan/ Quanta Magazine
 
@@ -33,7 +33,7 @@ The most famous class, dubbed “P,” contains all problems known to have fast 
 
 Most researchers suspect the answer is no. To prove it, they’ll need to choose a specific problem in P and show that it’s impossible to solve with any clever memory-saving trick.
 
-![Image 2: Stephen Cook in a blue shirt and black sweater types at a keyboard in front of bookshelves](https://www.quantamagazine.org/wp-content/uploads/2025/02/StephenCook_cr-BBVA-FOundation-1.jpg)
+![Image 2: Stephen Cook in a blue shirt and black sweater types at a keyboard in front of bookshelves](assets/8/5/854479f468e4d1f40a4048341db4dc29.jpg)
 
 Stephen Cook devised a computational task, called the tree evaluation problem, that seemed impossible for any algorithm with limited memory.
 
@@ -54,7 +54,7 @@ But back to the story of catalytic computing. It all started when Koucký visite
 
 “Nothing” was the obvious answer. “I thought, ‘OK, this is of course very useless, and we’re going to prove it,’” said [Harry Buhrman](https://www.cwi.nl/en/people/harry-buhrman/), the leader of the Amsterdam group. “And then we couldn’t prove it.”
 
-![Image 3: Michal Koucký in a blue sweater in front of a chalkboard. Harry Bhurman in a black shirt and coat in front of a glass wall](https://www.quantamagazine.org/wp-content/uploads/2025/02/Burhman-Koucky-Diptych-1-scaled.jpg)
+![Image 3: Michal Koucký in a blue sweater in front of a chalkboard. Harry Bhurman in a black shirt and coat in front of a glass wall](assets/2/6/26bec3c1a79ee268d33a584aedfd94f0.jpg)
 
 Using an approach called catalytic computing, Harry Buhrman and Michal Koucký showed that even full memory could theoretically aid computation.
 
@@ -83,7 +83,7 @@ For years, James Cook tinkered with a catalytic approach to the tree evaluation 
 
 “It was like a baby bird imprinting scenario,” Mertz said.
 
-![Image 4: James Cook in a blue coat standing in a snowy field. Ian Mertz in a green T-shirt leaning against a wooden fence.](https://www.quantamagazine.org/wp-content/uploads/2025/02/Cook-Mertz-Diptych.jpg)
+![Image 4: James Cook in a blue coat standing in a snowy field. Ian Mertz in a green T-shirt leaning against a wooden fence.](assets/f/f/ff0152c8440249d92322a3d1bda6e773.jpg)
 
 James Cook and Ian Mertz adapted catalytic computing techniques to design a low-memory algorithm for the tree evaluation problem.
 
@@ -109,7 +109,7 @@ Also in Computer Science
 Comment on this article
 -----------------------
 
-![Image 5](https://www.quantamagazine.org/wp-content/uploads/2025/02/Moving-sofas_crTommy-Parker-HP-1720x728.webp)
+![Image 5](assets/b/b/bb1307afe9fd53f4808c34cf48e74e1b.webp)
 
 Next article
 ------------

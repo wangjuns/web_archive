@@ -3,7 +3,7 @@ Title: 晚点对话 MiniMax 闫俊杰：创业没有天选之子
 URL Source: https://mp.weixin.qq.com/s/VBnm3KCsYd4fuXcBpDgiaA
 
 Markdown Content:
-![Image 35](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJytZf0lboZmUcHr0kxNu6icicp1MV7dQ5fpsQygTPicozMGicH2alQGWXZ7A/640?wx_fmt=png&from=appmsg)
+![Image 35](assets/6/b/6b310ed029348c729ee694640361ccf7.png)
 
 **MiniMax 创始人兼 CEO 闫俊杰**
 
@@ -69,7 +69,7 @@ MiniMax-01 首次在 4000 亿以上参数的大模型中，使用了线性注意
 
 闫俊杰说，去年他反思最多的事是：为什么自己的认知不能提升更快？他找到的新方法是：放下 ego（自我），思考更深。
 
-![Image 36](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 36](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“如果可以重新选，应该第一天就开源”**
 
@@ -155,7 +155,7 @@ MiniMax-01 首次在 4000 亿以上参数的大模型中，使用了线性注意
 
 以及我想说，我觉得 DeepSeek 和智谱是挺不错的。DeepSeek 很纯粹。智谱，他们是最早有 AI 路线图的，这点我很佩服。
 
-![Image 37](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 37](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“一年前最喜欢说信仰的那些人，信仰都兑现了吗？”**
 
@@ -213,7 +213,7 @@ MiniMax-01 首次在 4000 亿以上参数的大模型中，使用了线性注意
 
 **闫俊杰**：信仰，有点像描述一个很远的未来；信念是，自己想怎么做，并能坚持做下去。
 
-![Image 38](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 38](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“做一个看上去像  o1  的东西没那么难，但我们不需要一个新闻稿”**
 
@@ -323,7 +323,7 @@ Long context 重要，是因为 AI 很难像人那样感受到时间的流逝，
 
 o1 的进步是把这种思路变成了一个端到端的模型，所以可以整体优化，效果提升了很多。
 
-![Image 39](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 39](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“Agent 很快还会看到一类应用：信息的获取”**
 
@@ -383,7 +383,7 @@ o1 的进步是把这种思路变成了一个端到端的模型，所以可以�
 
 这可能是一个 “逃出生天” 的逻辑，要一步一步走。我觉得对 OpenAI，目前最有意义的也是 L3（智能体），L4、L5 长什么样并不影响他们现在的行动。
 
-![Image 40](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 40](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“人才密度最高的是字节，其他公司都差一档”**
 
@@ -423,7 +423,7 @@ o1 的进步是把这种思路变成了一个端到端的模型，所以可以�
 
 但是我想说，两位同样优秀的同学，假设一个去了字节，一个去了需要依赖技术和创新安身立命的创业公司。2 到 3 年后，那个去创业公司的人变得显著更优秀的概率更大。
 
-![Image 41](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 41](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“大部分做技术的人觉得自己很牛，但我不是这么认识世界的”**
 
@@ -481,7 +481,7 @@ o1 的进步是把这种思路变成了一个端到端的模型，所以可以�
 
 实质是，大部分做技术的人会觉得自己很牛，是天才。但我不是这么认识这个世界的。
 
-![Image 42](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 42](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“不要区分创业公司和大公司，不要套用移动互联网”**
 
@@ -559,7 +559,7 @@ o1 的进步是把这种思路变成了一个端到端的模型，所以可以�
 
 **闫俊杰**：我们希望自己一直在浪潮里。这有两个意思，一是能参与推动浪潮继续发生；二是我们能让公司持续发展下去。
 
-![Image 43](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 43](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“不应该假定，一个公司不会有变动和流失。有才是合理的。”**
 
@@ -627,7 +627,7 @@ o1 的进步是把这种思路变成了一个端到端的模型，所以可以�
 
 **闫俊杰**：持续招到更好的人。一个事实是，字节现在对人才吸引力最强。但去了字节的人，真正发挥出潜力的比例比创业公司低，字节人太多了。
 
-![Image 44](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 44](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **“最大的痛苦，是不知道要取舍”**
 
@@ -685,7 +685,7 @@ o1 的进步是把这种思路变成了一个端到端的模型，所以可以�
 
 题图：TI9中Ana使用IO作战夺冠
 
-![Image 45](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyKADpMhib4LYe1U5ICr7Q7HfxJialhgVapLfmrqYnoVv9Eem7PhFJTsmg/640?wx_fmt=png&from=appmsg)
+![Image 45](assets/4/e/4e3a4035cc9d7724aa1bd8a426b195ae.png)
 
 **晚点对话**
 
@@ -693,12 +693,12 @@ o1 的进步是把这种思路变成了一个端到端的模型，所以可以�
 
 \-  FIN  -
 
-![Image 46](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyo2pUZgENABzpeavbv3bicjn7jQ6fIXKTO2FHV0dKuDuvxnhhR3e6B8A/640?wx_fmt=png&from=appmsg)
+![Image 46](assets/9/9/995d20ad1ced67ae152e53e4d28229e7.png)
 
 **晚点团队出品**
 
-[![Image 47](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJyzP1e231BMaxcFIXLiaX41zibs65HTNMicxAKnFK81HSJjktXlrAlgfrbg/640?wx_fmt=png&from=appmsg)](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247515088&idx=1&sn=7080c5e13d99a6ca7f39044cb8f1eaf5&scene=21#wechat_redirect)
+[![Image 47](assets/4/a/4a12e1c08fb6c5832ad5e45d906513f6.jpg)
 
-[![Image 48](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJy8XicAlibNic7EQGmrUVsBm0pxaRtsSL64vE8t0UmlhA2b096uU9bk46kg/640?wx_fmt=png&from=appmsg)](https://mp.weixin.qq.com/s?__biz=Mzg4ODgyMjk3Nw==&mid=2247483720&idx=1&sn=5b45b3fdca4660f97b3cbdb3a69231b5&scene=21#wechat_redirect)
+[![Image 48](assets/9/a/9a8b429f99b8be2c432b5e89713db0c2.jpg)
 
-![Image 49](https://mmbiz.qpic.cn/sz_mmbiz_png/p6QnU72Xeomib2qXQnlC4jvjORhAXlnJySwibay7TX4lJo5blNqFGkICZUeYS5Yt6PbdUSe9B2T4lW3ady1qYWGA/640?wx_fmt=png&from=appmsg)
+![Image 49](assets/2/9/29f6e7deaee7e7dff3c680eed305f769.png)

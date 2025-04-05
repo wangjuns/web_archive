@@ -5,7 +5,7 @@ URL Source: https://mp.weixin.qq.com/s/_W_revSpcB80JVhiIeab9g
 Markdown Content:
 题记：在我年幼的岁月，没有谷歌，没有 OpenAI，舅舅就是我的超级人工智能。
 
-![Image 19](https://mmbiz.qpic.cn/mmbiz_jpg/ACThr1AhVL95jiaFIyX2zPYTXYa7kQliaSIXagwg3zy2iaeEvoz2noeq4rpHrR6s5aE3hUZcNjQpzXmn9OtffzG3w/640?wx_fmt=jpeg)
+![Image 19](assets/3/d/3d783446b2ac6a50aefa24cda7d9d6bb.jpg)
 
 每个人的人生都会被周遭的人和事推动。在某个地方、某个时间和某某人因缘际会，往往会决定一个人的人生抉择。在轨迹的初期稍有偏离，二十年后这个人就可能会出现在一个截然不同的地方，过着天差地别的生活。
 
@@ -43,7 +43,7 @@ Markdown Content:
 
 我听过舅舅在电子琴上弹奏《红河谷》，结尾是 6 ♭6 5，7 1 2 2 3 2 1。我印象里那个 ♭6 应该是 6。到底哪个是对的？舅舅说他一直弹的都是♭6。那时候没有谷歌，红河谷的歌就成了悬案。写这篇文章的时候查了一下：舅舅是对的。
 
-![Image 20](https://mmbiz.qpic.cn/mmbiz_jpg/ACThr1AhVL9Y5qYp2BQTJxic4ba3Ug5iaUo4DgBwjxQv4VjEMuwYlVV57pg2zwR3Hiaf76Jyta1BPMUYiazohHSwIA/640?wx_fmt=jpeg)
+![Image 20](assets/d/f/df6425eead0e1bb1e17419c62b886946.jpg)
 
 除了音乐，舅舅还玩摄影。我小时候没有数码相机，拍照要用胶卷，拍完了还要冲洗。真正的摄影爱好者都不把胶卷送到照相馆去，而是用自己的暗房和药水 DIY。舅舅就是这样的。那个年代照相机也极其罕见。所幸我有个玩摄影的舅舅，童年才留下了为数不多的几张珍贵照片。
 
@@ -57,7 +57,7 @@ Markdown Content:
 
 那几年我也在学吉他，跟同班其他三位男生经常在周末一起合奏，其乐融融。这部录音机也留下了我们稚嫩的演奏。可惜的是，当年的录音带已经消失无踪了。
 
-![Image 21](https://mmbiz.qpic.cn/mmbiz_jpg/ACThr1AhVL9Y5qYp2BQTJxic4ba3Ug5iaUkoQAdT0t5zYFuyicWTbE5yEicncxIPC0KPvDdicFIMBOwvLianLZqWdryw/640?wx_fmt=jpeg)
+![Image 21](assets/2/3/23a68d4659845b75c1fd3656ec194181.jpg)
 
 和初中好友携录音机出游内江西林寺。
 
@@ -184,11 +184,11 @@ Markdown Content:
 
 母亲小时候的照片中，有一张跟舅舅的合影。那时候舅舅大约五岁，跟强强小时候长得一模一样，脸圆乎乎的，拿着一块饼干，眼睛里满是好奇。我特别喜欢这张照片。
 
-![Image 22](https://mmbiz.qpic.cn/mmbiz_jpg/ACThr1AhVL9Y5qYp2BQTJxic4ba3Ug5iaUxohC3thq2AQfU4hUibuz2HeBibrhenDOGvzmSY6EcFD6Q4lnvcHyaVibg/640?wx_fmt=jpeg&from=appmsg)
+![Image 22](assets/c/b/cba98b6c0a31832bdfe169f0ec340733.jpg)
 
 母亲曾指着这张照片说舅舅小时候胖乎乎的，所以小名叫皮球。相对于外型，我倒是觉得这名字更契合舅舅的精神气质：四川人把个性张扬不晓得天高地厚叫“跳站”，皮球在地上反弹起来也叫“跳站”。这个词在传统观念里略带贬义，言下之意你这么牛你咋不上天呢。但我愿意把它当成一个褒义词。舅舅不按别人划的规矩来，把自己的爱好做到极致，活得潇潇洒洒，这种精神确实很“跳站”。
 
-舅舅这个星期去世了。曾经我心中的盖世英雄，终究化成了一抔黄土。我很怀念跟他一起的时光，希望他在天堂继续跳站。![Image 23](https://res.wx.qq.com/t/wx_fed/we-emoji/res/assets/newemoji/Worship.png)![Image 24](https://res.wx.qq.com/t/wx_fed/we-emoji/res/assets/newemoji/Worship.png)![Image 25](https://res.wx.qq.com/t/wx_fed/we-emoji/res/assets/newemoji/Worship.png)
+舅舅这个星期去世了。曾经我心中的盖世英雄，终究化成了一抔黄土。我很怀念跟他一起的时光，希望他在天堂继续跳站。![Image 23](assets/f/7/f7610a87ff652b3de2c46927ccc9f808.png)![Image 24](assets/f/7/f7610a87ff652b3de2c46927ccc9f808.png)![Image 25](assets/f/7/f7610a87ff652b3de2c46927ccc9f808.png)
 
 ～～～～～～～～～～
 

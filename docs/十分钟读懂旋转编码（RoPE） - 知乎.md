@@ -112,7 +112,7 @@
 
 论文中有个很直观的图片展示了旋转变换的过程：
 
-![](https://pic3.zhimg.com/v2-6db340ee9d34709e9c25921f5a0c2a0e_1440w.jpg)
+![](assets/e/e/eee79eb490d297889c688fb7fdf085d1.jpg)
 
 ### 1.6 远程衰减
 
@@ -132,7 +132,7 @@
 
 因此我们可以考察 1d/2∑i\=1d/2|Si|\\frac{1}{d/2}\\sum\\limits\_{i=1}^{d/2} |S\_i| 随着相对距离的变化情况来作为衰减性的体现：
 
-![](https://pic3.zhimg.com/v2-6376b397b8ea3e8f05d74d433e98a3a4_1440w.jpg)
+![](assets/e/6/e6ed673765b43d8b0c0bb07f8417021e.jpg)
 
 从图中我们可以看到**随着相对距离的变大，内积结果有衰减趋势**的出现。因此，选择 θi\=10000−2i/d\\theta\_i = 10000^{-2i/d}，确实能带来一定的远程衰减性。论文中还试过以 θi\=10000−2i/d\\theta\_i = 10000^{-2i/d} 为初始化，将 θi\\theta\_i 视为可训练参数，然后训练一段时间后发现 θi\\theta\_i 并没有显著更新，因此干脆就直接固定θi\=10000−2i/d\\theta\_i = 10000^{-2i/d}了。
 
@@ -495,7 +495,7 @@ fq(xm,m)\=\[qm(1)cos⁡(mθ)−qm(2)sin⁡(mθ),qm(2)cos⁡(mθ)+qm(1)sin⁡(mθ
 
 [
 
-![](https://picx.zhimg.com/v2-e6e681bc0ae2013f1cd23bfadc8b5eab_720w.jpg?source=b555e01d)
+![](assets/1/4/148820322af5ccc9aaa9b7786719d39c.jpg)
 
 
 

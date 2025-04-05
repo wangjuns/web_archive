@@ -49,17 +49,17 @@ DeepSeek-R1-Zero
 
 训练 DeepSeek-R1-Zero 所使用的基础模型为 DeepSeek-V3-Base (671B，37B Activated)。
 
-![Image 45](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPM5vOMgXHqoMKQmQg47L2V9LeD5aAPzIS6ab2hwwqmjdd0m4Vl01lU6Q/640?wx_fmt=png&from=appmsg)
+![Image 45](assets/4/b/4b1fc449d7b7f046fed523c81de3e43a.png)
 
 ### 训练过程
 
 DeepSeek-R1-Zero 是从 DeepSeek-V3-Base 出发，直接通过强化学习，让模型自己不断尝试、获得奖励，再改进答案，训练出一个能够清晰展示推理过程、给出正确答案的模型。
 
-![Image 46](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMxDgxd0iabMeG7icBrOFmpb4H7sEqGf4ybq8epn6sYj8wc7cFBhViaQTvA/640?wx_fmt=png&from=appmsg)
+![Image 46](assets/6/2/620aefdfd0fc27b5b18a769c18e73894.png)
 
 具体流程如下图：
 
-![Image 47](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMW26P2aN962Sm4EqWXRic1MqZmLfricLuztgEPia9FLJ8eZgIWdxoqWRLg/640?wx_fmt=png&from=appmsg)
+![Image 47](assets/5/9/592d200fa13f73cf235851ac0f0939ad.png)
 
 ### 一些细节：
 
@@ -85,11 +85,11 @@ DeepSeek-R1-Zero 是从 DeepSeek-V3-Base 出发，直接通过强化学习，让
 
 #### GRPO：组内相对策略优化
 
-![Image 48](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMzKOUxRWF3wmBG33aNbNJxGNZQpRKMQichafE17TghWQQZwM8hWP7n5A/640?wx_fmt=png&from=appmsg)
+![Image 48](assets/0/8/08db43754d0fa0a67e1aa6b3a7a656d4.png)
 
 GRPO（Group Relative Policy Optimization） 算法的核心思想是：对每个输入提示，模型会生成一组候选回答，而不是只生成一个答案；然后，不再简单地使用单个回答的绝对分数来更新策略，而是对这组候选回答进行相对比较，从中判断哪个回答在这组中表现得最好，从而利用这种“组内相对优势”来指导模型改进。
 
-![Image 49](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPM32Fq17MPR9qjLicRFIVxPleozXyLic9qZsic69LUG90Rz4kxPDT1pib4Eg/640?wx_fmt=png&from=appmsg)
+![Image 49](assets/7/a/7a48c19885c47913b49aa35949ef473a.png)
 
 **传统强化学习中，模型生成的每个答案都会获得一个绝对奖励分数，这个分数可能会因为外部环境噪声，或评估规则的不完美而波动很大，导致策略更新时不稳定。**
 
@@ -105,7 +105,7 @@ GRPO（Group Relative Policy Optimization） 算法的核心思想是：对每�
 
 模型在持续的强化学习的过程中，根据这些奖励信号的引导进行更新，在任务中的能力得到提升：
 
-![Image 50](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMnjYQJ29qfsbOPmOjtzJSC67RrD2Q3tsX0Ot0FyLFf1boTHHeAW3ib4w/640?wx_fmt=png&from=appmsg)
+![Image 50](assets/0/f/0f473adbf66f564bfdd6728e82a8f187.png)
 
 随着模型能力的提升，研究者们还观察到，模型自己学习到了通过更多思考时间和思考 token，来处理更复杂的任务。这一现象有意思的地方在于，模型这一能力的习得并非是通过显式编程，而是模型通过不断与强化学习环境交互的结果。
 
@@ -147,29 +147,29 @@ DeepSeek-R1
 
 在第 1 步，研究人员使用一个小型的高质量推理数据集，**约数千个样本**，对 DeepSeek-V3-Base 进行 SFT 微调。这样做是为了避免“冷启动”问题导致的可读性不佳。
 
-![Image 51](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPM4M8XG4FBUUSg2y7CLYQSGs0GR416c25hkPqyHUMZBTOyZ5jia0kX09g/640?wx_fmt=png&from=appmsg)
+![Image 51](assets/c/4/c440d9b788847f08fb8f801a10e7bfe2.png)
 
 #### 2\. 面向推理的强化学习
 
 在第 2 步，将上一步得到的模型（DeepSeek-V3-1)， 用与 DeepSeek-V3-Zero 类似的强化学习过程进行训练。
 
-![Image 52](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMld0p5OZjUQ78zibYKFdfuWJjsfT2rCLAt5lupsAv2rI8xoA5ekDAf7Q/640?wx_fmt=png&from=appmsg)
+![Image 52](assets/2/e/2e6388859436e04abae38c4c1cae3606.png)
 
 这一环节与 DeepSeek-R1-Zero 不同的地方在于， 这次在奖励机制中增加了一项新的 Language Reward，用来确保目标语言的输出保持一致性（解决 R1-Zero 语言混合的影响）。
 
-![Image 53](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMLoFfGEqIg8MrC3DvxqcxtLxgiaf7tCgWenxNWqdFPYy4drbEOicO3hUw/640?wx_fmt=png&from=appmsg)
+![Image 53](assets/8/2/82acaf9323c6e2932a8d8eaf00cfa2ec.png)
 
 #### 3\. 拒绝采样（Rejection Sampling）
 
 在第 3 步，研究人员利用上一步得到的模型，合成推理数据，用于后续的监督微调。
 
-![Image 54](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMDq11pyrm1Ikk6twvib1ibJumgowO4TrniaBHttrE8bulwnGiawoiayJia9Vg/640?wx_fmt=png&from=appmsg)
+![Image 54](assets/c/9/c90aaf9d04294f4eff729fb76f299a95.png)
 
 对于推理数据，首选使用上一步得到的 DeepSeek-V3-2， 针对给定的推理任务，生成含多个推理过程与最终结果的答案。
 
 接下来，通过基于规则的奖励策略（Rule-based rewards）对答案进行筛选。只有那些达到或超过一定分数阈值的候选输出才会被保留下来，其余的不符合标准的候选就被“拒绝”（rejected）掉。这种方法称为拒绝采样，利用固定规则来快速筛选出符合条件的高质量样本。
 
-![Image 55](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPM4qwJFCvK9ibRYSawaltfwh5tQibaNG4DkXZWCJ7VgFO8qAFNpE5GfAVg/640?wx_fmt=png&from=appmsg)
+![Image 55](assets/1/9/19dfe86467b2e4cb022b7dd1d623693f.png)
 
 除了简单的规则打分，论文还提出了另一种方式来评估候选输出的质量。
 
@@ -185,7 +185,7 @@ DeepSeek-R1
 
 第 4 步，将得到的总计 800,000 条数据，用于对 DeepSeek-V3-2 模型的监督微调。
 
-![Image 56](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMHW1dlojN9abE80CuNCjRYzmiapqtDvMia6OqGIiaWRJGJnnTI0FIibM9ug/640?wx_fmt=png&from=appmsg)
+![Image 56](assets/3/7/370f76a406634c5c17d12fad40ba9248.png)
 
 #### 5\. 适用于所有场景的强化学习
 
@@ -195,7 +195,7 @@ DeepSeek-R1
 
 同时，为了避免推理结果的可读性问题，模型会被要求对推理过程进行适当总结与精简。
 
-![Image 57](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMxicDJjUe68hw9GEbxJ3m7og2KU4ow0ibPOnmdrKPcpibFs7jDPRMDQUwA/640?wx_fmt=png&from=appmsg)
+![Image 57](assets/8/2/824922f7e9d263ca18e9fad79fc96766.png)
 
 通过上述五个阶段，DeepSeek-R1 最终得以实现。可以说，DeepSeek-R1 是 DeepSeek-V3-Base 通过监督微调和强化学习得到的成果。
 
@@ -207,12 +207,12 @@ DeepSeek的研究人员还探索了如何将 DeepSeek-R1 的推理能力“蒸�
 
 具体做法是，让 DeepSeek-R1 作为教师模型（Teacher），而体量较小的模型则作为学生模型（Student）。两者在面对相同提示时，需要分别生成 token 的概率分布；学生模型会尝试在训练中逼近教师模型的分布：
 
-![Image 58](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPME4VBFeqBYzMUEbgacFQrRH8mvibRP66uNmLwXhDiaSYl3oUG9yGceoPw/640?wx_fmt=png&from=appmsg)
+![Image 58](assets/a/9/a97d4b776315d5efbfed6e25738e7748.png)
 
 1.  1. 使用之前提到的 80 万高质量数据样本（其中 60 万条推理示例 + 20 万条非推理示例）进行训练。
     
 
-![Image 59](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMFJwR00XdLfXWlh0bBIceaW1VdUWy7kICIAhjlhzgHiamzIHu4wYxlJQ/640?wx_fmt=png&from=appmsg)
+![Image 59](assets/7/d/7df497d99917dbabe4050ac40da76885.png)
 
 1.  2. "学生模型"通过不断对比自己的输出分布和教师模型的输出分布，来学习 DeepSeek-R1 的推理方式。
     
@@ -232,13 +232,13 @@ Discussion
 
 为回答此问题，研究者们使用数学、代码和 STEM 数据对 Qwen-32B-Base 进行了超过 10K 步的大规模强化学习训练，得到了 **DeepSeek-R1-Zero-Qwen-32B**。
 
-![Image 60](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMF9Vr2crIpiapsZHPnMxUZ8uz4LVvGHMcY2df4jiapz9zRqo0ZXbkbT8Q/640?wx_fmt=png&from=appmsg)
+![Image 60](assets/b/c/bc8d31eaa7eb3c60245bfbfa4dead5ae.png)
 
 表中的实验结果表明， Qwen-32B-Base 模型经过大规模强化学习训练后，达到了与 QwQ-32B-Preview相媲美的性能。
 
 但是，从DeepSeek-R1 蒸馏得到的 DeepSeek-R1Distill-Qwen-32B 在所有基准测试中的表现都明显优于DeepSeek-R1-Zero-Qwen-32B。
 
-![Image 61](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMlecibhuicsAT6g5P1GMQxRLPb8hL7FGiagEGqUrtkIr5qzLglpaZ2OeMA/640?wx_fmt=png&from=appmsg)
+![Image 61](assets/1/6/16deba1a29b7ffa610d03b47403bed23.png)
 
 因此，论文得出了两个结论：
 
@@ -272,7 +272,7 @@ R1 的局限及未来工作
 
 DeepSeek-R1目前针对中文和英文进行了优化，可能导致在处理其他语言的查询时出现语言混合的问题。比如，即使查询使用的是英语或中文以外的语言，DeepSeek-R1也可能使用英语进行推理和回应。计划在未来的更新中解决这个限制。
 
-![Image 62](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMqibOguKu4juSgmgWPBfBqOnJxD2ibc1oslsmjTbHEWWIjWbqfHa9pFFg/640?wx_fmt=png&from=appmsg)
+![Image 62](assets/2/5/25f4d18e6d01d8c127a81ad289c47725.png)
 
 ### 提示工程
 
@@ -321,7 +321,7 @@ PTX（Parallel Thread Execution）是面向英伟达 GPU 的“并行线程执�
 
 以深度学习的 Pytorch 框架为例，整个调用链是这样的：
 
-![Image 63](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5rFAtKibSlI1RSZdsXicP7kPMFVicwG4BibY8N3fYsDc3GBJ7tPRDCsTXw3euMcCMzHBknofed0vARtpg/640?wx_fmt=png&from=appmsg)
+![Image 63](assets/6/5/6589cf55390e437266eb0afc8815c3f6.png)
 
 ### PTX 和英伟达的绑定
 
@@ -412,4 +412,4 @@ PTX（Parallel Thread Execution）是面向英伟达 GPU 的“并行线程执�
 
 欢迎各位加我个人微信，一起探讨数据科学、大模型相关知识与技术。个人微信二维码：
 
-![Image 64: 图片](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5qCg6E6XskIopgF9iaibibw62aiam8PN77lHicaayyw7iaawR9eXG0KITcpnE3QO34StxZrfXsHIUc6JXIg/640?&wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 64: 图片](assets/b/c/bccce576835ed3e30aee8d2dd90e0ba0.png)

@@ -36,7 +36,7 @@ GPT stands for **Generative Pre-trained Transformer**. It's a type of neural net
 
 Large Language Models (LLMs) like [OpenAI's GPT-3](https://en.wikipedia.org/wiki/GPT-3), [Google's LaMDA](https://blog.google/technology/ai/lamda/), and [Cohere's Command XLarge](https://docs.cohere.ai/docs/command-beta) are just GPTs under the hood. What makes them special is they happen to be **1)** very big (billions of parameters) and **2)** trained on lots of data (hundreds of gigabytes of text).
 
-Fundamentally, a GPT **generates text** given a **prompt**. Even with this very simple API (input = text, output = text), a well-trained GPT can do some pretty awesome stuff like [write your emails](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Demo-of-Drafting-an-Email.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1), [summarize a book](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Example-Book-Summarization.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1), [give you instagram caption ideas](https://khrisdigital.com/wp-content/uploads/2022/12/image-1.png), [explain black holes to a 5 year old](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Examples-Explaining-Black-Holes.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1), [code in SQL](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Demo-of-Writing-SQL-Queries.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1), and [even write your will](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/Chat-GPT-Example-Writing-a-Will.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1).
+Fundamentally, a GPT **generates text** given a **prompt**. Even with this very simple API (input = text, output = text), a well-trained GPT can do some pretty awesome stuff like [write your emails](assets/f/8/f861bad9a00ea5dea8476e8c12a4c395.png), [explain black holes to a 5 year old](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Examples-Explaining-Black-Holes.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1), [code in SQL](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Demo-of-Writing-SQL-Queries.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1), and [even write your will](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/Chat-GPT-Example-Writing-a-Will.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1).
 
 So that's a high-level overview of GPTs and their capabilities. Let's dig into some more specifics.
 
@@ -223,7 +223,7 @@ Notice, we don't use explicitly labelled data. Instead, we are able to produce t
 
 Self-supervision enables us to massively scale train data, just get our hands on as much raw text as possible and throw it at the model. For example, GPT-3 was trained on **300 billion tokens** of text from the internet and books:
 
-![](https://miro.medium.com/max/1400/1*Sc3Gi73hepgrOLnx8bXFBA.png)
+![](assets/e/6/e6a763b2654463c26f2e107dac026173.png)
 
 Table 2.2 from GPT-3 paper
 
@@ -533,7 +533,7 @@ Last thing before we get into the actual GPT architecture itself, let's implemen
 
 The non-linearity (**activation function**) of choice for GPT-2 is [GELU (Gaussian Error Linear Units)](https://arxiv.org/pdf/1606.08415.pdf), an alternative for ReLU:
 
-![](https://miro.medium.com/max/491/1*kwHcbpKUNLda8tvCiwudqQ.png)
+![](assets/6/1/615a5ea33eaaee39181bb58aa440893f.png)
 
 Figure 1 from the GELU paper
 
@@ -643,7 +643,7 @@ GPT Architecture
 
 The GPT architecture follows that of the [transformer](https://arxiv.org/pdf/1706.03762.pdf):
 
-![](https://machinelearningmastery.com/wp-content/uploads/2021/08/attention_research_1.png)
+![](assets/f/c/fc1e4d7b9ab803c6ae6c1c8da35d116b.png)
 
 Figure 1 from Attention is All You Need
 
@@ -1388,7 +1388,7 @@ Instead, we can utilize **parameter-efficient fine-tuning** methods. This is sti
 
 As an example, take the [Adapters paper](https://arxiv.org/pdf/1902.00751.pdf). In this approach, we add an additional "adapter" layer after the FFN and MHA layers in the transformer block. The adapter layer is just a simple 2 layer fully connected neural network, where the input and output dimensions are `n_embd`, and the hidden dimension is smaller than `n_embd`:
 
-![](https://miro.medium.com/max/633/0*Z2FMWTCmdkgevHr-.png)
+![](assets/c/e/cec6eafbb1060cf06b956b573b192272.png)
 
 Figure 2 from the Adapters paper
 

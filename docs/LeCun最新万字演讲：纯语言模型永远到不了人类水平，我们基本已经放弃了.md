@@ -8,11 +8,11 @@ Markdown Content:
 
 当奥特曼、马斯克、Anthropic CEO都纷纷将AGI实现锚定在2026年前后，LeCun无疑是直接浇了冷水：完全是胡说八道。
 
-![Image 1: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWSpBicoL5VGBsXic80EMyiaooZgk7ZwPpXmL8Y34JBYXJKkvLniaEc09EwA/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 1: Image](assets/c/1/c13a434655cf66fbb37036dd5eead198.webp)
 
 最新的公开演讲中，他表示，系统要推理、规划和理解物理世界，至少还需要几年甚至十年的时间，这时候人工智能才能达到人类水平。
 
-![Image 2: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWT58QVsyfQib2qB0qFUzsbTOw81Y2QDItr0RcjRv2nII5hrZ1KB2owVQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 2: Image](assets/d/9/d9c09feea92e150e7068d26138312d2a.webp)
 
 他还透露，现在Meta基本已经放弃纯语言模型，因为，**仅通过文本训练，永远不会达到接近人类水平的智能**。
 
@@ -51,7 +51,7 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 这是一个生成模型，因为它试图重建原始信号。
 
-![Image 3: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWMyc46DPZb7vHyVs9lR1EJjND1j1r8VA6mHtCfkT4RnDfng073wwgZw/640?wx_fmt=png&from=appmsg)
+![Image 3: Image](assets/5/4/54f6358088a786c42d03540a8d79000f.png)
 
 因此，这个红色框就像一个代价函数，它计算输入Y和重建的y之间的距离，这是学习过程中需要在系统中的参数上最小化的内容。在这个过程中，系统学习到输入的内部表示，可以用于各种后续任务。
 
@@ -64,7 +64,7 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 **我们仍然缺少一些重要的东西才能达到人类水平的智能**。  
 我这里不一定是在谈论人类水平的智能，但即使是你的猫或狗能做的惊人壮举，目前的人工智能系统仍然完全无法做到。10岁的孩子都能学会清理餐桌并装满洗碗机。17岁的孩子可以在大约20小时的练习中学会开车。但现在我们仍然没有L5自动驾驶汽车，我们当然也没有能够清理餐桌并装满洗碗机的家用机器人。
 
-![Image 4: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWhILLr4157eGxOQkAIH2KlhOLvMqz1c9p9HN5bLjvTdibrZztpnAEcWQ/640?wx_fmt=png&from=appmsg)
+![Image 4: Image](assets/7/8/78ab63e5fe1eabe174f0d8677c9f4991.png)
 
 这是我们常遇到的莫拉维克悖论，即对我们来说看起来微不足道、我们甚至不认为是智能的事情，对机器来说却非常非常难以做到。但是，像高级复杂的抽象思维，比如操纵语言、下棋，对机器来说似乎很容易。
 
@@ -92,13 +92,13 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 对于任何一个单一输入，通常只有一个输出，但在很多情况下，对于一个感知输入，可能存在多种可能的输出解释。你需要的是不仅仅计算单一函数，而是能够处理单个输入对应多个输出的映射过程。
 
-![Image 5: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWQPxm6NL5oSu5Xft2e0zozql7S5fCZdLNhodqHfoqiaXAm3ajv5kLjMw/640?wx_fmt=png&from=appmsg)
+![Image 5: Image](assets/0/a/0a1ad45def043eb0a8f71d0db23ae91e.png)
 
 实现这一点的唯一方法是通过隐函数，基本上就是像这里的目标函数，即右侧的红色框所示，它主要用来衡量输入和提议的输出之间的兼容性，然后通过寻找与输入最匹配的输出值来计算最终输出。
 
 你可以将这个目标想象成某种能量函数，并通过最小化这个能量来相对于输出进行优化。你可能会有多个解决方案，也可能会有一些方法来遍历这些多个解决方案。
 
-![Image 6: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWad6IKSKgMqMg2dYS9edM69AicFZibUeIsKyssmOibRKc3rPXtiazROKsicA/640?wx_fmt=png&from=appmsg)
+![Image 6: Image](assets/5/e/5ec8a615d1aa0d5facc02422a9c687bc.png)
 
 人类的感知系统就是这样做的，如果你对一个特定的感知有多种解释，你的大脑会自发地循环遍历这些解释。
 
@@ -106,13 +106,13 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 这里的新东西是我们要学习世界模型、能将现实世界抽象表示的感知系统。你可以构建一个具有所有这些组件的整体AI系统。
 
-![Image 7: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWfKd4czZjmjBMqGeYCIShZNfib5ZicwxPCSiaaKrBe9y7SGC9GWqGbtzXQ/640?wx_fmt=png&from=appmsg)
+![Image 7: Image](assets/9/5/954943c3e86e6d6b2f6ef8b86fe6564c.png)
 
 因此，如果你的行动不是一次性的，而是一个序列，并且你的世界模型是一个真实的系统，它能够告诉你在时间点T的世界状态，以及你可能采取的某个行动，预测出在时间点T+1的世界状态，那么你会想要预测在这种情况下，两个行动序列将导致什么结果。你可以通过多次运行你的世界模型来实现这一点。
 
 然后通过反向传播和基于梯度的优化方法来找出将最小化代价的两个行动。这就是模型预测控制的基本原理。另外，世界通常不是完全确定的，你可能需要使用潜在变量来输入到你的世界模型中。
 
-![Image 8: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWMVicQXB7UvqWzmWm26hibCXTCiaIib0px0nFKylO5XsPGWuXb0ISqCibhoQ/640?wx_fmt=png&from=appmsg)
+![Image 8: Image](assets/f/c/fc66d310a90b3a1a2198eb8dc44e3dfe.png)
 
 更有趣的是，智能系统目前还无法解决，但人类可以轻松做到，甚至动物也能做到的事情，那就是**分层规划**。
 
@@ -120,11 +120,11 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 因此实际上人类采用的是分层规划的方式。你先在非常高的层次上进行规划，然后逐步细化，最后在通过低级肌肉控制来完成的具体行动。
 
-![Image 9: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWOR6N4pLIS8KVMH7ojiaZJMkzbm2dSDMmbfOdCcO89kicib3mkMmqic95kg/640?wx_fmt=png&from=appmsg)
+![Image 9: Image](assets/6/2/62451604b9fc7714ab720e3d58286259.png)
 
 这对AI系统的确是个巨大的挑战。我过去一直在试图弄清楚婴儿在什么年龄学习关于世界的基本概念，比如像面部跟踪、生物运动等，这在他们学习语言和互动之前就已经发生了。但像重力、惯性、守恒、动量这些实际上大约在婴儿九个月左右才注意到。
 
-![Image 10: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWkMuhNaBoCNRAat5EseuI14KAdIK2uuxZo5OW1I93rmE5V7e6rbe6Xw/640?wx_fmt=png&from=appmsg)
+![Image 10: Image](assets/4/b/4b60b00656333dae60b5fc057f96b796.png)
 
 过去像通过预测文本来预测视频中的像素这种方法完全失败了，这里我们提出了一个新的解决方案，叫做**联合嵌入预测架构（JEPA）**，也就是放弃预测像素，学习世界上正在发生的事情的抽象表示，然后在那个表示空间中进行预测。两个嵌入将被破坏的版本X送入编码器，将Y送入编码器，然后训练系统从X的表示中预测Y的表示。
 
@@ -138,7 +138,7 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 所有尝试通过重建来学习图像表示的方法都不是最佳选择，它们的成效有限。尽管有些大型项目声称这些方法有效，但实际上并非如此。真正能够带来最佳性能的是右侧的架构。
 
-![Image 11: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTW7XDUqbLsMDnl3fjP6ddgbeYocO18rdUwk7ZzxjAkAp71ICJVBBU9eA/640?wx_fmt=png&from=appmsg)
+![Image 11: Image](assets/b/a/ba3a1a6b1930d064c8e32df9f8df10e2.png)
 
 这其实与我们在智能领域所做的非常相似：**找到事物或现象的良好表示，以便进行预测**。这确实是科学的本质。
 
@@ -148,7 +148,7 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 为了防止系统崩溃，一种方法是设计一种代价函数，如果你可以测量来自编码器的表示中的信息内容，并尝试最大化信息内容或最小化负信息。你希望训练系统在输入中提取尽可能多的信息，同时又要在那个表示空间中最小化预测误差。系统将在尽可能多地提取信息和不提取不可预测的信息之间找到某种平衡。
 
-![Image 12: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWk2A1pyrVx13dfpxtpndA4N43siaAcicBf8AjAWjbkzYpXqHgPt6sld9Q/640?wx_fmt=png&from=appmsg)
+![Image 12: Image](assets/9/3/93bdabc421369fb3ea1ffcd94a4aa5ce.png)
 
 这样，你将得到一个良好的表示，在这个空间中你可以进行预测。
 
@@ -169,7 +169,7 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 这些都是当今机器学习中最流行的四个主要支柱。因此目前我可能不太受欢迎。
 
-![Image 13: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWE941E1Npq5Oib34ljDIH1J5Xlwa1ZWuFtJeNMekJSlrXH6QfkdnGqxw/640?wx_fmt=png&from=appmsg)
+![Image 13: Image](assets/a/b/ab3e9e71f11f38e3f300dc6d596889eb.png)
 
 第一组方法是可以对编码器输出的信息进行估计，从而测量其信息量。目前有六种已知的方法可以实现这一目标。这里的核心思想是防止系统崩溃并只输出常数。
 
@@ -181,11 +181,11 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 但这里有一个细节，我在这里最大化的是信息内容的上界，我期望实际的信息内容能随着上界的最大化而增加。我真正需要的是一个下界，这样我就可以推动下界，从而增加信息量。遗憾的是，我们目前没有信息内容的下界，或者如果有但是不知道如何计算它。
 
-![Image 14: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTW1FKoZf1zsko7ia6IFqp1QHhREYJ3NzJ7INwUhsFiaJvYb4HickqTXoWDA/640?wx_fmt=png&from=appmsg)
+![Image 14: Image](assets/c/1/c175fa6f01a1d444af423d3155a72aaf.png)
 
 第二组方法，被称之为**“蒸馏风格方法”**，它以神秘的方式发挥作用。Grill发现了这一方法，尽管其机制尚不完全清晰，但这种方法的效果非常好。
 
-![Image 15: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWoSf4qyib1gwo09dt7ia21Cl1k2WNQjs2kvRkpoDvaKg1D6KJ3XrqjgVw/640?wx_fmt=png&from=appmsg)
+![Image 15: Image](assets/9/2/92dcbcd83ad622e0d11dc49ac289a8cc.png)
 
 它的核心思想是只更新模型的一部分，而在另一部分不进行梯度的反向传播，并通过一种有趣的方式共享权重。
 
@@ -193,7 +193,7 @@ FAIR的许多成员都在努力实现这一构想，但一年半前，Meta成立
 
 如果你想通过完全监督的方式训练一个系统来学习图像的良好表示，这种方法和其他任何方法一样有效。特别是在图像受损是通过遮罩的方式时，我们最近的工作也涉及到了视频领域。我们可以训练一个系统来提取视频的良好表示，并将此用于下游任务，比如动作识别等。这包括取一段视频，对其部分进行遮罩，通过模型运行它，并在表示空间中进行预测，然后使用这种蒸馏技巧来防止系统崩溃，效果很好。
 
-![Image 16: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAuicnr79UHBOLSpAdUD5RTWZSGAazCiansqgLsibvawcor2OKCMSKC3ntUF2A6calzbDxp1ZVvic6ibVw/640?wx_fmt=png&from=appmsg)
+![Image 16: Image](assets/e/6/e612705053234b317df9a6cbff8f36d9.png)
 
 因此，如果我们在未来的这个项目中取得成功，最终开发出能够进行推理、规划、理解物理世界的系统，这可能需要数年甚至十年的时间，才能使一切正常运作。
 
@@ -228,7 +228,7 @@ https://www.youtube.com/watch?v=4DsCtgtQlZU
 
 **欢迎扫码报名评选！**评选结果将于12月[MEET2025智能未来大会](http://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247752188&idx=2&sn=c1bc1e4d987c3a10cfef338059b3dfb1&chksm=e8dfae8edfa82798657f4fcb6469d47175940482fd452f1aff146be45890942a2385a2533344&scene=21#wechat_redirect)公布，期待与数百万从业者共同见证荣誉时刻。
 
-![Image 17: Image](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAOVibXbw5eUnvqbCic6T1OKtFJzFhIdiauXic5xgYVG2LogYPX94d9GO5yiaQKicPFPUwgM30w350XNfIQ/640?wx_fmt=png&from=appmsg)
+![Image 17: Image](assets/3/a/3acfe6f608e51f8240ee9fbbff524eb5.png)
 
 **点这里👇关注我，记得标星哦～**
 
@@ -236,4 +236,4 @@ https://www.youtube.com/watch?v=4DsCtgtQlZU
 
 **科技前沿进展日日相见 ~**
 
-![Image 18: Image](https://mmbiz.qpic.cn/mmbiz_svg/g9RQicMD01M0tYoRQT2cMQRmPS5ZDyrrfzeksiay90KaDzlGBH61icqHxmgFKfvfXtVuwTHV740CDLAaXU1LIfZyoJEpYKcRIiaE/640?wx_fmt=svg)
+![Image 18: Image](assets/3/1/31c9b8cfa7eef026b99cf24944cd5222.svg)

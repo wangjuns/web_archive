@@ -14,7 +14,7 @@ But does this just mean that we are replacing a “time coordinate” with a “
 
 In the pictures on the left there’s computational reducibility, and one can readily see what state will be after any number of steps _t_. But in the pictures on the right there’s (presumably) computational irreducibility, so that the only way to tell what will happen after _t_ steps is effectively to run all those steps:
 
-![Image 1](https://content.wolfram.com/sites/43/2024/10/sw10082024timeBimg1.png)
+![Image 1](assets/6/8/68979526e6e766ba3bb7281f13ff8729.png)
 
 And what this implies is that there’s a certain robustness to time when viewed in these computational terms. There’s no way to “jump ahead” in time; the only way to find out what will happen in the future is to go through the irreducible computational steps to get there.
 
@@ -56,7 +56,7 @@ Our strong human experience is that time progresses as a single thread. But now 
 
 At the level of a particular underlying hypergraph the point is that there may be many different updating events that can occur, and each sequence of such updating event defines a different “path of history”. We can summarize all these paths of history in a multiway graph in which we merge identical states that arise:
 
-![Image 2](https://content.wolfram.com/sites/43/2024/10/sw10082024timeAimg2.png)
+![Image 2](assets/7/b/7b5a903e08f34231b343c2519238d488.png)
 
 But given this underlying structure, why is it that we as observers believe that time progresses as a single thread? It all has to do with the notion of [branchial space](https://www.wolframphysics.org/technical-introduction/the-updating-process-for-string-substitution-systems/the-concept-of-branchial-graphs/), and our presence within branchial space. The presence of many paths of history is what leads to quantum mechanics; the fact that we as [observers ultimately perceive just one path](https://writings.stephenwolfram.com/2023/12/observer-theory/#the-case-of-quantum-mechanics) is associated with the traditionally-quite-mysterious phenomenon of “measurement” in quantum mechanics.
 
@@ -160,7 +160,7 @@ This is closely related to the Second Law, and once again it’s consequence of 
 
 Let’s recall how the Second Law works. It basically says that if we set up some state that’s “ordered” or “simple” then this will tend to “degrade” to one that’s “disordered” or “random”. (We can think of the evolution of the system as effectively “encrypting” the specification of our starting state to the point where we—as computationally bounded observers—can no longer recognize its ordered origins.) But because our underlying laws are reversible, this degradation (or “encryption”) must happen when we go both forwards and backwards in time:
 
-![Image 3](https://content.wolfram.com/sites/43/2024/10/sw10082024timeAimg3.png)
+![Image 3](assets/3/4/340a901094d75a97f9c701add702b0ba.png)
 
 But the point is that our “experiential” definition of the direction of time (in which the “past” is what we remember, and the “future” is what we find hard to predict) is inevitably aligned with the “thermodynamic” direction of time we observe in the world at large. And the reason is that in both cases we’re defining the past to be something that’s computationally bounded (while the future can be computationally irreducible). In the experiential case the past is computationally bounded because that’s what we can remember. In the thermodynamic case it’s computationally bounded because those are the states we can prepare. In other words, the “arrows of time” are aligned because in both cases we are in effect “requiring the past to be simpler”.
 

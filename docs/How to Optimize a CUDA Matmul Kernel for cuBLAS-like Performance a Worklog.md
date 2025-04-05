@@ -24,7 +24,7 @@ In the CUDA programming model, computation is ordered in a three-level hierarchy
 
 The number of threads in a block can be configured using a variable normally called `blockDim`, which is a vector consisting of three ints. The entries of that vector specify the sizes of `blockDim.x`, `blockDim.y` and `blockDim.z`, as visualized below:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/CUDA_thread_hierarchy.png)
+![](assets/e/e/ee604f05cd78b16fd49dc188573aa9ca.png)
 
 Similarly, the number of blocks in a grid is configurable using the `gridDim` variable. When we launch a new kernel from the hostIn accelerator lingo, _host_ refers to the CPU and _device_ is the accelerator, here the GPU., it creates a single grid, containing the blocks and threads as specified.From here on I’ll only be talking about 2D grids and blocks, partly because the 3D-structure is seldom used and because drawing in 3D is too hard. It’s important to keep in mind that the thread hierarchy we just talked about mostly concerns program correctness. For program performance, as we’ll see later, it’s not a good idea to treat all threads in the same block as equals.
 
@@ -61,9 +61,9 @@ __global__ void sgemm_naive(int M, int N, int K, float alpha, const float *A,
 } 
 ```
 
-To visualize this simple kernel:If the size of the matrix is not divisible by the size of the block, we’ll have to launch extra blocks to process the remainder. For example, in the picture below, we’ll create 9 blocks of equal threadsize, but only 4 of those fully utilize their 1024 threads. This artifact is called [tile quantization](https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#tile-quant), and appears whenever we try to map a fixed-sized volume across a variable-sized input.![](https://siboehm.com/assets/img/CUDA-MMM/Tile_quantization.png)
+To visualize this simple kernel:If the size of the matrix is not divisible by the size of the block, we’ll have to launch extra blocks to process the remainder. For example, in the picture below, we’ll create 9 blocks of equal threadsize, but only 4 of those fully utilize their 1024 threads. This artifact is called [tile quantization](https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html#tile-quant), and appears whenever we try to map a fixed-sized volume across a variable-sized input.![](assets/6/c/6c753288467d7eec56ca6a7f6e94a9e8.png)
 
-![](https://siboehm.com/assets/img/CUDA-MMM/naive-kernel.png)
+![](assets/4/0/4044ad26b367d697fb7fd9e077259a0c.png)
 
 This kernel takes about 0.5s to process three 4092² fp32 matrices on my A6000 GPU. Let’s do some non-implementation-specific calculations:
 
@@ -85,7 +85,7 @@ In our kernel, two threads in the same block with ThreadIds (0, 0) and (0, 1) wi
 
 Below is a visualization of the memory access pattern of our naive kernel, taking two threads A (red) and B (green) as an example:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/naive_kernel_mem_access.png)
+![](assets/0/1/01fca412b36818354a5567881679a296.png)
 
 So to recap, when I run this kernel on an A6000 GPU it achieves ~300GFLOPs when multiplying two 4092x4092 float32 matrices. Pretty bad, considering that the A6000 is advertised as being able to achieve almost 30 TFLOPs.Just for comparison, 300 GFLOPs is also roughly the performance achieved by the optimized BLAS library on the 2015 Haswell CPU that I used in my [earlier post](https://siboehm.com/articles/22/Fast-MMM-on-CPU) on CPU matmul. So how can we start to make this faster? One way is to optimize the memory access pattern of our kernel such that global memory accesses can be coalesced (=combined) into fewer accesses.
 
@@ -100,15 +100,15 @@ threadId = threadIdx.x+blockDim.x*(threadIdx.y+blockDim.y*threadIdx.z)
 
 Then, threads with neighbouring `threadId` become part of the same warp. Below I tried to illustrate this, using a smaller “warpsize” of 8 threads (real warps always contain 32 threads):I like to think of the three dimensions `x,y,z` of `threadId` as being “column-major”, due to the first dimension `x` being the one that’s continuous in “warpspace”. I don’t know if others use that term, but it makes the concept more clear to me.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/threadId_to_warp_mapping.png)
+![](assets/5/1/51a9d3f73ed79fc244eef6ef5a10209d.png)
 
 The concept of a warp is relevant for this second kernel, as sequential memory accesses by threads that are part of the same warp can be grouped and executed as one. This is referred to as **global memory coalescing**. It’s the most important thing to keep in mind when optimizing a kernel’s GMEM memory accesses toward achieving the peak bandwidth.
 
 Below is an example, where consecutive memory accesses by threads in the same warp are grouped, allowing each warp to execute 8 memory accesses using only 2 32B loads:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/GMEM_coalescing.png)
+![](assets/9/5/958b2b6095ec8d7282db8e048610bf5c.png)
 
-In reality, the GPU supports 32B, 64B and 128B memory accesses. So, if each thread is loading a 32bit float from global memory, the warp scheduler (probably the MIO) can coalesce this `32*4B=128B` load into a single transaction. This is only possible if the floats loaded are consecutive in memory, and if access is aligned.In that way, optimizing for global memory coalescing on GPU has a lot of similarities to optimizing for cache line utilization on CPU. Interestingly, to allow coalescing the threads within a warp have to access consecutive addresses, but the accesses don’t have to be consecutive within-warp. Illustrated below: ![](https://siboehm.com/assets/img/CUDA-MMM/random_access_coalescing.png)
+In reality, the GPU supports 32B, 64B and 128B memory accesses. So, if each thread is loading a 32bit float from global memory, the warp scheduler (probably the MIO) can coalesce this `32*4B=128B` load into a single transaction. This is only possible if the floats loaded are consecutive in memory, and if access is aligned.In that way, optimizing for global memory coalescing on GPU has a lot of similarities to optimizing for cache line utilization on CPU. Interestingly, to allow coalescing the threads within a warp have to access consecutive addresses, but the accesses don’t have to be consecutive within-warp. Illustrated below: ![](assets/1/a/1a7653ebe1f22726d4aa5fc639864231.png)
  If they aren’t, or if access cannot be coalesced for some other reason, then the GPU will execute as many 32B loads as necessary to fetch all floats, leading to a lot of wasted bandwidth. Profiling our naive kernel, we can observe the detrimental effect of non-coalesced access as we achieve only 15GB/s of GMEM throughput.
 
 Looking back at the previous kernel, we assigned threads their entry of C like so:
@@ -120,11 +120,11 @@ const uint y = blockIdx.y * blockDim.y + threadIdx.y;
 
 Hence, threads of the same warp (those with consecutive `threadIdx.x`) were loading the rows of A non-consecutively from memory. The naive kernel’s pattern of accessing the memory of A looked more like so:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/Naive_kernel_mem_coalescing.png)
+![](assets/e/c/ec56b3ada774df4f60e695c10a8cbcb6.png)
 
 To enable coalescing, we can change how we assign positions of the result matrix C to threads. This change in the global memory access pattern is illustrated below:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/Naive_kernel_improved_access.png)
+![](assets/1/9/1938a6d28bb53463f2eeed0138dcc7ae.png)
 
 To implement this, we only need to change the first two lines:
 
@@ -153,7 +153,7 @@ sgemm_coalescing<<<gridDim, blockDim>>>(M, N, K, alpha, A, B, beta, C);
 
 Global memory coalescing increases memory throughput from 15GB/s to 110GB/s. Performance reaches 2000 GFLOPS, a big improvement compared to the 300 GFLOPS of the first, naive kernel. For the next kernel, we’ll use the GPU’s fast on-chip memory, called shared memory, to cache data that will be re-used.
 
-Next to the large global memory, a GPU has a much smaller region of memory that is physically located on the chip, called shared memory (SMEM). Physically, there’s one shared memory per SM.Here’s a helpful illustration of the memory hierarchy on an A100 GPU ([source](https://developer.nvidia.com/blog/cuda-refresher-cuda-programming-model/)):![](https://siboehm.com/assets/img/CUDA-MMM/memory-hierarchy-in-gpus.png)
+Next to the large global memory, a GPU has a much smaller region of memory that is physically located on the chip, called shared memory (SMEM). Physically, there’s one shared memory per SM.Here’s a helpful illustration of the memory hierarchy on an A100 GPU ([source](https://developer.nvidia.com/blog/cuda-refresher-cuda-programming-model/)):![](assets/1/3/13325fc6251c7d6ab3afd95988d303bb.png)
  Logically, this shared memory is partitioned among the blocks. This means that a thread can communicate with the other threads in its block via the shared memory chunk. On my A6000 GPU, each block has access to a maximum of 48KB of shared memory.The amount of SMEM is configurable, by trading off a larger shared memory for a smaller L1 cache. For specifics, see the [compute capability documentation](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capability-8-x). Also, it’s possible to use more than 48KB of SMEM per thread by utilizing dynamic shared memory.
 
 As the shared memory is located on-chip, it has a much lower latency and higher bandwidth than global memory. I couldn’t find good benchmark results for the Ampere architecture but for Volta (released in 2017) the benchmarks performed in [this paper](https://arxiv.org/abs/1804.06826) report 750GiB/s of global memory bandwidth, and 12,080GiB/s of shared memory bandwidth.It doesn’t look like these numbers have changed much since Volta. Nvidia reports ~750GB of max GMEM bandwidth for my A6000 (Ampere).
@@ -162,7 +162,7 @@ So for this next kernel, we’ll load a chunk of A and a chunk of B from global 
 
 This is illustrated below:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/cache-blocking.png)
+![](assets/0/0/0055b8c9a92c05c2129b074603e85309.png)
 
 The important parts of the code are below, with variable names corresponding to the plot above:In general, I didn’t write the code to work for arbitrary sizes of M, N and K, as the condition checking introduces a lot of clutter and isn’t very interesting. To make sure the kernel works correctly, I test it with random data and a few different matrix sizes by comparing to cuBLAS.
 
@@ -205,7 +205,7 @@ C[threadRow * N + threadCol] =
 
 This kernel achieves ~2200 GFLOPS, a 50% improvement over the previous version.There’s only a 50% improvement partly because our previous kernel already had pretty good L1 cache hit rates. We’re still far away from hitting the ~30 TFLOPs that the GPU can provide. This is obvious from the roofline plot below:Notice how we’re achieving a higher memory bandwidth than cuBLAS. But because we’re doing much less work per byte loaded from memory (=lower arithmetic intensity), overall performance is worse.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/roofline_kernel_3.png)
+![](assets/f/5/f5f8ba23b43e2625c2bc71d2f81e1691.png)
 
 At a CHUNKSIZE of 32, this uses `2*32*32*4B=8KB` of shared memory space.This info can also be obtained by compiling with `--ptxas-options=-v`, which outputs: `Used 37 registers, 8192 bytes smem, 400 bytes cmem[0]`. My A6000 GPU has a maximum of 48KB of shared memory space available for each block, so we’re far away from hitting that limit. This is not necessarily a problem, as there are downsides to increasing per-block shared-memory usage. Each multiprocessor (SM) has a maximum of 100KB of SMEM available. This means that if we’d modify our kernel to use the full 48KB of SMEM available, each SM could only keep two blocks loaded at the same time. In CUDA parlance, increasing per-block SMEM utilization can decrease [occupancy](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy). Occupancy is defined as the ratio between the number of active warps per SM and the maximum possible number of active warps per SM.
 
@@ -248,10 +248,10 @@ Work is scheduled onto the SMs on a block granularity. Each SM will load more bl
 
 So this kernel is limited by the number of threads per block, and the number of registers per thread. We cannot load more than one block per SM, giving us a final occupancy of 32 active warps / 48 max active warps = 66%.
 
-A 66% occupancy is not too bad, so this doesn’t explain why our kernel runs so slow.We know that it’s possible to optimize our kernel towards high arithmetic intensity (AI) by observing that cuBLAS achieves ~245 FLOPs/Byte. Both at very high and very low AI, high occupancy is not needed to achieve peak throughput. For more details on this, see [V. Volkov’s PhD thesis](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-143.pdf) and its coverage of “cusp behaviour”: ![](https://siboehm.com/assets/img/CUDA-MMM/Cusp_behaviour.png)
+A 66% occupancy is not too bad, so this doesn’t explain why our kernel runs so slow.We know that it’s possible to optimize our kernel towards high arithmetic intensity (AI) by observing that cuBLAS achieves ~245 FLOPs/Byte. Both at very high and very low AI, high occupancy is not needed to achieve peak throughput. For more details on this, see [V. Volkov’s PhD thesis](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-143.pdf) and its coverage of “cusp behaviour”: ![](assets/1/c/1cde35b0c302965150fde9009d42faaa.png)
  Looking at the profiler gives us some hints. First, if we look at the mix of executed instructions, most of them are memory loads:`LDS` are shared memory loads. `FMA` is our fused multiply add. `IADD3` is a “3 input integer addition”, which we need for moving the pointers along the K dimension.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/kernel_3_profiler_instr_mix.png)
+![](assets/0/3/039fc86e6cd20002a61537c615c273c1.png)
 
 Our inner loop looks like this in PTX ([Godbolt link](https://godbolt.org/#z:OYLghAFBqd5TKALEBjA9gEwKYFFMCWALugE4A0BIEAZgQDbYB2AhgLbYgDkAjF%2BTXRMiAZVQtGIHgBYBQogFUAztgAKAD24AGfgCsp5eiyahUAV0wtyKxqiIEh1ZpgDC6embZMQAVgBs5M4AMgRM2AByngBG2KQgAMwA7OQADuhKxA5Mbh5evgFpGfZCIWGRbDFxSdbYtsVMIkQspEQ5nt7SyTbYdlmNzUSlEdGxCV1NLW15ndYTg6HDFaNJAJTW6GakqJxcAKQATPGhqB44ANS78S4SwGTESGyXuLtaAIIHR0wnFtgXV6hKIiEdBPF7vQ7HU6/S4uAFA%2BgEKKgt4fSE/P6wsxRIxKAD6ADd9gA6JDI8Gfb7nGHmSy40hmYQEDgkslgj44OhhM4uXAASSCuIAIryAGoQACy5DO4RWZyg4tlBwAQnKZQBaHiygD0qpWbLeuNxwHo6CiEkNZ3x6AImDOSmA2DYbFxSiQzWwmFxHGd2PQqAA1hBQkQzpKzsHpVKIwBpKU0E0sEMSFJu8hgs4ZzNZ7M53N5zMYJiAs7x9CJs4AKleUsLxdL5YrSrTb3zrbb%2BfrIZiTTjCZDFZcisSSvTZ1rIYjSqCAHkXNGRLyAFrPeKC%2BL7S4jlsXbdanVEJC/DZEFJmLsmgNnA/lgDuvxvxhDJDH6DYp6Iv1CV6QBCU39I2AsJgvoBqO45nGYEaoAASugN5/IKZwgf6vKYOoRLqJuYFCMWkHCGOOQIUhF4oWhRIAJ5YSiu46hIF6Jr8URmDQNCxCWZBjpsAH4ch4ZMCWLDFq67q2t6o57naboAaJjrhn%2BwnSUh2BEHezBnHR/6AZgf5fiwxF%2Bv6o6GgpHoWp2ZyvEouw%2BEqU6zvOS64JWZx2XOC7LtZgpUa8GbGVJpm4iWfYuVZNmuQ5y7OeF7nPD4XnxFu7w0d%2Bn5MGEpBnKQcEXPsfgvvQ363tgYBcAB6moNsSgZCYfHfr%2BmlAdhRYhnhT5IABQGEZciEHh1mCoeh6g5T4Lkzm5jneRm4GtQ1mCwfB3WzQNGFnDq0UTQl%2Bo%2BattGYPixjbGcaTBrEf7PgevyAgMoTAEd6SZDho4%2Bcqi0wdlFajfZMXOdGm7tnmElZTe3VvTeNbuN1WijiqL2rgR7hRWNEUriq/2toDcGQ%2BD9Agzko4uDlI5w6DiNfY5znhIT8MFR960eQlO2ZZjq6g9juMQ9R23mUQb5EVoRJQ5t26CBlQY8aRQ2LYLKpRBLGJnL9DOywNhOLXTuBDolWYSQAEiw%2BK/IBqBILNZwJraQhHjQKVnLUjrMEQOn8c9uUuaOGYSeKLD%2Br8F2zYREDdb1WnLeosp%2B7WPRngQBt8TgmHbh7%2B7oOp9AmvBxqmhIZzemQ5HlZVf4YBI2BKKgN3uxZoVKsHQHzaT42Rcq/sQ3FRHvDZtdze9CtU13eNxZNmZKtXXf17TSPfc3/et4havWTX7VaeP0p90vnWz95lcSbxXdO3Vf68Qy9gFeIxufn%2BNBmGn%2BdpKeRgfpglfGeRXx7xAepC9tGYu0TiHq0PDMMN9h/0%2Bo3JyH1whb0TozbA6go4fhtpgdAJ4sqYDMHYM4QgbbmFINxIg9B85n0PLaZClcRZygjMgogKspZ/WobQq4YDkZ/ReiAhhaFNaVwzDzFIqs4aWQXmPHu6sqYcMwm3Cs3C8wjwXuIhuyM159QHvFLWmZdiJC8jAiSYQPRXhTkoV%2BqB1LABYLpNqhsmCYClM%2BfW1pbQ0EEh%2BDKe9t46lYkQY2N0bZhHUOeAyfFzqHjHCwc%2BSkRaXXTmxPe6kyrILCM/F0Rj36fzURorR20XBCPXt3eCkClFaRUQhaRyY3TOV4VTbsekPpZM7jklelNp45JUVvTRXA1j0G4D4fg3guA6HIOgbgLgFCCh8lkkBzclAbC2NCQ4fByBEG0O0tYh4gKjA/uQf0vgtCGG4NIHpSyBncH4EoEAOzFl9PaeQOAsAUAYDfAwWIlBqD3JSI8uITB8QVR4DwZIOB8QEG2CKAg2AbzThSMwQ5dB6DONORAKIhyoihGaORbg8z7kcGENOJghDDk4DYMYY0Ox%2BmEAAr0A2pzLmBHgeYD8aL%2BAnU6VShEURSAorcDgQ5RBSBMnpWseMLBgBKGBaC8FkLeD8EEMIMQJcpCyClYoFQGhDn6H2IYQlaALBWBZacyAax0ApHqJSk5dteiOAgM4KY3geCBCsUMcolQDCFAetkdw7QnX3XqPakYcQbXdDNQ0OYVqDD%2BvqP0Fo3qli%2BtmAMYNfq5iRsdZqdYmxthSA6V0g5VLBlcGlCKFwBMflEkSALOU%2BBiAcQ%2BJqfgFydArBWVpdZawtk%2BB2Uy/Z5Ben9JzScs5Cyln1t2VwfY/A2AgGkPzPwPhEgAE5DhaH2IkeIWgfAzp8D4Tthye39suWsG5yAQD/MBdgZ5EBXnvPCOwHY4R82Fp4MWgW/APQVp5ZgAwCqZWSBkHIYQyg1CaCpaqmodQshOCscG6QAAOW1mBE2jB4D4G1zr6hxtSJ6rIcHfXSBncBnoYag1uumNB0NfQE0LAdfBxDMbJiEetdR%2BYZQfVypnWsbl2BsA2jORmrg3TN3Zu4IKbAALDoirvBlG9BazhFpLVoMthASAZSrVKNwDzGCKcOPsFYNaB0NrWXEDZWyeBaDbXs0dvgZ1EniNIfYWhEh%2BBnYkXKM6J2yC7fwbdpzzk6c2VIYzQ74hZu7ccndda1gG1IBkRw0ggA%3D)):
 
@@ -263,7 +263,7 @@ fma.rn.f32      %f93, %f92, %f91, %f90;
 
 That’s not good, given that a memory load is bound to have a higher latency than a simple FMA, and given that we know our kernel should be compute bound. We see this effect when looking at the profiler’s sampling of warp states. This quantifies how many cycles were spent in each state per executed instruction:`Stall Not Selected` means that the warp was eligible to be scheduled, but the scheduler selected another eligible warp instead. This adds evidence to our earlier hypothesis that occupancy is currently not a problem.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/kernel_3_profiler_warp_stalls.png)
+![](assets/7/8/78524f8c8fc7ca2660a99a9adff2d215.png)
 
 The meaning of the states is documented in the [Kernel Profiling Guide](https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-reference). For `Stall MIO Throttle` it reads:
 
@@ -276,7 +276,7 @@ Kernel 4: 1D Blocktiling for Calculating Multiple Results per Thread
 
 So this next kernel works like our last kernel, but adds a new inner loop, for calculating multiple C entries per thread. We now use a SMEM cache size of `BM*BK + BN*BK = 64*8 + 64*8 = 1024` floats, for a total of 4KB per block. Below a visualization. I have highlighted two of the threads and the values they access in the inner loop in orange and red.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/kernel_4_1D_blocktiling.png)
+![](assets/d/c/dc7a124938c471938b951dec674afbf9.png)
 
 All of the important changes for this kernel happen in the inner loop. The loading for GMEM to SMEM stays largely the same as before. Let’s have a look:[Godbolt link](https://godbolt.org/#z:OYLghAFBqd5TKALEBjA9gEwKYFFMCWALugE4A0BIEAZgQDbYB2AhgLbYgDkAjF%2BTXRMiAZVQtGIHgBYBQogFUAztgAKAD24AGfgCsp5eiyahUAV0wtyKxqiIEh1ZpgDC6embZMQs5wBkCJmwAOU8AI2xSEAB2LXIAB3QlYgcmNw8vHwSklKEAoNC2CKjY62xbeyERIhZSInTPb1kbbDtU6tqifJDwyJi4pRq6hszmoa7AnqK%2B2IBKa3QzUlROLgBSACYAZkDUDxwAajWtlwlgMmIkNmPcNa0AQU2dpj2LbCOT8SUVOpu7x%2B2u3272OLlQg0I6D%2BDyeQLeHzBEPoBDC0IBz1eh1B5jCRiUAH0AG4bAB0SDRsJewIR5ks%2BNIZmEBA4ZIpMO2ODoQQOLlwAEk/PiACJ8gBqEAAsuQDsFZgcoBK5ZsAELy2UAWh4coA9GrZv9/vj8cB6OgwhIjQdCegCJgDkpgNg2GweEKAOq1eIAFQYgWAEECRAOUoOgZl0rDAGlpTRTSwgxJ4kgrP8Dmn0xnM1ns1mMExBgdY%2Bh4wcAFT3aV5gtFkul5UxuNBiI1cipnPtjtZmtB0suJXRZUGh5pqtBsPKiUfIUHABs0mOg%2BHB1HoeEB2VwSns/nW0X9xHQgL48jW4AHAu2yuw17J8dp%2Bfd23tbq%2BTQDgB3d6xgjxA7qA7GHaACeBxIJE7yfgcjpBgAflsWibAArAcjDfAc8SRIIpBsMYKyFmQKG1I6Bw4UQpAECsSgkk%2BupemBy5LKQzBENK8FIYWLCDJEy5CHQwBLPGqQHMwShLNgSgHEQyZNqaqAANYSe%2Blz2tgACOZjMQQEg0QcuLoPJfJChJLCoJREkYBk%2BYHOgb6qio6maRI9BAdK75IAw7xKMm5EmJJ9FKOw7ykOg77WW%2B9zUUuz4HHRnmmp%2BpA8UwfECZUTAfos9B2l5tTvBZjQSTZBwVrpZgJqZ4kSYG6DrhlZhZTpEQHEwQjqvZGlMhIJIHCINVSV%2BnFENxeYpaQglCKBnG6dgRBDYlSjxIJEgofpEjEEBOmAaBzB4SwUFMfG3F%2BBsoHEAcY1DZF%2B5JQWZhhqgABKIVbnpBmYOoJIbY%2BS4rnda6oOkL2yXJfLvSS6gXjCP2HkGf1BiQNT0A94n1UQSjKsD9iMFuE5luuwSQ9d0X7lJB12gQElMQth4otjWHLhI5hGPYvk3sJjAcMIVXpf1umYx5l4wwccPNZ4dFk%2Bj/PY3eknoIjyOifQaMY/pclY%2B8tESoTOkK6jSiqJEKvyQcuq60r%2BuROL2AsHad4y1bNsW6QRtyW2nE/EQEBMGLSASy76tTjLr1yUKzLg/q32PFFurW6gSAfp6H4MPQDP0Ezh0HFsGylmz5ROsxSiucpWfTX6fl5e4jS1AchBsFdB75mOa6k9brjuFuLc26DH3/uxG6Ew3R7N77rdPaFMud5g3fgyb%2BPa9HAH0LJGcLSZX4Ebz5ikExa7BwHgQ9RKuBa0uRo5UxmCWt2xVKGsiHKrjpbrpGd9CgPBxn952CX/ihaNuut977KhPE/fuiE36Rx0hKdAhJ3h7w8rLaawBAhMDLkVe4YAuCU2eltZUmDzKVy8G2fcKoZaPWeqAycT8X6RzTKqUhWxpwA3bqAgmtCeRHA2IORhy4x540fjKThqpmEp1YfPImuoSCYHQCAACmBdBmALFJCmiDY7x0noguMdo2Cox/NjZi5FxIASYJgRqM05rCXUPEU0Z1N4mX8gQAAXuJN23xIiewEcAwOPDg6hzruoCOe40zu3cRADc/CTx2x8cDPx4d36/TDCgyI6QSE8MntPXuGxkLAIXCbXU75PTqkYLAlOABxI%2Bk4MASHEqgP0gtG7C0SUwIIpAx6pOnOksG/5dQ5PYQktcSTSDpHoWkkeXcumcOyWw1U0UCmkHiEU7AJSDjlOPjxapShakmHqbdJpLSx4jI6WMqeEyenTKHBIxey8hp%2BTJkU1aKdxBx3XolKmetVznWwMgripA6CMDbNfSeZs0Z32VDeV%2BW41gDi0CSBC0QIF7h0osCxpp0C/hgdxYOkkPK3yXPTCAIswgg3eluBCu5dLEt7icA4NDVREu7kImWwD%2BxBPTNFRI8R6oZ15iICpDNnm4uumme4gDlSDLaREoRq4WkpIhTLR499xUhX3NQqVgzZXgPfnQ0VSr3yqlYWq5pyT3CDnATjUFur9WCJVNK419BTUIrbGmM%2BQEXiTyUBAQJFyMzRRtoSXCcCpbYCdcVRlPDemsroWG6cXin7nKhkKvJqd043IwqQdUGi3nmxDfikW0iiAMplmS1U%2BbC3UojYyrhpb3ospDWmWZ7wcJyXeLzfN8RgqYDMHYFaaLy7WTKskQ4qL4iuXcnHDitTkQ1CGoKrM0UmKKPeEVXmyoJIGJch%2BMd8dILiHSk8%2BiB89pEDYL%2Bf1pB66ZkBSenGorq3/gNTaye6RX5avTLmsMVMy3TmLZ8pQZaXAxS1uS0hXDP01qOAOOt6YgUo2zffMDEMzUMLfkuDsIrQUQCBRQwDUqENylAZErhNc5bdwhU/Y98RX1pihShxNNGQ0urdccj1Xqlz0YTfW/J5EbnIr7VmkFeKCIEo/eJL9Bwf0IYRIB3JIHlR4Yg5GnkGGsOhSfmzG18m41Sqfe4OVjCoPBPoEmPa5HjnAtFQhuVXCDPTRqHjFwymzPYfU0RzT1qiM6foC%2B9h7HHjwq4PMeg3BEL8G8FwHQ5AZFcBcAoIU%2B4HPWaI0oRYywQTbD4OQIg2gAvzDAjbPonryByRAIhOIQWuDSH4GwHw0gSSnnq1sGcTWNjRGkAATliHOcgYWItRf4EoEAcQsvhYC%2BQOAsAUAYBPR5CgVAIBTfiDNkATBCSmR4DwaI5AcCEgotgUUBBsDvgAPIYR6/wP5c0BsQDCNl8gYRAi1CAtwDLU3OZECO0wZyt2cA4RMJIEbW2CBMTaLAgbAPsDqFaGVVYGXAzlFu8iMIY1SBATcDgW7ZFmTPdG7GFgwAlD7cOyd5g2O5DCDENUqQshBDCGUGoTQAP9AbEMMYUwFgrCI4G5AeYaK0pg/VEdrYBx1RCmCEKXAyoFClOF%2BqR0LTDrqgwDgO8tQ453gW9D/Ep4ZzkCV8G/T98NdDS1zrpQbATcQvVOqeIRB1CcXVLz1It9GHqkJMLiE6vZMbf63nNojgIDOBGN4Hg5B/CTEKMUAwiRkhpSD1HnIaVugR76CHlofumAdGGIQ4PZQKjtHGEn3oURU/jDjyXzohfpjF/mMlpYKwDAFOECdgtyUot8EC8F0Lt2osylFC4AD62STRFhfKfAxACJPC1PwYbOhZi5dbgVjvFWqsgC2DwEkPANgtdPIhU80hpDRD39ELY3Xu/cH64NzL2X5jjeQCAZFnKWJzYWzN4IgVuDBD7wP9fw%2BIvf3H%2BRJgAYDTqIOIJIDIGTooCoBoLdkzuQO%2BGNPENjkviFqfgDlFkdmVI/mFL3v3gcIPr/vKG4NNowIlE8BsLMNPtfkvpVuQNVtsCSG1vVkfohC1tEDwKeBsFoJtmdpFuftYJfjPjlkViVmVtwFsF3ugfwUITfogBACgNtrtpQNQC/qQW/hwB/l/vgT/rCvwP/iQIAcAfIBTuAdTvIHTjAYziAMzmnmlE4CYmXqHiYpXpHiHtHrkGkNnvHjHqkC4Snrnq0GlJnvUF4anr7kEQXuHkXgYIMJ0I4bEXUH4dXplkxNgLaINigZIb1twEKEsrtgcITglLgd/kPiPhAGPgYZwmvtKMQYtqQVURQVQSNnPuQHljgFEIVsVqVoYNwLQbwX1gIUNtQT0VwBsCvjwFoHEP0dIcMbAqQMkI4NIEAA%3D%3D%3D).
 
@@ -323,7 +323,7 @@ And for our new kernel, where each thread calculates eight results:
 
 As expected, we now spend much fewer cycles per instruction stalling due to memory pressure:Careful: The axis has changed compared to the previous plot.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/Kernel_4_profiler_warp_stalls.png)
+![](assets/b/7/b7f65bce1fe5633af8e30ca066a9b7f3.png)
 
 ### Sidenote on Compiler Optimizations
 
@@ -404,16 +404,16 @@ LDS     R38, [R35.X4+0xd00]
 
 ### Areas of Improvement: Arithmetic Intensity
 
-Our current kernel still suffers from the same stalling-for-memory problem as kernel 3, just to a lesser extent. So we’ll just apply the same optimization again: computing even more results per thread. The main reason this makes our kernel run faster is that it increases arithmetic intensity.Defined as the number of FLOPs executed per byte transferred (load + store!) between GMEM and SMEM. Below I tried to make it more immediately obvious why calculating more results per thread raises arithmetic intensity:It’s more efficient to calculate a square of results per thread than a column of results because we can share more of the inputs: ![](https://siboehm.com/assets/img/CUDA-MMM/1d_warp_tiling.png) 
+Our current kernel still suffers from the same stalling-for-memory problem as kernel 3, just to a lesser extent. So we’ll just apply the same optimization again: computing even more results per thread. The main reason this makes our kernel run faster is that it increases arithmetic intensity.Defined as the number of FLOPs executed per byte transferred (load + store!) between GMEM and SMEM. Below I tried to make it more immediately obvious why calculating more results per thread raises arithmetic intensity:It’s more efficient to calculate a square of results per thread than a column of results because we can share more of the inputs: ![](assets/7/2/723d7507d9cb3db0807067f63a317374.png) 
 
-![](https://siboehm.com/assets/img/CUDA-MMM/raising_arith_inten.png)
+![](assets/7/5/753f7dee1b6fc6fdfb86c0e421770914.png)
 
 In conclusion, all our kernels perform the same number of FLOPs, but we can reduce the number of GMEM accesses by calculating more results per thread. We’ll continue optimizing arithmetic intensity for as long as we’re still memory bound.
 
 Kernel 5: Increasing Arithmetic Intensity via 2D Blocktiling
 ------------------------------------------------------------
 
-The basic idea for kernel 5 will be to compute a grid of 8*8 elements of C per thread. The first stage of the kernel is for all threads to work together to populate the SMEM cache. We’ll have each thread load multiple elements. This code looks like so:Here’s a graphical representation of the GMEM loading:![](https://siboehm.com/assets/img/CUDA-MMM/kernel_5_GMEM_loading.png)
+The basic idea for kernel 5 will be to compute a grid of 8*8 elements of C per thread. The first stage of the kernel is for all threads to work together to populate the SMEM cache. We’ll have each thread load multiple elements. This code looks like so:Here’s a graphical representation of the GMEM loading:![](assets/2/8/280db8e18dffce27323d25f95581326d.png)
 
 ```
 for (uint loadOffset = 0; loadOffset < BM; loadOffset += strideA) {
@@ -429,7 +429,7 @@ __syncthreads();
 
 Now that the SMEM cache is populated, we have each thread multiply its relevant SMEM entries and accumulate the result into local registers. Below I illustrated the (unchanged) outer loop along the input matrices, and the three inner loops for the dot product and the `TN` and `TM` dimension:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/kernel_5_2D_blocktiling.png)
+![](assets/5/a/5a87e8cc26f797d55829c3f4109d732a.png)
 
 The interesting parts of the code look like this:[Godbolt link](https://godbolt.org/#z:OYLghAFBqd5TKALEBjA9gEwKYFFMCWALugE4A0BIEAZgQDbYB2AhgLbYgDkAjF%2BTXRMiAZVQtGIHgBYBQogFUAztgAKAD24AGfgCsp5eiyahUAV0wtyKxqiIEh1ZpgDC6embZMQAZnLOAGQImbAA5TwAjbFIQAE5ZAAd0JWIHJjcPL19yJJT7ISCQ8LYomPjrbFt8phEiFlIiDM9vPxtsOzTa%2BqJCsMjouNklOoamrNaRnuC%2BkoH4gEprdDNSVE4uAFIAJh9g1A8cAGoNnxcJYDJiJDYT3A2tAEFt3aZ9i2xj0/ElFQbb%2B6eOz2Bw%2BJxcqGGhHQ/0ez2B70%2B4Mh9AIERhgJebyOYPMESMSgA%2BgA3LYAOiQ6LhrxBiPMlgJpDMwgIHHJlNhOxwdBChxcuAAkgECQARfkANQgAFlyIdQvNDlBJfLtgAhBVygC0PHlAHp1fMAQCCQTgPR0BEJMbDkT0ARMIclMBsGw2FthQB1eoJAAqDGCwAgwSIh2lhyDspl4YA0jKaGaWMGJAkkFYAYd0xnM1nsznsxgmMNDnH0AnDgAqB4y/OF4ulssq2Px4NROrkNO5jud7O14NllzKgDsKvb1eD4ZVks%2BwsOPC2AA4TsPHunR2HhIcVaEpzP54uR0JC%2BOo9uFz4lw8Vwex%2BvvZOTtPT%2BfLwXr8HvVv74dH/uX4czOHUAAJXQAB3bc8XQVAAGt%2BUwdRSQATz3ZdDlXf911QDJwLNaDYPg9RkKeFC0PDEg6noQDsCUMx6CIJQVRwqD7EYbcJ3LDdQkI9MdT1C8iCQUhsBYe0CCUQ5BKUJIC1RFjBFIVCJHMIx7BMQ5bzLd9DkqZ1mDotdDn4j4IOg5jsB/Qt0ODJhPG9AShMwejGNM7cyIkSjqNoxzIKYhgPj1CBb3Y98DTPQ0UJ4w53JoujVGiBjvMOPUos82LSFswThKnT90vspRUvi6D2xYH5oiICBrLYHLhK8kzfKynxp2MqDhRZUl1BC892wizcdU0%2BoPkMw4KtKQ50BoAy7Oqgz0AdBJjEOFhUPcZpzNfCaMtcdwXMmzA8La44tgAVgVTdErUuUuKW39SJ24CwM/fiNr29QzogU69WCwiur1CQcITD5JJYNYizICaPnMUhBPXJrnOCB0OBuFDjSUFNBMwK0e0OB4lA2Q6VTYssNyjXHhUu5HUewdGCSLJsNxxvGVWPQnNxJr7wr1SV0CJIynLqkhDiiYBgiYf1RvGh4wC4MTSFAhamHtFVJbEjBMiYdsL1VT8gNl5nJ0J4nQpQtVNYa1CsOZzjDYvXkDuHU3tbA3X2I/LY1UwraLbZ62IvEeglITUXBuCQg1jE/jS340T1vsw4QIYehDnjEThBmkRJVwSVVr/cNheiO6NdNx77Oes7Gcukj11z0gMgL6ci%2BEkvtmOsure4vVff9ogqLBob%2BnksbxNAsSB%2BxibS36gXsFFpPKf0xaUhMFjhmwBJvoFhCFodf0WKarPLIdIhSDtbBa97yqdpqnyWL1Funyuiyc6YEJSDu43C52kub8tu%2BK%2BvZ%2BMjfnXD%2BcF9pNw4pdCKckBboH4ljMSxgFZiRAh8ECxhgxCVQEgROJZ7T80BkwHuNAaIJxVs0DUcdMD8VjGQNeLYu7yQAOLp0nBgCQVFUCiwgMVUaCRcizzwXNJ%2BosiH0ATjLEC5C7SwIQWGehAcTBryBjLH4S1VZKANMRK82d1zDCPjgQBZ8qoOQKlfPy4CrbtjbgtURkF/rR2EhqP6JCgZIA%2BFAiS0UxJw0EkLZepA6CMHbJjeumBkp0VxiqQKhN3wk23BsIcWhSRaHiaTVuiU9Q%2BNEvQhSmDu5QNHjIlUOMUKYx8ZnPGt5YmfniSqRJySBypLvqU7AwBOIVLadOapCSkkpK9lY5Y9CNRsGSMGM06AEijW5vJJqBlfLFOtlAiA%2B8IgwTgtuZJZ4BarJemCQ4Bs1QrLwrbT8jNBx3ysUkBINE7GDTThnHJrj5mZkWfvJOAB5GgNAVDBk/BstU7zPnfMRBuTOmyAVfOwD812n5dHHweGcyxGZsYRMDE/POoENau2wcJD5EKiDymZseVUa5/7uCeIdTpDVEXZnJSqVFz98622xZgXF3yCV7KZVXGurM0npl6ShdMLzwzgqBb8xczLWWQuBbfCVgKpUm2nLC/RCKBUZiKSiqur8mUishey06xKuXuGHBSrKqrszGrpZq0CxssU6vxc7TlaLq5Gp5ec44DTEXIwQq8EJSgIAdTCtbKxwkiTGGBjDXyiLMV22nDKzMEVhncyJqo5oYcZpH2AEgIgiKbUxuTYTb%2B6TDiJo%2BIzQeIExKYFAmrWEqqfaKWuV3Q4CRogahCeJKinjEVCvXFWogRyxWbL7QO04RNxWa1dsOuCKqg0ZgijMoM6aWlZOiE8rMPaxzrPFQQYFlTNkTpVAQGduYykRIIFU02yK8YQBCXdIKd4sVHvYmW4lU6CIUsupmfls7BWgyWTnLdmyd27Jifu6Frsn01OpRmHxbTD0XtjfTFUb7n0uzVCE8251OWuug9%2B7sf794STwneU2fyO1KGI7u0FubVREbgkqd1brnkEfDHR9QH5SPirYxxlw51x3gZVNx49HZb2ds8hEtjessPEu41U6FVKzUdlPXjSTsTCawYk1RPCHTP1Zjw3pj1qr9Ppi9T6i%2B/rLrfrXiBI%2BTaBk9w8eJkpLH1yScA2qNzIHqPHNdpJ4Tv75L/tc1puCHHpxke47uwtB6hOMegy4FFt6dZqQfR5kL6gGMFqZRhj20msWyZNfeaDmYkwpnYqJjy4SVPpak5pGT6WOnHMU5mFsi1CYJevUlx2KWmV%2BYdcSnLCdolofI9pnDRnDPWysw0rgix6DcEOvwbwXAdDkHQNwFwChhQXgSwJh0yxVigh2HwcgRBtCzcWK44SAx/XkCgiAQ6WhDDcGkPwNgIBpDSFJHOH7PgABsAOtgDmkLEAcWg/uyGW6t9bXB%2BBKBAE9s7K3ZvkDgLAFAGA2AJF8hQKgEBMfY8YDEJgRJUCoB4DwAc5AcBEgIGsMUBBsAgTeS2qH/AAn0PhxACI53yARGCPUBC3ATuY44MIN5TB6BC%2BR9T50xhTTrFW4QQSHRubw5l9gdQ7QzBd2F/wIMlRecogiKQQXbgcC88PiyPXiw4wsGAEoBnTOWfMD13IYQYg2FSFkIIYQyg1CaBl/oLYhh5doAsFYY38PICLHGdUdXGo3k%2BEOBqYUoRhS4BVAoBhKeNROmfv9DUGAcD3nqJg%2B8BOdfYAJHOP75Bi9mSpXjSvXca916UGwNvsSNQagSEQdQxUNRx7SDjBqGoiQp8hBXg9lO4faQ6I4CAzgxjeB4P4eWvRiilAMLkVIQgV87%2BSHvpgm%2B%2B4GDaAvmokwD9r4v9ULoDRT%2BzBiLf6/y0siv%2B6E/7f2olgrDWAYKguLn3vyEwIIDbs9lwItuQGzmttwLKGKC4LxhTqSAOEkgqPgMQKDM8NqPwEjjoPMJdvZDdnNi9m9r4DwKSLOEDnOIdHOJ9gOPQQOH4LATDnDgjqdudosGjsgCAAMlckQJQNQATjjqEOwOsKEIgcgZQWgatpTFgXogYL7qIL7JwDIO7ooCoBoLzsHuQDZiwAkBAfNlAUtrzjDm8jrgIWLAgUgTODIegRAG4FjjjgdD4FsPMHgVwaQVwK9uQO9jsKSLED9kwYdEDgODwHOFsFoFTqwdwOwYjl4Xdg9k9sYT4KYTLmwZwcjtwYgBACgDTnTtgEIfjugM4UTmIRwNwJIbYSgbIfwPISQIoWvsoZ7pIOocof7toUHiACHnfmkE4PLDfuvpgN/gMGvrvtUEMRMWkKMS/hUFUJ0G/qrOfvPvfpMLMefksc0JsV/tMFvmMYsIfNgFPJgAjt4dAbEVwMKNgLTsDE7sgvJNUdIagQ4ZgY0a4WvryKUYTtEK4e4Z4dkUQddjELdvdo9pAb4ZcfEVkQQd4VsOQTwFoE9lCTCRduQFMikI4NIEAA)
 
@@ -481,7 +481,7 @@ for (uint bkIdx = 0; bkIdx < K; bkIdx += BK) {
 
 In the inner loop, we can reduce the number of SMEM accesses by making `dotIdx` the outer loop, and explicitly loading the values we need for the two inner loops into registers. Below is a drawing of the `dotIdx` loop across time, to visualize which SMEM entries get loaded into thread-local registers at each step:I had to reduce some dimensions to make it easier to draw. In the kernel: `BK=TM=TN=8`.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/kernel_5_reg_blocking.png)
+![](assets/4/e/4e7c557ec58a85b5646a8dd305ecd061.png)
 
 Resulting performance: 16TFLOPs, another 2x improvement. Let’s repeat the memory access calculation. We’re now calculating `TM*TN = 8*8 = 64` results per thread.
 
@@ -496,7 +496,7 @@ Kernel 6: Vectorize SMEM and GMEM Accesses
 
 The first optimization that I already hinted at earlier is to transpose `As`. This will allow us to load from `As` using vectorized SMEM loads (`LDS.128` in SASS). Below the same visualization of the three inner loops as for kernel 5, but now with `As` transposed in memory:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/kernel_6_As_transpose.png)
+![](assets/5/d/5dc8330fb69350137f270e13a1cecb9b.png)
 
 Looking at the assembly[Godbolt link](https://godbolt.org/#z:OYLghAFBqd5TKALEBjA9gEwKYFFMCWALugE4A0BIEAZgQDbYB2AhgLbYgDkAjF%2BTXRMiAZVQtGIHgBYBQogFUAztgAKAD24AGfgCsp5eiyahUAV0wtyKxqiIEh1ZpgDC6embZMQADnLOAGQImbAA5TwAjbFIQAE4ecgAHdCViByY3Dy9fJJS0oSCQ8LYomPjrbFt7IREiFlIiTM9vPxtsO3Ta%2BqJCsMjouISlOoam7NaRnuC%2BkoH4gEprdDNSVE4uAFIAJgBmYNQPHABqDZ2XCWAyYiQ2U9wNrQBBbb2mA4tsE7PxJRUGu4ez12%2B0On1OLlQw0I6ABTxeII%2BXwhUPoBAisKBr3ex3B5giRiUAH0AG5bAB0SAx8LeoKR5kshNIZmEBA4FKpcN2ODoISOLlwAEkAoSACICgBqEAAsuQjqF5kcoFKFdsAEKK%2BUAWh4CoA9Br5oDAYTCcB6OgIhITUdiegCJgjkpgNg2GwtiKAOr1RIAFQYwWAEGCRCOMqOwblsojAGlZTRzSwQxJEkgrICjhnM1nsznczmMExhkd4%2BhE0cAFSPWUFoslsvl1VxhMhqJ1cjpvOdrs5ush8suFUAdlVHZrIYjqqlXxFRx4Wx8pxHTwzY/DwiOqtC09n88Xo6ERYn0e3C52S8eK4P4/XPqnpxnp/Pl8L15DPq396Oj/3L6OZgjqAAEroAA7tu%2BLoKgADWAqYOoZIAJ57suRyrv%2B66oJk4HmtBsHweoyHPChaERiQdT0IB2BKGY9BEEoqo4VB9iMNuk4VhuoSERmur6heRBIKQ2AsA6BBKEcglKMkhZoixgikKhEjmEY9gmEct7lu%2BRyVC6zB0WuRz8Z8EHQcx2A/kW6Ehkwng%2BgJQmYPRjGmduZESJR1G0Y5kFMQwnz6hAt7se%2BhpnkaKE8Uc7k0XRqjRAx3lHPqUWebFpC2YJwnTp%2B6X2UoqXxdBHYsL80REBA1lsDlwleSZvlZTsM7GVBIqsmS6gheeHYRZuuqafUnyGUcFWlEc6A0AZdnVQZ6COokxhHCwqHuM05mvhNGWuO4LmTZgeFtScWwAKyKpuiVqfKXFLb%2BpE7cBYGfvxG17eoZ0QKd%2BrBYRXX6hIOGJp8kksGsxZkBNnzmKQgnrk1znBI6HC3ChJpKKmgmYNavZHI8SgbIdqpseWG7RrjIqXcjqPYOjhLFs2G443jqrHoTm4k194X6lK6DEkZTl1SQRxRMAwRMAGo3jY8YBcGJpCgQtTAOqqktiRgWRMB2F5qp%2BQGy8zU6E8ToUoeqmsNahWHM5xhsXnyB0jqb2tgbr7Efls6qYVtFts9bEXiPQSmJqLg3BIQaxifxZb8aJ632UcIEMPQRwJiJwgzSIUq4FKq1/hGwvRHdGum499nPWdjOXSR6656QmQFzORfCSX2zHWXVvcfqvv%2B0QVFg0N/TyWN4mgWJA/YxNZb9QL2Ci0nlP6YtqQmCxwzYIk30CwhC2OgGLFNVnlmOkQpD2tgte95VO01T5LH6i3T5XRZOdMCEpB3cbhc7SXN%2BW3fFfXs/mRvzrh/OC%2B0m4cUuhFOSAt0D8SxmJYwCsxIgU%2BCBYwIYhKoCQInUsDp%2BaAyYD3GgNEE4q2aJqOOmB%2BJxjIGvVsXd5IAHF05TgwBIKiqBRYQGKqNRIyQVC4JmvgkWqkiH0ATjLEC5D7SwIQeGehAcTBryBjLX4S1VZKENMRK82d1zDCPjgQBZ8qoOQKlfPy4CrYdjbgtMRkF/rR2EpqP6JCgZIE%2BFAiS0UxJw0EkLZepA6CMA7JjeumBkp0VxqqQKhN3wk23BsYcWgyRaASaTVuiV9S%2BNEvQhSmDu5QNHrI1UOMUKY18ZnPGt44mfgSaqJJKTBxpLvmU7AwBOKVPaTOGpiTkmpK9tY5Y9DNRsBSCGc06BEijW5vJJqBlfIlOtlAiA%2B8IgwTgtuFJZ4BZrJeuCI4Bt1SrLwrbT8jMhx32sckRINF7GDTThnXJbiFlZiWfvJOAB5GgNAVAhk/Js9UHyvk/KRBuTOWzAXfOwL812n49HH0eOcqxmZsaRKrjXdibE1SKirvnW22DhKfMhUQQ0h0ukNSRTmZ4eMgxPzzqBDWrt8WYEJT8hU%2Bs8VovcFSppSK%2BkoQzK8iMELgV/MXEyllUKQW33FUCyVJsZxwoMYi/lmZimRJpc/V%2BeLhVQrZRxDltLq7uBHKSrKKqcwmtVBqulIFjaMp1cS52Br/7GtZukjMfLrYZmRghN4oSlAQA6mFL1GSFqYGJMYYGMNfJIoZXbGc0qswRRGdzImajmhhxmkfYASAiBIrtfGtNhNv6hpTZ8Rmg8QJiUwKBNWcIVU%2B0UjcruRxEjRE1KE8SVEvFIsFeuGtRBjmiq2QOodZwiZis1q7UdcFlUhusbM4MWbWnZOiM87MfbxwbLFQQEFVStlTtVAQOdeZymouqabFFeMZ0vSdli0Jd0gp3kZQQN1FzMyep7KDZZOdt1bN3Xs2JB6YWu2PScYcFLMy%2BPaUei9Cb6aqhvRil26pQnm3Ohyt9kHP0bu/fvCSeE7ym3%2BV2pQhG91goLWqAjcFlTgffS8vDEYaPqA/MRsVLG2MuHOpOkDqpOMns7A%2B7tnlIksb1hhrFnHqkwvJeazsZ68bibiYTaDYmqJ4U6ZdHMOGsy6fA6TFVPq/UX0DZdT1a8QJHxbYMnunjROlKY%2BucTf71QucA5Rk5rtxOCYFU5kMnHXOkc03ukth6BP0cgy4dVD6dZqWfW5jTtG9UoYcZtBOMTUvSdNfeSDWZkypnYsJjyESlNJfUBJzSUnyudJOfJrMrZFqE2i9S2Ljt4t4p806%2B9O10NVcZdlnlKqcMWcaVwRY9BuCHX4N4LgOhyDoG4C4BQIoLzRb446ZYqwwS7D4OQIg2hxuLDccJAYgbyBQRAIdLQhhuDSH4GwEA0hpBkh8G9nYAA2L7WxBzSFiIOLQH3ZCzfm4trg/AlAgBuwdub43yBwFgCgDAbBEi%2BQoFQCAyPUeMBiEwYkqBUA8B4IOcgOBiQEDWOKAg2AQLvLbSD/ggT6GQ4gBEQ75AIjBHqAhbge3kccGEO8pg9Aeew9Jy6YwZp1jzcIIJDo3NIdi%2BwOodoZgu68/4MGSo7PUQRFINztwOB2eH1ZBrxY8YWDACUFTmndPmAa7kMIMQbCpCyEEMIZQahNBi/0FsQwku0AWCsLryHkBFgTOqIWbgmp3k7COJqEUoQRS4FVAoBh8fNTOmfv9TUGAcD3nqJg%2B8WO1fYEJD4D75A89mXJXjEvXdy%2BV6UGwRvcTNSakSEQdQxVNQR/SDjBqmpiTx6hMXw9xOIfaQ6I4CAzgxjeASIEaYxRSgGD4fkDIy1sgJHX5H3oK%2BBhDCn5Hroowt8L4qFUTokx999wMMMbo8/783%2BX3fnUSwVhrAMKgwXneBRMEEDN1uy4Gm3IAZwW24DlHFBcG4yJzJEHGSUVHwGIFBheB1H4Bhx0HmGO3sjOwmzuwexAB2B4DJDnB%2Bx8EOh8Ge0HCoMHB2DAPZzBwhyh320O0WAR2QBAEGWuSIEoGoCxzR1CHYHWFCGgNgJIIQPm0phQP0QMHd1EF9k4BkEd0UBUA0HZ193ICsxYESCAMmxAJm0YO4HeTVx4LFigJgNnAkMQIgDcBRzRwOh2C2HmAwLYPwK4Hu3IEe12DJFiDe1oMOh%2B0HB4B8C2C0BJ3AKYOsBYMwKOwuyuxu30J2EMLFyiNiPYMQAgBQDJwp2wD4Mx3QHsJxyEI4G4FEMsLgMkP4GkJIFkISHkOd0kGUPkM93UJ9xAD9zaGn28Fn3lif0X3llv1mBiB3zyEj36NyFSD31f2GPv2P2v0f3PzmKvxqBfyKDf2sEmAmIfwaCGNX3f0PmwCnkwCh3cNAMiO4BFGwHJ2Bht2QXknKPEPgJsOQNqMcISD5EKOx2iEcOcNcNh2wPIBOxwBiHO0u2u2AM8IuPB2iOhzcOAK2EIJ4C0Bu2hP%2BKwMWGmVSEcGkCAA) we see that loading `As` into the registers, which used to be a 32b `LDS` load, is now also a 128b `LDS.128` load, just like it had already been for `Bs`. This gives us a 500GFLOPs speedup, or ~3%.
 
@@ -561,13 +561,13 @@ Kernel 10: Warptiling
 
 Currently, our loop structure looks like this:
 
-![](https://siboehm.com/assets/img/CUDA-MMM/Loop_structure.png)
+![](assets/b/f/bf42b34b79ff0e8f48d8d8e5eaf4f4e6.png)
 
 We’ll now add another hierarchy of tiling, in between our blocktiling and threadtiling loops: warptiling. Warptiling is somewhat confusing initially since unlike blocks and threads, warps don’t show up anywhere in the CUDA code explicitly. They are a hardware feature that has no direct analog in the scalar CUDA-software world. We can calculate a given thread’s warpId as `warpId=threadIdx.x % warpSize`, where `warpSize` is a built-in variable that is equal to 32 on any CUDA GPU I’ve ever worked with.
 
 Warps are relevant for performance since (among other reasons):
 
-*   Warps are the unit of scheduling that is mapped to the warp-schedulers that are part of the SM.On my A6000, there are four warp schedulers in each SM. This is how I imagine this looks: ![](https://siboehm.com/assets/img/CUDA-MMM/WarpSchedulers.png) 
+*   Warps are the unit of scheduling that is mapped to the warp-schedulers that are part of the SM.On my A6000, there are four warp schedulers in each SM. This is how I imagine this looks: ![](assets/e/1/e1d8a6d26f603a0a629a549c771ef153.png) 
 *   Shared-memory bank conflicts (I’ll cover those in a future post) happen only between threads that are in the same warp.
 *   There’s a register cache on recent GPUs, and tighter threadtiling gives us more register cache locality.
 
@@ -618,13 +618,13 @@ for (uint dotIdx = 0; dotIdx < BK; ++dotIdx) {
 
 I tried my best to visualize all three levels of tiling below, although the structure is getting quite complex.The [CUTLASS docs about efficient GEMMs](https://github.com/NVIDIA/cutlass/blob/master/media/docs/efficient_gemm.md) go even more in-depth into warptiling, and their visualizations are illuminating. Each warp will compute a chunk of size `(WSUBN * WNITER) x (WSUBM * WMITER)`. Each thread computes `WNITER * WMITER` many chunks of size `TM*TN`.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/kernel_10_warp_tiling.png)
+![](assets/0/f/0f361d55be52a14093cd15868ece3050.png)
 
 After autotuning the parameters, performance improves from 19.7 TFLOPs to 21.7 TFLOPs on an A100.
 
 Here’s a plot that compares our warptiling kernel against cuBLAS across increasing matrix sizes: I generated this plot on an A100, which is why the absolute FLOPs numbers are different.
 
-![](https://siboehm.com/assets/img/CUDA-MMM/cublas_vs_kernel_10_sizes.png)
+![](assets/c/3/c3306924a83566aaa5ae57e606a40471.png)
 
 At dimensions 2048 and 4096, our measured FLOPs are only a few percentage points slower than cuBLAS. However, for smaller matrices, we’re doing poorly in comparison to Nvidia’s library! This happens because cuBLAS contains not one single implementation of SGEMM, but hundreds of them. There’s a reason I guess for why the library is 500MB of compiled code. To print all the kernels: `cuobjdump --list-text <cublas location>`. At runtime, based on the dimensions, cuBLAS will pick which kernel to run.I launched matmuls for square matrices on all dimensions up to 4096 and found 16 different SGEMM kernels. Here’s a [script](https://gist.github.com/Chillee/f86675147366a7a0c6e244eaa78660f7#file-4-matmul-bench-py-L11) for finding the kernel that was launched by cuBLAS (h/t [Horace He](https://horace.io/)). I traced the cuBLAS call and these are the kernels it’s calling at each size:I used the [Nsight Systems](https://developer.nvidia.com/nsight-systems) CLI for this.
 
@@ -637,7 +637,7 @@ At dimensions 2048 and 4096, our measured FLOPs are only a few percentage points
 | 2048 | `ampere_sgemm_128x64_nn` | 1.247 ms |
 | 4096 | `ampere_sgemm_128x64_nn` | 9.290 ms |
 
-At dimension 256 it calls two kernels: a matmul kernel followed by a reduction kernel.Split-K refers to partitioning the K-dimension across multiple threadblocks. This means that each block will only compute part of the chunk of C, and cuBLAS follows up with a reduce kernel to accumulate the final result. This requires some extra memory space to store the intermediate results before the reduction. I imagine this looks like so (but I’m uncertain here):![](https://siboehm.com/assets/img/CUDA-MMM/split_k.png)
+At dimension 256 it calls two kernels: a matmul kernel followed by a reduction kernel.Split-K refers to partitioning the K-dimension across multiple threadblocks. This means that each block will only compute part of the chunk of C, and cuBLAS follows up with a reduce kernel to accumulate the final result. This requires some extra memory space to store the intermediate results before the reduction. I imagine this looks like so (but I’m uncertain here):![](assets/e/9/e936256559db96961575953fa81fce5d.png)
  So if we were trying to write a high-performance library that works for all shapes and sizes we would have specializations for different shapes, and at runtime dispatch to the one that’s the best fit.
 
 I also want to report a negative results: For this kernel, I additionally implemented an optimization called _thread swizzling_. This technique assumes that threadblocks are launched in order of increasing `blockIdx`, and optimizes the mapping of `blockIdx` to C chunks in a way that should increase L2 locality.Remember that L2 is a cache for global memory that exists once for the whole GPU. This [Nvidia post](https://developer.nvidia.com/blog/optimizing-compute-shaders-for-l2-locality-using-thread-group-id-swizzling/) has more info and visualizations. It didn’t increase performance, presumably because L2 hit rate is already fairly high at 80%, so I ended up removing the swizzling code.The commit is [here](https://github.com/siboehm/SGEMM_CUDA/commit/9a4dd77232d416649c13401c2382cdf95ded3760) if anyone is interested.

@@ -18,7 +18,7 @@ To understand what Containerd is and how it works, we must first understand how 
 
 _Try the Docker Run Lab for free:_
 
-[![](https://kodekloud.com/blog/content/images/2024/02/2-Try-The-Docker-Labs-For-Free-1.png)
+[![](assets/6/0/604cbffa799d5d9fbe89a8cb2f9e877a.png)
 ](https://kode.wiki/48sEkCI?ref=kodekloud.com)
 
 __Docker Run Lab__
@@ -94,7 +94,7 @@ Docker was written with human beings in mind. We can imagine it as a sort of tra
 
 On the left side, we have the human needing to do something with containers. In the middle, we have Docker CLI + all of its other components. And, at the right, we have some actions performed by Docker, such as building a container, pulling an image, or starting a container. So Docker is a middleman, accepting commands from humans and then producing a result.
 
-![](https://kodekloud.com/blog/content/images/2022/07/docker_containerd_diagram-1.png)
+![](assets/2/8/28e9b5dfd690145c4224012d08b340c9.png)
 
 For example, for a command like
 
@@ -104,7 +104,7 @@ docker run --name webserver -p 80:80 -d nginx
 
 this is how actions flow from one Docker component to the other, until, finally, the container starts:
 
-![](https://kodekloud.com/blog/content/images/2022/07/docker_flow_diagram-1.png)
+![](assets/4/e/4e508c0043adbb7fba250f41b1f02df4.png)
 
 Again, for simplicity, we left some parts out, like the Docker Daemon. But in a nutshell, this is what happens after someone enters that command:
 
@@ -123,7 +123,7 @@ But keep in mind Kubernetes is a program, and Containerd is also a program. And 
 
 The messages sent in API calls need to follow a certain format so that the receiving program can understand them.
 
-![](https://kodekloud.com/blog/content/images/2022/07/api_call_diagram-1.png)
+![](assets/f/2/f2c263d2eb4b0ffc560b6a84d0d53ebb.png)
 
 It would be tedious for humans to send API calls every time they want to tell Containerd to do something. But when developers write programs that should interact with Containerd, they implement ways to send the correct API calls. So apps can efficiently communicate with each other through these APIs.
 
@@ -168,7 +168,7 @@ Source code extracted from this page: [https://github.com/containerd/containerd/
 
 Do we want to write such stuff just to pull in a container image? Of course not. So Docker, on the other hand, with its Docker CLI, is built to receive **instructions from human beings**. It's more "human-friendly", letting us do many things, with rather short commands that are easy to write and easy to remember.
 
-![](https://media.tenor.com/jWqkTaE-TAUAAAAC/late-night-seth-seth-meyers.gif)
+![](assets/e/b/ebac784f096dd222977187859bfa37d2.gif)
 
 Experimenting with Containerd
 -----------------------------
@@ -185,7 +185,7 @@ To see what commands ctr supports, we enter this:
 ctr
 ```
 
-![](https://lh3.googleusercontent.com/glhUsaZoKCVUn6u-V1l_3n4-im8LlOrQDDVjpIzI2DRTJ4fkwQjQYdOnuufvHnT6zS5_w5RWOsKICAaeEOk35j5_jnxBldbPeREUmP7oCqmFgEKJiYwRWw3Yo3Q6bD0DCRwP-pBXFaZ4eWgJC58)
+![](assets/b/8/b86b673cd1393b204390fa358ff02bd6.png)
 
 To get help about a certain subcommand, we just write "ctr subcommand\_name" with no further parameters/instructions. For example, if we want to see how we can use the "images" subcommand, we can write:
 
@@ -193,7 +193,7 @@ To get help about a certain subcommand, we just write "ctr subcommand\_name" wit
 ctr images
 ```
 
-![](https://lh4.googleusercontent.com/3EMRk4ZB7M47kMxIGAQu71TuqhFUENrxl4WZiRqWvDHmeLKteQ8sibBh-e69Bq5Hfa4D-esNWp0rkGFfbgzaJPKGFd1jftJqnbDuYvq1L6Vtw0qM-4QlBAtSBN5SoJcQL0-hu_6BFr3Noy7eYKo)
+![](assets/6/7/670345d86947054c5ca09b07357e8ea3.png)
 
 But this **ctr** command is more of a "shortcut" meant for simple interactions with Containerd, in case someone needs to debug things or test some stuff. Imagine we are developers and just implemented some cool new stuff into Containerd. Now we want to test if the container image is downloaded faster with some optimizations we made.
 
@@ -245,9 +245,9 @@ Docker Training Course for the Absolute Beginner | KodeKloud
 
 Learn Docker with simple and easy hands-on Labs
 
-![](https://assets-global.website-files.com/62a8969da1ab561666c8c408/6319fe59c5677ae4cb8ae16f_favicon.png)
+![](assets/9/2/92729ef68eca212ce1755eafd813b955.png)
 
-![](https://assets-global.website-files.com/62a8969da1ab56329dc8c41e/6412bd8d73926ccddfc202fb_Docker%20Training%20Course%20For%20Absolute%20Beginners.png)
+![](assets/c/7/c7bf06fe70bccf7c828b3bb15bf69696.png)
 
 
 ](https://kodekloud.com/courses/docker-for-the-absolute-beginner/?ref=kodekloud.com)
@@ -264,4 +264,4 @@ You may also be interested in the following:
 *   [What Are Objects Used for in Kubernetes? 11 Types of Objects Explained](https://kodekloud.com/blog/kubernetes-objects/)
 *   [ClusterIP vs. NodePort vs. LoadBalancer: Key Differences and When to Use Them?](https://kodekloud.com/blog/clusterip-nodeport-loadbalancer/)
 
-*    [![](https://kodekloud.com/blog/content/images/size/w100/2022/07/3-headshot-1.png)](https://kodekloud.com/blog/author/alexandru/)
+*    [![](assets/1/8/186e236ce95755b6ec500351f5137c14.png)](https://kodekloud.com/blog/author/alexandru/)

@@ -39,7 +39,7 @@ We categorize facilities into three major brackets:
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feefa3b42-e844-417b-a784-52f7ec0e3253_1712x986.png)
+![](assets/5/d/5dbb067638688ecf71cd3d853ff7c020.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feefa3b42-e844-417b-a784-52f7ec0e3253_1712x986.png)
@@ -50,7 +50,7 @@ Source: Google Earth ([Here](https://maps.app.goo.gl/1wjdyskh9hbjRvsU6))
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99dc41cf-4e5e-4d90-ba73-370d711ffc6a_1482x1140.png)
+![](assets/f/2/f203ff38cd0fae789612e034c3e1550c.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F99dc41cf-4e5e-4d90-ba73-370d711ffc6a_1482x1140.png)
@@ -85,7 +85,7 @@ From the outside-in, power follows the following path:
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc5bead2-5271-4709-b978-5260349283bc_1327x1137.png)
+![](assets/e/8/e87b5831344e5df176f2705f881b86ca.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc5bead2-5271-4709-b978-5260349283bc_1327x1137.png)
@@ -114,7 +114,7 @@ Modern Hyperscale datacenters are of course more complex than the diagram shown 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94b6c4db-0e73-4668-b5cf-1e01c0802868_2172x1458.png)
+![](assets/f/3/f377d73b239ab57c927b7b04f585e9fc.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94b6c4db-0e73-4668-b5cf-1e01c0802868_2172x1458.png)
@@ -131,7 +131,7 @@ Despite being a core piece of our electrical transmission system, transformers a
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3deb4ad2-ebf7-4b0c-a010-4e292abe8192_1806x1034.png)
+![](assets/3/9/39b1ac285dd0790427f8a22fbb163401.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3deb4ad2-ebf7-4b0c-a010-4e292abe8192_1806x1034.png)
@@ -144,7 +144,7 @@ If the secondary coil has less “turns” than the primary coil, power will be 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6ebaf6b1-c570-4dc7-9cef-38b06f10f81c_2014x1332.png)
+![](assets/2/6/269dedf4c21494f7084e29971f2feddc.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6ebaf6b1-c570-4dc7-9cef-38b06f10f81c_2014x1332.png)
@@ -157,7 +157,7 @@ Back to Datacenters and our power flow: we now have medium voltage power at one 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49c6a380-2e5e-4246-a17b-9f0849d54846_2134x1508.png)
+![](assets/7/a/7adddf60cb1f43c494477bb7a763a7b7.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49c6a380-2e5e-4246-a17b-9f0849d54846_2134x1508.png)
@@ -170,7 +170,7 @@ Inside a Data Hall are located multiple “Pods”, and each Pod runs off its ow
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8b9a13c8-244c-47ea-8d05-a367fe6936a3_2024x1032.png)
+![](assets/1/5/153b25e8bb638cbaa906da5d1f710b97.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8b9a13c8-244c-47ea-8d05-a367fe6936a3_2024x1032.png)
@@ -190,7 +190,7 @@ The diagram below helps to illustrate a typical HV and MV distribution: how powe
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F941564ab-862c-459e-987d-8cad0f817eed_1994x1092.png)
+![](assets/3/5/3525b65dc295828ea5c343c9a665b48f.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F941564ab-862c-459e-987d-8cad0f817eed_1994x1092.png)
@@ -201,7 +201,7 @@ Medium Voltage switchgear is a factory-assembled metal enclosure filled with equ
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff043fbed-8325-4cb2-882e-91677dc273a0_1280x960.png)
+![](assets/1/6/160f405fc1d68a7a63f482c7eba7e068.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff043fbed-8325-4cb2-882e-91677dc273a0_1280x960.png)
@@ -223,7 +223,7 @@ Inside these enclosures you will find the following devices:
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F129a2bf3-993f-493e-9cca-03ab01a37f2c_1080x883.png)
+![](assets/c/b/cba6c885bed05c309df65f3bf25fbbca.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F129a2bf3-993f-493e-9cca-03ab01a37f2c_1080x883.png)
@@ -238,7 +238,7 @@ For context, a 3 MW generator has a horsepower north of 4,000, similar to a loco
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9fe53974-00d8-4bd9-b779-a57b74b5fe3a_2022x1062.jpeg)
+![](assets/0/6/065467b5a0fc6687991c25589d301f38.jpeg)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9fe53974-00d8-4bd9-b779-a57b74b5fe3a_2022x1062.jpeg)
@@ -247,7 +247,7 @@ Source: SemiAnalysis
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff4f8a618-26e7-4983-810b-34d9cb533dd4_2456x1294.png)
+![](assets/6/9/69e2b19286245bc8af74026474d8d053.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff4f8a618-26e7-4983-810b-34d9cb533dd4_2456x1294.png)
@@ -267,7 +267,7 @@ Directly downstream from the Automatic Transfer Switch (ATS) is a uninterruptibl
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b25d8f9-2c6a-411a-bb02-598a0142b6a9_1844x1362.png)
+![](assets/9/a/9a96c107e0cbd111c2878bedd3a8338b.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b25d8f9-2c6a-411a-bb02-598a0142b6a9_1844x1362.png)
@@ -278,7 +278,7 @@ A UPS can be a large source of inefficiency, with 3-5% losses typical, and furth
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8b91594e-6fff-4f18-bedd-89c4e9fb3a90_2292x1150.png)
+![](assets/4/a/4a4228e1f36178a84f76f7d13ed6b61f.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8b91594e-6fff-4f18-bedd-89c4e9fb3a90_2292x1150.png)
@@ -289,7 +289,7 @@ Modern systems are modular: instead of having one fixed-size large unit, they ar
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa326eb8f-efb9-40ea-9b96-85e10ec6e90a_2310x1266.png)
+![](assets/1/2/12823d8548ceb3a9c79aa66fc40eb3ce.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa326eb8f-efb9-40ea-9b96-85e10ec6e90a_2310x1266.png)
@@ -300,7 +300,7 @@ A 2N redundancy on UPS systems (i.e. “2N Distribution”) for Rated 3 datacent
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2c114317-0407-48c4-908d-d9f3b6d1b913_1644x1070.png)
+![](assets/9/2/924c3f9399a25ba730370e524169d452.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2c114317-0407-48c4-908d-d9f3b6d1b913_1644x1070.png)
@@ -315,7 +315,7 @@ In Catcher, instead of having two UPS systems each capable of handling the full 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb65806a8-c7df-44d2-9138-8b3d6bd9df3d_2452x1328.png)
+![](assets/5/a/5a8fe7fe8091e30eb082fce9b2589c9b.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb65806a8-c7df-44d2-9138-8b3d6bd9df3d_2452x1328.png)
@@ -328,7 +328,7 @@ Racks are generally placed next to each other and form a row. In the picture bel
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9785f91b-2cf3-43d8-bcd6-a6fd0f8e858c_1334x1206.png)
+![](assets/1/1/11242285de15ee21059797a536f28438.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9785f91b-2cf3-43d8-bcd6-a6fd0f8e858c_1334x1206.png)
@@ -341,7 +341,7 @@ When using busway, a power distribution unit (PDU) in addition to a remote power
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F56f4e333-33df-4c76-9ba7-bfa16265c3bc_2684x858.png)
+![](assets/b/1/b1891bf0b6ec724adb806b35cd340e68.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F56f4e333-33df-4c76-9ba7-bfa16265c3bc_2684x858.png)
@@ -352,7 +352,7 @@ When using flexible power cables, a power distribution unit (PDU) outside of the
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F593352f9-4892-4703-8203-96f4f0f0c331_2714x804.png)
+![](assets/5/7/5715052d0f54a6772f335b3edb21e63f.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F593352f9-4892-4703-8203-96f4f0f0c331_2714x804.png)
@@ -365,7 +365,7 @@ Legacy datacenters tend to use flexible cables and PDUs, but when dealing with l
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbad4c821-86f2-4e69-aafd-3225e25849b0_4000x2250.jpeg)
+![](assets/8/8/88548aa824c2a99ca0c2ea9ae56dcfe4.jpeg)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbad4c821-86f2-4e69-aafd-3225e25849b0_4000x2250.jpeg)
@@ -376,7 +376,7 @@ Inside the rack, we often use vertical PDUs, shown in the below diagram. We have
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0cc89c5d-4896-4059-824f-db6b88e28ae2_1678x940.png)
+![](assets/d/0/d048f8b4485fa1af9aa8ce044ff79f9d.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0cc89c5d-4896-4059-824f-db6b88e28ae2_1678x940.png)
@@ -389,7 +389,7 @@ In the OCP architecture, instead of vertical in-rack PDUs delivering AC power to
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69af78b3-3d4c-4766-83a9-057873dccda9_707x1024.png)
+![](assets/3/0/30acbf25d554c67d6d72855c8d61204f.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69af78b3-3d4c-4766-83a9-057873dccda9_707x1024.png)
@@ -402,7 +402,7 @@ This also has the benefit of cutting in half the total battery capacity needed f
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6eb3b779-9620-4233-8feb-4f1c1447e99b_1528x1128.png)
+![](assets/5/9/59293f2832c985642230762a53ae0b40.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6eb3b779-9620-4233-8feb-4f1c1447e99b_1528x1128.png)
@@ -413,7 +413,7 @@ To further improve efficiency, Google introduced the 48V busbar, as explained in
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc51e369a-e645-4e86-8160-62703a8b1826_3427x1905.png)
+![](assets/c/2/c2386da1c69b6223d3e9e5086793a3ec.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc51e369a-e645-4e86-8160-62703a8b1826_3427x1905.png)
@@ -434,7 +434,7 @@ Back to Datacenter Power: the key item here is 130 kW+ per rack. How different i
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2459f319-d89c-4173-b52c-082450a0da8c_1868x926.png)
+![](assets/4/9/49d245c33db020746871323ed34aa38b.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2459f319-d89c-4173-b52c-082450a0da8c_1868x926.png)
@@ -447,7 +447,7 @@ Referring back to the intro, Meta demolished an entire building under constructi
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a9db9c6-8fa6-4236-875b-18a7a046afd0_2542x822.png)
+![](assets/7/d/7d4a8ad7548f6bdf95d58a4b31b3b154.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a9db9c6-8fa6-4236-875b-18a7a046afd0_2542x822.png)
@@ -456,7 +456,7 @@ Power density, alongside cooling which we’ll explore in Part two, are the key 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F706c6c31-d420-45e8-a22a-6240d50f6fd8_2082x958.png)
+![](assets/0/6/069bdd43ee3ed09a8aa7b1df03dac601.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F706c6c31-d420-45e8-a22a-6240d50f6fd8_2082x958.png)

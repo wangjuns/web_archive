@@ -57,7 +57,7 @@ GPT代表**生成式预训练Transformer(Generative Pre-trained Transformer)**�
 
 类似[OpenAI的GPT-3](https://en.wikipedia.org/wiki/GPT-3), [谷歌的LaMDA](https://blog.google/technology/ai/lamda/)还有[Cohere的Command XLarge](https://docs.cohere.ai/docs/command-beta)的大语言模型的底层都是GPT模型。让它们这么特殊的原因是**1）**它们非常的大（成百上千亿的参数）；**2）**它们是基于海量数据进行训练的（成百上千个GB的文本数据）
 
-根本上来看，给定一组**提示**，GPT能够基于此**生成文本**。即使是使用如此简单的API（input = 文本，output = 文本），一个训练好的GPT能够完成很多出色的任务，比如[帮你写邮件](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Demo-of-Drafting-an-Email.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1)，[总结一本书](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Example-Book-Summarization.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1)，[给你的instagram起标题](https://khrisdigital.com/wp-content/uploads/2022/12/image-1.png)，[给5岁的小孩解释什么是黑洞](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Examples-Explaining-Black-Holes.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1)，[写SQL代码](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Demo-of-Writing-SQL-Queries.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1)，[甚至帮你写下你的遗嘱](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/Chat-GPT-Example-Writing-a-Will.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1)。
+根本上来看，给定一组**提示**，GPT能够基于此**生成文本**。即使是使用如此简单的API（input = 文本，output = 文本），一个训练好的GPT能够完成很多出色的任务，比如[帮你写邮件](assets/f/8/f861bad9a00ea5dea8476e8c12a4c395.png)，[给5岁的小孩解释什么是黑洞](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Examples-Explaining-Black-Holes.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1)，[写SQL代码](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/ChatGPT-Demo-of-Writing-SQL-Queries.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1)，[甚至帮你写下你的遗嘱](https://machinelearningknowledge.ai/ezoimgfmt/b2611031.smushcdn.com/2611031/wp-content/uploads/2022/12/Chat-GPT-Example-Writing-a-Will.png?lossy=0&strip=1&webp=1&ezimgfmt=ng:webp/ngcb1)。
 
 以上就是宏观视角下关于GPT的概览以及它能够做的事情。现在让我们深入一些细节把。
 
@@ -236,7 +236,7 @@ def train(texts: list[list[str]], params) -> float:
 
 自监督学习的范式，让我们能够海量扩充训练数据。我们只需要尽可能多的搞到大量的文本数据，然后将其丢入模型即可。比如，GPT-3就是基于来自互联网和书籍的**3000亿token**进行训练的：
 
-![](https://jiqihumanr.github.io/images/table.2.2.png)
+![](assets/6/1/619ba048db84e8adb6d286f10b796949.png)
 
 来自GPT-3论文的Table 2.2
 
@@ -258,7 +258,7 @@ def train(texts: list[list[str]], params) -> float:
 
 > 译者注：我们可以简单的认为，为了执行我们的自己的任务，zero shot表示我们直接拿着大模型就能用于我们的任务了；one shot表示我们需要提供给大模型关于我们特定任务的一个列子；few shot表示我们需要提供给大模型关于我们特定任务的几个例子；
 
-![](https://jiqihumanr.github.io/images/fig.2.1.png)
+![](assets/0/4/0460207e4a91e512e72c75935cfb5eb3.png)
 
 来自GPT-3论文的图2.1
 
@@ -539,7 +539,7 @@ model/wte: (50257, 768)
 
 GPT-2的非线性（**激活函数**）选择是[GELU（高斯误差线性单元）](https://arxiv.org/pdf/1606.08415.pdf)，这是一种类似ReLU的激活函数：
 
-![](https://jiqihumanr.github.io/images/GELU.png)
+![](assets/f/a/fa5e65a5d451dc5f0687a5407e63aaa4.png)
 
 来自GELU论文的图1
 
@@ -641,13 +641,13 @@ def linear(x, w, b):
 
 GPT的架构是基于[transformer](https://arxiv.org/pdf/1706.03762.pdf)的：
 
-![](https://jiqihumanr.github.io/images/trans.png)
+![](assets/1/a/1a0c6f93c613f9281d254cdfd85cf755.png)
 
 来自Attention is All You Need论文的图1
 
 但它仅仅使用了解码器层（图中的右边部分）：
 
-![](https://jiqihumanr.github.io/images/gpt.png)
+![](assets/f/1/f1c05ab793731252389067648843ed78.png)
 
   GPT架构
 
@@ -1340,13 +1340,13 @@ Bad
 
 那么这些指令数据到底是什么样子的呢？Google的[FLAN](https://arxiv.org/pdf/2109.01652.pdf)模型是在多个学术的自然语言处理数据集（这些数据集已经被人工标注）上进行训练的：
 
-![](https://jiqihumanr.github.io/images/flan.png)
+![](assets/b/1/b1d23750a2da005610cdaf91a635af21.png)
 
 来自FLAN论文的图3
 
 OpenAI的[InstructGPT](https://arxiv.org/pdf/2203.02155.pdf)则使用了从其API中收集的提示进行训练。然后他们雇佣工人为这些提示编写补全。下面是这些数据的详细信息：
 
-![](https://jiqihumanr.github.io/images/igpt.png)
+![](assets/f/0/f027959e647dbd93ee077d56da1488b0.png)
 
 来自InstructGPT论文的表1与表2
 
@@ -1360,7 +1360,7 @@ OpenAI的[InstructGPT](https://arxiv.org/pdf/2203.02155.pdf)则使用了从其AP
 
 举个例子，我们可以看看[Adapters论文](https://arxiv.org/pdf/1902.00751.pdf)。在这种方法中，我们在transformer模块的FFN和MHA层后添加了一个额外的“adapter”层。这里的adapter层只是一个简单的两层全连接神经网络，其中输入和输出维度是`n_embd`，而隐藏维度小于`n_embd`：
 
-![](https://jiqihumanr.github.io/images/adapter.png)
+![](assets/2/3/23e37ed228727f4bf032916329b8da27.png)
 
 来自Adapters论文的图2
 

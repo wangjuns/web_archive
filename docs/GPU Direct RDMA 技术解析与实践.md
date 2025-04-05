@@ -6,14 +6,14 @@ GPU Direct RDMA 技术解析与实践
 
   
 
-![Image 1: cover_image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVecbMvEH90ibgic7LabPteJv9uuoR3P9LB48HxFbpYnspw5nswggmx5VTg/0?wx_fmt=jpeg)
+![Image 1: cover_image](assets/5/c/5cfee2622dc09417ef4ed54df9e70139.jpg)
 
 GPU Direct RDMA 技术解析与实践
 =======================
 
 Original Explorer [SDNLAB](javascript:void(0);)
 
-![Image 2: profile_qrcode](https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=Mzg5NzY3NDUyMw==&mid=2247536761&idx=1&sn=17176b2a3a25b4614f7a692dd29158d3&send_time=)
+![Image 2: profile_qrcode](assets/5/6/56199f4ab8c764bbf805b409fde7967a.bmp)
 
 SDNLAB
 
@@ -25,7 +25,7 @@ SDNLAB是专注网络创新技术的先锋媒体社区和实践应用平台，�
 
 _2025年02月27日 07:31_
 
-![Image 3: 图片](https://mmbiz.qpic.cn/mmbiz_gif/u6UOjABnicbtCz6ryiaibXxklcGd6LqtORpX1aia788BnKm9TXI9E3oJvyOTwMTFFaguMCMGNVeT7R9H4TCswsa9gA/640?wx_fmt=gif&from=appmsg&retryload=1&wxfrom=5&wx_lazy=1&tp=webp)
+![Image 3: 图片](assets/3/b/3be3944cb913d2890952052dd7c37e61.gif)
 
 **作者简介：**Explorer，专注于高性能网络、虚拟化网络及网卡的测试方案研究。熟悉DPDK，RDMA，SDN等技术的应用与解决方案。
 
@@ -55,7 +55,7 @@ NVLink 是 NVIDIA 开发的一种高速互联技术，专门用于连接多个 G
 
 NVLink 在 GPU 互联技术中提供了超高带宽和低延迟的优势，如Figure1所示，第五代NVLink支持高到1800GB/s的带宽，支持高效的多 GPU 协作，但成本高昂，作为NVIDIA的私有协议，生态封闭，兼容性有限、硬件要求高且功耗较大。
 
-![Image 4: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVeIwyxgiazondZibe1mYlwjDnZu4ngawkps4V3LFD9FEEqs4Imp6zL45aw/640?wx_fmt=other&from=appmsg)
+![Image 4: Image](assets/b/4/b4b933a5afa1e08484ac2d2e9a362fe2.jpg)
 
 Figure 1 NVlink
 
@@ -65,13 +65,13 @@ NVSwitch 也是 NVIDIA 开发的一种高速互联技术，专门用于大规模
 
 Figure 2是多GPU并行计算时，分别使用点对点方式和使用NVswitch方式的组网图。
 
-![Image 5: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVeCZRXvZoJ4Vh0noziaibvHrQj9QjDljermtygeqjbg7r5KcH4ESSb01QA/640?wx_fmt=other&from=appmsg)
+![Image 5: Image](assets/5/b/5baed5b18d26b16ada63aa48a8ceaae5.jpg)
 
 Figure 2 NVSwitch组网
 
 在点对点设计中，虽然不需要4个switch的成本投入，但每个GPU必须将900GB/s的总连接带宽拆分为7个专用的128 GB/s点对点连接，和系统中其他的GPU进行连接，GPU之间的带宽如Figure3。
 
-![Image 6: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVe4ZoDNicXEy2B95Yib2p54juhYTloiaTo8ISWKueknZMwjg2LjzXaSkaag/640?wx_fmt=other&from=appmsg)
+![Image 6: Image](assets/6/b/6bee50954704b95163e2e0e4006f50d1.jpg)
 
 Figure 3
 
@@ -89,7 +89,7 @@ Infinity Fabric是AMD开发的一种高带宽、低延迟的互连技术，最�
 
 如Figure 4所示，GPU Direct通过共享内存的方式实现多 GPU 之间的高效数据交换。减少了数据传输中的复制次数，从原本需要三次数据复制减少到仅需要两次复制，从而有效提高了数据传输效率，降低了延迟并减轻了 CPU 负担。
 
-![Image 7: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVet0huhiaJfPwdHSvKGiaoyOwDm5GTKX6Fx7r4CNgGaRMSFPUbib9TyOaxQ/640?wx_fmt=other&from=appmsg)
+![Image 7: Image](assets/3/1/31484797a64a6927d226d470282e22d6.jpg)
 
 Figure 4
 
@@ -97,7 +97,7 @@ Figure 4
 
 GPU Direct P2P（Peer-to-Peer）技术是一种允许GPU之间直接通信的技术，无需通过CPU或系统内存中转数据。Direct Access 和 Direct Transfers 是其实现的两种重要的通信机制。Direct Access 允许一个 GPU 直接访问另一个 GPU 的内存，而无需经过 CPU 或主机内存。Direct Transfers 指的是在 GPU 之间直接传输数据，数据不需要先经过 CPU 或主机内存。与 Direct Access 类似，这也是一种减少中间步骤、提高数据传输效率的机制。
 
-![Image 8: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVec2FgfcqibYPuyyicGGgxXhtR1KCrVIQE7E0aedafC8bAzPp6ngQv8eibg/640?wx_fmt=other&from=appmsg)
+![Image 8: Image](assets/a/5/a5dc8b19dc732919fc38e91cbba2c3cc.jpg)
 
 Figure 5
 
@@ -107,7 +107,7 @@ Figure 5
 
 GPUDirect Storage 为本地或远程存储（如NVMe或基于网络的NVMe-oF）与GPU显存之间建立了一条直接数据通路。它避免了通过CPU内存中的临时缓冲区进行额外拷贝，通过网卡或存储设备的直接内存访问（DMA）引擎，将数据沿直达路径移入或移出GPU显存，整个过程完全无需消耗CPU资源。
 
-![Image 9: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVexk5jmlXuCw9icSquxqiaeQiaaTgicn6nIIkRBOfALliczuiavhCyLmbYAS3A/640?wx_fmt=other&from=appmsg)
+![Image 9: Image](assets/e/0/e0fc5a89595c8e21d0b567a323bb7d3c.jpg)
 
 Figure 6 GPU Direct Storage
 
@@ -117,7 +117,7 @@ Figure 6 GPU Direct Storage
 
 如Figure 7所示，GPU Direct RDMA 允许 GPU 直接访问 RDMA 网络设备中的数据，无需通过主机内存或 CPU 。这意味着，GPU 可以直接与网络设备进行数据交换，避免了数据在主机内存中的复制，提高了数据传输的带宽利用率。此外，GPU Direct RDMA 还支持零拷贝（zero-copy）功能，这对于需要高性能通信的应用程序，如分布式训练和高性能计算，具有重要意义。通过减少数据复制次数，GPU Direct RDMA 能够进一步降低通信延迟，提升整体性能。
 
-![Image 10: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVehtNyCQeSv9vp4hOo7WAYZpQKIBsRbVgFwLF8mwdNxImwx0eVr0ebaQ/640?wx_fmt=other&from=appmsg)
+![Image 10: Image](assets/9/a/9a5b96f9dddf288cde8d66b636ef3d73.jpg)
 
 Figure 7 GPU Direct RDMA
 
@@ -163,7 +163,7 @@ Figure 7 GPU Direct RDMA
 
 拓扑如Figure 8，两台服务器各搭载一张Nvidia RTX A5000（GPU）和一张CX-5（RDMA NIC），实际的生产环境测试中应引入多层的网络拓扑和流控机制结合测试。
 
-![Image 11: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVe6qicEUV5OONNANeomWflHJm1NceTtiarWR71ibcYk6qMdsf7RYd6c4dbA/640?wx_fmt=other&from=appmsg)
+![Image 11: Image](assets/4/f/4febd82beca2e617cc72cb66e5af55d4.jpg)
 
 Figure 8实验拓扑
 
@@ -191,23 +191,23 @@ NCCL：是专为多 GPU 和分布式系统设计的集体通信库，主要用�
 
 All-Reduce：所有参与的设备（GPU）将各自的数据发送到其他设备，并对接收到的数据进行归约操作（如求和、求最大值等），最终每个设备都将获得相同的结果。
 
-![Image 12: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVewzS0lvzlBNPmQAHnpn9mgbSr7RdCHyFsNSyjQ5zJ1yGk71hB5Qkictg/640?wx_fmt=other&from=appmsg)
+![Image 12: Image](assets/6/6/660a568e05a26d42e88fdf810999350b.jpg)
 
 Broadcast：将一个设备的数据广播到所有其他参与设备。只有一个设备提供数据，其它设备接收该数据的副本。
 
-![Image 13: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVepSGS65p3S3TiclDr8vchJ3cWWx3A47ickGIKTnR3hT0nSrzZyYhlnWKg/640?wx_fmt=other&from=appmsg)
+![Image 13: Image](assets/7/5/75fcaad383f6387e7968039938cf4373.jpg)
 
 Reduce：将所有参与设备的数据按照指定的操作（例如求和）聚合到一个指定的设备上。其他设备的数据将被丢弃。
 
-![Image 14: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVep7ibC6rjJgcNMdECdmGGD8ezZtlocAQtRKwsjmlbfvicPz757UnVxtCw/640?wx_fmt=other&from=appmsg)
+![Image 14: Image](assets/6/f/6fbc58b760a0f50bd4e2a6b75c3bfa92.jpg)
 
 AllGather：所有参与设备的数据都被收集到每个设备上，每个设备最终会得到所有其他设备的数据副本。
 
-![Image 15: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVenhvDjta6n84swqhKgQK7wMSHI9I4VCE0H6Hm4RzNV8IQ8icqGzRSlzQ/640?wx_fmt=other&from=appmsg)
+![Image 15: Image](assets/a/5/a593827471a0c0982fbea34b4eceec08.jpg)
 
 ReduceScatter：将所有参与设备的数据聚合到一个设备上后，再将结果分散到每个设备。每个参与设备将获得聚合结果的一部分。
 
-![Image 16: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVehIXnHPY6ASNyuZg6z8x3HfCsd2Gr2haDPvjdhXFnPKga1jx687sEPQ/640?wx_fmt=other&from=appmsg)
+![Image 16: Image](assets/2/d/2d77c00a2e5cf7cfac5b3622c6811c14.jpg)
 
 NCCL-Test：NVIDIA Collective Communications Library (NCCL) 的一个测试工具，用于验证 NCCL 在多GPU和分布式系统上的性能和功能。NCCL 是 NVIDIA 开发的一个库，专门用于加速多GPU之间的集合通信操作。
 
@@ -254,7 +254,7 @@ mpirun -x NCCL_IB_HCA=mlx5_1 -x NCCL_IB_DISABLE=1 -x NCCL_SOCKET_IFNAME=enp179s0
 
 为了提供一个能反映硬件使用优化程度的指标，NCCL测试引入了"总线带宽"的概念（测试输出中的"busbw"列）。该数值是通过对算法带宽应用特定公式计算得出的，用于反映GPU间通信的实际速度。通过这个总线带宽值，我们可以直接将其与硬件理论峰值带宽进行对比，且该对比结果不受节点数量的影响。
 
-![Image 17: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIUn1muZG3Wr4QFYNcZJIYVeTTTXoPNyVrBdYiciaSNNlcxDEx02QG1OHfCnjTy0MXlPSW9nbe6bpHsQ/640?wx_fmt=other&from=appmsg)
+![Image 17: Image](assets/d/c/dc7ff61b7a2087bb7a90d07d600bcfc9.jpg)
 
 Figure 9
 
@@ -286,7 +286,7 @@ Close
 
 Name cleared
 
-![Image 18: 赞赏二维码](https://mp.weixin.qq.com/s/gviH1YbddJx_s7U4TI2W2w)**微信扫一扫赞赏作者**
+![Image 18: 赞赏二维码](assets/e/b/eb19560950d2cf721649826f6a4e3bff.jpg)**微信扫一扫赞赏作者**
 
 Like the Author[Other Amount](javascript:;)
 
@@ -372,13 +372,13 @@ Submit更多
 
 [表情](javascript:;)
 
-![Image 19](https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=Mzg5NzY3NDUyMw==&mid=2247536761&idx=1&sn=17176b2a3a25b4614f7a692dd29158d3&send_time=)Scan to Follow
+![Image 19](assets/1/8/18170a22f7bc5880c7eb5289e4fb1f22.bmp)Scan to Follow
 
 继续滑动看下一个
 
 轻触阅读原文
 
-![Image 20](http://mmbiz.qpic.cn/sz_mmbiz_png/kfiaiar8iaaIIWjDzszIWyXST892WXNuL4lukKHiajLXBCQ12k1bXP4dqWNo2WicibG9x1xam5LDYib9xpIXhjkwh4rew/0?wx_fmt=png)
+![Image 20](assets/7/c/7c07436c5ee65fd77d077e7348527af1.png)
 
 SDNLAB
 
@@ -394,7 +394,7 @@ SDNLAB
 
  
 
-![Image 21](https://mp.weixin.qq.com/s/gviH1YbddJx_s7U4TI2W2w) Scan with Weixin to  
+![Image 21](assets/e/b/eb19560950d2cf721649826f6a4e3bff.jpg) Scan with Weixin to  
 use this Mini Program
 
 [Cancel](javascript:void(0);) [Allow](javascript:void(0);)

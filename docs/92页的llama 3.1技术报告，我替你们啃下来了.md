@@ -3,14 +3,14 @@
 
                              92页的llama 3.1技术报告，我替你们啃下来了                                                                   
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiagIibibw1vF1p4tVlrwokJ8PEEG8KO6UW72VIlPa7BMf0GzVkhEyMO7DQ/0?wx_fmt=jpeg)
+![](assets/b/b/bb600531e45e521c03fe3c1db49d0675.jpg)
 
 92页的llama 3.1技术报告，我替你们啃下来了
 ==========================
 
 原创 研泽 [阿里云开发者](javascript:void(0);)
 
-![](https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=MzIzOTU0NTQ0MA==&mid=2247541607&idx=1&sn=f97e1feab29d03bf5e6bb3d77b9b244a&send_time=)
+![](assets/8/6/86faaa5920dc84e34eae0a65b727a6b3.bmp)
 
 阿里云开发者
 
@@ -22,7 +22,7 @@
 
 _2024年10月16日 08:31_ _浙江_
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiasHQnTKQB504st0ibibUWkuRo37JIMIw9icmx3NPGYgBRC3jTG6nicK1yag/640?wx_fmt=jpeg&from=appmsg)
+![](assets/3/6/362647edcb90cc4a166129b76c53f201.jpg)
 
 阿里妹导读
 
@@ -36,10 +36,10 @@ _2024年10月16日 08:31_ _浙江_
 
 然后第二天就被mixtral打脸，官网针锋相对。最绝的还是那个标题，Large  Enough。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaJIdL3XV222LZIujNUmibHLntSH8GomfXGpodeDibpNfp8dTBctKRXDjg/640?wx_fmt=other&from=appmsg)
+![](assets/a/a/aac748167c7a0536a9d9cebdab3f7e67.jpg)
 ﻿意思是meta的405B大而无用呗，看看这个黄三角形
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaOX0La2dIYDy0jlvfeuxLjYAcw0oIOrdC3UFicHIRw7eicEJAbI133GuA/640?wx_fmt=other&from=appmsg)
+﻿![](assets/e/7/e7504724461a21ec6424e24c9805cd6d.jpg)
 ﻿
 
 意思是llama3.1的报告也作弊了呗
@@ -48,7 +48,7 @@ _2024年10月16日 08:31_ _浙江_
 
 当然，根源在于我英语一般，读起来太慢了。相信很多小伙伴和我也差不多。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaNwdBbXbiaAyqDKoLmwGJVTlAGcVqYKic4SISkxicTzXyDqSDfRPqht2FA/640?wx_fmt=other&from=appmsg)
+﻿![](assets/7/2/7295ae4c02acf8f4855dacef8ddff114.jpg)
 ﻿
 
 但是，llama3.1 405B不太一样。这个模型的开源，意义重大。就类似Attention is all you need，作为NLP算法怎么都得啃下来。所以我花了半个月时间，认真读完了，并总结为以下内容，希望能帮到对这个感兴趣的小伙伴们。
@@ -107,7 +107,7 @@ b.以前因为闭源模型的效果碾压性的好，造成了对很多算法同
 
 a.理论上看一篇等于看很多篇技术报告了。  
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaOGbfKeDDaN1QRHQJsgCSicJtFVhgZRFxKeVMNAiaFicetiaLfva0ibAMaibQ/640?wx_fmt=other&from=appmsg)
+﻿![](assets/c/9/c90ef113983a41ce9af9294ba108d58a.jpg)
 ﻿
 
 猜猜这是谁家的代码
@@ -316,7 +316,7 @@ a.大规模的gpu集群会带来各种层面的问题，比如网络通信、监
 
 然后这部分数据再用来做SFT。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaM155X340hu3pAP9L6sVWtH4hyJMiatGl4EHFQYhD0kWx0J18FOcj7dw/640?wx_fmt=other&from=appmsg)
+﻿![](assets/a/e/aea3afbd85476d40ad484e78bbccb16e.jpg)
 ﻿
 
 ###### 直接偏好优化DPO
@@ -353,7 +353,7 @@ meta在最后阶段，将使用不同数据和超参实验得到的奖励模型�
 
 通信方面，搭了一套对应的网络通信拓扑结构，对nvidia的NCCL库做了针对性改造。meta还列举了在一个完整54天，llama3.1 405B大模型训练周期中触发意外中断的原因，
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiakfbmZs7Z3nndUxndonruPlyGQaV6dktS6LYcblFJ8ticuPt3RsH5BHg/640?wx_fmt=other&from=appmsg)
+﻿![](assets/1/1/11d902f3a8ad4c4558fb61038efe1651.jpg)
 ﻿
 
 一个有意思的结论是，78%的中断都是硬件原因。这也和之前在笔者千卡集群文章开头分享的工程团队角度看千卡集群建设问题基本一致，会遇到了一堆又一堆软件无关的问题导致需要不停地排查问题解决问题。解决思路就是特别强力的监控，自动化维护，冗余，底层改造。此外还提供了一些trick，比如减少checkpoint存储事件，减少训练启动时间。
@@ -362,7 +362,7 @@ meta在最后阶段，将使用不同数据和超参实验得到的奖励模型�
 
 meta分享了在不同超参配置下，16k张H100的算力利用率MFU，基本处于40%左右，相对还是较低的。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaOWLjEW0nrMC1KlH4YIzF6nTmscgJuyX42ncK4peoGdqY67tD3uqaIw/640?wx_fmt=other&from=appmsg)
+﻿![](assets/f/d/fdf6c2f8ecd63281e51079ae70cf1b35.jpg)
 ﻿
 
 注1：这块我猜是因为meta用的flashattention2（或者完全没用）。2主要优化的是A100，MFU理论上能到75%左右，对H100没优化。前段时间刚出的第三版专门对H100做了优化，利用率能提升到75%左右。
@@ -375,14 +375,14 @@ meta分享了在不同超参配置下，16k张H100的算力利用率MFU，基本
 
 具体可以参考这张图：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiamGGdVo8bgWJtM1feFR63MicJFNoCW9DWfX1wkd35rYAibRLsbEicCXWxw/640?wx_fmt=png&from=appmsg)
+![](assets/3/3/331d1fbbc63d75ed1c3a39a06d22ebe8.png)
 ﻿  
 
 这里其他三个都是之前文章写过的。唯一一个特别的是context并行。报告写的是“上下文并行性将输入上下文划分为片段，减少了对于极长序列长度输入的内存瓶颈。”
 
 由于pipeline并行默认实现比较死板，meta还做了一些针对性改造，对微批次做了不少优化。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaHbs0zpwJZ2UjSVMPELRDfac98vBsUoocnUePB5Y9er2ltj9mibXUAvg/640?wx_fmt=other&from=appmsg)
+﻿![](assets/b/4/b44b47817246484e647b6ac1c93738e7.jpg)
 ﻿
 
 然后是cp并行实现，这里提到了一些实现细节，比如准备2倍于并行数的chunk，然后每个cp对象负责对称的两个块。
@@ -417,19 +417,19 @@ meta分享了在不同超参配置下，16k张H100的算力利用率MFU，基本
 
 ﻿那么就是第一步，也是最重要的参数：数据集大小。毕竟这个如果太大的话，也谈不上小规模实验了。这里又要搬出scaling laws了，原始翻译叫规模公式。即总训练算力、模型参数量、训练集大小，如果能满足公式，就能取得当前模型参数量下最好效果。问题是这个公式怎么搞。首先不同厂家、不同数据集分布，下游任务（打榜），这个公式是不一样的。那就经验公式，实验+拟合呗。能拟合就是好方法好公式，拟合错了就不行。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiatpYd4AnXfD1w9mGFwPnpzQqlkDwoS5vbY1KRSFrbgHibLb0S7RIQJvQ/640?wx_fmt=other&from=appmsg)
+﻿![](assets/1/9/193a23748c2ec8cf7d13e6a54321af2e.jpg)
 ﻿
 
 结论：
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaUPUdibHGkVXI9VNWKfezSCoWw7h2K8vMibzPXVc1y9lsJN4dVklicFXDg/640?wx_fmt=other&from=appmsg)
+﻿![](assets/2/b/2b7ce69dc7cd2d5809751f2ce29bb2ae.jpg)
 ﻿
 
 拟合的是α取0.53，系数A取0.29。其中C是预算FLOPs。N\*(C)是训练集token数量。比如他们的预算是3.8e25 FLOPs，代入公式，就是需要10.4T的数据集。然后meta实际上用了16.55T的数据集。
 
 注1：这个误差有点大。但笔者分析不出来原因了。期待懂的小伙伴能分享下原因。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiau9ibwbPr8Q2OoYyCflHxdEia135ESk1pKLpndeuWt5ZPLc7H7c40MGnQ/640?wx_fmt=other&from=appmsg)
+﻿![](assets/2/4/24f4dc9a1b6582ab7901c735367c5ebf.jpg)
 ﻿
 
 注2：这个算力预算真不算多。也就等于H100，保守估计，480k卡天。按报告里写的16k张H100，也就是30天。后面可能更容易被卡着的会是训练数据的收集。虽然没听说meta强行爬数据。但某些公司在爬虫上可谓是吃相难看，根本不管某些约定俗成的原则，比如看声明文件决定能不能爬，爬的时候不能把对方站点搞崩。
@@ -500,7 +500,7 @@ meta实验了纯文本，和带markdown的文本，发现后者效果差。所�
 
 少量人工整理数据。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaBghYCQdvnlUR22bhBs6An9gNJlTCIv9Owhz26RYwiaZIB5IUUDxOBwQ/640?wx_fmt=other&from=appmsg)
+﻿![](assets/8/a/8acc0aba734a5209989f2916cfdc1f34.jpg)
 ﻿
 
 从数据比例看，外文数据还是少。总体比例和预训练差别不算太大。
@@ -517,7 +517,7 @@ meta实验了纯文本，和带markdown的文本，发现后者效果差。所�
 
 基于不同对齐策略、数据组合训练多个版本的模型（让响应在不同的能力域具备不同优势），然后针对每个用户prompt，随机取两个模型，采样两个响应，让用户标注两个响应接受哪个，拒绝哪个。并标记两个响应之间的分差（4档），然后还鼓励标注员进一步接受的响应（自己改或让大模型改）。这样就得到了排序后的响应组：编辑后的>选中的>拒绝的。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaxYY9WvyGicyUDrzP8Gdb217Yeh8pk0v6wAMUwpl9tbD0fXcibokBLGGA/640?wx_fmt=other&from=appmsg)
+﻿![](assets/5/b/5b21326a5bca4a97793ac4d44f409924.jpg)
 ﻿
 
 ##### 数据清洗
@@ -652,7 +652,7 @@ b.技术框架非常原始，还是传统的外挂多个单模态encoder编码�
 
 注2：我有理由怀疑，是不是，meta也做了端到端的尝试，但是失败了，所以才转成现在这个不那么优美，但是能训起来的思路。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaicibDEzjIQb550Khm48PP98ngd0aL64SdfjBQtmiaQCerf51SWK1K2D9g/640?wx_fmt=other&from=appmsg)
+﻿![](assets/d/f/df71b04fdf1bf2e7a0d0794d138a25c8.jpg)
 ﻿
 
 ### 视觉
@@ -703,7 +703,7 @@ meta列举了外挂图片编码器的优点，比如：
 
 llama3.1模型族，原生支持多语言，代码，推理，工具使用。最大的模型是405B，支持128k的上下文。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiakJUxQLo8o28y1e7MwwCPS1BkT5r6HBeHdS8wTIxJUZoEhBwJMl2bHA/640?wx_fmt=other&from=appmsg)
+﻿![](assets/f/1/f1d85557ba04d5287f9d4cfb8f54aab8.jpg)
 ﻿
 
 不同参数量的llama3.1，在预训练阶段都是各自独立训练的，后训练阶段以数据为媒介进行蒸馏学习。
@@ -860,7 +860,7 @@ meta这里没有全部参数量化，只量化了矩阵计算参数中，全连�
 
 影响方面，测试过能提升预装填速度超过100%，在推理时能降低30%的推理延时，且提高100%的推理速度。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaNFoPlw2WibYibTQpSickDib9r3icdYPf2oJGJZcJJE5RVia6nHc75zLibyr2A/640?wx_fmt=other&from=appmsg)
+﻿![](assets/f/6/f620ffc389d2ae6cfe9b21ff8f8d7c2b.jpg)
 ﻿
 
   
@@ -869,12 +869,12 @@ meta这里没有全部参数量化，只量化了矩阵计算参数中，全连�
 
 看都不看
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaxF9ujuBFqsm9tkslNHD5Tq6PySvHAkRsHjP2fAnB7QkVZicpfxXdgVw/640?wx_fmt=other&from=appmsg)
+﻿![](assets/5/7/5701ac5dd7939cc910fff55e76f147ea.jpg)
 ﻿
 
 为什么不看。这左边的超参(5-shot，CoT)多到可以水10篇论文了。连不同规格之间的效果对比都不太明确。建议看各种竞技场battle结果之后，自己再部署试试。
 
-﻿![](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naKfE05rE13XExvZEKbRXVAiaVRibX9dAoNj4DPoahC6ibgjSVT8wKLgtnO9ia8ZKEb5EUC3M5iagJJtm4w/640?wx_fmt=other&from=appmsg)
+﻿![](assets/2/d/2dc19bb319664910db2943ad033f491b.jpg)
 ﻿
 
 英语学习篇
@@ -1100,7 +1100,7 @@ akin to
 
 [表情](javascript:;)
 
-![](https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzIzOTU0NTQ0MA==&mid=2247541607&idx=1&sn=f97e1feab29d03bf5e6bb3d77b9b244a&send_time=)
+![](assets/b/6/b60cb3a5b47ccc48ffad47ae7aa7a425.bmp)
 
 微信扫一扫  
 关注该公众号
@@ -1109,7 +1109,7 @@ akin to
 
 轻触阅读原文
 
- ![](http://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naI1jwOfnA1w4PL2LhwNia76vBRfzqaQVVVlqiaLjmWYQXHsn1FqBHhuGVcxEHjxE9tibBFBjcB352fhQ/0?wx_fmt=png) 
+ ![](assets/0/c/0c7f74f977e779431f32cfab73a6a085.png) 
 
 阿里云开发者
 

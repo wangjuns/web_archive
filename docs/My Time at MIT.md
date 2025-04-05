@@ -32,7 +32,7 @@ On distributed systems broadly defined and other curiosities. The opinions on th
 
 Twenty years ago, in 2004-2005, I spent a year at MIT’s Computer Science department as a postdoc working with Professor Nancy Lynch. It was an extraordinary experience. Life at MIT felt like paradise, and leaving felt like being cast out.
 
-[![Image 2](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoZE-0eOmKIQ1Z9jrcV_5e1KOny0ho0QAt-qP_asRcIKYan9UcCJDNyyHoxv7np-wV2bqoz2GkNTOqV9n4ImSywp2XunMcOq1euWAe1MN91FMDQedy4RyHbUx4zbdDnYXatF5lQFnbj0EXEpRC8xggO3cuC5VgnpB8fApgnKE50tItZGMzjcsolWTw1kk/w400-h296/stata.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoZE-0eOmKIQ1Z9jrcV_5e1KOny0ho0QAt-qP_asRcIKYan9UcCJDNyyHoxv7np-wV2bqoz2GkNTOqV9n4ImSywp2XunMcOq1euWAe1MN91FMDQedy4RyHbUx4zbdDnYXatF5lQFnbj0EXEpRC8xggO3cuC5VgnpB8fApgnKE50tItZGMzjcsolWTw1kk/s580/stata.jpg)
+[![Image 2](assets/2/5/251d22e48224875c103f4c0c4442211b.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoZE-0eOmKIQ1Z9jrcV_5e1KOny0ho0QAt-qP_asRcIKYan9UcCJDNyyHoxv7np-wV2bqoz2GkNTOqV9n4ImSywp2XunMcOq1euWAe1MN91FMDQedy4RyHbUx4zbdDnYXatF5lQFnbj0EXEpRC8xggO3cuC5VgnpB8fApgnKE50tItZGMzjcsolWTw1kk/s580/stata.jpg)
 
   
 
@@ -73,7 +73,7 @@ When you approach work with humility and curiosity, you learn more and participa
 
 ### Comments
 
-![Image 3](http://www.blogger.com/img/blogger_logo_round_35.png)
+![Image 3](assets/a/c/ac110b54ef156066f5d369789a5458ca.png)
 
 [Sreeram Venkitesh](https://www.blogger.com/profile/12808993258570461987) said…
 
@@ -111,7 +111,7 @@ This is definitely not a "learn distributed systems in 21 days" post. I recommen
 
 \-  [August 19, 2024](https://muratbuffalo.blogspot.com/2024/08/making-database-systems-usable.html "permanent link")
 
-[![Image 5: Image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu7wbyNklGJSrFBgwWvytde4zWr00DqBpM_uusD-YJZABk50a8eu21vI-lY-okTFhxFBAFAdkldB4xmyoGPmzuxJ2Ku4EE4Wk1F07ATfAtfdDjFJbUZSmFD8Id4_9UuHdny4PIRI4PUffxjoiwd2Lgtqx1QnPOOQu9JNvJYh4pdGUrxAd2wI6V3qNN6d4/w640-h365/Screenshot%202024-08-19%20at%208.34.42%E2%80%AFPM.png)](https://muratbuffalo.blogspot.com/2024/08/making-database-systems-usable.html)
+[![Image 5: Image](assets/8/4/849ef5a385bd75d6a27524715865591a.png)](https://muratbuffalo.blogspot.com/2024/08/making-database-systems-usable.html)
 
 C. J. Date's Sigmod 1983 keynote, "Database Usability", was prescient. Usability is the most important thing to the customers. They care less about impressive benchmarks or clever algorithms, and more about whether they can operate and use a database efficiently to query, update, analyze, and persist their data with minimal headache. (BTW, does anyone have a link to the contents of this Sigmod'83 talk? There is no transcript around, except for this short abstract .) The paper we cover today is from Sigmod 2007. It takes on the database usability problem raised in that 1983 keynote head-on, and calls out that the king is still naked.  Let's give some context for the year 2007. Yes, XML format was still popular then. The use-case in the paper is XQuery. The paper does not contain any  reference to json. MongoDB would be released in 2009 with the document model; and that seems to be great timing for some of the usability pains mentioned in the paper! Web 2.0 was in ...
 
@@ -133,7 +133,7 @@ As part of our zoom reading group ( wow, 4.5 years old now ), we discussed a pap
 
 \-  [January 17, 2024](https://muratbuffalo.blogspot.com/2024/01/scalable-oltp-in-cloud-whats-big-deal.html "permanent link")
 
-[![Image 6: Image](https://blogger.googleusercontent.com/img/a/AVvXsEixuW5RhqakvtCihi8JM91NYzNa7Ud6z3G2SM7D2fS4z1B60hF8w8pZOtnL7TW6n5HJHu9Uap4RNJO9lBCCy5LlXR2FaLterr1EOyZo7cNy7G2hvI0Z82BNQFdPywPLidWFFa76aPyaiVGg5G7ZdpneCtiDASM2uDZZZcLYmMhOW-tlJJVi4FdTMs7tMBI=w375-h400)](https://muratbuffalo.blogspot.com/2024/01/scalable-oltp-in-cloud-whats-big-deal.html)
+[![Image 6: Image](assets/a/4/a477eca85f6ae4767118be7cb9f31c16.png)](https://muratbuffalo.blogspot.com/2024/01/scalable-oltp-in-cloud-whats-big-deal.html)
 
 This paper is from Pat Helland, the apostate philosopher of database systems, overall a superb person, and a good friend of mine. The paper appeared this week at CIDR'24. (Check out the program for other interesting papers). The motivating question behind this work is: " What are the asymptotic limits to scale for cloud OLTP (OnLine Transaction Processing) systems? " Pat says that the CIDR 2023 paper "Is Scalable OLTP in the Cloud a Solved Problem?" prompted this question.  The answer to the question? Pat says that the answer lies in the joint responsibility of database and the application. If you know of Pat's work, which I have summarized several in this blog , you would know that Pat has been advocating along these lines before. But this paper provides a very crisp, specific, concrete answer. Read on for my summary of the paper. Disclaimer: This is a wisdom and technical information/detail packed 13-page paper, so I will try my best to summarize the sa...
 
@@ -167,7 +167,7 @@ I talked about the importance of reading foundational papers last week. To follo
 
 \-  [August 17, 2023](https://muratbuffalo.blogspot.com/2023/08/distributed-transactions-at-scale-in.html "permanent link")
 
-[![Image 8: Image](https://blogger.googleusercontent.com/img/a/AVvXsEiK7WDKU-lrvnGQtLR_hfnBoKNCRw1s87tprZQMXHWYzBwDSltJwUPcW-I5MLDsZkMP4geWQ0_d3anREK12CUYzJ5HYAMT3gIL4RvXmIt2dZKQ6pEu5VNMQHcQKpSdhRGWxd-0ZUiMUB6qU0x7ahO1iDzaUjySDXZ7YMlEAVSnSjdU3FFTI9qMbT4ZlmOc=w640-h326)](https://muratbuffalo.blogspot.com/2023/08/distributed-transactions-at-scale-in.html)
+[![Image 8: Image](assets/c/9/c9e2014da8e6ecb3547dda466618c30f.png)](https://muratbuffalo.blogspot.com/2023/08/distributed-transactions-at-scale-in.html)
 
 This paper appeared in July at USENIX ATC 2023. If you haven't read about the architecture and operation of DynamoDB, please first read my summary of the DynamoDB ATC 2022 paper . The big omission in that paper was discussion about transactions. This paper amends that. It is great to see DynamoDB, and AWS in general, is publishing/sharing more widely than before. Overview A killer feature of DynamoDB is predictability at any scale. Do read Marc Brooker's post to fully appreciate this feature. Aligned with this predictability tenet, when adding transactions to DynamoDB, the first and primary constraint was to preserve the predictable high performance of single-key reads/writes at any scale. The second big constraint was to implement transactions using update in-place operation without multi-version concurrency control. The reason for this was they didn't want to mock with the storage layer which did not support multi-versioning. Satisfying both of the above constraints may s...
 
@@ -179,7 +179,7 @@ This paper appeared in July at USENIX ATC 2023. If you haven't read about the ar
 
 \-  [August 09, 2024](https://muratbuffalo.blogspot.com/2024/08/linearizability-correctness-condition.html "permanent link")
 
-[![Image 9: Image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghnCgM-ioYdzIe_FTaeiO8P0NFlNx0Ex9SalCNl4SS9UOET5Wt_mmomXMed1Ife1ooH_4BbZLVUWZX-daZpKRlztrG1HA2SMiWI52DYiAejC-u1LSpJCRdhWBOIZCLvppl7V40m5K2TmR96zOmoOqWVTPj-eLQu5L7jrFsLOrlGRDb2Eb1EPWnOfU__kc/w526-h640/Screenshot%202024-08-09%20at%205.17.14%E2%80%AFPM.png)](https://muratbuffalo.blogspot.com/2024/08/linearizability-correctness-condition.html)
+[![Image 9: Image](assets/a/2/a28a40543f481d81bee6c9ff7a2f22d2.png)](https://muratbuffalo.blogspot.com/2024/08/linearizability-correctness-condition.html)
 
 This paper is from Herlihy and Wing appeared in ACM Transactions on Programming Languages and Systems 1990. This is the canonical reference for the linearizability definition. I had not read this paper in detail before, so I thought it would be good to go to the source to see if there are additional delightful surprises in the original text. Hence, this post. I will dive into a technical analysis of the paper first, and then discuss some of my takes toward the end. I had written an accessible explanation of linearizability earlier; you may want to read that first. I will assume an understanding of linearizability to keep this review at reasonable length. Introduction I love how the old papers just barge in with the model, without bothered by pleasantries such as motivation of the problem. These are the first two sentences of the introduction. "A concurrent system consists of a collection of sequential processes that communicate through shared typed objects . This model encompass...
 
@@ -193,7 +193,7 @@ Theme images by [Michael Elkan](http://www.offset.com/photos/394244)
 
 Murat Demirbas
 
-[![Image 10: My photo](http://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLaW4ea-yUbhwYd944KMrKA-k0v90aH-1A-cbxfOSon0GaZpuuHTGM__QWbRS6E6DFrXu6c1T7FBf3dYBBWHyJImAS_fNicnQjDvC58tf36XACW4jsSXqHaDFkjWHrz-UJjyidbqgylED2DkUaTUxqO_CA74QkIHKp2-jJRl2Ot2fScTQ/s220/hackerBuffalo.jpg)](https://www.blogger.com/profile/07842046940394980130)
+[![Image 10: My photo](assets/5/6/566b7bc5eceb4f7068e0b5806c638280.jpg)](https://www.blogger.com/profile/07842046940394980130)
 
 [Murat](https://www.blogger.com/profile/07842046940394980130)
 

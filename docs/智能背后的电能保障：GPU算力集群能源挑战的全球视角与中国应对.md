@@ -22,7 +22,7 @@
 
 **GPU算力需求的激增给电网和供电带来了新的压力。** 随着AI大模型的兴起，GPU算力集群正日益成为新建IDC的主流。然而，GPU服务器的功率通常是CPU服务器的数倍，这意味着GPU服务器的高功率将显著增加数据中心的散热系统能耗和总体能耗。在大模型训练阶段，需要将超过万卡以上的GPU部署在同一地点，以实现芯片间和服务器之间的高速网络连接，这导致超大规模的GPU算力集群在扩建时受到电力供应的限制。3月底，一条社交媒体的消息在国内AI圈快速传播，凸显了GPU算力集群建设受限于电力供给并会对电网稳定性带来的影响。根据微软工程师的爆料，为了训练GPT-6，微软在试图搭建拥有10万块英伟达H100 GPU的训练集群，但是如果在同一个州部署这样规模的集群，可能会导致电网崩溃，因此不得不跨区域部署。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/HhueXwdrROQy9V66G8AVbezV6Fv2ZTDCRWzFr8RvTJSiaYIysJX7C38jDeXfJZjYz9bfwwM6iaqmnzx0WCkMoG9w/640?wx_fmt=png&from=appmsg)
+![](assets/3/2/32681b7cc8816055fea6f3f6a136b7c3.png)
 
 **随着AI大模型从训练阶段步入推理阶段，其推理算力需求会显著高于训练算力。** AI大模型的电力需求将进一步增加，对不同区域的总体电力供应将带来挑战。荷兰国家银行的数据专家Alex de Vries估计，类似ChatGPT这样的AI系统，每天处理约2亿个用户请求所消耗的电力，相当于1.7万个美国家庭的日常用电量。据第三方推测，文生视频应用Sora的训练算力需求大概是GPT-4的1/4左右，而其推理算力需求是GPT-4的1000倍以上，更多的算力需求将带来更严峻的电力挑战。上述现象凸显了在AI技术快速发展的同时，亟需关注和优化数据中心的能源问题。  
 
@@ -53,7 +53,7 @@
 
 根据上述测算，2024年至2030年，全球GPU算力集群年度总耗电量将增长约11倍，年复合增长率为52.2 %。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/HhueXwdrROQy9V66G8AVbezV6Fv2ZTDCUUA9ib8xVbqYJFoAQrbWrDDURp35Sq2j5qBicbcLsGbyLYjPmqfKfL8w/640?wx_fmt=png)
+![](assets/6/7/670984091d6381342c0f7ec9b7e31bba.png)
 
 **新建GPU算力集群主要集中在美国，会对局部电力供给和传输带来显著挑战。** 
 
@@ -83,7 +83,7 @@
 
 根据上述测算，2024年至2030年，我国GPU算力集群年度总耗电量将增长约10倍，年复合增长率为49.8%。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/HhueXwdrROQy9V66G8AVbezV6Fv2ZTDCtcjNVRoPD0W08c8w5W2swl9dfP8EOUSsprJzD8qYfmiaaTgicMGKW4MQ/640?wx_fmt=jpeg)
+![](assets/1/e/1e6d358920700ecb5fd87ff4c7a5b4f8.jpg)
 
 **从总体供需关系看，新增的GPU算力集群功耗远低于我国新能源装机容量的增长。** 比对用电端和发电端的总体数据来看，持续扩大的新能源发电规模，结合正在推进中的新型电力系统建设，总体上能够满足高速增长的GPU算力集群用电需要。据国家能源局数据，2023年，全国发电装机容量约为2900GW，其中除火电外的清洁能源装机容量约为1500GW，占比为52.3%。其中风电和光伏近年来增长速度持续维持高位，2023年分别同比增长20.7%和55.2%。按照前述预测，2030年全国GPU算力集群功耗约为35GW，新能源新增装机规模将远超过GPU算力集群的功耗需求。
 
@@ -141,4 +141,4 @@ _**ENDING**_
 
 **\- 转载及合作请评论区或邮箱留言 -**
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/HhueXwdrROQy9V66G8AVbezV6Fv2ZTDCWYricuU1LzjqDt993Xe15zDIicaeQwIMoFAbkYSUH6w4a77mqXOeibz6A/640?wx_fmt=png&from=appmsg)
+![](assets/7/d/7d98ded0bb3f6370c604410526d7837f.png)

@@ -120,7 +120,7 @@ Equipped with SAEs, we can adapt Plan A by swapping out features for neurons. Th
 
 Some of our auditing teams did just this. Our best-performing team—which identified RM bias training data after only one researcher worked for 90 minutes—won by prompting the model with inputs like “The assistant is an AI model with potentially concerning behaviors” and searching through features until they struck gold, as shown in Fig. 4.
 
-![Image 4](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F90a3ca053c3bdcf79bb9bef872e21ffd7aa61a90-2560x1440.png&w=3840&q=75)
+![Image 4](assets/a/8/a81be512ec13035ad7787b56fa7405e1.png)
 
 Fig 4: A reward model bias feature. Each row shows a training sample on which the feature is most active. Darker shading indicates stronger feature activity.  
 

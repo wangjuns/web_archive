@@ -3,7 +3,7 @@
 
  來源：錦緞
 
-![](https://postimg.futunn.com//tmp/php1XGIKj.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/d/c/dc3f2a3a2efe3d38863c3e38f9befa78.webp)
 牛牛敲黑板：  
 
 本質上，組織依附於公司存在，公司依附於特定商業邏輯存在，商業邏輯依附於特定社會經濟的時代特徵存在。
@@ -50,7 +50,7 @@
 
 一言以蔽，如果你的生產力與生產關係的比值追不上時代的「帕累託最優」，那你的組織與組織文化必將過時。此時，那些符合時代特徵的後浪羣——即使它們依然稚嫩如幼童，正為資本與人羣擁上歷史舞臺。
 
-![](https://postimg.futunn.com//tmp/phpZD5Hoq.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/1/3/13dbd2d7cf52fdbcf9a54f0c5da8dd83.webp)
 
 圖2：生產和交換的帕累託最優，來源：網絡
 
@@ -66,7 +66,7 @@
 
 具體到中國產業視角，這幅畫面便徐徐打開了：過去一個時期，中國經濟的主流時代特徵，是基於互聯網與移動互聯網這一成熟基礎設施的模式創新。因此誕生了一批順應時代特徵的平臺型科技公司，我們去阿里和京東購物，去騰訊通信與遊戲，去美團解決一日三餐，去滴滴完成通勤出行，去抖音消磨空餘的時光……
 
-![](https://postimg.futunn.com//tmp/phpDshmvZ.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/c/3/c3b46019a6ad537a7b1dbe1146e1c3de.webp)
 
 圖3：知名互聯網公司，來源：中金
 
@@ -92,7 +92,7 @@
 
 對於「BAT」，如果僅以中波週期（康波週期中的中週期，一般8-12年）審讀，我們更傾向於AT，而放逐B。但經濟產業的脈絡卻從不是由中波決定，它是一個長波週期（康波週期中的長週期，一般50年）的效應結果。從長波週期審讀，只有掌握核心硬核技術科技樹的公司，才是一個產業時代的最終主導。
 
-![](https://postimg.futunn.com//tmp/phpr4Y0nI.jpg/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/2/6/268268677a6018ea30179d6f2346ad6c.webp)
 
 圖5：康波週期，來源：網絡
 
@@ -110,7 +110,7 @@
 
 搜索引擎現在看已經當然性的融入於互聯網基礎設施的最底層，但覆盤這一過程我們可以看到，兩家公司在搜索引擎上收攏到的現金流，都最大化流向了哺育硬核技術創新科技樹的土壤上。這樣的土壤之上，不止是百度，即使是谷歌也沒有內生出任何模式創新花朵。只是相對而言，谷歌的安卓留給了第三次產業革命最後的輝煌——移動互聯網上；而十年前，百度生下的火種——自動駕駛（Apollo ），燃燒於2021年即將開啟的新週期。 
 
-![](https://postimg.futunn.com//tmp/phpNohWGR.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/b/d/bd03b8bfb16ede867d975cdd65e63dc5.webp)
 
 圖6：科技公司研發費用率，來源：網絡
 
@@ -134,7 +134,7 @@
 
 從這三角效應上審閲，BAT從過去十年至今，已經相繼遇到各自瓶頸。 
 
-![](https://postimg.futunn.com//tmp/phpZgfga2.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/d/7/d74860467cc163d594bea56d0997d3ad.webp)
 
 圖7：組織三角，來源：錦緞
 
@@ -148,7 +148,7 @@
 
 遊戲對於騰訊來説是重中之重，10億級流量催生千億級變現的核心板塊。大資金再次用腳投票，促使我們要心裏有數的是：Naspers第一次減持至今兩三年來，騰訊在業務創新（模式創新）領域沒有展現太多增量的東西；至於足夠引發勢能裂變的技術創新，這些年尚未有苗頭——只有買買買。
 
-![](https://postimg.futunn.com//tmp/phpp3HxVb.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/6/8/689888263caf355ce16495d46afd17e1.webp)
 
 圖8：騰訊遊戲的體量，來源：騰訊年報
 
@@ -226,7 +226,7 @@
 
 百度的自動駕駛接下來會進入快速增長期。李震宇（百度集團資深副總裁、智能駕駛事業羣總經理）在上海車展上透露，2021下半年百度Apollo自動駕駛將迎來量產高峯，每個月都會有一款新車上市。隨着百度、華為的L4技術亮相，L4之前的自動駕駛在近幾年會加速「上車」，西南證券預測到2024年規模會到5424萬輛（大概汽車保有量的12%）。 
 
-![](https://postimg.futunn.com//tmp/phpdyFyF0.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/9/7/9711560b19ddf53d5c1b6e4cc9aba71f.webp)
 
 圖11：自動駕駛「上車」規模，來源：西南證券
 

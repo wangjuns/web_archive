@@ -15,7 +15,7 @@ Instance choices are not perfect, nor is the matching of those instances to hard
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7329eae8-c315-421e-af1d-0f42bb6ad85c_1024x459.png)
+![](assets/e/9/e93752b247ca90622f313d0e157a5874.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7329eae8-c315-421e-af1d-0f42bb6ad85c_1024x459.png)
@@ -42,7 +42,7 @@ First on the hardware layer. Microsoft tested this with multi-ported external me
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff55a84f2-d852-46b1-8656-1fe3e0b584ab_1024x573.png)
+![](assets/5/2/52fc92d4f04e4ed2d30d20c910c68147.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff55a84f2-d852-46b1-8656-1fe3e0b584ab_1024x573.png)
@@ -53,7 +53,7 @@ The following chart shows a fixed percentages of the current local DRAM (10%, 30
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F35e9fe3e-6c62-458a-8a54-3d7ce69710bd_1024x480.png)
+![](assets/d/b/dbe0d26f9a499b3d955200ba886b3f50.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F35e9fe3e-6c62-458a-8a54-3d7ce69710bd_1024x480.png)
@@ -64,7 +64,7 @@ The larger pools of 32 sockets would have EMCs connected to differing subsets of
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffdf55f36-ad9d-4eda-94a7-d520bb445954_1024x627.png)
+![](assets/6/d/6d00f8892b5078ecb307cd1942cd09ef.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffdf55f36-ad9d-4eda-94a7-d520bb445954_1024x627.png)
@@ -79,7 +79,7 @@ The accuracy of these algorithms is critical to saving on infrastructure cost. I
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b8446ac-c744-4fea-acd5-a71296431846_1024x678.png)
+![](assets/3/0/30ec6f4198d060637d937ffb763487e2.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2b8446ac-c744-4fea-acd5-a71296431846_1024x678.png)
@@ -90,7 +90,7 @@ As such, Microsoft benchmarked 158 workloads under two scenarios. One was the co
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F04b12e7f-a59f-4e9d-bc8d-1e72890ab42f_1024x367.png)
+![](assets/d/8/d83bc1f4a5ef454d4f42f83bb8fef1b2.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F04b12e7f-a59f-4e9d-bc8d-1e72890ab42f_1024x367.png)
@@ -101,7 +101,7 @@ The memory access latency was measured at 78ns when bandwidth exceeded 80GB/s. W
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F05f0a80f-cdd9-4d1b-8976-461880189b33_1024x668.png)
+![](assets/b/e/be31e0b424239e63e8ce1baa29450646.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F05f0a80f-cdd9-4d1b-8976-461880189b33_1024x668.png)
@@ -110,7 +110,7 @@ This further emphasizes the importance of the prediction model. Microsoft’s ra
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0742fbf3-fafd-43b3-acb1-7148beaec12e_1024x363.png)
+![](assets/6/8/6868a3a3b710a8b43a5d7b70ae86f91b.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0742fbf3-fafd-43b3-acb1-7148beaec12e_1024x363.png)

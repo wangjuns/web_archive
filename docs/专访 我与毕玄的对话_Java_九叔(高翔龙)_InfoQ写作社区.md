@@ -13,7 +13,7 @@
 
 很多时候，我发现，人往往很容易看出和指出别人的问题，但是面对自己时，却更愿意从别人口中听到已知的答案，或许这是一种心灵上的慰藉，我也不例外。阿里的牛人挺多，但我认为真正能够感同身受的或许只有同我一样为基础架构出身的毕玄大师，因此，拜高山去。
 
-![](https://static001.geekbang.org/infoq/4d/4d3b9802e0e5a07dd1d28dfcc970c122.jpeg?x-oss-process=image%2Fresize%2Cp_80%2Fauto-orient%2C1)
+![](assets/9/3/93aa9734fcb6d8b72bca4b44d6aaad61.jpeg)
 
 20210305 杭州
 
@@ -45,7 +45,7 @@ PS：这个问题毕玄笑场了，意思是有师兄就不错了，哈哈哈~~
 
 欢迎关注公众号
 
-![](https://static001.geekbang.org/infoq/42/42fd2d898a46f6536fe69298b18c4015.jpeg?x-oss-process=image/resize,p_80/auto-orient,1)
+![](assets/8/f/8fda4c8f589c2fc9b19607663a635570.jpeg)
 
 推荐文章：
 

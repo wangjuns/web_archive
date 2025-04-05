@@ -6,14 +6,14 @@
 
   
 
-![Image 1: cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/VWpZENjIo5tkGZydukc0x6pgn7SO18KJiaOFJcyicNGf5HKApesJYvP4wq6734YibVVnLyaRA4N1NSIC0Y3TB2kiaA/0?wx_fmt=jpeg)
+![Image 1: cover_image](assets/1/9/19724cbc71e7a270d4a445fbaa4657e6.jpg)
 
 3 位连续创业者打造 Manus，应用潮里有更多 “underdog” 的机会（文末附 Manus、Open Manus 实测）
 ================================================================
 
 Original 晚点团队 [晚点LatePost](javascript:void(0);)
 
-![Image 2: profile_qrcode](https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=MzU3Mjk1OTQ0Ng==&mid=2247524182&idx=1&sn=59753efb99a5d7993cc249d28f658c5e&send_time=)
+![Image 2: profile_qrcode](assets/3/f/3f4aa54c064fc73051f1a546a5ac775f.bmp)
 
 晚点LatePost
 
@@ -25,9 +25,9 @@ Original 晚点团队 [晚点LatePost](javascript:void(0);)
 
 _2025年03月08日 12:33_
 
-![Image 3: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJoUL2CoUq6JXySQkia4mmCDWpWKg93xmpibeu66WvkibOnIJQw1k9JbiaGQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 3: Image](assets/d/4/d4435b5bd44ddc44099bebd0a9887f77.webp)
 
-![Image 4: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJL0ibe5uhCc4PNI2n6hRZWsbA62DcL2V3ibhJxdbWCcCmZicszSVABeGiaQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 4: Image](assets/d/8/d8fc4582e0bb0ad14612081c0cdbb2a7.webp)
 
 边缘崛起、风暴来临。
 
@@ -57,7 +57,7 @@ _2025年03月08日 12:33_
 
 **肖弘：“请你一定相信，壳也有壳的用处！”**
 
-![Image 5: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJt9lkmfT2kmN3ouxGJzJhH2vnUtmTyXwSnHf3miaYO1Wd40syozgAhFA/640?wx_fmt=png&from=appmsg)
+![Image 5: Image](assets/f/5/f559d8d29e7c57b2acf071826ac8c420.png)
 
 肖弘在华中科技大学分享创业经历。图片来自真格基金。
 
@@ -101,7 +101,7 @@ _2025年03月08日 12:33_
 
 **季逸超：“做能想到最野的事”**
 
-![Image 6: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJPvdAIswPBMp12I0ibZVnEY8Mn07u1PI9TUYcco64ia8B2xaFKRokTxTQ/640?wx_fmt=png&from=appmsg)
+![Image 6: Image](assets/a/3/a3c61ac488fbec46a9361a7bc9674828.png)
 
 季逸超。图片来自 Manus。
 
@@ -137,7 +137,7 @@ Magi 原本的目标达到了，但个人用户也在尝鲜后离开。“任何
 
 **张涛：这是他的第十段职业生涯**
 
-![Image 7: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJBvEtiaecVqUznEXqDDrMM6dgib0iaQzbhSictwVX0eStC3NfvStzAIHicFw/640?wx_fmt=png&from=appmsg)
+![Image 7: Image](assets/c/e/ceddf210fc2c54eba3b310e6ea89d4d6.png)
 
 张涛。图片来自三节课。
 
@@ -175,7 +175,7 @@ Manus 发布前，他在社交媒体上分享，他们定义了一个名叫 “P
 
 发给 Manus，我们等了约 60 分钟后，得到如下回复：
 
-![Image 8: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJdicLmjp6hkaAq0n3jaM6nHrvhqXU7LsTBnDRrw7tja6nDTAVRCQaJXA/640?wx_fmt=png&from=appmsg)
+![Image 8: Image](assets/3/c/3c43350f6f8ea05ed56b378c1c005656.png)
 
 Manus 完成了收集资料、撰写文章的任务，但存在幻觉，比如三位创始人，只有两位 90  后。稿件质量并没有达到《晚点 LatePost》的要求（作者松了一口气）。
 
@@ -183,7 +183,7 @@ Manus 完成了收集资料、撰写文章的任务，但存在幻觉，比如�
 
 我们明确提出该故障后，Manus 又处理了约 10 分钟，也没有解决。Manus 方面称，这个是已知的问题，正在修复。
 
-![Image 9](https://mp.weixin.qq.com/s/QXPx7efrGK2Y6msGTqAFlQ)
+![Image 9](assets/1/0/10b9fb4a16182305c7c944f5a368cd20.jpg)
 
 已关注
 
@@ -219,9 +219,9 @@ https://manus.im/share/2mG73dSNoqU6zettnIJ0u1?replay=1
 
 发给 Open Manus （调用 Claude 3.7 模型），等待 7 分钟，消耗 25.7 万 token（花费 10 元人民币），得到如下两版回复（左右滑动查看）：
 
-![Image 12: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJkLCZbOTzxvonicicgXqlABD92Hz1jqSM5TntXUzENib58OdvcLAWlboIQ/640?wx_fmt=png&from=appmsg)
+![Image 12: Image](assets/a/9/a92325be7a4ff715acbf1c8d6d1b79f0.png)
 
-![Image 13: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJjt7uiceVgmBDuS8a8jPZM5wJWffmvaCgVIv6GKJBNnV4GEDF4Xiah6BA/640?wx_fmt=png&from=appmsg)
+![Image 13: Image](assets/c/a/ca3be5c0b25490a26e5a016974181007.png)
 
 左右滑动查看
 
@@ -231,7 +231,7 @@ Open Manus 也无法处理图片，但最后反馈了两个版本，一个无法
 
 Open Manus 执行任务的过程：
 
-![Image 14](https://mp.weixin.qq.com/s/QXPx7efrGK2Y6msGTqAFlQ)
+![Image 14](assets/1/0/10b9fb4a16182305c7c944f5a368cd20.jpg)
 
 已关注
 
@@ -263,13 +263,13 @@ _退出全屏_
 
 **\-** **FIN \-**
 
-![Image 17: Image](https://mmbiz.qpic.cn/mmbiz_jpg/VWpZENjIo5tkGZydukc0x6pgn7SO18KJA4ztnNhzmwjmGI3UJJDBXLU9tPeXyD6qvhEJicQA4K13fWv3RYOVicCw/640?wx_fmt=jpeg)
+![Image 17: Image](assets/d/9/d98e2efa424968ca488e3ecb47e043ae.jpg)
 
-![Image 18: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJIJg6a16GF2gCgARNjDAoMmbGIbiclEePNia9mLSKDTHuLEEoaUH7Hs0Q/640?wx_fmt=png&from=appmsg)
+![Image 18: Image](assets/0/6/063e39c2dbcacbd0fccb5b78ad882f6a.png)
 
-[![Image 19: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJVVPmj8wBsicUurBzEeFaQ51Bx6l4BGib3GtAicGwkfNXSgiaootOiaLibVibw/640?wx_fmt=png&from=appmsg)](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247522545&idx=1&sn=168af21acccea554d01f6f2e4dc8cd72&scene=21#wechat_redirect)
+[![Image 19: Image](assets/1/0/103d138ab26f0773ad5d4b984bc56cc1.jpg)
 
-![Image 20: Image](https://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5tkGZydukc0x6pgn7SO18KJhicrstdgv7hd3KjyZOiaVRKork2JBGBfRXG6SW0JQACpUzaCXcqVwRibQ/640?wx_fmt=png&from=appmsg)
+![Image 20: Image](assets/2/9/2912d29d87bc3f69c40571410a20ecd8.png)
 
 预览时标签不可点
 
@@ -279,7 +279,7 @@ Close
 
 Name cleared
 
-![Image 21: 赞赏二维码](https://mp.weixin.qq.com/s/QXPx7efrGK2Y6msGTqAFlQ)**微信扫一扫赞赏作者**
+![Image 21: 赞赏二维码](assets/1/0/10b9fb4a16182305c7c944f5a368cd20.jpg)**微信扫一扫赞赏作者**
 
 Like the Author[Other Amount](javascript:;)
 
@@ -361,13 +361,13 @@ Submit更多
 
 [表情](javascript:;)
 
-![Image 22](https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzU3Mjk1OTQ0Ng==&mid=2247524182&idx=1&sn=59753efb99a5d7993cc249d28f658c5e&send_time=)Scan to Follow
+![Image 22](assets/0/0/000337b5fd347a4b4d05d00cff6332ae.bmp)Scan to Follow
 
 继续滑动看下一个
 
 轻触阅读原文
 
-![Image 23](http://mmbiz.qpic.cn/mmbiz_png/VWpZENjIo5shpibl3ibKsc1iaR8H1U2mwdZByoibtqaCQBODt48OxjZIEcFUIyFvfHEdNSOB8pWJkmspuWv1pjErVw/0?wx_fmt=png)
+![Image 23](assets/6/e/6e6bac6b24b92b767abee1890f45b5c4.png)
 
 晚点LatePost
 
@@ -383,7 +383,7 @@ Submit更多
 
  
 
-![Image 24](https://mp.weixin.qq.com/s/QXPx7efrGK2Y6msGTqAFlQ) Scan with Weixin to  
+![Image 24](assets/1/0/10b9fb4a16182305c7c944f5a368cd20.jpg) Scan with Weixin to  
 use this Mini Program
 
 [Cancel](javascript:void(0);) [Allow](javascript:void(0);)

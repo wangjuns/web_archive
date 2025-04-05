@@ -6,7 +6,7 @@
 
 [
 
-![](https://miro.medium.com/v2/resize:fill:88:88/1*KqpicOFO7jh7FXGjoJ2Bcg.jpeg)
+![](assets/7/e/7e48cd15df31a0ab961391c0d57521de.jpeg)
 
 
 
@@ -19,7 +19,7 @@
 
 ](https://dmnkplzr.medium.com/?source=post_page-----eb982c78ffac--------------------------------)[
 
-![](https://miro.medium.com/v2/resize:fill:48:48/1*CJe3891yB1A1mzMdqemkdg.jpeg)
+![](assets/a/6/a6ff2676ffcc0c7aad8aaf1d79379785.jpeg)
 
 
 
@@ -34,7 +34,7 @@
 
 ](https://towardsdatascience.com/?source=post_page-----eb982c78ffac--------------------------------)
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*njagJOgiT-VTJjQ18bugcw.png)
+![](assets/4/0/40b3f870edc4436eae97ce8d630e3426.png)
 
 Build your own chatbot with context injection — Image by the author
 
@@ -46,7 +46,7 @@ However, despite our extensive efforts to store an increasing amount of data in 
 
 > **About 80% of all data in companies is unstructured, like work descriptions, resumes, emails, text documents, power point slides, voice recordings, videos and social media**
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*khp2laWoSRwpbr8qNUowVQ.png)
+![](assets/1/a/1a86340c43fb66653982a2b4ed7966bd.png)
 
 Distribution of data in companies — Image by the author
 
@@ -80,7 +80,7 @@ When using context injection, we are not modifying the LLM, we focus on the prom
 
 So we need to think about how to provide the prompt with the right information. In the figure below, you can see schematically how the whole thing works. We need a process that is able to identify the most relevant data. To do this, we need to enable our computer to compare text snippets with each other.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*llY9iXA65ixiTknTzRfmZA.png)
+![](assets/9/a/9af6f463f18a39c4a5866a48eeaab017.png)
 
 Similarity search in our unstructured data — Image by the author
 
@@ -114,13 +114,13 @@ The most important modules of Langchain are (Langchain, 2023):
 
 In the image below, you can see where these components come into play. We load and process our own unstructured data using the document loaders and text splitters from the indexes module. The prompts module allows us to inject the found content into our prompt template, and finally, we are sending the prompt to our model using the model's module.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*MKlUfYZdwSWpEulibj6S_g.png)
+![](assets/8/1/8116f9df4b093fc19d08ee57e1451905.png)
 
 Components you need for your LLM app — Image by the author
 
 **5\. Agents:** Agents are entities that use LLMs to make choices regarding which actions to take. After taking an action, they observe the outcome of that action and repeat the process until their task is completed.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*0B6QnFUcDmdlMis3VpQBDg.png)
+![](assets/5/c/5c412cbb9e4050e70a268e14f62f308a.png)
 
 Agents decide autonomously how to perform a particular task — Image by the author
 
@@ -163,7 +163,7 @@ print(content\_div.get\_text())
 
 ```
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*UqDmReJGQvoPIMLoTN1CQQ.png)
+![](assets/9/b/9b8295f73ee087ae0435cadc58382109.png)
 
 Next, we must divide the text into smaller sections called text chunks. Each text chunk represents a data point in the embedding space, allowing the computer to determine the similarity between these chunks.
 
@@ -188,11 +188,11 @@ print(texts\[1\])
 
 ```
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*VQxygC3OQGVV1cKhWIksYQ.png)
+![](assets/c/5/c53ee008708644ac292a96f9a0d9e547.png)
 
 This splits our entire text as follows:
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*YcleaA2sDs_IyjmrNzIajQ.png)
+![](assets/c/5/c5f766d250f14605536ce8d878b13fc5.png)
 
 Langchain text spliter — Image by the author
 
@@ -200,7 +200,7 @@ Now we need to make the textual components understandable and comparable to our 
 
 The image provides a simple example that may seem obvious to most humans. However, we need to find a way to make the computer understand that the name “Charles” is associated with men rather than women, and if Charles is a man, he is the king and not the queen.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*AFQ_7hZCCeZ5mefYQcP3rA.png)
+![](assets/4/a/4ab7673edb277b4b750252c5501cce28.png)
 
 Making language understandable for our computer — Image by the author
 
@@ -208,13 +208,13 @@ Over the last few years, new methods and models have emerged that do just that. 
 
 Embedding models attempt to learn exactly that by analyzing the context in which words are typically used. Since tea, coffee, and breakfast are often used in the same context, they are closer to each other in the n-dimensional space than, for example, tea and pea. Tea and pea sound similar but are rarely used together. (AssemblyAI, 2022)
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*eX_EPXeubuHE-2RQKj2vFw.png)
+![](assets/9/4/94f0550e723b1c7877900ed0ec0c5771.png)
 
 Embeddings analyze the context in which words are used, not the word itself — Image by the author
 
 The embedding models provide us with a vector for each word in the embedding space. Finally, by representing them using vectors, we are able to perform mathematical calculations, such as calculating similarities between words as the distance between data points.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*xyNqBLjpZfXie9Sroq_PZg.png)
+![](assets/3/0/303bb1b10933eb3b5c11710cd2ba5673.png)
 
 Random english words in a two dimensional embeddings space — Image by the author
 
@@ -230,7 +230,7 @@ In this example, our dataset consists of a single sentence: “Google is a tech 
 
 During the training process, we focus on predicting the next word for each input word. When we begin at the start of the sentence, the input neuron corresponding to the word “Google” receives a value of 1, while the remaining neurons receive a value of 0. We aim to train the network to predict the word “is” in this particular scenario.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*wBdVed3JqYK_RkwhjvW68A.png)
+![](assets/0/b/0bbb21832dcad293187439022a718f5a.png)
 
 Word2Vec: Learning word embeddings — Image by the author
 
@@ -238,7 +238,7 @@ In reality, there are multiple approaches to learn embedding models, each with i
 
 In CBOW, we take the surrounding words as input and aim to predict the middle word. Conversely, in Skip-gram, we take the middle word as input and attempt to predict the words occurring on its left and right sides. However, I won’t delve into the intricacies of these methods. Let’s just say that these approaches provide us with embeddings, which are representations that capture the relationships between words by analysing the context of huge amounts of text data.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*tAqFVnP1KkjkRq0MaeAgWA.png)
+![](assets/7/6/7634aadddbfe428ff65830f1c0e37dba.png)
 
 CBOW vs. Skip-gram — Image by the author
 
@@ -248,7 +248,7 @@ If you want to know more about embeddings_, there is a wealth of information ava
 
 What I just tried to explain using a simple example in a 2-dimensional embedding space also applies to larger models. For instance, the standard Word2Vec vectors have 300 dimensions, while OpenAI’s Ada model has 1536 dimensions. These pretrained vectors allow us to capture the relationships between words and their meanings with such precision that we can perform calculations with them. For example, using these vectors, we can find that France + Berlin — Germany = Paris, and also faster + warm — fast = warmer. (Tazzyman, n.d.)
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*1YYcTHNEAP-_5P8m3f8BZQ.png)
+![](assets/d/a/da0ce47bc2862e125d26f7fa3197aa4d.png)
 
 Calculate with embeddings — Image by the author
 
@@ -282,13 +282,13 @@ len(embedding)
 
 ```
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*peJSrLLLA0lS9pYJP_gUGA.png)
+![](assets/f/2/f26abd76ac891ac148af27b7fa94ab8b.png)
 
 We convert our text, such as the first text chunk containing “2023 text-generating language model,” into a vector with 1536 dimensions. By doing this for each text chunk, we can observe in a 1536-dimensional space which text chunks are closer and more similar to each other.
 
 Let’s give it a try. We aim to compare the users’ questions with the text chunks by generating embeddings for the question and then comparing it with other data points in the space.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*lssUQDyZfz3MZCpCxIh-bw.png)
+![](assets/6/f/6f67921b706285b1a56e254b4921dd02.png)
 
 Which text segment is semantically closer to the user’s question? — Image by the author
 
@@ -322,7 +322,7 @@ df.sort_values(by=\["cos_sim"\], ascending=False)
 
 ```
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*28DElD2h_JJZY3o0RUE6JA.png)
+![](assets/8/c/8c2f0342a34e8b537fbc3fbf494dc274.png)
 
 Now we have the option to choose the number of text chunks we want to provide to our LLM in order to answer the question.
 
@@ -377,21 +377,21 @@ If you want to see a list with all attributes, use \_\_dict\_\_:
 llm.\_\_dict\_\_
 ```
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*Zlp7es4pLXPnuor5cunL5A.png)
+![](assets/d/7/d751d947b0b4a1cb6396b43c1af70eb2.png)
 
 If we don’t specify a particular model, the langchain connector defaults to using “text-davinci-003”.
 
 Now, we can directly invoke the model in Python. Simply call the llm function and provide your prompt as input.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*DG2TlWsCQpQDeaUG3bvkwA.png)
+![](assets/2/e/2e79a75c8ccb817326ee2d078080742e.png)
 
 You can now ask GPT anything about common human knowledge.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*e4PdZEl3xy3yvQKAyOxKpg.png)
+![](assets/e/5/e53f074340afce9bcb8f9de6c0aaec1c.png)
 
 GPT can only provide limited information on topics that are not included in its training data. This includes specific details that are not publicly available or events that occurred after the training data was last updated.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*OQCfMR4GAK9CviozQ9e7CQ.png)
+![](assets/8/3/83a58e42ef36e9bfcedec9e0d2761b1b.png)
 
 **So, how can we make sure that the models are able to respond to questions about current events?**
 
@@ -497,7 +497,7 @@ df.sort_values(by=\["cos_sim"\], ascending=False)
 
 ```
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*CbHra8uwVaXrgNmmvwxdBQ.png)
+![](assets/c/0/c0fa10aa4a7fbc9f6dacfbf12e3ac139.png)
 
 The text chunks look quite messy, but let’s give it a shot and see if GPT is clever enough to handle it.
 
@@ -582,7 +582,7 @@ llm(prompt_text)
 
 By using that specific template, I am incorporating both the context and the user’s question into our prompt. The resulting response is as follows:
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*0HX0IfgaAuoz96ByB2S6mQ.png)
+![](assets/4/1/41476515cc8baca86575a10a7f1fd32c.png)
 
 Surprisingly, even this simple implementation seems to have produced some satisfactory results. Let’s proceed by asking the system a few more questions regarding British prime ministers. I will keep everything unchanged and solely replace the user’s question:
 
@@ -590,7 +590,7 @@ Surprisingly, even this simple implementation seems to have produced some satisf
 users_question = "Who was the first Prime Minister of the UK?"
 ```
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*uGwXclXtGjBX8FsmP4t_hw.png)
+![](assets/4/9/49f51773b358cf20afddba8c00359f93.png)
 
 It appears to be functioning to some extent. However, our objective now is to transform this slow process into a robust and efficient one. To achieve this, we introduce an indexing step where we store our embeddings and indexes in a vector store. This will enhance the overall performance and decrease the response time.
 
@@ -602,7 +602,7 @@ In order to efficiently search our embeddings, we need to index them. Indexing i
 
 In recent years, a number of vector stores have been released. Especially in the field of LLMs, the attention around vector stores has exploded:
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*LKO2xA_5ZvhftwI4YhqL7A.png)
+![](assets/a/8/a854e1083c5132061fdaee9155f8878a.png)
 
 Release Vector Stores in the past years — Image by the author
 
@@ -610,7 +610,7 @@ Now let’s just pick one and try it out for our use case. Similar to what we di
 
 1.  **Collect data that we want to use to answer the users’ questions:**
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*ApbpqcZUMF-YaA6DbnVGww.png)
+![](assets/6/2/62b81934daa447f61e834ee05625b2e3.png)
 
 Image by the author
 
@@ -645,7 +645,7 @@ with open('output.txt', 'w', encoding='utf-8') as file:
 
 **2\. Load the data and define how you want to split the data into text chunks**
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*f5mcqjHkiz9QX63dpQnzxg.png)
+![](assets/5/5/550d57008ca47c0edd5ba36be274b4f7.png)
 
 Image by the author
 
@@ -670,7 +670,7 @@ texts = text\_splitter.create\_documents(\[text\])
 
 **3\. Define the Embeddings Model you want to use to calculate the embeddings for your text chunks and store them in a vector store (here: Chroma)**
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*ydbixXRwfgMYVdpctYTdew.png)
+![](assets/7/0/708f8e539d312cd2df50bd267a175763.png)
 
 Image by the author
 
@@ -689,7 +689,7 @@ db = Chroma.from_documents(texts, embeddings)
 
 **4\. Calculate the embeddings for the user’s question, find similar text chunks in our vector store and use them to build our prompt**
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*r2n4uA-ZlxZatnlhTVwv5Q.png)
+![](assets/d/6/d680f978f8c2f509e90f9912c8908266.png)
 
 Image by the author
 
@@ -731,7 +731,7 @@ llm(prompt_text)
 
 ```
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*O8pTg-ppUf2DBUiehwbQcw.png)
+![](assets/f/1/f10d26ae7e10d66d73835fa461f3ba74.png)
 
 To enable our LLM to analyze and answer questions about our data, we usually don’t fine-tune the model. Instead, during the fine-tuning process, the objective is to improve the model’s ability to effectively respond to a specific task, rather than teaching it new information.
 

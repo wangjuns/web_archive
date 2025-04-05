@@ -1,7 +1,7 @@
 # Deep Learning in a Nutshell: Core Concepts | NVIDIA Technical Blog
 [Deep Learning in a Nutshell: Core Concepts | NVIDIA Technical Blog](https://developer.nvidia.com/blog/deep-learning-nutshell-core-concepts/) 
 
- ![](https://developer.nvidia.com/blog/wp-content/uploads/2015/08/DL_dog_340x340-300x300.jpg)
+ ![](assets/6/1/61310998431a39c7981641dc6fb9d161.jpg)
 This post is the first in a series I’ll be writing for Parallel Forall that aims to provide an intuitive and gentle introduction to [deep learning](https://developer.nvidia.com/deep-learning). It covers the most important deep learning concepts and aims to provide an understanding of each concept rather than its mathematical and theoretical details. While the mathematical terminology is sometimes necessary and can further understanding, these posts use analogies and images whenever possible to provide easily digestible bits comprising an intuitive overview of the field of deep learning.
 
 I wrote this series in a glossary style so it can also be used as a reference for deep learning concepts.
@@ -29,7 +29,7 @@ While many tasks can be automated by Feature Learning (like object and speech re
 
 Feature learning algorithms find the common patterns that are important to distinguish between classes and extract them automatically to be used in a classification or regression process. Feature learning can be thought of as [Feature Engineering](#feature-engineering) done automatically by algorithms. In deep learning, convolutional layers are exceptionally good at finding good features in images to the next layer to form a hierarchy of nonlinear features that grow in complexity (e.g. blobs, edges -> noses, eyes, cheeks -> faces). The final layer(s) use all these generated features for classification or regression (the last layer in a convolutional net is, essentially, multinomial [logistic regression](#logistic-regression)).
 
-![](https://developer.nvidia.com/blog/wp-content/uploads/2015/11/hierarchical_features.png)
+![](assets/d/0/d03ed5d7a9f01a506d88d78d6a9f4e3d.png)
 
 Figure 1: Learned hierarchical features from a deep learning algorithm. Each feature can be thought of as a filter, which filters the input image for that feature (a nose). If the feature is found, the responsible unit or units generate large activations, which can be picked up by the later classifier stages as a good indicator that the class is present. Image by Honglak Lee and colleagues (2011) as published in “Unsupervised Learning of Hierarchical Representations with Convolutional Deep Belief Networks”.
 
@@ -56,10 +56,10 @@ Regression analysis estimates the relationship between statistical input variabl
 
 Logistic regression applies the logistic sigmoid function (see Figure 2) to weighted input values to generate a prediction of which of two classes the input data belongs to (or in case of multinomial logistic regression, which of multiple classes).
 
-![](https://developer.nvidia.com/blog/wp-content/uploads/2015/11/sigmoid1-300x200.png)
+![](assets/e/8/e89612165fc45b2baa916fb9959d93ab.png)
 
-Figure 2: The logistic sigmoid function ![](https://s0.wp.com/latex.php?latex=f%28x%29+%3D+%5Cfrac%7B1%7D%7B1%2Be%5E%7B-x%7D%7D&bg=transparent&fg=000&s=0&c=20201002)
-. [Image Source](https://en.wikipedia.org/wiki/File:Logistic-curve.svg)
+Figure 2: The logistic sigmoid function ![](assets/6/2/6253a3d9159734f0198f0c9bb12fbaf6.png)
+. [Image Source](assets/4/5/45fe46c54f50f619bc49894d698798f8.svg)
 
 Logistic regression is similar to a non-linear [perceptron](https://developer.nvidia.com/blog/parallelforall/deep-learning-nutshell-history-training#perceptron) or a neural network without hidden layers. The main difference from other basic models is that logistic regression is easy to interpret and reliable if some statistical properties for the input variables hold. If these statistical properties hold one can produce a very reliable model with very little input data. This makes logistic regression valuable for areas where data are scarce, like the medical and social sciences where logistic regression is used to analyze and interpret results from experiments. Because it is simple and fast it is also used for very large data sets.
 
@@ -83,7 +83,7 @@ The term artificial neuron—or most often just neuron—is an equivalent term t
 
 ### Activation Function
 
-An activation function takes in weighted data (matrix multiplication between input data and weights) and outputs a non-linear transformation of the data. For example, ![](https://s0.wp.com/latex.php?latex=output+%3D+max%280%2Cweighted_data%29&bg=transparent&fg=000&s=0&c=20201002)
+An activation function takes in weighted data (matrix multiplication between input data and weights) and outputs a non-linear transformation of the data. For example, ![](assets/2/4/246cb13265ff36a491a363cda6ddff10.png)
  is the [rectified linear activation function](https://developer.nvidia.com/blog/parallelforall/deep-learning-nutshell-history-training#rectified-linear-function) (essentially set all negative values to zero). The difference between units and activation functions is that units can be more complex, that is, a unit can have multiple activation functions (for example [LSTM](https://developer.nvidia.com/blog/parallelforall/deep-learning-nutshell-sequence-learning#LSTM) units) or a slightly more complex structure (for example maxout units).
 
 The difference between linear and non-linear activation functions can be shown with the relationship of some weighted values: Imagine the four points _A1_, _A2_, _B1_ and _B2_. The pairs _A1_ / _A2_, and _B1_ / _B2_ lie close to each other, but _A1_ is distant from _B1_ and _B2_, and vice versa; the same for _A2_.
@@ -105,13 +105,13 @@ Convolutional Deep Learning
 
 Convolution is a mathematical operation which describes a rule of how to mix two functions or pieces of information: (1) The feature map (or input data) and (2) the convolution kernel mix together to form (3) a transformed feature map. Convolution is often interpreted as a filter, where the kernel filters the feature map for information of a certain kind (for example one kernel might filter for edges and discard other information).
 
-![](https://developer.nvidia.com/blog/wp-content/uploads/2015/11/convolution.png)
+![](assets/8/f/8fd14abba4afd072cff32bb0bdc7e2b0.png)
 
-Figure 2: Convolution of an image with an edge detector convolution kernel. Sources: [1](https://en.wikipedia.org/wiki/File:Vd-Orig.png) [2](https://en.wikipedia.org/wiki/File:Vd-Edge3.png).
+Figure 2: Convolution of an image with an edge detector convolution kernel. Sources: [1](assets/e/d/ed9c17b62508c725838af0369138e457.png) [2](assets/d/6/d6d57a48f93fbd65c04e0e8eadfec55b.png).
 
 Convolution is important in physics and mathematics as it defines a bridge between the spatial and time domains (pixel with intensity 147 at position (0,30)) and the frequency domain (amplitude of 0.3, at 30Hz, with 60-degree phase) through the convolution theorem. This bridge is defined by the use of Fourier transforms: When you use a Fourier transform on both the kernel and the feature map, then the convolution operation is simplified significantly (integration becomes mere multiplication). Some of the fastest GPU implementations of convolutions (for example some implementations in the [NVIDIA cuDNN](https://developer.nvidia.com/blog/parallelforall/accelerate-machine-learning-cudnn-deep-neural-network-library/) library) currently make use of Fourier transforms.
 
-![](https://developer.nvidia.com/blog/wp-content/uploads/2015/11/Convolution_schematic.gif)
+![](assets/c/1/c11387b9c2561c45127e7f467e44ec18.gif)
 
 Figure 3: Calculating convolution by sliding image patches over the entire image. One image patch (yellow) of the original image (green) is multiplied by the kernel (red numbers in the yellow patch), and its sum is written to one feature map pixel (red cell in convolved feature). Image source: [1](http://deeplearning.stanford.edu/wiki/index.php/Feature_extraction_using_convolution).
 
@@ -119,7 +119,7 @@ Convolution can describe the diffusion of information, for example, the diffusio
 
 While it is unknown which interpretation of convolution is correct for deep learning, the cross-correlation interpretation is currently the most useful: convolutional filters can be interpreted as feature detectors, that is, the input (feature map) is filtered for a certain feature (the kernel) and the output is large if the feature is detected in the image. This is exactly how you interpret cross-correlation for an image.
 
-![](https://developer.nvidia.com/blog/wp-content/uploads/2015/11/crosscorrelation_Example.png)
+![](assets/4/d/4d4f77bcc638c2df1389d9b7dc9a6334.png)
 
 Figure 4: Cross-correlation for an image. Convolution can be transformed to cross-correlation by reversing the kernel (upside-down image). The kernel can then be interpreted as a feature detector where a detected feature results in large outputs (white) and small outputs if no feature is present (black). Images are taken from [Steven Smith](http://www.dspguide.com/swsmith.htm)’s excellent [free online book about digital signal processing](http://www.dspguide.com/pdfbook.htm).
 
@@ -143,7 +143,7 @@ Convolutional networks usually also use pooling layers (see [pooling](#pooling))
 
 More recent convolutional networks use inception modules (see [inception](#inception)) which use 1×1 convolutional kernels to reduce the memory consumption further while speeding up the computation (and thus training).
 
-![](https://developer.nvidia.com/blog/wp-content/uploads/2015/11/fig1.png)
+![](assets/2/3/23da4c8a5c92a457a9018399e838e219.png)
 
 Figure 5: An image of a traffic sign is filtered by 4 5×5 convolutional kernels which create 4 feature maps, these feature maps are subsampled by max pooling. The next layer applies 10 5×5 convolutional kernels to these subsampled images and again we pool the feature maps. The final layer is a fully connected layer where all generated features are combined and used in the classifier (essentially logistic regression). Image by [Maurice Peemen](http://parse.ele.tue.nl/mpeemen).
 

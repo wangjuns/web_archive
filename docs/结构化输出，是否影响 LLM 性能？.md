@@ -17,7 +17,7 @@ https://blog.dottxt.co/say-what-you-mean.html　
 
 论文基于三组评估结果得出这一结论，这些结果表明，与非结构化生成（图表中的“自然语言”/NL）相比，结构化生成（图表中的“JSON 模式”）表现更差。下图（根据原图表重绘并重新调整比例）展示了令人担忧的性能表现：　
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2icSMc1VBIYr71pE6OFE9AOC8ykgnzwJzuAIyH0jAKCy5v8gf9Aic3brafgQFXXiaPBFLAmAUuqHjw0c9dvK05Gxw/640?wx_fmt=png&from=appmsg)
+![](assets/e/c/ecb93d62af2d9e02c9c323ec5bcc7a8b.png)
 
 图 1：《让我自由表达？》的原始发现　
 
@@ -32,7 +32,7 @@ https://blog.dottxt.co/say-what-you-mean.html　
 
 对于急需答案的读者，**关于结构化生成是否会降低性能的简短回答是：明确不会**。下图显示了我们针对论文中提到的所有问题进行了快速 JSON 生成实现后的结果。　
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2icSMc1VBIYr71pE6OFE9AOC8ykgnzwJzvbuCsqmGibt5HwrypU8Kgia9XIgHtumVHZmW2yDVk0Ds3GJW3ia8xK7gQ/640?wx_fmt=png&from=appmsg)
+![](assets/5/b/5b109ead295e6dc566520ad5816e3408.png)
 
 图 2：重新实现相关评估的结果　
 
@@ -97,7 +97,7 @@ answer_regex = r'answer is ([A-Za-z]{4})'
 
 通过遍历实验数据的记录结果，我们很快发现严格正则解析与 AI 解析结果之间存在差异：　
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2icSMc1VBIYr71pE6OFE9AOC8ykgnzwJzVVsRNsbrHj73cEHypc0ywX9Fzp3AvzgY6s1VcwKuiccheIsKLIXZQibg/640?wx_fmt=png&from=appmsg)
+![](assets/5/d/5de336fb6e95a5c277e31902a35fdd16.png)
 
 图 3：严格正则解析与 AI 解析的对比　
 
@@ -120,7 +120,7 @@ alt_regex_1 = r'answer is ([A-Za-z]-[A-Za-z]-[A-Za-z]-[A-Za-z])'alt_regex_2 = r'
 
 结果表明，这些正则表达式组合可以覆盖我们错过的所有情况，无需额外调用更强大的模型。使用这些灵活的正则表达式组合解析后，我们得到以下结果：　
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2icSMc1VBIYr71pE6OFE9AOC8ykgnzwJzhAZSImTVTgmUkP84owWql2z7bAfXPLklZhVLPL7cqftMMRW5GZX2hA/640?wx_fmt=png&from=appmsg)
+![](assets/6/f/6fcc5b3db9f58a97aa02491faddc7868.png)
 
 图 4：严格正则解析、AI 解析和灵活正则解析的比较　
 
@@ -132,7 +132,7 @@ alt_regex_1 = r'answer is ([A-Za-z]-[A-Za-z]-[A-Za-z]-[A-Za-z])'alt_regex_2 = r'
 
 运行 outlines.generate.text 后，我们得到以下结果，与论文中记录的结果进行比较：　
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2icSMc1VBIYr71pE6OFE9AOC8ykgnzwJz2to4uOBClhnujItud1y8VfkRtWiaCKQQvb9DYoYJicWbQhibazAYfut3A/640?wx_fmt=png&from=appmsg)
+![](assets/1/1/115148082206e20d314b01822add0da1.png)
 
 图 5：复现原始自然语言（NL）结果　
 
@@ -168,7 +168,7 @@ struct_strict = outlines.generate.regex(    model,    cot_regex + answer_regex, 
 
 完成后，我们通过运行上述生成器来测试结构化生成结果，结果如下：　
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2icSMc1VBIYr71pE6OFE9AOC8ykgnzwJzdgFGVRwicWujrMlVhtIuTudrqiaIgUjWeGic7Wic8KpLBhwYUYicZDWiaWiaA/640?wx_fmt=png&from=appmsg)
+![](assets/f/8/f82fde5b849ae91d261bc867016dc5a7.png)
 
 图 6：使用结构化生成复现自然语言（NL）结果　
 
@@ -178,7 +178,7 @@ struct_strict = outlines.generate.regex(    model,    cot_regex + answer_regex, 
 
 通过对如何正确实施结构化生成的深入了解，我们可以进一步分析论文中 JSON 结果的问题。下图是论文中关于 JSON 模式表现的图表：　
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2icSMc1VBIYr71pE6OFE9AOC8ykgnzwJz89ibicD5SosPLMmyjibd73jZ4d3ibmD3bW8gFlDFXuV6A5BelYvvRQ9ezw/640?wx_fmt=png&from=appmsg)
+![](assets/1/7/17dbee8386d309603542a9f259de2781.png)
 
 图 7：原始图表显示 JSON 模式在“最后一个字母”任务中的糟糕表现　
 
@@ -247,7 +247,7 @@ from outlines.fsm.json_schema import build_regex_from_schemaschema_regex = build
 
 在上述改进提示的基础上，我们重新运行了 JSON 模式的生成任务。以下是最终结果的比较：　
 
-![](https://mmbiz.qpic.cn/mmbiz_png/2icSMc1VBIYr71pE6OFE9AOC8ykgnzwJzsK9xdFgkwJOxu80ds1CZXgpWh263kAJfXZokNaDqJUo3GfeB4sIeCA/640?wx_fmt=png&from=appmsg)
+![](assets/7/b/7b9d13424df275bcc0c37b8b2c8af687.png)
 
 图 8：使用改进的提示对比结构化和非结构化 JSON 生成结果（与自然语言生成结果比较）　
 

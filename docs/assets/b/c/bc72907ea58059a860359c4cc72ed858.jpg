@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-CN" id="html"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-8K169TXENS"></script><script>window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8K169TXENS');</script><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover"><meta name="fragment" content="!"><meta name="apple-itunes-app" content="app-id=1191720421, app-argument=sspai://sspai.com"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><link rel="icon" href="https://cdn-static.sspai.com/favicon/sspai.ico"><title>少数派 - 高效工作，品质生活</title><link rel="stylesheet" href="https://cdn-static.sspai.com/libs/lightgallery.js-1.4.0/dist/css/lightgallery.min.css"><link href="/feed" title="少数派" type="application/rss+xml"><script>const darkMode = window.localStorage.getItem('darkMode') ? parseInt(window.localStorage.getItem('darkMode')) : 0
+      const matchMedia = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      if ((!darkMode && matchMedia) || darkMode === 2) {
+        document.getElementById('html').className='theme-dark'
+      } else {
+        document.getElementById('html').className=''
+      }</script><script defer="defer" src="https://static.sspai.com/static/js/element-ui.6de6fd7a.js"></script><script defer="defer" src="https://static.sspai.com/static/js/sspai-ui.ebbe2fad.js"></script><script defer="defer" src="https://static.sspai.com/static/js/chunk-vendors.a9f51d2c.js"></script><script defer="defer" src="https://static.sspai.com/static/js/app.bb11454c.js"></script><link href="https://static.sspai.com/static/css/element-ui.1373d582.css" rel="stylesheet"><link href="https://static.sspai.com/static/css/sspai-ui.a204295a.css" rel="stylesheet"><link href="https://static.sspai.com/static/css/app.0fd9e21b.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but sspai doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="https://cdn-static.sspai.com/libs/vue@2.7.16/vue.runtime.min.js"></script><script src="https://cdn-static.sspai.com/libs/vuex@3.6.2/vuex.min.js"></script><script src="https://cdn-static.sspai.com/libs/vue-router@3.6.5/vue-router.min.js"></script><script src="https://cdn-static.sspai.com/libs/lightgallery.js-1.4.0/dist/js/lightgallery.min.js"></script><script src="https://cdn-static.sspai.com/libs/jquery@3.7.1/jquery-3.7.1.min.js"></script><script src="https://cdn-static.sspai.com/libs/nc.js"></script><script>var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?92174dab8163cf598817a93d11d5c588";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();</script><script>(function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();</script></body></html>

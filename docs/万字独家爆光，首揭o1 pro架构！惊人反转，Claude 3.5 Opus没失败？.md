@@ -5,7 +5,7 @@ URL Source: https://mp.weixin.qq.com/s/LozJEE1sAAYAOrEFDVb6mg
 Markdown Content:
 ### 
 
-![Image 68: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYO9fcWHPJeBMrr4vw7iaxGvGheicIpiaLAM2ibaQZJcpCflQBbcDiaR7E1icw/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 68: Image](assets/1/e/1e1a39f23c6a71ce3cdef57cd54f9d96.webp)
 
 ### 
 
@@ -25,7 +25,7 @@ Markdown Content:
 
 最近，外媒SemiAnalysis一篇深度报道再次指明了方向——Scale的维度远不止预训练，Scaling Law仍将继续下去。
 
-![Image 69: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYKCrD3kiakDfrw6lAgribKRaJJ6KgUshzkcB1ibmLH4iaaxJg9iaxFibB4lFw/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 69: Image](assets/0/4/04da673c31adb6d75b0d4ef7734d5c54.webp)
 
 据爆料，Claude 3.5 Opus并非如传言所说，内部已经失败了。
 
@@ -35,7 +35,7 @@ Markdown Content:
 
 SemiAnalysis分析称，相比直接对外开放这款超大杯模型，Anthropic更愿意将其用于训练优化，发布Claude 3.5 Sonnet就已足够！
 
-![Image 70: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYszrdMP2SwTia5gx4VSibAPr2tiapyvAibQbcSmicpjxaZDntibP8P1TjZKIQ/640?wx_fmt=png&from=appmsg)
+![Image 70: Image](assets/3/4/3442d487bd5d2cec769871313432c6c2.png)
 
 不仅如此，这份最新报告中，三位行业分析师独家揭秘了o1和o1 pro的架构，深入探究了Orion未来规划。
 
@@ -57,7 +57,7 @@ o1在推理过程中，实际上在推理过程中只会沿着单一CoT前进，
 
 而o1 Pro则采用了自洽性（self-consistency），或多数投票（majority vote）的方法。（注：如下token经济学的部分中，会有更很多介绍）
 
-![Image 71: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYPES5hltmMYKH2hq0nLzTWkYHQZVa6Wlj5yX3xEKhYkTuFFIqYVuMcA/640?wx_fmt=png&from=appmsg)
+![Image 71: Image](assets/7/f/7fef59b087b6c51ce98fe715d6b9d5e5.png)
 
 关于o1如何生成其单一的思维链，有几种理论。
 
@@ -93,7 +93,7 @@ PRM类似于一种奖励机制，可以在验证和生成之间进行切换。
 
 这主要是因为o1的训练过程在很大程度上，依赖功能验证器（functional verifiers）在训练期间为模型提供反馈。
 
-![Image 72: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYSGqP4ppYtm7le1exBZybbPUalBbFINVNLWbfR7mjx9CGIZWuJicpfCA/640?wx_fmt=png&from=appmsg)
+![Image 72: Image](assets/c/9/c9f3984a2779e2ef8281b939a6f17037.png)
 
 OpenAI打造「草莓训练」，生成合成数据
 
@@ -131,7 +131,7 @@ OpenAI打造「草莓训练」，生成合成数据
 
 另一方面，Anthropic背后金主爸爸亚马逊下一代系统（代号Project Rainier）配备了16个Trainium2，但只有2个CPU，是8:1的比例。
 
-![Image 73: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYEpnz4FZXq20NGiaUxZvMKdQHjFjIkJtSuHOkEibt3IGQbBrOwBglmg4g/640?wx_fmt=png&from=appmsg)
+![Image 73: Image](assets/d/c/dc680ecf10a35ab82b532d4fde3a4b7c.png)
 
 可见，下一代训练系统的CPU与GPU资源之间存在巨大差异，英伟达系统能够让OpenAI运行更复杂的功能验证器，而Anthropic在每FLOP成本和内存带宽/容量成本方面具有优势。
 
@@ -173,7 +173,7 @@ OpenAI打造「草莓训练」，生成合成数据
 
 他们目前正在训练一个在预训练规模上介于GPT-4o和Orion之间的模型。
 
-![Image 74: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYlEh62E04lpOFzzndVKbia43Tu9G99icicsJFuj4Y5Smn3eTLXO4FtH88g/640?wx_fmt=png&from=appmsg)
+![Image 74: Image](assets/e/6/e65b3ec286bff2f1535b7ac845c31ab4.png)
 
 他们会先预训练一个「基础模型」，然后从中派生出两个模型：一个是传统的聊天模型，另一个是真正的推理模型。
 
@@ -219,7 +219,7 @@ o1推理架构：token经济学
 
 请在以下错误的等式中添加一对括号使其成立：1 + 2 \* 3 + 4 \* 5 + 6 \* 7 + 8 \* 9 = 479
 
-![Image 75: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgY0YRbnMRL1qorDvvZXoTtCVWHNrLRzxtibNLdq8ClmpcBbua4OLicgWZQ/640?wx_fmt=png&from=appmsg)
+![Image 75: Image](assets/f/7/f71e13b88692490146ea2b9ac9a2ad44.png)
 
 从Qwen发布博客中可以看到，这个问题需要生成约2166个词才能得出答案
 
@@ -229,7 +229,7 @@ o1推理架构：token经济学
 
 由于推理模型的每个token成本显著更高，查询成本在o1-mini的情况下高出24倍，而在o1-preview的情况下高出57倍。
 
-![Image 76: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYfLX0BibsVnibnPGUzb71Ic1V2PqsZ5w1BzLLJGiax4NFmB8ZQ5c2PB1vw/640?wx_fmt=png&from=appmsg)
+![Image 76: Image](assets/5/5/557639709997093efd88ffcba4608fd8.png)
 
 这种查询成本的差异，足以令人震惊，但需要关注的重要部分是序列长度和KV缓存（KVCache）。
 
@@ -241,7 +241,7 @@ o1推理架构：token经济学
 
 这是根据「Roofline模型」进行计算得出的纯理论值。
 
-![Image 77: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgY54brAqJzmict8oFfyPaFk3odzTfd6tkvp38k2z0sib0kFjEhMNnCQmBA/640?wx_fmt=png&from=appmsg)
+![Image 77: Image](assets/5/8/5850392fb94f68f15cca878520884dc3.png)
 
 在此简化分析中，还未考虑不同批大小对内存带宽利用率或模型FLOPs利用率的影响
 
@@ -269,11 +269,11 @@ KV缓存大小随序列长度线性增长，但也随着批大小线性增长，
 
 如果将参数考虑在内，用于KV缓存的可用内存将减少到 235GB（下图中的红线），实际上在序列长度约为16k token时就已达到内存限制。
 
-![Image 78: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYRZaBpibPUibK99zkOyKXSNnIn0U6iakMrfQoIyODzw2NtLfnT6JxUmrDw/640?wx_fmt=png&from=appmsg)
+![Image 78: Image](assets/7/b/7b68e46c7ce3f2b85fa83c3683fbefe3.png)
 
 由于KV缓存大小的增加直接导致更大的内存容量和带宽需求。当批大小保持恒定时，这也降低了交互性，或者限制了最大批大小至16，从而提供最低的交互性。
 
-![Image 79: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYtwrdSRn5tbUohCw9ztB80QTpkMM96xaYnNQCqz6s0TkGO1IYHINrVQ/640?wx_fmt=png&from=appmsg)
+![Image 79: Image](assets/0/2/02cc7f19d2be1a9fc35da0242e68763d.png)
 
 另一个关键因素是FLOP需求如何随着序列长度的增加而扩展：
 
@@ -283,7 +283,7 @@ KV缓存大小随序列长度线性增长，但也随着批大小线性增长，
 
 在下图中可以看到，随着上下文长度的增加，推理系统很快达到FLOPS的限制——在下例中，约为4096 的序列长度。
 
-![Image 80: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgY90K3ISNq2yc2N23F52dpKIMic510s5SyT1HhgbTyUDd2a3ytfBxqjjQ/640?wx_fmt=png&from=appmsg)
+![Image 80: Image](assets/f/7/f7e3e8c2de63bbcfafff9903c4c7e7b0.png)
 
 序列长度的增加极大地线性增加了内存和FLOP需求，并分别呈现线性和二次方增长，这导致批大小显著缩小，从而难以分摊集群总拥有成本。
 
@@ -322,7 +322,7 @@ KV缓存大小随序列长度线性增长，但也随着批大小线性增长，
 
 这也为OpenAI将ChatGPT Pro订阅价格从20美元提高到200美元提供了合理的依据。
 
-![Image 81: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYwNaJH4Iam5VEpnrUicE7e5Uzn0f7Mpp6ic1ms2pBPRk9AmSax1OayqbQ/640?wx_fmt=png&from=appmsg)
+![Image 81: Image](assets/1/7/173bd6462b88967743c3391547deccdd.png)
 
 但实际上，OpenAI的成本增加远低于价格上涨的幅度。
 
@@ -344,7 +344,7 @@ OpenAI o1已向世界证明了推理模型的巨大潜力，为AI开辟了全新
 
 当CPU主频遇到瓶颈后，业界迅速转向多核架构等新方向。虽然功耗和散热始终是个挑战，但创新从未停止。
 
-![Image 82: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgY9Sbr3olg4oibGJBoicBCA50UdXWWLXkP0WhWv8cwv2UvonnfYWhJSqgw/640?wx_fmt=png&from=appmsg)
+![Image 82: Image](assets/c/1/c1f663cda6e7867e585d58e6af435577.png)
 
 摩尔定律走向终结的讨论曾经十分热闹，但最近声音也小了很多。主要是因为像英伟达这样的AI领军企业找到了全新的扩展维度，带来了显著的算力提升。
 
@@ -356,7 +356,7 @@ OpenAI o1已向世界证明了推理模型的巨大潜力，为AI开辟了全新
 
 因此，就像过去50多年的摩尔定律一样，AI领域的「Scaling Law」也会持续扩展下去。
 
-![Image 83: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYsoo5KlTCFOTPKBXiaeRDqiaE2JDhxo7ib9SfaJq06dfqdhIicyPQefvl8g/640?wx_fmt=png&from=appmsg)
+![Image 83: Image](assets/1/4/14c595767fe26e18a5baa794a52e7dc1.png)
 
 Scaling不只预训练
 
@@ -388,7 +388,7 @@ Scaling不只预训练
 
 在OpenAI论文「Let’s Verify Step by Step」中，研究人员介绍了PRM800K过程监督数据集，其中人工数据标注员对来自MATH数据集12,000个问题的75,000个解决方案中的800,000个过程步骤进行了注释，这些方案就是由生成器生成的。
 
-![Image 84: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYth9Ae7srVslMtHGlBrnrXVM0VwCkp6J573GK114oa4ropdvS6XQSvA/640?wx_fmt=png&from=appmsg)
+![Image 84: Image](assets/8/3/83378ba9fa726f28b7282dad4e867587.png)
 
 收集这些注释的成本不可忽视。在原始数学论文中，一些大学生被要求在一小时内完成20个问题，其得分在40%到90%之间，90%的得分者，是一位三次获得IMO金牌的选手。
 
@@ -404,7 +404,7 @@ OpenAI论文指出，由于成本原因，建立一个足够大的人工注释PR
 
 「Math-Shepherd」论文使用了自动过程注释——生成多条路径，然后通过以下两种方式评估这些路径：如果路径导致正确的最终答案，则将其标记为一个好的推理步骤（即硬估计）；或者根据该步骤导致正确解决方案的频率分配一个分数（即软估计）。
 
-![Image 85: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYTdCdJXwPjjnI3AibNL670LqLv58RGYtwP6hticIH9waJRfh046yucCfw/640?wx_fmt=png&from=appmsg)
+![Image 85: Image](assets/6/8/68478201369aa342d6e4889e69f76f38.png)
 
 第四个模型是奖励模型（Reward Model），从过程注释标签中训练而来。
 
@@ -414,7 +414,7 @@ ORM通常对模型提供的多种答案进行排序，选择排名最高的答�
 
 「Let’s Verify Step by Step」论文展示了PRM相较于ORM的更强表现。尽管如此，OpenAI仍然更多依赖于ORM。
 
-![Image 86: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgY63dicLOyPfsc7IiarXSIfXJWPV0kibyYfeuKfuryXMY1JKRghoPujXXUg/640?wx_fmt=png&from=appmsg)
+![Image 86: Image](assets/9/b/9b0d45fdb1f815534931d8a6c84daf2c.png)
 
 在「Math-Shepherd」中，就是通过一步一步近端策略优化（PPO）进行强化学习，从而训练最终的LLM，使其掌握期望的CoT推理行为。
 
@@ -422,7 +422,7 @@ ORM通常对模型提供的多种答案进行排序，选择排名最高的答�
 
 o1-preview的发布引起了业界对全新Scaling Law的关注——即测试时计算（推理时计算）越多，答案越好，而利用这一scaling维度的努力正处于一个重要的转折点。
 
-![Image 87: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYWPibmYM7O6vyjcCQs54GQW2akfGvC8fsGbC8ry084ia6sVWyUu7dCLqw/640?wx_fmt=png&from=appmsg)
+![Image 87: Image](assets/4/6/46434bbab42f196c97e39cc82d3c1a88.png)
 
 测试时scaling并不是一个新概念。在棋类游戏和扑克中，scaling测试时计算的理念已经存在了一段时间。比如，AlphaGo在测试时使用蒙特卡洛树搜索来决定下一步棋。
 
@@ -436,7 +436,7 @@ o1-preview的发布引起了业界对全新Scaling Law的关注——即测试�
 
 一旦具备经济可行性，允许o1调整CoT的长度和计算资源的使用，将成为利用测试时计算scaling的关键技术。
 
-![Image 88: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYlnPU84eDpaBNTDZBttSicRdI6IvqZ0OwmG0zID1V6xbolCjpB2ykvQQ/640?wx_fmt=png&from=appmsg)
+![Image 88: Image](assets/8/4/84f949b2abbc7cf796750a9de82748f9.png)
 
 从评估结果和下方图表中可以看出，即使只尝试一次，GPT-4o也能击败其他模型。
 
@@ -444,7 +444,7 @@ scaling测试时计算最简单的方式是同时增加运行的样本数量，�
 
 论文「Large Language Monkeys」表明，简单的重复采样可以scaling推理时计算，并产生更好的结果。
 
-![Image 89: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYLV8Nel4BHerjJQDiaJVIebwdpiaGp9VicLaAUszrnmHibOHhWaFcTtUIyQ/640?wx_fmt=png&from=appmsg)
+![Image 89: Image](assets/7/b/7b822c920d295bb30648e779d5549d7a.png)
 
 这可以说是最基本的搜索方法之一。
 
@@ -452,7 +452,7 @@ scaling测试时计算最简单的方式是同时增加运行的样本数量，�
 
 有人可能会认为，仅仅让这些较小的模型多次思考一个问题可能会更准确且更便宜，但我们需要一个有效的验证器来判断是否成功生成了「莎士比亚全集」式的答案。
 
-![Image 90: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYBzTGiaicwRDbrumPXnsQwAkTacT9sCkd13gu0N6xibarKiakOibSgLK7LgA/640?wx_fmt=png&from=appmsg)
+![Image 90: Image](assets/e/5/e5783551d64182ff57dc0562439d73ed.png)
 
 「这是最好的时代，也是最糟的时代」
 
@@ -468,13 +468,13 @@ Sasha Rush在其关于测试时scaling的推测（o1）的演讲视频中，对�
 
 在这种方法中，多次将提示词输入模型，以生成多个响应，然后通过选择在一定数量的样本中出现次数最多的响应来确定正确答案。
 
-![Image 91: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgY4Rux3PPCdOUUyYjnrcf7lvC8XiaHwjEV00Sj3BLFp4BVlxuHCmRmpQQ/640?wx_fmt=png&from=appmsg)
+![Image 91: Image](assets/8/b/8bcd6c360930951bd0b16ab5e4b7f25c.png)
 
 Best-of-N采样是另一种方法。
 
 在这种方法中，为特定提示词生成N个解决方案，然后使用验证器模型识别出导致正确答案的思维链。
 
-![Image 92: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYqrhU2zMh2lOnjYuYPvnK0RqvxmcMWValZ6PtShkAnEBAvgZQR9NXfw/640?wx_fmt=png&from=appmsg)
+![Image 92: Image](assets/2/a/2ad546b86794f9d9fe38c2a89e17fe91.png)
 
 蒙特卡洛展开是一种基于Best-of-N的技术。在这种方法中，通过从某个中间步骤出发生成多个路径来完成思维链，从而对该中间步骤进行评估。
 
@@ -490,7 +490,7 @@ Scaling训练比Scaling推理计算更便宜
 
 微软仍然无法全面推出其Copilot功能集；Sora无法广泛使用，为此，奥特曼甚至关闭了注册入口。
 
-![Image 93: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYq7W35JWEJncWpJZvZ3GeMVRX6R2d9d9MzcQmSXWoIzmic1F1G0H0VEA/640?wx_fmt=png&from=appmsg)
+![Image 93: Image](assets/b/1/b1ad4b45b738f654d70de950a203de7d.png)
 
 无论是在预训练还是推理阶段，计算能力依然非常有限。
 
@@ -498,13 +498,13 @@ Scaling训练比Scaling推理计算更便宜
 
 具体而言，通过使用比Chinchilla最优点多两个数量级的FLOPs进行过度训练，可以实现与Chinchilla最优点相同的性能，同时将推理成本降低一个数量级。
 
-![Image 94: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgY4DNUtxbkr84fz2vAkeSQd1U4ribbICIia2xc9HCFia60WAJicNia34ianUgA/640?wx_fmt=png&from=appmsg)
+![Image 94: Image](assets/7/4/742670acfde86e97aaa77df383bf3ce5.png)
 
 scaling预训练两个数量级所需的成本将比以往任何时候都更高，但这仍然是合理的。
 
 超大规模计算提供商也在继续建设更大的集群，比如马斯克计划建立一个拥有100万块GPU的集群。
 
-![Image 95: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1icibjOExkph0sr8G2GObibgYDwCnaqfb2U7k08Jsic5bv0aB1AJ1ZjRSXeQhgibWTmKicFBvA4dpTnUUg/640?wx_fmt=png&from=appmsg)
+![Image 95: Image](assets/1/d/1d942c0be14a61b97fbf4596927a6d49.png)
 
 鉴于OpenAI和微软目前大约在数十万块GPU上运行GPT的推理，对预训练进行scaling似乎仍然能够提供所需的成本节约。
 
@@ -512,8 +512,8 @@ scaling预训练两个数量级所需的成本将比以往任何时候都更高�
 
 https://semianalysis.com/2024/12/11/scaling-laws-o1-pro-architecture-reasoning-infrastructure-orion-and-claude-3-5-opus-failures/#scaling-training-is-cheaper-than-scaling-inference-time-compute
 
-![Image 96: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/UicQ7HgWiaUb0MgGI7q0jDFiaOXoFEYOt9KZAHXFEyUgo6VTk2BFcZnWeUY3H54SbV2CQ6aKLMV80e9cicFfbr5rbQ/640?wx_fmt=jpeg&from=appmsg)
+![Image 96: Image](assets/f/7/f7744cc59d7b300ec5ebc741d673065c.jpg)
 
-![Image 97: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/UicQ7HgWiaUb1zQVabV9vH2AD26zWR4LcWFaKS7zNnDmkmDqibTs4VSbbT4icL5KZIH4cSeQtRbibiaAP4CFcuBIBAkg/640?wx_fmt=jpeg&from=appmsg)
+![Image 97: Image](assets/d/0/d00c9c56712751a39bac7c986616efb2.jpg)
 
-![Image 98: Image](https://mmbiz.qpic.cn/mmbiz_gif/UicQ7HgWiaUb10PoMc8QQNrjsp8lOMiaPwVkHbjVicxntJynwdmjiadosl2znIvDTSjWsp4kcqlbqVdFt6TxqpptrkA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1)
+![Image 98: Image](assets/c/8/c84aeb06345139ee197bc86141d3f74d.gif)

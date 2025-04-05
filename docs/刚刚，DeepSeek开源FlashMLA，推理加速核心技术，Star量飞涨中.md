@@ -13,11 +13,11 @@ Markdown Content:
 
 北京时间周一上午 9 点，刚一上班（同时是硅谷即将下班的时候），DeepSeek 兑现了自己的诺言，开源了一款用于 Hopper GPU 的高效型 MLA 解码核：FlashMLA。
 
-![Image 1: image.png](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9XFMBXsrZE4shTW4MMEEMBdlswTnastwZCabGXKG6aNa6UPxdAzXJadno8jbic1NDhlyntIudSvtQ/640?wx_fmt=png&from=appmsg)
+![Image 1: image.png](assets/e/c/ec9c9205fa61abd0bdeca327406d5c89.png)
 
 该项目上线才 45 分钟就已经收获了超过 400 star！并且在我们截图时，Star 数量正在疯狂飙升。
 
-![Image 2: image.png](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9XFMBXsrZE4shTW4MMEEMBV8StO65uTapu07xxfof7ibYb4NiaZ5cUffBX23uf34xQ73qjXt3ZIObQ/640?wx_fmt=png&from=appmsg)
+![Image 2: image.png](assets/9/c/9cb648ace6a121368dbcaaab93a4f3f7.png)
 
 项目地址：https://github.com/deepseek-ai/FlashMLA
 
@@ -76,15 +76,15 @@ Markdown Content:
 
 该项目发布后也是好评如潮。
 
-![Image 3: image.png](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9XFMBXsrZE4shTW4MMEEMBRpZMdqKCbacyBbkEY8MTWHcjAJjPJZv9uvx1mla0DKnezlhiaYiauEcA/640?wx_fmt=png&from=appmsg)
+![Image 3: image.png](assets/8/b/8be3a01f1e0f842b087ec02a98d4bd5f.png)
 
 甚至有网友打趣地表示：「听说第五天会是 AGI」。
 
-![Image 4: image.png](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9XFMBXsrZE4shTW4MMEEMBoynoDefibRSFmbyoUbPj2HeNZE2LC3LBc3La22KGfE62x4vzLyeQI9A/640?wx_fmt=png&from=appmsg)
+![Image 4: image.png](assets/9/a/9a389010e83eeeebf1c3ecfdfdd5e108.png)
 
 最后，还是那句话：这才是真正的 OpenAI
 
-![Image 5: image.png](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9XFMBXsrZE4shTW4MMEEMBIELXyqAmPZlGictCHnb4S37oKRRvOosice5ol0uXmleDbicV7PBm2zIaw/640?wx_fmt=png&from=appmsg)
+![Image 5: image.png](assets/7/f/7f9b2a75ebd17854a723761953b31d4c.png)
 
 © THE END 
 

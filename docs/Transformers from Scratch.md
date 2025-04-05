@@ -51,11 +51,11 @@ This is a perfectly valid way to convert symbols to numbers, but it turns out th
 
 Another way to think about one-hot encoding is that each word still gets assigned its own number, but now that number is an index to an array. Here is our example above, in one-hot notation.
 
-![](https://e2eml.school/images/transformers/one_hot_vocabulary.png)
+![](assets/1/f/1fd488885a464c3d2e13538d5d7c642a.png)
 
 So the sentence "Find my files" becomes a sequence of one-dimensional arrays, which, after you squeeze them together, starts to look like a two-dimensional array.
 
-![](https://e2eml.school/images/transformers/one_hot_sentence.png)
+![](assets/a/4/a4b05535dfd7433f4578c48bcc46d58a.png)
 
 Heads-up, I'll be using the terms "one-dimensional array" and "**vector**" interchangeably. Likewise with "two-dimensional array" and "**matrix**".
 
@@ -63,39 +63,39 @@ Heads-up, I'll be using the terms "one-dimensional array" and "**vector**" inter
 
 One really useful thing about the one-hot representation is that it lets us compute [dot products](https://en.wikipedia.org/wiki/Dot_product). These are also known by other intimidating names like inner product and scalar product. To get the dot product of two vectors, multiply their corresponding elements, then add the results.
 
-![](https://e2eml.school/images/transformers/dot_product.png)
+![](assets/b/1/b1b38fec9fb03803303ddb1f272e4084.png)
 
 Dot products are especially useful when we're working with our one-hot word representations. The dot product of any one-hot vector with itself is one.
 
-![](https://e2eml.school/images/transformers/match.png)
+![](assets/7/8/78695ab7d0acd65b293fd31a83e7b4fd.png)
 
 And the dot product of any one-hot vector with any other one-hot vector is zero.
 
-![](https://e2eml.school/images/transformers/non_match.png)
+![](assets/f/f/ff08540fc1b6f60e671fb0678fe5ad61.png)
 
 The previous two examples show how dot products can be used to measure similarity. As another example, consider a vector of values that represents a combination of words with varying weights. A one-hot encoded word can be compared against it with the dot product to show how strongly that word is represented.
 
-![](https://e2eml.school/images/transformers/similarity.png)
+![](assets/6/9/69eb0e889ef570b26da87b52a94091c9.png)
 
 ### Matrix multiplication
 
 The dot product is the building block of matrix multiplication, a very particular way to combine a pair of two-dimensional arrays. We'll call the first of these matrices _A_ and the second one _B_. In the simplest case, when _A_ has only one row and _B_ has only one column, the result of matrix multiplication is the dot product of the two.
 
-![](https://e2eml.school/images/transformers/matrix_mult_one_row_one_col.png)
+![](assets/d/7/d755e82bb65cd00e2d73107e3309ff10.png)
 
 Notice how the number of columns in _A_ and the number of rows in _B_ needs to be the same for the two arrays to match up and for the dot product to work out.
 
 When _A_ and _B_ start to grow, matrix multiplication starts to get trippy. To handle more than one row in _A_, take the dot product of _B_ with each row separately. The answer will have as many rows as _A_ does.
 
-![](https://e2eml.school/images/transformers/matrix_mult_two_row_one_col.png)
+![](assets/b/3/b3b8100cbd40c84ca4e6bb45a9042f76.png)
 
 When _B_ takes on more columns, take the dot product of each column with _A_ and stack the results in successive columns.
 
-![](https://e2eml.school/images/transformers/matrix_mult_one_row_two_col.png)
+![](assets/a/3/a3307071ed7c70197eab2ec90645a018.png)
 
 Now we can extend this to mutliplying any two matrices, as long as the number of columns in _A_ is the same as the number of rows in _B_. The result will have the same number of rows as _A_ and the same number of columns as _B_.
 
-![](https://e2eml.school/images/transformers/matrix_mult_three_row_two_col.png)
+![](assets/e/3/e3f349f77b566f110ab3a633ef8f2a59.png)
 
 If this is the first time you're seeing this, it might feel needlessly complex, but I promise it pays off later.
 
@@ -116,19 +116,19 @@ Our vocabulary size is now seven:
 
 One useful way to represent sequences is with a transition model. For every word in the vocabulary, it shows what the next word is likely to be. If users ask about photos half the time, files 30% of the time, and directories the rest of the time, the transition model will look like this. The sum of the transitions away from any word will always add up to one.
 
-![](https://e2eml.school/images/transformers/markov_chain.png)
+![](assets/f/6/f6791e8d3547584aa7751f720035c007.png)
 
 This particular transition model is called a **Markov chain**, because it satisfies the [Markov property](https://en.wikipedia.org/wiki/Markov_property) that the probabilities for the next word depend only on recent words. More specifically, it is a first order Markov model because it only looks at the single most recent word. If it considered the two most recent words it would be a second order Markov model.
 
 Our break from matrices is over. It turns out that Markov chains can be expressed conveniently in matrix form. Using the same indexing scheme that we used when creating one-hot vectors, each row represents one of the words in our vocabulary. So does each column. The matrix transition model treats a matrix as a lookup table. Find the row that corresponds to the word you’re interested in. The value in each column shows the probability of that word coming next. Because the value of each element in the matrix represents a probability, they will all fall between zero and one. Because probabilities always sum to one, the values in each row will always add up to one.
 
-![](https://e2eml.school/images/transformers/transition_matrix.png)
+![](assets/1/d/1d13d4fe07f62bf8d6f11cc91df19fde.png)
 
 In the transition matrix here we can see the structure of our three sentences clearly. Almost all of the transition probabilities are zero or one. There is only one place in the Markov chain where branching happens. After _my_, the words _directories_, _files_, or _photos_ might appear, each with a different probability. Other than that, there’s no uncertainty about which word will come next. That certainty is reflected by having mostly ones and zeros in the transition matrix.
 
 We can revisit our trick of using matrix multiplication with a one-hot vector to pull out the transition probabilities associated with any given word. For instance, if we just wanted to isolate the probabilities of which word comes after _my_, we can create a one-hot vector representing the word _my_ and multiply it by our transition matrix. This pulls out the relevant row and shows us the probability distribution of what the next word will be.
 
-![](https://e2eml.school/images/transformers/transition_lookups.png)
+![](assets/e/9/e97b1b4f6889030db09796f383a0747a.png)
 
 ### Second order sequence model
 
@@ -141,19 +141,19 @@ We can see how this works in another toy language model for our computer command
 
 A Markov chain illustrates a first order model for this.
 
-![](https://e2eml.school/images/transformers/markov_chain_2.png)
+![](assets/c/1/c13d36efdafcb7a14e5b1dc478395f6b.png)
 
 Here we can see that if our model looked at the two most recent words, instead of just one, that it could do a better job. When it encounters _battery ran_, it knows that the next word will be _down_, and when it sees _program ran_ the next word will be _please_. This eliminates one of the branches in the model, reducing uncertainty and increasing confidence. Looking back two words turns this into a second order Markov model. It gives more context on which to base next word predictions. Second order Markov chains are more challenging to draw, but here are the connections that demonstrate their value.
 
-![](https://e2eml.school/images/transformers/markov_chain_second_order.png)
+![](assets/a/2/a2e89a9e67425d1d731e9f30c802707c.png)
 
 To highlight the difference between the two, here is the first order transition matrix,
 
-![](https://e2eml.school/images/transformers/transition_matrix_first_order_2.png)
+![](assets/7/c/7c5fc8d5204f9ac06c40ed6ff687410d.png)
 
 and here is the second order transition matrix.
 
-![](https://e2eml.school/images/transformers/transition_matrix_second_order.png)
+![](assets/b/a/ba583d9dd818875f9a290473ddb58830.png)
 
 Notice how the second order matrix has a separate row for every combination of words (most of which are not shown here). That means that if we start with a vocabulary size of _N_ then the transition matrix has _N_^2 rows.
 
@@ -172,11 +172,11 @@ Instead, we can do something sly and make a second order model, but consider the
 
 Markov chains fail us entirely now, but we can still represent the link between each pair of preceding words and the words that follow. Here we've dispensed with numerical weights, and instead are showing only the arrows associated with non-zero weights. Larger weights are shown with heavier lines.
 
-![](https://e2eml.school/images/transformers/feature_voting.png)
+![](assets/8/7/8713b319eb8eac01c04c5232277e4027.png)
 
 Here's what it might look like in a transition matrix.
 
-![](https://e2eml.school/images/transformers/transition_matrix_second_order_skips.png)
+![](assets/c/4/c4c4abb7658805368e39e0fcf6be7785.png)
 
 This view only shows the rows relevant to predicting the word that comes after _ran_. It shows instances where the most recent word (_ran_) is preceded by each of the other words in the vocabulary. Only the relevant values are shown. All the empty cells are zeros.
 
@@ -192,19 +192,19 @@ On more careful consideration, this is unsatisfying. The difference between a vo
 
 We can sharpen the prediction by weeding out all the uninformative feature votes. With the exception of _battery, ran_ and _program, ran_. It's helpful to remember at this point that we pull the [relevant rows](#table_lookup) out of the transition matrix by multiplying it with a vector showing which features are currently active. For this example so far, we've been using the implied feature vector shown here.
 
-![](https://e2eml.school/images/transformers/feature_selection.png)
+![](assets/c/4/c49425ff420e550233d4dfa9afcdcf26.png)
 
 It includes a one for each feature that is a combination of _ran_ with each of the words that come before it. Any words that come after it don't get included in the feature set. (In the next word prediction problem these haven't been seen yet, and so it's not fair to use them predict what comes next.) And this doesn't include all the other possible word combinations. We can safely ignore these for this example because they will all be zero.
 
 To improve our results, we can additionally force the unhelpful features to zero by creating a **mask**. It's a vector full of ones except for the positions you'd like to hide or mask, and those are set to zero. In our case we'd like to mask everything except for _battery, ran_ and _program, ran_, the only two features that have been of any help.
 
-![](https://e2eml.school/images/transformers/masked_feature_activities.png)
+![](assets/8/0/8084b25cc6139affda2e33c04d0af9e7.png)
 
 To apply the mask, we multiply the two vectors element by element. Any feature activity value in an unmasked position will be multiplied by one and left unchanged. Any feature activity value in a masked position will be multiplied by zero, and thus forced to zero.
 
 The mask has the effect of hiding a lot of the transition matrix. It hides the combination of _ran_ with everything except _battery_ and _program_, leaving just the features that matter.
 
-![](https://e2eml.school/images/transformers/masked_transition_matrix.png)
+![](assets/6/c/6c329e03094be13942f783bdee1daf7b.png)
 
 After masking the unhelpful features, the next word predictions become much stronger. When the word _battery_ occurs earlier in the sentence, the word after _ran_ is predicted to be _down_ with a weight of 1 and _please_ with a weight of 0. What was a weight difference of 25 percent has become a difference of infinity percent. There is no doubt what word comes next. The same strong prediction occurs for _please_ when _program_ occurs early on.
 
@@ -225,13 +225,13 @@ The next sections cover more of the gap between this intuitive explanation and h
 
 Feature weights could be straightforward to build by counting how often each word pair/next word transition occurs in training, but attention masks are not. Up to this point, we've pulled the mask vector out of thin air. How transformers find the relevant mask matters. It would be natural to use some sort of lookup table, but now we are focusing hard on expressing everything as matrix multiplications. We can use the same [lookup](https://e2eml.school/table_lookup) method we introduced above by stacking the mask vectors for every word into a matrix and using the one-hot representation of the most recent word to pull out the relevant mask.
 
-![](https://e2eml.school/images/transformers/mask_matrix_lookup.png)
+![](assets/7/a/7ae8e8558c0f0d9e828af886c4df9ae9.png)
 
 In the matrix showing the collection of mask vectors, we've only shown the one we're trying to pull out, for clarity.
 
 We're finally getting to the point where we can start tying into the paper. This mask lookup is represented by the _QK^T_ term in the attention equation.
 
-![](https://e2eml.school/images/transformers/attention_equation_QKT.png)
+![](assets/f/6/f6ddf8fbc80e2d97e79303c3967d95e7.png)
 
 The query _Q_ represents the feature of interest and the matrix _K_ represents the collection of masks. Because it's stored with masks in columns, rather than rows, it needs to be transposed (with the _T_ operator) before multiplying. By the time we're all done, we'll make some important modifications to this, but at this level it captures the concept of a differentiable lookup table that transformers make use of.
 
@@ -243,19 +243,19 @@ Once we have the result of our attention step, a vector that includes the most r
 
 To see how a neural network layer can create these pairs, we'll hand craft one. It will be artificially clean and stylized, and its weights will bear no resemblance to the weights in practice, but it will demonstrate how the neural network has the expressivity necessary to build these two word pair features. To keep it small and clean, will focus on just the three attended words from this example, _battery_, _program_, _ran_.
 
-![](https://e2eml.school/images/transformers/feature_creation_layer.png)
+![](assets/3/a/3a42954976e35fefeb52113439159315.png)
 
 In the layer diagram above, we can see how the weights act to combine the presence and absence of each word into a collection of features. This can also be expressed in matrix form.
 
-![](https://e2eml.school/images/transformers/feature_creation_matrix.png)
+![](assets/d/a/dac46b3bd329e2777a2142b6a0f7ffe3.png)
 
 And it can be calculated by a matrix multiplication with a vector representing the collection of words seen so far.
 
-![](https://e2eml.school/images/transformers/second_order_feature_battery.png)
+![](assets/5/a/5acad52bf65a8fca954f2f9325b3ec6c.png)
 
 The _battery_ and _ran_ elements are 1 and the _program_ element is 0. The _bias_ element is always 1, a feature of neural networks. Working through the matrix multiplication gives a 1 for the element representing _battery, ran_ and a -1 for the element representing _program, ran_. The results for the other case are similar.
 
-![](https://e2eml.school/images/transformers/second_order_feature_program.png)
+![](assets/2/4/240c67065c892ea7dc692434424d26be.png)
 
 The final step in calculating these word combo features is to apply a rectified linear unit (ReLU) nonlinearity. The effect of this is to substitute any negative value with a zero. This cleans up both of these results so they represent the presence (with a 1) or absence (with a 0) of each word combination feature.
 
@@ -269,11 +269,11 @@ In this form, the multiword feature matrix is ready for one more matrix multipli
 
 are the feedforward processing steps that get applied after attention is applied. Equation 2 from the paper shows these steps in a concise mathematical formulation.
 
-![](https://e2eml.school/images/transformers/feedforward_equations.png)
+![](assets/f/d/fd0edf9a3934b23e677b76efa2bc8868.png)
 
 The Figure 1 architecture diagram of the of the paper shows these lumped together as the Feed Forward block.
 
-![](https://e2eml.school/images/transformers/architecture_feedforward.png)
+![](assets/3/9/39ebe12f26e0b2b17cc0fb1f5a77f888.png)
 
 ### Sequence completion
 
@@ -295,11 +295,11 @@ Fortunately, there is a workaround for both of these problems, embeddings.
 
 In a one-hot representation of a language, there is one vector element for each word. For a vocabulary of size _N_ that vector is an _N_\-dimensional space. Each word represents a point in that space, one unit away from the origin along one of the many axes. I haven't figured out a great way to draw a high dimensional space, but there's a crude representation of it below.
 
-![](https://e2eml.school/images/transformers/one_hot_vs_embedding.png)
+![](assets/c/0/c0119d6ab46447c821a4e9d362e8519d.png)
 
 In an embedding, those word points are all taken and rearranged (**projected**, in linear algebra terminology) into a lower-dimensional space. The picture above shows what they might look like in a 2-dimensional space for example. Now, instead of needing _N_ numbers to specify a word, we only need 2. These are the (_x_, _y_) coordinates of each point in the new space. Here's what a 2-dimensional embedding might look like for our toy example, together with the coordinates of a few of the words.
 
-![](https://e2eml.school/images/transformers/embedded_words.png)
+![](assets/7/c/7c1a77b45b0a6b8964b9c0ddd96af478.png)
 
 A good embedding groups words with similar meanings together. A model that works with an embedding learns patterns in the embedded space. That means that whatever it learns to do with one word automatically gets applied to all the words right next to it. This has the added benefit of reducing the amount of training data needed. Each example gives a little bit of learning that gets applied across a whole neighborhood of words.
 
@@ -309,7 +309,7 @@ An embedding reduces the number of parameters needed by a tremendous amount. How
 
 It will probably not surprise you to learn that projecting words from their one-hot representation to an embedded space involves a matrix multiplication. Projection is what matrices do best. Starting with a one-hot matrix that has one row and _N_ columns, and moving to an embedded space of two dimensions, the projection matrix will have _N_ rows and two columns, as shown here.
 
-![](https://e2eml.school/images/transformers/embedding_projection.png)
+![](assets/5/7/574f481c6203d34741a5fd46488e228d.png)
 
 This example shows how a one-hot vector, representing for example _battery_, pulls out the row associated with it, which contains the coordinates of the word in the embedded space. In order to make the relationship clearer, the zeros in the one-hot vector are hidden, as are all the other rows that don't get pulled out of the projection matrix. The full projection matrix is dense, each row containing the coordinates of the word it's associated with.
 
@@ -317,7 +317,7 @@ Projection matrices can convert the original collection of one-hot vocabulary ve
 
 In the Figure 1 architecture diagram of the original paper, here's where the embedding happens.
 
-![](https://e2eml.school/images/transformers/architecture_embedding.png)
+![](assets/4/f/4fc27b4fb592cced3354429f432453f1.png)
 
 ### Positional encoding
 
@@ -325,7 +325,7 @@ Up to this point, we've assumed that the positions of words are ignored, at leas
 
 There are several ways that position information could be introduced into our embedded represetation of words, but the way it was done in the original transformer was to add a circular wiggle.
 
-![](https://e2eml.school/images/transformers/positional_encoding.png)
+![](assets/d/9/d9c2e3247f39e230ee8438b501af6b51.png)
 
 The position of the word in the embedding space acts as the center of a circle. A perturbation is added to it, depending on where it falls in the order of the sequence of words. For each position, the word is moved the same distance but at a different angle, resulting in a circular pattern as you move through the sequence. Words that are close to each other in the sequence have similar perturbations, but words that are far apart are perturbed in different directions.
 
@@ -335,7 +335,7 @@ I'm still developing my intuition for why this works. It seems to add position i
 
 In the canonical architecture diagram these blocks show the generation of the position code and its addition to the embedded words.
 
-![](https://e2eml.school/images/transformers/architecture_positional.png)
+![](assets/5/c/5c75a5eec26f73af5df24c3c5106f1f2.png)
 
 ### De-embeddings
 
@@ -343,11 +343,11 @@ Embedding words makes them vastly more efficient to work with, but once the part
 
 The de-embedding matrix is the same shape as the embedding matrix, but with the number of rows and columns flipped. The number of rows is the dimensionality of the space we're converting from. In the example we've been using, it's the size of our embedding space, two. The number of columns is the dimensionality of the space we're converting to — the size of the one-hot representation of the full vocabulary, 13 in our example.
 
-![](https://e2eml.school/images/transformers/de_embedding.png)
+![](assets/e/7/e750195ac0cb7c3f630b0c4a9a484422.png)
 
 The values in a good de-embedding matrix aren't as straightforward to illustrate as those from the embeding matrix, but the effect is similar. When an embedded vector representing, say, the word _program_ is multiplied by the de-embedding matrix, the value in the corresponding position is high. However, because of how projection to higher dimensional spaces works, the values associated with the other words won't be zero. The words closest to _program_ in the embedded space will also have medium-high values. Other words will have near zero value. And there will likely be a lot of words with negative values. The output vector in vocabulary space will no longer be one-hot or sparse. It will be dense, with nearly all values non-zero.
 
-![](https://e2eml.school/images/transformers/de_embedded_results.png)
+![](assets/0/0/00f4dccdf2e35b24e389523e640e7d41.png)
 
 That's OK. We can recreate the one-hot vector by choosing the word associated with the highest value. This operation is also called **argmax**, the argument (element) that gives the maximum value. This is how to do greedy sequence completion, as mentioned [above](#sequence_completion). It's a great first pass, but we can do better.
 
@@ -367,7 +367,7 @@ If you feel like going deep on your softmax understanding, (or if you have troub
 
 Together the de-embedding transform (shown as the Linear block below) and a softmax function complete the de-embedding process.
 
-![](https://e2eml.school/images/transformers/architecture_de_embedding.png)
+![](assets/f/7/f76cb964a6a6fb0b87085960d3843715.png)
 
 ### Multi-head attention
 
@@ -379,13 +379,13 @@ Now that we've made peace with the concepts of projections (matrix multiplicatio
 
 The original input matrix is constructed by getting each of the words from the sentence in their one-hot representation, and stacking them such that each of the one-hot vectors is its own row. The resulting input matrix has _n_ rows and _N_ columns, which we can abbreviate as \[_n_ x _N_\].
 
-![](https://e2eml.school/images/transformers/matrix_multiply_shape.png)
+![](assets/4/6/465974c48531db6119dbb6934786f101.png)
 
 As we illustrated before, the embedding matrix has _N_ rows and _d\_model_ columns, which we can abbreviate as \[_N_ x _d\_model_\]. When multiplying two matrices, the result takes its number of rows from the first matrix, and its number of columns from the second. That gives the embedded word sequence matrix a shape of \[_n_ x _d\_model_\].
 
 We can follow the changes in matrix shape through the transformer as a way to tracking what's going on. After the initial embedding, the positional encoding is additive, rather than a multiplication, so it doesn't change the shape of things. Then the embedded word sequence goes into the attention layers, and comes out the other end in the same shape. (We'll come back to the inner workings of these in a second.) Finally, the de-embedding restores the matrix to its original shape, offering a probability for every word in the vocabulary at every position in the sequence.
 
-![](https://e2eml.school/images/transformers/matrix_shapes.png)
+![](assets/2/6/26f79708854320911a0db8db1195c64f.png)
 
 #### Why we need more than one attention head
 
@@ -403,7 +403,7 @@ To see how this plays out, we can continue looking at matrix shapes. Tracing the
 *   _d\_v_: dimensions in the embedding space used for values. 64 in the paper.
 *   _h_: the number of heads. 8 in the paper.
 
-![](https://e2eml.school/images/transformers/architecture_multihead.png)
+![](assets/5/5/55b91354c39f18c2aabf0d906b3591ac.png)
 
 The \[_n_ x _d\_model_\] sequence of embedded words serves as the basis for everything that follows. In each case there is a matrix, _Wv_, _Wq_, and _Wk_, (all shown unhelpfully as "Linear" blocks in the architecture diagram) that transforms the original sequence of embedded words into the values matrix, _V_, the queries matrix, _Q_, and the keys matrix, _K_. _K_ and _Q_ have the same shape, \[_n_ x _d\_k_\], but _V_ can be different, \[_n_ x _d\_v_\]. It confuses things a little that _d\_k_ and _d\_v_ are the same in the paper, but they don't have to be. An important aspect of this setup is that each attention head has its own _Wv_, _Wq_, and _Wk_ transforms. That means that each head can zoom in and expand the parts of the embedded space that it wants to focus on, and it can be different than what each of the other heads is focusing on.
 
@@ -411,7 +411,7 @@ The result of each attention head has the same shape as _V_. Now we have the pro
 
 Here's all of the that, stated tersely.
 
-![](https://e2eml.school/images/transformers/multihead_attention_equation.png)
+![](assets/1/a/1ab2cd30108a086dd2b90d6e5784cec9.png)
 
 ### Single head attention revisited
 
@@ -419,17 +419,17 @@ We already walked through a conceptual illustration of attention [above](#attent
 
 Following the shape of the matrices through the attention calculation helps to track what it's doing.
 
-![](https://e2eml.school/images/transformers/architecture_single_head.png)
+![](assets/0/0/00f4ecc4a941ed6ec6342a6578291817.png)
 
 The queries and keys matrices, _Q_ and _K_, both come in with shape \[_n_ x _d\_k_\]. Thanks to _K_ being transposed before multiplication, the result of _Q K^T_, gives a matrix of \[_n_ x _d\_k_\] \* \[_d\_k_ x _n_ \] = \[_n_ x _n_\]. Dividing every element of this matrix by the square root of _d\_k_ has been shown to keep the magnitude of the values from growing wildly, and helps backpropagation to perform well. The softmax, as we mentioned, shoehorns the result into an approximation of an argmax, tending to focus attention one element of the sequence more than the rest. In this form, the \[_n_ x _n_\] attention matrix roughly maps each element of the sequence to one other element of the sequence, indicating what it should be watching in order to get the most relevant context for predicting the next element. It is a filter that finally gets applied to the values matrix _V_, leaving only a collection of the attended values. This has the effect of ignoring the vast majority of what came before in the sequence, and shines a spotlight on the one prior element that is most useful to be aware of.
 
-![](https://e2eml.school/images/transformers/attention_equation.png)
+![](assets/a/3/a31f94e05144c29dd0052d2de402e929.png)
 
 One tricky part about understanding this set of calculations is keeping in mind that it is calculating attention for every element of our input sequence, for every word in our sentence, not just the most recent word. It's also calculating attention for earlier words. We don't really care about these because their next words have already been predicted and established. It's also calculating attention for future words. These don't have much use yet, because they are too far out and their immediate predecessors haven't yet been chosen. But there are indirect paths through which these calculations can effect the attention for the most recent word, so we include them all. It's just that when we get to the end and calculate word probabilities for every position in the sequence, we throw away most of them and only pay attention to the next word.
 
 The Mask block enforces the constraint that, at least for this sequence completion task, we can't look into the future. It avoids introducing any weird artifacts from imaginary future words. It is crude and effective - manually set the attention paid to all words past the current position to negative infinity. In [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html), an immeasurably helpful companion to the paper showing line by line Python implementation, the mask matrix is visualized. Purple cells show where attention is disallowed. Each row corresponds to an element in the sequence. The first row is allowed to attend to itself (the first element), but to nothing after. The last row is allowed to attend to itself (the final element) and everything that comes before. The Mask is an \[_n_ x _n_\] matrix. It is applied not with a matrix multiplication, but with a more straightforward element-by-element multiplication. This has the effect of manually going in to the attention matrix and setting all of the purple elements from the mask to negative infinity.
 
-![](https://e2eml.school/images/transformers/mask.png)
+![](assets/a/1/a1c1ae81d1d9271977684a415ec43d51.png)
 
 Another important difference in how attention is implemented is that it makes use of the order in which words are presented to it in the sequence, and represents attention not as a word-to-word relationship, but as a position-to-position relationship. This is evident in its \[_n_ x _n_\] shape. It maps each element from the sequence, indicated by the row index, to some other element(s) of the sequence, indicated by the column index. This helps us to visualize and interpret what it is doing more easily, since it is operating in the embedding space. We are spared the extra step of finding nearby word in the embedding space to represent the relationships between queries and keys.
 
@@ -439,7 +439,7 @@ Attention is the most fundamental part of what transformers do. It’s the core 
 
 One piece we haven’t explained yet are skip connections. These occur around the Multi-Head Attention blocks, and around the element wise Feed Forward blocks in the blocks labeled "Add and Norm". In skip connections, a copy of the input is added to the output of a set of calculations. The inputs to the attention block are added back in to its output. The inputs to the element-wise feed forward block are added to its outputs.
 
-![](https://e2eml.school/images/transformers/architecture_add_norm.png)
+![](assets/f/d/fdd1c2da1f91a59de8e96be2a307d59a.png)
 
 Skip connections serve two purposes.
 
@@ -447,7 +447,7 @@ The first is that they help keep the gradient smooth, which is a big help for ba
 
 Skip connections have become popular because of how they improve performance since the days of the ResNet image classifier. They are now a standard feature in neural network architectures. Visually, we can see the effect that skip connections have by comparing networks with and without them. The figure below from this [paper](https://arxiv.org/abs/1712.09913) shows a ResNet with and without skip connections. The slopes of the loss function hills are are much more moderate and uniform when skip connections are used. If you feel like taking a deeper dive into how the work and why, there's a more in-depth treatment in this [post](https://theaisummer.com/skip-connections/).
 
-![](https://e2eml.school/images/transformers/skip_connection_gradients.png)
+![](assets/8/6/864c0429192fffb097ed320b5f39fa01.png)
 
 The second purpose of skip connections is specific to transformers — preserving the original input sequence. Even with a lot of attention heads, there’s no guarantee that a word will attend to its own position. It’s possible for the attention filter to forget entirely about the most recent word in favor of watching all of the earlier words that might be relevant. A skip connection takes the original word and manually adds it back into the signal, so that there’s no way it can be dropped or forgotten. This source of robustness may be one of the reasons for transformers' good behavior in so many varied sequence completion tasks.
 
@@ -457,7 +457,7 @@ Normalization is a step that pairs well with skip connections. There's no reason
 
 The short version of layer normalization is that the values of the matrix are shifted to have a mean of zero and scaled to have a standard deviation of one.
 
-![](https://e2eml.school/images/transformers/normalization.png)
+![](assets/d/a/dadcbc90160da293846c5053e504e9f2.png)
 
 The longer version is that in systems like transformers, where there are a lot of moving pieces and some of them are something other than matrix multiplications (such as softmax operators or rectified linear units), it matters how big values are and how they're balanced between positive and negative. If everything is linear, you can double all your inputs, and your outputs will be twice as big, and everything will work just fine. Not so with neural networks. They are inherently nonlinear, which makes them very expressive but also sensitive to signals' magnitudes and distributions. Normalization is a technique that has proven useful in maintaining a consistent distribution of signal values each step of the way throughout many-layered neural networks. It encourages convergence of parameter values and usually results in much better performance.
 
@@ -475,7 +475,7 @@ The way transformers sidestep this problem is by having multiple attention layer
 
 Another way to think about multiple layers is as a conveyor belt assembly line. Each attention block and feedforward block has the chance to pull inputs off the line, calculate useful attention matrices and make next word predictions. Whatever results they produce, useful or not, get added back onto the conveyer, and passed to the next layer.
 
-![](https://e2eml.school/images/transformers/layer_conveyer.png)
+![](assets/9/5/95c0be95e6679fa02e6ca2f8bbd5b521.png)
 
 This is in contrast to the traditional description of many-layered neural networks as "deep". Thanks to skip connections, successive layers don't provide increasingly sophisticated abstraction as much as they provide redundancy. Whatever opportunities for focusing attention and creating useful features and making accurate predictions were missed in one layer can always be caught by the next. Layers become workers on the assembly line, where each does what it can, but doesn't worry about catching every piece, because the next worker will catch the ones they miss.
 
@@ -485,7 +485,7 @@ So far we have carefully ignored the encoder stack (the left hand side of the tr
 
 As we laid out in the sequence completion task [description](#sequence_completion), the decoder can complete partial sequences and extend them as far as you want. OpenAI created the generative pre-training (GPT) family of models to do just this. The architecture they describe in this [report](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) should look familiar. It is a transformer with the encoder stack and all its connections surgically removed. What remains is a 12 layer decoder stack.
 
-![](https://e2eml.school/images/transformers/gpt_architecture.png)
+![](assets/b/4/b441422bc46c90260d2ddf885cb6f214.png)
 
 Any time you come across a generative model, like [BERT](https://arxiv.org/pdf/1810.04805v2.pdf), [ELMo](https://arxiv.org/abs/1802.05365), or [Copilot](https://copilot.github.com/), you're probably seeing the decoder half of a transformer in action.
 
@@ -501,7 +501,7 @@ The final step in getting the full transformer up and running is the connection 
 
 Cross-attention works just like self-attention with the exception that the key matrix _K_ and value matrix _V_ are based on the output of the final encoder layer, rather than the output of the previous decoder layer. The query matrix _Q_ is still calculated from the results of the previous decoder layer. This is the channel by which information from the source sequence makes its way into the target sequence and steers its creation in the right direction. It's interesting to note that the same embedded source sequence is provided to every layer of the decoder, supporting the notion that successive layers provide redundancy and are all cooperating to perform the same task.
 
-![](https://e2eml.school/images/transformers/architecture_cross_attention.png)
+![](assets/5/f/5f0af87b886d1bcd024539cff40dc3e5.png)
 
 ### Tokenizing
 

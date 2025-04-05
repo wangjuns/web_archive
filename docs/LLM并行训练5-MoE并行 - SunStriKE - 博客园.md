@@ -10,7 +10,7 @@ Markdown Content:
 
 ### MOE(MixerOfExpert)
 
-![Image 1: image-20240718194134029](https://img2023.cnblogs.com/blog/1439743/202407/1439743-20240718214808362-81102770.png)
+![Image 1: image-20240718194134029](assets/9/7/97adfadb88597ac6d3ff547948b8f50a.png)
 
 moe的主要原理是替换attention层后的MLP层, 通过将不同类型的token按照门控单元计算出的概率分配给最大概率处理的专家网络处理, 对比单一MLP更适合处理复杂多样化的数据集. 主要思想和集成学习感觉很像, 而且扩展性(遇到新的目标任务可以新增专家网络)和可解释性(每个专家分开调整)都比较强. MOE前向步骤(以最简单的top2 Expert为例):
 
@@ -91,7 +91,7 @@ MOE并行(gshard)
 
 以2机16卡为例, 如果想使用4份数据并行(ep\_dp\_world\_size), 每套专家可以被平均分为4份为例(ep\_world\_size), 这里其实就是\\(e\_0+ e\_1+e\_2+e\_3\\), 那么切分结构如下图:
 
-![Image 2: image-20240719204611622](https://img2023.cnblogs.com/blog/1439743/202407/1439743-20240720120825257-1005925948.png)
+![Image 2: image-20240719204611622](assets/6/2/6255f2e92ffeda56db8a7935d05441a6.png)
 
 在切分的时候, 主要需要遵循几个原则:
 
@@ -108,7 +108,7 @@ MOE并行(gshard)
 3.  \[g0, g1\], \[g2, g3\], \[g4, g5\], \[g6, g7\]这几个tp组各自通过AllReduce取得完整的输出结果
 4.  \[g0, g2, g4, g6\]和\[g1, g3, g5, g7\]进行ep\_group all2all，把expert fp计算完毕的emb发送回对应的卡用于加权求和，同时处理完成的emb可以直接输入下一个attention层不再需要集合通信.
 
-![Image 3: image-20240719211544426](https://img2023.cnblogs.com/blog/1439743/202407/1439743-20240720120832854-1418024537.png)
+![Image 3: image-20240719211544426](assets/9/3/9379f55e10d0e49b70c898e71f1f9f89.png)
 
 一般上EP+DP+TP就能满足显存限制, 在MoE训练里不会再引入流水线并行.
 
@@ -118,13 +118,13 @@ MOE并行(gshard)
 
 这个优化其实zeropp里提过, 只是少了其中的量化反量化的环节. 通信量从\\(O(p) \\Rightarrow O(G+p/G)\\), p: 卡数 G: 机器数
 
-![Image 4: image-20240720113426462](https://img2023.cnblogs.com/blog/1439743/202407/1439743-20240720120838579-201443858.png)
+![Image 4: image-20240720113426462](assets/f/4/f4c843de7852a29b8f1ac8345270d055.png)
 
 #### 基于TP的all2all优化
 
 基线的all2all在_EP+DP+TP_这节里简单讲过, 因为g0和g1是在同一个TP单元里, 当non-MoE的结果allReduce之后两张卡上的结果是完全一样的. 所以我们如果直接用all2all通信时其实有一半的通信是完全冗余的.
 
-![Image 5: image-20240720113859643](https://img2023.cnblogs.com/blog/1439743/202407/1439743-20240720120842226-907279711.png)
+![Image 5: image-20240720113859643](assets/5/4/54fe3136571bc9afa5a81d667fcf6b70.png)
 
 为了解决上面的冗余数据通信的问题, 优化后的all2all主要有以下几步:
 
@@ -135,7 +135,7 @@ MOE并行(gshard)
 
 注意: deepspeed在实际实现时因为要把原来的4卡all2all改成2卡, 没法和EP切分数保持一致导致改动成本较大. 所以把gating\_output(E, C, M)的第二维切分成TP并行数. 然后还是正常进行4卡all2all, 就解决了冗余通信的同时还能减少改动成本.
 
-![Image 6: image-20240720114231994](https://img2023.cnblogs.com/blog/1439743/202407/1439743-20240720120845961-441045141.png)
+![Image 6: image-20240720114231994](assets/5/b/5bcd47c5392a4c5c0e386742104477c1.png)
 
 参考
 --

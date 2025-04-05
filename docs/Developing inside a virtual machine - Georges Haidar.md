@@ -21,21 +21,21 @@ I use Ubuntu 24.04 (arm64 build) as my guest operating system. Quite often I’v
 
 On the host (macOS), I do not use homebrew or have any other package managers. I simply use iTerm2 to SSH into the development VM and Visual Studio Code for my editor. The remote development extension for VS Code in particular is an incredible feature. **All my editor extensions are installed inside the VM** instead of the host machine. The exceptions being the color scheme I use and the remote extension itself which live on the host alongside the editor.
 
-![Image 17: A screenshot of VS Code showing most extensions installed and running inside the VM](https://blog.disintegrator.dev/_astro/vscode-extensions.Cnq2PSgc.png)
+![Image 17: A screenshot of VS Code showing most extensions installed and running inside the VM](assets/0/8/0877777932bd4119e53f60652416b831.png)
 
- [![Image 18: A screenshot of VS Code showing most extensions installed and running inside the VM](https://blog.disintegrator.dev/_astro/vscode-extensions.Cnq2PSgc_Z2tzSA9.png)](https://blog.disintegrator.dev/_astro/vscode-extensions.Cnq2PSgc.png)
+ [![Image 18: A screenshot of VS Code showing most extensions installed and running inside the VM](assets/d/f/df25f89331dec829e7dc576856201de1.png)](https://blog.disintegrator.dev/_astro/vscode-extensions.Cnq2PSgc.png)
 
 Going back to iTerm2, I use the tmux integration which maps windows and panes to the native GUI. It’s such a smooth experience to working with tmux using keyboard shortcuts I’m familiar with (⌘T for new tabs and ⌘D / ⌘⇧D for horizontal / vertical splits).
 
-![Image 19: iTerm2 with tmux integration showing how windows and panes map to native tabs and splits](https://blog.disintegrator.dev/_astro/tmux-iterm2.Cnvji2r6.png)
+![Image 19: iTerm2 with tmux integration showing how windows and panes map to native tabs and splits](assets/8/f/8f44ae85183fc6a58a416528bf4206e6.png)
 
- [![Image 20: iTerm2 with tmux integration showing how windows and panes map to native tabs and splits](https://blog.disintegrator.dev/_astro/tmux-iterm2.Cnvji2r6_Zn9vsc.png)](https://blog.disintegrator.dev/_astro/tmux-iterm2.Cnvji2r6.png)
+ [![Image 20: iTerm2 with tmux integration showing how windows and panes map to native tabs and splits](assets/e/4/e49d100f9d45a724bbb87ee510c4df5e.png)](https://blog.disintegrator.dev/_astro/tmux-iterm2.Cnvji2r6.png)
 
 I think it’s also worth talking about my Git / GitHub workflow. I use an SSH key to authenticate with GitHub and to sign my commits. My private key does not live directly on my host or my guest OS. Instead, it lives in 1Password and is only accessible using my master password or TouchID. What’s super convenient is that I can access the key from within the VM using 1Password’s SSH agent. So any time I `git fetch` or `git commit` I get the native 1Password GUI to unlock and grant access to the key.
 
-![Image 21: Running git fetch in my development VM triggers the 1Password prompt to grant access to the key](https://blog.disintegrator.dev/_astro/1password-ssh.IP7v-yeA.png)
+![Image 21: Running git fetch in my development VM triggers the 1Password prompt to grant access to the key](assets/2/5/259a543842d849a1d550a3ca9b5c0e12.png)
 
- [![Image 22: Running git fetch in my development VM triggers the 1Password prompt to grant access to the key](https://blog.disintegrator.dev/_astro/1password-ssh.IP7v-yeA_IytRU.png)](https://blog.disintegrator.dev/_astro/1password-ssh.IP7v-yeA.png)
+ [![Image 22: Running git fetch in my development VM triggers the 1Password prompt to grant access to the key](assets/5/b/5b449189bd969bf83d521de4ec10764a.png)](https://blog.disintegrator.dev/_astro/1password-ssh.IP7v-yeA.png)
 
 When I want to access TCP services in the VM, such as development servers and databases, I use Tailscale which creates a nice DNS name for my guest VM that I can access from my host machine (see [MagicDNS](https://tailscale.com/kb/1081/magicdns)). Again, Tailscale is invisible software and I rarely pay attention to it except for when there’s an update.
 

@@ -3,7 +3,7 @@
 
  [
 
-![](https://miro.medium.com/v2/resize:fill:88:88/0*QegXu4OWbyqp_2MP.png)
+![](assets/7/5/7599e772ee5c1e9da969a2349faf161d.png)
 
 
 
@@ -16,7 +16,7 @@
 
 ](https://ravidesetty.medium.com/?source=post_page-----42d079022e83--------------------------------)[
 
-![](https://miro.medium.com/v2/resize:fill:48:48/1*_mrG8FG_LiD23x0-mEtUkw.jpeg)
+![](assets/6/f/6f74cca8b54fb42874e6c97d6b1a3884.jpeg)
 
 
 
@@ -31,7 +31,7 @@
 
 ](https://blog.llamaindex.ai/?source=post_page-----42d079022e83--------------------------------)
 
-![](https://miro.medium.com/v2/resize:fit:432/1*Jh6y4IQhsLoApn2D0WVz3g.png)
+![](assets/b/7/b7f0a82cf5ab424d72cbb98a2bca3eaa.png)
 
 **UPDATE**: The pooling method for the Jina AI embeddings has been adjusted to use mean pooling, and the results have been updated accordingly. Notably, the `JinaAI-v2-base-en` with `bge-reranker-large`now exhibits a Hit Rate of 0.938202 and an MRR (Mean Reciprocal Rank) of 0.868539 and with`CohereRerank` exhibits a Hit Rate of 0.932584, and an MRR of 0.873689.
 
@@ -242,7 +242,7 @@ We put various embedding models and rerankers to the test. Here are the models w
 
 The table below showcases the evaluation results based on the metrics of Hit Rate and Mean Reciprocal Rank (MRR):
 
-![](https://miro.medium.com/v2/resize:fit:700/1*tCBbIjV_jLZP1AKLTX7rAw.png)
+![](assets/b/2/b21f8145f780c551c12106e1ae9bda00.png)
 
 **Performance by Embedding:**
 -----------------------------

@@ -61,7 +61,7 @@ A Deep Dive Into MCP and the Future of AI Tooling | Andreessen Horowitz
 *   [Marketplaces](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/#)
 *   [Web3](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/#)
 
-![Image 1](https://a16z.com/wp-content/themes/a16z/assets/images/article/banner-infra-sm.png)
+![Image 1](assets/c/c/cc5671c3aa01ea69104d8d923c6ba43c.png)
 
 A Deep Dive Into MCP and the Future of AI Tooling
 =================================================
@@ -106,15 +106,15 @@ What is MCP?
 
 **MCP is an open protocol that allows systems to provide context to AI models in a manner that’s generalizable across integrations.** The protocol defines how the AI model can call external tools, fetch data, and interact with services. As a concrete example, below is how the Resend MCP server works with multiple MCP clients.
 
-[![Image 2](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-Example-MCP-x2000-1024x455.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-Example-MCP-x2000.png)
+[![Image 2](assets/a/1/a1dad4e70e5c7786d39a6bd975f0e206.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-Example-MCP-x2000.png)
 
 The idea is not new; MCP [took inspiration from the LSP (Language Server Protocol)](https://spec.modelcontextprotocol.io/specification/2024-11-05/#:~:text=MCP%20takes%20some%20inspiration%20from,the%20ecosystem%20of%20AI%20applications). In LSP, when a user types in an editor, the client queries the language server to autocomplete suggestions or diagnostics.
 
-[![Image 3](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250314-LSP-x2000-1024x422.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250314-LSP-x2000.png)
+[![Image 3](assets/1/0/10793d5bb9f95f020d6e91baef4edd9a.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250314-LSP-x2000.png)
 
 Where MCP extends beyond LSP is in its agent-centric execution model: LSP is mostly reactive (responding to requests from an IDE based on user input), whereas MCP is designed to support autonomous AI workflows. Based on the context, **AI agents can decide which tools to use, in what order, and how to chain them together to accomplish a task.** MCP also introduced a human-in-the-loop capabilities for humans to provide additional data and approve execution.
 
-[![Image 4](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-x2000-1024x541.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-x2000.png)
+[![Image 4](assets/a/c/ac62e2c861a5745da5f7f5e65d045fb2.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-x2000.png)
 
 Popular use cases today 
 ------------------------
@@ -131,7 +131,7 @@ For developers who live and breathe in code every day, a common sentiment is, �
 
 Instead of switching to Supabase to check on the database status, developers can now use the [Postgres MCP server](https://github.com/modelcontextprotocol/servers/tree/main/src/postgres) to execute read-only SQL commands and the [Upstash MCP server](https://github.com/upstash/mcp-server) to create and manage cache indices right from their IDE. When iterating on code, developers can also leverage the [Browsertools MCP](https://github.com/AgentDeskAI/browser-tools-mcp) to give coding agents access to a live environment for feedback and debugging.
 
-[![Image 5](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/image1-1024x989.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/image1.png)
+[![Image 5](assets/6/f/6fc4314d3ffd9002d06c49f9928cf35c.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/image1.png)
 
 _An example of how Cursor agent uses Browsertools to get access to console logs and other real-time data and debug more efficiently._
 
@@ -145,19 +145,19 @@ The design of an MCP client and the specific interactions it supports plays a cr
 
 One example of this is how Highlight implemented the [@ command](https://x.com/PimDeWitte/status/1899829221813334449) to invoke any MCP servers on its client. The result is a new UX pattern in which the MCP client can pipe generated content into any downstream app of choice.
 
-[![Image 6](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/Notion-screenshot.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/Notion-screenshot.png)
+[![Image 6](assets/8/b/8b077a44c5a45a5b065de0c3d82c74a1.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/Notion-screenshot.png)
 
 _An example of Highlight’s implementation of Notion MCP (plugin)._
 
 Another example is the [Blender MCP server](https://x.com/sidahuj/status/1901632110395265452) use case: Now, amateur users who barely know Blender can use natural language to describe the model they want to build. We are seeing the text-to-3D workflow playing out in real time as the community implements servers for other tools like Unity and Unreal engine.
 
-[![Image 7](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/image7-1024x573.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/image7.png)
+[![Image 7](assets/f/b/fb8ef83cd4d6bc5985e78f912cfd5e04.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/image7.png)
 
 _An example of using Claude Desktop with [Blender MCP server](https://github.com/ahujasid/blender-mcp)._
 
 Although we mostly think about servers and clients, the MCP ecosystem is gradually shaping up as the protocol evolves. This market map covers the most active areas today, although there are still many blank spaces. Knowing MCP is still in the early days, _we’re excited to add more players to the map as the market evolves and matures._ (And we will explore some of these future possibilities in the next section.)
 
-[![Image 8](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-Market-Map-v2-x2000-1024x866.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-Market-Map-v2-x2000.png)
+[![Image 8](assets/3/d/3d53ef633d8f9f930416cbaf87aa79d1.png)](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2025/03/250319-MCP-Market-Map-v2-x2000.png)
 
 On the MCP client side, **most of the high-quality clients we see today are coding-centric**. This is not surprising, since developers are usually early adopters of new technology, but, as the protocol matures, we expect to see more business-centric clients.
 
@@ -253,7 +253,7 @@ Check your inbox for a welcome note.
 
 **Contributor**
 
-*   [![Image 9](https://d1lamhf6l6yk6d.cloudfront.net/uploads/2023/04/Yoko-Li-2.png) **Yoko Li** is a partner at Andreessen Horowitz, where she focuses on enterprise and infrastructure.](https://a16z.com/author/yoko-li/)
+*   [![Image 9](assets/a/3/a3e731a217d7e5bb50fec4844f63eb40.png) **Yoko Li** is a partner at Andreessen Horowitz, where she focuses on enterprise and infrastructure.](https://a16z.com/author/yoko-li/)
     *   Follow
     *   [X](https://twitter.com/stuffyokodraws)
     *   [Linkedin](https://www.linkedin.com/in/yokoli/)
@@ -328,4 +328,4 @@ By navigating this website you agree to our [cookie policy](https://a16z.com/ter
 
  
 
-![Image 11](https://t.co/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%26800%26600%264%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=50caf4f4-69dc-42e3-a7ed-7585d29011c4&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=42ad3be4-66c1-4044-9808-cdd8af87f5bb&tw_document_href=https%3A%2F%2Fa16z.com%2Fa-deep-dive-into-mcp-and-the-future-of-ai-tooling%2F&tw_iframe_status=0&txn_id=ogg70&type=javascript&version=2.3.31)![Image 12](https://analytics.twitter.com/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%26800%26600%264%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=50caf4f4-69dc-42e3-a7ed-7585d29011c4&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=42ad3be4-66c1-4044-9808-cdd8af87f5bb&tw_document_href=https%3A%2F%2Fa16z.com%2Fa-deep-dive-into-mcp-and-the-future-of-ai-tooling%2F&tw_iframe_status=0&txn_id=ogg70&type=javascript&version=2.3.31)![Image 13](https://t.co/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%26800%26600%264%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=53063dad-80d0-41e9-a609-f0b00ab72831&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=42ad3be4-66c1-4044-9808-cdd8af87f5bb&tw_document_href=https%3A%2F%2Fa16z.com%2Fa-deep-dive-into-mcp-and-the-future-of-ai-tooling%2F&tw_iframe_status=0&txn_id=ogudt&type=javascript&version=2.3.31)![Image 14](https://analytics.twitter.com/1/i/adsct?bci=4&dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%26800%26600%264%2624%26800%26600%260%26na&eci=3&event=%7B%7D&event_id=53063dad-80d0-41e9-a609-f0b00ab72831&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=42ad3be4-66c1-4044-9808-cdd8af87f5bb&tw_document_href=https%3A%2F%2Fa16z.com%2Fa-deep-dive-into-mcp-and-the-future-of-ai-tooling%2F&tw_iframe_status=0&txn_id=ogudt&type=javascript&version=2.3.31)
+![Image 11](assets/2/2/2268bb340443ce3e66c9ef0177ee6ab5.gif)![Image 12](assets/b/d/bda31189ea2c775c219452a647162d22.gif)![Image 13](assets/e/2/e24b5ca98c36c8218ab8512810eb0517.gif)![Image 14](assets/c/f/cfff66a079f03afbf62585e2c0ffe594.gif)

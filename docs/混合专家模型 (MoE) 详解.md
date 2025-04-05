@@ -100,7 +100,7 @@ Markdown Content:
 *   **稀疏 MoE 层**: 这些层代替了传统 Transformer 模型中的前馈网络 (FFN) 层。MoE 层包含若干“专家”(例如 8 个)，每个专家本身是一个独立的神经网络。在实际应用中，这些专家通常是前馈网络 (FFN)，但它们也可以是更复杂的网络结构，甚至可以是 MoE 层本身，从而形成层级式的 MoE 结构。
 *   **门控网络或路由**: 这个部分用于决定哪些令牌 (token) 被发送到哪个专家。例如，在下图中，“More”这个令牌可能被发送到第二个专家，而“Parameters”这个令牌被发送到第一个专家。有时，一个令牌甚至可以被发送到多个专家。令牌的路由方式是 MoE 使用中的一个关键点，因为路由器由学习的参数组成，并且与网络的其他部分一同进行预训练。
 
-![Image 52: Switch Layer](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/00_switch_transformer.png)
+![Image 52: Switch Layer](assets/2/3/23a37972cdb6debc2dce3ca59edf2442.png)
 
 \[Switch Transformers paper\](https://arxiv.org/abs/2101.03961) 论文中的 MoE layer
 
@@ -125,7 +125,7 @@ Markdown Content:
 
 这些研究的融合促进了在自然语言处理 (NLP) 领域对混合专家模型的探索。特别是在 2017 年，[Shazeer 等人](https://arxiv.org/abs/1701.06538) (团队包括 Geoffrey Hinton 和 Jeff Dean，后者有时被戏称为 [“谷歌的 Chuck Norris”](https://www.informatika.bg/jeffdean)) 将这一概念应用于 137B 的 LSTM (当时被广泛应用于 NLP 的架构，由 Schmidhuber 提出)。通过引入稀疏性，这项工作在保持极高规模的同时实现了快速的推理速度。这项工作主要集中在翻译领域，但面临着如高通信成本和训练不稳定性等多种挑战。
 
-![Image 53: MoE layer in LSTM](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/01_moe_layer.png)
+![Image 53: MoE layer in LSTM](assets/7/1/712a47bd975307f33d03de334a17cd81.png)
 
 Outrageously Large Neural Network 论文中的 MoE layer
 
@@ -178,7 +178,7 @@ Transformer 类模型明确表明，增加参数数量可以提高性能，因�
 
 GShard 将在编码器和解码器中的每个前馈网络 (FFN) 层中的替换为使用 Top-2 门控的混合专家模型 (MoE) 层。下图展示了编码器部分的结构。这种架构对于大规模计算非常有效: 当扩展到多个设备时，MoE 层在不同设备间共享，而其他所有层则在每个设备上复制。我们将在 [“让 MoE 起飞”](https://huggingface.co/blog/zh/moe#%E8%AE%A9moe%E8%B5%B7%E9%A3%9E) 部分对这一点进行更详细的讨论。
 
-![Image 54: MoE Transformer Encoder](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/02_moe_block.png)
+![Image 54: MoE Transformer Encoder](assets/4/f/4fe88debb8fa8076c06f76d2a01d2d81.png)
 
 GShard 论文中的 MoE Transformer Encoder
 
@@ -196,7 +196,7 @@ GShard 的工作对适用于 MoE 的并行计算模式也做出了重要贡献�
 
 尽管混合专家模型 (MoE) 显示出了很大的潜力，但它们在训练和微调过程中存在稳定性问题。[Switch Transformers](https://arxiv.org/abs/2101.03961) 是一项非常激动人心的工作，它深入研究了这些话题。作者甚至在 Hugging Face 上发布了一个 [1.6 万亿参数的 MoE](https://huggingface.co/google/switch-c-2048)，拥有 2048 个专家，你可以使用 `transformers` 库来运行它。Switch Transformers 实现了与 T5-XXL 相比 4 倍的预训练速度提升。
 
-![Image 55: Switch Transformer Layer](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/03_switch_layer.png)
+![Image 55: Switch Transformer Layer](assets/2/2/22d1fdfafd1212d5e49c68bdc834e4e0.png)
 
 Switch Transformer 论文中的 Switch Transformer Layer
 
@@ -219,7 +219,7 @@ Switch Transformer 的作者还重新审视并简化了前面章节中提到的�
 
 作者还尝试了混合精度的方法，例如用 `bfloat16` 精度训练专家，同时对其余计算使用全精度进行。较低的精度可以减少处理器间的通信成本、计算成本以及存储张量的内存。然而，在最初的实验中，当专家和门控网络都使用 `bfloat16` 精度训练时，出现了不稳定的训练现象。这种不稳定性特别是由路由计算引起的，因为路由涉及指数函数等操作，这些操作对精度要求较高。因此，为了保持计算的稳定性和精确性，保持更高的精度是重要的。为了减轻不稳定性，路由过程也使用了全精度。
 
-![Image 56: Table shows that selective precision does not degrade quality.](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/04_switch_table.png)
+![Image 56: Table shows that selective precision does not degrade quality.](assets/e/b/eb5400c3c504a9ba0097630528ad6c83.png)
 
 使用混合精度不会降低模型质量并可实现更快的训练
 
@@ -239,7 +239,7 @@ Switch Transformers 采用了编码器 - 解码器的架构，实现了与 T5 �
 
 ST-MoE 的研究者们发现，编码器中不同的专家倾向于专注于特定类型的令牌或浅层概念。例如，某些专家可能专门处理标点符号，而其他专家则专注于专有名词等。与此相反，解码器中的专家通常具有较低的专业化程度。此外，研究者们还对这一模型进行了多语言训练。尽管人们可能会预期每个专家处理一种特定语言，但实际上并非如此。由于令牌路由和负载均衡的机制，没有任何专家被特定配置以专门处理某一特定语言。
 
-![Image 57: Experts specialize in some token groups](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/05_experts_learning.png)
+![Image 57: Experts specialize in some token groups](assets/a/0/a0dd6ebb34348f2888ca3f775f3b0c77.png)
 
 ST-MoE 论文中显示了哪些令牌组被发送给了哪个专家的表格
 
@@ -259,19 +259,19 @@ ST-MoE 论文中显示了哪些令牌组被发送给了哪个专家的表格
 
 Switch Transformers 的作者观察到，在相同的预训练困惑度下，稀疏模型在下游任务中的表现不如对应的稠密模型，特别是在重理解任务 (如 SuperGLUE) 上。另一方面，对于知识密集型任务 (如 TriviaQA)，稀疏模型的表现异常出色。作者还观察到，在微调过程中，较少的专家的数量有助于改善性能。另一个关于泛化问题确认的发现是，模型在小型任务上表现较差，但在大型任务上表现良好。
 
-![Image 58: Fine-tuning learning curves](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/06_superglue_curves.png)
+![Image 58: Fine-tuning learning curves](assets/4/1/41a7d21c46b14899d09320f43f54375d.png)
 
 在小任务 (左图) 中，我们可以看到明显的过拟合，因为稀疏模型在验证集中的表现要差得多。在较大的任务 (右图) 中，MoE 则表现良好。该图来自 ST-MoE 论文
 
 一种可行的微调策略是尝试冻结所有非专家层的权重。实践中，这会导致性能大幅下降，但这符合我们的预期，因为混合专家模型 (MoE) 层占据了网络的主要部分。我们可以尝试相反的方法: 仅冻结 MoE 层的参数。实验结果显示，这种方法几乎与更新所有参数的效果相当。这种做法可以加速微调过程，并降低显存需求。
 
-![Image 59: Only updating the non MoE layers works well in fine-tuning](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/07_superglue_bars.png)
+![Image 59: Only updating the non MoE layers works well in fine-tuning](assets/3/8/38a8ed049ce796d08d13c1d7892847da.png)
 
 通过仅冻结 MoE 层，我们可以在保持质量的同时加快训练速度。该图来自 ST-MoE 论文
 
 在微调稀疏混合专家模型 (MoE) 时需要考虑的最后一个问题是，它们有特别的微调超参数设置——例如，稀疏模型往往更适合使用较小的批量大小和较高的学习率，这样可以获得更好的训练效果。
 
-![Image 60: Table comparing fine-tuning batch size and learning rate between dense and sparse models.](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/08_superglue_dense_vs_sparse.png)
+![Image 60: Table comparing fine-tuning batch size and learning rate between dense and sparse models.](assets/1/6/165373c3ad35dba525c17325706e826c.png)
 
 提高学习率和调小批量可以提升稀疏模型微调质量。该图来自 ST-MoE 论文
 
@@ -283,7 +283,7 @@ Switch Transformers 的作者观察到，在相同的预训练困惑度下，稀
 
 当研究者们对 MoE 和对应性能相当的 T5 模型进行微调时，他们发现 T5 的对应模型表现更为出色。然而，当研究者们对 Flan T5 (一种 T5 的指令优化版本) 的 MoE 版本进行微调时，MoE 的性能显著提升。更值得注意的是，Flan-MoE 相比原始 MoE 的性能提升幅度超过了 Flan T5 相对于原始 T5 的提升，这意味着 MoE 模型可能从指令式微调中获益更多，甚至超过了稠密模型。此外，MoE 在多任务学习中表现更佳。与之前关闭 **辅助损失** 函数的做法相反，实际上这种损失函数可以帮助防止过拟合。
 
-![Image 61: MoEs benefit even more from instruct tuning than dense models](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/09_fine_tune_evals.png)
+![Image 61: MoEs benefit even more from instruct tuning than dense models](assets/9/2/9236666d52f37e49234e6be066e7def2.png)
 
 与稠密模型相比，稀疏模型从指令微调中受益更多。该图来自 MoEs Meets instructions Tuning 论文
 
@@ -310,7 +310,7 @@ Switch Transformers 的作者观察到，在相同的预训练困惑度下，稀
 
 在专家并行中，专家被放置在不同的节点上，每个节点处理不同批次的训练样本。对于非 MoE 层，专家并行的行为与数据并行相同。对于 MoE 层，序列中的令牌被发送到拥有所需专家的节点。
 
-![Image 62: Image illustrating model, expert, and data prallelism](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/10_parallelism.png)
+![Image 62: Image illustrating model, expert, and data prallelism](assets/d/e/deae201d775c6714247dc31f043daf21.png)
 
 Switch Transformers 论文中展示如何使用不同的并行技术在节点上分割数据和模型的插图
 
@@ -334,7 +334,7 @@ FasterMoE (2022 年 3 月) 深入分析了 MoE 在不同并行策略下的理论
 
 Megablocks (2022 年 11 月) 则专注于通过开发新的 GPU kernel 来处理 MoE 模型中的动态性，以实现更高效的稀疏预训练。其核心优势在于，它不会丢弃任何令牌，并能高效地适应现代硬件架构 (支持块稀疏矩阵乘)，从而达到显著的加速效果。Megablocks 的创新之处在于，它不像传统 MoE 那样使用批量矩阵乘法 (这通常假设所有专家形状相同且处理相同数量的令牌)，而是将 MoE 层表示为块稀疏操作，可以灵活适应不均衡的令牌分配。
 
-![Image 63: Matrix multiplication optimized for block-sparse operations.](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/moe/11_expert_matmuls.png)
+![Image 63: Matrix multiplication optimized for block-sparse operations.](assets/9/1/911d1f32a12698bdd6ad640044fd4540.png)
 
 针对不同规模的专家和令牌数量的块稀疏矩阵乘法。该图来自 \[MegaBlocks\](https://arxiv.org/abs/2211.15841) 论文
 

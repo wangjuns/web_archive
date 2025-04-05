@@ -10,13 +10,13 @@ Markdown Content:
 3.  **熟悉大模型的部署流程；**
 4.  **熟悉电脑配置；**
 
-![Image 1](https://picx.zhimg.com/v2-b2684d5a2b756b294971e9cc21a26ba3_1440w.jpg)
+![Image 1](assets/0/d/0d42be8be728d315e7e37a5b06b390dc.jpg)
 
 目前网上关于DeepSeek的部署教程多如牛毛，但在自己进行尝试的时候，还是发现了一些需要注意的细节。
 
 这篇文章会介绍我在本地部署DeepSeek-R1:70b时，出现的一些问题，以及一些经验。
 
-![Image 2](https://pic4.zhimg.com/v2-94c8e73946cbc1e0e96e3db53e1f5ff1_1440w.jpg)
+![Image 2](assets/3/c/3c175c54711aab961a73ba2be5045d88.jpg)
 
 一、硬件需求
 ------
@@ -42,11 +42,11 @@ DeepSeek-R1模型的参数量越大，模型越智能，但对硬件要求也就
 
 DeepSeek最简单的方法就是通过Ollama进行部署：
 
-![Image 3](https://pic1.zhimg.com/v2-085e0b648e4c822f0022faa58e8b8a34_1440w.jpg)
+![Image 3](assets/5/f/5f547eaf4d68ffd21b681efbf57746df.jpg)
 
 这里以Linux系统为例，讲解怎样进行安装。
 
-![Image 4](https://pic4.zhimg.com/v2-ff9f92ffe18e797ab49c1698d07a8e97_1440w.jpg)
+![Image 4](assets/2/c/2c5e13b17e71d311f406e34bc004eead.jpg)
 
 ### 1、命令行安装Ollama
 
@@ -68,11 +68,11 @@ Error: llama runner process has terminated: exit status 2
 
 下载过程：
 
-![Image 5](https://pic1.zhimg.com/v2-51175c05f2aaef09db4b4e384042e524_1440w.jpg)
+![Image 5](assets/9/3/9384d8ae1aec78b7e64915eac81e19c5.jpg)
 
 可以输入Ollama查看是否已经安装完成：
 
-![Image 6](https://pic4.zhimg.com/v2-3c81acc26c292963320dbd725c83c345_1440w.jpg)
+![Image 6](assets/f/5/f5e26e5d6ad3f2f17558cec201255979.jpg)
 
 ### 2、运行Ollama后下载模型
 
@@ -86,11 +86,11 @@ ollama pull deepseek-r1:1.5b
 
 下载过程：
 
-![Image 7](https://pic4.zhimg.com/v2-bf8a1622e02411b9c8b1c611268d557f_1440w.jpg)
+![Image 7](assets/3/3/339336cf229522a7666cdb4b5cd3fc89.jpg)
 
 下载完成后
 
-![Image 8](https://pic4.zhimg.com/v2-ab4d650c2ec9c85f5bcbc6059126d8ff_1440w.jpg)
+![Image 8](assets/3/e/3e9792359341060b972323f0d128c874.jpg)
 
 ### 3、运行模型
 
@@ -102,37 +102,37 @@ ollama run deepseek-r1:1.5b
 
 即可在Terminal中运行模型：
 
-![Image 9](https://pic2.zhimg.com/v2-eb409929a189869d39f400b64d17a413_1440w.jpg)
+![Image 9](assets/8/9/899b13dcb0a01de9853dc78b0d60ef22.jpg)
 
 例子：
 
-![Image 10](https://pic3.zhimg.com/v2-f0178ecce36e4e825ef6450e13b6499a_1440w.jpg)
+![Image 10](assets/7/3/73ebf27c1886152355a9578ef2b87654.jpg)
 
 在Terminal中运行DeepSeek不太符合日常的工作习惯，而且不方便联网等操作。
 
 我们可以把DeepSeek部署到网页中，在浏览器中运行DeepSeek：
 
-![Image 11](https://picx.zhimg.com/v2-16ca81b9ef5908b12879b1efac829f33_1440w.jpg)
+![Image 11](assets/1/c/1cc98f920129f40ca9fdcd274e7317f3.jpg)
 
 最简单的方法是使用Page Assist，这是一个为Ollama设计的Web UI：
 
-![Image 12](https://pic2.zhimg.com/v2-f32f52d11fa6380a9f668f38841abe47_1440w.jpg)
+![Image 12](assets/9/0/900c728d4714dfae395a6aca4066f5c2.jpg)
 
 点击Add to Chrome即可安装。
 
 安装完成后，在扩展程序那里单击插件图标：
 
-![Image 13](https://pica.zhimg.com/v2-4f9773101e2adf9890682d06f4847b18_1440w.jpg)
+![Image 13](assets/f/2/f2104a72764a0209eb692c7c9f151e43.jpg)
 
 **注意：这个时候，Ollama需要在运行状态下。**
 
 即可弹出网页，然后在红框中选择模型即可：
 
-![Image 14](https://picx.zhimg.com/v2-7c9e26e02ba5fb2aae62df976d746b1d_1440w.jpg)
+![Image 14](assets/f/f/ff5f63d4a74aa2a344188494e257bdbc.jpg)
 
 **注意：Page Assist是可以支持联网的。**
 
-![Image 15](https://picx.zhimg.com/v2-63e0bf69e68a26c11190840e28d65ea9_1440w.jpg)
+![Image 15](assets/b/e/beb574bd24f68fd0ebe44fe0cbdc1cba.jpg)
 
 后续我会介绍怎样给DeepSeek投喂数据，通过自己的数据库，让DeepSeek更懂你。
 

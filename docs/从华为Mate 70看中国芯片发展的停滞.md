@@ -63,7 +63,7 @@ MEAGHAN TOBIN
 
 2024年12月18日
 
-![Image 17: 华为Mate 70智能手机于11月发布后，北京的购物者正在试用产品。](https://static01.nyt.com/images/2024/12/13/multimedia/00China-Chip-01-fhqt/00China-Chip-01-fhqt-master1050.jpg)
+![Image 17: 华为Mate 70智能手机于11月发布后，北京的购物者正在试用产品。](assets/4/8/48f8e89c7c35ed8c4155795ef3a9fc6a.jpg)
 
 华为Mate 70智能手机于11月发布后，北京的购物者正在试用产品。 Adek Berry/Agence France-Presse — Getty Images
 
@@ -103,7 +103,7 @@ MEAGHAN TOBIN
 
 华为手机在中国大受欢迎。据分析智能手机市场的Counterpoint Research公司称，过去一年，华为在中国的销售增长速度超过了任何其他品牌。
 
-![Image 18: 去年，人们在北京一家华为专卖店外排队购买Mate 60。能买到一款采用中国制造的最先进部件的手机，购物者都很兴奋。](https://static01.nyt.com/images/2024/12/13/multimedia/00China-Chip-02-fhqt/00China-Chip-02-fhqt-master1050.jpg)
+![Image 18: 去年，人们在北京一家华为专卖店外排队购买Mate 60。能买到一款采用中国制造的最先进部件的手机，购物者都很兴奋。](assets/1/b/1b9668c8bea40ea0b8bcab34dc963612.jpg)
 
 去年，人们在北京一家华为专卖店外排队购买Mate 60。能买到一款采用中国制造的最先进部件的手机，购物者都很兴奋。 Kevin Frayer/Getty Images
 
@@ -129,25 +129,25 @@ Meaghan Tobin是时报科技记者，常驻台北，报道亚洲地区的商业�
 
 #### 相关报道
 
-*   [### 华为发布Mate 70系列手机 2024年11月27日 ![Image 19: 华为发布Mate 70系列手机](https://static01.nyt.com/images/2024/11/26/multimedia/26China-Huawei-03-vtlg/26China-Huawei-03-vtlg-thumbLarge.jpg)](https://cn.nytimes.com/technology/20241127/china-huawei-mate-70/ "华为发布Mate 70系列手机")
+*   [### 华为发布Mate 70系列手机 2024年11月27日 ![Image 19: 华为发布Mate 70系列手机](assets/0/b/0b4bfcd09a9a1c2d5e7db5d5450c021d.jpg)](https://cn.nytimes.com/technology/20241127/china-huawei-mate-70/ "华为发布Mate 70系列手机")
     
-*   [### 台积电尖端芯片流入华为设备 2024年10月30日 ![Image 20: 台积电尖端芯片流入华为设备](https://static01.nyt.com/images/2024/10/28/multimedia/00TSMC-HUAWEI-cqtk/00TSMC-HUAWEI-cqtk-thumbLarge.jpg)](https://cn.nytimes.com/business/20241030/tsmc-huawei-computer-chips/ "台积电尖端芯片流入华为设备")
+*   [### 台积电尖端芯片流入华为设备 2024年10月30日 ![Image 20: 台积电尖端芯片流入华为设备](assets/6/8/68c2675b18e61089fde020fd66f56902.jpg)](https://cn.nytimes.com/business/20241030/tsmc-huawei-computer-chips/ "台积电尖端芯片流入华为设备")
     
-*   [### 华为推出三折叠屏手机Mate XT 2024年9月11日 ![Image 21: 华为推出三折叠屏手机Mate XT](https://static01.nyt.com/images/2024/09/10/multimedia/10China-Huawei-mhjp/10China-Huawei-mhjp-thumbLarge.jpg)](https://cn.nytimes.com/technology/20240911/huawei-trifold-iphone/ "华为推出三折叠屏手机Mate XT")
+*   [### 华为推出三折叠屏手机Mate XT 2024年9月11日 ![Image 21: 华为推出三折叠屏手机Mate XT](assets/e/e/ee8d4fd9641116875e54290f34aecf67.jpg)](https://cn.nytimes.com/technology/20240911/huawei-trifold-iphone/ "华为推出三折叠屏手机Mate XT")
     
 
 ##### 最受欢迎
 
-1.  [#### 美国公司如何对抗政府禁令，向中国出售先进技术 ![Image 22: 美国公司如何对抗政府禁令，向中国出售先进技术](https://static01.nyt.com/images/2024/12/05/multimedia/DC-EXPORTCONTROLS-01-jlqt/DC-EXPORTCONTROLS-01-jlqt-thumbLarge.jpg)](https://cn.nytimes.com/business/20241216/tech-sales-china-huawei/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-2.  [#### 一本成为习近平精神指南的俄罗斯小说 ![Image 23: 一本成为习近平精神指南的俄罗斯小说](https://static01.nyt.com/images/2024/12/15/multimedia/15-vhbl/15-vhbl-thumbLarge.jpg)](https://cn.nytimes.com/opinion/20241216/china-brics-xi-jinping-trump/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-3.  [#### 拜登政府准备对中国老式芯片展开贸易调查 ![Image 24: 拜登政府准备对中国老式芯片展开贸易调查](https://static01.nyt.com/images/2024/12/16/multimedia/DC-CHIPS-02-lctp/DC-CHIPS-02-lctp-thumbLarge.jpg)](https://cn.nytimes.com/business/20241217/biden-china-chips-investigation/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-4.  [#### 德国执政联盟瓦解，欧洲危机进一步加深 ![Image 25: 德国执政联盟瓦解，欧洲危机进一步加深](https://static01.nyt.com/images/2024/12/12/multimedia/HFOgermany-government01-kmvt/HFOgermany-government01-kmvt-thumbLarge-v2.jpg)](https://cn.nytimes.com/world/20241217/germany-confidence-vote-scholz-snap-election/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-5.  [#### 尹锡悦被弹劾，美韩同盟或成牺牲品 ![Image 26: 尹锡悦被弹劾，美韩同盟或成牺牲品](https://static01.nyt.com/images/2024/12/16/multimedia/16skorea-diplo-05-bjlf/16skorea-diplo-05-bjlf-thumbLarge.jpg)](https://cn.nytimes.com/asia-pacific/20241217/south-korea-us-diplomacy/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-6.  [#### 拜登政府计划彻底封禁中国电信，反制中国黑客攻击 ![Image 27: 拜登政府计划彻底封禁中国电信，反制中国黑客攻击](https://static01.nyt.com/images/2024/12/16/multimedia/16DC-CHINA-HACK-pfzm/16DC-CHINA-HACK-pfzm-thumbLarge.jpg)](https://cn.nytimes.com/usa/20241217/biden-administration-retaliation-china-hack/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-7.  [#### 尹锡悦被弹劾，韩国接下来会发生什么？ ![Image 28: 尹锡悦被弹劾，韩国接下来会发生什么？](https://static01.nyt.com/images/2024/12/15/multimedia/15skorea-politics-folo-01-zchj/15skorea-politics-folo-01-zchj-thumbLarge.jpg)](https://cn.nytimes.com/asia-pacific/20241216/south-korea-impeachment/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-8.  [#### 《纽约时报》2024年度十大好书 ![Image 29: 《纽约时报》2024年度十大好书](https://static01.nyt.com/images/2024/12/03/books/review/03TenBest-LEAD-3_2/03TenBest-LEAD-3_2-thumbLarge.jpg)](https://cn.nytimes.com/books/20241213/best-books-2024/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-9.  [#### 女性主义电影《好东西》为何能在中国大获成功 ![Image 30: 女性主义电影《好东西》为何能在中国大获成功](https://static01.nyt.com/images/2024/12/11/multimedia/11china-movie-wkbf/11china-movie-wkbf-thumbLarge.jpg)](https://cn.nytimes.com/china/20241212/china-feminist-comedy-her-story/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
-10.  [#### 中共意识形态“国师”王沪宁的新任务：台湾 ![Image 31: 中共意识形态“国师”王沪宁的新任务：台湾](https://static01.nyt.com/images/2024/05/09/multimedia/00WANGHUNING-01-vgkb/00WANGHUNING-01-vgkb-thumbLarge.jpg)](https://cn.nytimes.com/china/20241028/china-xi-jinping-adviser-taiwan/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+1.  [#### 美国公司如何对抗政府禁令，向中国出售先进技术 ![Image 22: 美国公司如何对抗政府禁令，向中国出售先进技术](assets/9/d/9d846b1d4f5f0c0204ee5ae58774211d.jpg)](https://cn.nytimes.com/business/20241216/tech-sales-china-huawei/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+2.  [#### 一本成为习近平精神指南的俄罗斯小说 ![Image 23: 一本成为习近平精神指南的俄罗斯小说](assets/8/a/8abde64be2e4f486e6bf3371bacdd507.jpg)](https://cn.nytimes.com/opinion/20241216/china-brics-xi-jinping-trump/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+3.  [#### 拜登政府准备对中国老式芯片展开贸易调查 ![Image 24: 拜登政府准备对中国老式芯片展开贸易调查](assets/4/6/4668aaa5af1a397b48098ccbe4e3efd0.jpg)](https://cn.nytimes.com/business/20241217/biden-china-chips-investigation/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+4.  [#### 德国执政联盟瓦解，欧洲危机进一步加深 ![Image 25: 德国执政联盟瓦解，欧洲危机进一步加深](assets/a/2/a24082a464b7eb79cf7a25c10b07a5f4.jpg)](https://cn.nytimes.com/world/20241217/germany-confidence-vote-scholz-snap-election/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+5.  [#### 尹锡悦被弹劾，美韩同盟或成牺牲品 ![Image 26: 尹锡悦被弹劾，美韩同盟或成牺牲品](assets/8/1/8166a31502a66b1dae01a73766326b91.jpg)](https://cn.nytimes.com/asia-pacific/20241217/south-korea-us-diplomacy/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+6.  [#### 拜登政府计划彻底封禁中国电信，反制中国黑客攻击 ![Image 27: 拜登政府计划彻底封禁中国电信，反制中国黑客攻击](assets/2/9/29355c6ca5c830ddf6806f18716e8bbb.jpg)](https://cn.nytimes.com/usa/20241217/biden-administration-retaliation-china-hack/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+7.  [#### 尹锡悦被弹劾，韩国接下来会发生什么？ ![Image 28: 尹锡悦被弹劾，韩国接下来会发生什么？](assets/1/b/1b15e1aee84f8c2795917714faf25af1.jpg)](https://cn.nytimes.com/asia-pacific/20241216/south-korea-impeachment/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+8.  [#### 《纽约时报》2024年度十大好书 ![Image 29: 《纽约时报》2024年度十大好书](assets/1/9/19f77410aa1d948240d993c6e0b5e006.jpg)](https://cn.nytimes.com/books/20241213/best-books-2024/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+9.  [#### 女性主义电影《好东西》为何能在中国大获成功 ![Image 30: 女性主义电影《好东西》为何能在中国大获成功](assets/a/3/a3182faf19f1d22e2b29633b88cb2036.jpg)](https://cn.nytimes.com/china/20241212/china-feminist-comedy-her-story/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
+10.  [#### 中共意识形态“国师”王沪宁的新任务：台湾 ![Image 31: 中共意识形态“国师”王沪宁的新任务：台湾](assets/3/1/31f8c4ae1cc35f23f0ae42abdbd50b1f.jpg)](https://cn.nytimes.com/china/20241028/china-xi-jinping-adviser-taiwan/?utm_source=top10-in-article&utm_medium=articlepage&utm_campaign=web)
 
 [](https://cn.nytimes.com/)
 ---------------------------

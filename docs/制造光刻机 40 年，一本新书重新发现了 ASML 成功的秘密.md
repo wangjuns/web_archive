@@ -19,7 +19,7 @@
 
 同一年，苹果发布 Mac 电脑的时候，计算机 CPU 已经复杂到无法以机械加工。英特尔的工厂要用光刻机让精细光线透过薄膜，将肉眼不可见的图案投射到硅片上，形成微小的电路结构。
 
-![](https://www.latepost.com/uploads/contentImg/4d5a162fbf7e4f6a69a6da97ced64258.gif)
+![](assets/5/0/50ea3d773fb201153b3511f2f8702514.gif)
 
 ASML 光刻机的成像原理：通过投射光束，穿过印有电路图的掩模及光学镜片，将电路图曝光在带有光刻胶的硅片上。
 
@@ -31,7 +31,7 @@ ASML 光刻机的成像原理：通过投射光束，穿过印有电路图的掩
 
 ASML 首批员工则大多因为飞利浦工会答应的丰厚养老金和几年后可以返回飞利浦的承诺，才不情愿地到被飞利浦拆出、很可能 “买杯咖啡就会破产” 的新公司上班。
 
-![](https://www.latepost.com/uploads/contentImg/22e7bb7ec0c74618790afec227e658f1.webp)
+![](assets/8/2/823896c91be05f3d3e1cc65f324b9687.webp)
 
 ASML 成立初期的办公棚屋，紧挨垃圾堆、下雨漏水。
 
@@ -75,13 +75,13 @@ ASML 的光刻机最快每小时可以生产 200 至 300 块晶圆，每块晶�
 
 但这个利润建立在绝对的技术领先和绝对的市场占有率上，做不到，光刻机也可能是一门赔钱的生意。直到 1980 年代末，ASML 还是家亏损的公司。甚至 20 年前，它也算不上什么科技巨头，市值只有今天的千分之一左右。
 
-![](https://www.latepost.com/uploads/contentImg/7d181839b96de2f393faa0e7ac2e3448.webp)
+![](assets/1/e/1e7561d6145e22a0436f8cdcbcaee05f.webp)
 
-![](https://www.latepost.com/uploads/contentImg/8a03ca598dcc2eb8046db7a71964848a.webp)
+![](assets/6/c/6cdcdc27a2b7776e2cfa91bb1146d9e7.webp)
 
 在公司还很小的时候，斯密特只能贴着客户找需求、求订单。1985 年的 SEMICON West 展会上，ASML 印了宣传册，挑了最强对手 GCA 和尼康的标杆产品，只比自己有优势的参数。
 
-![](https://www.latepost.com/uploads/contentImg/6131b9061cdea82483c5074a84dade60.webp)
+![](assets/d/6/d6edad578e25e387036ba64bdfd9763e.webp)
 
 展会期间 ASML 的广告册，着重宣传自家产品拥有更好的效率和精度，只字不提没有竞争力的镜头。
 

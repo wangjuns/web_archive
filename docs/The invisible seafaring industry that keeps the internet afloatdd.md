@@ -11,9 +11,9 @@ They turned on the television. An emergency alert showed that an earthquake had 
 
 Hirai feared these waves more than most people. He had grown up hearing the story of how one afternoon in 1923, his aunt felt the ground shake, swept up her two-year-old brother, and sprinted uphill to the cemetery, narrowly escaping floods and fires that killed over 100,000 people. That child became Hirai’s father, so he owed his existence to his aunt’s quick thinking. Now, he found himself in the same position. He knew tsunamis become dangerous when all the water displaced by the quake reaches shallow water and slows and grows taller. The Ocean Link, floating in less than 500 feet of water, was too shallow for comfort.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/01_mobile_min.jpg)
+![](assets/8/e/8e3d15fc3fdf8ac47e057ece840f719f.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -21,27 +21,27 @@ In the family tree of professions, submarine cable work occupies a lonely branch
 
 Across Ocean Link’s 400-foot deck, the ship’s 50 crew members were emerging from their cabins and workstations, trying to figure out what had just occurred. Over the intercom, the captain announced that there had been an earthquake, a tsunami was coming, and the crew should ready the ship to evacuate to deeper water. The crew fanned out to check fuel tanks and lash down machinery. Inside a darkened, monitor-filled shipping container on the starboard deck, the submersible’s pilot steered Marcas back toward the ship as fast as the bulky robot’s propellers could carry it. Minutes later, the submersible was hoisted aboard and the Ocean Link was underway.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/02_min.jpg)
+![](assets/1/9/197c79a5ab43d85cb65a863b349a5fd3.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/03_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/04_min.jpg)
+![](assets/b/3/b361771bdec394d7e1a44e04b9fb7746.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/05_min.jpg)
+![](assets/9/e/9ebf50b259c6e0839bf3649aad444d8a.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/5/b/5b69c1b192e61b45fd5f869a91edcf27.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -53,9 +53,9 @@ But Hirai also began to think about the work he knew lay ahead. The Ocean Link w
 
 Sure enough, that night, a call came from headquarters confirming the Ocean Link was safe and directing them to remain at sea until further notice, followed by messages announcing cable failure after cable failure, including the one they had just finished repairing.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/06_mobile_min.jpg)
+![](assets/6/8/6875dd52b70528aecf95ae69cc041eb8.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -73,33 +73,33 @@ Corporations would lose the ability to coordinate overseas manufacturing and log
 
 Fortunately, there is enough redundancy in the world’s cables to make it nearly impossible for a well-connected country to be cut off, but cable breaks do happen. On average, they happen every other day, about 200 times a year. The reason websites continue to load, bank transfers go through, and civilization persists is because of the thousand or so people living aboard 20-some ships stationed around the world, who race to fix each cable as soon as it breaks.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/07_min.jpg)
+![](assets/5/f/5f99d59ad828d1f423202f1e4772c254.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/08_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/09_min.jpg)
+![](assets/5/f/5f85aa56ac1e18a14625aaf97e6aaf61.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/10_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/11_min.jpg)
+![](assets/4/0/4028b633b91674a414a89702b0890136.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/d/2/d27b0cdcb7fa2731c038136f43d8c89e.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/0/5/0557de7c85898d7e9359cfced7eefd3e.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -107,9 +107,9 @@ The industry responsible for this crucial work traces its origins back far beyon
 
 Hirai’s career path is characteristic in its circuitousness. Growing up in the 1960s in the industrial city of Yokosuka, just down the Miura Peninsula from the Ocean Link’s port in Yokohama, he worked at his parents’ fish market from the age of 12. A teenage love of American rock ‘n’ roll led to a desire to learn English, which led him to take a job at 18 as a switchboard operator at the telecom company KDDI as a means to practice. When he was 26, he transferred to a cable landing station in Okinawa because working on the beach would let him perfect his windsurfing. This was his introduction to cable maintenance and also where he met his wife. Six years later, his English proficiency got him called back to KDDI headquarters to help design Ocean Link for KCS, a KDDI subsidiary. Once it was built, he decided to go to sea with it, eventually becoming the ship’s chief engineer.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/12_mobile_min.jpg)
+![](assets/3/b/3bd959bab370e5f5d5f82cadda574dae.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -119,27 +119,27 @@ Once people are in, they tend to stay. For some, it’s the adventure — repair
 
 KCS has around 80 employees, many of whom, like Hirai, have worked there for decades. Because the industry is small and careers long, it can seem like everyone knows one another. People often refer to it as a family. Shipboard life lends itself to a strong sense of camaraderie, with periods of collaboration under pressure followed by long stretches — en route to a worksite or waiting for storms to pass — without much to do but hang out. Kobayashi learned to fish off the side of the ship and attempted to improve the repetitive cuisine by serving his crewmates sashimi. (His favorite is squid, but his colleagues would prefer he use the squid to catch mackerel.) Hirai, an enthusiastic athlete, figured out how to string up a net on the Ocean Link’s  helideck and play tennis. Other times, he would join the crew for karaoke in the lounge, a wood-paneled room behind an anomalous stained-glass door containing massage chairs, a DVD library, and a bar. A self-described “walking jukebox,” Hirai favored Simon & Garfunkel and Billy Joel, though he said the younger members of the fleet didn’t go in for it as much.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/13_min.jpg)
+![](assets/3/9/392cdc75a7c0b12fe3d6fc3dce7e46ea.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/14_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/15_min.jpg)
+![](assets/c/d/cd44d384b46f1a36361e2abb69890164.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/16_min.jpg)
+![](assets/4/f/4f7d8d60cb3fba635cc954aa3fd575b4.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/c/0/c012f5ac7f68afe6a51fc0c585abe209.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -171,9 +171,9 @@ MARCAS ROV Remote submersible capable of operating at up to 8,000ft. Equipped wi
 
 The lifestyle can be an obstacle. A career in subsea means enduring long stretches far from home, unpredictable schedules, and ironically, very poor internet.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/17_mobile_min.jpg)
+![](assets/7/0/705d3abdab8129359a984a4103b8b2c8.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -213,9 +213,9 @@ Now, as they readied the ship for departure, an employee was dispatched to the d
 
 They decided to begin with the same cable they had just finished repairing when the earthquake struck. On a drizzling afternoon eight days after returning to port, with smoke still rising from the Fukushima power plant, the Ocean Link set back out to sea.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/18_mobile_min.jpg)
+![](assets/d/4/d444bad45691d6774bb44c120c3dab47.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -225,27 +225,27 @@ Field, a 35-year-old self-made paper tycoon, had no experience in telegraphy —
 
 Field fared no better. Twelve years after he began, he had endured severed cables, near sinkings, and had one “success”: a cable laid in 1858 that prompted celebrations so enthusiastic that revelers set fire to New York City Hall. The cable failed weeks later.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/19_min.jpg)
+![](assets/d/5/d5869f4b182cb99f1bd27286075eba15.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/20_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/21_min.jpg)
+![](assets/f/3/f35442db8bfbeb8ea832b28800e4a992.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/22_min.jpg)
+![](assets/9/b/9bdcf970e3c258f15f1ef591ccd3dd7e.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/c/3/c329896f83fe310390c33ac01fc19bbe.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -287,33 +287,33 @@ They spent the first day and night surveying the worksite, moving slowly along t
 
 At the most basic level, a broken cable is fixed by patching the break with a piece of new cable, but because the break is miles away on the ocean floor, this must be done in several steps. The first step is to cut the cable near the break (often, the cable will have been damaged but not cleanly severed, and cables are laid with so little slack that they cannot be pulled to the surface in one piece). This is done by dragging a bladed grapnel across the cable in a so-called “cutting drive.” The ship then swaps the bladed grapnel for a hooked one and catches one end of the severed cable, hoists it to the surface, and attaches it to a buoy. Then they catch the other cable end, splice the spare cable to it, and tow the spare cable back to the first buoyed cable to complete the patch. The ship is now holding a working cable but one that is considerably longer than it used to be. This process of bringing each cable end to the surface separately means that every repair makes a cable longer — in deep water, by several miles. In order to minimize slack that could get tangled and snagged, the loop of new cable is towed to the side of the original route until it can lay taut on the ocean floor once again.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/25_mobile_min.jpg)
+![](assets/4/a/4a9bec3e43fa4e1687c1385885759e33.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/26_mobile_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/27_mobile_min.jpg)
+![](assets/b/b/bbd8a75e7bca9c5c189e6593a0aaa639.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/28_mobile_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/29_mobile_min.jpg)
+![](assets/f/2/f24223b48675992919bbcbf7b0986f56.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/b/2/b2367ae35eb73bd355979332fc643dca.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/5/c/5c88a7caeacc5df0dc7b3d08cf5b8f45.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -341,9 +341,9 @@ The grapnel, cable, and chains were slowly lowered back over the prow and into t
 
 For Hirai, relief at a disaster averted was soon followed by foreboding. The landslides created by the earthquake must have been far greater than he had imagined, dragging the cable for miles, mangling it, and burying it beneath who knew how much debris. He couldn’t think how to proceed.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/30_mobile_min.jpg)
+![](assets/9/0/900c0be24128504eaa57ec330f86b323.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -359,9 +359,9 @@ This system has been able to cope with the day-to-day cadence of cable breaks, b
 
 At the same time, there are more cables to repair than ever, also partly a result of the tech giants entering the industry. Starting around 2016, tech companies that previously purchased bandwidth from telcos began pouring billions of dollars into cable systems of their own, seeking to ensure their cloud services were always available and content libraries synced. The result has been not just a boom in new cables but a change in the topology of the internet. “In the old days we connected population centers,” said Constable, the former Huawei Marine executive. “Now we connect data centers. Eighty percent of traffic crossing the Atlantic is probably machines talking to machines.”
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/31_mobile_min.jpg)
+![](assets/b/a/ba22b4af636a7c767e9bd219e95f96cb.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -399,9 +399,9 @@ Hirai decided the only solution was to abandon the tangled mess and lay a new sy
 
 Takashi Kurokawa had joined KCS 12 years earlier, after hearing about the company from a teacher while in engineering school. Unlike many of his colleagues who moved roles every few years, after Kurokawa learned to joint, he just kept jointing. He enjoyed the way jointing’s strict rules and standards for success created a structure within which he could push himself to attain ever greater precision and speed.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/32_mobile_min.jpg)
+![](assets/1/4/1422a6477871258d926719cd3789413b.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -411,81 +411,81 @@ To speed matters, they decided to assemble what they could in port at Yokohama, 
 
 Hirai had mapped out the plan to a meticulous 23 steps. They began by severing the cable running from the branching unit to Murayama in the south, catching the landward end, splicing the new cable to it, and sailing northward to the point where they planned to deposit the new branching unit. There, they attached the cable to a buoy and lowered it into the ocean. Then they were off to the northern cable, which they caught, spliced, and pulled back to the buoy. It took 12 days to get here, and now came the difficult part.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/33_mobile_min.jpg)
+![](assets/a/0/a036c1520b4ac221dde5225f8a4a7a91.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/34_mobile_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/44_mobile_min.jpg)
+![](assets/f/a/fa8621140a5487663fcd2e3e2479d48a.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/45_mobile_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/35_mobile_min.jpg)
+![](assets/6/4/640423ca460d6c9d8e37107b7634a93f.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/36_mobile_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/37_mobile_min.jpg)
+![](assets/6/6/66272dd02d4d43cc45c698d7093ffc55.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/38_mobile_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/39_mobile_min.jpg)
+![](assets/0/5/05a2b47e1913c79b809564589586a043.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/40_mobile_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/46_mobile_min.jpg)
+![](assets/b/f/bf6d87de68df6ec16f877cd6242175ae.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
-
-Loading ...
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/41_mobile_min.jpg)
-
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/42_mobile_min.jpg)
+![](assets/b/a/ba0c5a24e7aef0436422bb41c7da21ca.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/1/3/1302b3fbde661c052dc10f022707e619.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/f/6/f617539af233d1c07c362d23edb42b13.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/a/7/a71dd7499acc57c92a73d72017abd26b.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/7/4/744e5dcb28c6e5fcecb2913f367b7ac1.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/d/0/d0e7502b4609178eef5cc13508eccb68.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
+
+Loading ...
+
+![](assets/7/c/7c29de3c13170fb8a21cf21059aed5db.jpg)
+
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 
@@ -497,9 +497,9 @@ They would again be working in deep water — nearly four miles — but what tro
 
 Hirai, Kurokawa, Kobayashi, and more than a dozen other members of the crew assembled on the foredeck. The white-painted prow glared bright in the sun as the branching unit was brought out, a metal tube with two black accordion legs that tapered to slender cables. They had drilled this maneuver before leaving port. Clad in hard hats, the crew gingerly placed it on a metal dolly and strapped it down. Hirai tied yellow webbing between its legs to form a harness and affixed a safety rope. Kurokawa stood by the prow, watching the unit as it was rolled toward him. Kobayashi stood back by the drum engine, watching the cable unspool and worrying what would happen if it snapped, envisioning weeks of splicing plunging to the ocean floor.
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/photos/min/47_mobile_min.jpg)
+![](assets/6/7/6704e7eff26db47b3bb84026ae39d8ad.jpg)
 
-![](https://cdn.vox-cdn.com/csk/fe4f780a-1a25-4bcc-8489-4ea4403cece8/740a5e3d-5577-4a46-a47b-5580b718c574/images/logomark.svg)
+![](assets/f/2/f2dd1da4f56987f695f0fbb85ddc1ba6.svg)
 
 Loading ...
 

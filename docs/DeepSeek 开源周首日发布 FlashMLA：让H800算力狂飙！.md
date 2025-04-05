@@ -3,17 +3,17 @@ Title: DeepSeek 开源周首日发布 FlashMLA：让H800算力狂飙！
 URL Source: https://mp.weixin.qq.com/s/GN87C95lT2tHUkIf8lbnnw
 
 Markdown Content:
-![Image 1: 图片](https://mmbiz.qpic.cn/mmbiz_gif/u6UOjABnicbtCz6ryiaibXxklcGd6LqtORpX1aia788BnKm9TXI9E3oJvyOTwMTFFaguMCMGNVeT7R9H4TCswsa9gA/640?wx_fmt=gif&from=appmsg&retryload=1&wxfrom=5&wx_lazy=1&tp=webp)
+![Image 1: 图片](assets/3/b/3be3944cb913d2890952052dd7c37e61.gif)
 
 2 月 24 日，DeepSeek 正式启动“开源周”，率先发布了首个开源项目FlashMLA（Flash Multi-Layer Attention），这是一款专为英伟达 Hopper 架构 GPU（如 H800）设计的高效多层注意力解码内核，旨在优化大语言模型（LLM）的推理性能，显著提升处理变长序列的效率。
 
-![Image 2: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/kfiaiar8iaaIIXnMyfCxzBygw3D2sPDZ4VTZpRCTXL3xThZWUc2ew8uicQ5NxPUIPXzCX35XbNxfKsbbUqUwVib4aVQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 2: Image](assets/5/c/5c2a06c4b30ba756996565b0eac3f141.webp)
 
 DeepSeek的成本涉及两项关键的技术：一个是MoE，一个就是MLA（多层注意力机制）。
 
 MLA 是一种改进的注意力机制，旨在提高Transformer模型在处理长序列时的效率和性能‌。MLA通过多个头（head）的并行计算，让模型能够同时关注文本中不同位置和不同语义层面的信息，从而更全面、更深入地捕捉长距离依赖关系和复杂语义结构‌。
 
-![Image 3: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/kfiaiar8iaaIIXnMyfCxzBygw3D2sPDZ4VTbqxtWbibjT82qtibkLPicloxVm6w49L2qYLOZXRw5xhZ8GibtY9a9b5Z9w/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 3: Image](assets/6/1/6100e021488685801d6954b3babe088c.webp)
 
 **技术突破：三大创新释放 GPU 潜能**
 
@@ -47,7 +47,7 @@ DeepSeek 通过 FlashMLA 的开源，展示了其在 AI 底层技术上的深厚
 
 **快速开始**
 
-![Image 4: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/kfiaiar8iaaIIXnMyfCxzBygw3D2sPDZ4VTbP7z2KWxibnDPR1WFjMwz7dk5WpuyLIYsYhKmTknGHicCejW5NUQAIBQ/640?wx_fmt=jpeg&from=appmsg)
+![Image 4: Image](assets/d/f/df2a55ed9a3e506400d9bc3e4f638662.jpg)
 
 相关链接：
 

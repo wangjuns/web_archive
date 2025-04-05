@@ -3,9 +3,9 @@ Title: a16z全球AI产品Top100：中国14款产品上榜，DeepSeek第2，Monic
 URL Source: https://mp.weixin.qq.com/s/MS3a8xjxe7N0JJgmILW55Q
 
 Markdown Content:
-![Image 1: Image](https://mmbiz.qpic.cn/sz_mmbiz_gif/qpAK9iaV2O3sAVsSPfCN9UX44XiaoicbUJI6gOMAYyYuDxZ51FI70rCqWW323AoYLHYbdunn8eSQJYsh53EKoUssg/640?wx_fmt=gif&from=appmsg)
+![Image 1: Image](assets/6/7/671c81583f20876966409d5323e27578.gif)
 
-![Image 2: Image](https://mmbiz.qpic.cn/mmbiz_png/S3w5PM87b3umg13HEsjclv0kbFTJYN10I2iaoRYnxOEgsL0QjJXwXktcHQzanUl3VXGURXd4kuZu6K6AbicZ9Rtw/640?wx_fmt=png&from=appmsg)
+![Image 2: Image](assets/7/8/7859f909cb4d840e1973fe498894f266.png)
 
 编译版本转载自「FishAI」
 
@@ -15,7 +15,7 @@ Markdown Content:
 
 这是我们第四次发布「Top 100 Gen AI Consumer Apps」榜单（每半年更新一次），涵盖全球50 大 AI 原生 Web 产品（数据来源：Similarweb，按月独立访客数排名）和50 大 AI 原生移动应用（数据来源：Sensor Tower，按月活跃用户数排名）。自 2024 年 8 月上一份报告发布以来，17 家新公司首次跻身 Web 产品榜单。
 
-![Image 3: Web 榜单](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sMeymAF04XBZGWqUle2TTKttcBOtSFWjme4yyUAaatRicErolI5BhlVw/640?wx_fmt=png&from=appmsg)
+![Image 3: Web 榜单](assets/0/c/0c681fc0a6af3c8c590eee52d176a330.png)
 
 Web 榜单
 
@@ -35,7 +35,7 @@ Web 榜单
 > 
 > Monica（与Manus是同一家）：#41
 
-![Image 4: 移动应用榜单](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sicib5IYxcfKXnIKqVJVRJmJGlFL8Gwic1lMNrOZl6pVSSNN3LsPWooClA/640?wx_fmt=png&from=appmsg)
+![Image 4: 移动应用榜单](assets/3/a/3a7dd6399508d3e5b19416f93447fe3f.png)
 
 移动应用榜单
 
@@ -59,7 +59,7 @@ Web 榜单
 
 此外，本次新增了“Brink List”榜单，列出10 家最有潜力冲击前 100 的产品（5 家 Web 产品，5 家移动应用）。在 AI 领域瞬息万变的背景下，我们期待观察这些后起之秀能否在下次榜单中脱颖而出。
 
-![Image 5: Brink List](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7syz43XrbGHgUibggNP8iaY2ypIBOqxasDkXKbhIcUaWGCPxsFIFcHWsbA/640?wx_fmt=png&from=appmsg)
+![Image 5: Brink List](assets/2/3/23f433df421639cb96b09d113bf92a8b.png)
 
 Brink List
 
@@ -67,7 +67,7 @@ Brink List
 
 **Founder Park 正在搭建开发者社群，邀请积极尝试、测试新模型、新技术的开发者、创业者们加入，请扫码详细填写你的产品/项目信息，通过审核后工作人员会拉你入群～**
 
-![Image 6: 图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/qpAK9iaV2O3snzkdspY3sicygHZq6mUDiawBGVDggLGW3LyiaR21JwIMYzNR5EiaonkcSSic9pPovibSibHGxm6GveRBEQ/640?wx_fmt=other&from=appmsg&wxfrom=5&wx_lazy=1&wx_co=1&tp=webp)
+![Image 6: 图片](assets/a/a/aa279e403ec2a0bffe9efb63e74b17ca.webp)
 
 进群之后，你有机会得到：
 
@@ -93,7 +93,7 @@ ChatGPT 自 2022 年 11 月以“研究预览”形式推出，仅用两个月�
 
 最近，ChatGPT 的用户增长却迎来强劲反弹。从 2023 年 11 月的 1 亿周活跃用户，到 2024 年 8 月的 2 亿，用了 9 个月；而从 2 亿到 2025 年 2 月中旬的 4 亿，仅耗时不到 6 个月，增长速度令人瞩目。
 
-![Image 7: ChatGPT Web 增长](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7szPs0S3XFu4rjUia6ygZ9LsJBv3RpaHHj35ydWnQjq5cXPZHTz2FZmQQ/640?wx_fmt=png&from=appmsg)
+![Image 7: ChatGPT Web 增长](assets/c/5/c53cca813a8fa1eff19b049a52b05b57.png)
 
 ChatGPT Web 增长
 
@@ -108,7 +108,7 @@ ChatGPT Web 增长
 *   2024 年 9-10 月：o1 系列模型推出，强化推理和问题解决能力。
     
 
-![Image 8: ChatGPT 移动端增长](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sTjRSX7sKumabxD2QbpwicfGibrvCRy6yO2E98iaK0spxEuC3RvbFMV5UA/640?wx_fmt=png&from=appmsg)
+![Image 8: ChatGPT 移动端增长](assets/f/9/f9aa8f0e90ae18ea621e4607414b8c6f.png)
 
 ChatGPT 移动端增长
 
@@ -129,13 +129,13 @@ DeepSeek 由中国对冲基金 High-Flyer 开发，2025 年 1 月流量中 21% �
 
 相较其他通用大语言模型，DeepSeek 增长迅猛。官方数据显示，上线 14 天即达 100 万用户，虽不及 ChatGPT 的 5 天纪录，但随后仅用 20 天突破 1000 万用户，超越 ChatGPT 的 40 天里程碑。
 
-![Image 9: DeepSeek 月访问量增长](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sOmzU8faEepufPW8WvzutPHK0ls738Qkf6lGN6JMYpJGpibHu6xiawMbA/640?wx_fmt=png&from=appmsg)
+![Image 9: DeepSeek 月访问量增长](assets/5/6/5625e4ff3f55688f791a71ef5ff70221.png)
 
 DeepSeek 月访问量增长
 
 在移动端，DeepSeek 于 2025 年 1 月 25 日上线，5 天内跻身月活跃用户榜第 14 名，到 2 月跃升至第二名，占 ChatGPT 移动端用户基数的 15%。Sensor Tower 数据显示，其用户单周使用时长和会话次数略高于 Perplexity 和 Claude，但仍低于 ChatGPT。
 
-![Image 10: DeepSeek 移动端参与度](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sXPNz5EChO7VBAgrUwYme7SuckJGhbBmfeR9bxAobGHxr72ZuUUjs5A/640?wx_fmt=png&from=appmsg)
+![Image 10: DeepSeek 移动端参与度](assets/3/0/304facf3ae31304463c1f831fe54702e.png)
 
 DeepSeek 移动端参与度
 
@@ -170,7 +170,7 @@ Hailuo（基于 MiniMax 模型）和 Kling AI 均来自中国，分别于 2024 �
 *   Kling AI：提供镜头运动控制和口型对齐等特色。
     
 
-![Image 11: Image](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sU8ASxXol5ZqhUI8njkkQxTwWiajJUn0RxB0yA7amialiaz7htaX0HiaDuw/640?wx_fmt=png&from=appmsg)
+![Image 11: Image](assets/a/c/aca2c94866019c16b961e28bc3c1e3aa.png)
 
 AI 视频编辑仍是消费级核心场景，可一键完成智能剪辑、自动字幕等繁琐任务。例如，Veed（第 36 名）和 Clipchamp（第 45 名）跻身 Web 榜单。移动端则有融合照片与视频处理的应用表现突出，如 B612（第 12 名）、VivaCut（第 15 名）和 Filmora（第 19 名）。收入方面，Splice、Captions 和 Videoleap 在移动端付费表现尤佳（详见后文）。
 
@@ -196,7 +196,7 @@ AI 视频编辑仍是消费级核心场景，可一键完成智能剪辑、自�
 
 增长数据亮眼：Bolt（第 48 名）上线两月实现 2000 万美元 年化收入和 200 万注册用户；Lovable 三月内达 1700 万美元 年化收入，进入 Brink List。
 
-![Image 12: Agentic IDE vs. Text-to-Web App](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7s1WiaaS6QibKcowRgTicXpIMMRic3SKyMiaWoGz7eLXeJ5lt53gW3mIA6rlw/640?wx_fmt=png&from=appmsg)
+![Image 12: Agentic IDE vs. Text-to-Web App](assets/1/e/1e6ae6edc4d0d45d29fb66898e176043.png)
 
 Agentic IDE vs. Text-to-Web App
 
@@ -204,7 +204,7 @@ Agentic IDE vs. Text-to-Web App
 
 两类用户有一定重叠。技术背景用户可能先用 Text-to-Web App 快速原型，再用 IDE 完善。Similarweb 数据显示，2025 年 1 月，Bolt 23% 的用户也访问了 Cursor。
 
-![Image 13: Bolt 与 Cursor 用户重叠](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sF1ZCCm9cVH71MmI6Uib3ESkic42LnQbpHXSKAAWF5aEBkw1DkzU1XtrQ/640?wx_fmt=png&from=appmsg)
+![Image 13: Bolt 与 Cursor 用户重叠](assets/b/d/bda5c9017029c6eb116b7943c5a3e20e.png)
 
 Bolt 与 Cursor 用户重叠
 
@@ -219,7 +219,7 @@ Bolt 与 Cursor 用户重叠
 
 移动端榜单基于 Sensor Tower 的月活跃用户（MAU）排名，入榜门槛为 800 万 MAU。但 MAU 高并不意味着收入强。一些 MAU 较低的应用凭借高付费转化率和每用户收入，营收超过许多“流量大户”。ChatGPT 在 MAU 和收入上均领先，但 50 大活跃应用与 50 大收入应用的榜单重叠率仅 40%。
 
-![Image 14: 使用量 vs. 收入](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sJA4m1odl9ULp9koFhWDTDydedtp5Qzsykp797MjiconA1orwtqbQ90A/640?wx_fmt=png&from=appmsg)
+![Image 14: 使用量 vs. 收入](assets/f/d/fd918d993ffa438f0fd62090e34e3a3e.png)
 
 使用量 vs. 收入
 
@@ -240,7 +240,7 @@ Bolt 与 Cursor 用户重叠
 
 这些小众场景需求明确，用户付费意愿强，订阅收入表现突出。
 
-![Image 15: 收入榜主要类别](https://mmbiz.qpic.cn/mmbiz_png/aH1o6ChDInV7VSrlkzQzBxlkn77sjk7sHVGGwx9Zu60s9av9yUdMr8PDche1ic6qMynnsQOicBveAPMyk8ORsFeQ/640?wx_fmt=png&from=appmsg)
+![Image 15: 收入榜主要类别](assets/5/5/55115411bcf4460ed7df2861746fad88.png)
 
 收入榜主要类别
 
@@ -263,7 +263,7 @@ Daisy Zhao 是 Andreessen Horowitz 的投资人，她专注于下一代人工智
 
 * * *
 
-[![Image 16: 图片](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3sAVsSPfCN9UX44XiaoicbUJIqSBuicUxZh7Gk9P7e64GsY96M2ibY3fSgldrt7WbtLdkzZHLh4Npeu3A/640?wx_fmt=other&from=appmsg&wxfrom=5&wx_lazy=1&wx_co=1&tp=webp)](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247498686&idx=1&sn=73438da0762cdc2b2f77097a24804dfb&scene=21#wechat_redirect)
+[![Image 16: 图片](assets/4/a/4a8310b57e1340a88101ffb89ca79742.jpg)
 
 * * *
 

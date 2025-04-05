@@ -237,4 +237,4 @@
 
 ### NVIDIA GPU脑图
 
-![](https://i-blog.csdnimg.cn/direct/0f1b4c35216a42f38c11ffab9c429c35.png#pic_center)
+![](assets/d/a/da49690c67941dcb73573967df2ff13f.png)

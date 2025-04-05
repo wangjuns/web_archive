@@ -6,14 +6,14 @@
 
   
 
-![Image 1: cover_image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/dWDic6IAXZscygCcrEXpBuiclykcqQAUZsdc4Wd8hoRNwvic91iayF39DkQO4RaIgnmLn8bxick5JgZdAyPNZoicBWRQ/0?wx_fmt=jpeg)
+![Image 1: cover_image](assets/6/0/602c6ef2eae042b411c0c9e54b2f6184.jpg)
 
 不到 4 万元的 DeepSeek-R1-671B-Q8 部署方案
 =================================
 
 Original Admin [腾讯玄武实验室](javascript:void(0);)
 
-![Image 2: profile_qrcode](https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=MzA5NDYyNDI0MA==&mid=2651960051&idx=1&sn=6ba8b7473d0779d41d1e48c4fc2adda6&send_time=)
+![Image 2: profile_qrcode](assets/5/a/5a7acc3e8144ce50f0531f4a19b78c68.bmp)
 
 腾讯玄武实验室
 
@@ -29,7 +29,7 @@ _2025年03月17日 12:50_
 
 在 DeepSeek-R1 发布后，Rasim Nadzhafov 等人发现可以用基于 CPU 的硬件方案进行部署。腾讯玄武实验室在网上诸多相关实践的基础上进行了深入研究，从硬件、系统、推理框架等各个层面进行优化，在使用更低成本、更低功耗硬件的同时实现了长文本生成速度提升约 25%、峰值输出速度提升约 15%、预填充速度提升约 20%。使用玄武实验室的软硬件优化方案，只需不到 4 万元人民币的硬件就可部署 DeepSeek-R1-671B-Q8，峰值生成速度 7.17 tokens/s，即每秒输出约 10 个汉字，且整机功耗和噪音和家用台式机类似。
 
-![Image 3](https://mp.weixin.qq.com/s/vIrvbVJ6Nv00Ehre1zZwMw)
+![Image 3](assets/3/9/393f4c6eef88d2e911d1a4f621c6c9a9.jpg)
 
 已关注
 
@@ -89,11 +89,11 @@ CPU 使用风冷即可，但内存的散热非常重要，长时间内存过热�
 
 如追求更好的扩展性，也可将主板更换为支持双路的 MZ73-LM1。这样成本仍然在 4 万元以内，但未来可增加另一颗 CPU 和相应内存，同时运行两个实例。
 
-![Image 6: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/dWDic6IAXZscygCcrEXpBuiclykcqQAUZsmJjRz1v6PnlRZoD3NXrryHEfOrDGrFMjcHJicSEe8iaol6D3MNATJZ3A/640?wx_fmt=jpeg&from=appmsg)
+![Image 6: Image](assets/6/b/6ba73bf6d9c03c8df67d71bae080ec36.jpg)
 
 在硬件优化上，最重要的就是前面提到的内存散热。其次，由于 CPU 和主板均支持 6000MHz，因此可以对内存进行小幅度超频处理，将频率从默认频率 5600MHz 提升到 6000MHz。超频选择的入口位置：AMD CBS -\> UMC Common Options -\> Enforce PDR -\> Memory Target Speed -\> DDR6000，如下图所示：
 
-![Image 7: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/dWDic6IAXZscygCcrEXpBuiclykcqQAUZs7HfUGv1qHezVX67DsqShwz5JWpsnRc2Hn9TPLfQicomO4Y1BTMMfPpA/640?wx_fmt=jpeg&from=appmsg)
+![Image 7: Image](assets/9/e/9e2950aba083efeaaf0dd47646e28d13.jpg)
 
 在系统优化上，主要是配置系统使用 1G 大页（HugePages），并预分配 671 个 1G 大页。在 Grub 配置文件中增加如下设定：
 
@@ -155,7 +155,7 @@ Close
 
 Name cleared
 
-![Image 8: 赞赏二维码](https://mp.weixin.qq.com/s/vIrvbVJ6Nv00Ehre1zZwMw)**微信扫一扫赞赏作者**
+![Image 8: 赞赏二维码](assets/3/9/393f4c6eef88d2e911d1a4f621c6c9a9.jpg)**微信扫一扫赞赏作者**
 
 Like the Author[Other Amount](javascript:;)
 
@@ -233,13 +233,13 @@ Submit更多
 
 [表情](javascript:;)
 
-![Image 9](https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzA5NDYyNDI0MA==&mid=2651960051&idx=1&sn=6ba8b7473d0779d41d1e48c4fc2adda6&send_time=)Scan to Follow
+![Image 9](assets/5/d/5d2a07d1f682e6826a4f6b2aeaf368d4.bmp)Scan to Follow
 
 继续滑动看下一个
 
 轻触阅读原文
 
-![Image 10](http://mmbiz.qpic.cn/mmbiz_png/dWDic6IAXZscjSsHUwwflGy5SJQX2FuvIUk8lpe0rA7xexvd5NKKiab1p3jDkjMicaiaVbEUib2SlkABU55kZvvfAWw/0?wx_fmt=png)
+![Image 10](assets/7/1/71ed0fa159722e47eccf840e3cd714f0.png)
 
 腾讯玄武实验室
 
@@ -255,7 +255,7 @@ Submit更多
 
  
 
-![Image 11](https://mp.weixin.qq.com/s/vIrvbVJ6Nv00Ehre1zZwMw) Scan with Weixin to  
+![Image 11](assets/3/9/393f4c6eef88d2e911d1a4f621c6c9a9.jpg) Scan with Weixin to  
 use this Mini Program
 
 [Cancel](javascript:void(0);) [Allow](javascript:void(0);)

@@ -12,7 +12,7 @@ DeepSeek开源周第四天，直接痛快「**1日3连发**」，且全都围绕
 
 **优化并行策略**。
 
-![Image 1](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNMc5GdWDwibLtIcO14YWJC74CYRSOibKSZc1PHq7DLkAVBm8MvicHsS5xQ/640?wx_fmt=png&from=appmsg)
+![Image 1](assets/1/e/1e55156c5594581de3972b5f192eb5c0.png)
 
 *   **DualPipe：**一种创新的双向流水线并行算法，能够完全重叠前向和后向计算-通信阶段，并减少“流水线气泡”。它通过对称的微批次调度，优化了并行计算效率。
     
@@ -21,13 +21,13 @@ DeepSeek开源周第四天，直接痛快「**1日3连发**」，且全都围绕
 *   **Profiling Data：**训练和推理框架的性能分析数据，展示了通信-计算重叠策略和底层实现细节。
     
 
-![Image 2](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNBicPkKMsuXTjq0BYU65rzXyjLREzXpBKwTpFtgam5TlKjzKSNWdAiayQ/640?wx_fmt=png&from=appmsg)
+![Image 2](assets/5/1/515e482fa2c819a8ff28db3a21ea0da0.png)
 
 这三者中，DualPipe从时间上优化了计算与通信的调度，EPLB从空间上平衡利用计算资源，Profiling Data则提供了前两者在实际应用中效果的可视化证据。
 
 且**DualPipe的开发团队中包括梁文锋本人**。
 
-![Image 3](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNlXYU3rypY0MJFVqhtXjSwvhlibyfbvYaXsfw7rdgQO8eY4jDtZG3W5A/640?wx_fmt=png&from=appmsg)
+![Image 3](assets/2/0/20ebca71cc7a8361f96b174c0148aba5.png)
 
 发布后10分钟不到，3者在GitHub上的星标已经破300了，且其中DualPipe的星标飙升最快。
 
@@ -36,7 +36,7 @@ DeepSeek开源周第四天，直接痛快「**1日3连发**」，且全都围绕
 > 好活！令人兴奋！  
 > 优化策略可以重新定义行业的性能。
 
-![Image 4](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNR5FHnQ3FYiav6mapnrRdbUEGCatC8mQMK3KAqAJwUESL0iciaH0vfHDgw/640?wx_fmt=png&from=appmsg)
+![Image 4](assets/5/b/5b614b5b75b0efc3ee187cec5149674d.png)
 
 Day 4，直接1日3连发
 -------------
@@ -56,13 +56,13 @@ DualPipe采用了双向微批次调度策略，其核心特点是：
 *   **双向并行**：同时在两个方向上推进微批次，最大化硬件利用率
     
 
-![Image 5](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNNT3BQcmHMFY6hpuNwLU1mScydibAlDz0o9ibHPxic32NHLNKhz7U0QTOw/640?wx_fmt=png&from=appmsg)
+![Image 5](assets/e/8/e8566384cc87f57c86fa77b1bb9c8e15.png)
 
 传统流水线并行方法如1F1B（one-forward-one-backward）在处理多GPU场景时会产生大量气泡。
 
 DualPipe通过重新安排微批次执行顺序，和对称结构缓解这个问题。
 
-![Image 6](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNPSVWepvuW2SGicKwBBFyotD3Zdjia88Um2tS2f5mHE3b0gf7jzqsRS2A/640?wx_fmt=png&from=appmsg)
+![Image 6](assets/9/e/9e9e67e94e04bc04bc3cc88603bb19bf.png)
 
 #### EPLB
 
@@ -81,7 +81,7 @@ EPLB**采用“redundant experts”**（冗余专家）**策略**：
 *   **全局负载平衡**，在专家并行规模较大的解码阶段采用。
     
 
-![Image 7](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNic1ddPdF4HY0xJ6Nl4oNsfibrV6Gv6kwBxSzTzdmMovB8gCgyHFicQGdA/640?wx_fmt=png&from=appmsg)
+![Image 7](assets/1/1/114a5f3835897996e6bbb77c3bbcb2bf.png)
 
 #### V3/R1中的计算通信重叠分析数据
 
@@ -103,7 +103,7 @@ Attention please——DeepSeek模拟了一个绝对平衡的MoE路由策略进�
 
 为简单起见，在profilng期间不包括PP通信。
 
-![Image 8](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNiaTdjriczn8GetwLhksPTJNxkFddp7Rm8XEGdwvnzhf69QzHHb1aNo9g/640?wx_fmt=png&from=appmsg)
+![Image 8](assets/1/4/148b066bdb108077a2505e5dffef4f8e.png)
 
 **其次，推理阶段。**
 
@@ -129,7 +129,7 @@ Attention please——DeepSeek模拟了一个绝对平衡的MoE路由策略进�
 
 有关all-to-all实现的更多信息，请参考开源周第二弹DeepEP。
 
-![Image 9](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzN5wicm95ltEYLA43dg2CMnIWribT2M9I6acTIr0u4CPic4sJ0ZRx6Ua9Pg/640?wx_fmt=png&from=appmsg)
+![Image 9](assets/1/0/104c5699a505ff7563d5c6fa4452dc60.png)
 
 One More Thing
 --------------
@@ -138,7 +138,7 @@ One More Thing
 
 对于第四弹的开源内容，网友是这么感慨的。
 
-![Image 10](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzNI7oGnmQ31biaKpCDBj2cXTq84RrFjRS2N8fQUJ3cYBhLOmrKFWbOC5Q/640?wx_fmt=png&from=appmsg)
+![Image 10](assets/4/b/4ba5138838292ba178c103e148c8b8e4.png)
 
 目前看来，DeepSeek开源周的前4天，都挺令追更群众们满意。
 
@@ -149,13 +149,13 @@ One More Thing
 > 更好的团队合作不仅是团队管理优化的一部分，更是实现顶级AI性能的秘诀。  
 > **DeepSeek正在创建新的标准，大规模训练的未来就在咱们眼前！**
 
-![Image 11](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzN4WgYfHPozpXhX4ZGuOazIOmgQwzZW5icu3LogmCG5iboPOXhd6bxLhbQ/640?wx_fmt=png&from=appmsg)
+![Image 11](assets/5/4/5432a058e652ebb67f1487ecfc2ced22.png)
 
 好了，DeepSeek开源周，明天就是最后一天了，不知道会有什么压轴登场？
 
 **扫码备注「DeepSeek-职业/姓名」加入群聊，一起第一时间直击DeepSeek开源周最后一弹！**
 
-![Image 12](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtB772Ezeh9qxnZkDkngMtzN5IZwwSk237ghnP41PNWd3JePjB5AZmfoZTfpBj6TdfYAYk7KELnRhw/640?wx_fmt=png&from=appmsg)
+![Image 12](assets/3/4/3402f1d854698ca714d17588fb4de764.png)
 
 参考链接：  
 https://x.com/deepseek\_ai/status/1894931931554558199
@@ -173,7 +173,7 @@ Github：
 
 本次评选结果将于4月中国AIGC产业峰会上公布，欢迎参与！
 
-![Image 13](https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibc1yia0TeaadXf1qCNK0X1jadicub9IBtYX4OaBVLCCuibtcjsO7V3GHkjw/640?wx_fmt=jpeg&from=appmsg)
+![Image 13](assets/4/6/46dda833a1445bf6a6a12962280f194c.jpg)
 
 **一键关注 👇 点亮星标**
 

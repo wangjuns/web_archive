@@ -15,13 +15,13 @@ Markdown Content:
 
 GRPO 是一种在线学习算法（online learning algorithm），它通过使用训练过程中由训练模型自身生成的数据来进行迭代改进。GRPO 的目标是最大化生成补全（completions）的优势函数（advantage），同时确保模型保持在参考策略（reference policy）附近。
 
-![Image 1](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9VKdYlDscHWJInvJLHnhaQoZlh6T99j7xWRpyezLJoqJa8ZtJ07IUsjMicPUbfpAspvXnWdeMXxdA/640?wx_fmt=png&from=appmsg)
+![Image 1](assets/3/3/3391a677b03c93ddef851c30f568c10c.png)
 
 本文的目的是帮你节省一些时间，让你根据硬件预算选择合适的模型大小。在开始微调时，你必须做出的重要决定是选择模型大小，以及你是执行完全微调还是参数高效微调（PEFT）。
 
 文章作者来自 AI 公司 Oxen.ai 的 CEO Greg Schoeninger。
 
-![Image 2](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9VKdYlDscHWJInvJLHnhaQy5qCeib9LlTbrgt53D6WvNMqTfYvS6FO2997Om7NibGicxezbVJz75RHA/640?wx_fmt=png&from=appmsg)
+![Image 2](assets/7/8/78bde03c51f2ec6554c4b12465d285ff.png)
 
 原文链接：https://www.oxen.ai/blog/grpo-vram-requirements-for-the-gpu-poor
 
@@ -38,11 +38,11 @@ GRPO 是一种在线学习算法（online learning algorithm），它通过使�
 
 作者表示，他们进行了一系列实验，以确定训练各种大小的模型所需的显存（VRAM）要求。参数数量从 5 亿到 140 亿不等，他们比较了权重的完全微调与参数高效微调（使用 LoRA），所有训练运行都在英伟达 H100 上完成，因此这里的 OOM 意味着 \>80GB 的 VRAM。
 
-![Image 3](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9VKdYlDscHWJInvJLHnhaQ2xtjMOH5hUjktJOzibHwpObhh3jjZ7u3NM4pQuJibftR91mdYacmaraQ/640?wx_fmt=png&from=appmsg)
+![Image 3](assets/e/7/e7179625c62dbffd2b31c69cc6fbe5ca.png)
 
 在表格中，你可以找到 GSM8K 数据集上训练的前 100 步中的峰值内存使用情况。用于实验的模型是：
 
-![Image 4](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9VKdYlDscHWJInvJLHnhaQzIia56mG9FnV20lYWLP10XL7O5C5m4waQGTZ2Sk8w5xvAwZniazzkS1w/640?wx_fmt=png&from=appmsg)
+![Image 4](assets/3/e/3e71b73342436fd71c01212c3d6cfed9.png)
 
 所有实验均使用 Shadeform 的 GPU 市场完成，因此每次实验只需要花费几美元 H100。
 
@@ -52,7 +52,7 @@ GRPO 是一种在线学习算法（online learning algorithm），它通过使�
 
 这要从 GRPO 的原理说起，这是它的流程图。
 
-![Image 5](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9VKdYlDscHWJInvJLHnhaQjIicQrKCJGicKb3yjDF44PBjvAje9hylT8Eia5hs6P5HcDibu9q5QalsNA/640?wx_fmt=png&from=appmsg)
+![Image 5](assets/f/f/ff2f220753cd6332681a29031cd6bc12.png)
 
 GRPO 对内存需求较高的原因在于，其内部涉及多个模型，并且在训练数据中每个查询会产生多个输出。上图中的策略模型、参考模型和奖励模型各自都是一个需要进行推理的 LLM。（尽管从技术上讲，奖励模型可能不需要参数化，可以只是一个 Python 函数或正则表达式，但不影响 GRPO 对内存的高需求。）
 
@@ -269,7 +269,7 @@ trl 项目地址：https://github.com/huggingface/trl?ref=ghost.oxen.ai
 
 Num Generations 是一个超参数，它决定了我们将在训练数据中对每个查询采样多少个补全。然而，这会显著增加 VRAM 的消耗。
 
-![Image 6](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9VKdYlDscHWJInvJLHnhaQQ43F6GejCyVtDBjxYcrp0OTkxuHNgxcYgGqoCLfFIgOatmCJiaASB2A/640?wx_fmt=png&from=appmsg)
+![Image 6](assets/4/e/4eb44636e61059b06336c1b1b3ebf12f.png)
 
 目前有一个开放的 GitHub 问题，可能会帮助解决内存瓶颈问题，可以参考如下链接
 
@@ -277,7 +277,7 @@ Num Generations 是一个超参数，它决定了我们将在训练数据中对�
 
 对于 num\_completions=8,16,64 (DeepSeekMath 论文使用的 64)，作者表示，不用再次计算上述所有值，而是使用了 1B 参数模型进行了测试，以显示内存增长。不过，作者还是建议大家在内存瓶颈得到修复之前使用 num\_generations=4，也能获得不错的性能。
 
-![Image 7](https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW9VKdYlDscHWJInvJLHnhaQWrhxbeRcsEwy5GzuFcTH49xibwrHnx2wfuuonbnJ4XHnvSrlaibObAYA/640?wx_fmt=png&from=appmsg)
+![Image 7](assets/5/1/51390cfd9588da9c032c696bec3b2287.png)
 
 **影响 VRAM 的一些因素**
 

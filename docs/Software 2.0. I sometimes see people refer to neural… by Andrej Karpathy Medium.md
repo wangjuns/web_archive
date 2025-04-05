@@ -3,7 +3,7 @@
 
  [
 
-![](https://miro.medium.com/v2/resize:fill:88:88/0*8ldFdx9B6FhSkQmV.jpeg)
+![](assets/e/f/efd875191b438390c8393fa8e2361208.jpeg)
 
 
 
@@ -20,15 +20,15 @@ I sometimes see people refer to neural networks as just “another tool in your 
 
 The “classical stack” of **Software 1.0** is what we’re all familiar with — it is written in languages such as Python, C++, etc. It consists of explicit instructions to the computer written by a programmer. By writing each line of code, the programmer identifies a specific point in program space with some desirable behavior.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*CHcu2L0NmAZwCpQgmS1ByA.jpeg)
+![](assets/f/b/fb55616605ced2cb134b44e87efb0df7.jpeg)
 
 In contrast, **Software 2.0** is written in much more abstract, human unfriendly language, such as the weights of a neural network. No human is involved in writing this code because there are a lot of weights (typical networks might have millions), and coding directly in weights is kind of hard (I tried).
 
-![](https://miro.medium.com/v2/resize:fit:700/1*6EB1Xue1wM_QP0IIzXphQA.png)
+![](assets/a/9/a9ebc57076ba5bad15f63be4d5e2decd.png)
 
 Instead, our approach is to specify some goal on the behavior of a desirable program (e.g., “satisfy a dataset of input output pairs of examples”, or “win a game of Go”), write a rough skeleton of the code (i.e. a neural net architecture) that identifies a subset of program space to search, and use the computational resources at our disposal to search this space for a program that works. In the case of neural networks, we restrict the search to a continuous subset of the program space where the search process can be made (somewhat surprisingly) efficient with backpropagation and stochastic gradient descent.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*5NG3U8MsaTqmQpjkr_-UOw.png)
+![](assets/9/f/9f42297d3b29152ef53502b49993900a.png)
 
 To make the analogy explicit, in Software 1.0, human-engineered source code (e.g. some .cpp files) is compiled into a binary that does useful work. In Software 2.0 most often the source code comprises 1) the dataset that defines the desirable behavior and 2) the neural net architecture that gives the rough skeleton of the code, but with many details (the weights) to be filled in. The process of training the neural network compiles the dataset into the binary — the final neural network. In most practical applications today, the neural net architectures and the training systems are increasingly standardized into a commodity, so most of the active “software development” takes the form of curating, growing, massaging and cleaning labeled datasets. This is fundamentally altering the programming paradigm by which we iterate on our software, as the teams split in two: the 2.0 programmers (data labelers) edit and grow the datasets, while a few 1.0 programmers maintain and iterate on the surrounding training code infrastructure, analytics, visualizations and labeling interfaces.
 
@@ -76,7 +76,7 @@ Finally, we’re still discovering some of the peculiar properties of this stack
 
 Software 1.0 is code we write. Software 2.0 is code written by the optimization based on an evaluation criterion (such as “classify this training data correctly”). It is likely that any setting where the program is not obvious but one can repeatedly evaluate the performance of it (e.g. — did you classify some images correctly? do you win games of Go?) will be subject to this transition, because the optimization can find much better code than what a human can write.
 
-![](https://miro.medium.com/v2/resize:fit:596/1*7aTCueMW8oBRiqkyobunVA.png)
+![](assets/3/c/3ceea02c04eb3133a3676e9a8e0a8b2c.png)
 
 The lens through which we view trends matters. If you recognize Software 2.0 as a new and emerging programming paradigm instead of simply treating neural networks as a pretty good classifier in the class of machine learning techniques, the extrapolations become more obvious, and it’s clear that there is much more work to do.
 

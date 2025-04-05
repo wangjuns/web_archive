@@ -6,14 +6,14 @@ Transformer到底解决什么问题？
 
   
 
-![Image 1: cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuysYmI4oEicm7LgP14X4J0Iria5icZmfEpSO5gtGOEp9GJ60Zeal5AUms8w/0?wx_fmt=jpeg)
+![Image 1: cover_image](assets/f/4/f49b639dbd606afde08cf684bc4d3293.jpg)
 
 Transformer到底解决什么问题？
 ====================
 
 Original 凉羽、青熙、纹路 [阿里云开发者](javascript:void(0);)
 
-![Image 2: profile_qrcode](https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=MzIzOTU0NTQ0MA==&mid=2247547044&idx=1&sn=ee19716b65cec5e302bc1ff6fa6fddd7&send_time=)
+![Image 2: profile_qrcode](assets/5/c/5cdc285e47e1c9b7e73e940926e389e2.bmp)
 
 阿里云开发者
 
@@ -25,7 +25,7 @@ Original 凉羽、青熙、纹路 [阿里云开发者](javascript:void(0);)
 
 _2025年03月10日 00:31_
 
-![Image 3: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyjbpm1yUcUPjIu5vweMFyGPbnYbJYtgnc0EnXGicug1TKGPhOkEiasnEw/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 3: Image](assets/c/c/cc519cefd03357dae3c6b4765719f86b.webp)
 
 阿里妹导读
 
@@ -47,7 +47,7 @@ _2025年03月10日 00:31_
 
 最早期的相关研究都是针对规则定义的模型，这些规则的定义必须耗费大量的人力，需要由专业的人去精心定制，而且随着规则数的增加，不得不去处理一些冲突的问题。最重要的是它不能回答规则库里头没有的问题。但是它的优点是 由于规则都是专业的人去定义的，在某些特定的专业领域，它会表现的比较高效；花20%的人力就可以达到80%的成果。这种模型可以帮助我们解决很多重复性的工作，比如电商客服、电话机器人等。
 
-![Image 4: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuy7YBuNFHbYowCXdKaecxjCG60B7wLGJHECHjC47NkENSsXCQNGiaPybA/640?wx_fmt=other&from=appmsg)
+![Image 4: Image](assets/d/7/d7ef6a1457e7634539770d832d09b681.jpg)
 
 但是如果我们想要一种通用模型，可以服务于各行各业呢？
 
@@ -61,15 +61,15 @@ _2025年03月10日 00:31_
 
 因此自然就产生了二元模型（一个词语出现的概率只和它前面的一次词语有关） 和 n元模型（一个词语出现的概率跟它前n-1个词语有关），但是随着n的增大你所需要记录的概率分布就会呈现指数倍的增加，这导致了n不可能无限放大；放到模型上，就是说不能有一个很长的上下文，这个就是典型的长距离依赖问题；
 
-![Image 5: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuy3A4yv8MKnu6JEDJ0N5Hd9iczwEsM4f5Zv0a5MXaG7LXeEpJavobnG5w/640?wx_fmt=other&from=appmsg)
+![Image 5: Image](assets/b/6/b6b6203c25c0d274c8a9bafcf311023d.jpg)
 
 **基于神经网络的模型**
 
 几乎在同一时期，出现了基于神经网络的NLP模型，比如我们熟知的CNN（卷积神经网络）RNN（循环神经网络），神经网络启发于我们人脑的工作逻辑，其中著名的hebbian理论阐述了人脑神经元的形态
 
-![Image 6: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuy4ys2oCDWRj6gcqzCCh7gLRu54b4wNzvV4lIeal99aG90gWg0xRONXw/640?wx_fmt=other&from=appmsg)
+![Image 6: Image](assets/6/5/651f23a30dbbee809cb61b98a01de1ef.jpg)
 
-![Image 7: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyqJJ4zqsl9W6mFwRoYb9olBJzs9aBGoibV4Zm1oUDZrVd3QibicwynFCrQ/640?wx_fmt=other&from=appmsg)
+![Image 7: Image](assets/9/3/93f4d30432749a4a19e1063cbe7ab71f.jpg)
 
 又比如我们总习惯于顺序背诵古诗，根据赫布学习规则（Hebbian theory），"同时激活的神经元会强化彼此连接"。在顺序背诵时，前一个诗句对应的神经元集群激活会通过突触前增强（pre-synaptic facilitation）机制，促进后续诗句对应神经元的激活，形成链式神经回路。这种"预测-验证"的神经活动模式已被fMRI研究证实。
 
@@ -77,7 +77,7 @@ _2025年03月10日 00:31_
 
 一个神经元的输出信号可能是另一个神经元的输入信号，得易于这种结构，人脑在处理序列化和结构化数据时非常高效，RNN受这种结构的启发，在序列化的数据处理方面获得了很大的成就，一定程度上缓解了n元模型长距离依赖的问题，但是并没有从根本上解决，同时它也带来了自己新的问题，那就是梯度消失-爆炸。
 
-![Image 8: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyrhhp5GkzTA4Q5hqm7hvKWZBrqF2dVr2eyBib47RyDadLe1icLVMRGacg/640?wx_fmt=other&from=appmsg)
+![Image 8: Image](assets/c/b/cb19f9dd4cd7d6762656798cb902fb4f.jpg)
 
 #### 什么是梯度消失-爆炸
 
@@ -121,7 +121,7 @@ RNN（循环神经网络）像一条不断延长的锁链，每个时间步（�
 
 LSTM结构是专门为解决RNN在学习长的的上下文信息出现的梯度消失、爆炸问题而设计的，结构中加入了内存块。这些模块可以看作是计算机中的内存芯片——每个模块包含几个循环连接的内存单元和三个门(输入、输出和遗忘，相当于写入、读取和重置)。信息的输入只能通过每个门与神经元进行互动，因此这些门学会智能地打开和关闭，以防止梯度爆炸或消失。
 
-![Image 9: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyKjcbpRj3iaCVbz4xRdCX7eician9LMn5RBicd9Hs9KhnD3qdKhfCkB3RsA/640?wx_fmt=other&from=appmsg)
+![Image 9: Image](assets/4/a/4a209b5160d05e15fb70355692b24c71.jpg)
 
 但是基于RNN的变种都会存在一个问题，由于模型在学习训练过程中，依赖文本的输入顺序，必须按时间步顺序计算，无法并行处理序列。
 
@@ -139,7 +139,7 @@ Transformer这个概念来自于Google研究团队，在2017发表的一篇论�
 
 比如，可以把词嵌入比作字典里的每个词有一个独特的数字身份证，但这个身份证不是随机的，而是根据词的意思和用法生成的。相似的词在数字空间里位置相近。比如“猫”和“狗”都是宠物，它们的向量可能比较接近，而“猫”和“汽车”就离得远。而这个向量地图通过大量文本数据训练得到的，模型学习词语的上下文，比如Word2Vec、GloVe这些方法。例如，通过预测周围的词，模型调整词向量，让经常一起出现的词向量更接近。
 
-![Image 10: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuykjABwjBiaxsOOqFUPkqiaY29xQvG4eHC7WeTPDw7mWUyJuoubk21HI4Q/640?wx_fmt=other&from=appmsg)
+![Image 10: Image](assets/5/b/5b4b40fc14af82e748d8fbc8a0ce184d.jpg)
 
 那么是不是每次将词语映射到向量空间都需要重新训练模型呢，当然不是；训练好的模型就像一个字典，比如猫狗鸡鸭这些词语无论在什么语境下都非常接近，我们只需要通过查表的方式去完成映射就可以。但是如果是具备多语义的词语我们该如何处理呢，那么就引出了 Transformer；
 
@@ -149,29 +149,29 @@ Transformer结构也是参考我们人脑的思维方式，我们人脑在获取
 
 Transformer经典架构图
 
-![Image 11: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuy1hVdUR8IyKQsLgTcZFSlictiaRmGEHqwibwcZAD7paNwuibvdpt1QlaEcw/640?wx_fmt=other&from=appmsg)
+![Image 11: Image](assets/6/2/628d762efc712651a7042a817457febd.jpg)
 
 上图是论文中 Transformer 的内部结构图，左侧为 Encoder block，右侧为 Decoder block。红色圈中的部分为 **Multi-Head Attention**，是由多个 **Self-Attention**组成的，可以看到 Encoder block 包含一个 Multi-Head Attention，而 Decoder block 包含两个 Multi-Head Attention (其中有一个用到 Masked)。Multi-Head Attention 上方还包括一个 Add & Norm 层，Add 表示残差连接 (Residual Connection) 用于防止网络退化，Norm 表示 Layer Normalization，用于对每一层的激活值进行归一化。
 
 **举例：用Transformer做中英翻译**
 
-![Image 12: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuy7a27jzHj8cAaWfiaFDbsIhasvWFply72YKqlp6BeZZfvRgdK2ohiba7A/640?wx_fmt=other&from=appmsg)
+![Image 12: Image](assets/5/7/57a716d05395e381d35e6950b918ac90.jpg)
 
 可以看到 **Transformer 由 Encoder 和 Decoder 两个部分组成**，Encoder 和 Decoder 都可以有多个。
 
 训练一个模型的过程大体如下：
 
-![Image 13: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyib1gTJTwstpZhBTTjrdER1axEEkbicw74CPYhHrEbulTcVK9VXWlSpzQ/640?wx_fmt=other&from=appmsg)
+![Image 13: Image](assets/7/7/77bc329a8ad05e3d9977aa7b0ec7aae8.jpg)
 
 假设我们已经有一个训练好的模型，Transformer 的预测工作流程大体如下：
 
-![Image 14: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuy19QVagsPWOr1YC4zvibFcFLicjsjnAS6UzwetP6biaCKL1kFA1Dxiak6eA/640?wx_fmt=other&from=appmsg)
+![Image 14: Image](assets/2/7/2764f56aab2ff4c07a831fc4cb022053.jpg)
 
 **Transformer工作原理**
 
 #### Transformer的输入
 
-![Image 15: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyibjPLsUc3BdkG0lD1srrXp01IJ4zEcIQPcNlMMfHE0YAlP7yYnauBIg/640?wx_fmt=other&from=appmsg)
+![Image 15: Image](assets/7/a/7a5d7306e034abe184aef69c8f320b06.jpg)
 
 ##### **单词 Embedding**
 
@@ -181,7 +181,7 @@ Transformer经典架构图
 
 因为 Transformer 不采用 RNN 的结构，而是使用全局信息，不能利用单词的顺序信息，位置信息对于 NLP 来说非常重要。计算公式如下：
 
-![Image 16: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyA5bhQHp6Byu7ea8DePWKbxzT2Ahibg49WmvnpD9iaWw6ZKPaqlHolMbQ/640?wx_fmt=other&from=appmsg)
+![Image 16: Image](assets/b/0/b0e7e0e0795e6a373a5999e55be746c9.jpg)
 
 用这个公式的好处是：能够适应比训练集里面所有句子更长的句子、可以让模型容易地计算出相对位置；
 
@@ -189,59 +189,59 @@ Transformer经典架构图
 
 意思就是它不依赖额外输入的信息，即它只统计单词和其他单词之间的注意力（相关性）。
 
-![Image 17: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyOqXiay1k2tk1rBvESjdfTmgNbwJIoufplFRibkianHbAFeMAkfGEKT6bA/640?wx_fmt=other&from=appmsg)
+![Image 17: Image](assets/1/e/1e2658b92ddeb9022ba11ac7f3fc047c.jpg)
 
 自注意力机制可以让模型在处理序列数据（比如一句话）时，动态关注不同位置的信息。它的实现可以简单理解为以下四步：
 
 1.对每个输入词生成Q(query)、K(key)、V(value)向量。
 
-![Image 18: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyrc2XROlibmZWeCib3FFwuYdbmcbCazaLT0Ul4A4JvOM8gfU6icIFLZdew/640?wx_fmt=other&from=appmsg)
+![Image 18: Image](assets/c/8/c838ffcd7194e39fa5a77a6803f3491b.jpg)
 
 2.计算每个Q与所有K的转置，缩放后得到注意力分数。
 
-![Image 19: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyMXKShEKY9CSNAj7TxyOZkl8Ca5lQOQ3UfvXKEugAaXJR7bWc4vev9A/640?wx_fmt=other&from=appmsg)
+![Image 19: Image](assets/d/e/de2a57c1a326bc41305182a4b45cf7a0.jpg)
 
 3.用softmax归一化分数，，即每一行的和都变为 1，得到权重。
 
-![Image 20: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyrWA9jDqicPtzILoibl2efGSibjmVPI7vZL9xMibIPoLOZDvkILV4mHiawPQ/640?wx_fmt=other&from=appmsg)
+![Image 20: Image](assets/4/8/4869361ef6386afee9aac36b86364de2.jpg)
 
 4.用权重对V加权求和，得到每个词的输出。
 
-![Image 21: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyLAHEWeh0u64qPr0rcFBNDlsyrZwdWIacNXZyJmsribPrW3ZW42E8vjw/640?wx_fmt=other&from=appmsg)
+![Image 21: Image](assets/e/5/e56ce7a4c43145474f979b12bd980ccd.jpg)
 
-![Image 22: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyX5B2S2pEEjMKWUGlMsNkbLzCxEnedWYduNfVfAicB28bGHK3kalY6AA/640?wx_fmt=other&from=appmsg)
+![Image 22: Image](assets/d/6/d605e5b0331e13bdf237dc458b7362c6.jpg)
 
 ##### **最终的公式：**
 
-![Image 23: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyOCn5icjJq3YVgsd7TOQnR0PZKUF13ws0hoh1kaFc525etZsmicTlHGdw/640?wx_fmt=other&from=appmsg)
+![Image 23: Image](assets/2/b/2bb4f70ac27c94bb579f08772a828565.jpg)
 
 简单地来讲，假设我希望翻译的话就是前图的“我有一只猫”，“我”的query向量q1发出疑问，词“我”、“有”、“一只”、“猫”对翻译我都有什么贡献？这4个词的key向量k1、k2、k3、k4分别跟q1进行相似性匹配；
 
-具体为，先跟q1乘，得到的结果除以![Image 24: Image](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naKeun2fLND4HlY3iciaqE2SX3RqfXxGXAb6SjGvSDiaQPPAjt1yjtlpJLpwcPC9wIFpcU6HNyuNNu5dg/640?wx_fmt=png&from=appmsg)，再进softmax函数，得到权重值，假设为w1、w2、w3、w4，他们分别去跟v相乘后相加，得到最终的z1 =w1v1+w2v2+w3v3+w4v4，z2同理。
+具体为，先跟q1乘，得到的结果除以![Image 24: Image](assets/c/b/cb0c906bfed57c2e7f9093150f5c5812.png)，再进softmax函数，得到权重值，假设为w1、w2、w3、w4，他们分别去跟v相乘后相加，得到最终的z1 =w1v1+w2v2+w3v3+w4v4，z2同理。
 
 #### 多头注意力 Multi-Head Attention
 
 在上一步，我们已经知道怎么通过 Self-Attention 计算得到输出矩阵 Z，而 Multi-Head Attention 是由多个 Self-Attention 组合形成的，下图是论文中 Multi-Head Attention 的结构图。
 
-![Image 25: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyFTlBicib9ZR6aLWftaR3BNO9YOdqS0SOwRNgBCAtMVwTiaaj6tNPO8tew/640?wx_fmt=other&from=appmsg)
+![Image 25: Image](assets/3/a/3aeb2377b7f08112d32b488be0ed18e1.jpg)
 
 Multi-Head Attention
 
 从上图可以看到 Multi-Head Attention 包含多个 Self-Attention 层，首先将输入X分别传递到 h 个不同的 Self-Attention 中，计算得到 h 个输出矩阵Z。下图是 h=8 时候的情况，此时会得到 8 个输出矩阵Z。换成人话来说就是我们矩阵图中的Wq，Wk和Wv分别初始化了多个进行训练；
 
-![Image 26: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyss4Ha6gq7qKAWiaqUJE1dBm0PjajcVibYoZdOKiaqwhGAevxZdNtOiakTQ/640?wx_fmt=other&from=appmsg)
+![Image 26: Image](assets/8/6/8699c21bda2cd11dd7b29ed8dc8f8984.jpg)
 
 多个 Self-Attention
 
 得到 8 个输出矩阵 Z1 到 Z8 之后，Multi-Head Attention 将它们拼接在一起 (Concat)，然后传入一个Linear层，得到 Multi-Head Attention 最终的输出Z。
 
-![Image 27: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyyOBuruOiaia5xyzaoKqng4EYKpcPkcf45PxWRbKfvTRBsmCViaOiadk4JQ/640?wx_fmt=other&from=appmsg)
+![Image 27: Image](assets/9/8/98275173b849faad68faba6faba6c50e.jpg)
 
 Multi-Head Attention 的输出
 
 可以看到 Multi-Head Attention 输出的矩阵Z与其输入的矩阵X的维度是一样的。
 
-![Image 28: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyu09IpDYjMTjeZicmnDpdI2KhPktIC764R72SLaJKUic5vicnwSJOZWcgw/640?wx_fmt=other&from=appmsg)
+![Image 28: Image](assets/a/3/a3fd742abe8494640adf120b7b40d768.jpg)
 
 上图左为二头的着色结果，同样的”The animal didnt cross the street because it was too tired“这句话，我们想知道翻译it的时候这个词跟什么词有关，或者说哪个词对于翻译it更有效。
 
@@ -249,7 +249,7 @@ Multi-Head Attention 的输出
 
 ##### **举例**
 
-![Image 29: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuylqEjHHviajA2iaehAETEOlVn6uJORFtmoACf0Gntibv5pyN1flgmfdHyQ/640?wx_fmt=other&from=appmsg)
+![Image 29: Image](assets/f/c/fc82ed9055509201fa927095da49d95c.jpg)
 
 在一句话中注意力往往要从多个角度进行分析，比如 “大学生“是考研这个单词的主体，”除了“表示考研在这个句子中的角色，”上班、创业“都是考研这个词替代；因此我们需要从不同的角度去进行学习，防止它们过度的相似。
 
@@ -257,7 +257,7 @@ Multi-Head Attention 的输出
 
 如下示例 每个头都会关注到不同的信息：https://colab.research.google.com/github/tensorflow/tensor2tensor/blob/master/tensor2tensor/notebooks/hello\_t2t.ipynb#scrollTo=OJKU36QAfqOC
 
-![Image 30: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyNxhrDRmaibxNQufbOdSicSlnjezv4ibg4jia7SD0T63LlLQ9cmwuvkLhSg/640?wx_fmt=other&from=appmsg)
+![Image 30: Image](assets/3/c/3c897f12fc52e87c7bc17eefb9ba8a77.jpg)
 
 #### Add & Norm 层的作用
 
@@ -283,14 +283,14 @@ Encoder block 接收输入矩阵 X(n×d) ，并输出一个矩阵 O(n×d) 。通
 
 #### Decoder
 
-![Image 31: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuyT036H4GcxpUUIfjdPcvbKLKPm2o5pYXfibcZLG6V5qia2kfJ0YrX689w/640?wx_fmt=other&from=appmsg)
+![Image 31: Image](assets/e/0/e007a01f9653fc433f6837848748afa2.jpg)
 
 *   包含两个 Multi-Head Attention 层。
     
 *   第一个 Multi-Head Attention 层采用了 Masked 操作。通过 Masked 操作可以防止第 i 个单词知道 i+1 个单词之后的信息。
     
 
-![Image 32: Image](https://mmbiz.qpic.cn/mmbiz_jpg/Z6bicxIx5naJ35YiazaSniab217JvqoXFuy32UL8LRcawKNXLSYaXIxn7MeOtxeKa8FqPBPMhsVE42DwOYB6fTztA/640?wx_fmt=other&from=appmsg)
+![Image 32: Image](assets/6/7/676cb6f81e802318168cca76a0c770c8.jpg)
 
 *   第二个 Multi-Head Attention 层的**K, V**矩阵使用 Encoder 的**编码信息矩阵****C**进行计算，而**Q**使用上一个 Decoder block 的输出计算。这样做的好处是在 Decoder 的时候，每一位单词都可以利用到 Encoder 所有单词的信息 (这些信息无需 **Mask**)。
     
@@ -334,7 +334,7 @@ Close
 
 Name cleared
 
-![Image 33: 赞赏二维码](https://mp.weixin.qq.com/s/BxpWFwXFbpur_gTuzSEsSA)**微信扫一扫赞赏作者**
+![Image 33: 赞赏二维码](assets/0/3/03a47e100523bb3d2484f7df9f786954.jpg)**微信扫一扫赞赏作者**
 
 Like the Author[Other Amount](javascript:;)
 
@@ -416,13 +416,13 @@ Submit更多
 
 [表情](javascript:;)
 
-![Image 34](https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzIzOTU0NTQ0MA==&mid=2247547044&idx=1&sn=ee19716b65cec5e302bc1ff6fa6fddd7&send_time=)Scan to Follow
+![Image 34](assets/8/7/87d0d21ed28dc94341dfda612931d3b3.bmp)Scan to Follow
 
 继续滑动看下一个
 
 轻触阅读原文
 
-![Image 35](http://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naI1jwOfnA1w4PL2LhwNia76vBRfzqaQVVVlqiaLjmWYQXHsn1FqBHhuGVcxEHjxE9tibBFBjcB352fhQ/0?wx_fmt=png)
+![Image 35](assets/0/c/0c7f74f977e779431f32cfab73a6a085.png)
 
 阿里云开发者
 
@@ -438,7 +438,7 @@ Submit更多
 
  
 
-![Image 36](https://mp.weixin.qq.com/s/BxpWFwXFbpur_gTuzSEsSA) Scan with Weixin to  
+![Image 36](assets/0/3/03a47e100523bb3d2484f7df9f786954.jpg) Scan with Weixin to  
 use this Mini Program
 
 [Cancel](javascript:void(0);) [Allow](javascript:void(0);)

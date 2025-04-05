@@ -3,7 +3,7 @@
 
  [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F623a9dbf-c76e-438c-ba69-43ae9613ebbe_2930x1496.png)
+![](assets/c/4/c44534ae6b547887f23abc1e8d865076.png)
 
 
 
@@ -47,7 +47,7 @@ Just like most existing LLMs, DeepSeek-R1 generates one token at a time, except 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5280089e-8989-45d7-8194-93396b25557d_613x152.gif)
+![](assets/8/e/8e3375baae445b259e7cf5c3bc6906d7.gif)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5280089e-8989-45d7-8194-93396b25557d_613x152.gif)
@@ -56,7 +56,7 @@ The following figure, from Chapter 12 of our book shows the general recipe of cr
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa354473-6ae0-4ae7-a20c-e858c804d6c4_1600x477.png)
+![](assets/3/5/357d22699023aaaeb25d5e654010c628.png)
 
 
 
@@ -72,7 +72,7 @@ DeepSeek-R1 follows this general recipe. The details of that first step come fro
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc66dff5b-8332-4696-b484-b2ddb029b78c_854x234.png)
+![](assets/d/8/d8d1a62cddceb7029a864912e337b5be.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc66dff5b-8332-4696-b484-b2ddb029b78c_854x234.png)
@@ -81,7 +81,7 @@ There are three special things to highlight in the R1 creation process.
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F26136780-897d-4f64-b1e5-45936b6078dd_854x434.png)
+![](assets/b/7/b71907b8e17975f0f48ba379482ed838.png)
 
 
 
@@ -95,7 +95,7 @@ The outputs of this unnamed specialist reasoning model can then be used to train
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4caea6a5-52a1-4651-8c71-4586c0637f3e_924x427.png)
+![](assets/3/c/3cfa384d9fa5503f5a81e7b3a48c3c94.png)
 
 
 
@@ -105,7 +105,7 @@ This happens in two steps:
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45ca8c84-6eb6-4879-ab53-035174b17ce1_1620x700.png)
+![](assets/3/f/3f71752a481039b09d66f376b64910b9.png)
 
 
 
@@ -115,7 +115,7 @@ Here, RL is used to create the interim reasoning model. The model is then used t
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69b9f117-caa3-42fd-a949-dc6433990d26_1526x506.png)
+![](assets/6/4/646fa10f7d4ada93bfccd585ee5e7558.png)
 
 
 
@@ -125,7 +125,7 @@ R1-Zero is special because it is able to excel at reasoning tasks without having
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7b5c964f-b654-49b2-ab5a-5618b256ef99_1588x418.png)
+![](assets/8/6/865a373fdc92837dcce1ddd6ae170ca5.png)
 
 
 
@@ -158,7 +158,7 @@ We can present a question like this to the model in a training step, and generat
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8edd9db2-a071-4bba-9d14-bbdb076d6355_798x444.png)
+![](assets/6/c/6c7b2640b49c76c72f67f642c39b0ea9.png)
 
 
 
@@ -168,7 +168,7 @@ We can automatically check (with no human intervention) and see that the first c
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f9645a0-b1fb-4753-942c-583504297c25_972x517.png)
+![](assets/f/6/f65d3e68c69fd49556c028007d6caf0e.png)
 
 
 
@@ -178,7 +178,7 @@ These are all signals that can be directly used to improve the model. This is of
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b595e04-bd57-4f78-8c9b-ab37797e9b66_955x543.png)
+![](assets/e/6/e635395ab6bbd5b25393250678cb5046.png)
 
 
 
@@ -188,7 +188,7 @@ These reward signals and model updates are how the model continues improving on 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe48af6fa-8956-44b0-84cf-915e607f3b5e_1546x884.png)
+![](assets/c/2/c273f9046b38f707800cb9b762b985ed.png)
 
 
 
@@ -198,7 +198,7 @@ Corresponding with the improvement of this capability is the length of the gener
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcd2b7d78-62ac-408c-8bd7-e14053bb8a46_1518x912.png)
+![](assets/d/2/d24c90ef56920c3333703d117dab06ae.png)
 
 
 
@@ -216,7 +216,7 @@ R1 is meant to be a more usable model. So instead of relying completely on the R
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45ca8c84-6eb6-4879-ab53-035174b17ce1_1620x700.png)
+![](assets/3/f/3f71752a481039b09d66f376b64910b9.png)
 
 
 
@@ -229,7 +229,7 @@ To make the interim reasoning model more useful, it goes through an supervised f
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1a89a9a0-c08f-430d-b135-7f012c2810ba_1824x586.png)
+![](assets/4/8/4851c479bba2bd08dc76c85732d66aa3.png)
 
 
 
@@ -239,7 +239,7 @@ But wait, if we have this data, then why are we relying on the RL process? It’
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F857e61c8-03e7-4bc7-bcbe-ca182f60a70e_3300x1170.png)
+![](assets/2/e/2e159ed3485e27a3b623732277d71b2f.png)
 
 
 
@@ -249,7 +249,7 @@ If you’re new to the concept of Supervised Fine-Tuning (SFT), that is the proc
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8b630dbc-aaa4-4c27-804b-542055b0f298_2264x1324.png)
+![](assets/2/a/2a122483accf2988d365119e05e1677e.png)
 
 
 
@@ -259,7 +259,7 @@ This enables R1 to excel at reasoning as well as other non-reasoning tasks. The 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0e5f9acf-b4ca-4ec4-9731-4845c8fc5515_902x394.png)
+![](assets/9/d/9d579ce13f9773008d11e599c6b64022.png)
 
 
 
@@ -269,7 +269,7 @@ Just like previous models from the dawn of [GPT2](https://jalammar.github.io/ill
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F199f326e-9a8d-4a95-8574-4778d5b7657b_538x413.png)
+![](assets/0/b/0b28378900fefdf644f998cde41df875.png)
 
 
 
@@ -279,7 +279,7 @@ In terms of model dimension size and other hyperparameters, they look like this:
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ee664ae-a544-4e19-a145-0ae87acc43fa_916x481.png)
+![](assets/7/8/788c724a03fdd430bf98e4fa4e4f69e5.png)
 
 
 
@@ -298,7 +298,7 @@ With this, you should now have the main intuitions to wrap your head around the 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed7fd8c3-7654-497c-a8e2-1f2e7930992e_3302x1438.png)
+![](assets/6/9/6989309c2170af0d2d3f91e073cf75c0.png)
 
 
 
@@ -308,7 +308,7 @@ If you felt needed a little more foundational information to understand this pos
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbd7beb5f-e943-4d2d-8b4c-eb1e80231670_582x768.png)
+![](assets/0/8/08285e0dfda3dbcfa524cd998d022cba.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbd7beb5f-e943-4d2d-8b4c-eb1e80231670_582x768.png)

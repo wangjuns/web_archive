@@ -3,7 +3,7 @@
 
  [
 
-![](https://miro.medium.com/v2/resize:fill:88:88/0*8ldFdx9B6FhSkQmV.jpeg)
+![](assets/e/f/efd875191b438390c8393fa8e2361208.jpeg)
 
 
 
@@ -26,7 +26,7 @@ This is seemingly a perfectly sensible appeal - if you’re never going to write
 
 In other words, it is easy to fall into the trap of abstracting away the learning process — believing that you can simply stack arbitrary layers together and backprop will “magically make them work” on your data. So lets look at a few explicit examples where this is not the case in quite unintuitive ways.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*Ms0ggCGJ2gZqJJlY16wQ4w.png)
+![](assets/7/1/71d765d59d7d262181a60f9d76255802.png)
 
 Some eye candy: a computational graph of a Batch Norm layer with a forward pass (black) and backward pass (red). (borrowed from [this post](https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html))
 
@@ -43,7 +43,7 @@ dW = np.outer(z*(1-z), x) # backward pass: local gradient for W
 
 If your weight matrix **W** is initialized too large, the output of the matrix multiply could have a very large range (e.g. numbers between -400 and 400), which will make all outputs in the vector **z** almost binary: either 1 or 0. But if that is the case, **z*(1-z)**, which is local gradient of the sigmoid non-linearity, will in both cases become **zero** (“vanish”)**,** making the gradient for both **x** and **W** be zero. The rest of the backward pass will come out all zero from this point on due to multiplication in the chain rule.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*gkXI7LYwyGPLU5dn6Jb6Bg.png)
+![](assets/1/3/1365469047f684988078d41d3d3a3aac.png)
 
 Another non-obvious fun fact about sigmoid is that its local gradient (z*(1-z)) achieves a maximum at 0.25, when z = 0.5. That means that every time the gradient signal flows through a sigmoid gate, its magnitude always diminishes by one quarter (or more). If you’re using basic SGD, this would make the lower layers of a network train much slower than the higher ones.
 
@@ -61,7 +61,7 @@ dW = np.outer(z > 0, x) # backward pass: local gradient for W
 
 If you stare at this for a while you’ll see that if a neuron gets clamped to zero in the forward pass (i.e. **z**=0, it doesn’t “fire”), then its weights will get zero gradient. This can lead to what is called the “dead ReLU” problem, where if a ReLU neuron is unfortunately initialized such that it never fires, or if a neuron’s weights ever get knocked off with a large update during training into this regime, then this neuron will remain permanently dead. It’s like permanent, irrecoverable brain damage. Sometimes you can forward the entire training set through a trained network and find that a large fraction (e.g. 40%) of your neurons were zero the entire time.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*g0yxlK8kEBw8uA1f82XQdA.png)
+![](assets/3/9/39c3ee4211e5f13082a2e9f579545ada.png)
 
 **TLDR**: If you understand backpropagation and your network has ReLUs, you’re always nervous about dead ReLUs. These are neurons that never turn on for any example in your entire training set, and will remain permanently dead. Neurons can also die during training, usually as a symptom of aggressive learning rates. See a longer explanation in [CS231n lecture video](https://youtu.be/gYpoJMlgyXA?t=20m54s).
 
@@ -70,7 +70,7 @@ Exploding gradients in RNNs
 
 Vanilla RNNs feature another good example of unintuitive effects of backpropagation. I’ll copy paste a slide from CS231n that has a simplified RNN that does not take any input **x**, and only computes the recurrence on the hidden state (equivalently, the input **x** could always be zero):
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*dqlX0ixpk1O3225bZ1LGnA.png)
+![](assets/0/6/0684de2cae140399f6447d3244da580d.png)
 
 This RNN is unrolled for **T** time steps. When you stare at what the backward pass is doing, you’ll see that the gradient signal going backwards in time through all the hidden states is always being multiplied by the same matrix (the recurrence matrix **Whh**), interspersed with non-linearity backprop.
 
@@ -83,7 +83,7 @@ Spotted in the Wild: DQN Clipping
 
 Lets look at one more — the one that actually inspired this post. Yesterday I was browsing for a Deep Q Learning implementation in TensorFlow (to see how others deal with computing the numpy equivalent of **Q\[:, a\]**, where **a** is an integer vector — turns out this trivial operation is not supported in TF). Anyway, I searched _“dqn tensorflow”_, clicked the first link, and found the core code. Here is an excerpt:
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*pyz5lHFDho07cFzIA6tWmQ.png)
+![](assets/6/9/69585622c0e7ac243c95b30056fac602.png)
 
 If you’re familiar with DQN, you can see that there is the **target\_q\_t,** which is just **\[reward * \\gamma \\argmax_a Q(s’,a)\]**, and then there is **q_acted**, which is **Q(s,a)** of the action that was taken. The authors here subtract the two into variable **delta,** which they then want to minimize on line 295 with the L2 loss with **tf.reduce_mean(tf.square()).** So far so good.
 

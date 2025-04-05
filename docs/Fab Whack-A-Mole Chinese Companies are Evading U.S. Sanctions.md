@@ -17,7 +17,7 @@ Sanctions violations are egregious. SMIC produces 7nm-class chips including the 
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2774d339-57e1-423e-bb33-48f9c27fe64c_1982x1412.png)
+![](assets/d/9/d9909aca6bbb4fe2a1b14c822dfc1dce.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2774d339-57e1-423e-bb33-48f9c27fe64c_1982x1412.png)
@@ -63,7 +63,7 @@ But this does not mean the regulations are perfect or will work ad infinitum wit
     
     [
     
-    ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F27cbb2a0-413f-48a0-b962-9b80b369f1c0_1509x572.png)
+    ![](assets/2/7/279cafd76bd4b9099c4b12d25bf2489e.png)
     
     
     ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F27cbb2a0-413f-48a0-b962-9b80b369f1c0_1509x572.png)
@@ -81,7 +81,7 @@ This was reported by [Nikkei Asia](https://asia.nikkei.com/Spotlight/Huawei-crac
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2b1b563d-aef9-45b4-9635-ed8ac0ac938a_2843x1794.png)
+![](assets/8/b/8bca6626c5cc87be6e1da33691d8eafa.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2b1b563d-aef9-45b4-9635-ed8ac0ac938a_2843x1794.png)
@@ -94,7 +94,7 @@ They are following the SMIC playbook: Pengjin High-Tech, a GaN startup that is n
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc8baee8a-7ece-4d8e-a0d3-da163ab98792_1431x1132.png)
+![](assets/b/d/bdd935a76af2cab99d11ba245bcfc2c6.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc8baee8a-7ece-4d8e-a0d3-da163ab98792_1431x1132.png)
@@ -105,7 +105,7 @@ And this happens over and over. Take the example of a new Shenzhen Pensun fab is
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff5d93d73-d765-4942-90a2-0a3cc3627ee5_1417x677.png)
+![](assets/9/d/9d1ae35244d9339c89943777c19cfd48.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff5d93d73-d765-4942-90a2-0a3cc3627ee5_1417x677.png)
@@ -116,7 +116,7 @@ In the race between shell entities and regulations, shells can be spun up faster
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a4cb076-45ca-43e4-8eae-09a8e6dbc1f2_1123x625.png)
+![](assets/9/c/9c2ced03f0f5eae43d8d30da0a7ec606.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a4cb076-45ca-43e4-8eae-09a8e6dbc1f2_1123x625.png)
@@ -142,8 +142,8 @@ Here’s company performance data. By nearly every metric the 24 months under ex
 
 The WFE majors outperformed SOX:
 
-![](https://substackcdn.com/image/fetch/w_720,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6424d74-8964-430f-bf5e-d078b16e1987_893x498.png)
-![](https://substackcdn.com/image/fetch/w_720,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3d534361-b8d1-435c-b0c0-ccc4a643cd28_873x507.png)
+![](assets/d/7/d76d87d62d6959fe370d8b91fdd309c0.png)
+![](assets/f/7/f7f5628ede5f6a65f2e1c7b5c3aba718.png)
 
 Source: Company Reports, SemiAnalysis
 
@@ -151,7 +151,7 @@ Even during a semiconductor downturn, WFE suppliers maintained near all-time hig
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc81b29dc-20bb-4f91-8446-3e726a14a59a_1119x661.png)
+![](assets/0/8/08e5112c63ec2d52ba57af83905d7f6b.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc81b29dc-20bb-4f91-8446-3e726a14a59a_1119x661.png)
@@ -162,7 +162,7 @@ Gross margins expanded during this time period, not contracted…
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc148c277-5a0f-4f63-bcfc-97d5681a41f0_1237x760.png)
+![](assets/a/e/aec1fcd62664c196ee6f6af27d10b369.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc148c277-5a0f-4f63-bcfc-97d5681a41f0_1237x760.png)
@@ -173,7 +173,7 @@ Source: Company Reports, SemiAnalysis
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe448759d-dfbc-4bcd-97a8-fa6ba0c93726_1297x738.png)
+![](assets/e/6/e6f9e95c8f5329c426d2f4e121755b47.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe448759d-dfbc-4bcd-97a8-fa6ba0c93726_1297x738.png)
@@ -184,7 +184,7 @@ Once Chinese firms realized they could skirt the rules, they exploited loopholes
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3486578f-1f6c-4060-a65a-d4bb01e5bb96_1237x765.png)
+![](assets/8/b/8bfabbdc4f0141a89aea792ca2599a41.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3486578f-1f6c-4060-a65a-d4bb01e5bb96_1237x765.png)
@@ -195,7 +195,7 @@ Sen. Padilla and Rep. Lofgren claim the restrictions are strangling R&D spend. C
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffeedd09b-4117-4f3c-87c9-a9c4aec6e7cb_1217x707.png)
+![](assets/9/6/96e5889053985d90cf0b530ad976b426.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffeedd09b-4117-4f3c-87c9-a9c4aec6e7cb_1217x707.png)
@@ -237,7 +237,7 @@ And for 2025, the semicap majors are all guiding to their best year ever:
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3d612267-5610-444d-a34c-f683ef8f1b6d_1197x573.png)
+![](assets/d/e/de841873f1a3c144524f1a188737f622.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3d612267-5610-444d-a34c-f683ef8f1b6d_1197x573.png)
@@ -260,7 +260,7 @@ Generally anything in the medium to hard categories shown below should not be un
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41a5e333-adeb-40cc-9f3d-50033f695040_2797x1053.png)
+![](assets/1/2/1214b0e5e83dbc65e7af9e35aceecc14.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41a5e333-adeb-40cc-9f3d-50033f695040_2797x1053.png)

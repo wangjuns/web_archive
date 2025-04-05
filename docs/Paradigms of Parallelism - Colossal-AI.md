@@ -15,7 +15,7 @@ Data Parallel[​](https://colossalai.org/docs/concepts/paradigms_of_parallelism
 
 Data parallel is the most common form of parallelism due to its simplicity. In data parallel training, the dataset is split into several shards, each shard is allocated to a device. This is equivalent to parallelize the training process along the batch dimension. Each device will hold a full copy of the model replica and trains on the dataset shard allocated. After back-propagation, the gradients of the model will be all-reduced so that the model parameters on different devices can stay synchronized.
 
-![Image 1](https://s2.loli.net/2022/01/28/WSAensMqjwHdOlR.png)
+![Image 1](assets/e/2/e280f913d2b2eda70518bca2ca9a3fd5.png)
 
 Data parallel illustration
 
@@ -30,7 +30,7 @@ Tensor parallel training is to split a tensor into `N` chunks along a specific d
 
 Taking a general matrix multiplication as an example, let's say we have C = AB. We can split B along the column dimension into `[B0 B1 B2 ... Bn]` and each device holds a column. We then multiply `A` with each column in `B` on each device, we will get `[AB0 AB1 AB2 ... ABn]`. At this moment, each device still holds partial results, e.g. device rank 0 holds `AB0`. To make sure the result is correct, we need to all-gather the partial result and concatenate the tensor along the column dimension. In this way, we are able to distribute the tensor over devices while making sure the computation flow remains correct.
 
-![Image 2](https://s2.loli.net/2022/01/28/2ZwyPDvXANW4tMG.png)
+![Image 2](assets/a/3/a32a5d2c7a89115cb36fbfe0a30b11bf.png)
 
 Tensor parallel illustration
 
@@ -48,13 +48,13 @@ Related paper:
 
 Pipeline parallelism is generally easy to understand. If you recall your computer architecture course, this indeed exists in the CPU design.
 
-![Image 3](https://s2.loli.net/2022/01/28/at3eDv7kKBusxbd.png)
+![Image 3](assets/7/8/78e99b08d2080137b62de85750b19478.png)
 
 Pipeline parallel illustration
 
 The core idea of pipeline parallelism is that the model is split by layer into several chunks, each chunk is given to a device. During the forward pass, each device passes the intermediate activation to the next stage. During the backward pass, each device passes the gradient of the input tensor back to the previous pipeline stage. This allows devices to compute simultaneously, and increases the training throughput. One drawback of pipeline parallel training is that there will be some bubble time where some devices are engaged in computation, leading to waste of computational resources.
 
-![Image 4](https://s2.loli.net/2022/01/28/sDNq51PS3Gxbw7F.png)
+![Image 4](assets/e/3/e378ee1544052d2328bfe91a62d9c4cc.png)
 
 Source: [GPipe](https://arxiv.org/abs/1811.06965)
 
@@ -103,7 +103,7 @@ The methods mentioned above generally require a large number of GPU to train a l
 
 Recent advances rely on CPU and even NVMe disk to train large models. The main idea is to offload tensors back to CPU memory or NVMe disk when they are not used. By using the heterogeneous system architecture, it is possible to accommodate a huge model on a single machine.
 
-![Image 5](https://s2.loli.net/2022/01/28/qLHD5lk97hXQdbv.png)
+![Image 5](assets/6/a/6a9df76d807bd3d2dc70aed229bdb03a.png)
 
 Heterogenous system illustration
 

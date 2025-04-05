@@ -1,7 +1,7 @@
 # mp.weixin.qq.com/s/2OVdLJm7llWvZSoxnolziA?poc_token=HGwSAWajBpquo_sBNNhVoqY6BRBuRz6q5SBsxh8U
 ### 
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzUB0vOtLbkRsFPCfCMMaCXXt780YMJPIwIicwSS7JKY6es05MgHQHOGA/640?wx_fmt=png&from=appmsg)
+![](assets/8/d/8d95ce0c7b26adcee72739015013cc3b.png)
 
 ### 
 
@@ -17,11 +17,11 @@ GTC大会上，老黄与Transformer八位作者一场最新访谈，简直火爆
 
 演讲前一个半小时，现场门外就挤满了人。许多人早早排起了长队，期待着这场别致的访谈。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSztTicmXv0jUMQV4WG9kkApcoUPRO83Juub9naU7CAI4ILdnXFfeNQNIQ/640?wx_fmt=png&from=appmsg)
+![](assets/2/4/2495e76a0aa7e00da20879b8b9aebe90.png)
 
 就连老黄也提前到场，在人群中合影。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzypBxibiaYdg7FgdKKibe5ChTk2ssWicvbhDBnrqib968BQXWiaxjh4JEs2Cw/640?wx_fmt=png&from=appmsg)
+![](assets/0/5/05773d276b89eef53ee2b6660d7bd8f9.png)
 
 老黄主旨演讲当天，现场虚无坐席，网友戏称他为AI届的「霉霉」
 
@@ -44,7 +44,7 @@ GTC大会上，老黄与Transformer八位作者一场最新访谈，简直火爆
 
 八位作者中，只有Niki Parmar（Essential AI的联合创始人）没有亲临现场。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSz5HeYzpGh4xjHXK1gbbm3szazDBOOTib8F6UFuxEfV2MRdRWtt0m7picA/640?wx_fmt=png&from=appmsg)
+![](assets/6/d/6de695fa0e9d2006db767d204830797c.png)
 
 访谈中的亮点满满，他们纷纷认为现在急需一个能够替代Trasformer的架构出现。
 
@@ -59,13 +59,13 @@ GTC大会上，老黄与Transformer八位作者一场最新访谈，简直火爆
 
 值得一提的是，采访结束后，老黄亲自为Transformer作者颁发了，一台亲笔签名的DGX-1。  
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzxIx60KzrPzgOgkROcv0t6varFWehzSV6qFOt9BhKM1htpnI9PeqHBw/640?wx_fmt=png&from=appmsg)
+![](assets/4/6/46d415c7e99206e84070ee15d5413cc5.png)
 
 Transformerer八子背后秘密
 
 同在今天，Wired的一篇独家专访，报道了Transformerer八子背后那些不为人知的故事。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzHbzM7tOlCaSI5fx70LsLeNBLD1NNhjvicbcYCHwPichIn9mENfaL4icZQ/640?wx_fmt=png&from=appmsg)
+![](assets/4/b/4b46f9b9fa24ec79fb242a80e1429191.png)
 
 ### **颠覆式论文署名**
 
@@ -75,7 +75,7 @@ Transformerer八子背后秘密
 
 Noam表示，「自己当时并没有想太多」。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSz5U2qmxWiaic4iaTHTia9licJSD9kdeAYCspaiaK44aMVIjpFlAHLj6Mjosow/640?wx_fmt=png&from=appmsg)
+![](assets/e/b/eb1fc330213d8c5f95999715d00ff6ad.png)
 
 论文地址：https://arxiv.org/pdf/1706.03762.pdf
 
@@ -89,13 +89,13 @@ Noam表示，「自己当时并没有想太多」。
 
 > 每位作者贡献相等，名单排列顺序随机。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzse6AF6YibS5nM6sjjJs9xUaAqlT6haxicLkPicqicAx6etIzjt3iaTlhEDQ/640?wx_fmt=png&from=appmsg)
+![](assets/b/9/b98b2318362a488f8dad4d831efd0f97.png)
 
 在截止日期之前，他们将论文提交给第31届国际神经信息处理系统大会NIPS，由此引发的一场AI革命正式开启。
 
 「Attention Is All You Need」这篇传奇论文，即将迎来第七个诞生日。现在，全网被引数已超11万，前前后后提交了87个版本。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSz05VdjotYiamARLCSM7yl0ZRu0xUFooxgXmDrTNcJY73d9BCT4gXY4oQ/640?wx_fmt=png&from=appmsg)
+![](assets/5/b/5b83051473c962ac43b39458daf81f81.png)
 
 8位作者从神级网络出发，提出了全新的Transformer架构——成为了ChatGPT、DALL-E、Midjourney等令人瞩目AI产品背后的核心技术。
 
@@ -107,19 +107,19 @@ Llion Jones称，「有人因为我参与了那篇论文而向我索要合影」
 
 就连AI教父Geoffrey Hinton对这篇开山之作赞不绝口，「如果没有Transformer，我认为我们现在不会走到今天」。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_gif/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzL9aEtEamP3N23bicGBmWLEiaz1ZpSmDiaXPxE90v0mrfmMFHuGdpvj4Kg/640?wx_fmt=gif&from=appmsg)
+![](assets/d/c/dca8725560d4cdb2f5d3d2a95a9e81bc.gif)
 
 ### **没有Jakob，没有Transformer**
 
 说来，Transformer技术的故事起源于八位重要人物之一：Jakob Uszkoreit。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSze85VFL1n4bP87JGJnQPnlXtlvXyBxlsj8rSjTZRDib2VnhlmiaibKSGtg/640?wx_fmt=png&from=appmsg)
+![](assets/a/6/a6759498d8b6dce5abe567d0522f455c.png)
 
 Jakob的父亲计算语言学领域知名学者Hans Uszkoreit。
 
 上世纪60年代末，正读高中的Hans逃亡至西德，在柏林开始学习计算机科学和语言学。当Hans在加州门洛帕克的SRI人工智能研究所工作时，Jakob出生了。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzSXibliabVh5EXn1S8B7sRia4pYEXj1TzVH9aXicXnFDJ710fSvP5GLxrzg/640?wx_fmt=png&from=appmsg)
+![](assets/d/7/d7b4408ba332ca144091d06b4bccf465.png)
 
 Jakob在德国接受了大学教育。
 
@@ -131,7 +131,7 @@ Jakob他放弃了攻读博士的计划，并于2012年决定加入谷歌的一�
 
 当时，苹果刚推出了Siri——一个承诺能够在日常对话中提供即时答案的虚拟助手，这让谷歌高层感到了极大的竞争压力：Siri有可能抢走他们的搜索流量。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzBdhGU3nRuN7e2gP3RBiazKNInPA6iakxXlRzEIWuHvAevSxadiaDuIegg/640?wx_fmt=png&from=appmsg)
+![](assets/a/4/a4337ec209ed5eeb308d39ea2146b3a0.png)
 
 因此，谷歌更加重视Jakob领导的新团队。Jakob回忆道，「其实那只是虚惊一场，Siri并没有对谷歌构成真正的威胁」。
 
@@ -141,7 +141,7 @@ Jakob他放弃了攻读博士的计划，并于2012年决定加入谷歌的一�
 
 这种网络由许多层组成，信息在各层之间反复传递，以找到最佳的回应方式。与此同时，神经网络在图像识别等领域大获全胜，AI复兴突然开始了。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzibJLgmNzDmrf6q5bwiaiblubMiateJIFzw1pR6s5HRATKnqAFegD1tdkicQ/640?wx_fmt=png&from=appmsg)
+![](assets/7/c/7c757e86338954615dd514fc80932c1e.png)
 
 谷歌疯狂地调整人力资源配置，以采纳最新技术，并希望开发出能够生成类人回应的系统。
 
@@ -191,11 +191,11 @@ Jakob深信，自注意力的能力远不仅于此。他向那些不论是愿意
 
 Jakob当时提出了一种解决方案，「为何不考虑使用自注意力技术呢」？
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzJPvfGqfmu1aJcX9XuDc9eExBXxLHn4SpyKq6JjcEibvp8Byf6M1Ribwg/640?wx_fmt=png&from=appmsg)
+![](assets/5/3/53455399a640f58d42cfa85e05b8231c.png)
 
 Illia偶尔会和一位名叫Ashish Vaswani的同事打交道。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzhAxzRfJQhLfQyXv6GPibq0wdTP7PWtvDibPicr9aEcrWOGww6Q0Oic9anQ/640?wx_fmt=png)
+![](assets/9/4/943eb73f3520d0c53dea0e57890a8428.png)
 
 Vaswani出生在印度，在中东长大，后来他去南加州大学攻读博士学位，加入了该校顶尖的机器翻译小组。
 
@@ -213,7 +213,7 @@ Jakob表示，他们从项目一开始就确定了「Transformer」这一名称�
 
 Niki Parmar是其中之一，这位印度工程师曾在印度为一家美国软件公司工作，后来移民美国。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzrm4LceQrRWfqHgL7icmUvGdvRFWTFHicNicuh0EWeL99OkRZ81Df6jAbg/640?wx_fmt=png&from=appmsg)
+![](assets/b/2/b266766e6b81e352360644b56c09d191.png)
 
 2015年，她从南加州大学获得了硕士学位，并受到了所有大型科技公司的青睐，最终她选择了Google。
 
@@ -221,7 +221,7 @@ Niki Parmar是其中之一，这位印度工程师曾在印度为一家美国软
 
 Llion Jones也是新成员之一，他在威尔士出生并长大。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzHMeRr8lZzcqvbSvdmk7JibV1L0508gYmUURfT5hWicX88iauic2RTPHyPw/640?wx_fmt=png&from=appmsg)
+![](assets/5/4/54dacaeaf7b88b263eb6a6b814d17d9d.png)
 
 在伯明翰大学，他选修了一门AI课程，对被介绍为历史趣事的神经网络产生了浓厚兴趣。2009年7月，他获得了硕士学位，但由于经济衰退难以找到工作，几个月都靠救济金生活。
 
@@ -233,11 +233,11 @@ Llion Jones也是新成员之一，他在威尔士出生并长大。
 
 Transformer项目吸引了其他试图改进大型语言模型的Google Brain研究者。第三波成员中有来自波兰的理论计算机科学家Łukasz Kaiser和他的实习生Aidan Gomez。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzZUwBbw7mlfO3M3f54gKlNhk6q0vI7TjXUampYKpcUIaAoiaMftfjlfA/640?wx_fmt=png&from=appmsg)
+![](assets/b/b/bbd463a250f88f6c7b3555ed0fb9ccca.png)
 
 Gomez在加拿大安大略的一个小农村长大，每年春天，他的家人都会采集枫树汁制作糖浆。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzzj4xV2cMUyP1WP9NaTlHoXFJ3ulVJfsz528zySlkiaLyGZWFv2ucfyw/640?wx_fmt=png&from=appmsg)
+![](assets/2/9/2971013d7b8bcb0b5bfe0cee360b2cfa.png)
 
 在多伦多大学读大三时，他对AI产生了浓厚兴趣，并加入了Geoffrey Hinton领导的机器学习小组。
 
@@ -245,7 +245,7 @@ Gomez在加拿大安大略的一个小农村长大，每年春天，他的家人
 
 Kaiser对他的提议感兴趣，邀请他来实习。直到几个月后，Gomez才意识到这些实习机会原本是为博士生准备的，而他只是一名本科生。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzmKrBoA1X6a8KOxibibE53CcoOicEMpEtOBGevzECAP0iakOotWzGE9KMVw/640?wx_fmt=png&from=appmsg)
+![](assets/4/6/466140b5bfe9b5071f855ed2d94edb23.png)
 
 Kaiser和Gomez很快意识到，自注意力似乎是一个充满希望且更为激进的解决方案。「我们经过深思熟虑地讨论了是否要合并这两个项目，」Gomez说。他们决定合并。
 
@@ -259,7 +259,7 @@ Uszkoreit说。但与长短期记忆相比，它并没有显示出更优的性�
 
 一直到2017年某天，Noam Shazeer偶然间了解到了他们的项目，情况才发生了转变。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzr3oPEDJ5H5ms3q9ZaAIdKaL5ewg5YY1Ya9iboOZRVOiaqWg3C84aDvvA/640?wx_fmt=png&from=appmsg)
+![](assets/c/d/cd3cd97f8c2a72a60c89682f8331cdd3.png)
 
 Shazeer是谷歌的资深员工，自2000年加入以来，因其在公司早期广告系统上的工作而成为传奇人物。
 
@@ -361,7 +361,7 @@ Uszkoreit说。「你可能会问，为什么谷歌在2018年没有推出像Chat
 
 「我不完全确定如果是我们先行会不会同样成功。事实上，人们在看到它的工作方式后，我们能做得更多，」他表示。
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_png/UicQ7HgWiaUb1OrsssZreH0x6FaZou9kSzMIQKEVDL6hFsvnCfpyhYpNcYRCrw8YY1ib2uQNEZB86O1thUX1CdJrw/640?wx_fmt=png&from=appmsg)
+![](assets/c/9/c94c49174592eeb1d85464f808ce4d3b.png)
 
 这八位作者之后都已离开谷歌。像成千上万的其他人一样，他们现在正以某种方式与他们在2017年创造的、由系统驱动的系统共事。我采访了这八位Transformer的创造者，试图拼凑出这一突破性成就的全貌，这是一次人类智慧的集结，创造了一台可能最终会自行发声的机器。
 
@@ -369,8 +369,8 @@ Uszkoreit说。「你可能会问，为什么谷歌在2018年没有推出像Chat
 
 https://www.wired.com/story/eight-google-employees-invented-modern-ai-transformers-paper/
 
-![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/UicQ7HgWiaUb2JbfjtSdVlh2UlulPjnLRcvvVbP6bvwoAgD4khIqjNgTnyftXCZM9MKzDEWWJEKL5Y2Q851Ixt6A/640?wx_fmt=jpeg&from=appmsg)
+![](assets/7/e/7e332950182ee4f73bf7ed66d0bfdedd.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/UicQ7HgWiaUb1lKYCMMiaxGxWTbkaPTAxuR84iaPsp8u8Yg0okpLUj3ibsPkwdQXjibPcp8oW1jmJAmZmMEia2sjDKpGA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![](assets/f/b/fb259450390bb211194cecd3898602d2.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_gif/UicQ7HgWiaUb10PoMc8QQNrjsp8lOMiaPwVkHbjVicxntJynwdmjiadosl2znIvDTSjWsp4kcqlbqVdFt6TxqpptrkA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1)
+![](assets/c/8/c84aeb06345139ee197bc86141d3f74d.gif)

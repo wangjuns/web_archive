@@ -5,7 +5,7 @@ URL Source: https://mp.weixin.qq.com/s/FXP-zaFJfpIu3wRvhYyFwg
 Markdown Content:
 Original Founder Park Founder Park _2024年06月25日 12:49_
 
-![Image 1: Image](https://mmbiz.qpic.cn/mmbiz_png/qpAK9iaV2O3vL5iaecClyfkwfCBoxqGe5z3FWycfjGBudWRfH7DMfWThic2AVvKmjaSBDibX5oA1af3IaFibAFWky3A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 1: Image](assets/6/5/656bee7a8bd1c684d9a010a3df1e46ef.webp)
 
 作为创新工场联合创始人，汪华见证了移动互联网的全过程，以及当下 AI 的兴起。  
 
@@ -17,7 +17,7 @@ AI 的投资在向应用侧迁移、大模型的推理成本会持续下降、�
 
 以下基于演讲内容，经 Founder Park 整理后发布。
 
-![Image 2: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsMwE3tYlIO0C020NyMeQoMH5bgyYmHvia25ibjhpZSBibTlZxU21uzuoLA/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 2: Image](assets/f/8/f8309880e59fb17bce052f8cca400d09.webp)
 
 **01** 
 -------
@@ -40,11 +40,11 @@ AI 的投资在向应用侧迁移、大模型的推理成本会持续下降、�
 
 先说一下海外，过去一年全球大量的投资投在 AGI 和大模型身上，将近有 200 亿美元。但是去年大部分投资，还是集中在算力、算法基础设施和底座模型上，投在应用里的钱只占一小部分。
 
-![Image 3: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsqm48AHuA4ctOV6RGnfdicpV5M41dibXaBrT9BEGoSXicRvO1cqu7khtFg/640?wx_fmt=png&from=appmsg)
+![Image 3: Image](assets/0/2/026e12da7498b5393a0ecf5e22b1a9e2.png)
 
 但今年，事情开始发生变化。从 Q2 开始，投在应用上的金额比去年都有翻倍。大家可能觉得今年的投资冷下去了，但实际上投资开始集中在应用上了，尤其是 Q2 的投资比 Q1 有了更大幅的增长，甚至 Perplexity 融到了两三亿美元的投资，获得 30 亿美金的估值。大量跟应用模型相关的，比如音乐生成的 Suno 也快速拿到了融资。
 
-![Image 4: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsgayCh5M3ROB2icYwcRibhcF0yUDsbeicXy36a0hYbiaiaib6XdmxM6zHibYVw/640?wx_fmt=png&from=appmsg)
+![Image 4: Image](assets/3/9/39d1930c5d8c448f10552209e724d725.png)
 
 可以明显地看到，整个投资开始从底座模型和 AI 侧向应用侧进行迁移。与此同时，到去年为止大部分的应用还是 ToB 的，ToC 也是以生产力为主，但是今年开始，大量的 C 端应用开始爆发，不仅是生产力和效率类的应用，偏娱乐社交的应用也开始批量涌现，从 ToB 延伸到 ToC，从生产力和效率延伸到综合的社交娱乐和其他的多模态等各个领域。
 
@@ -61,7 +61,7 @@ AI 的投资在向应用侧迁移、大模型的推理成本会持续下降、�
 
 大模型从开始到现在才一年多时间，整个的应用发展，本质上还是要随着模型的成熟和整个应用生态的构建逐渐发展。未来应用要扩展，在我看来有四个前提：模型性能、推理成本、模型的模态、应用生态整体的演进与完善。
 
-![Image 5: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsuLicVu1At0RG5LQicGLx7PdAtA6lpoYJINKL509Z6wvRvdIZAkdJ0dwQ/640?wx_fmt=png&from=appmsg)
+![Image 5: Image](assets/9/5/95ecf753e0262bc6faefaba9c6bf77df.png)
 
 大家要做应用，需要按照这四个象限，来规划当前做什么，未来做什么。超前来做的话，可能会比较难和麻烦。
 
@@ -124,7 +124,7 @@ GPT-4o，包括刚出的 Claude 3.5，其实已经在很多大规模的 ToC 应�
 
 这是非常确定的一件事，主要有几个原因。
 
-![Image 6: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywstfHMUNgAGYiao3642WPY3pYD5VAJ3xK3moicWJwzxVbEj1m969gc4QwQ/640?wx_fmt=png&from=appmsg)
+![Image 6: Image](assets/f/4/f4f068bf6aad59d85ec1ff1f9ae8070e.png)
 
 **首先是模型结构、算法和硬件 Infra 本身，**在接下来的半年到一年每个都可以实现 4-5 倍的提升；用于推理优化的硬件成本可以降 4-5 倍，模型结构的优化和特化可以提升 4-5 倍；算法侧的优化可以提升 3 到 4 倍。所以这些乘起来的话，差不多能在明年年底实现 100 倍的模型成本下降。
 
@@ -136,7 +136,7 @@ GPT-4o，包括刚出的 Claude 3.5，其实已经在很多大规模的 ToC 应�
 
 我觉得**最大的普惠点就是推理成本降到 1%**，这意味着几千万日活、上亿万日活，甚至免费的产品可以大规模的实现。实际上，推理成本哪怕降到 1/10，也已经有很多的应用可以提前出现了。
 
-![Image 7: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsicibB67q1reCF8iaol0V0kOSAVyJyWKNPOrwv0WXIjiaCHFb3nvx4pjxRA/640?wx_fmt=png&from=appmsg)
+![Image 7: Image](assets/2/4/24d50994579576e01e204af93ce175ef.png)
 
 随着多模态和推理成本的相继突破，ToB 会先实现，因为它对价格的承受能力最高，对模态的需求最低。其次是生产力工具，大体量的工具型应用，只要推理成本降 10 倍，就能实现大体量免费。
 
@@ -161,7 +161,7 @@ ChatGPT 作为通用工具，用户平均时长是七八分钟，但我看过很
 
 一个好消息是，现在中美的模型对比来看，中国的模型已经有足够多的能力。去年大家做应用的时候，要么只能做出海，因为出海有 OpenAI 的 API 或者别的特别好的模型可以调用。但在国内如果合法做应用的话，国内去年模型的性能的确是不够的。
 
-![Image 8: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywslPIoibukyuB9jdVeMYiciaIvUibWCvic5ZXbibtukjs74JH9LqJ9Ec0iaba9A/640?wx_fmt=png&from=appmsg)
+![Image 8: Image](assets/1/7/1758520924a4e060a78b56086898f139.png)
 
 但从最近开始，中国模型的性能已经足够强了。比如零一万物的 Yi-Large 已经达到了 GPT-4 的级别。千问、智谱的模型也已经跟 Llama-3 非常接近。
 
@@ -169,7 +169,7 @@ ChatGPT 作为通用工具，用户平均时长是七八分钟，但我看过很
 
 中国的整个应用层因为模型能力的拖累，当然也包括很多对于应用和大模型本身的监管，大致的节奏比美国慢差不多一年的时间。**美国现在的情况是，他们的应用已经到了第二波发展阶段，**在去年上半年已经完成了第一波在知识工作人群里面的应用普及，达到大几千万的日活。ChatGPT 不光完成了对于用户认知的普及，美国现在百分之七八十的白领工作者和知识工作者已经将各种 AI 工具囊括进日常使用工具的范畴。现在已经到了百花齐放，扩展应用类型的第二阶段。
 
-![Image 9: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsajIa96bKSplkShANqE3RFib7nfuNERfgCT86f2SQZkarsLq9frnAFGQ/640?wx_fmt=png&from=appmsg)
+![Image 9: Image](assets/5/b/5b5551e6996e984a808326e37b9926c2.png)
 
 **中国实际上处于美国上半年第一阶段的应用爆发前期**。虽然最近大家看到很多产品在大量推广，用户量也在迅速增长，但是**把所有应用加在一起，日活也不过就是 1000 万，中国有 12 亿网民；而美国 3 亿人口就有大几千万的日活，相比之下还有很大的差距。**
 
@@ -194,13 +194,13 @@ ChatGPT 作为通用工具，用户平均时长是七八分钟，但我看过很
 
 我看到过两种创业者，一种是商业产品出身，一种是技术科研出身。从长期来讲，做 AI 应用，要既懂产品又懂技术。因为 AI 大模型创业跟当年移动互联网创业有一个很大的不同，移动互联网当年创业的时候虽然是一个新平台，但整个后台技术是成熟的，无论是成本、技术栈，还是端侧的开发，都有当年 PC 互联网 10 年的积淀。只要能想得到对的用户场景，从技术上、成本上说没有做不出来的。
 
-![Image 10: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsQYp3jKic0kn3lpQ5Q535bicribVM0iaLiavGhicgSokLJHl8dScBwPbjAl7w/640?wx_fmt=png&from=appmsg)
+![Image 10: Image](assets/7/1/71c6423f85a97378ed592f03fd454818.png)
 
 但是**大模型的创业本身更接近于 1999 年 Google 做搜索的年代**，想做一个很容易让人全搜整个互联网的产品，场景很简单就想出来了，关键是能不能做得出来？Google 为了做这个东西，当年开发了 PageRank、集群，MapReduce 等一套技术才实现最初场景。
 
 我看到商业产品出身的开发者有时候会过于宏大叙事，过于不考虑产品模型的限制去做产品。对于技术科研出身的开发者的话，往往是太追求于技术圣杯，不考虑算力成本的花效，对整个场景考虑得比较少。对于这两种创业者，我的建议是两边都要考虑对方的优点，在现阶段不成熟的时候更脚踏实际，落足场景。而且哪怕是技术出身的创业者，也不要过于追求技术圣杯。更加现实点，结合起来讲就是仰望星空脚踏实地。
 
-![Image 11: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZyws7RgIPUxbgonXCe3RWBvq72UYLkWujJ3hTSnedAic2icwSEznFkonSqyg/640?wx_fmt=png&from=appmsg)
+![Image 11: Image](assets/7/9/799b889ff7b977ce321d8bfc7369d866.png)
 
 Google 的创业者就是典型的技术出身的创业者，他们当时要做搜索，高价的服务器买不起，所以只能手搓服务器，就是为了把成本降下来。最早的服务器都是他们从电脑店里面买回来自己攒出来的。杨致远做 Yahoo 时候也是非常脚踏实地，大家都知道 Yahoo 第一个产品是一个网址站，并没有过于追求技术。产品出身的创业者哪怕你做不了 Google，你也可以想办法做 Yahoo，做不了 Larry Page，也可以做杨致远。
 
@@ -219,7 +219,7 @@ Google 的创业者就是典型的技术出身的创业者，他们当时要做�
 
 接下来确定的是，智能上限、多模态、 AI Agents 这三个都会在今年年底到明年会有很大的升级。
 
-![Image 12: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsuHKhq3CELykhXTPBspQRuy9LN5PyW4DgQYGaXdcHZATpr5uadz5vdw/640?wx_fmt=png&from=appmsg)
+![Image 12: Image](assets/a/5/a5aac716345b23a9696c05e483b8ebb7.png)
 
 年底的话，GPT-4.5 或者 GPT-5 会有一个渐进式的改良，模型的智能上限真正要出现跨代级别的体验可能还是要等到明年年底，但今年年底在模型的指令遵循和复杂能力上会有不错的提升。多模态的话今天还是 GPT-4o，到了**明年我们会实现理解和生成真正统一的多模态。**
 
@@ -229,11 +229,11 @@ AI Agents 现在是一个痛点，主要是在复杂指令遵循，现在 AI Age
 
 接下来就有两个奇点。
 
-![Image 13: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywsupo5Dy7daicUDBodNX9bndFiaeeqPzwiaMs5EJQu2kP90ibg6YtNBQ6McQ/640?wx_fmt=png&from=appmsg)
+![Image 13: Image](assets/1/e/1eea4e5d898fa5ee4bd5daa1b92a649a.png)
 
 **第一个基点是非常确定的普惠奇点**，二十四个月内成本降到 1%，亿级别日活的应用因此可以实现。以 4- 5 年为周期的话，推理成本会降到现在的 1‰，那时候就不存在 AI 应用了，因为所有的应用都会用 AI 重塑交互和后端的实现。
 
-![Image 14: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/qpAK9iaV2O3v5IK0S0nFSyNZbO5gRZywstZtxNXbSaPku9xrQLbiaOpkwvHOYhfDS0jOfA6ibYr8EibbeHia0lYDjZQ/640?wx_fmt=png&from=appmsg)
+![Image 14: Image](assets/e/8/e89fe97d7e5b7306945564e86e5ed8e9.png)
 
 **第二阶段是智能奇点**，这个并不是特别确定。有可能模型的性能达到 GPT-5 级别之后就会到一个软天花板，但即使这样，并不影响第一个阶段的普惠奇点。如果模型性能能继续通过 Scaling Law 突破 GPT-5，达到复杂指令遵循，达到 PHD 级别的思维能力，那就不是我说的普惠奇点概念了，可能会对整个人类世界实现重塑。
 

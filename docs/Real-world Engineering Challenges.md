@@ -76,7 +76,7 @@ The proposed architecture looked like this, at a high-level:
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd22a69f9-ffe5-458d-9f5a-5321e73efdd8_1346x818.png)
+![](assets/0/8/08865a567a4154f719429ba245945219.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd22a69f9-ffe5-458d-9f5a-5321e73efdd8_1346x818.png)
@@ -107,7 +107,7 @@ Here’s some statistics on how each phase went:
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fff17e6f3-b52b-4eee-b0a3-322ea3917c15_1988x872.png)
+![](assets/3/d/3d6f57a90db57c959906f26b4c43a334.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fff17e6f3-b52b-4eee-b0a3-322ea3917c15_1988x872.png)
@@ -122,7 +122,7 @@ The first migrated service was the simplest; a service hosting a single field. T
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F56997258-3867-4cf4-b31b-2afd448e801e_2016x1356.png)
+![](assets/8/4/8496da46a77e7f46a3102d7e7098f72f.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F56997258-3867-4cf4-b31b-2afd448e801e_2016x1356.png)
@@ -185,7 +185,7 @@ With the side-by-side approach in place, the team got to scrutinize the differen
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F88ca4be0-6786-4f5d-b0d1-a392fa69a7d0_1824x1174.png)
+![](assets/d/8/d88910cab032a02b4616bb32bf76fa83.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F88ca4be0-6786-4f5d-b0d1-a392fa69a7d0_1824x1174.png)
@@ -336,7 +336,7 @@ If you’re hiring, join [The Pragmatic Engineer Talent Collective](https://prag
 
 [
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ecc0d4d-eee9-4c79-a931-da3b36f6a5db_1520x1302.png)
+![](assets/4/f/4f8ecd5a91ec11beb6e32d3f1b9f937c.png)
 
 
 ](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0ecc0d4d-eee9-4c79-a931-da3b36f6a5db_1520x1302.png)

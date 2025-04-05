@@ -19,7 +19,7 @@
 
 ](https://medium.com/@a0987284901?source=post_page-----a590071bb727--------------------------------)[
 
-![](https://miro.medium.com/v2/resize:fill:48:48/1*CJe3891yB1A1mzMdqemkdg.jpeg)
+![](assets/a/6/a6ff2676ffcc0c7aad8aaf1d79379785.jpeg)
 
 
 
@@ -34,7 +34,7 @@
 
 ](https://towardsdatascience.com/?source=post_page-----a590071bb727--------------------------------)
 
-![](https://miro.medium.com/v2/resize:fit:875/0*9FXXj9tfXGcX3ZZv.png)
+![](assets/0/2/02747860aa061303aa2c046bdf912bfe.png)
 
 [https://arxiv.org/abs/2303.10158](https://arxiv.org/abs/2303.10158). Image by the author.
 
@@ -49,19 +49,19 @@ Large Language Models (LLMs) and GPT Models
 
 LLMs are a type of Natual Language Processing model that are trained to infer words within a context. For example, the most basic function of an LLM is to predict missing tokens given the context. To do this, LLMs are trained to predict the probability of each token candidate from massive data.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*0b-hv8CdhCQDtOJMoF-rkg.png)
+![](assets/8/3/83d616883f7e8ab54649cd665f5b7105.png)
 
 An illustrative example of predicting the probabilities of missing tokens with an LLM within a context. Image by the author.
 
 GPT models refer to a series of LLMs created by OpenAI, such as [GPT-1](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf), [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf), [GPT-3](https://arxiv.org/abs/2005.14165), [InstructGPT](https://arxiv.org/abs/2203.02155), and [ChatGPT/GPT-4.](https://cdn.openai.com/papers/gpt-4.pdf) Just like other LLMs, GPT models’ architectures are largely based on [Transformers](https://arxiv.org/abs/1706.03762), which use text and positional embeddings as input, and attention layers to model tokens’ relationships.
 
-![](https://miro.medium.com/v2/resize:fit:875/0*yJQHmOAp4l66uALw.png)
+![](assets/d/4/d490c3081ab8228d0b31029513c9e683.png)
 
 GPT-1 model architecture. Image from the paper [https://cdn.openai.com/research-covers/language-unsupervised/language\_understanding\_paper.pdf](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
 
 The later GPT models use similar architectures as GPT-1, except for using more model parameters with more layers, larger context length, hidden layer size, etc.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*TX1ytZFsV0JNBykpdlKPHQ.png)
+![](assets/3/9/39fb1cb0244ba857b7ca7e6a8c1fea5e.png)
 
 Models size comparison of GPT models. Image by the author.
 
@@ -78,7 +78,7 @@ In contrast, data-centric AI focuses on improving the quality and quantity of da
 
 It is important to note that “data-centric” differs fundamentally from “data-driven”, as the latter only emphasizes the use of data to guide AI development, which typically still centers on developing models rather than engineering data.
 
-![](https://miro.medium.com/v2/resize:fit:875/0*9H17vC5k2hq9Agfc)
+![](assets/8/7/8736f45713af272a39f6b0ee3d7fe021.png)
 
 Comparison between data-centric AI and model-centric AI. [https://arxiv.org/abs/2301.04819](https://arxiv.org/abs/2301.04819) Image by the author.
 
@@ -88,7 +88,7 @@ The [data-centric AI framework](https://github.com/daochenzha/data-centric-AI) c
 *   **Inference data development** is to create novel evaluation sets that can provide more granular insights into the model or trigger a specific capability of the model with engineered data inputs.
 *   **Data maintenance** is to ensure the quality and reliability of data in a dynamic environment. Data maintenance is critical as data in the real world is not created once but rather necessitates continuous maintenance.
 
-![](https://miro.medium.com/v2/resize:fit:875/0*T-rVbW3xwLoNLoQI.png)
+![](assets/b/a/baeeb6b2fc55f1c29f221e26c80be935.png)
 
 Data-centric AI framework. [https://arxiv.org/abs/2303.10158](https://arxiv.org/abs/2303.10158). Image by the author.
 
@@ -115,13 +115,13 @@ Months earlier, Yann LeCun tweeted that ChatGPT was nothing new. Indeed, all tec
 
 **Inference data development.** As recent GPT models are already sufficiently powerful, we can achieve various goals by tuning prompts (or tuning inference data) with the model fixed. For example, we can conduct text summarization by offering the text to be summarized alongside an instruction like “summarize it” or “TL;DR” to steer the inference process.
 
-![](https://miro.medium.com/v2/resize:fit:875/0*jj8QOR2NadXFgtj2.png)
+![](assets/0/1/016851c50c17a8b29a0c20ec43d06bd3.png)
 
 Prompt tuning. [https://arxiv.org/abs/2303.10158](https://arxiv.org/abs/2303.10158). Image by the author.
 
 Designing the proper prompts for inference is a challenging task. It heavily relies on heuristics. A nice [survey](https://arxiv.org/abs/2107.13586) has summarized different promoting methods. Sometimes, even semantically similar prompts can have very diverse outputs. In this case, [Soft Prompt-Based Calibration](https://arxiv.org/abs/2303.13035v1) may be required to reduce variance.
 
-![](https://miro.medium.com/v2/resize:fit:875/0*AOGgxmPCe6NAQf8s.png)
+![](assets/7/7/7780db15838f8625e3727cada52f9d71.png)
 
 Soft prompt-based calibration. Image from the paper [https://arxiv.org/abs/2303.13035v1](https://arxiv.org/abs/2303.13035v1) with original authors’ permission.
 
@@ -132,7 +132,7 @@ The research of inference data development for LLMs is still in its early stage.
 **_\- Data understanding tools:_** Various tools could have been developed to visualize and comprehend user data, facilitating a better understanding of users’ requirements and guiding the direction of future improvements.  
 **_\- Efficient data processing:_** As the number of users of ChatGPT/GPT-4 grows rapidly, an efficient data administration system is required to enable fast data acquisition.
 
-![](https://miro.medium.com/v2/resize:fit:875/0*wawvLcuefAO1aMDh.png)
+![](assets/0/a/0a563cd04746c695f4ae52e53b863330.png)
 
 ChatGPT/GPT-4 collects user feedback with “thumb up” and “thumb down” to further evolve their system. Screenshot from [https://chat.openai.com/chat](https://chat.openai.com/chat).
 
@@ -144,7 +144,7 @@ The success of LLMs has revolutionized AI. Looking forward, LLMs could further r
 *   **Data-centric AI becomes even more important.** After years of research, the model design is already very mature, especially after Transformer. Engineering data becomes a crucial (or possibly the only) way to improve AI systems in the future. Also, when the model becomes sufficiently powerful, we don’t need to train models in our daily work. Instead, we only need to design the proper inference data (prompt engineering) to probe knowledge from the model. Thus, the research and development of data-centric AI will drive future advancements.
 *   **LLMs will enable better data-centric AI solutions.** Many of the tedious data science works could be performed much more efficiently with the help of LLMs. For example, ChaGPT/GPT-4 can already write workable codes to process and clean data. Additionally, LLMs can even be used to create data for training. For example, [recent work](https://arxiv.org/abs/2303.04360) has shown that generating synthetic data with LLMs can boost model performance in clinical text mining.
 
-![](https://miro.medium.com/v2/resize:fit:875/0*6PZfMcCsRMYLv0Xk.png)
+![](assets/1/e/1e6453563990a645fb1d3f533a9fc007.png)
 
 Generating synthetic data with LLMs to train the model. Image from the paper [https://arxiv.org/abs/2303.04360](https://arxiv.org/abs/2303.04360) with the original authors’ permission.
 

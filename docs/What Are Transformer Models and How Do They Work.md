@@ -1,7 +1,7 @@
 # What Are Transformer Models and How Do They Work?
 [What Are Transformer Models and How Do They Work?](https://txt.cohere.com/what-are-transformer-models/?utm_source=pocket_reader) 
 
- ![](https://txt.cohere.com/content/images/size/w2000/2023/04/Fueling-Generative-Content-with-Keyword-Research--2-.jpg)
+ ![](assets/2/8/2817af805387827312aa2fe52ae9b59e.jpg)
 
 Share:
 
@@ -47,7 +47,7 @@ And how are transformers trained? With a lot of data, all the data on the intern
 
 etc.
 
-![](https://txt.cohere.com/content/images/2023/05/image-7.png)
+![](assets/d/c/dcd2f462c0ef7469822aae11bcd3b4ff.png)
 
 💡
 
@@ -63,7 +63,7 @@ Now that we know what transformers do,  let’s get to their architecture. If y
 
 The fourth one, the transformer block, is the most complex of all. Many of these can be concatenated, and each one contains two main parts: The attention and the feedforward components.
 
-![](https://txt.cohere.com/content/images/2023/04/image-3.png)
+![](assets/b/c/bcb91e7147cef11f8c28971c831b8426.png)
 
 The architecture of a transformer model
 
@@ -169,5 +169,5 @@ As mentioned above, this is a conceptual introduction to give you an idea of how
 
 As you see, the architecture of a transformer is not that complicated. They are a concatenation of several blocks, each one of them with their own function. The main reason they work so well is because they have a huge amount of parameters that can capture many aspects of the context. We’re excited to see what you can build using transformer models!
 
-[![](https://txt.cohere.com/content/images/2023/04/image-2.png)
+[![](assets/0/b/0bcf124459afbcd639076c6d9fbbae37.png)
 ](https://os.cohere.ai/?ref=txt.cohere.ai&{query}&__hstc=14363112.c3801ea446a572339a0e9de69112c296.1688435860231.1688435860231.1688435860231.1&__hssc=14363112.1.1688435860231&__hsfp=1456612391)

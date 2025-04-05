@@ -4,13 +4,13 @@
 
 何恺明LeCun联手：**Transformer不要归一化了**，论文已入选CVPR2025。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsiadm93Ye2PvCazibicYIdYicE1nkBpMnfJiblicUb7BUKI5QicBxwwPsP77mA/640?wx_fmt=png&from=appmsg)
+![](assets/8/0/802f635edd87e1645c8aaa8c4db2d0d3.png)
 
 归一化长期以来一直被认为是必不可少的，在现代神经网络中无处不在。
 
 但团队认为可以换用一种非常简单的技术，他们提出**DyT**（Dynamic Tanh)，直接替代Layer Norm或RMSNorm，性能达到或超过标准Transformer。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsZHTicV1td8buv5mqEAdVxMsDXszD2YpaaXY1JibD0fmQVB09wpxcoiaNQ/640?wx_fmt=png&from=appmsg)
+![](assets/5/5/55b0d208f9ea1905046b1651c03a9473.png)
 
 DyT模块可以用几行PyTorch代码实现：
 
@@ -29,15 +29,15 @@ class DyT(nn.Module):
 
 从视觉的ViT/MAE，到语言模型的LLaMA，再到语音、DNA系列等模态都可以用，完整代码库已开源。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsGMNP2utudX4RW1oDooAEQrvnNhcbs2AGF00MJyXfdKoFasjt94ic27A/640?wx_fmt=png&from=appmsg)
+![](assets/7/5/750212084e3d9d6add928dcd831fc319.png)
 
 网友评价说，只要元素级运算就能实现和归一化一样的效果，这对于效率优化来说简直是免费的午餐。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsDGCnPT0IiaqcveKYTzEeCYYflmBLjyHUvCT4v6gOoCIvjDpRfM7UMXw/640?wx_fmt=png&from=appmsg)
+![](assets/b/5/b59a9ea2d185e89e28029df4fd7c80d5.png)
 
 前Salesforce首席科学家、搜索引擎You的CEO Richard Socher也表示，这项成果加强了他之前的假设——原始的Transformer只是众多等效神经结构之中的一个。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspssiaTO5qX6H74tkvyDHlaZyrhTyibNh8IokURgAskysrPerUibddPHsXtg/640?wx_fmt=png&from=appmsg)
+![](assets/c/0/c04559240dca75a42aeb92e71964d07a.png)
 
 Transformer不要归一化了
 -----------------
@@ -46,11 +46,11 @@ Transformer不要归一化了
 
 选取ViT、wav2vec 2.0和DiT三种训练好的网络，对每个网络采样一个小批量样本进行前向传播，测量LayerNorm层在可学习仿射变换前的输入和输出，建立输入输出元素的一一对应关系，从而直接可视化两者关系。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsuMWH1MN6KCiauPRII4j1leVPKmpIkQ0UMibF96TCBVB4XSVDe0aZ5lTA/640?wx_fmt=png&from=appmsg)
+![](assets/0/9/092c635e29d1701998e28e782155216d.png)
 
 结果发现，LayerNorm传统上被认为是**线性变换**，但实际整体居然呈现出出类似tanh函数**非线性变换**效果。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspskURNvvLNTGkX1d2g4coPcWeC0XUmnKr1akVPBbGLR8MFfSu4kvibRSw/640?wx_fmt=png&from=appmsg)
+![](assets/4/6/466cabcca25a3b9b55e049117babe86d.png)
 
 受到这一相似性启发，团队提出DyT作为归一化层的直接替代品， DyT 层定义如下：
 
@@ -66,25 +66,25 @@ DyT适用于注意力块、FFN块和最终归一化层，尽管它可能看起�
 
 **视觉监督学习**，选用ViT和ConvNeXt，在ImageNet-1K分类任务中训练，DyT在两种架构的不同模型尺寸下，性能均略优于LayerNorm，且模型收敛行为高度一致，表明二者学习动态相似。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsofMyh4o6S3f5VTNRdG4Pb6F8uEgVjCYdeZOb7wTS08u5K0wlhgo8FA/640?wx_fmt=png&from=appmsg)
+![](assets/3/4/349c9ba8e04da648ecf2954303e8bae8.png)
 
 **视觉自监督学习，**选用两种训练目标不同的网络MAE和DINO，DyT的表现与LayerNorm相当。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsVCoMz5mjOOmZyGqCjlqiaCxOCYN4PrSlic4OkUmBBBG1MZdT0PoGqQvQ/640?wx_fmt=png&from=appmsg)
+![](assets/8/2/827458be63b225bd8fa28da2c988323b.png)
 
 **扩散模型**实验中，训练了三个不同尺寸的DiT模型，用FID分数评估生成图像质量。
 
 仅用 tanh (αx) 函数替换DiT中LN 层的归一化变换，保留其仿射参数（用于class conditionin），结果相差也不大。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsVWvzMDia8ZO6ngkgjCIYE4XRk8WI1GKjfbFRxGHK9uRNBibsyibIfLpiaw/640?wx_fmt=png&from=appmsg)
+![](assets/5/e/5ec35cbcd6fe7012b9979ede000cd86e.png)
 
 **语言模型**实验中，用DyT代替了LLaMA默认的RMSNorm，在所有四种参数规模上的性能与RMSNorm相当，在整个训练过程中，训练损失保持一致。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsiaiag3KSZx65SOiaIh6ib6jWONwHsrX0Zkcum1McgvMUPA11sSU6Fue6ibQ/640?wx_fmt=png&from=appmsg)
+![](assets/0/1/016d9796b1bd24031491c0a40a8db618.png)
 
 **语音、DNA序列模型**中的情况也类似。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsNZ7qhGh29gVicricEjVFCWWDferrw9tHcZwTVIUe1sMY3cal6jsqUY7g/640?wx_fmt=png&from=appmsg)
+![](assets/a/5/a54d6ef1488577abc61421bd8b359792.png)
 
 但DyT的作用不止于此，在训练效率方面也有很大提升。
 
@@ -92,7 +92,7 @@ DyT适用于注意力块、FFN块和最终归一化层，尽管它可能看起�
 
 在BF16精度下，**DyT显著缩短了计算时间**，另外在FP32精度下观察到类似的趋势。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsM5niamtREtmQicJsLhGkngsGgcd7aNfe0cP3jOANZlaUMMd0INibNowwA/640?wx_fmt=png&from=appmsg)
+![](assets/8/a/8a477a27dbc14ea89fb68b4183638ec2.png)
 
 但DyT也有局限性，在非Transformer模型中，如**替换ResNet的Batch Norm时效果不佳**，是否以及如何适应其他类型归一化层的模型还需进一步研究
 
@@ -111,13 +111,13 @@ DyT适用于注意力块、FFN块和最终归一化层，尽管它可能看起�
 
 博士毕业后，刘壮进入Meta AI Research工作。在此之前，他已经在Meta实习了一年多时间，期间和谢赛宁合作，发表了ConvNeXt。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsDn4sPLq63BaMicPfmoicgxoYVF4ibfr5KmzBM0icWnhVhE9GkoibY5hvx5A/640?wx_fmt=png&from=appmsg)
+![](assets/e/5/e5d5b158eb57028ce42c2e8b1884becc.png)
 
 还有浙大校友陈鑫磊， 目前是Meta FAIR实验室的研究科学家，研究兴趣集中于预训练，特别是有自监督或是多模态视觉表示的预训练。
 
 发表在CVPR上、目前谷歌学术引用量达8998次的MAE开山论文，陈鑫磊与何恺明是共同一作，谢赛宁也参与其中。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsLVicWomv5JniamI67Ls7MTJia3LdAhQTvjA26gJgAzRkTy00EmwPGwCtQ/640?wx_fmt=png&from=appmsg)
+![](assets/f/2/f24c96617174324309e722c6119fdaac.png)
 
 第一作者Jiachen Zhu，来自重庆，本科就读于香港理工大学，取得了计算机和工商管理双重学位。
 
@@ -125,11 +125,11 @@ DyT适用于注意力块、FFN块和最终归一化层，尽管它可能看起�
 
 谷歌学术信息显示，除了本次的新成果之外，Jiachen Zhu自2022年至今一共还发表过5篇论文，其中3篇为一作或共同一作，每篇均有LeCun的参与。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgspsibGGs56abK21gFgq1OCatHWApLq2h1EUPL71qj427IAgAMlqk5T0uFQ/640?wx_fmt=png&from=appmsg)
+![](assets/f/d/fd7ede542bbc0c40c3e75a8fa5e07c1a.png)
 
 并且Jiachen Zhu去年以Meta实习生身份发表的一篇关于多模态理解与生成的论文，也与刘壮、陈鑫磊以及LeCun的参与。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCx6mKfhpMjw5dWfBnVgsps7llYCoiaAv3tokrFtKJGZS23D4vuKad2BPdkXViaqib8YjQlITGQ8fQwA/640?wx_fmt=png&from=appmsg)
+![](assets/f/d/fda61d0b42fd6aaf46ecfc3f002ddf40.png)
 
 论文地址：  
 https://arxiv.org/abs/2503.10622v1

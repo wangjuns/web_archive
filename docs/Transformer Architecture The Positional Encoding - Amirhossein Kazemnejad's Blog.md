@@ -11,7 +11,7 @@ When I read this part of the paper, it raised some questions in my head, which u
 
 **NOTE:** To understand the rest of this post, I highly suggest you read one those tutorials to get familiar with the transformer architecture.
 
-![](https://kazemnejad.com/img/transformer_architecture_positional_encoding/model_arc.jpg)
+![](assets/3/3/33e88d6a60d6cbf386f745a51748fbbb.jpg)
  Figure 1 - The Transformer Architecture
 
 Header Photo by [Susan Yin](https://unsplash.com/@syinq?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/library?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -68,7 +68,7 @@ You can spot the rate of change between different bits. The LSB bit is alternati
 
 But using binary values would be a waste of space in the world of floats. So instead, we can use their float continous counterparts - Sinusoidal functions. Indeed, they are the equivalent to alternating bits. Moreover, By decreasing their frequencies, we can go from red bits to orange ones.
 
-![](https://kazemnejad.com/img/transformer_architecture_positional_encoding/positional_encoding.png)
+![](assets/3/e/3ecb2042b6aded210d79bc43c950b6c5.png)
  Figure 2 - The 128-dimensional positonal encoding for a sentence with the maximum lenght of 50. Each row represents the embedding vector pt→
 
 Other details
@@ -121,7 +121,7 @@ Similarly, we can find M for other sine-cosine pairs, which eventually allows us
 
 Another property of sinusoidal position encoding is that the distance between neighboring time-steps are symmetrical and decays nicely with time.
 
-![](https://kazemnejad.com/img/transformer_architecture_positional_encoding/time-steps_dot_product.png)
+![](assets/6/3/63f0be452ae8ab1de6faacb1d205ffb3.png)
  Figure 3 - Dot product of position embeddings for all time-steps
 
 FAQ

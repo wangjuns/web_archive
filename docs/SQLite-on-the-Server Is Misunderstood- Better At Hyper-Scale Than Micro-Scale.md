@@ -5,7 +5,7 @@ URL Source: https://rivet.gg/blog/2025-02-16-sqlite-on-the-server-is-misundersto
 Published Time: 2025-02-16T00:00:00.000Z
 
 Markdown Content:
-![Image 1: Promo Image](https://rivet.gg/_next/static/media/image.f86d756a.png)We're Rivet, a new open-source, self-hostable serverless platform. We've been in the weeds with SQLite-on-the-server recently and – boy – do we have a lot of thoughts to share. [Give us a star on GitHub](https://github.com/rivet-gg/rivet), we'll be sharing a lot more about SQLite soon!
+![Image 1: Promo Image](assets/0/1/0118a050842c04b280dc481f90126998.png)We're Rivet, a new open-source, self-hostable serverless platform. We've been in the weeds with SQLite-on-the-server recently and – boy – do we have a lot of thoughts to share. [Give us a star on GitHub](https://github.com/rivet-gg/rivet), we'll be sharing a lot more about SQLite soon!
 
 There's been [a lot of discussion](https://lobste.rs/s/t1enph/siren_call_sqlite_on_server) recently about the pros and cons of SQLite on the server. After reading many of these conversations, I realized that my perspective on the power of SQLite-on-the-server is lopsided from popular opinion: SQLite's strengths really shine at scale, instead of with small hobbyist deployments that it's frequently referenced in.
 
@@ -13,7 +13,7 @@ There's been [a lot of discussion](https://lobste.rs/s/t1enph/siren_call_sqlite_
 
 Before jumping in to my perspective on the benefits of SQLite at scale, it's helpful to understand some background on SQLite-on-the-server for micro-scale apps.
 
-![Image 2](https://rivet.gg/_next/static/media/sqlite-microscale.5d171f3e.png)Most developers consider server-side SQLite a simple, cost-effective choice for small-scale applications. It's often valued for:
+![Image 2](assets/8/5/85ffa10e2de848a8e8ef817bdc295d3a.png)Most developers consider server-side SQLite a simple, cost-effective choice for small-scale applications. It's often valued for:
 
 *   **Low infrastructure costs**: No need for separate database servers—just a single file.
 *   **Seamless development and testing**: The same database file can be used across client and server.
@@ -28,7 +28,7 @@ However, this post focuses on [Cloudflare Durable Objects](https://developers.cl
 
 * * *
 
-![Image 3](https://rivet.gg/_next/static/media/cassandra.bb9addd0.png)In high-scale systems, companies frequently struggle scaling databases like [Postgres](https://www.postgresql.org/) or [MySQL](https://www.mysql.com/). Instead, they often turn to sharded databases such as [Cassandra](https://cassandra.apache.org/), [ScyllaDB](https://www.scylladb.com/), [DynamoDB](https://aws.amazon.com/dynamodb/), [Vitess](https://vitess.io/) (sharded MySQL), and [Citus](https://www.citusdata.com/) (sharded Postgres).
+![Image 3](assets/8/7/87dcd1a1fa6bc73872fa5d43ebb05af0.png)In high-scale systems, companies frequently struggle scaling databases like [Postgres](https://www.postgresql.org/) or [MySQL](https://www.mysql.com/). Instead, they often turn to sharded databases such as [Cassandra](https://cassandra.apache.org/), [ScyllaDB](https://www.scylladb.com/), [DynamoDB](https://aws.amazon.com/dynamodb/), [Vitess](https://vitess.io/) (sharded MySQL), and [Citus](https://www.citusdata.com/) (sharded Postgres).
 
 These systems use partitioning keys to co-locate related & similarly structured data. For example, a typical chat application on Cassandra might define:
 
@@ -58,7 +58,7 @@ These databases provide:
 *   **Global distribution**: Databases are placed closer to users, improving query performance.
 *   **Built-in replication and durability**: Unlike traditional SQLite, these services replicate data across multiple regions for high availability.
 
-![Image 4](https://rivet.gg/_next/static/media/sqlite-hyperscale.94d4d0af.png)Using SQLite with Cloudflare Durable Objects & Turso allows defining databases per entity, effectively replacing partitioning keys.
+![Image 4](assets/b/8/b856cfbd4ae46838bb396ee06eb26a0b.png)Using SQLite with Cloudflare Durable Objects & Turso allows defining databases per entity, effectively replacing partitioning keys.
 
 Instead of storing chat logs in a single partition, each chat channel can have its own SQLite database that also includes more tables, like participants and reactions. A sample schema could look like this:
 

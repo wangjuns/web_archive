@@ -31,7 +31,7 @@ The **Gaussian distribution**, or **normal distribution** is a key subject in st
 
 To start at the beginning: the normal distribution is a _probability distribution_: a mathematical object that describes a process by which you can _sample data_. Here is an example. If I measure the height of about 2000 female soldiers in the US army, and plot the results in a histogram, here is what that might look like.
 
-![Image 1](https://gestalt.ink/images/gaussians/soldiers.svg)
+![Image 1](assets/e/1/e151a3de36ce62750136c1982c9c840b.svg)
 
 The _stature_ (height) of 1986 female soldiers in the US Army. From the ANSUR II dataset \[[1](https://gestalt.ink/gaussians#references)\].
 
@@ -39,13 +39,13 @@ You can see that the data is clustered around the _mean value_. Another way of s
 
 The definite scale of the height distribution is why we can have doors. We know that heights will fall in a certain range, so we can build for that. There are a few distributions like this with a definite scale, but the Gaussian is the most famous one. You can see in the plot above that it has a kind of “bell” shape—it’s also called _the bell curve_—which trails off smoothly as we get further from the mean, first slowly and then dropping rapidly, and then flattening out quickly. If we make the bins in our histogram smaller, and increase the sample size so they are still filled up, we can see the shape appear more clearly.
 
-![Image 2](https://gestalt.ink/images/gaussians/soldiers-synth.svg)
+![Image 2](assets/1/8/1874b128c98cbca9ae68f7a0edcc40f9.svg)
 
 Synthetic data for 100 million imagined soldiers from the same distribution as the figure above.
 
 If you measure more than one thing about your subject, you get _multivariate_ data, and the resulting distribution is called a _multivariate distribution_. For example, if we take our soldiers, and measure their height and their weight, the data looks like this.
 
-![Image 3](https://gestalt.ink/images/gaussians/soldiers-2d.svg)
+![Image 3](assets/4/6/46f887c735f27c1df0a169557227fb93.svg)
 
 A scatter plot of the height and weight of our sample of soldiers.
 
@@ -55,7 +55,7 @@ Most descriptions you will read of the Gaussian distribution will focus on the w
 
 In this article, we want to focus more on the way Gaussians are used in _machine learning_. There, we also aim to build a model of our data, but we are often less concerned with the fact of capturing our data in a single Gaussian. Instead, we use Gaussians as a _building block_, a small part of a more complex model. For instance, we might add noise from a Gaussian to our data at some point in our algorithm, or we could have a neural network produce the parameters of a Gaussian as part of its prediction. We could combine multiple Gaussians together, in order to create a distribution with multiple peaks. We could even take a sample from a Gaussian and feed it to a neural net, so that the neural net effectively twists and folds the relatively simple shape of the Gaussian into something much more complex.
 
-![Image 4](https://gestalt.ink/images/gaussians/neural-net.png)
+![Image 4](assets/4/f/4fbf09197570ff45fea874fea69c44f7.png)
 
 100 000 points drawn from a Gaussian distribution and passed through a randomly initialized neural network.
 
@@ -84,7 +84,7 @@ To come up with the density function, remember the aim we started with: we want 
 
 We could use the exponential function, but if we add a square in there, to give us e−x2 we get some nice properties on top of the exponential decay.
 
-![Image 5](https://gestalt.ink/images/gaussians/exp-vs-squaredexp.svg)
+![Image 5](assets/2/7/273a4b320229af311228c387b1ade6d2.svg)
 
 First of all, the decay far out from zero is even faster, since we’re adding in a square. Second, close to zero, we get a little more probability density on all numbers in that region. The exponential decay really favors only 0, while the squared exponential favours all numbers _near zero_. Finally, the quared exponential has two _inflection points_, highlighted in the image with diamonds. These are the points where the decay moves from dropping faster and faster to dropping slower and slower. These inflection points form a nice, natural marking for the _scale_ of the distribution: we can take the interval between the inflection points as the “typical” range of outcomes that we might get if we sample from the distribution. The numbers outside this range are possible, but they’re less likely.
 
@@ -100,7 +100,7 @@ In our case, that means we multiply the input by 12−−√:
 
 e−(12√x)2\=e−12x
 
-![Image 6](https://gestalt.ink/images/gaussians/move-inflection-pts.svg)
+![Image 6](assets/8/e/8e73fcef6c397467292582299a54056a.svg)
 
 So, our function is now e−12x2. The extra multiplier of 12 is a small price to pay to put the inflection points at −1 and 1.
 
@@ -146,7 +146,7 @@ That is, the probability density at any point 𝐱 depends only on the norm of �
 
 With that, we have a pretty clear picture of what the standard multivariate Gaussian looks like. It’s rotationally symmetric, since all circles have the same density, and it decays in the same way as the bell shape of Ns. Putting this together, tells us that it should look, in two dimensions, like the function of Ns rotated about the origin.
 
-![Image 7](https://gestalt.ink/images/gaussians/bivariate.svg)
+![Image 7](assets/8/b/8b6106ae65103ba0b060db785b54057b.svg)
 
 In two dimensions, the set of all points that have the same density—like one of the the circles in the picture above—is called a _contour line_. The standard Gaussian is called a _spherical_ distribution because all its contour lines are circles (two-dimensional spheres). In higher dimensions, where things are more difficult to visualize, the same principle holds: the density of 𝐱 under Nns depens only on the norm of 𝐱, so the set of all points with the same density is the set of all points with the same norm, a (hyper)-sphere. These spheres are called the _contour surfaces_ of Nns. The principle of contour surfaces will be very helpful going forward, in building up an intuition for what general Gaussians look like.
 
@@ -166,7 +166,7 @@ For the time being, assume that 𝐀 is square and invertible, so that no two po
 
 To help us understand the shape of the density function, we can think back to the contour circles we defined for Ns, let's say the one for ‖𝐱‖\=1. Each of the points 𝐱 in this circle could be sampled from Ns and transformed by 𝐀 and 𝐭. What happens to a circle when all its points are transformed by a matrix? It becomes an _ellipse_. What's more, the relative lengths of vectors are maintained under matrix multiplication—if ‖𝐚‖<‖𝐛‖ then ‖𝐀𝐚‖<‖𝐀𝐛‖—so any point inside the circle (any point with ‖𝐱‖<1) before the transformation is inside the _ellipse_ after the transformation. Any point outside the circle before, is outside the ellipse after.
 
-![Image 8](https://gestalt.ink/images/gaussians/circle-ellipse.svg)
+![Image 8](assets/f/7/f7ca8ee3e59a398279623bc7ec492cd4.svg)
 
 Transforming the standard Gaussian by an affine transformation turns the contour circles into contour ellipses. Any point inside one of the circles before the transformation will be inside the corresponding ellipse after.
 
@@ -176,7 +176,7 @@ For higher dimensions, the circles becomes hyper-spheres and the ellipses become
 
 If 𝐀 is not square and invertible, the picture is a little more complex. If, for example 𝐬 is three-dimensional and 𝐱 is two-dimensional, then we are taking all points 𝐬 on a sphere, and projecting them down to two dimensions. The result is still an ellipse in two dimensions, but not all points are on the edge of the ellipse anymore. Some are in the interior. This means we no longer have the property that if ‖𝐚‖<‖b‖ then ‖𝐀𝐚‖<‖𝐀𝐛‖. However, we will be able to show in a bit that this distribution is equivalent to one defined with a two-dimensional 𝐬 and a square, invertible 𝐀. Thus, this messiness isn't really any cause for concern. We can still call this a Gaussian, and think of it as being mapped from Ns in a neat way that maps contour circles to contour ellipses.
 
-![Image 9](https://gestalt.ink/images/gaussians/2s-to-3d.png)
+![Image 9](assets/4/d/4d0de4346dd374ec372c281e63a1e29e.png)
 
 If the transformation is from three to two dimensions, points on the sphere (left) may end up inside the corresponding ellipse (right).
 
@@ -208,7 +208,7 @@ Practically, this means that the distribution has zero _correlation_ between the
 
 The final special case we will discuss is the **degenerate Gaussian**. This is what happens when, for example, we map a one-dimensional 𝐬 to a two-dimensional 𝐱.
 
-![Image 10](https://gestalt.ink/images/gaussians/family-members.svg)
+![Image 10](assets/6/8/6878c8c7916a28c43d6d877ae2db4d3b.svg)
 
 Since all points 𝐬 lie on a line, the resulting points 𝐱 can only lie on a line, even though they’re in a two-dimensional space. We’ve decided to call this a Gaussian, and along the line, you will see the familiar bell shape, but it’s fundamentally different from a true two-dimensional Gaussian like N2s, that fills all of ℝ2.
 
@@ -402,7 +402,7 @@ This gives us
 
 𝐱\=𝐔𝚺𝐬′+𝐭.
 
-![Image 11](https://gestalt.ink/images/gaussians/svd-slice.svg)
+![Image 11](assets/d/6/d6fc636efd0ce5cdecf6b50f459f536e.svg)
 
 (left) A multiplication diagram for the operation above (with the +𝐭 term omitted). (right) The reduced version we will derive below.
 
@@ -452,7 +452,7 @@ where
 
 Now, note that the vector (𝐬𝐭) consists only of univariate, standard-normal elements. In other words, this vector is a standard-normal sample itself. This means that 𝐜 has a Gaussian distribution. From the affine transformation above, we see that its mean is the concatenation of μ and ν as required. Its covariance is 𝐂𝐂T, which the following diagram shows is equal to the covariance in the proof statement.
 
-![Image 12](https://gestalt.ink/images/gaussians/concatenate.svg)
+![Image 12](assets/7/8/78d4991756f98da3cbef030b73257e57.svg)
 
 Using this lemma, the result for summing Gaussians follows almost directly.
 
@@ -484,7 +484,7 @@ Here’s a situation that comes up occasionally. We sample a vector 𝐚 from on
 
 An example is trying to saw one plank to the length of another. You measure one plank and then saw the other to the length of your measurement. Both steps have some error: there is some error in how accurately you measure, and some error in how accurately you saw. Both processes are probably Gaussian: if you repeat the measurement or the sawing and plot the results, a bell shape will appear.
 
-![Image 13](https://gestalt.ink/images/gaussians/planks.svg)
+![Image 13](assets/d/b/db474abcd3c8558605db3141c6bf32d0.svg)
 
 We measure plank 1, and then saw plank 2 to the measured length. Both actions have some inaccuracy in the form of Gaussian noise. Can we show that the distribution on the end result (a) is Gaussian and (b) has the length of the first plank as its mean?
 
@@ -492,7 +492,7 @@ The question now is what distribution we get if we don’t know the measurement.
 
 It turns out that this distribution is Gaussian as well. One way to think of this distribution is as a _convolution_ of the two Gaussians we used for sampling. At every point 𝐱 in space we place a Gaussian. The probability density is a mixture of all these Gaussians, weighted by how likely we are to put a Gaussian at 𝐱. Put differently, the probability p(𝐲) assigned to some point is a weighted “sum”—or more precisely an integral—of all the Gaussians we could sample in the first step, all weighted by how likely they are to be sampled.
 
-![Image 14](https://gestalt.ink/images/gaussians/convolution.svg)
+![Image 14](assets/8/e/8e6b4f77be8aee37e8e14850665d94e8.svg)
 
 Imagine placing copies of one Gaussian along the number line at various points. We then take a weighted sum of these Gaussians, where the weight is the density of the point according to a second Gaussian. The result, as the number of points goes to infinity, is the _convolution_ of the two Gaussians.
 
@@ -548,7 +548,7 @@ is a standard Gaussian Nn−1(𝟎,𝐈) on the remaining elements of 𝐱.
 
 Proof. To start with, consider how this conditional distribution is defined. In two dimensions, the situation looks like this.
 
-![Image 15](https://gestalt.ink/images/gaussians/standard-conditional.svg)
+![Image 15](assets/e/e/eea97175854e7339786572805fb4d9cf.svg)
 
 The constraint xi\=c tells us that we assume that 𝐱 is on the red line. The probability density for points that are not on the line becomes zero. The density for points on the line stays the same, but should be rescaled uniformly so that the probability density, if we integrate over the whole line becomes 1.
 
@@ -574,7 +574,7 @@ However, we can build on this result to show that conditioning in general produc
 
 Proof.
 
-![Image 16](https://gestalt.ink/images/gaussians/conditional-proof.svg)
+![Image 16](assets/1/f/1fdf8c33199d7e4c94855267626b0513.svg)
 
 The key idea of the proof. The 𝐬’s that result in samples 𝐱 that satisfy xi\=c form a hyperplane constraint on the standard Gaussian on 𝐬. With a simple rotation, which doesn’t affect the density, we translate to the situation of the lemma. We can now say that we can transform _from_ p(𝐱∣xi\=c) to p(𝐬∣sj\=c′) by an invertible, affine operation. As we showed earlier, this means that p(𝐱∣xi\=c) must be Gaussian.
 
@@ -617,7 +617,7 @@ That is, we don’t squish or stretch the standard-normal distribution, we just 
 
 To figure out what the density of a particular point 𝐱 is, all we need to do is shift it back. For example, if 𝐱\=(21), a point one unit above the mean, we can work out the density by shifting this point back to (10), the point one unit above the mean of the standard Gaussian. Since the two distributions are just translations of each other, these points will have the same density under their respective distributions.
 
-![Image 17](https://gestalt.ink/images/gaussians/translate.svg)
+![Image 17](assets/c/4/c41d5bf06b4768a69f6e1ce2edfb6275.svg)
 
 This tells us that we can express the density of our new function in terms of the density function we already have for the standard Gaussian.
 
@@ -635,7 +635,7 @@ The idea is simple: for a given Gaussian expressed as a transformation of the st
 
 Can we apply the same idea to the transformation matrix 𝐀? Here we have to be a bit more careful. As we transform by 𝐀, it may stretch or shrink space. It’s easiest to see what might go wrong in the 1D case:
 
-![Image 18](https://gestalt.ink/images/gaussians/inflation.svg)
+![Image 18](assets/8/e/8e4dce2724da713084294581b4977c9b.svg)
 
 As you can see, if we have σ\=1/2, then after we multiply by 1/σ\=2, the whole function blows up as a result. This means that the area under the curve will no longer sum to 1. Luckily, the increase is simply a factor of σ, so if we apply the change of variables naively, all we have to do is divide the result by 1/σ to correct the error.
 

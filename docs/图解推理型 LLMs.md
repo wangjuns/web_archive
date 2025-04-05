@@ -17,13 +17,13 @@ Markdown Content:
 
 与常规 LLMs 相比，推理型 LLMs 在回答问题前，往往会先将问题拆解为更小的步骤（通常称为推理步骤或思考过程）。
 
-![Image 103](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDePPhV42wmZrIbUkkIhia9Yb20JsZmficZPia7uFaj948EZickZR9UtnhAuQ/640?wx_fmt=png&from=appmsg)
+![Image 103](assets/8/9/891fee9527aa7d718eab596f90f4b417.png)
 
 那么，“思考过程”、“推理步骤”或“思维链”（**CoT**, Chain-of-Thought）究竟意味着什么？
 
 虽然我们可以探讨 LLMs 是否真的能像人类那样思考，但这些步骤将整个过程拆解为更小，且结构化的推理。  
 
-![Image 104](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeib1z6YG0x8rAxZG6tdotpAWX7kBJHqsB3sy94tmXmka502oZFBbVxiaw/640?wx_fmt=png&from=appmsg)
+![Image 104](assets/4/4/44eebd4115ba69dc92a23102bc0da877.png)
 
 LLMs 不仅学习“回答什么”，更学习“如何回答”。
 
@@ -47,11 +47,11 @@ LLMs 不仅学习“回答什么”，更学习“如何回答”。
 
 **这三者合称为训练时计算（train-time compute）**，它体现了预训练数据作为“ AI 之燃料”的理念。基本上，预训练投入越大，最终得到的模型就会越出色。
 
-![Image 105](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDehicC1MqMpL49YH8W4wr3KOkmohbI5S4SMGNdOtdTvlas9BquuHTK1mg/640?wx_fmt=png&from=appmsg)
+![Image 105](assets/3/f/3f0caad87e51362010f2475343a1b8f4.png)
 
 训练时计算不仅包括训练期间所需的计算量，还涵盖了微调时所需的计算量。
 
-![Image 106](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDemIib48xib5sW0Lydv1rdLrtOl3XdoNsNx2s8QGFkPcIbYicKicc9IRdmxQ/640?wx_fmt=png&from=appmsg)
+![Image 106](assets/2/c/2c7b57462df46aec4dba678dcb481eca.png)
 
 长期以来，这些因素一直是提升 LLMs 性能的关键。
 
@@ -61,13 +61,13 @@ LLMs 不仅学习“回答什么”，更学习“如何回答”。
 
 这些定律属于所谓的“幂律”:某一变量（例如计算量）的增加会导致另一变量（例如性能）按比例发生变化。
 
-![Image 107](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDea6eS4ugjZIqDypIiauvTyRtPCOHCvvHkiaEZegN8y7eiaqV92KOcrohmQ/640?wx_fmt=png&from=appmsg)
+![Image 107](assets/0/0/00ca56f889401c09f2c76d1c7b6992a8.png)
 
 通常，这些关系会在对数-对数坐标系下展示（呈现直线），以突出计算量的大幅增加。
 
 最为知名的规模定律包括“Kaplan 定律”和“Chinchilla 定律”。这些定律能大致说明，随着计算量、token 数量和参数数量的增加，模型性能也会相应提升。
 
-![Image 108](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDe2SnUst4O9P7XQADNQpj30OZ9XDzOsK8nTyibx8J70lEeSbV3yVRdaicw/640?wx_fmt=png&from=appmsg)
+![Image 108](assets/4/1/41884824cde9dcfad314be5a400365bc.png)
 
 > （图片来自《Scaling laws for neural language models》）展示了模型性能如何随着不同计算指标（如更长的训练时间、数据集规模和参数数量）的增长而提高。
 
@@ -79,7 +79,7 @@ Kaplan 定律指出，在固定计算量的前提下，扩大模型规模通常�
 
 然而，在 2024 年期间，虽然计算量、数据集规模和模型参数数量持续增长，但其带来的性能提升却呈现出边际递减的趋势。
 
-![Image 109](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeYA99pKibLNjuecl9RoOSqfjCSUqpTt0cFXWkmNic3r3D4Vyty7oAEgFQ/640?wx_fmt=png&from=appmsg)
+![Image 109](assets/4/8/480ade124b50b889fa3292973379d9ca.png)
 
 正如这些幂律所揭示的那样，随着规模的不断扩大，收益也会逐步递减。
 
@@ -96,15 +96,15 @@ Kaplan 定律指出，在固定计算量的前提下，扩大模型规模通常�
 
 与不断增加预训练成本不同，测试时计算允许模型在推理过程中“多思考一会儿”。
 
-![Image 110](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDegWZ928sQsT3zwOcejAPpt1ycia3je73a641QHYTqSu7bzZBWgGObxuw/640?wx_fmt=png&from=appmsg)
+![Image 110](assets/6/b/6bdc971b3b827cc790c32c16807f8132.png)
 
 非推理型模型，通常只输出答案，省略“推理”步骤：
 
-![Image 111](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDebhvsKQLSt1wGS39piarSCib87iadewibmXouV7sfvrNmAlTQpjibuNU2MNQ/640?wx_fmt=png&from=appmsg)
+![Image 111](assets/e/b/ebd15ef54cb72ecaf450cb140b2d2948.png)
 
 而推理型模型则会使用更多的 tokens，通过**系统性的思考过程** 推导出答案：
 
-![Image 112](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeZuZkPxD9H4Y14lMVq0M3vItliakBAiaArfN2yNNup4NJcq3ibUpibUs5pw/640?wx_fmt=png&from=appmsg)
+![Image 112](assets/0/1/01bbe42a4f3c6de08a6de62692217e52.png)
 
 **这一思路的核心在于：要 LLM 花费更多计算资源来生成更好的答案。**
 
@@ -114,7 +114,7 @@ Kaplan 定律指出，在固定计算量的前提下，扩大模型规模通常�
 
 这样会带来更高质量、更准确的结果，尽管过程看似生成的文本更多、消耗的算力更大，但实际却更高效，因为减少了错误或浅层回答的概率，从而节省了后续反复验证或修改的成本。
 
-![Image 113](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDexlcO2bqViagT8mNiaM6fBzzCOPiciaY0TgMvlDfXx2bib49u8uKXS1VZlwA/640?wx_fmt=png&from=appmsg)
+![Image 113](assets/8/9/895c91e8fc718d94354a165cd1681027.png)
 
 ### 规模定律
 
@@ -122,7 +122,7 @@ Kaplan 定律指出，在固定计算量的前提下，扩大模型规模通常�
 
 首先，OpenAI 的一篇帖子展示了测试时计算可能遵循与训练时计算相同的扩展趋势。
 
-![Image 114](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDe6iafQuSxjcfpIdsiaf1pJ1JN4fL2PuhU6TkzgUXMicA6CpgYYqCueQS2Q/640?wx_fmt=png&from=appmsg)
+![Image 114](assets/f/c/fc99144e808fd84a553023b6639b3aa0.png)
 
 > 图示中添加了红色虚线， OpenAI 认为这一新范式可能属于测试时计算。
 
@@ -130,23 +130,23 @@ Kaplan 定律指出，在固定计算量的前提下，扩大模型规模通常�
 
 其次，一篇题为《Scaling Scaling Laws with Board Games》的有趣论文，探索了 AlphaZero，并在不同的计算量下训练它以玩 Hex 游戏。
 
-![Image 115](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeXe1hBV0kNx9xSbtaIPNicibJJ6qYKuAQjMXT309dNHC0U2viaPeyGX8SA/640?wx_fmt=png&from=appmsg)
+![Image 115](assets/6/2/620bd8493119d6bb57bd49f9dbd6cd2d.png)
 
 > 图示展示了他们如何构造不同程度的训练时计算和测试时计算。
 
 其研究结果表明，训练时计算与测试时计算之间存在紧密联系。每一条虚线都展示了达到特定 ELO 分数所需的最小计算量。
 
-![Image 116](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDesrQc6DiadWTBBPm0DYehyUaSI2WmdICW66jPJGs8cTs7EXBFgufnWXQ/640?wx_fmt=png&from=appmsg)
+![Image 116](assets/4/d/4d3cbc33c26d542f89dcf2901883c279.png)
 
 随着测试时计算扩展得像训练时计算一样，一个新的范式正逐步形成，**即利用更多测试时计算来构建“推理”模型。**
 
 通过这种范式转变，这些“推理”模型不再纯粹依赖训练时计算（预训练和微调），**而是在训练和推理之间取得平衡。**
 
-![Image 117](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDe5eiclI0zh7RGEmLynoDPxRmRwh1SibkPeOvlibgJvbxn8QW7MWAAib5n9Q/640?wx_fmt=png&from=appmsg)
+![Image 117](assets/b/e/be24379db18991bb439be5b77ea5a702.png)
 
 测试时计算甚至可以在思考时间上实现扩展：
 
-![Image 118](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDe5pfxy9Xz731jYNeocvqL1lcZjKibBsXH1h6fdSXHJeVkcvfBS9uPvXg/640?wx_fmt=png&from=appmsg)
+![Image 118](assets/7/c/7cdcfea14a2f86a2fec7782610df6b78.png)
 
 “长度扩展”也是我们在深入探讨 DeepSeek-R1 时将会探讨的一个内容。
 
@@ -163,11 +163,11 @@ Kaplan 定律指出，在固定计算量的前提下，扩大模型规模通常�
 2.  2. **Modifying Proposal Distribution：修改提议分布**（训练过的“思考”过程）
     
 
-![Image 119](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDe4xhv42A7zUjBMBT8sADrnmVw7oodqGsOgMghmQxXcicyWoqicBQy6uqg/640?wx_fmt=png&from=appmsg)
+![Image 119](assets/3/7/377e355b385395089afdd47bf1daa119.png)
 
 **利用验证器进行搜索侧重于输出，而修改提议分布则侧重于输入。**
 
-![Image 120](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeQlc96THTEtYNsaS1TPicRA2ADrBe3Yz9Q3DnMZxdaZ7mdHsWv2CW9Cg/640?wx_fmt=png&from=appmsg)
+![Image 120](assets/3/e/3e615c9612db6312ae85c7ce1e14b59d.png)
 
 我们将探讨两种类型的验证器：
 
@@ -178,15 +178,15 @@ Kaplan 定律指出，在固定计算量的前提下，扩大模型规模通常�
 
 正如其名称所示，结果奖励模型 ORM 只对结果进行评判，而不关心背后的过程：
 
-![Image 121](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDex21jBpecdDlwWBbvVLy6JIe9HhSWXRoibyxmGeZiau45FsKDr2ZFdrNQ/640?wx_fmt=png&from=appmsg)
+![Image 121](assets/5/4/547c3757ba2e72b07aff3ab491d3c7b8.png)
 
 相反，过程奖励模型 PRM 不仅评判结果，还会考量生成结果的过程（即“推理”过程）：
 
-![Image 122](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDehbibiak3TNtzO3usKUf4mUB8Gh5E128hm0TukItSPcVx9Mk0XwiaTZjibw/640?wx_fmt=png&from=appmsg)
+![Image 122](assets/7/6/767aeafea8874569dc916a4854b6a938.png)
 
 为了使 PRM 的推理步骤更具体，我们将推理展开看：
 
-![Image 123](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDemccXaXbuOpsLbgaB2Egu6GzCib8qwCL8gpndKMSgdP2vxd0UOD9wUuw/640?wx_fmt=png&from=appmsg)
+![Image 123](assets/0/4/041e6a58ee74d87d128252511e8f72ae.png)
 
 （注意：步骤 2 是一个坏的推理步骤，被过程奖励模型打了低分）
 
@@ -204,7 +204,7 @@ Search against Verifiers
 2.  2\. 然后，利用验证器（奖励模型）对生成的输出进行评分。
     
 
-![Image 124](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeia4oljQEgEjice44diaLaM2O3ibfz3mXNBqMuDaiat17ZSAHmozYbD7eajw/640?wx_fmt=png&from=appmsg)
+![Image 124](assets/0/0/00e639a6dc8fb067ea922c5cab560ba1.png)
 
 通常，验证器也是一个经过微调的 LLM，用于评判结果（ORM）或过程（PRM）。
 
@@ -216,7 +216,7 @@ Search against Verifiers
 
 具体做法是让模型生成多个答案，然后选取出现次数最多的那个作为最终答案。
 
-![Image 125](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeHvRXVxnXgic8Khwu3Y915ZVQNvmWNsNKPHWsDO5N26IlZFXiaG2SOvKQ/640?wx_fmt=png&from=appmsg)
+![Image 125](assets/b/3/b36188dc05fa830b9dbce7c730be1caa.png)
 
 这种方法也被称为 **自洽性（self-consistency）**，以强调需要生成多个答案及其推理步骤。
 
@@ -228,21 +228,21 @@ Search against Verifiers
     通常由一个 LLM（称为“Proposer”）在较高或多种温度设定下生成多个答案样本。
     
 
-![Image 126](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeoCcOukUQYORUciaa4chu0TmQhzzVeDTgGa9BPaA2HWOIFxTqU6eBRvA/640?wx_fmt=png&from=appmsg)
+![Image 126](assets/7/5/75184447e434ae238ef5aa574f05a24c.png)
 
 1.  2. **评分并选取最佳答案**  
     将每个答案输入给结果奖励模型（ORM），为其打分，并选出分数最高的那个答案。
     
 
-![Image 127](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDenKmuJuKUs1Zic2UpnjCJ2MErmPl6BiaCscJhsYXQnwQzkrLAviaLRLlCw/640?wx_fmt=png&from=appmsg)
+![Image 127](assets/c/f/cf0b912a1239d610c8fa361a1ba0813c.png)
 
 如果想评估的不只是答案，还包括推理过程，则可以使用 **过程奖励模型（PRM）**。它会判断每个推理步骤的质量，并选取具有最高总权重的候选答案。
 
-![Image 128](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeh473PxZa5fXQ3Yf9QQVVRWBuLpKFbsqlNibHBv94W4HGpefXIkCXWxw/640?wx_fmt=png&from=appmsg)
+![Image 128](assets/0/5/05c7037df73b6638e60b3d3eab012b8e.png)
 
 基于这两类验证器，我们还可以让奖励模型（RM）分别对每个答案候选进行加权，然后选出综合得分最高的那一个，这种方法被称为 **加权 Best-of-N 样本（Weighted Best-of-N samples）**。
 
-![Image 129](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDe5PbkNh3WqeaP7NrJvmm4ZIrOib7cMrpUGBOuQOq1icTkLAqoc4CDVkrQ/640?wx_fmt=png&from=appmsg)
+![Image 129](assets/a/2/a20dfd53815451dfea3015cefbbefa0b.png)
 
 ### 使用过程奖励模型的 Beam Search
 
@@ -250,7 +250,7 @@ Search against Verifiers
 
 在 Beam Search 中，会对多个推理步骤进行采样，并由过程奖励模型（PRM）进行打分（类似于 Tree of Thought 的思路）。在此过程中，我们会追踪评分最高的若干条“beam”，例如前三名。
 
-![Image 130](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeYuOkxnBlOE746FPmw6y8icgIwUzxf7EvsKQu3RgtIKbRic0OlhvcRFGQ/640?wx_fmt=png&from=appmsg)
+![Image 130](assets/5/b/5b622ed4f79740dfb50e94ea2512f33f.png)
 
 这种方法能让我们快速终止那些得分低、不太可能带来理想结果的推理路径，从而将计算资源集中在更有用的推理路线。
 
@@ -275,13 +275,13 @@ Search against Verifiers
 
 节点的选择和评分通常可参考下图所示的公式或方法来执行：
 
-![Image 131](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeoSmbNjqkM0Uoiafibvjqib2fz3eBeqrT6er73oibSKuvxkPrLyv2KSa4Qw/640?wx_fmt=png&from=appmsg)
+![Image 131](assets/4/a/4a8c851d224b81a8fec44c6df0d1b22e.png)
 
 在选择要进一步探索的推理步骤时，不一定总是选择当前看起来最佳的路径，这样有助于避免过早收敛。
 
 具体实现中，**选中**一个节点后，可以对其进行**扩展**（生成新的推理步骤），再使用适当的温度采样来生成多个变体。
 
-![Image 132](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDedGkFo5zYfE3FbOxP0t1QWZIiaxHXSnBef5gG7Q16NZ9uCtialJ2Fv3oA/640?wx_fmt=png&from=appmsg)
+![Image 132](assets/b/7/b7cb9ac39d539bb69b05d5d58f8cec8b.png)
 
 随后，我们会对某一分支进行多次模拟（rollout），直到生成完整的答案。
 
@@ -289,7 +289,7 @@ Search against Verifiers
 
 最后，将这些得分回溯更新到父节点，然后继续进行新的选择（selection），周而复始，持续改进搜索过程。
 
-![Image 133](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeEKOiafAeMgFhtYDXD0GUPBOlGvUUmCaAk5sHvKy7qN8mGS6RFIEnnYw/640?wx_fmt=png&from=appmsg)
+![Image 133](assets/6/5/653440e012f3625100c1333444f23fa2.png)
 
 * * *
 
@@ -302,17 +302,17 @@ Search against Verifiers
 
 试想，我们有一个问题，以及一个用于从中采样的 tokens 的分布。常见的策略是选取得分最高的 token：
 
-![Image 134](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeruTlC2V5nhuPGeCarcd40rVTjDCKFNvOQsLibB4Nj0EVSlxwDCjdsMQ/640?wx_fmt=png&from=appmsg)
+![Image 134](assets/a/1/a1f75ca770a5a20c4bee571798b5ea5f.png)
 
 但注意在上方示意图中，有些 tokens 被标记成红色——这些 tokens 会更倾向于带来推理过程：
 
-![Image 135](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDen1rUBWu546djeGyUSRiaPSzSctu5CibYpP2zW8sBjPJyCEJONygia6gyg/640?wx_fmt=png&from=appmsg)
+![Image 135](assets/6/4/6494a25790179d77385ee92219ae4957.png)
 
 尽管“贪婪”地选择得分最高的 token 并不一定错误，但如果某些 token 指向了更详细的推理步骤，往往可以得到更高质量的答案。
 
 当我们修改提议分布（即 token 的概率分布）时，实质上就是对模型的 token 排序进行重新评估，使得“推理” token 被选中的概率更大：
 
-![Image 136](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDe6WDwjexpKibLuyBGg3Uia71fDvyYtsmEOnh4xXspNDFuoQdyHYvjIE2w/640?wx_fmt=png&from=appmsg)
+![Image 136](assets/b/d/bd74cfa12a12283e1dfabf77830a6be3.png)
 
 从概念上说，修改提议分布的方法可以分成两类：
 
@@ -327,11 +327,11 @@ Search against Verifiers
 
 要通过 Prompt 来改变提议分布，我们可以给模型提供示例（即“上下文学习”），从而诱导它生成更具推理倾向的回答：
 
-![Image 137](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDemNBelWicT28wMmSRbhTl9ekXRlibyXM8BJ5UuesKEVsvsPXdjia9z8fHg/640?wx_fmt=png&from=appmsg)
+![Image 137](assets/b/9/b9b30cb1db8303b8b1cf0e8145496a0a.png)
 
 如果不想提供完整示例，也可以通过简单的一句话来指示模型，例如“Let’s think step-by-step”，从而让模型在回答之前先做推理拆解：
 
-![Image 138](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDe1rlBkK5qekcmSGsFLX3voTx5XznRNMJC817lDACavLtJX1LBz0mPyg/640?wx_fmt=png&from=appmsg)
+![Image 138](assets/6/2/62c79108f0152dd639968bfc442ed552.png)
 
 不过需要注意：**模型本身并不一定“真正学会”遵循这个过程。此外，这种方法是静态、线性的，缺少自我修正机制**。一旦模型开始的推理过程出现错误，它往往会沿着这个错误的思路继续下去，而不进行修正。
 
@@ -346,12 +346,12 @@ Search against Verifiers
 *   • 如果答案正确 (2a)，则将该推理过程和最终答案一起加入到三元组数据集中 (3a)，用于后续的监督微调 (5)。
     
 
-![Image 139](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeic9PLAq42r0XickJqHw9TibjVibicYiczuBZv6mfNPvRX8ZxMHozFicbpI1PQ/640?wx_fmt=png&from=appmsg)
+![Image 139](assets/2/c/2cc0c69c28e2a4abf827a0448fea6d5e.png)
 
 *   • 如果模型给出的答案是错误的 (2b)，则为模型提供一个“提示”（正确答案 3b），让它去推理为什么这个答案才是正确的 (4b)。模型最终的推理过程同样会被加入到相同的三元组数据集中，用于监督微调 (5)。
     
 
-![Image 140](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDebCTib1E1OpGFh6w9brfCEdiazSBchc4USdy0icp9Z9sLp6rcdiaiby2rUMA/640?wx_fmt=png&from=appmsg)
+![Image 140](assets/e/d/ed779a8f99bdf5b49ee0883290e705df.png)
 
 在这一过程中（以及许多其他修改提议分布的方法中），**我们都会显式地教模型去“遵循”我们示范的推理步骤。**
 
@@ -380,7 +380,7 @@ DeepSeek 团队通过多种技术手段，成功地将推理能力巧妙融入�
 
 为此，他们设计了一个非常简单直观的提示（Prompt），类似于系统提示，贯穿于整个Pipeline：
 
-![Image 141](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDefGMjhFP4El2BlgNy8z5tOYwQ3WZRAIp1CJHrzGCq09xoiaY01payJPw/640?wx_fmt=png&from=appmsg)
+![Image 141](assets/7/b/7b8f4e2b38dbf2b7403a0d4f160ba18b.png)
 
 可以看到，虽然提示中明确要求在 `<think>` 标签内写出推理过程，但并未对推理过程的具体形式做任何规定。
 
@@ -404,13 +404,13 @@ DeepSeek 团队通过多种技术手段，成功地将推理能力巧妙融入�
 
 而对于那些导致答案错误的所有决策，则会在训练中获得使其更不可能被采纳的权重调整。
 
-![Image 142](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeFhr4YbZZIushDlvB49Ua3CPB9BHibLGXrj7Qy1tIvgUeJgBQOzIhObQ/640?wx_fmt=png&from=appmsg)
+![Image 142](assets/a/7/a741ef6813c586df7a6c549a8d99cb4e.png)
 
 有意思的是，该提示并没有给出 `<think>` 过程应当如何呈现的示例，只是要求在 `<think>` 标签内进行思考，无需更多细节。
 
 通过向模型提供与思维链（Chain-of-Thought）相关的间接奖励，模型逐渐自主学会：当推理过程更长、更复杂时，答案更可能是正确的。
 
-![Image 143](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeSm80S5lUe0tp9WrMpOPK0rnr8ClN4BP8XFOwuwWn4echJ3ialFCBqJA/640?wx_fmt=png&from=appmsg)
+![Image 143](assets/0/1/01c42d0375429530c20e8bc31fe03dda.png)
 
 **这张图非常重要，因为它进一步印证了从训练时计算到测试时计算的范式转变。当这些模型生成更长的思考序列时，实际上就加大了测试时计算的投入。**
 
@@ -441,25 +441,25 @@ DeepSeek-R1 的训练大体可以概括为以下五个阶段：
     在第一步中，研究人员使用一个**小型的高质量推理数据集**（约 5000 个样本）对 DeepSeek-V3-Base 进行微调。这样做是为了避免“冷启动”问题导致的可读性不佳。
     
 
-![Image 144](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeiciaHITOaeI4ADscG0nQnCFR0leoTRm9QPl0GdkDJDxU0ASvBC4gic6SQ/640?wx_fmt=png&from=appmsg)
+![Image 144](assets/2/c/2c0ff0a5129d1645784c694ac628b657.png)
 
 1.  2. **面向推理的强化学习**  
     在第二步中，得到的模型采用与 DeepSeek-V3-Zero 类似的强化学习过程进行训练。但在奖励机制中增加了一项新指标，用来确保目标语言的输出保持一致性。
     
 
-![Image 145](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeOcNjEWPCl4kW1aHfvTg3vlgDR7xvw348VeIc99bVZkiabZnZZEzicSqw/640?wx_fmt=png&from=appmsg)
+![Image 145](assets/9/6/96dc7d901509ec5958ca1d9a57a6b65f.png)
 
 1.  3. **拒绝采样（Rejection Sampling）**  
     在第三步，研究人员利用上一步得到的模型合成推理数据，用于后续的监督微调。通过基于规则的奖励策略（rule-based rewards）、生成式奖励模型（Generative Reward Model），生成了 600,000 份高质量的推理示例。 此外，还生成了 200,000 份“非推理”示例，这些示例来自 DeepSeek-V3 及其部分训练数据。
     
 
-![Image 146](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeDPYu2VGa9AUeoiaO3mfoibGZuRfzRdFg8s4oricp3YHMLsCgSsibPYjtGg/640?wx_fmt=png&from=appmsg)
+![Image 146](assets/6/9/699d87549baf5f192ac309e30e970a69.png)
 
 1.  4. **监督微调（Supervised Fine-Tuning）**  
     第四步，将得到的总计 800,000 条示例数据用于对 DeepSeek-V3-Base 的监督微调。
     
 
-![Image 147](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeruatY7FD5sGaO9ZhomD4LpJic5SiaH6ibXU77ZhBMNibF3I4yTSw0UCYfQ/640?wx_fmt=png&from=appmsg)
+![Image 147](assets/3/1/31e13047e27c76b5c139bb34084ff282.png)
 
 1.  5. **适用于所有场景的强化学习**
     
@@ -470,7 +470,7 @@ DeepSeek-R1 的训练大体可以概括为以下五个阶段：
 
 同时，为了避免推理结果的可读性问题，模型会被要求对推理过程进行适当的总结和精简。
 
-![Image 148](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeJP3y8KHogwnWNplQBeH0ib1zLx0spqIiaYzNb5KTNnq90cceZKjMYdBA/640?wx_fmt=png&from=appmsg)
+![Image 148](assets/2/e/2e3d49f02a6dfaad7bf4948a55f361e8.png)
 
 通过上述五个阶段，DeepSeek-R1 最终得以成型。可以说，**DeepSeek-R1 是 DeepSeek-V3-Base 通过监督微调和强化学习得到的成果。**
 
@@ -484,12 +484,12 @@ DeepSeek-R1 规模庞大，拥有 6710 亿（671B）参数。这对于普通硬�
 
 具体做法是，让 DeepSeek-R1 作为教师模型（Teacher），而体量较小的模型则作为学生模型（Student）。两者在面对相同的提示时，需要分别生成 token 的概率分布；学生模型会尝试在训练中**逼近**教师模型的分布：
 
-![Image 149](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeqLscD7ibIUtbJich5MC2iaF1Y67VzyFfxv1yHm68DgoVrraAoP5Piblv3A/640?wx_fmt=png&from=appmsg)
+![Image 149](assets/6/4/6447084af649814e3f82722aa5a36fe8.png)
 
 1.  1\. 使用之前提到的 80 万高质量数据样本（其中 60 万条推理示例 + 20 万条非推理示例）进行训练。
     
 
-![Image 150](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5psawIfnibbeNNLl8sGorhDeVUZbVWPBzKjIwv7gckkYia6YqsttXzESYzauFwhxNwvYKkQClk9ZRHA/640?wx_fmt=png&from=appmsg)
+![Image 150](assets/c/7/c758a616d191a3cf2ecdd805fde6dbb8.png)
 
 1.  2\. 学生模型通过不断对比自己的输出分布和教师模型的输出分布，来学习 DeepSeek-R1 的推理方式。
     
@@ -519,4 +519,4 @@ DeepSeek-R1 规模庞大，拥有 6710 亿（671B）参数。这对于普通硬�
 
 欢迎各位加我个人微信，一起探讨数据科学、大模型相关知识与技术。个人微信二维码：
 
-![Image 151](https://mmbiz.qpic.cn/mmbiz_png/Tk5rmgcsX5qCg6E6XskIopgF9iaibibw62aiam8PN77lHicaayyw7iaawR9eXG0KITcpnE3QO34StxZrfXsHIUc6JXIg/640?&wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 151](assets/b/c/bccce576835ed3e30aee8d2dd90e0ba0.png)

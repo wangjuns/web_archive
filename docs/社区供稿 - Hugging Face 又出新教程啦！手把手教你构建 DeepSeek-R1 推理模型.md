@@ -6,14 +6,14 @@
 
   
 
-![Image 1: cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/5LJDib8HPR2qmVE4nCr8FNRUic8AmsWdVIaNpVvIxRGm1wibt9Z61ZVQ00ZeXibm4aGC4qugxWxrbHjMUaHaAWBibHQ/0?wx_fmt=jpeg)
+![Image 1: cover_image](assets/c/6/c6701a56887fd859382c3174abce6a87.jpg)
 
 社区供稿 | Hugging Face 又出新教程啦！手把手教你构建 DeepSeek-R1 推理模型
 ===================================================
 
 [Hugging Face](javascript:void(0);)
 
-![Image 2: profile_qrcode](https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=Mzk0MDQyNTY4Mw==&mid=2247494342&idx=1&sn=b7dd7fcfb1442a8ef247eef0d270ae09&send_time=)
+![Image 2: profile_qrcode](assets/8/7/8729da6b132d447cb9a589bdd67a8a05.bmp)
 
 Hugging Face
 
@@ -27,13 +27,13 @@ _2025年03月04日 15:31_
 
 The following article is from ChallengeHub Author 致Great
 
-[![Image 3](http://wx.qlogo.cn/mmhead/Q3auHgzwzM5UnaYcDrOoSCsaZkwuLh4vuFaGrHlGGyaWQrxfVF2DMw/0) **ChallengeHub** .由互联网大厂和中科院研究所的算法数分小伙伴们创建，热爱竞赛知识分享，获得过Kaggle、阿里天池等算法竞赛冠亚季成绩。每日给小伙伴带来机器学习、NLP、数据分析知识分享、竞赛干货、职场经验和内推～](https://mp.weixin.qq.com/s/8N8Hn1yMb1yQjqMt5RUaCg#)
+[![Image 3](assets/3/2/32ca2ef14a068c13f77d611c77994399.jpg)
 
 > Hugging Face 又出新教程啦！手把手教你构建 DeepSeek-R1 推理模型，笔者第一时间进行了学习，下面是整理的课程内容
 
 > 课程链接：**https://hf.co/learn/nlp-course/en/chapter12/1?fw=pt**
 
-![Image 4: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlpNYicKzeGZeF8AzcibQ0WRFgEbD8yE2C7XfcnuPoYQ86uibSicvPc2LXSA/640?wx_fmt=other&from=appmsg&wxfrom=5&wx_lazy=1&wx_co=1&tp=webp)
+![Image 4: Image](assets/4/8/4837af0a2654811973768a21a7943396.webp)
 
 **推理大模型课程简介**
 =============
@@ -132,7 +132,7 @@ Open R1 是一个旨在让 LLM 推理复杂问题的项目。它通过使用强�
 
 简而言之，这就是强化学习背后的基本思想！我们拥有的不是狗，而是语言模型（在强化学习中，我们称之为代理）；我们拥有的不是你，而是提供反馈的环境。
 
-![Image 5: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlz82lsPwCVXEiaeYR4tgibUewcTj2CGovX5aibBStk1AnkFwbn41x5jbFQ/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 5: Image](assets/f/2/f26d47dde21265efd999fd99688f68eb.webp)
 
 让我们分解一下 RL 的关键部分：
 
@@ -155,7 +155,7 @@ Open R1 是一个旨在让 LLM 推理复杂问题的项目。它通过使用强�
 **强化学习过程：反复试验**
 ---------------
 
-![Image 6: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dljLfAeMlPwhM3glffy4S3icpWJUhfyyS7CNZZjBWNRiaSUwCCLC0Ziay6Q/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)强化学习是通过反复试验的过程进行的：
+![Image 6: Image](assets/f/f/ffd659a1da17abe898c755d821052d7c.webp)强化学习是通过反复试验的过程进行的：
 
 | **步骤** | **过程** | **描述** |
 | --- | --- | --- |
@@ -262,7 +262,7 @@ Open R1 是一个旨在让 LLM 推理复杂问题的项目。它通过使用强�
 *   **使用 RL 对 LLM 进行微调**：现在我们使用奖励模型作为 LLM 代理的环境。LLM 生成响应（操作），奖励模型对这些响应进行评分（提供奖励）。本质上，我们正在训练 LLM 生成我们的奖励模型（从人类偏好中学习）认为不错的文本。
     
 
-![Image 7: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlTejmt4Vr03OOFVGvicPRbtuF51jGxEUib8rt4k0k2LhFBlIeicGvEhkrQ/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)从总体角度来看，让我们看看在 LLM 中使用 RL 的好处：
+![Image 7: Image](assets/0/d/0d55f57029a97a5c14bc394327bab31f.webp)从总体角度来看，让我们看看在 LLM 中使用 RL 的好处：
 
 | **好处** | **描述** |
 | --- | --- |
@@ -324,12 +324,12 @@ GRPO 在获取奖励信号的方式上非常灵活 - 它可以与奖励模型配
 
 > DeepSeek R1 代表了语言模型训练的重大进步，特别是在通过强化学习开发推理能力方面。该论文介绍了一种名为“组相对策略优化”（GRPO）的新型强化学习算法。
 
-![Image 8: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dldzzfFNPqWJj1jLaFoLvvLkSEjBuqibFQfUXNe54neq3Psw8gOJxnCnA/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 8: Image](assets/8/d/8d7f580ef16df92c8a04be9d125af101.webp)
 
 **突破性的“顿悟”时刻**
 --------------
 
-![Image 9: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlLBHZOB6E2sphb8k6JYj2cEr3gvqLFSUVfvX5Yic6srwExTmCfe0jibTw/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 9: Image](assets/b/e/bea16f7dab90a817d92e8dcfed91c4cc.webp)
 
 > R1-Zero 训练中的“顿悟时刻”现象
 
@@ -437,11 +437,11 @@ R1-Zero 训练中最引人注目的发现之一是“顿悟时刻”（Aha Momen
 
 ### **冷启动阶段（质量基础）**
 
-![Image 10: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlcf1XmJn0OUYw0vlhK6ZicYTLSo78lxsXEedo6KAlrichEbMiccW8FOicrw/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)此阶段旨在为模型的可读性和响应质量奠定坚实的基础。它使用来自 R1-Zero 的小型高质量样本数据集来微调 V3-Base 模型。从 DeepSeek-V3-Base 模型开始，该团队使用了来自 R1-Zero 的**数千个**经过验证的高质量样本进行监督微调。这种创新方法使用小型但高质量的数据集来建立强大的基线可读性和响应质量。
+![Image 10: Image](assets/4/b/4b23aa5d29ee0d27bea8f07d0aa5eae3.webp)此阶段旨在为模型的可读性和响应质量奠定坚实的基础。它使用来自 R1-Zero 的小型高质量样本数据集来微调 V3-Base 模型。从 DeepSeek-V3-Base 模型开始，该团队使用了来自 R1-Zero 的**数千个**经过验证的高质量样本进行监督微调。这种创新方法使用小型但高质量的数据集来建立强大的基线可读性和响应质量。
 
 ### **推理 RL 阶段（能力建设）**
 
-![Image 11: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlKiaOpTsl7MpUdpib3BQAq7U4PA7IG43IlNkTGx3sl5R5vmiaajLExxgUw/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)推理强化学习阶段侧重于开发数学、编码、科学和逻辑等领域的核心推理能力。此阶段采用基于规则的强化学习，奖励与解决方案的正确性直接相关。
+![Image 11: Image](assets/9/8/9866fc2889da8f9d4ae0ecba29d49551.webp)推理强化学习阶段侧重于开发数学、编码、科学和逻辑等领域的核心推理能力。此阶段采用基于规则的强化学习，奖励与解决方案的正确性直接相关。
 
 至关重要的是，此阶段的所有任务都是“可验证的”，因此我们可以检查模型的答案是否正确。例如，在数学的情况下，我们可以使用数学解算器检查模型的答案是否正确。
 
@@ -449,13 +449,13 @@ R1-Zero 训练中最引人注目的发现之一是“顿悟时刻”（Aha Momen
 
 ### **拒绝取样阶段（质量控制）**
 
-![Image 12: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dloZ2lhCGaoicuz2zHPw9lcrtH5LxhvqxG8ubibiamxAqNBKMavJWrficlxA/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 12: Image](assets/5/b/5bd6aa46875858f3011584ff08bda29c.webp)
 
 在拒绝采样阶段，模型生成样本，然后通过质量控制流程进行过滤。**DeepSeek-V3 充当质量评判者**，在超越纯推理任务的广泛范围内评估输出。然后使用过滤后的数据进行监督微调。此阶段的创新之处在于它能够结合多种质量信号以确保高标准的输出。
 
 ### **多样化 RL 阶段（广泛对齐）**
 
-![Image 13: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dloZ2lhCGaoicuz2zHPw9lcrtH5LxhvqxG8ubibiamxAqNBKMavJWrficlxA/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 13: Image](assets/5/b/5bd6aa46875858f3011584ff08bda29c.webp)
 
 最后的多样化强化学习阶段使用复杂的混合方法处理多种任务类型。对于确定性任务，它采用基于规则的奖励，而主观任务则通过 LLM 反馈进行评估。此阶段旨在通过其创新的混合奖励方法实现人类偏好一致，将基于规则的系统的精确性与语言模型评估的灵活性相结合。
 
@@ -464,7 +464,7 @@ R1-Zero 训练中最引人注目的发现之一是“顿悟时刻”（Aha Momen
 
 现在我们已经很好地了解了训练过程，让我们看看用于训练模型的算法。
 
-作者将 GRPO 描述为模型微调的突破：![Image 14: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlSzuosPyhWWIrLmc5UZiaa0JGBA8GibzVe421HTAicTDXicqyyjZ0HVibHyA/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)GRPO 的创新之处在于它能够“直接优化偏好校正”。与传统的强化学习算法（如 PPO）相比，这意味着一种更直接、更有效的途径来使模型与期望的输出保持一致。让我们通过三个主要组件来分析 GRPO 的工作原理。
+作者将 GRPO 描述为模型微调的突破：![Image 14: Image](assets/2/4/244a445beaf0e101a79a2008fd551698.webp)GRPO 的创新之处在于它能够“直接优化偏好校正”。与传统的强化学习算法（如 PPO）相比，这意味着一种更直接、更有效的途径来使模型与期望的输出保持一致。让我们通过三个主要组件来分析 GRPO 的工作原理。
 
 ### **Group Formation：创造多种解决方案**
 
@@ -481,7 +481,7 @@ GRPO 的第一步非常直观 - 类似于学生通过尝试多种方法来解决
 
 所有这些尝试都作为一个整体保存，就像有多个学生的解决方案可供比较和学习一样。
 
-![Image 15: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlqTa5dAxibCGD5V0OvaMeSvXmLtsMm6FhhTferZsbJKP5yYwVWSfjAdw/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 15: Image](assets/b/e/be533d13e3ae5f3f08a6639494d6db0d.webp)
 
 ### **Preference Learning：理解什么是好的解决方案**
 
@@ -502,7 +502,7 @@ GRPO 的第一步非常直观 - 类似于学生通过尝试多种方法来解决
 Advantage = (reward - mean(group_rewards)) / std(group_rewards)  
 ```
 
-![Image 16: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dl8X0ic9EWZrHhRViccooCef8kcYtqAuuGxpyPvpYwDrl8O1pN4sibMlGqw/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)这种标准化就像是按曲线评分，但针对的是人工智能。它可以帮助模型了解组中哪些解决方案比同类解决方案更好或更差，而不仅仅是看绝对分数。
+![Image 16: Image](assets/c/8/c8bb62137eae63b02bdad877ed9afe49.webp)这种标准化就像是按曲线评分，但针对的是人工智能。它可以帮助模型了解组中哪些解决方案比同类解决方案更好或更差，而不仅仅是看绝对分数。
 
 ### **Optimization：从经验中学习**
 
@@ -560,7 +560,7 @@ group_size：每个提示的输出数量（通常为 4-16）
 
 该算法展示了 GRPO 如何将基于组的优势估计与策略优化相结合，同时通过剪辑和 KL 散度约束保持稳定性。
 
-![Image 17: Image](https://mmbiz.qpic.cn/mmbiz_jpg/1FD1x61uYVcXxiadZOSGgFpURrMyj64dljNBqwnyJsJBkMdJWkY8jWngOHUc3mdeMBHfIaUsHrziaAibutCljTVqw/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 17: Image](assets/2/8/2884f8c0dd5724552b972cbc9279f801.webp)
 
 **结果与性能**
 ---------
@@ -768,7 +768,7 @@ return [-abs(ideal_length - len(completion)) for completion in completions]
 
 **该奖励函数会惩罚太短或太长的完成，鼓励模型生成接近理想长度 20 个标记的完成。**
 
-![Image 18: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlhYQy5mFH6pgMmaSJH6Ab57BywnxEtiaIewicF1vo1kLDM318aaUHcyiaA/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 18: Image](assets/d/9/d99791c61bf4d8b1295f0819c8eeb501.webp)
 
 ### **2\. 基于规则的可验证任务奖励**
 
@@ -797,7 +797,7 @@ except:
 return rewards  
 ```
 
-![Image 19: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlxibYgq3expN0sf7E3ichhcphIyUXX5Vn9F5Kj6rlHvh2ujumOB4So9icw/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 19: Image](assets/f/8/f8a5c0897ea953b02208d8899e20335a.webp)
 
 > 其实我们也可以设置准确答案的容忍度，就是上面代码是百分百匹配，我们也可以设置相似匹配
 
@@ -833,11 +833,11 @@ return rewards
 
 思考格式
 
-![Image 20: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dl1ftAeObOUzUAxGCeMv3t73KHiaXH7u8WyEtOhiaYRDUwnhFiahGl9xesg/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 20: Image](assets/7/f/7fd86617250c3e3e7d7223cac1d90501.webp)
 
 代码格式
 
-![Image 21: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlG1NJ3oooBYLGooG6s9dD2mBN8Advo3wCib7ECWFSasyaVJZjJ2FNLfQ/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 21: Image](assets/7/f/7fb6a86fa7d80f01fc4185cb5295ef23.webp)
 
 > 这些示例展示了如何实现受 DeepSeek R1 训练过程启发的奖励函数，重点关注正确性、格式和组合信号。
 
@@ -990,9 +990,9 @@ GRPOTrainer记录奖励函数的奖励、损失和一系列其他指标。
 
 如我们所见，随着模型的学习，奖励函数的奖励越来越接近 0。这是一个好兆头，表明模型正在学习生成正确长度的文本。
 
-![Image 22: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlDqxiamnibWdniclqk69LVB2eIL5vDyeyIvarHzN6VmbRppBtibooOEyHmg/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)**我们可能会注意到，损失从零开始，然后在训练过程中增加，这似乎违反直觉。这种行为在 GRPO 中是可以预料到的，并且与算法的数学公式直接相关。GRPO 中的损失与 KL 散度（相对于原始策略的上限）成正比。随着训练的进行，模型会学习生成与奖励函数更匹配的文本，从而导致其与初始策略的偏差更大。这种不断增加的散度反映在不断上升的损失值中，这实际上表明模型正在成功适应以优化奖励函数。**
+![Image 22: Image](assets/7/5/755e1251aa3585f8396096e488f6f9d7.webp)**我们可能会注意到，损失从零开始，然后在训练过程中增加，这似乎违反直觉。这种行为在 GRPO 中是可以预料到的，并且与算法的数学公式直接相关。GRPO 中的损失与 KL 散度（相对于原始策略的上限）成正比。随着训练的进行，模型会学习生成与奖励函数更匹配的文本，从而导致其与初始策略的偏差更大。这种不断增加的散度反映在不断上升的损失值中，这实际上表明模型正在成功适应以优化奖励函数。**
 
-![Image 23: Image](https://mmbiz.qpic.cn/mmbiz_png/1FD1x61uYVcXxiadZOSGgFpURrMyj64dlfEZPjevZw76BtAtiapO8O9bRNhalZ4Ms2m7pgiba826sGtFQg71DTmQg/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 23: Image](assets/c/0/c0357eccfefef424c00e037de9a6944d.webp)
 
 ### **保存并发布模型**
 
@@ -1176,7 +1176,7 @@ Close
 
 Name cleared
 
-![Image 24: 赞赏二维码](https://mp.weixin.qq.com/s/8N8Hn1yMb1yQjqMt5RUaCg)**微信扫一扫赞赏作者**
+![Image 24: 赞赏二维码](assets/9/b/9b1eaaa5c8356cceeb25ef8c4bbde460.jpg)**微信扫一扫赞赏作者**
 
 Like the Author[Other Amount](javascript:;)
 
@@ -1258,13 +1258,13 @@ Submit更多
 
 [表情](javascript:;)
 
-![Image 25](https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=Mzk0MDQyNTY4Mw==&mid=2247494342&idx=1&sn=b7dd7fcfb1442a8ef247eef0d270ae09&send_time=)Scan to Follow
+![Image 25](assets/2/0/20a49dfb0d80f0112c47973b4eee2b65.bmp)Scan to Follow
 
 继续滑动看下一个
 
 轻触阅读原文
 
-![Image 26](http://mmbiz.qpic.cn/mmbiz_png/5LJDib8HPR2qc2mBkujpr2VjkJEbsdxGg37yibXLuKxmUeY0uvOiarF49c0IJbsn6Mnncu4ugZHojWDvUibic1MicYEw/0?wx_fmt=png)
+![Image 26](assets/5/f/5f018c441528610d212a2a618d28bd61.png)
 
 Hugging Face
 
@@ -1280,7 +1280,7 @@ Hugging Face
 
  
 
-![Image 27](https://mp.weixin.qq.com/s/8N8Hn1yMb1yQjqMt5RUaCg) Scan with Weixin to  
+![Image 27](assets/9/b/9b1eaaa5c8356cceeb25ef8c4bbde460.jpg) Scan with Weixin to  
 use this Mini Program
 
 [Cancel](javascript:void(0);) [Allow](javascript:void(0);)

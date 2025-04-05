@@ -385,7 +385,7 @@ return scaling * max_penalty
 
 | reward | 回复长度 |
 | --- | --- |
-| ![Image 1: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcWhKGg4ibNbb9fXoeRJ8eI5db0WYZ56v1xickxjg0QD1bwMnc3UeqZ2Lg/640?wx_fmt=png&from=appmsg) | ![Image 2: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GceLjU70SM71CLpia7PLZanX9dFMRibTUQ29WJ1VGvUtdib5jBGwVw4Ef9Q/640?wx_fmt=png&from=appmsg) |
+| ![Image 1: img](assets/5/5/551008aa4b565d452cd12000eb4dbd40.png) | ![Image 2: img](assets/3/3/335a031fb89035a5678ea4b6a60b0ef4.png) |
 
 图 3.2.1(1) SimpleRL 训练过程中训练集 reward（左）与回复长度（右）的变化
 
@@ -417,7 +417,7 @@ return scaling * max_penalty
 
 | 分步骤思考 | 反思 |
 | --- | --- |
-| ![Image 3: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcBE0bLZU7K4a3kib53GJHrzXiaUg7HaI2xnd5k6aiaJu11wwHKPZE2ZiaTQ/640?wx_fmt=png&from=appmsg) | ![Image 4: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcQbX0Hx4khibxWc6O1rZrUucmEpR2UwdRgOgXvSZlSsXyoDnY1efgSXA/640?wx_fmt=png&from=appmsg) |
+| ![Image 3: img](assets/b/e/be6ed1cfcc764e137a8b5eb9e3653e4c.png) | ![Image 4: img](assets/5/e/5ed0292e2323e900ae43160e2b201f0c.png) |
 
 图 3.2.1(2) SimpleRL 训练过程中模型在测试集上的分步骤思考（左）与反思（右）变化
 
@@ -432,13 +432,13 @@ First, Second, Next, Finally
 
 **Math Base 反思能力变化较小，没有明显的多次自我反思；但可观察到微弱的 aha moment**。对模型在最后 step=160 的输出进行分析，模型仍然倾向于在输出中使用代码校验的方式进行 check，而不是使用纯文本的反思方式。我们认为这是千问的 Math Base 模型本身倾向于使用代码来校验的预训练方式有关系（step=0）。考虑到最终模型输出长度没有特别明显的增长，这一点和自我反思能力的变化情况是吻合的。以 MATH500 测试集中的一个示例说明，如图 3.2.1(3) 所示，模型一开始就已经具备了基本的分步推理思维链。但受到预训练阶段数据偏好的影响，模型校验时使用的是 PoT，并通过 LLM 模拟编译器输出了运行结果（output）。这样的校验方式有利于借助编译器等外部工具来验证，但不利于生成纯文本的思维链。**这也解释了模型为什么一开始输出长度十分冗余（编写代码校验）**。随着训练的进一步进行，模型在 step=4 和 step=12 的时候输出长度急剧下降，开始减少代码校验。但在 step=100 的时候，模型又倾向于输出代码校验。**这说明了该数学基座模型对代码工具的执念很深**。最终，模型在 step=160 展现出了 aha moment 中的反思步骤（re - evaluate）。
 
-![Image 5](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcG56gzY69xsTIyzCvOJS6c9OuVqibBX0HaBowHlviaWQEicfjuBfzukQlQ/640?wx_fmt=png&from=appmsg)
+![Image 5](assets/c/e/ce8added6b9ac9a7344b9a343c352d62.png)
 
 图 3.2.1(3) SimpleRL 训练过程中模型在测试集上的输出变化
 
 **Math Base 模型能同时针对文本推理结果或代码校验结果给出反思**。如图图 3.2.1(4) 所示，尽管模型表现出使用代码校验的倾向，但是能够根据模拟编译结果来进行反思，进行打磨。
 
-![Image 6: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcF3qhC7XhP8Sw2icYn4OzRrfoFKa4qo7EQKI6vibI9zHsJHVBnA3lQT4g/640?wx_fmt=png&from=appmsg)
+![Image 6: img](assets/8/7/87c3ced387ecd2a1b2fdc066a8a2db91.png)
 
 img
 
@@ -450,7 +450,7 @@ img
 
 | 格式奖励 | 准确度奖励 |
 | --- | --- |
-| ![Image 7: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gc9aVv9gGMpYPjeBVlFQBqTxDh33O74qIHG38AomI6zC8FZO8ENNt5JA/640?wx_fmt=png&from=appmsg) | ![Image 8: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GchF4XeibUPrHPwRu4f9a2LE40fn8zcLOFE9o4Rd3swFE4qpicTs9o8MHA/640?wx_fmt=png&from=appmsg) |
+| ![Image 7: img](assets/3/b/3b3fa4fecfdbf7ce3c4582553f52135d.png) | ![Image 8: img](assets/9/b/9b01717820c3f625c71c90a1675e913d.png) |
 
 图 3.2.2(1) OpenR1 训练过程中测试集格式奖励（左）与准确度奖励（右）的变化。
 
@@ -490,13 +490,13 @@ img
 
 | 测试集指标 | 回复长度 |
 | --- | --- |
-| ![Image 9: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcCWaFIgb8OEll0qwAcQkEUU3ceRQr3f1rN9qcJWNgxbHvIBU207QDLQ/640?wx_fmt=png&from=appmsg) | ![Image 10: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcCiaQxfzyBiafzxxVKq01G4tOuHHp5YPdcWfg2QcWRtaHMouvFxknDiapw/640?wx_fmt=png&from=appmsg) |
+| ![Image 9: img](assets/a/9/a9c3e22d2e295ff0ddb74204f093690e.png) | ![Image 10: img](assets/c/f/cfec976987ea3b8e644b091c1b351332.png) |
 
 图 3.2.3(1) LogicRL 一阶段训练过程中测试集指标（左）与回复长度（右）的变化
 
 | 答案错误占比 | 格式错误占比 |
 | --- | --- |
-| ![Image 11: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcsLcY37PEhHX5ZFx6wpfxjPibmJ654BeS6oWIHPxCkYEEYkN2KLgXwLw/640?wx_fmt=png&from=appmsg) | ![Image 12: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gc6fgtd97Rvw2APA5zBbGABHX2tRCVgjskNqofsIfxOWm1RAiaAVibP2Vg/640?wx_fmt=png&from=appmsg) |
+| ![Image 11: img](assets/4/c/4cbc6124d8557f74a7d2e455ee1fb582.png) | ![Image 12: img](assets/5/9/591c26feaab39fe797d893398c88eac7.png) |
 
 图 3.2.3(2) LogicRL 一阶段训练过程中答案错误占比（左）与格式错误占比（右）的变化
 
@@ -508,9 +508,9 @@ img
 
 **二阶段训练中受到温度系数与采样 rollout 数量超参影响较大**。官方项目中提及的温度系数 temperature=1.2~1.5 对于 Qwen 7B 量级的模型来说仍然有些大，比较容易训崩。参考图 3.2.3(2)，我们给出了一组超参设置（temperature=1.2，rollout.n=32）下训练崩溃的实验曲线。考虑到五个人的 KK 问题在难度上就会远高于三个人的 KK 问题，我们在优化第二阶段时需要确保模型是稳健而不是激进训练的。如果模型在训练过程中一直没有得到有效的奖励来鼓舞带有 self-reflection 答案的输出，训练一段时间后模型没有任何本质提升，极其容易导致坍塌。以图 3.2.3(2) 中回复长度的变化曲线来看，在 step=140 时，模型直接无法停止，instruct 模型不吐出 "<|im\_end|\>"、base 模型不吐出 "<|end\_of\_text|\>"，反复说没有意义的内容直到超出预设回答的长度上限。在 step=140 时，模型不仅出现了大量的错误答案，也出现了格式错误暴涨的问题。这些现象与其测试集指标暴跌相互佐证，说明了模型正在坍塌。
 
-| ![Image 13](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcxNm5MWmNQL7iaWSBt2TVswjw0gkHZeTSichJx1fZr8nv2vOSPKvcgVNw/640?wx_fmt=png&from=appmsg) | ![Image 14: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcEIE538HegNcBiaqnczUXqAWCvCQrahichlsQkyD0fb8VPVW2J2Nn3teQ/640?wx_fmt=png&from=appmsg) |
+| ![Image 13](assets/5/0/506b388e54e0ed9f0f57b1cd6b0cce7e.png) | ![Image 14: img](assets/b/f/bf09e8f03ec2d34617365975075b3a9b.png) |
 | --- | --- |
-| ![Image 15: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcfPzYMjp3HWpT4HfHdmbRZ34hWH10Xm1icBjyv2mVeXOqSkGAx3TKtrg/640?wx_fmt=png&from=appmsg) | ![Image 16: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcCfviaw49azmqA06ITyTh7RSYCqtT9jtnoYPCbD9AFaAxF1K22Pxiae9A/640?wx_fmt=png&from=appmsg) |
+| ![Image 15: img](assets/4/4/4475aa9c3fa3aa5bd91ee7f7704b2327.png) | ![Image 16: img](assets/8/b/8bdab8f5ce02f40e655623ef74515dfb.png) |
 
 图 3.2.3(2) LogicRL 二阶段训练过程中不合适的超参设置导致的训练崩溃问题
 
@@ -518,13 +518,13 @@ img
 
 **相比于 Qwen-Instruct，Qwen-Base 表现出更详细缜密的推理链过程。**为了探究在训练结束时 Qwen2.5-7B-Base 与 Instruct 在长度上的差异，我们随机选取了一个示例进行分析。如图 3.2.3(4) 所示，这两个模型都做对了这道题目，但 Base 模型展示出了更为缜密的思维链。具体地，Base 模型从 "Samuel" 是 knight 还是 knave 进行分情况讨论，然后再在每个条件下依次分析剩下来的 "Charelott, Mia, Daniel, Jackson" 这几个人的话能否同时成立。通过交叉验证可以先排除 "Samuel 是 knight" 这一个前提情况；再继续分析第二种前提。相反地，Instruct 模型倾向于优先把每个人的话进行总结性分析，并同时给出每个人是 knight 或者是 knave 时的声明成立情况，一步到位给出统筹性的分析结论。Instruct 模型在推理链上倾向于省略小步骤，通过省略部分推导过程来压缩推理链，可解释性下降。这可能是因为 **Instruct 模型经过了大量非 long CoT 表示的 SFT 数据、DPO 优化等偏好对齐后，倾向于省略推理内容给出直接的、简明扼要的回答**。Base 模型更多地是激活预训练语料中内在的推论表达方式，通过缜密的一步步推导来逐渐导向最终结论。如果后续要基于 SFT/Instruct 模型进行继续类 R1 的训练时，需要保证 SFT 阶段已经存在了大量的 long CoT 形式的数据来引导模型给出带详细推理链的答案。
 
-| ![Image 17: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcwHS1lQFkPKCd0l4o49fQmyFFystjgG12gOvgC8vbZss9fjJ324mp4g/640?wx_fmt=png&from=appmsg) | ![Image 18: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcRz3byMJsnU1nsc3rxsx9piau3PbzoBtbljPyuttgjbdnMic8ndvPtRBg/640?wx_fmt=png&from=appmsg) |
+| ![Image 17: img](assets/f/0/f032279c9c008b91771fb2a3bb96a03a.png) | ![Image 18: img](assets/b/a/bae8878e751e4a22382758d304f9d0e1.png) |
 | --- | --- |
-| ![Image 19: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gcia1qG5RF1UHBWvaDXGLwRibQDibMbeMXr5FNyJwH2YPOmLOYUlov0bYag/640?wx_fmt=png&from=appmsg) | ![Image 20: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcdYXRBCuib82FdFvR7EtILKUQcdgiadXMGmJdwibtPLq65ibgANAz0SLOkw/640?wx_fmt=png&from=appmsg) |
+| ![Image 19: img](assets/2/c/2cde1b196d4e1c06f09d4d6602c5fe34.png) | ![Image 20: img](assets/0/1/01b331c229fa80fd84d7644a4b06e4b1.png) |
 
 图 3.2.3(3) LogicRL 二阶段训练过程中合理的超参调整避免模型崩塌
 
-![Image 21: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gch2YczHbAKTKjHegxVkfS0q0VmE6c6a45BicwoneTicgdfBgiaQyAe8ibqw/640?wx_fmt=png&from=appmsg)
+![Image 21: img](assets/8/c/8c6d4083e198a1ddb40f4c0a5c51b0a4.png)
 
 img
 
@@ -540,13 +540,13 @@ img
 
 | 测试集指标 | 回复长度 |
 | --- | --- |
-| ![Image 22: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcjjMJsXckN0NbrdAJ0QDia2ibWH0p3jiaF6CMeQT2Bib4PLPTZNNtEkSeWQ/640?wx_fmt=png&from=appmsg) | ![Image 23: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcLnSkssgKtoSbibFxHPv7nad4Fyo4b9kboqu0Dvce3aVmAn4XgU6RqEg/640?wx_fmt=png&from=appmsg) |
+| ![Image 22: img](assets/4/1/41fa44f5d67bf024a8778d1ef0d16612.png) | ![Image 23: img](assets/4/0/4041e795ab0e0e82e552d2ff8994ec6b.png) |
 
 图 3.2.3(5) LogicRL 三阶段训练过程中测试集指标（左）与回复长度（右）的变化
 
 | 答案错误占比 | 格式错误占比 |
 | --- | --- |
-| ![Image 24: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gcice9jib4NyCia2tgfSl5xs2dEonC6WEd0lGdOTLxmIn4R0IrjrJJVsic9g/640?wx_fmt=png&from=appmsg) | ![Image 25: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcogGRpAr6s1MHsTHsDDx6RaoictjSgEU5m0DFs5xSvr8oiaOCw5B64AHA/640?wx_fmt=png&from=appmsg) |
+| ![Image 24: img](assets/8/d/8d7f1e588edd25d933b349d2ba4416b7.png) | ![Image 25: img](assets/9/b/9b6ac339cc0afc4bc0e0f985df4ba55f.png) |
 
 图 3.2.3(6) LogicRL 三阶段训练过程中答案错误占比（左）与格式错误占比（右）的变化
 
@@ -556,7 +556,7 @@ img
 
 **Base 与 Instruct 模型在分步骤推理上的能力快速提升后进入平台期，自我反思能力先上升然后略有下降。**如图 3.2.3(9) 所示，我们使用了正则表达式匹配关键词的方式来仔细地分析了模型思维链（即...之间的内容）。对于分步骤推理能力，由于模型的输出长度在不断边长，其 long CoT 内容中出现了越来越多的分步骤、分点解题的关键词。但对于自我反思能力而言，随着模型过拟合该数据集，自我反思的能力在抵达最高值后略有下降。这说明了模型倾向于在比较有自信的题目（拟合完备）上不反思。后续进行相关类 R1 实验时，需要充分保证训练集中有不同难度的数据，并利用困难数据来维持模型自我反思的模式不退化。
 
-![Image 26: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gcc1icWJXKjZicFAzMYVOicRpWeLFM95eOy0GUYKUO2l67k4NCdFicf5XmTg/640?wx_fmt=png&from=appmsg)
+![Image 26: img](assets/a/3/a3bafbb5d007bc72a2341cdbe84ef5c5.png)
 
 img
 
@@ -564,13 +564,13 @@ img
 
 | 训练集 | 测试集 |
 | --- | --- |
-| ![Image 27: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcbEcrR3BZl8iamicf39Oe3BDKCMa76Nd5ke1yRgUunjJXu1hclnSfsnpg/640?wx_fmt=png&from=appmsg) | ![Image 28: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcUnibKVn6xIRFRnH6NQoDgZ1QEib9Tn6ojA9AR5OUAq90gfgB4gAKf8hg/640?wx_fmt=png&from=appmsg) |
+| ![Image 27: img](assets/5/2/521d0e8fcf53d13a4f06154ea7436125.png) | ![Image 28: img](assets/4/0/40bc71031a798bc939bbd801321c3f44.png) |
 
 图 3.2.3(8) LogicRL 三阶段过程中训练集（左）与测试集（右）上思考与回答长度的变化
 
 | 分步推理 | 反思 |
 | --- | --- |
-| ![Image 29: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcvY0iaFCEPn9dYT1YofVTrhn7TZgrRgpfRSfl1RDocgZooqrVUGYn4zA/640?wx_fmt=png&from=appmsg) | ![Image 30: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcUibKfq6juMfjUzCicNrtheIEN2vCZEwlcTOArapazwmK9wlejVnebzXA/640?wx_fmt=png&from=appmsg) |
+| ![Image 29: img](assets/c/0/c0ef01e288fd7dae1ec61cfc93787b5b.png) | ![Image 30: img](assets/d/e/dea06a5dc157148c03ff1b154b86e6d5.png) |
 
 图 3.2.3(9) LogicRL 三阶段过程中模型 CoT 分步推理与反思 pattern 变化
 
@@ -582,7 +582,7 @@ img
 
 | 测试集指标 | 回复长度 |
 | --- | --- |
-| ![Image 31: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GczZOribiadiarltgLS476tocNp0H3UyKJC59F7PHa0fdEwPO49tibS4Csrw/640?wx_fmt=png&from=appmsg) | ![Image 32: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcYh1Xdp3OyibtHAabI0u6Ribcx5D44iaw1SicG31gMzMiao4btNMAiam37VLQ/640?wx_fmt=png&from=appmsg) |
+| ![Image 31: img](assets/4/9/494e018bbaf60eba940df06439ff6413.png) | ![Image 32: img](assets/2/c/2cda5e4e2f18048436d534398ea8dff1.png) |
 
 图 3.2.4(1) TinyZero 训练过程中测试集指标（左）与回复长度（右）的变化
 
@@ -592,7 +592,7 @@ img
 
 | 训练集 | 测试集 |
 | --- | --- |
-| ![Image 33: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gcds88TCz9L4oK82Sa6hHYOXL5Y6wxYUhCC6wCIfFqS2FOa522CMXHeg/640?wx_fmt=png&from=appmsg) | ![Image 34: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcGQrcP7HzwoMWWyUxsk9fvxnyGI8jRdPFvclG2cmvYcyKx2jliaibh8Hg/640?wx_fmt=png&from=appmsg) |
+| ![Image 33: img](assets/4/e/4edf0ddfb3bc3277e43776f1529bafcb.png) | ![Image 34: img](assets/5/f/5fe143a02c0e7d7f76182cc50414adb1.png) |
 
 图 3.2.4(2) TinyZero 训练过程中训练集（左）与测试集（右）上思考与回答长度的变化
 
@@ -604,7 +604,7 @@ img
 
 **在相同难度类型的任务下持续训练时，随着模型性能的不断上升，模型解题 CoT 中犯错的步骤在减少，整体 CoT 的长度在缓慢下降**。以 7B 模型上的训练为例，当抵达平台期（step=120）后，模型的输出长度不断在变短，一直缓慢下降（step=300）。我们认为这是因为在相同难度的任务（countdown）下，7B 模型逐渐过拟合到该任务上（测试集性能不断上升）。因此，模型逐渐掌握了正确的思维链而提升了推理能力，相应地减少了错误的推理链 token。如图 3.2.4(3)）为示意，当迭代步数从 step=24 开始递增时，推理链路开始边长，模型在 Step=72 展现出多种表达式计算的探索路径。同时，在每个表达式计算完毕后，模型会根据当前计算指标与目标值之间的差异反思是否满足要求，并在下一次探索中逐步调整。随着进一步训练（step=72 至 step300），模型试错的次数在减少，只需若干次尝试即获得了正确答案。
 
-![Image 35: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gc6dMtwZgu5HqfHqYPfq4lfN5dmGXf7YheJHuBia88Mds5fXCLeyyM4ibA/640?wx_fmt=png&from=appmsg)
+![Image 35: img](assets/a/5/a5aa03cd0539f4931c603a9ba0d5e727.png)
 
 img
 
@@ -630,7 +630,7 @@ rethink, recheck, try again, let's correct it and verify the steps ag
 
 | 分步推理 | 反思 |
 | --- | --- |
-| ![Image 36: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GczIR4Qibn5u4IoxOcSQA8OcB73zu6z0C0VmlFfiaMU7MaCfgvJL79Q7lQ/640?wx_fmt=png&from=appmsg) | ![Image 37: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gc8rezkZ5sxIIABdTCa6xhHj4lfYO6GQiciaAcYehJPL0soz8gEhNp7dJg/640?wx_fmt=png&from=appmsg) |
+| ![Image 36: img](assets/c/5/c596d771a4c75f40114662144ad9e8a7.png) | ![Image 37: img](assets/1/9/195348e4acc468db373233eb3913a1bf.png) |
 
 图 3.2.4(4) TinyZero 训练过程中模型 CoT 分步推理与反思 pattern 变化
 
@@ -638,7 +638,7 @@ rethink, recheck, try again, let's correct it and verify the steps ag
 
 **相比于分步解题能力，模型的反思能力在训练过程中发生更显著的变化**。在 Step=0 时，基座模型就已经展现出了比较强的分步骤解题的能力，能够对输入 prompt 中 "think step by step" 给出较好的响应。但此时模型并不具备较特别强的反思能力，做错的时候模型倾向于重复前序的解法而不去探索新的解法（可能受限于指令理解能力）。虽然使用了分步思考，但出现错误后的反思是无效的，陷入了重复输出的坍塌状态（如图 3.2.5(5) 所示）。而且，此时模型似乎忘记了最终的目标是利用这三个数字计算得到目标值（55），探索的解题步骤局限在凑满某个子目标值（19）上，**无法跳出次优的路径**。
 
-![Image 38: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcMoPJ5UZsibia3aUyq2PbC94Qarm1P9Uuo9Lt6HZDXPW53xG1zAdoUfkw/640?wx_fmt=png&from=appmsg)
+![Image 38: img](assets/5/2/52077b1d7d5793cf820457a05e61fc01.png)
 
 img
 
@@ -646,7 +646,7 @@ img
 
 随着训练过程的继续，度过输出长度最短（step=24）时刻后，模型逐渐开始具备真正的反思能力。以 step=72 时刻为例（图 3.2.4(6)），模型输出的推理链路中出现了「Wait, I made a mistake」这样的有效反思状态，针对之前的错误回答进行了有效批判，并继续探索可能的解法，该「高光时刻」预示着模型正经历 aha moment。
 
-![Image 39: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GccMCdPdofA4Jpr6tEzgtuOeWDIjbuKqn6dbQC1dP8LnkrFuukrEibHAg/640?wx_fmt=png&from=appmsg)
+![Image 39: img](assets/d/9/d950cd23f0ef045e7b05270a43497097.png)
 
 img
 
@@ -660,7 +660,7 @@ TinyZero 项目默认使用了 PPO 优化算法，我们同时也尝试了替换
 
 | 测试集指标 | 回复长度 |
 | --- | --- |
-| ![Image 40: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3GcyZH6RPiaCl1w1xQxJUe07KKjlv9RXAIFJKao33wGlicgS6RZkPBXHZXA/640?wx_fmt=png&from=appmsg) | ![Image 41: img](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasySKRYPt6W9Hdn0Ec8W3Gc1YoTA4YCtAYVX2g8Q4alupCSnfFQAepOKsriczhmOnxLK9rIL2j7yDg/640?wx_fmt=png&from=appmsg) |
+| ![Image 40: img](assets/b/f/bfb0d985a9c678e690c95f29e4a58729.png) | ![Image 41: img](assets/2/3/233e2f1b1a41dc9c8dac09049ada889e.png) |
 
 图 3.2.4(7) TinyZero (GRPO)训练过程中测试集指标（左）与回复长度（右）的变化
 

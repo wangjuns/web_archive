@@ -172,7 +172,7 @@ We have found rotary embeddings to be effective for many varieties of attention.
 
 We conducted [comparisons](https://wandb.ai/eleutherai/neox/reports/Rotary-Test-3--Vmlldzo2MTIwMDM) of rotary embeddings with learned absolute positional embeddings, used in GPT-3 \[1\], and the learned relative positional embeddings (henceforth RPE) used in T5 \[10\] using our GPT-Neox codebase. Comparisons were done using 125M parameter models with the same hyperparameters as the equally-sized model from \[1\]. Models were trained on [OpenWebText2](https://www.eleuther.ai/projects/open-web-text2/), a large and diverse dataset of online text. We see faster convergence of training and validation curves and a lower overall validation loss with a minimal decrease in throughput.
 
-![](https://blog.eleuther.ai/images/blog/rotary-embeddings/rope-learned-rpe.png)
+![](assets/5/c/5c651412cd16e9eee6322e691b1d46a7.png)
 
 OWT2 validation loss with 150M parameter models in GPT-NeoX
 
@@ -188,7 +188,7 @@ Final validation loss / ppl scores on OWT2 validation set at 55k steps (~30B tok
 
 We additionally conducted additional larger scale experiments with the [mesh-transformer-jax](https://github.com/kingoflolz/mesh-transformer-jax) codebase and 1.4B parameter models, against baselines of learned absolute position embeddings and T5 RPE. Hyperparameters similar to GPT3's 1.3B model were used, with the dataset being the Pile \[3\]. A similar increase in convergence speed was observed as seen over learned absolute (~30%), and a smaller improvement (10-20%) was still seen over the T5 relative position encoding, demonstrating scalability into the billion parameter regimen. For full details, see [here](https://wandb.ai/eleutherai/mesh-transformer-jax/reports/Position-encoding-shootout--Vmlldzo2MTg2MzY).
 
-![](https://blog.eleuther.ai/images/blog/rotary-embeddings/jax-experiments.png)
+![](assets/e/9/e98a45caf016184063645c203306254f.png)
 
 Pile validation loss with 1.5B parameter models
 
@@ -206,7 +206,7 @@ Performer \[2\] is an example of an alternative attention mechanism designed to 
 
 In smaller scale tests, we have also put RoPE head to head against other alternatives including the relative position method of Shaw et al. \[11\], TUPE \[5\], and position-infused attention \[8\], seeing positive results across the board.
 
-![](https://blog.eleuther.ai/images/blog/rotary-embeddings/performer.png)
+![](assets/e/f/ef4759d858e1b0a54f3c10bf2b34c0c0.png)
 
 Enwik8 validation/train loss with performer
 

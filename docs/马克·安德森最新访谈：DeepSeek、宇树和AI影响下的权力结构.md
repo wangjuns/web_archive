@@ -3,7 +3,7 @@ Title: 马克·安德森最新访谈：DeepSeek、宇树和AI影响下的权力�
 URL Source: https://mp.weixin.qq.com/s/D9w6w-pqpNT4BYMVMI4Mhw
 
 Markdown Content:
-![Image 1: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/xZIL4Vog7pmAUnSI5QicPsiaxSxa83JN6JeichXgVibiacd53B3VG9zIF5FT55rdUjl1IVx963icLfZwmI3z3Y8ibeo3Q/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 1: Image](assets/a/d/ad659f53c389e29a09ecc83eb3746e09.webp)
 
 本文转载自：明亮公司
 
@@ -17,7 +17,7 @@ Markdown Content:
 
 以下为访谈内容（有删节）：
 
-![Image 2: Image](https://mmbiz.qpic.cn/mmbiz_png/xZIL4Vog7pnSXKmMmjiawXcHGzVcsSXewyAib7RQsBdOe2s6UccRDF9N9DBdEC9fyYLE5kQC8J7OVjzk8FT4diaKA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 2: Image](assets/b/0/b052deb93be3b98e2790a5f7738c84a3.webp)
 
 **谈DeepSeek、AI赢家和输家**
 
@@ -113,7 +113,7 @@ Anthropic是OpenAI的分支。Anthropic也没有发明Transformer。因此，无
 
 我们不知道OpenAI和Anthropic的算法到底是什么，因为它们没有开源。我们不知道它们比公开的DeepSeek算法好多少或差多少。
 
-![Image 3: Image](https://mmbiz.qpic.cn/mmbiz_png/xZIL4Vog7pnSXKmMmjiawXcHGzVcsSXeww17649zWDeX9dibSoPUezC9pC8KXytbCsDhxJ3gUcic5QaticTMUVQHqQ/640?wx_fmt=png)
+![Image 3: Image](assets/0/c/0c25bf5250304f1da324cfef320814df.png)
 
 **谈闭源与开源**
 
@@ -165,7 +165,7 @@ Anthropic是OpenAI的分支。Anthropic也没有发明Transformer。因此，无
 
 ……
 
-![Image 4: Image](https://mmbiz.qpic.cn/mmbiz_png/xZIL4Vog7pnSXKmMmjiawXcHGzVcsSXewGrwcoib95eH61LNyOr6jlsjdfQl8tLdicJMSOiblqh3LyRIt7AbzC8q7w/640?wx_fmt=png)
+![Image 4: Image](assets/a/7/a78da5cd5be8e7c04b2d744b86f14207.png)
 
 **AI推理能力如何改变VC和投资行业**
 
@@ -259,7 +259,7 @@ Anthropic是OpenAI的分支。Anthropic也没有发明Transformer。因此，无
 
 所以，我总是告诉人们，如果形势所迫，世界陷入困境，我们必须做出牺牲，那么早期风险投资业务永远不会被牺牲。这将始终是公司的核心。这也是为什么我会花很多时间与早期创始人合作。一方面，这非常有趣；另一方面，这也是学习最多的地方。
 
-![Image 5: Image](https://mmbiz.qpic.cn/mmbiz_png/xZIL4Vog7pnSXKmMmjiawXcHGzVcsSXewm6NsSJiaiacZTI2iatuNQoTVSd0fpfyjouu9mQLB2l53MrT8rfOMjeulA/640?wx_fmt=png)
+![Image 5: Image](assets/8/8/8835c4c04725103fb891ee281e7a03ca.png)
 
 **全球权力结构的转变：精英与反精英**
 
@@ -327,7 +327,7 @@ Anthropic是OpenAI的分支。Anthropic也没有发明Transformer。因此，无
 
 然后他最终环顾四周，他只是说：**“哇，这些人根本不是我想象中的那样。这些人是自私的、腐败的，他们在关于一切的事情上都在撒谎，他们正在从事言论压制，他们非常专制，他们正在掠夺公共财政。**哦，我的上帝，我这辈子一直被欺骗了。这些人不值得他们所拥有的尊重，也许应该有一个新的精英阶层来掌权。”所以，这就是目前正在展开的很多争论。是的，我是一个案例研究。
 
-![Image 6: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/xZIL4Vog7pkvdH7jsELuseYs9cG3ET7nhyzvljnFqIYBImFmKWjrj1XiaLUUaC8rueUunQhiaL6Tgx3t30YjwaWQ/640?wx_fmt=png&from=appmsg)
+![Image 6: Image](assets/4/e/4ee79f580a83ac1c3658152560134cac.png)
 
 **乐观与悲观：世界会更好吗？**
 
@@ -397,7 +397,7 @@ Anthropic是OpenAI的分支。Anthropic也没有发明Transformer。因此，无
 
 问题是，如果在某个时候发生战争或更严重的疫情，或者类似的事情，这种相互依赖关系可能会被严重压力到破裂的地步。**我希望这种情况不会发生。但在某种程度上，世界越相互联系，它就越有弹性，因为有更多的方法可以做事，人们有更多的适应方式，一切都可以改变**。然后在某些方面，世界越相互联系，事情就越危险，因为如果其中一个部分破裂，整个系统都会破裂。所以，这里有一个真正的拉锯战。
 
-![Image 7: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/xZIL4Vog7pkvdH7jsELuseYs9cG3ET7nS88IFj2LIVzXiaCfM6ofbVkvrOtCj3SmYQsRKToscOnQneH2CAEpW7g/640?wx_fmt=png&from=appmsg)
+![Image 7: Image](assets/0/9/09f70b3ba99be1116d096a3c08703c75.png)
 
 **谈宇树和中国机器人产业：「这种特定的环境叫深圳」**
 
@@ -461,6 +461,6 @@ Anthropic是OpenAI的分支。Anthropic也没有发明Transformer。因此，无
 
 **|****原文链接：**https://joincolossus.com/episode/the-battle-for-tech-supremacy/
 
-![Image 8: 图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/3Ytua39TTyN1LqE6P5BypMoNZgPbJgWlab9UTyf0iaTiawz18tiaDTQEWPVGZ5a4XHYhMMKc2JjFVbZckHklfJaVg/640?wx_fmt=other&from=appmsg&wxfrom=5&wx_lazy=1&wx_co=1&tp=webp)
+![Image 8: 图片](assets/9/c/9cb10293b2377dd8610d9d13f6e0d4b7.webp)
 
-![Image 9: 图片](https://mmbiz.qpic.cn/mmbiz_png/3Ytua39TTyP9qsibNpS6pk6RLhQJg60Jrt1QZ84QonumZ8HicBk7DrzzzJJgzfM1YnT0cthJ8d92jVoJcb6BFianw/640?wx_fmt=other&wxfrom=5&wx_lazy=1&wx_co=1&tp=webp)
+![Image 9: 图片](assets/a/f/afe196942483658701f3003a85f69e6b.webp)

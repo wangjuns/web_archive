@@ -3,7 +3,7 @@
 
  [
 
-![](https://miro.medium.com/v2/resize:fill:88:88/0*jiU0cVE28N13fYhS.)
+![](assets/2/9/2991e5de612673cc6ddbec7c33240ebc.png)
 
 
 
@@ -33,7 +33,7 @@ Tokenization and Word Embedding
 
 Next let’s take a look at how we convert the words into numerical representations.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*OZj7CKwdlIZR8ywkx8nn2w.png)
+![](assets/a/0/a0efae554acc7ca782e95d2de377bfa9.png)
 
 We first take the sentence and tokenize it.
 
@@ -307,7 +307,7 @@ The BERT authors tested word-embedding strategies by feeding different vector co
 
 (Image from [Jay Allamar](http://jalammar.github.io/illustrated-bert/)’s blog)
 
-![](https://miro.medium.com/v2/resize:fit:700/0*AqVfPIWKX161tP_x.png)
+![](assets/0/7/079247b0e2cb1d1cd9300007c9c8ace0.png)
 
 While concatenation of the last four layers produced the best results on this specific task, many of the other methods come in a close second and in general it is advisable to test different versions for your specific application: results may vary.
 

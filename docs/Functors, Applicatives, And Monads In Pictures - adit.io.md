@@ -15,17 +15,17 @@ Written April 17, 2013
 
 updated: May 20, 2013
 
-Here's a simple value: ![](https://www.adit.io/imgs/functors/value.png)
+Here's a simple value: ![](assets/2/c/2c3b4e6594e860b7d1c69e61992501c3.png)
 
-And we know how to apply a function to this value: ![](https://www.adit.io/imgs/functors/value_apply.png)
+And we know how to apply a function to this value: ![](assets/e/b/eb19d4494e47f037106127274bbcb59e.png)
 
 Simple enough. Lets extend this by saying that any value can be in a context. For now you can think of a context as a box that you can put a value in:
 
-![](https://www.adit.io/imgs/functors/value_and_context.png)
+![](assets/9/f/9fab8f07a488e856c1756d163885e506.png)
 
 Now when you apply a function to this value, you'll get different results **depending on the context**. This is the idea that Functors, Applicatives, Monads, Arrows etc are all based on. The `Maybe` data type defines two related contexts:
 
-![](https://www.adit.io/imgs/functors/context.png)
+![](assets/a/f/af9eef6f2536646d424fbcd0d42c71ab.png)
 
 ```
 data Maybe a = Nothing | Just a 
@@ -38,7 +38,7 @@ Functors
 
 When a value is wrapped in a context, you can't apply a normal function to it:
 
-![](https://www.adit.io/imgs/functors/no_fmap_ouch.png)
+![](assets/b/8/b855377aa60ac692bcdb3abc3dc7ae02.png)
 
 This is where `fmap` comes in. `fmap` is from the street, `fmap` is hip to contexts. `fmap` knows how to apply functions to values that are wrapped in a context. For example, suppose you want to apply `(+3)` to `Just 2`. Use `fmap`:
 
@@ -47,7 +47,7 @@ This is where `fmap` comes in. `fmap` is from the street, `fmap` is hip to conte
 Just 5 
 ```
 
-![](https://www.adit.io/imgs/functors/fmap_apply.png)
+![](assets/5/8/58357da70d78c6875346d3a1c1398306.png)
 
 **Bam!** `fmap` shows us how it's done! But how does `fmap` know how to apply the function?
 
@@ -56,11 +56,11 @@ Just what is a Functor, really?
 
 `Functor` is a [typeclass](http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101). Here's the definition:
 
-![](https://www.adit.io/imgs/functors/functor_def.png)
+![](assets/7/a/7af2ed8e35ae14dbf867737512b79791.png)
 
 A `Functor` is any data type that defines how `fmap` applies to it. Here's how `fmap` works:
 
-![](https://www.adit.io/imgs/functors/fmap_def.png)
+![](assets/d/d/dda60183ce952ce5e514415bddeb8e2a.png)
 
 So we can do this:
 
@@ -79,18 +79,18 @@ instance Functor Maybe where
 
 Here's what is happening behind the scenes when we write `fmap (+3) (Just 2)`:
 
-![](https://www.adit.io/imgs/functors/fmap_just.png)
+![](assets/a/a/aa0a6f49e117d9f3d0fcf024f47e6ef4.png)
 
 So then you're like, alright `fmap`, please apply `(+3)` to a `Nothing`?
 
-![](https://www.adit.io/imgs/functors/fmap_nothing.png)
+![](assets/8/3/8346fe14f3258cfa879ca3f9acc372fd.png)
 
 ```
 > fmap (+3) Nothing
 Nothing 
 ```
 
-![](https://www.adit.io/imgs/functors/bill.png)
+![](assets/c/7/c7b12de72d6d58361be737f2b0231fb8.png)
 
 Like Morpheus in the Matrix, `fmap` knows just what to do; you start with `Nothing`, and you end up with `Nothing`! `fmap` is zen. Now it makes sense why the `Maybe` data type exists. For example, here's how you work with a database record in a language without `Maybe`:
 
@@ -117,7 +117,7 @@ getPostTitle <$> (findPost 1)
 
 Here's another example: what happens when you apply a function to a list?
 
-![](https://www.adit.io/imgs/functors/fmap_list.png)
+![](assets/2/d/2deb766febfd07b90968ec3a7073cabf.png)
 
 Lists are functors too! Here's the definition:
 
@@ -130,11 +130,11 @@ Okay, okay, one last example: what happens when you apply a function to another 
 
 Here's a function:
 
-![](https://www.adit.io/imgs/functors/function_with_value.png)
+![](assets/2/9/290881ce0e0d488942ce69e6151d3ab7.png)
 
 Here's a function applied to another function:
 
-![](https://www.adit.io/imgs/functors/fmap_function.png)
+![](assets/9/0/90fd94837b2a4a17017061a5f24a1795.png)
 
 The result is just another function!
 
@@ -159,15 +159,15 @@ Applicatives
 
 Applicatives take it to the next level. With an applicative, our values are wrapped in a context, just like Functors:
 
-![](https://www.adit.io/imgs/functors/value_and_context.png)
+![](assets/9/f/9fab8f07a488e856c1756d163885e506.png)
 
 But our functions are wrapped in a context too!
 
-![](https://www.adit.io/imgs/functors/function_and_context.png)
+![](assets/3/c/3c530cc601c3539800376d4d65decd42.png)
 
 Yeah. Let that sink in. Applicatives don't kid around. `Control.Applicative` defines `<*>`, which knows how to apply a function _wrapped in a context_ to a value _wrapped in a context_:
 
-![](https://www.adit.io/imgs/functors/applicative_just.png)
+![](assets/8/9/89c97abaa11f2b5f4ede940eac9186f8.png)
 
 i.e:
 
@@ -182,7 +182,7 @@ Using `<*>` can lead to some interesting situations. For example:
 [2, 4, 6, 4, 5, 6] 
 ```
 
-![](https://www.adit.io/imgs/functors/applicative_list.png)
+![](assets/4/c/4cd9176fe5ed8ea3f2aa9115b4df0541.png)
 
 Here's something you can do with Applicatives that you can't do with Functors. How do you apply a function that takes two arguments to two wrapped values?
 
@@ -228,17 +228,17 @@ Monads add a new twist.
 
 Functors apply a function to a wrapped value:
 
-![](https://www.adit.io/imgs/functors/fmap.png)
+![](assets/d/5/d54b930802b00d10dd7b02c512de6f81.png)
 
 Applicatives apply a wrapped function to a wrapped value:
 
-![](https://www.adit.io/imgs/functors/applicative.png)
+![](assets/4/0/40a25d82c8eb9c56a4ba46268de65b9d.png)
 
 Monads apply a function **that returns a wrapped value** to a wrapped value. Monads have a function `>>=` (pronounced "bind") to do this.
 
 Let's see an example. Good ol' `Maybe` is a monad:
 
-![](https://www.adit.io/imgs/functors/context.png)
+![](assets/a/f/af9eef6f2536646d424fbcd0d42c71ab.png)
 
 Suppose `half` is a function that only works on even numbers:
 
@@ -248,15 +248,15 @@ half x = if even x
            else Nothing 
 ```
 
-![](https://www.adit.io/imgs/functors/half.png)
+![](assets/4/3/43633f8b5d70c7aad25700d675847393.png)
 
 What if we feed it a wrapped value?
 
-![](https://www.adit.io/imgs/functors/half_ouch.png)
+![](assets/a/1/a149486022c2e63a9fc2524791319600.png)
 
 We need to use `>>=` to shove our wrapped value into the function. Here's a photo of `>>=`:
 
-![](https://www.adit.io/imgs/functors/plunger.jpg)
+![](assets/8/4/849d12e83e97417845f7ba01fbaf7648.jpg)
 
 Here's how it works:
 
@@ -278,7 +278,7 @@ class Monad m where
 
 Where `>>=` is:
 
-![](https://www.adit.io/imgs/functors/bind_def.png)
+![](assets/2/d/2d41c034e09e11b1a24211264b156aed.png)
 
 So `Maybe` is a Monad:
 
@@ -290,11 +290,11 @@ instance Monad Maybe where
 
 Here it is in action with a `Just 3`!
 
-![](https://www.adit.io/imgs/functors/monad_just.png)
+![](assets/8/2/82d706480f716fb73eedee7d53701eec.png)
 
 And if you pass in a `Nothing` it's even simpler:
 
-![](https://www.adit.io/imgs/functors/monad_nothing.png)
+![](assets/c/4/c49f543ce11b1999fc09e122e35c8e2e.png)
 
 You can also chain these calls:
 
@@ -303,23 +303,23 @@ You can also chain these calls:
 Nothing 
 ```
 
-![](https://www.adit.io/imgs/functors/monad_chain.png)
+![](assets/c/7/c709d9107299c96fb22a4ce2cc07c9dd.png)
 
-![](https://www.adit.io/imgs/functors/whoa.png)
+![](assets/0/4/044e5500131d3987b90d785ef8fa4b9b.png)
 
 Cool stuff! So now we know that `Maybe` is a `Functor`, an `Applicative`, and a `Monad`.
 
 Now let's mosey on over to another example: the `IO` monad:
 
-![](https://www.adit.io/imgs/functors/io.png)
+![](assets/8/3/8372229830d3878cc3b1f979460aae8b.png)
 
 Specifically three functions. `getLine` takes no arguments and gets user input:
 
-![](https://www.adit.io/imgs/functors/getLine.png)
+![](assets/3/5/35d7c35871478b0b224e066f4578a4ff.png)
 
 `readFile` takes a string (a filename) and returns that file's contents:
 
-![](https://www.adit.io/imgs/functors/readFile.png)
+![](assets/4/a/4a00b8f7f72960cee59608636bf9f338.png)
 
 ```
 readFile :: FilePath -> IO String 
@@ -327,7 +327,7 @@ readFile :: FilePath -> IO String
 
 `putStrLn` takes a string and prints it:
 
-![](https://www.adit.io/imgs/functors/putStrLn.png)
+![](assets/d/6/d6d73bfd96dfdad3af15d13d343220a4.png)
 
 ```
 putStrLn :: String -> IO () 
@@ -335,7 +335,7 @@ putStrLn :: String -> IO ()
 
 All three functions take a regular value (or no value) and return a wrapped value. We can chain all of these using `>>=`!
 
-![](https://www.adit.io/imgs/functors/monad_io.png)
+![](assets/3/7/37456bc310ad42360b783213acbba3af.png)
 
 ```
 getLine >>= readFile >>= putStrLn 
@@ -362,7 +362,7 @@ Conclusion
 
 What is the difference between the three?
 
-![](https://www.adit.io/imgs/functors/recap.png)
+![](assets/1/5/15a57e9ea983a7a2c442f6a7cc790c16.png)
 
 *   **functors:** you apply a function to a wrapped value using `fmap` or `<$>`
 *   **applicatives:** you apply a wrapped function to a wrapped value using `<*>` or `liftA`

@@ -3,7 +3,7 @@ Title: 新一代超级计算框架Ray在微信AI计算中的大规模实践
 URL Source: https://mp.weixin.qq.com/s/RUp12f-5ErI9QX2RwitMEg
 
 Markdown Content:
-![Image 1: Image](https://mmbiz.qpic.cn/sz_mmbiz_gif/j3gficicyOvasVeMDmWoZ2zyN8iaSc6XWYj79H3xfgvsqK9TDxOBlcUa6W0EE5KBdxacd2Ql6QBmuhBJKIUS4PSZQ/640?wx_fmt=gif&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 1: Image](assets/d/7/d750a3c78b564743c04199db132c0061.gif)
 
 作者：微信Astra团队
 
@@ -11,13 +11,13 @@ Markdown Content:
 
 微信存在大量AI计算的应用场景，主要分为三种：流量分发、产品运营和内容创作。流量分发场景中的 AI 计算主要用于搜索、广告、推荐场景的核心特征生产，产品运营相关的 AI 计算主要用于产品功能相关和内容运营相关（低质、优质、生态建设），由于大模型的兴起，AIGC 相关的文生图、图生图、AI 特效等内容创作场景的 AI 计算也有了较多的落地。目前AI 计算几乎覆盖了微信的所有业务场景。
 
-![Image 2: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0uYR1sG1XGutY7k1QZ9XF9mg1zwTw9DErV7SAnVd0VgRjHqwYcUiaLQA/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 2: Image](assets/8/0/80a1b887614927fca7d56b18bac61b68.webp)
 
 图 1：微信内 AI 计算应用场景
 
 然而，我们在使用微信已有的后台基础设施实现AI应用时遇到各种问题。在资源层面，AI应用属于计算密集型，计算复杂度高，需要大量资源，直接使用在线资源会导致成本过高；在部署层面，微信后台常见的部署平台更适合部署I/O密集、高并发、高请求量的微服务，而AI应用则需要适配大量异构硬件和异构资源平台，部署复杂度呈指数级上升；在应用编排层面，直接通过消息队列等基础组件解决复杂特征依赖及相关异步过程，开发效率低，变更风险高，可观测性差；在平台层面，由于缺乏平台支撑，算法迭代速度慢，模型能力使用门槛高。因此，微信亟需一个低成本、高效率、低门槛的AI计算平台来解决上述问题。
 
-![Image 3: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0RRicY7qsiakc5Cw48EicWOIuDVWYkEPuLqL1fL3q2gOuj1G7o1icVWLWAA/640?wx_fmt=other&from=appmsg)
+![Image 3: Image](assets/d/3/d35c1e403c98c1836d66ce21323cd7c9.jpg)
 
 图 2：微信内原有基础设施
 
@@ -25,7 +25,7 @@ Markdown Content:
 
 ### 二、为何在AI计算中引入Ray？
 
-![Image 4: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0FsC3ZPIEWJ30yplzT7VNI2mrnjF5931D1vko8eAqCMvD2blHwwFwLw/640?wx_fmt=other&from=appmsg)
+![Image 4: Image](assets/7/2/72a7602467823e9f833e3538bb10352c.jpg)
 
 图 3：使用 Ray 构建 AI 计算的企业\[1\]
 
@@ -45,7 +45,7 @@ def detect(image_data):    model = load_detect_model()    return mod
 
 如果使用 ray 来做 ocr 推理，只需要添加装饰器@remote，指定模型使用的 cpu 和 gpu 资源数，通过一个python 脚本即可完成ocr应用的部署，效率提升至少一个数量级。
 
-![Image 5: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0bQicOqo65R581RIiczJ7ZJ6b86zvAMn4I67pmvG2r8AZqJKcjSdM3LUA/640?wx_fmt=other&from=appmsg)
+![Image 5: Image](assets/3/6/36e36ead83be346651a4bedf7a8adfb9.jpg)
 
 图 4：Ray AIR 如何以简单的方式统一 ML 库\[2\]
 
@@ -61,27 +61,27 @@ RAY_ADDRESS=ray://<cluster>:<port> python your_script.py
 
 ### 三、Ray在微信AI计算中的大规模实践
 
-![Image 6: Image](https://mmbiz.qpic.cn/mmbiz_png/UqFrHRLeCAnrXOyscmYI886CF1Z16Y0qpr9CuY5DB0zAibPSmX6ygBibiaduyhxBg2IJfEkPXSzreQicNu2kGZqcbQ/640?wx_fmt=other&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![Image 6: Image](assets/4/5/45ad261b8e77907015ce0d6ad8ae968f.webp)
 
 P6n是基于 Kubernetes微服务部署平台，通过自动化编排和弹性扩缩容机制，很好的解决了在线高实时的后台服务运维自动化问题，但不支持大规模的批处理服务，单应用多模型的部署复杂度较高，机器成本较高，不适合“在离线一体”的 AI计算场景。Gemini 是基于 kubernetes 的大数据平台，适合处理离线大规模的数据清洗和模型训练，但是由于调度的实时性不够，不适合高实时性、高吞吐的和高可靠的AI计算场景。Astra 平台要实现高实时、高吞吐、高可靠、低成本的 AI 计算平台，需要解决如下几个核心问题：1.为了低成本，需要支持各种异构资源扩展；2.为了高吞吐，支持超大规模资源调度；3.降低单应用多模型的部署复杂度；
 
 我们基于 Ray 计算底座，解决了上述三个核心问题，构建出适合 AI 计算平台：AstraRay，在微信内进行了大规模 AI 应用部署的实践。AstraRay 相比社区版本Ray(KubeRay) 有以下改进：
 
-![Image 7: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0ZxcnJjhicNJjnfzmmkkMluTPEHCV6HeL9mRAozqaescg9gyABQnuXQw/640?wx_fmt=other&from=appmsg)
+![Image 7: Image](assets/9/6/9606986e26b22426b709c55677a277f3.jpg)
 
 #### 3.1. AstraRay架构
 
-![Image 8: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0gRwX58ZNf7Fqp6veBc7TyJiaV7va4yt6dw7iaRp9gl1c3NeXuCksJDzg/640?wx_fmt=other&from=appmsg)
+![Image 8: Image](assets/a/e/ae15e52e7a81a0dc477da71cc766566f.jpg)
 
 图 5：kuberay 架构\[3\]
 
-![Image 9: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0ic42SicQR1vGl0GbYzRol6zXY24CLd4iaCghVOgYax2afIL82ODQ58KEw/640?wx_fmt=other&from=appmsg)
+![Image 9: Image](assets/1/d/1d126539adea769c4797b0784046969f.jpg)
 
 图 6：KubeRay 提交任务流程\[4\]
 
 业界使用社区成熟的 KubeRay 方案，通过 Ray 和 K8s 结合，提供了易用、高可用、高伸缩的云原生 Ray 集群服务，可以满足中小规模 AI 应用的需求。但它有集群规模小（最大仅支持数千个节点），异构资源扩展困难（单个 ray 集群只能部署在一个 k8s 集群，不支持联邦k8s 集群）和伸缩慢（受限于 K8s 的扩缩容速度）的问题，不适合微信内超大规模 AI 应用的需求。
 
-![Image 10: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0027k4lVB1DpP5iaZbohZX4wszu90Ebs5oicMOUJSN1ibiakQKLac3ktLPw/640?wx_fmt=other&from=appmsg)
+![Image 10: Image](assets/1/7/17d46d8a597b0a8af91470649b916440.jpg)
 
 图 7：AstraRay 整体架构
 
@@ -97,9 +97,9 @@ Astra 的部署系统架构如上图，在 Poseidon/算力/太极/Gemini 等多�
 
 ##### 3.2.1 架构选择
 
-![Image 11: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0BjzRN9G6tItf4tW6A7VFuurlslicbJgbLJ20jF0XSBkwwpzp8aGIAwg/640?wx_fmt=other&from=appmsg)
+![Image 11: Image](assets/1/b/1b5b92b383210689c2e0d50679a81352.jpg)
 
-![Image 12: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0yRBrdb4S6aoeibPhV2WH9Y1lxibKPwbWdDp4icRKfiaymTXpuh87r63YKQ/640?wx_fmt=other&from=appmsg)
+![Image 12: Image](assets/e/6/e67b9ccc881f3ef075c6b169aed83c5e.jpg)
 
 图 8：集群调度架构分类\[5\]
 
@@ -113,7 +113,7 @@ Astra 的部署系统架构如上图，在 Poseidon/算力/太极/Gemini 等多�
 
 3.2.2 Starlink调度 我们提出了一个新的调度系统 Starlink 来更好适配异构资源和硬件。Starlink采用共享调度架构，通过乐观并发调度处理冲突，支持部署在任何基础资源平台(K8s/Yard/CVM)之上，且允许单个应用运行于多种异构的资源节点上。
 
-![Image 13: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm01GbpQkbJ2yCsHyxtwyhauthPgZL6d7t4icjKg9Gjks66siaSq7E4AEIg/640?wx_fmt=other&from=appmsg)
+![Image 13: Image](assets/7/a/7af93b43379d5b6e6e753545bb5cb702.jpg)
 
 图 9：Starlink 调度架构
 
@@ -129,23 +129,23 @@ Scheduler：Scheduler 负责应用的负载均衡和容灾，Scheduler 会根据
 
 #### 3.3. 不稳定资源下构建稳定服务的挑战
 
-![Image 14: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0lqJ49sBtN3utR2VBrb90nib01mOzDZgF7UyOI6mV2iaucT9meqdwzaSA/640?wx_fmt=other&from=appmsg)
+![Image 14: Image](assets/2/0/20e465c50966bac28c21bc88cf57c9c8.jpg)
 
 AstraRay 大量接入低价或免费资源，pod 稳定性较差，日常会出现较高的资源驱逐率和亚健康的情况，直接使用会导致服务失败率高、延时高。另外，用传统的调度方法调度 AI 计算任务很容易出现计算倾斜，从而导致整体资源利用率低。我们通过更快的容灾调度解决服务失败率高的问题，通过更优的调度算法来解决服务延时高和资源利用率低的问题。
 
-![Image 15: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0MYbVo3mq412LnPDeibhTD3EuIfmT2ydb5qT8GXdNWHj1gKzoYarRkag/640?wx_fmt=other&from=appmsg)
+![Image 15: Image](assets/9/9/99a3af24116d1232e85e87a18de122cc.jpg)
 
 图 10：Starlink 调度流程
 
 ##### 3.3.1 快速容灾调度
 
-![Image 16: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0cOQo0APowPY44RqEkQt2qDuHWKUne3icuFibvRawuc48VDPfMOanzL4w/640?wx_fmt=other&from=appmsg)
+![Image 16: Image](assets/1/9/192e792ee13594dc0dd82544a35be0a8.jpg)
 
 图 11：kubernetes PreStop Hook 机制\[6\]
 
 我们通过两个手段来加速容灾调度：1. 在资源平台实际驱逐 pod 之前，通过 K8s 的 PreStop Hook 机制实现服务程序优雅退出，同时Node将自己标记为离线，并通过心跳上报到 Resource。2. Resouce 通过预聚合广播，快速将状态同步到整个 Resouce 集群，Scheduler 每隔 3s 通过拉取 Resouce 的在线列表来进行动态权重计算，定期更新路由表。最终可以实现在 4s 内将节点驱逐，从而大幅降低了应用的失败率。
 
-![Image 17: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0hIq1z7jhtmvBW3668g3NZ9ckzKbJaE2yicuXVIibnA2xppp79OKOwiaicg/640?wx_fmt=other&from=appmsg)
+![Image 17: Image](assets/c/e/cece982590d70f70ba2233e337eb53a7.jpg)
 
 ##### 3.3.2 动态权重SWRR路由算法
 
@@ -159,17 +159,17 @@ AI 应用往往具有计算量大，单机 QPS 低的特点。在这种服务场
 
 这里是SWRR的标准流程，因为SWRR算法的复杂度是O(n)，我们的实现会对性能做一定的优化，比如分block，多算法实例等。1)对于每个节点：节点路由权重 = 节点路由权重 + 节点权重 2)选择当前路由权重最大的节点 3)被选择的节点的路由权重减去所有节点权重之和 算法流程样例，假设{A,B,C}节点权重为{5,1,1}
 
-![Image 18: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0jJfK0bIUxw4VuKic0HiakR1Y7xuFhdLSY3Ww0ES3qWyB2Mh1iagSqDx1Q/640?wx_fmt=other&from=appmsg)
+![Image 18: Image](assets/0/2/0284608d32d5811e1363349914a3914c.jpg)
 
-![Image 19: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0ibdMHKicHlMhI8WfgejR5NDhS5WFs2pKwM9uhFNWDNef8Pv4NhwzHfRw/640?wx_fmt=other&from=appmsg)
+![Image 19: Image](assets/a/f/afe4a4a3d3ba28d856882b4638e8a109.jpg)
 
-![Image 20: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm02UCUdz3hGGYKb8LFYiakKbicYeuEXoA8suCbP9HJzgzkibAp9j5peM8dQ/640?wx_fmt=other&from=appmsg)
+![Image 20: Image](assets/b/1/b1a302caee9b48b896c1c77be6dafc57.jpg)
 
 最终，我们使用自适应权重的 SWRR 算法，动态平衡请求分布，拉平利用率的同时，还降低了请求耗时。
 
 #### 3.4. 降低应用部署的复杂度的挑战
 
-![Image 21: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0rVd2NnEibj2lCgmq7EL5JkyjtVicjWibpTAGyUNTiaGkNewyaZd5HIibqJA/640?wx_fmt=other&from=appmsg)
+![Image 21: Image](assets/2/f/2fcb03723ba0f5749ebd266ebbadab60.jpg)
 
 图 12：AI应用的部署复杂度
 
@@ -181,7 +181,7 @@ AI 应用的部署涉及三个方面：多模型扩展、多卡型扩展、多�
 
 1.运行时动态切换；2.模型的快速下发；动态切换运行时
 
-![Image 22: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm07wvvicU2JRsiaUEDRQz4Ql5Z5VeG4icwVpWt7T1fia39pa8wWlJ0KhFx9Q/640?wx_fmt=other&from=appmsg)
+![Image 22: Image](assets/4/5/45a0842407ba8f289d3de678cfa4e740.jpg)
 
 图 13：Ray动态运行时\[7\]
 
@@ -191,7 +191,7 @@ AI 应用的部署涉及三个方面：多模型扩展、多卡型扩展、多�
 
 具体的操作为：在应用的代码打包上传之前，我们会根据用户填写的 requirement.txt，使用conda-pack打包对应的Conda环境，在启动Ray之前，分发到对应的节点上。其中提前打包可以避免大规模快速扩容对软件源带来下载压力。我们也支持用户自定义打包例如 TensorRT 等环境，提供更强大的环境自定义能力。
 
-![Image 23: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm04g4klTu2ibb6W1hZdrYT8neMiawpF5mtNbicZicf0f4NswJazc7aySgKgg/640?wx_fmt=other&from=appmsg)
+![Image 23: Image](assets/c/6/c6e0cc3b08c4c84b0f626ab385b1fb3a.jpg)
 
 图 14：AstraRay 运行时
 
@@ -201,11 +201,11 @@ AI 应用的部署涉及三个方面：多模型扩展、多卡型扩展、多�
 
 为此，我们在Node上嵌入了P2P网络。P2P分为Server端和SDK接入端，server端通过心跳管理P2P节点，并维护集群中的种子信息。P2P节点则提供文件分片的缓存和传输能力。
 
-![Image 24: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0mX3EC8gH1RKzgXptwz4VDeX77FYsZjDicOpxJWWT1o90A7fqz8pw5YA/640?wx_fmt=other&from=appmsg)
+![Image 24: Image](assets/9/4/949a7730ddf30526d44d80b43f52dbeb.jpg)
 
 图 15：P2P server 端架构
 
-![Image 25: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0UM9GZS1s2XOia5FIdCdvxIdEryIUDJiaZ2IxpWuZtA2TOkChwNAHSPgA/640?wx_fmt=png&from=appmsg)
+![Image 25: Image](assets/5/e/5edd08d41db7d8a129c03893b7250e6a.png)
 
 图 16：P2P sdk 端架构
 
@@ -217,13 +217,13 @@ AI 应用的部署涉及三个方面：多模型扩展、多卡型扩展、多�
 
 4.冷启动和热点下载加速：一个新的文件下发时，因为全网都不存在这个文件，如果按序下载，可能会导致下载缓慢，请求的节点分片集中。通过打乱分片下载的顺序，可以将请求分布到不同的节
 
-![Image 26: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm02iccOVvCPp8QSa4oeC7r1Bhic1Kzib1l3ApOmZtYGPQhenzat3iaGzATUA/640?wx_fmt=other&from=appmsg)
+![Image 26: Image](assets/4/c/4c250b7cf8231b740b492e67d11060fb.jpg)
 
 图 17：P2P下载加速
 
 ##### 3.4.2. 多模块扩展挑战
 
-![Image 27: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0MUB856Rh0Vc8LP13RTqW4kBVibFN3IlRFfoTG4khfv4Vqau9vYA0IMQ/640?wx_fmt=other&from=appmsg)
+![Image 27: Image](assets/b/8/b8ed605937eabf065b8b39d7340753bc.jpg)
 
 图 18：Ray 联邦集群架构
 
@@ -233,7 +233,7 @@ AI 应用的部署涉及三个方面：多模型扩展、多卡型扩展、多�
 
 ##### 3.4.3. 多卡型扩展
 
-![Image 28: Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/j3gficicyOvaufibrDgiaJ4I5PiaEVfcC1Fm0cevadZHVnnibEVGImJClyeG5Iu57Jq6jxm0t3T0taibsj8seS50QdaZQ/640?wx_fmt=other&from=appmsg)
+![Image 28: Image](assets/9/6/96a1643aec2da89c8a22fb043f5ecee4.jpg)
 
 图 19：TFCC推理运行时
 
@@ -265,6 +265,6 @@ AI 时代的来临对微信后台的基础设施带来了许多挑战。我们�
 
 \[8\].https://www.anyscale.com/blog/handling-files-and-packages-on-your-cluster-with-ray-runtime-environments
 
-![Image 29: Image](https://mmbiz.qpic.cn/sz_mmbiz_gif/j3gficicyOvasVeMDmWoZ2zyN8iaSc6XWYjZ7Hx6Udjjk2BGLzC9ahJq7ibxDd1RGA0c9NYZc1husEsvb3tY4FcWPQ/640?wx_fmt=gif&from=appmsg)
+![Image 29: Image](assets/3/6/366862c98fc42b63e04ea33820fbb5c7.gif)
 
-![Image 30: Image](https://mmbiz.qpic.cn/sz_mmbiz_png/j3gficicyOvasVeMDmWoZ2zyN8iaSc6XWYj5q5PQEOc5ibURPb03vnRibrxC3UR8xzdyATfiawTYRV2vJvBnAIcE1FeQ/640?wx_fmt=png&from=appmsg)
+![Image 30: Image](assets/1/d/1ddf1687e526c8734304b339ac51fb69.png)

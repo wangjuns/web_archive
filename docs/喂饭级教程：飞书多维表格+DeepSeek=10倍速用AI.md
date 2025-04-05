@@ -11,7 +11,7 @@ Markdown Content:
 
 我把研究成果发到X和微信群里，大家的反馈超出预期，纷纷要求出教程！
 
-![Image 33: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlX3IOu01rJnD3VjwcyQukdpejsekQRrXn3yuvSU68fYrQJG3CUQeyUnA/640?wx_fmt=other&from=appmsg)
+![Image 33: loading](assets/f/e/fe159062ba0a8d3dc12d51e3447cfcf4.jpg)
 
 于是，多维表格+DeepSeek，喂饭级的教程来了！
 
@@ -30,7 +30,7 @@ Markdown Content:
 
 还可以从其他表格里粘贴过来。一百组输入，自动转换。
 
-![Image 34: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXMpvGoo4umVxuV640HeBNtxOEAp8ZQxjNwPzV2DNaQry5D0cRfnia29w/640?wx_fmt=other&from=appmsg)
+![Image 34: loading](assets/4/8/48936cf8885b28a3aafa0ec6b3f4da1b.jpg)
 
 二、恋爱键盘，批量快速回复聊天消息。
 
@@ -40,7 +40,7 @@ Markdown Content:
 
 支持自定义多种风格，不管是舔狗回复还是高冷回复，都随手就来。
 
-![Image 35: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXtGEovEibhiaVJABKtH29B5A2GcngDlPwW7agMDIykreCHr2vlAovUpAg/640?wx_fmt=other&from=appmsg)
+![Image 35: loading](assets/c/c/cc8f6a61c5b6c395d513d284652b8c3d.jpg)
 
 三、冲浪键盘侠，成为评论区王者
 
@@ -52,7 +52,7 @@ Markdown Content:
 
 从此成为评论区的王者！
 
-![Image 36: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlX1ZNn3jvvpmW4J5fmcJ7BUvaHcsabia1lF2255PBAcQDh1j7Ux3RL3LQ/640?wx_fmt=other&from=appmsg)
+![Image 36: loading](assets/d/9/d9c3139534455449675c7f3d29fddcfc.jpg)
 
 四、结合 AI 搜索一键出文案
 
@@ -64,7 +64,7 @@ Markdown Content:
 
 这些都可以和 DeepSeek 组合使用，可玩性非常高。
 
-![Image 37: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXdzicFzl6jjCelu1DRibibGic8xbEm7TW2SB8v8VhePHFkKxlOxPylSFsGQ/640?wx_fmt=other&from=appmsg)
+![Image 37: loading](assets/1/0/10e0e9b28e3a9bc63a9a3a3d422dc410.jpg)
 
 如何在多维表格接入 DeepSeek R1？
 ----------------------
@@ -73,7 +73,7 @@ Markdown Content:
 
 其实非常非常简单，只要20秒！
 
-![Image 38](https://mmbiz.qpic.cn/mmbiz_gif/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXP3BXMIpuzjyqvEy9rUjGI4Vg4ZlnztgJiboLWgMaPauCDgF2lYUVR0g/640?wx_fmt=gif&from=appmsg)
+![Image 38](assets/0/9/090ec0e26d2373c98c9d7bdba0a40bbb.gif)
 
 接下来是一步一步的喂饭级步骤拆解。
 
@@ -81,11 +81,11 @@ Markdown Content:
 
 我们新建一个多维表格，默认是这样的，把第一列的表头「文本」，改成「输入」，输入就是我们日常和 DeepSeek 聊天时的提问。
 
-![Image 39: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXvNtwVN4OAtaPcxSQjCnKgRfk0xO0CHZHErfMibllGXSPbD3APgj3dWg/640?wx_fmt=other&from=appmsg)
+![Image 39: loading](assets/0/d/0d9136c0bf22f7e813538780fe6ae78b.jpg)
 
 再把后面的几列都删掉。
 
-![Image 40: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXD8gFnM3nZYwEicZqjNz1OLQgDfybVPQKflLct6EvYKGSSybZLzQyy8Q/640?wx_fmt=other&from=appmsg)
+![Image 40: loading](assets/1/d/1d9879010f0bfeba05e0127a20b72471.jpg)
 
 二、添加一列 DeepSeek R1 字段
 
@@ -101,7 +101,7 @@ Markdown Content:
 
 4.点击【DeepSeek R1】
 
-![Image 41: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXGxjXgwIo8W9zqKn6zNOKjCxox8fejRFCTBygicsxf5e5TibWnBZyBy3w/640?wx_fmt=other&from=appmsg)
+![Image 41: loading](assets/0/e/0e87f66065397a443fe3d483117b420c.jpg)
 
 三、配置 DeepSeek R1 的字段
 
@@ -123,7 +123,7 @@ Markdown Content:
 
 选完之后，点击确定就配置完成了。
 
-![Image 42: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXduwwEuoCQWTj7q0SLE3VP8jQtSkejiaJAEFfRSWX7zgs1ibftE3emjMw/640?wx_fmt=other&from=appmsg)
+![Image 42: loading](assets/b/5/b52ffdf08f47d51141fce182b3d6be29.jpg)
 
 四、测试效果
 
@@ -137,7 +137,7 @@ Markdown Content:
 
 4.可以看到 DeepSeek 的输出结果
 
-![Image 43: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXq3dEQAibhYzVbeVc1XJXiaCIQapnibVsuibLWSlTkoJVUAcFUq7pznRIkg/640?wx_fmt=other&from=appmsg)
+![Image 43: loading](assets/4/7/47518760ca973785c7e60b1d93ba3e14.jpg)
 
 值得注意的是，多维表格的字段捷径是可以无限添加的。
 
@@ -148,7 +148,7 @@ Markdown Content:
 
 写完教程，我看到一位朋友的留言
 
-![Image 44: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXnLqAw3ic0KoDdc2xjO60DRACl9lEwIbWWpPYrxmDm71J5icMnzHDJSoQ/640?wx_fmt=other&from=appmsg)
+![Image 44: loading](assets/9/e/9e9fe091429ef5a1052a3632146451ec.jpg)
 
 我突然想起，这确实可以啊，我以前还写过这个案例
 
@@ -158,7 +158,7 @@ Markdown Content:
 
 模板就叫 《DeepSeek10倍速使用》，里面有所有的表头配置和提示词，如果教程没看懂，直接复制粘贴也能用。
 
-![Image 45: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXV6UaJVicQiasCmE09C2ibicrQB5dZVM2iaf4fGVMutP9dM3baoRFVQnab3A/640?wx_fmt=other&from=appmsg)
+![Image 45: loading](assets/e/3/e3f8d05b4df06227891c088a4a3f995e.jpg)
 
 咱也不卖了，限时免费提供给公众号读者。
 
@@ -177,4 +177,4 @@ Markdown Content:
 
 最后，说一个机场广告的小发现，原来 DeepSeek 团队也用飞书，没准他们也会把多维表格和 DeepSeek 结合起来用。😂
 
-![Image 46: loading](https://mmbiz.qpic.cn/mmbiz_jpg/byNSHXBoYpdPDVE5FFBlMpsRicbJ3UTlXNRiaObmv45G7GI35nChLiamP3icsD2scBZS7icFC601iauaHLoC2Y6xrM2Q/640?wx_fmt=other&from=appmsg)
+![Image 46: loading](assets/1/5/15f2232439fbb8a5ad4609d51d6d3ba8.jpg)

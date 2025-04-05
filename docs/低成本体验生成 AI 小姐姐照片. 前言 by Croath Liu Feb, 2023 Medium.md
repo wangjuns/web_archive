@@ -1,7 +1,7 @@
 # 低成本体验生成 AI 小姐姐照片. 前言 | by Croath Liu | Feb, 2023 | Medium
 [低成本体验生成 AI 小姐姐照片. 前言 | by Croath Liu | Feb, 2023 | Medium](https://medium.com/@croath/%E4%BD%8E%E6%88%90%E6%9C%AC%E4%BD%93%E9%AA%8C%E7%94%9F%E6%88%90-ai-%E5%B0%8F%E5%A7%90%E5%A7%90%E7%85%A7%E7%89%87-85ffa7c13cd7) 
 
- ![](https://miro.medium.com/max/1400/1*qFk6hlXpLn4uHySw3lqd3Q.png)
+ ![](assets/2/b/2b079a22769feef3ad3aeb550a0e00ec.png)
 
 来自 [auditore_k](https://twitter.com/auditore_k) 生成的照片
 
@@ -27,13 +27,13 @@
 
 我们打开 Taiwan Doll Likeness 模型的页面，会看到页面右边有一个 ▶️ 按钮：
 
-![](https://miro.medium.com/max/1400/1*8qA5fcXt82El1ES07epDwg.png)
+![](assets/1/1/116decee8d3a21624b637809c7de0e39.png)
 
 Taiwan Doll Likeness 页面右侧的 ▶️ 按钮
 
 点开之后显示的是可以用哪些软件进行 inference（推断）：
 
-![](https://miro.medium.com/max/1400/1*a5ic-nlbGZA1x1Mb9y-UHg.png)
+![](assets/c/6/c667c8224e9dbd07735477f19294b8d1.png)
 
 软件可用性
 
@@ -43,7 +43,7 @@ Taiwan Doll Likeness 页面右侧的 ▶️ 按钮
 
 > 如果你不具备基础的编程能力（例如安装软件环境或配置服务器等），你可以不用看这一章的内容了，上面图中最后一个软件是 Draw Things，这个软件在 macOS 和 iOS 上都可以下载到，你可以选择例如 [https://civitai.com/models/3950/art-and-eros-aeros-a-tribute-to-beauty](https://civitai.com/models/3950/art-and-eros-aeros-a-tribute-to-beauty) 支持 Draw Things 运行的模型，就可以不用写代码就可以通过界面交互的方式在软件里去尝试。当然 ChilloutMix 也是支持 Draw Things 的。
 
-![](https://miro.medium.com/max/1400/1*H2nZQujGCQiLRccca8YlGQ.png)
+![](assets/c/9/c9182c9924ae5e5ac9c580f5d0adaa57.png)
 
 我使用 Draw Things 来生成的一张图片
 
@@ -59,13 +59,13 @@ Taiwan Doll Likeness 页面右侧的 ▶️ 按钮
 
 创建服务器时选择 Cloud GPU 并选择 NVIDIA A40 系列：
 
-![](https://miro.medium.com/max/1400/1*jrdM5rs4ssJUSTOVEgjtjg.png)
+![](assets/4/e/4eb0826a31c38e7d7e1cffccbe5d8c08.png)
 
 Cloud GPU + A40
 
 选择 1/6 GPU 和 8GB 显存的版本，这种配置是我对比下来性价比最高的。记得关掉自动备份的开关，每个月可以省 $42。这样的花平均一天的成本就是 $7，我只开了几个小时，总共花费 $2 就可以进行非常完整的体验了。
 
-![](https://miro.medium.com/max/1400/1*NPtEN3g0bTpwWsyKUKdyTw.png)
+![](assets/f/b/fbb07d81d6dd1a86e3b7d3d4602c41bf.png)
 
 记得关闭自动备份
 
@@ -75,7 +75,7 @@ Cloud GPU + A40
 
 在 ChilloutMix 页面右侧找到下载按钮，取得下载地址后在服务器上进行下载，模型大小 3.97GB 大概几分钟时间可以下载好，下载好的模型请放置在 stable-diffusion-webui 项目下的 models/Stable-diffusion/ 目录下，并确认下载好的文件名结尾为 .ckpt。
 
-![](https://miro.medium.com/max/1400/1*XF3-roYkr2b6cjLqWa8_NQ.png)
+![](assets/f/3/f35f7f5da0f460776939014f3d699ab5.png)
 
 下载 ChilloutMix
 
@@ -89,43 +89,43 @@ Cloud GPU + A40
 
 在浏览器中打开相应地址，切换到 Extensions 标签页面的 Install from URL，并输入 [https://github.com/civitai/sd_civitai_extension](https://github.com/civitai/sd_civitai_extension) 点击 Install 安装 CivitAI 提供的插件，安装成功后切换回 Installed 页面点击 Apply and restart UI 重新加载。
 
-![](https://miro.medium.com/max/1400/1*tCJYVHgpxD5eGZt0emyg2A.png)
+![](assets/3/f/3f24d5bf94a192a99703102dcc67d8b3.png)
 
 安装 CivitAI 提供的插件
 
 第一步：确认左上角已经加载了 ChilloutMix 模型：
 
-![](https://miro.medium.com/max/1400/1*7xdyixzlCmQx1NZu2uxFsg.png)
+![](assets/5/a/5a04444175ff976de2e59ee118c1787b.png)
 
 第二步：在右侧找到这个按钮，点击之后左侧会展开一些新的元素
 
-![](https://miro.medium.com/max/1400/1*2HC3T8Iw3r8UeJiCHx-Qyg.png)
+![](assets/f/d/fd041193938c61fd74b2514f2a41cbcc.png)
 
 第三步：在左侧展开的标签中点击 Lora，并选择我们刚下载好的模型：
 
-![](https://miro.medium.com/max/1400/1*8OL-IixwXIqbq3AfDzYiUw.png)
+![](assets/6/2/6218e44ee9e0e55c3f67f458148e1781.png)
 
 第四步：点击之后你会看到左侧有了变化，prompt 中自动多了一行文字，代表使用 taiwanDollLikeness 这个模型：
 
-![](https://miro.medium.com/max/1400/1*iaw9rwo9fxKfHFxkhypqSA.png)
+![](assets/b/7/b70ff884a9a5de4ebb4e4338e6cc774f.png)
 
 我直接输入 a girl，点击右侧的 Generate 尝试生成：
 
-![](https://miro.medium.com/max/1200/1*WtbYerfmpPoHL1cYbJVXjQ.png)
+![](assets/5/2/52e7ed4bf9265520c0037247d8f17c25.png)
 
 此时无论在页面上还是在命令行窗口中都可以看到生成进度和预期完成时间：
 
-![](https://miro.medium.com/max/1400/1*P1rWYKBwXm0b41zeSNUFTg.png)
+![](assets/8/4/84e43162bdc4599b296053c3e447dbef.png)
 
-![](https://miro.medium.com/max/1400/1*y5S-ACrshZUxognlCFDFnQ.png)
+![](assets/4/e/4eec3661c940b4a66b62f3b6a61586b6.png)
 
 生成完成后的图片是这样的，很容易看出来不太尽如人意，不只是不好看的问题，甚至有些不像一个人类。
 
-![](https://miro.medium.com/max/1400/1*3DRtZvsN4L7jaOKlAR6dCw.png)
+![](assets/3/c/3ca8f8317f26f528167cd30ca9fc4fc3.png)
 
 首先我们先调优生成的关键词，如果不知道如何选取关键词可以去官方页面的官方样例或回复中别人生成的样例中点击一张你喜欢的风格的图片，看看哪张图片是用什么关键词生成的，例如这张：
 
-![](https://miro.medium.com/max/1400/1*3lcp0XVO7dGTKsZclpQPrQ.png)
+![](assets/a/3/a32ab99efdb3d8e82e2dabcfccc09b0a.png)
 
 一张其他用户生成的图片和参数
 
@@ -135,21 +135,21 @@ Cloud GPU + A40
 
 同时我们也发现该图片使用的 sampler 是 DPM++ SKE Karras，这也是比较推荐的一个效果不错的 sampler，我们也把 sampler 改成同样的。相应地，也将 CFG scale 和 Steps 参数和该图片使用的参数对齐。（Steps 越多，生成效果越好，生成速度越慢），改好的界面如下：
 
-![](https://miro.medium.com/max/1400/1*6aJe_Bf87NpBqEJK3yJD6Q.png)
+![](assets/b/7/b71eadc7b3a3c290a1b9081b8e2f3a27.png)
 
 > ⚠️ 注意：不建议改 Seed，seed 的意思是该次生成的「路线」，代表一定指向性的特征，我们不需要和那张样例图片的感觉一模一样，所以我选择不改 seed。
 
 这次时间会比上次久一点，但效果好了不少：
 
-![](https://miro.medium.com/max/1024/1*KgnoSF_XGurtIFSZSrzEnw.png)
+![](assets/0/f/0fc32bbca6bfaf904d550156ec4e4632.png)
 
 不过图片还是有点模糊，因为我们生成的图片是 512x512 大小的。生成更高清晰度的图片不要直接调节图片大小，这样会让生成的速度变慢许多，最好的方式是仍然使用 AI 让我们对模糊的图片进行自动放大：
 
-![](https://miro.medium.com/max/1400/1*yIkLOnHs8R45qdVAd4wCGg.png)
+![](assets/2/d/2dc0c67fc2b4870d1926369df2fb8997.png)
 
 勾选 Hires. fix 选项，Hires steps 可以调节为 10–20 中的数值，并确定 Upsacle by 值为 2，这样就可以在生成出 512x512 的图片后将其放大为 1024x1024。我们再生成一次试试：
 
-![](https://miro.medium.com/max/1400/1*Mgu7-EgP1KypNGLhSueLnQ.png)
+![](assets/6/f/6f738d60ed5ceb807e06233958bd82cb.png)
 
 效果好多了。
 
@@ -192,43 +192,43 @@ Caution:
 
 访问 [https://prompthero.com/](https://prompthero.com/) 在顶部菜单选择 Stable Diffusion，在搜索框中输入 girl 关键词（或者任何你想要的关键词），在搜索结果中找到自己喜欢的风格，就可以复制这张图片的 prompt 进行尝试了。类似的网站有很多大家可以自行找一下。当然在 CivitAI 上去找 prompt 也是很好的方式。
 
-![](https://miro.medium.com/max/1400/1*LTTDOit9i8MNGj1islofIA.png)
+![](assets/a/2/a22dd65638a2218e6ed62b8967d5eca3.png)
 
 ## ChatGPT
 
 使用 ChatGPT 进行关键词生成也是很好的方式，特别是对英文表示很好的朋友会很有帮助，请 ChatGPT 帮助你去生成你想要的 prompt：
 
-![](https://miro.medium.com/max/1400/1*a4uvTTrjueP-MYNfvnfNkQ.png)
+![](assets/9/6/96057708992832fd49669b1083acba75.png)
 
-![](https://miro.medium.com/max/1400/1*5uZ6cY8fTYPtCJAMzlSLdQ.png)
+![](assets/6/a/6a12ea1e6a9e8d5e0b326307959d1b3e.png)
 
 ## Clip Interrogator
 
 如果你有想要模仿风格的照片，也可以把这张照片传进 clip interrogator 中，这个 AI 会帮助你提取关键词。很多人都自己实现了 clip interrogator，你也可以用这个网站直接使用：
 
-![](https://miro.medium.com/max/1400/1*DdGsq2crKRCGmtXYCpL2EA.png)
+![](assets/d/3/d39a4c0976a24eae00030e1e262a134c.png)
 
-![](https://miro.medium.com/max/1400/1*Mgu7-EgP1KypNGLhSueLnQ.png)
+![](assets/6/f/6f738d60ed5ceb807e06233958bd82cb.png)
 
-![](https://miro.medium.com/max/1400/1*lmAj9rHwppKc7ALW_nzEYw.png)
+![](assets/e/4/e400ca850db16d0a800df8cbcba5d7b1.png)
 
-![](https://miro.medium.com/max/1400/1*KSU4VOePJWI30kAjkEBaIg.png)
+![](assets/b/d/bdeb0f6c05de08cff2fcd60ce0c8bd29.png)
 
-![](https://miro.medium.com/max/1400/1*IUM4UmJ0KFg7PVFq-qhBag.png)
+![](assets/6/1/61019ff90bc00dc929231fa58c1edb54.png)
 
-![](https://miro.medium.com/max/1024/1*dZobuRi4kDz605CvbPLKnQ.png)
+![](assets/2/7/2730c4b7b8813c27e1ebb6b40ed6eae9.png)
 
-![](https://miro.medium.com/max/1400/1*SDH-EMne1RpmIJjjGp3oJA.png)
+![](assets/d/6/d6f6b3806f9a43371666dec8ca7bf6be.png)
 
 Stable Diffusion 一个非常常见的问题就是人类的关节、手指乱掉了，例如这样：
 
-![](https://miro.medium.com/max/720/0*YWSGfQ7Gn4hqN_k1)
+![](assets/e/f/ef47f030db01af93e8704511cd0ea5e4.jpg)
 
 手指混乱
 
 或者这样：
 
-![](https://miro.medium.com/max/736/1*YiwiqbEQQ-DoWWWl7GP5Bw.png)
+![](assets/8/c/8ce52309194dac27cea1cf96fbfb9777.png)
 
 关节或人体结构混乱
 

@@ -5,13 +5,13 @@ URL Source: https://mp.weixin.qq.com/s/g3JsrLUuMXDX-8lSSzb06A
 Markdown Content:
 2025开年龙蛇之交，Deepseek 横空出世火遍全球。从下面这张图可见一斑：
 
-![Image 1](https://mmbiz.qpic.cn/sz_mmbiz_png/wibXibuV1F36GswBLPibjtumfsrvrrq7gzIGr1XFibznJaH85d6dX0ehZN8D3MnuGdkkJ9QlxNozPP4aqwnwFSPs9w/640?wx_fmt=png&from=appmsg)
+![Image 1](assets/e/5/e57aacb86555ba0c790ab93bc38a41c7.png)
 
 （节选自AI产品榜）
 
 图中和Deepseek做对比的可都是最流行的全球超级APP们。这是产品领域的体感。再看另一张图：
 
-![Image 2](https://mmbiz.qpic.cn/sz_mmbiz_jpg/wibXibuV1F36GswBLPibjtumfsrvrrq7gzIiaBuOCt4kBtp9bKEoeU6sYdaZ5ubDfMNjoIFOgGZuDpO59VRhGtjsKA/640?wx_fmt=jpeg&from=appmsg)
+![Image 2](assets/5/1/51bdb54e5090afd5cd2fb6e5d2046a8f.jpg)
 
 乍看这张图你还以为是说dify的star增长很快，超过了openai-cookbook，但是再细看有点儿不对，边上那条蓝色的竟然也是根线，是 Deepseek-R1 的star增长曲线，差点儿被当成了坐标轴！ 因为很多统计图是双坐标轴，右边也有一根坐标轴的。这增速简直逆天了，增长曲线跑出了一支穿云箭，千军万马来相见的气势。这是研发领域的体感。
 

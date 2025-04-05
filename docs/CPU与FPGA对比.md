@@ -25,5 +25,5 @@
 
 \- 功耗：尽管 CPU 在某些任务上功耗较高，但由于 FPGA 的并行处理和硬件配置优化，某些场景 FPGA 的功耗可能更高。
 
-CPU 和 FPGA 各有优劣。CPU 适用于需要高灵活性的场景，而 FPGA 更适合那些需要高性能、低延迟和高度并行处理能力的场景。 [![](https://h5.sinaimg.cn/upload/2015/09/25/3/timeline_card_small_video_default.png)
+CPU 和 FPGA 各有优劣。CPU 适用于需要高灵活性的场景，而 FPGA 更适合那些需要高性能、低延迟和高度并行处理能力的场景。 [![](assets/2/a/2aae7b68abfa66d70bfd154a466bb37c.png)
 量子位的微博视频](https://video.weibo.com/show?fid=1034:5107110124650569)

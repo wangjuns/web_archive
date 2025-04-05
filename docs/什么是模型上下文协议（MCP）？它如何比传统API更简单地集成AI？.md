@@ -3,7 +3,7 @@ Title: 什么是模型上下文协议（MCP）？它如何比传统API更简单�
 URL Source: https://mp.weixin.qq.com/s/oyewbUXalcfjjKo6R6YOdA
 
 Markdown Content:
-![Image 1: 什么是模型上下文协议（MCP）？它如何比传统API更简单地集成AI？](https://mmbiz.qpic.cn/sz_mmbiz_png/Sib7IezOlBcuZS7Obd5diaicrdyTGVUWVYickOmtXeNlcMZickFCmbCIT56ncmd6Lk1XOvH27CLyiad0AWIPpPCf1YTQ/640?wx_fmt=png&from=appmsg)
+![Image 1: 什么是模型上下文协议（MCP）？它如何比传统API更简单地集成AI？](assets/2/1/21d8b13d83e6c19cf5e0c4cb36444038.png)
 
 什么是模型上下文协议（MCP）？它如何比传统API更简单地集成AI？
 
@@ -18,7 +18,7 @@ Markdown Content:
 
 **模型上下文协议（MCP）** 就像是为AI模型量身定制的“USB-C接口”，可以标准化地连接AI系统与各类外部工具和数据源。
 
-![Image 2: 什么是MCP？](https://mmbiz.qpic.cn/sz_mmbiz_png/Sib7IezOlBcuZS7Obd5diaicrdyTGVUWVYickibRia0EoHIrGKVqIruQpmcvGx2QrF6bdkurSyOciayRHib4agfgycxVzQ/640?wx_fmt=png&from=appmsg)
+![Image 2: 什么是MCP？](assets/9/6/96bb6e83a821f78ad97ca4524dc5a0ab.png)
 
 什么是MCP？
 
@@ -33,7 +33,7 @@ Markdown Content:
 
 **打个比方：** API就像不同的门，每扇门都需要自己的钥匙和特定的规则。
 
-![Image 3: 为什么使用MCP而非传统API？](https://mmbiz.qpic.cn/sz_mmbiz_png/Sib7IezOlBcuZS7Obd5diaicrdyTGVUWVYictM0eRZjnBpz7HiaKgz8VzP5WrRS55Lp8NEjIrVUyz87WBJEn2rhulvw/640?wx_fmt=png&from=appmsg)
+![Image 3: 为什么使用MCP而非传统API？](assets/c/c/cc3f169608ddf1fc7f24d90362b748cd.png)
 
 为什么使用MCP而非传统API？
 
@@ -133,7 +133,7 @@ MCP如何工作：架构原理
 
 MCP采用简单的客户端-服务器架构：
 
-![Image 4: MCP的工作架构](https://mmbiz.qpic.cn/sz_mmbiz_png/Sib7IezOlBcuZS7Obd5diaicrdyTGVUWVYickibRia0EoHIrGKVqIruQpmcvGx2QrF6bdkurSyOciayRHib4agfgycxVzQ/640?wx_fmt=png&from=appmsg)
+![Image 4: MCP的工作架构](assets/9/6/96bb6e83a821f78ad97ca4524dc5a0ab.png)
 
 MCP的工作架构
 
@@ -234,7 +234,7 @@ MCP 的好处
 *   • **API：** 传统的方式，每个服务单独连接，开发更复杂。
     
 
-![Image 5: 什么是MCP？](https://mmbiz.qpic.cn/sz_mmbiz_png/Sib7IezOlBcuZS7Obd5diaicrdyTGVUWVYickibRia0EoHIrGKVqIruQpmcvGx2QrF6bdkurSyOciayRHib4agfgycxVzQ/640?wx_fmt=png&from=appmsg)
+![Image 5: 什么是MCP？](assets/9/6/96bb6e83a821f78ad97ca4524dc5a0ab.png)
 
 什么是MCP？
 

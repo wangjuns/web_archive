@@ -47,7 +47,7 @@ NVIDIA DGX是 AI 超级计算机。硬件方面包含：GPU、CPU、内存、硬
 三、H100与A100系列、PCIe与SXM版本对比
 --------------------------
 
-![](https://i-blog.csdnimg.cn/blog_migrate/1f4785dce8e852d9caa6ceb1d29729b2.png)
+![](assets/f/1/f16833e51d712979693605b3d81f1fd7.png)
 
 参考资料
 ----

@@ -4,3 +4,5 @@ mkdocs-blog-plugin
 pymdown-extensions
 mkdocs-material
 mkdocs-gen-files
+tqdm
+requests

@@ -1,7 +1,7 @@
 # BAT的“组织新周期”
 来源：锦缎
 
-![](https://postimg.futunn.com//tmp/php1XGIKj.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/d/c/dc3f2a3a2efe3d38863c3e38f9befa78.webp)
 牛牛敲黑板：  
 
 本质上，组织依附于公司存在，公司依附于特定商业逻辑存在，商业逻辑依附于特定社会经济的时代特征存在。
@@ -48,7 +48,7 @@
 
 一言以蔽，如果你的生产力与生产关系的比值追不上时代的「帕累托最优」，那你的组织与组织文化必将过时。此时，那些符合时代特征的后浪群——即使它们依然稚嫩如幼童，正为资本与人群拥上历史舞台。
 
-![](https://postimg.futunn.com//tmp/phpZD5Hoq.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/1/3/13dbd2d7cf52fdbcf9a54f0c5da8dd83.webp)
 
 图2：生产和交换的帕累托最优，来源：网络
 
@@ -64,7 +64,7 @@
 
 具体到中国产业视角，这幅画面便徐徐打开了：过去一个时期，中国经济的主流时代特征，是基于互联网与移动互联网这一成熟基础设施的模式创新。因此诞生了一批顺应时代特征的平台型科技公司，我们去阿里和京东购物，去腾讯通信与游戏，去美团解决一日三餐，去滴滴完成通勤出行，去抖音消磨空余的时光……
 
-![](https://postimg.futunn.com//tmp/phpDshmvZ.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/c/3/c3b46019a6ad537a7b1dbe1146e1c3de.webp)
 
 图3：知名互联网公司，来源：中金
 
@@ -90,7 +90,7 @@
 
 对于「BAT」，如果仅以中波周期（康波周期中的中周期，一般8-12年）审读，我们更倾向于AT，而放逐B。但经济产业的脉络却从不是由中波决定，它是一个长波周期（康波周期中的长周期，一般50年）的效应结果。从长波周期审读，只有掌握核心硬核技术科技树的公司，才是一个产业时代的最终主导。
 
-![](https://postimg.futunn.com//tmp/phpr4Y0nI.jpg/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/2/6/268268677a6018ea30179d6f2346ad6c.webp)
 
 图5：康波周期，来源：网络
 
@@ -108,7 +108,7 @@
 
 搜索引擎现在看已经当然性的融入于互联网基础设施的最底层，但复盘这一过程我们可以看到，两家公司在搜索引擎上收拢到的现金流，都最大化流向了哺育硬核技术创新科技树的土壤上。这样的土壤之上，不止是百度，即使是谷歌也没有内生出任何模式创新花朵。只是相对而言，谷歌的安卓留给了第三次产业革命最后的辉煌——移动互联网上；而十年前，百度生下的火种——自动驾驶（Apollo ），燃烧于2021年即将开启的新周期。 
 
-![](https://postimg.futunn.com//tmp/phpNohWGR.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/b/d/bd03b8bfb16ede867d975cdd65e63dc5.webp)
 
 图6：科技公司研发费用率，来源：网络
 
@@ -132,7 +132,7 @@
 
 从这三角效应上审阅，BAT从过去十年至今，已经相继遇到各自瓶颈。 
 
-![](https://postimg.futunn.com//tmp/phpZgfga2.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/d/7/d74860467cc163d594bea56d0997d3ad.webp)
 
 图7：组织三角，来源：锦缎
 
@@ -146,7 +146,7 @@
 
 游戏对于腾讯来说是重中之重，10亿级流量催生千亿级变现的核心板块。大资金再次用脚投票，促使我们要心里有数的是：Naspers第一次减持至今两三年来，腾讯在业务创新（模式创新）领域没有展现太多增量的东西；至于足够引发势能裂变的技术创新，这些年尚未有苗头——只有买买买。
 
-![](https://postimg.futunn.com//tmp/phpp3HxVb.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/6/8/689888263caf355ce16495d46afd17e1.webp)
 
 图8：腾讯游戏的体量，来源：腾讯年报
 
@@ -224,7 +224,7 @@
 
 百度的自动驾驶接下来会进入快速增长期。李震宇（百度集团资深副总裁、智能驾驶事业群总经理）在上海车展上透露，2021下半年百度Apollo自动驾驶将迎来量产高峰，每个月都会有一款新车上市。随着百度、华为的L4技术亮相，L4之前的自动驾驶在近几年会加速「上车」，西南证券预测到2024年规模会到5424万辆（大概汽车保有量的12%）。 
 
-![](https://postimg.futunn.com//tmp/phpdyFyF0.png/big?imageMogr2/ignore-error/1/format/webp)
+![](assets/9/7/9711560b19ddf53d5c1b6e4cc9aba71f.webp)
 
 图11：自动驾驶「上车」规模，来源：西南证券
 

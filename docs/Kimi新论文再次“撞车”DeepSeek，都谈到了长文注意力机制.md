@@ -10,7 +10,7 @@ Kimi背后的长上下文处理机制曝光了！
 
 这项名为**MoBA**的新型注意力机制，能将处理**1M**长文本的速度一下子提升**6.5倍**，而且还是经过Kimi平台实际验证的那种。
 
-![Image 1](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcUOKflTtdk1tr3FrbVtkflCx8fsiaIJ7XLEHWCckoBjLwCNvSgKic5tqg/640?wx_fmt=png&from=appmsg)
+![Image 1](assets/c/d/cd470db731413277f5266edd2b790214.png)
 
 概括而言，这项耗时一年半的工作主要看点在：
 
@@ -31,17 +31,17 @@ Kimi背后的长上下文处理机制曝光了！
 
 另外，在深扒论文细节的同时，我们也在作者名单中发现了**杨植麟**本人的身影。
 
-![Image 2](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibc87FCGZOwDlhftI9s2GyY6quWT0fVKdKLJaTJYqETHMWiaxPW79ibVOvA/640?wx_fmt=png&from=appmsg)
+![Image 2](assets/6/6/66c1d94f20e4b674e8b70fe69e19454c.png)
 
 与此同时，再次令人感到戏剧的是，Kimi的这项研究又又又和DeepSeek撞车了？？
 
 差不多只比Kimi早5个小时，DeepSeek也公开了自己的注意力机制NSA（量子位今日另一篇文章有详细介绍）。
 
-![Image 3](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibc4YUM1yFHXMZPS3Ez8qUu7NcWvu1s9Zva5RbX4hNw16eIxhUeP6ticIQ/640?wx_fmt=png&from=appmsg)
+![Image 3](assets/0/5/0538115bd153ec0fb32418140ab42c5d.png)
 
 好家伙，谁能想到这熟悉的一幕也才刚过去不久！（先卖个关子）
 
-![Image 4](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcicncLVvHrbvI31zNu0aK9ibZnx5n7jfNOQicICu3yQbGFlLdmXkh3c8Dw/640?wx_fmt=png&from=appmsg)
+![Image 4](assets/b/a/ba208e667f80655fd0acba639a11fddf.png)
 
 将MoE原理应用于注意力机制
 --------------
@@ -63,7 +63,7 @@ Kimi背后的长上下文处理机制曝光了！
 
 基于以上种种因素，一种新型注意力机制——**MoBA架构**应运而生。
 
-![Image 5](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcqf9HOqyFfdKqJWbPQQVYRrPyvPvDicbnibAU79oDhH1mkzZ0iaGZQeeDw/640?wx_fmt=png&from=appmsg)
+![Image 5](assets/5/b/5b7837da2112dd3d609ad9dba208e3c2.png)
 
 显而易见，不像传统那样关注全部键值（key），MoBA通过**仅关注部分键值**来提升效率。
 
@@ -77,7 +77,7 @@ Kimi背后的长上下文处理机制曝光了！
 
 上述过程用公式表示如下：
 
-![Image 6](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibc947Zicm2X8L5GsWyrrMqC3Gt70mHEwRvhxn540ftoorIZ5v5yKCayvg/640?wx_fmt=png&from=appmsg)
+![Image 6](assets/8/5/85a89768e90acb65bb8025e581199329.png)
 
 此外，**为了保证基于前文预测下一个token的准确性**，MoBA还采用了两项关键设计：
 
@@ -104,7 +104,7 @@ Kimi背后的长上下文处理机制曝光了！
 
 **第四步**：重排注意力输出并合并结果，把计算出的注意力输出按原来顺序重排，再用在线Softmax合并，将不同来源的结果整合得到综合结果。就像把不同 “答案段落” 的信息整合，最终得出一个结论。
 
-![Image 7](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibc4xs7bVftmoZk7icWJJB1zjciahJjcGJg502v4LCy7gKqv84bOib92wPuw/640?wx_fmt=png&from=appmsg)
+![Image 7](assets/c/0/c0d8f4e77c5425ee2a0f2e436032e654.png)
 
 经过Kimi 1M长上下文验证
 ---------------
@@ -113,27 +113,27 @@ Kimi背后的长上下文处理机制曝光了！
 
 首先，对比全注意力（使用Flash Attention实现）和MoBA训练的语言模型，发现二者缩放趋势相似，MoBA在高达**75%稀疏度下**性能与全注意力相当。
 
-![Image 8](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcdiaibkLRf4zAT6VDYH0xsEYCWbnXE4488S15a9HlzyH5jJpDb7GYxtuw/640?wx_fmt=png&from=appmsg)
+![Image 8](assets/6/5/656f388f30360477407b8267b6e57026.png)
 
 在长上下文实验中，尽管MoBA最后块损失略高，**但差距逐渐缩小**，表明其长上下文可扩展性。
 
-![Image 9](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcAydvIF1GfG2f722PiaDPVd6hibKye2h7ESicvqJHVKkoLYLppkTdDHoxA/640?wx_fmt=png&from=appmsg)
+![Image 9](assets/3/e/3efa22d61e0c4d2e8e4ddee7ef9ed665.png)
 
 消融实验表明，**细粒度块分割确实对MoBA性能提升明显**。
 
-![Image 10](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcpcssf7Ih7vU26XjQdN1paICZqHUA3GUOFKkpDeiaWzVbWHhNbQ1SWow/640?wx_fmt=png&from=appmsg)
+![Image 10](assets/7/3/73f5f2fa0aa6b2ed48176f58bdbdb696.png)
 
 其次，如果**将MoBA与全注意力混合训练**，其模型在位置LM损失上接近全注意力模型，证明该训练方法能平衡效率和性能。
 
-![Image 11](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcm5ZLgic6Q9empKoPpNo5Ddke6z7QgztnBzYEhHfy5ibaBMtwbibibn8hQg/640?wx_fmt=png&from=appmsg)
+![Image 11](assets/0/2/02952a100d94686592d7af6c4d8da47e.png)
 
 在监督微调（SFT）中，**层混合策略**（部分层用全注意力，其余用MoBA）可显著降低SFT损失。
 
-![Image 12](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibc4SIyHCSib5mKCsqEUcV1OXRvVMAwGuicSSbr9T6pGb0FGUUTh9tpjia3A/640?wx_fmt=png&from=appmsg)
+![Image 12](assets/9/c/9c5c12ab0bb542e3acc011a1ad5d91e9.png)
 
 **以Llama 3.1 8B模型为基础**，对MoBA在多种长上下文基准测试中评估，结果显示其性能与全注意力模型相当，在RULER基准测试中二者得分接近，在1M上下文长度的 “大海捞针” 基准测试中也表现良好。
 
-![Image 13](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcEHwHuUt3TXrbt5N2IxyK2wiaXobHvBmAmYp0eY5yQSAOaCfp0aozXibQ/640?wx_fmt=png&from=appmsg)
+![Image 13](assets/2/7/2745fcc68360b891d04bf35f766e38a8.png)
 
 总之，MoBA的计算复杂度随着上下文长度增加而优势明显。
 
@@ -144,11 +144,11 @@ OMT：又和DeepSeek撞车了
 
 回到一开头提到的，事实上，Kimi这篇论文一发，就有网友在底下惋惜：
 
-![Image 14](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcibYK8CfRvE5hp6Ql82Hl3C5GM9Aj3logg1ae6m32QloRAdEicX705DfQ/640?wx_fmt=png&from=appmsg)
+![Image 14](assets/6/c/6c2db22f6dcb1f31ce0fe7abf6f28e69.png)
 
 而且还有人当面提起了“伤心事”：
 
-![Image 15](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDOJdMKlbT7SAFy8PrIQYibcWRV76iahxqYEd32PS3WsqFjdVntarS0Qz3bV20VkxoRPvJnL9LM6dJw/640?wx_fmt=png&from=appmsg)
+![Image 15](assets/5/6/5690e1000cdcd16cf2311fdfee6d9e22.png)
 
 原来，就在上个月（1月20日），也是在DeepSeek发了号称比肩OpenAI-o1正式版的DeepSeek-R1之后，**前后仅相隔仅2小时**，Kimi才发布了追平OpenAI-o1满血版的多模态思考模型k1.5。
 
@@ -167,7 +167,7 @@ OMT：又和DeepSeek撞车了
 
 本次评选结果将于4月中国AIGC产业峰会上公布，欢迎参与！
 
-![Image 16](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDllXZe5ic5ib8mZ2TdBHbfWiaTd0hVeY2Yvno55e5cxNU2nLBWNLrZSVowHAewCyv6kyXhDx6VnicNMQ/640?wx_fmt=png&from=appmsg)
+![Image 16](assets/b/6/b68a76319fe3e2274c998d2157297975.png)
 
 **一键关注 👇 点亮星标**
 
