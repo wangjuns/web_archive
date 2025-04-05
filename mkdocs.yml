@@ -48,7 +48,6 @@ plugins:
   # archive_title_format: "Archive {year}"
   # - literate-nav:
   #     nav_file: SUMMARY.md
-  - section-index
 # === Navigation (Optional but recommended) ===
 # Defines the top navigation bar. If omitted, MkDocs tries to auto-generate.
 nav:
