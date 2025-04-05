@@ -1,0 +1,6 @@
+mkdocs
+# mkdocs-simple-blog
+mkdocs-blog-plugin
+pymdown-extensions
+mkdocs-literate-nav
+mkdocs-material
