@@ -1,0 +1,3 @@
+# Blog
+
+{{ pagetree(subtree) }}
