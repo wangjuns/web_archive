@@ -3,6 +3,7 @@ import re
 import requests
 import hashlib
 import urllib.parse
+import json
 from pathlib import Path
 from urllib.parse import urlparse, unquote
 import concurrent.futures
@@ -130,22 +131,23 @@ def download_image(
 def extract_image_urls(content):
     """提取内容中的所有图片URL"""
     image_urls = []
+    local_images = []
 
-    # 1. 标准Markdown格式: ![alt](url)
+    # 1. 标准Markdown格式: ![alt](url)，外部链接
     md_pattern = r"!\[(.*?)\]\((https?://[^)]+)\)"
     for match in re.finditer(md_pattern, content):
         image_url = match.group(2)
         if image_url.startswith(("http://", "https://")):
             image_urls.append((image_url, "markdown", match.group(0)))
 
-    # 2. HTML格式: <img src="url" ...>
-    html_pattern = r"<img[^>]*src=[\"'](https?://[^\"']+)[\"'][^>]*>"
+    # 2. HTML格式: <img src="url" ...>，外部链接
+    html_pattern = r'<img[^>]*src=["\'](https?://[^"\']+)["\'][^>]*>'
     for match in re.finditer(html_pattern, content):
         image_url = match.group(1)
         if image_url.startswith(("http://", "https://")):
             image_urls.append((image_url, "html", match.group(0)))
 
-    # 3. 简易链接后缀
+    # 3. 简易链接后缀，外部链接
     link_pattern = (
         r"(?<!\!)\[(.*?)\]\((https?://[^)]+\.(jpg|jpeg|png|gif|webp|bmp|svg))\)"
     )
@@ -154,25 +156,129 @@ def extract_image_urls(content):
         if image_url.startswith(("http://", "https://")):
             image_urls.append((image_url, "link", match.group(0)))
 
-    return image_urls
+    # 4. 标准Markdown格式: ![alt](assets/path/to/image.ext)，本地链接
+    local_md_pattern = r"!\[(.*?)\]\((assets/[^)]+)\)"
+    for match in re.finditer(local_md_pattern, content):
+        local_path = match.group(2)
+        local_images.append(local_path)
+
+    # 5. HTML格式: <img src="assets/path/to/image.ext" ...>，本地链接
+    local_html_pattern = r'<img[^>]*src=["\'](assets/[^"\']+)["\'][^>]*>'
+    for match in re.finditer(local_html_pattern, content):
+        local_path = match.group(1)
+        local_images.append(local_path)
+
+    return image_urls, local_images
 
 
-def process_file(md_file, assets_dir, verbose=True, dry_run=False, subdir_depth=2):
+def load_processed_files(index_file):
+    """加载已处理过的文件索引"""
+    if not os.path.exists(index_file):
+        return {}
+
+    try:
+        with open(index_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"加载索引文件失败: {str(e)}")
+        return {}
+
+
+def save_processed_file(index_file, file_path, file_info):
+    """保存处理过的文件信息到索引"""
+    try:
+        processed_files = load_processed_files(index_file)
+        processed_files[file_path] = file_info
+
+        with open(index_file, "w", encoding="utf-8") as f:
+            json.dump(processed_files, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"保存索引文件失败: {str(e)}")
+
+
+def is_file_modified(file_path, processed_files):
+    """检查文件是否被修改过（根据修改时间和文件大小）"""
+    if file_path not in processed_files:
+        return True
+
+    file_stat = os.stat(file_path)
+    file_info = processed_files[file_path]
+
+    # 检查修改时间和文件大小
+    return file_stat.st_mtime != file_info.get(
+        "mtime", 0
+    ) or file_stat.st_size != file_info.get("size", 0)
+
+
+def process_file(
+    md_file,
+    assets_dir,
+    index_file,
+    processed_files,
+    verbose=True,
+    dry_run=False,
+    subdir_depth=2,
+    force=False,
+):
     """处理单个Markdown文件"""
     try:
+        # 检查文件是否已处理且未修改
+        if (
+            not force
+            and md_file in processed_files
+            and not is_file_modified(md_file, processed_files)
+        ):
+            if verbose:
+                print(f"跳过未修改文件: {md_file}")
+            return 0, 0, True
+
         with open(md_file, "r", encoding="utf-8") as f:
             content = f.read()
 
-        # 提取所有图片URL
-        image_entries = extract_image_urls(content)
+        # 提取所有图片URL和本地图片路径
+        image_entries, local_images = extract_image_urls(content)
 
-        if not image_entries:
+        if not image_entries and len(local_images) > 0:
             if verbose:
-                print(f"文件中没有找到外部图片链接: {md_file}")
-            return 0, 0
+                print(
+                    f"文件中没有找到外部图片链接，已有 {len(local_images)} 个本地图片: {md_file}"
+                )
+
+            # 记录处理信息
+            if not dry_run:
+                file_stat = os.stat(md_file)
+                file_info = {
+                    "mtime": file_stat.st_mtime,
+                    "size": file_stat.st_size,
+                    "processed_at": time.time(),
+                    "images_count": len(local_images),
+                    "local_images": local_images,
+                }
+                save_processed_file(index_file, md_file, file_info)
+
+            return 0, 0, True
+
+        if not image_entries and not local_images:
+            if verbose:
+                print(f"文件中没有找到任何图片链接: {md_file}")
+
+            # 记录处理信息
+            if not dry_run:
+                file_stat = os.stat(md_file)
+                file_info = {
+                    "mtime": file_stat.st_mtime,
+                    "size": file_stat.st_size,
+                    "processed_at": time.time(),
+                    "images_count": 0,
+                }
+                save_processed_file(index_file, md_file, file_info)
+
+            return 0, 0, True
 
         if verbose:
-            print(f"处理文件: {md_file}, 找到 {len(image_entries)} 个图片链接")
+            print(
+                f"处理文件: {md_file}, 找到 {len(image_entries)} 个外部图片链接, {len(local_images)} 个本地图片"
+            )
 
         # 下载所有图片
         updates = []
@@ -182,17 +288,13 @@ def process_file(md_file, assets_dir, verbose=True, dry_run=False, subdir_depth=
         if dry_run:
             if verbose:
                 print(f"[模拟执行] 将下载 {len(image_entries)} 张图片")
-            return len(image_entries), 0
+            return len(image_entries), 0, False
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
             future_to_entry = {
                 executor.submit(
                     download_image, url, assets_dir, 10, 3, verbose, subdir_depth
-                ): (
-                    url,
-                    tag,
-                    original,
-                )
+                ): (url, tag, original)
                 for url, tag, original in image_entries
             }
             for future in concurrent.futures.as_completed(future_to_entry):
@@ -220,7 +322,7 @@ def process_file(md_file, assets_dir, verbose=True, dry_run=False, subdir_depth=
             elif tag == "html":
                 # 对于HTML格式 <img src="url" ...>
                 img_tag = re.sub(
-                    r"src=[\"']https?://[^\"']+[\"']",
+                    r'src=["\'](https?://[^"\']+)["\']',
                     f'src="assets/{relative_path}"',
                     original,
                 )
@@ -232,12 +334,14 @@ def process_file(md_file, assets_dir, verbose=True, dry_run=False, subdir_depth=
                 updated_content = updated_content.replace(original, replacement)
 
         # 若内容有更新，写回文件
+        file_updated = False
         if updated_content != content:
             if not dry_run:
                 with open(md_file, "w", encoding="utf-8") as f:
                     f.write(updated_content)
                 if verbose:
                     print(f"已更新文件: {md_file}")
+                file_updated = True
             else:
                 if verbose:
                     print(f"[模拟执行] 将更新文件: {md_file}")
@@ -245,12 +349,35 @@ def process_file(md_file, assets_dir, verbose=True, dry_run=False, subdir_depth=
             if verbose:
                 print(f"文件无需更新: {md_file}")
 
-        return downloaded, failed
+        # 更新后重新获取本地图片信息
+        if file_updated:
+            _, local_images = extract_image_urls(updated_content)
+
+        # 记录处理信息
+        if not dry_run:
+            file_stat = os.stat(md_file)
+            file_info = {
+                "mtime": file_stat.st_mtime,
+                "size": file_stat.st_size,
+                "processed_at": time.time(),
+                "images_count": (
+                    len(local_images)
+                    if file_updated
+                    else len(local_images) + downloaded
+                ),
+                "downloaded": downloaded,
+                "failed": failed,
+                "updated": file_updated,
+                "local_images": local_images,
+            }
+            save_processed_file(index_file, md_file, file_info)
+
+        return downloaded, failed, downloaded == 0 and failed == 0
 
     except Exception as e:
         if verbose:
             print(f"处理文件 {md_file} 时出错: {str(e)}")
-        return 0, 0
+        return 0, 0, False
 
 
 def main():
@@ -270,28 +397,56 @@ def main():
     parser.add_argument(
         "--depth", type=int, default=2, help="子目录深度，基于哈希值前N位 (默认: 2)"
     )
+    parser.add_argument(
+        "--force", action="store_true", help="强制处理所有文件，忽略索引记录"
+    )
+    parser.add_argument(
+        "--index", type=str, help="指定索引文件路径 (默认: <dir>/.processed_files.json)"
+    )
+    parser.add_argument(
+        "--index-all",
+        action="store_true",
+        help="将所有已处理的文件（包含本地图片的文件）添加到索引中，不下载任何图片",
+    )
     args = parser.parse_args()
 
     docs_dir = args.dir
     assets_dir = args.assets if args.assets else os.path.join(docs_dir, "assets")
+    index_file = (
+        args.index if args.index else os.path.join(docs_dir, ".processed_files.json")
+    )
     verbose = not args.quiet
     dry_run = args.dry_run
     subdir_depth = args.depth
+    force = args.force
+    index_all = args.index_all
 
     if not os.path.exists(docs_dir):
         print(f"目录不存在: {docs_dir}")
         return
 
-    if not dry_run:
+    if not dry_run and not index_all:
         ensure_dir(assets_dir)
 
+    # 加载已处理文件索引
+    processed_files = load_processed_files(index_file)
+    if verbose and not dry_run:
+        print(f"已加载 {len(processed_files)} 条处理记录")
+
     # 如果只处理一个文件
-    if args.file:
+    if args.file and not index_all:
         if not os.path.exists(args.file):
             print(f"文件不存在: {args.file}")
             return
-        downloaded, failed = process_file(
-            args.file, assets_dir, verbose, dry_run, subdir_depth
+        downloaded, failed, _ = process_file(
+            args.file,
+            assets_dir,
+            index_file,
+            processed_files,
+            verbose,
+            dry_run,
+            subdir_depth,
+            force,
         )
         print(f"总计：下载成功 {downloaded} 张图片，失败 {failed} 张图片")
         return
@@ -306,18 +461,79 @@ def main():
     if verbose:
         print(f"找到 {len(md_files)} 个Markdown文件")
 
+    # 索引所有已处理文件模式
+    if index_all:
+        print("正在索引所有已处理的Markdown文件...")
+        total_indexed = 0
+        total_with_images = 0
+
+        for md_file in tqdm(md_files, desc="索引Markdown文件", disable=not verbose):
+            try:
+                # 如果文件已经在索引中且未被修改，则跳过
+                if md_file in processed_files and not is_file_modified(
+                    md_file, processed_files
+                ):
+                    continue
+
+                with open(md_file, "r", encoding="utf-8") as f:
+                    content = f.read()
+
+                # 提取所有图片URL和本地图片路径
+                _, local_images = extract_image_urls(content)
+
+                if local_images:
+                    total_with_images += 1
+                    file_stat = os.stat(md_file)
+                    file_info = {
+                        "mtime": file_stat.st_mtime,
+                        "size": file_stat.st_size,
+                        "processed_at": time.time(),
+                        "images_count": len(local_images),
+                        "local_images": local_images,
+                        "indexed_only": True,
+                    }
+                    save_processed_file(index_file, md_file, file_info)
+                    total_indexed += 1
+                    if verbose:
+                        print(
+                            f"已索引文件: {md_file}，包含 {len(local_images)} 个本地图片"
+                        )
+            except Exception as e:
+                if verbose:
+                    print(f"索引文件 {md_file} 时出错: {str(e)}")
+
+        print(
+            f"索引完成! 共找到 {total_with_images} 个包含本地图片的文件，已成功索引 {total_indexed} 个文件"
+        )
+        return
+
     # 处理所有文件，显示进度条
     total_downloaded = 0
     total_failed = 0
+    total_skipped = 0
+    total_processed = 0
 
     for md_file in tqdm(md_files, desc="处理Markdown文件", disable=not verbose):
-        downloaded, failed = process_file(
-            md_file, assets_dir, verbose, dry_run, subdir_depth
+        downloaded, failed, skipped = process_file(
+            md_file,
+            assets_dir,
+            index_file,
+            processed_files,
+            verbose,
+            dry_run,
+            subdir_depth,
+            force,
         )
         total_downloaded += downloaded
         total_failed += failed
+        if skipped and downloaded == 0 and failed == 0:
+            total_skipped += 1
+        else:
+            total_processed += 1
 
-    print(f"处理完成! 下载成功 {total_downloaded} 张图片，失败 {total_failed} 张图片")
+    print(
+        f"处理完成! 处理文件 {total_processed} 个，跳过 {total_skipped} 个，下载成功 {total_downloaded} 张图片，失败 {total_failed} 张图片"
+    )
 
 
 if __name__ == "__main__":
